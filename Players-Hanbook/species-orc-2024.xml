@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Orc (2024)</name>
-    <description>Orc species from the 2024 Playerâ€™s Handbook for Aurora Builder (verbatim traits).</description>
+    <description>Orc species from the 2024 Player's Handbook for Aurora Builder (verbatim traits).</description>
     <author url="https://aurorabuilder.com">Aurora Builder</author>
     <update version="1.0.0">
       <file name="species-orc-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/species-orc-2024.xml" />
@@ -19,7 +19,7 @@
       <p><span class="feature">Speed.</span> 30 feet</p>
       <p><span class="feature">Adrenaline Rush.</span> You can take the Dash action as a Bonus Action. When you do so, you gain a number of Temporary Hit Points equal to your Proficiency Bonus. You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest.</p>
       <p><span class="feature">Darkvision.</span> You have Darkvision with a range of 120 feet.</p>
-      <p><span class="feature">Relentless Endurance.</span> When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 Hit Point instead. Once you use this trait, you canâ€™t do so again until you finish a Long Rest.</p>
+      <p><span class="feature">Relentless Endurance.</span> When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 Hit Point instead. Once you use this trait, you can't do so again until you finish a Long Rest.</p>
     </description>
 
     <sheet display="false" />
@@ -48,7 +48,7 @@
 
   <element name="Relentless Endurance" type="Racial Trait" source="Player's Handbook (2024)" id="ID_ORC_2024_RELENTLESS_ENDURANCE">
     <description>
-      <p>When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 Hit Point instead. Once you use this trait, you canâ€™t do so again until you finish a Long Rest.</p>
+      <p>When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 Hit Point instead. Once you use this trait, you can't do so again until you finish a Long Rest.</p>
     </description>
     <sheet usage="1/Long Rest">
       <description>Drop to 1 HP instead of 0 HP when not killed outright.</description>

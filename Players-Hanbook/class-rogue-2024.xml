@@ -24,7 +24,7 @@
       <h4>Proficiencies</h4>
       <p><strong>Armor:</strong> Light armor</p>
       <p><strong>Weapons:</strong> Simple weapons, and Martial weapons that have the Finesse or Light property</p>
-      <p><strong>Tools:</strong> Thievesâ€™ Tools</p>
+      <p><strong>Tools:</strong> Thieves' Tools</p>
       <p><strong>Saving Throws:</strong> Dexterity, Intelligence</p>
       <p><strong>Skills:</strong> Choose four from Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Persuasion, Sleight of Hand, Stealth</p>
 
@@ -39,7 +39,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr><td> 1</td><td>+2</td><td class="left">Expertise; Sneak Attack; Thievesâ€™ Cant; Weapon Mastery</td><td>1d6</td></tr>
+          <tr><td> 1</td><td>+2</td><td class="left">Expertise; Sneak Attack; Thieves' Cant; Weapon Mastery</td><td>1d6</td></tr>
           <tr><td> 2</td><td>+2</td><td class="left">Cunning Action</td><td>1d6</td></tr>
           <tr><td> 3</td><td>+2</td><td class="left">Rogue Subclass; Steady Aim</td><td>2d6</td></tr>
           <tr><td> 4</td><td>+2</td><td class="left">Ability Score Improvement</td><td>2d6</td></tr>
@@ -130,7 +130,7 @@
       <prerequisite>Dexterity 13</prerequisite>
       <requirements>[dex:13]</requirements>
       <setters>
-        <set name="multiclass proficiencies">Light armor; Thievesâ€™ Tools; one skill from the Rogue list</set>
+        <set name="multiclass proficiencies">Light armor; Thieves' Tools; one skill from the Rogue list</set>
       </setters>
       <rules>
         <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
@@ -158,10 +158,10 @@
   <!-- Sneak Attack -->
   <element name="Sneak Attack" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_SNEAK_ATTACK">
     <description>
-      <p>Once per turn, when you hit a creature with a Finesse or Ranged weapon and you have Advantage on the attack roll (or an ally of the target is within 5 feet of it and not Incapacitated, and you donâ€™t have Disadvantage), you deal extra damage as shown in the Rogue table.</p>
+      <p>Once per turn, when you hit a creature with a Finesse or Ranged weapon and you have Advantage on the attack roll (or an ally of the target is within 5 feet of it and not Incapacitated, and you don't have Disadvantage), you deal extra damage as shown in the Rogue table.</p>
     </description>
     <sheet usage="1/Turn">
-      <description>If you have Advantage on an attack or an ally is adjacent to your target (and you donâ€™t have Disadvantage), on a hit with a Finesse or Ranged weapon, add {{sneak attack:dice:number}}d6 extra damage.</description>
+      <description>If you have Advantage on an attack or an ally is adjacent to your target (and you don't have Disadvantage), on a hit with a Finesse or Ranged weapon, add {{sneak attack:dice:number}}d6 extra damage.</description>
     </sheet>
     <rules>
         <stat name="sneak attack:dice:number" value="1" bonus="base" level="1" />
@@ -177,15 +177,15 @@
     </rules>
   </element>
 
-  <!-- Thievesâ€™ Cant (and an extra language) -->
-  <element name="Thievesâ€™ Cant" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_THIEVES_CANT">
+  <!-- Thieves' Cant (and an extra language) -->
+  <element name="Thieves' Cant" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_THIEVES_CANT">
     <description>
-      <p>You know Thievesâ€™ Cant and one additional language of your choice.</p>
+      <p>You know Thieves' Cant and one additional language of your choice.</p>
     </description>
     <sheet display="false" />
     <rules>
       <grant type="Proficiency" id="ID_WOTC_PHB_LANGUAGE_THIEVES_CANT" />
-      <select type="Language" name="Thievesâ€™ Cant: Extra Language" supports="Standard_Lang" number="1" />
+      <select type="Language" name="Thieves' Cant: Extra Language" supports="Standard_Lang" number="1" />
     </rules>
   </element>
 
@@ -223,10 +223,10 @@
   <!-- Steady Aim -->
   <element name="Steady Aim" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_STEADY_AIM">
     <description>
-      <p><strong>Bonus Action.</strong> If you havenâ€™t moved this turn, you can give yourself Advantage on your next attack roll on the current turn. After you use this feature, your Speed is 0 until the end of the current turn.</p>
+      <p><strong>Bonus Action.</strong> If you haven't moved this turn, you can give yourself Advantage on your next attack roll on the current turn. After you use this feature, your Speed is 0 until the end of the current turn.</p>
     </description>
     <sheet action="Bonus Action">
-      <description>If you havenâ€™t moved this turn, gain Advantage on your next attack this turn; your Speed becomes 0 until end of turn.</description>
+      <description>If you haven't moved this turn, gain Advantage on your next attack this turn; your Speed becomes 0 until end of turn.</description>
     </sheet>
   </element>
 
@@ -250,7 +250,7 @@
     <description>
       <p>When you deal Sneak Attack damage, you can forgo some of that damage to add an extra effect. Each effect has a die cost; remove that many Sneak Attack dice before rolling. The effect occurs immediately after damage is dealt. Save DC for effects that require one = 8 + your Dexterity modifier + your Proficiency Bonus.</p>
       <ul>
-        <li><strong>Poison (Cost: 1d6).</strong> Target makes a Constitution save; on a fail it has the Poisoned condition for 1 minute (save ends at end of each of its turns). You must have a Poisonerâ€™s Kit on your person.</li>
+        <li><strong>Poison (Cost: 1d6).</strong> Target makes a Constitution save; on a fail it has the Poisoned condition for 1 minute (save ends at end of each of its turns). You must have a Poisoner's Kit on your person.</li>
         <li><strong>Trip (Cost: 1d6).</strong> If the target is Large or smaller, it must make a Dexterity save or have the Prone condition.</li>
         <li><strong>Withdraw (Cost: 1d6).</strong> Immediately after the attack, you move up to half your Speed without provoking Opportunity Attacks.</li>
       </ul>
@@ -332,17 +332,17 @@
   <!-- Uncanny Dodge -->
   <element name="Uncanny Dodge" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_UNCANNY_DODGE">
     <description>
-      <p><strong>Reaction.</strong> When an attacker you can see hits you with an attack roll, you can use your Reaction to halve the attackâ€™s damage (round down).</p>
+      <p><strong>Reaction.</strong> When an attacker you can see hits you with an attack roll, you can use your Reaction to halve the attack's damage (round down).</p>
     </description>
     <sheet action="Reaction">
-      <description>Halve the attackâ€™s damage from a attacker you can see.</description>
+      <description>Halve the attack's damage from a attacker you can see.</description>
     </sheet>
   </element>
 
   <!-- Evasion -->
   <element name="Evasion" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_EVASION">
     <description>
-      <p>When an effect allows you to make a Dexterity save to take only half damage, you instead take no damage on a success and only half on a failure. You canâ€™t use this feature if you are Incapacitated.</p>
+      <p>When an effect allows you to make a Dexterity save to take only half damage, you instead take no damage on a success and only half on a failure. You can't use this feature if you are Incapacitated.</p>
     </description>
     <sheet>
       <description>When you roll a DEX Saving Throw to halve damage, on success you take no namage. On a fail you take half damage.</description>
@@ -402,7 +402,7 @@
       <p>No attack roll can have Advantage against you unless you are Incapacitated.</p>
     </description>
     <sheet>
-      <description>Attack rolls canâ€™t have Advantage against you unless you are Incapacitated.</description>
+      <description>Attack rolls can't have Advantage against you unless you are Incapacitated.</description>
     </sheet>
   </element>
 
@@ -420,7 +420,7 @@
   <!-- Stroke of Luck -->
   <element name="Stroke of Luck" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_STROKE_OF_LUCK">
     <description>
-      <p>If you fail a d20 Test, you can turn the roll into a 20. Once you use this feature, you canâ€™t use it again until you finish a Short or Long Rest.</p>
+      <p>If you fail a d20 Test, you can turn the roll into a 20. Once you use this feature, you can't use it again until you finish a Short or Long Rest.</p>
     </description>
     <sheet usage="1/Short Rest">
       <description>When you fail a d20 Test, you can make the roll a 20.</description>

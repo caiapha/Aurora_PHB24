@@ -207,7 +207,7 @@
 			<grant type="Spell" id="ID_PHB24_SPELL_LEVITATE" spellcasting="warlock" />
 		</rules>
 	</element>
-	<element name="Devilâ€™s Sight" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_DEVILS_SIGHT">
+	<element name="Devil's Sight" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_DEVILS_SIGHT">
 		<supports>EldritchInvocationPHB24</supports>
 		<prerequisite>2nd level</prerequisite>
 		<requirements>[level:warlock:2]</requirements>
@@ -572,7 +572,7 @@
 	  <p>Your bond with the weapon ends if you use this feature's Bonus Action again, if the weapon is more than 5 feet away from you for 1 minute or more, or if you die. A conjured weapon disappears when the bond ends.</p>
     </description>
     <sheet action="Bonus Action">
-      <description>You can conjure/bind a pact weapon; youâ€™re proficient with it and can be used as a spellcasting focus. You can attack using Charisma instead of Strength and deal Necrotic, Radiant or Psychic damage.</description>
+      <description>You can conjure/bind a pact weapon; you're proficient with it and can be used as a spellcasting focus. You can attack using Charisma instead of Strength and deal Necrotic, Radiant or Psychic damage.</description>
     </sheet>
   </element>
 

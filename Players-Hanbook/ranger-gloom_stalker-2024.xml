@@ -41,7 +41,7 @@
     <description>
       <p>You master fearsome ambushes:</p>
       <ul>
-        <li><strong>Ambusherâ€™s Leap.</strong> At the start of the first turn of each combat, your Speed increases by 10 feet until the end of that turn.</li>
+        <li><strong>Ambusher's Leap.</strong> At the start of the first turn of each combat, your Speed increases by 10 feet until the end of that turn.</li>
         <li><strong>Dreadful Strike.</strong> When you hit a creature with a weapon, you can deal an extra <strong>2d6 Psychic</strong> damage. You can use this benefit only once per turn, and a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Long Rest.</li>
         <li><strong>Initiative Bonus.</strong> When you roll Initiative, add your Wisdom modifier to the roll.</li>
       </ul>
@@ -128,10 +128,10 @@
   <!-- ===== Level 11: Stalker's Flurry ===== -->
   <element name="Stalker's Flurry" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_GLOOM_STALKER_FEATURE_STALKERS_FLURRY">
     <description>
-      <p>Your Dreadful Strikeâ€™s Psychic damage becomes <strong>2d8</strong>.</p>
+      <p>Your Dreadful Strike's Psychic damage becomes <strong>2d8</strong>.</p>
       <p class="indent">In addition, when you apply Dreadful Strike from your Dread Ambusher feature, you can also cause one of the following effects:</p>
       <ul>
-        <li><strong>Sudden Strike.</strong> Make another attack with the same weapon against a different creature within 5 feet of the original target and within the weaponâ€™s range.</li>
+        <li><strong>Sudden Strike.</strong> Make another attack with the same weapon against a different creature within 5 feet of the original target and within the weapon's range.</li>
         <li><strong>Mass Fear.</strong> The target and each creature within 10 feet of it must make a Wisdom saving throw against your spell save DC. On a failed save, a creature has the Frightened condition until the start of your next turn.</li>
       </ul>
     </description>

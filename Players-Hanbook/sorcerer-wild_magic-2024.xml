@@ -37,7 +37,7 @@
   <!-- ===== Level 3: Wild Magic Surge ===== -->
   <element name="Wild Magic Surge" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SORCERER_WILD_MAGIC_FEATURE_WILD_MAGIC_SURGE">
     <description>
-      <p>Your spellcasting can unleash surges of untamed magic. No more than once per turn, immediately after you cast a Sorcerer spell using a spell slot, roll a d20. On a 20, roll on the Wild Magic Surge table to create a magical effect (see the Playerâ€™s Handbook for that table). If the effect is a spell, it is too wild to be affected by your Metamagic. If it normally requires Concentration, it does not require Concentration for this surge and lasts its full duration.</p>
+      <p>Your spellcasting can unleash surges of untamed magic. No more than once per turn, immediately after you cast a Sorcerer spell using a spell slot, roll a d20. On a 20, roll on the Wild Magic Surge table to create a magical effect (see the Player's Handbook for that table). If the effect is a spell, it is too wild to be affected by your Metamagic. If it normally requires Concentration, it does not require Concentration for this surge and lasts its full duration.</p>
     </description>
     <sheet>
       <description>After you cast a Sorcerer spell with a slot, roll d20; on 20, roll on the Wild Magic Surge table. Surge-spells ignore Metamagic and do not require Concentration.</description>

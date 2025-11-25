@@ -12,7 +12,7 @@
     <element name="Darkvision" type="Vision" source="Player's Handbook (2024)" id="ID_PHB24_VISION_DARKVISION">
 		<requirements>!ID_PHB24_VISION_SUPERIORDARKVISION</requirements>
 		<description>
-			<p>Many creatures in the worlds of D&amp;D, especially those that dwell underground, have darkvision. Within a specified range, a creature with darkvision can see in darkness as if the darkness were dim light, so areas of darkness are only lightly obscured as far as that creature is concerned. However, the creature canâ€™t discern color in darkness, only shades of gray.</p>
+			<p>Many creatures in the worlds of D&amp;D, especially those that dwell underground, have darkvision. Within a specified range, a creature with darkvision can see in darkness as if the darkness were dim light, so areas of darkness are only lightly obscured as far as that creature is concerned. However, the creature can't discern color in darkness, only shades of gray.</p>
 		</description>
 		<sheet>
 			<description>You can see in dim light within {{darkvision:range}} feet of you as if it were bright light, and in darkness as if it were dim light.</description>
@@ -24,7 +24,7 @@
 
     <element name="Superior Darkvision" type="Vision" source="Player's Handbook (2024)" id="ID_PHB24_VISION_SUPERIORDARKVISION">
 		<description>
-			<p>Many creatures in the worlds of D&amp;D, especially those that dwell underground, have darkvision. Within a specified range, a creature with darkvision can see in darkness as if the darkness were dim light, so areas of darkness are only lightly obscured as far as that creature is concerned. However, the creature canâ€™t discern color in darkness, only shades of gray.</p>
+			<p>Many creatures in the worlds of D&amp;D, especially those that dwell underground, have darkvision. Within a specified range, a creature with darkvision can see in darkness as if the darkness were dim light, so areas of darkness are only lightly obscured as far as that creature is concerned. However, the creature can't discern color in darkness, only shades of gray.</p>
 		</description>
 		<sheet>
 			<description>You can see in dim light within {{darkvision:range}} feet of you as if it were bright light, and in darkness as if it were dim light.</description>

@@ -45,8 +45,8 @@
         <tbody>
           <tr><td>3</td><td><em>Arms of Hadar</em>, <em>Calm Emotions</em>, <em>Detect Thoughts</em>, <em>Dissonant Whispers</em>, <em>Mind Silver</em></td></tr>
           <tr><td>5</td><td><em>Hunger of Hadar</em>, <em>Sending</em></td></tr>
-          <tr><td>7</td><td><em>Evardâ€™s Black Tentacles</em>, <em>Summon Aberration</em></td></tr>
-          <tr><td>9</td><td><em>Raryâ€™s Telepathic Bond</em>, <em>Telekinesis</em></td></tr>
+          <tr><td>7</td><td><em>Evard's Black Tentacles</em>, <em>Summon Aberration</em></td></tr>
+          <tr><td>9</td><td><em>Rary's Telepathic Bond</em>, <em>Telekinesis</em></td></tr>
         </tbody>
       </table>
     </description>
@@ -87,7 +87,7 @@
   <!-- ===== Level 6: Psionic Sorcery ===== -->
   <element name="Psionic Sorcery" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SORCERER_ABERRANT_FEATURE_PSIONIC_SORCERY">
     <description>
-      <p>When you cast a spell gained from your Psionic Spells feature of level 1 or higher, you can cast it by expending a spell slot as normal or by spending a number of Sorcery Points equal to the spellâ€™s level. If you cast the spell using Sorcery Points, the spell requires no Verbal or Somatic components, and it requires no Material components unless they are consumed by the spell or have a cost in gp.</p>
+      <p>When you cast a spell gained from your Psionic Spells feature of level 1 or higher, you can cast it by expending a spell slot as normal or by spending a number of Sorcery Points equal to the spell's level. If you cast the spell using Sorcery Points, the spell requires no Verbal or Somatic components, and it requires no Material components unless they are consumed by the spell or have a cost in gp.</p>
     </description>
     <sheet>
       <description>Psionic Spells can be cast with Sorcery Points equal to spell level; if so, no V, S, and no M components unless consumed or costly.</description>

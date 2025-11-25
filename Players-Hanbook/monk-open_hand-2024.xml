@@ -33,7 +33,7 @@
     <description>
       <p><em>3rd-level Warrior of the Open Hand feature</em></p>
       <p>Whenever you hit a creature with an attack granted by your Flurry of Blows, you can impose one of the following effects on that target:</p>
-      <p class="indent"><strong>Addle.</strong> The target canâ€™t make Opportunity Attacks until the start of its next turn.</p>
+      <p class="indent"><strong>Addle.</strong> The target can't make Opportunity Attacks until the start of its next turn.</p>
       <p class="indent"><strong>Push.</strong> The target must succeed on a Strength saving throw (DC {{monk:focus:dc}}) or be pushed up to 15 feet away from you.</p>
       <p class="indent"><strong>Topple.</strong> The target must succeed on a Dexterity saving throw (DC {{monk:focus:dc}}) or have the Prone condition.</p>
     </description>

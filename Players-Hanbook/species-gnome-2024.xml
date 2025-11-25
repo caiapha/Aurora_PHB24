@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Gnome (2024)</name>
-    <description>Gnome species from the 2024 Playerâ€™s Handbook for Aurora Builder.</description>
+    <description>Gnome species from the 2024 Player's Handbook for Aurora Builder.</description>
     <author url="https://aurorabuilder.com">Aurora Builder</author>
     <update version="1.0.0">
       <file name="species-gnome-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/species-gnome-2024.xml" />

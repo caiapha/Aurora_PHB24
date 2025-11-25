@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Barbarian</name>
-		<description>The Barbarian class from the Playerâ€™s Handbook Rev 2024</description>
+		<description>The Barbarian class from the Player's Handbook Rev 2024</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
 		<update version="1.0.0">
 			<file name="class-barbarian-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/class-barbarian-2024.xml" />
@@ -11,16 +11,16 @@
 
 	<element name="Barbarian" type="Class" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_BARBARIAN">
 		<description>
-			<p>A tall human tribesman strides through a blizzard, draped in fur and hefting his axe. He laughs as he charges toward the frost giant who dared poach his peopleâ€™s elk herd.</p>
+			<p>A tall human tribesman strides through a blizzard, draped in fur and hefting his axe. He laughs as he charges toward the frost giant who dared poach his people's elk herd.</p>
 			<p class="indent">A half-orc snarls at the latest challenger to her authority over their savage tribe, ready to break his neck with her bare hands as she did to the last six rivals.</p>
 			<p class="indent">Frothing at the mouth, a dwarf slams his helmet into the face of his drow foe, then turns to drive his armored elbow into the gut of another.</p>
 			<p class="indent">These barbarians, different as they might be, are defined by their rage: unbridled, unquenchable, and unthinking fury. More than a mere emotion, their anger is the ferocity of a cornered predator, the unrelenting assault of a storm, the churning turmoil of the sea.</p>
 			<p class="indent">For some, their rage springs from a communion with fierce animal spirits. Others draw from a roiling reservoir of anger at a world full of pain. For every barbarian, rage is a power that fuels not just a battle frenzy but also uncanny reflexes, resilience, and feats of strength.</p>
 			<h4>PRIMAL INSTINCT</h4>
-			<p>People of towns and cities take pride in how their civilized ways set them apart from animals, as if denying oneâ€™s own nature was a mark of superiority. To a barbarian, though, civilization is no virtue, but a sign of weakness. The strong embrace their animal nature keen instincts, primal physicality, and ferocious rage. Barbarians are uncomfortable when hedged in by walls and crowds. They thrive in the wilds of their homelands: the tundra, jungle, or grasslands where their tribes live and hunt.</p>
+			<p>People of towns and cities take pride in how their civilized ways set them apart from animals, as if denying one's own nature was a mark of superiority. To a barbarian, though, civilization is no virtue, but a sign of weakness. The strong embrace their animal nature keen instincts, primal physicality, and ferocious rage. Barbarians are uncomfortable when hedged in by walls and crowds. They thrive in the wilds of their homelands: the tundra, jungle, or grasslands where their tribes live and hunt.</p>
 			<p class="indent">Barbarians come alive in the chaos of combat. They can enter a berserk state where rage takes over, giving them superhuman strength and resilience. A barbarian can draw on this reservoir of fury only a few times without resting, but those few rages are usually sufficient to defeat whatever threats arise.</p>
 			<h4>A LIFE OF DANGER</h4>
-			<p>Not every member of the tribes deemed â€œbarbariansâ€ by scions of civilized society has the barbarian class. A true barbarian among these people is as uncommon as a skilled fighter in a town, and he or she plays a similar role as a protector of the people and a leader in times of war. Life in the wild places of the world is fraught with peril: rival tribes, deadly weather, and terrifying monsters. Barbarians charge headlong into that danger so that their people donâ€™t have to.</p>
+			<p>Not every member of the tribes deemed â€œbarbariansâ€ by scions of civilized society has the barbarian class. A true barbarian among these people is as uncommon as a skilled fighter in a town, and he or she plays a similar role as a protector of the people and a leader in times of war. Life in the wild places of the world is fraught with peril: rival tribes, deadly weather, and terrifying monsters. Barbarians charge headlong into that danger so that their people don't have to.</p>
 			<p class="indent">Their courage in the face of danger makes barbarians perfectly suited for adventuring. Wandering is often a way of life for their native tribes, and the rootless life of the adventurer is little hardship for a barbarian. Some barbarians miss the close-knit family structures of the tribe, but eventually find them replaced by the bonds formed among the members of their adventuring parties.</p>
 			<h4>CREATING A BARBARIAN</h4>
 			<p>When creating a barbarian character, think about where your character comes from and his or her place in the world. Talk with your DM about an appropriate origin for your barbarian. Did you come from a distant land, making you a stranger in the area of the campaign? Or is the campaign set in a rough-and-tumble frontier where barbarians are common?</p>
@@ -48,7 +48,7 @@
 			<h5 class="caption">EQUIPMENT</h5>
 			<p>You start with the following equipment (choose A or B), in addition to the equipment granted by your background:</p>
 			<ul>
-				<li><i>(a)</i> a greataxe, four handaxes, an explorerâ€™s pack and and 15 GP, or</li>
+				<li><i>(a)</i> a greataxe, four handaxes, an explorer's pack and and 15 GP, or</li>
 				<li><i>(b)</i> 75 GP</li> 
 			</ul>
 			<h5 class="caption">THE BARBARIAN</h5>
@@ -147,13 +147,13 @@
 	</element>
 	<element name="Rage" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_RAGE">
 		<description>
-			<p>In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action. While raging, you gain the following benefits if you arenâ€™t wearing heavy armor:</p>
+			<p>In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action. While raging, you gain the following benefits if you aren't wearing heavy armor:</p>
 			<ul>
 				<li>You have advantage on Strength checks and Strength saving throws.</li>
 				<li>When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases as you gain levels as a barbarian, as shown in the Rage Damage column of the Barbarian table.</li>
 				<li>You have resistance to bludgeoning, piercing, and slashing damage.</li>
 			</ul>
-			<p>If you are able to cast spells, you canâ€™t cast them or concentrate on them while raging.</p>
+			<p>If you are able to cast spells, you can't cast them or concentrate on them while raging.</p>
 			<p> </p>
 			<p class="indent">The Rage lasts until the end of your next turn, and it ends early if you drop on Heavy armor or have the Incapacitated condition. If your Rage is still active on your next turn, you can extend the Rage for another round by doing one of the following:</p>
 			<p class="indent">
@@ -169,12 +169,12 @@
 		<sheet action="Bonus Action">
 			<description usage="{{barbarian rage:count}}/Long Rest">You gain Advantage on Strength checks and Strength Saves and a +{{barbarian rage:damage}} to damage rolls with strength weapon attacks.
 					You have resistance to bludgeoning, piercing, and slashing damage.
-					You have to make an attack roll, force an enemy to make a saving throw or take a bonus action to extend the rage to ne next turn. You canâ€™t cast spells or maintain Concentration while raging.
+					You have to make an attack roll, force an enemy to make a saving throw or take a bonus action to extend the rage to ne next turn. You can't cast spells or maintain Concentration while raging.
 					You regain one expended use when you finish a Short Rest.
 			</description>
 			<description usage="Unlimited" level="20">You gain Advantage on Strength checks and Strength Saves and a +{{barbarian rage:damage}} to damage rolls with strength weapon attacks.
 					You have resistance to bludgeoning, piercing, and slashing damage.
-					You have to make an attack roll, force an enemy to make a saving throw or take a bonus action to extend the rage to ne next turn. You canâ€™t cast spells or maintain Concentration while raging.
+					You have to make an attack roll, force an enemy to make a saving throw or take a bonus action to extend the rage to ne next turn. You can't cast spells or maintain Concentration while raging.
 			</description>
 		</sheet>
 		<rules>
@@ -195,7 +195,7 @@
 			<p>While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.</p>
 		</description>
 		<sheet>
-			<description>While you arenâ€™t wearing armor, your AC equals {{ac:unarmored defense barbarian}}. You can use a shield and still gain this benefit.</description>
+			<description>While you aren't wearing armor, your AC equals {{ac:unarmored defense barbarian}}. You can use a shield and still gain this benefit.</description>
 		</sheet>
 		<rules>
 			<stat name="ac:unarmored defense barbarian:base" value="10" />
@@ -289,10 +289,10 @@
 	</element>
 	<element name="Fast Movement" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_FAST_MOVEMENT">
 		<description>
-			<p>Starting at 5th level, your speed increases by 10 feet while you arenâ€™t wearing heavy armor.</p>
+			<p>Starting at 5th level, your speed increases by 10 feet while you aren't wearing heavy armor.</p>
 		</description>
 		<sheet>
-			<description>Your speed increases by 10 feet while you arenâ€™t wearing heavy armor.</description>
+			<description>Your speed increases by 10 feet while you aren't wearing heavy armor.</description>
 		</sheet>
 		<rules>
 			<stat name="innate speed:misc" value="10" equipped="![armor:heavy]" requirements="[innate speed:1]" />
@@ -356,11 +356,11 @@
 	</element>
 	<element name="Relentless Rage" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_BARBARIAN_RELENTLESS_RAGE">
 		<description>
-			<p>Starting at 11th level, your rage can keep you fighting despite grievous wounds. If you drop to 0 hit points while youâ€™re raging and donâ€™t die outright, you can make a DC 10 Constitution saving throw. If you succeed, your Hit Points instead change to a number equal to twice your Barbarian level.</p>
+			<p>Starting at 11th level, your rage can keep you fighting despite grievous wounds. If you drop to 0 hit points while you're raging and don't die outright, you can make a DC 10 Constitution saving throw. If you succeed, your Hit Points instead change to a number equal to twice your Barbarian level.</p>
 			<p class="indent">Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.</p>
 		</description>
 		<sheet>
-			<description>If you drop to 0 hp while youâ€™re raging and donâ€™t die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to {{relentless rage hp}} hp instead. Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.</description>
+			<description>If you drop to 0 hp while you're raging and don't die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to {{relentless rage hp}} hp instead. Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.</description>
 		</sheet>
 		<rules>
 			<stat name="relentless rage hp" value="level" />

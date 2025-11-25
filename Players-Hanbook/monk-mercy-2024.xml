@@ -71,7 +71,7 @@
   </element>
 
   <!-- LEVEL 6 -->
-  <element name="Physicianâ€™s Touch" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_MONK_WOM_PHYSICIANS_TOUCH">
+  <element name="Physician's Touch" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_MONK_WOM_PHYSICIANS_TOUCH">
     <description>
       <p>Your Hand of Harm and Hand of Healing improve, as detailed below.</p>
       <p class="indent"><strong>Hand of Harm.</strong> When you use Hand of Harm on a creature, you can also give that creature the Poisoned condition until the end of your next turn.</p>

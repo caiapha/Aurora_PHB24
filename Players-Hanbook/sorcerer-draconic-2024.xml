@@ -39,7 +39,7 @@
   <element name="Draconic Resilience" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SORCERER_DRACONIC_FEATURE_DRACONIC_RESILIENCE">
     <description>
       <p>Your draconic gift manifests physically. Your Hit Point maximum increases by 3, and it increases by 1 whenever you gain another Sorcerer level.</p>
-      <p>Parts of your body are covered by dragon-like scales. While you arenâ€™t wearing armor, your base AC equals 10 + your Dexterity modifier + your Charisma modifier.</p>
+      <p>Parts of your body are covered by dragon-like scales. While you aren't wearing armor, your base AC equals 10 + your Dexterity modifier + your Charisma modifier.</p>
     </description>
     <sheet>
       <description>While not wearing armor your AC is 10 + Dex mod + Cha mod.</description>
@@ -63,7 +63,7 @@
       <table>
         <thead><tr><th>Sorcerer Level</th><th>Spells</th></tr></thead>
         <tbody>
-          <tr><td>3</td><td><em>Alter Self</em>, <em>Chromatic Orb</em>, <em>Command</em>, <em>Dragonâ€™s Breath</em></td></tr>
+          <tr><td>3</td><td><em>Alter Self</em>, <em>Chromatic Orb</em>, <em>Command</em>, <em>Dragon's Breath</em></td></tr>
           <tr><td>5</td><td><em>Fear</em>, <em>Fly</em></td></tr>
           <tr><td>7</td><td><em>Arcane Eye</em>, <em>Charm Monster</em></td></tr>
           <tr><td>9</td><td><em>Legend Lore</em>, <em>Summon Dragon</em></td></tr>
@@ -153,7 +153,7 @@
   <element name="Dragon Wings" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SORCERER_DRACONIC_FEATURE_DRAGON_WINGS">
     <description>
       <p><strong>Bonus Action.</strong> You manifest draconic wings that last for 1 hour or until you dismiss them (no action required). For the duration, you have a Fly Speed of 60 feet.</p>
-      <p>Once you use this feature, you canâ€™t use it again until you finish a Long Rest, unless you spend 3 Sorcery Points (no action required) to restore your use of it.</p>
+      <p>Once you use this feature, you can't use it again until you finish a Long Rest, unless you spend 3 Sorcery Points (no action required) to restore your use of it.</p>
     </description>
     <sheet action="Bonus Action" usage="1/Long Rest">
       <description>Manifest wings for 1 hour (or until dismissed): Fly Speed 60 ft. You can restore a use by spending 3 Sorcery Points.</description>
@@ -164,7 +164,7 @@
   <element name="Dragon Companion" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SORCERER_DRACONIC_FEATURE_DRAGON_COMPANION">
     <description>
       <p>You can cast <em>Summon Dragon</em> without a Material component. You can also cast it once without expending a spell slot; you regain the ability to cast it in this way when you finish a Long Rest.</p>
-      <p>Whenever you start casting the spell, you can modify it so that it doesnâ€™t require Concentration; if you do so, its duration becomes 1 minute for that casting.</p>
+      <p>Whenever you start casting the spell, you can modify it so that it doesn't require Concentration; if you do so, its duration becomes 1 minute for that casting.</p>
     </description>
     <sheet>
       <description>You can cast Summon Dragon without the Material component and 1 per Long Rest without expending a spell slot; you can also make that casting not require Concentration, but the duration becomes 1 minute.</description>

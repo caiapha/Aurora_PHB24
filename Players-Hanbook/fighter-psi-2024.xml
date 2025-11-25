@@ -120,7 +120,7 @@
 	<element name="Psi-Powered Leap" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_PSI_WARRIOR_TELEKINETIC_ADEPT_PSI_POWERED_LEAP">
 		<compendium display="false" />
 		<description display="false">
-			<p>As a bonus action, you can propel your body with your mind. You gain a flying speed equal to twice your walking speed until the end of the current turn. Once you take this bonus action, you canâ€™t do so again until you finish a short or long rest, unless you expend a Psionic Energy die to take it again.</p>
+			<p>As a bonus action, you can propel your body with your mind. You gain a flying speed equal to twice your walking speed until the end of the current turn. Once you take this bonus action, you can't do so again until you finish a short or long rest, unless you expend a Psionic Energy die to take it again.</p>
 		</description>
 		<sheet action="Bonus Action" usage="1/Short Rest">
 			<description>You gain a {{psi powered leap:speed}}ft flying speed until the end of the current turn. You ragin a use expending a Psionic Energy die.</description>
@@ -158,7 +158,7 @@
 			<p class="indent">Once you use this feature, you can't do so again until you finish a Long Rest unless you expend a Psionic Energy Die (no action required) to restore your use of it.</p>
 		</description>
 		<sheet action="Bonus Action" usage="1/Long Rest">
-			<description>You can choose up to {{bulwark of force:creatures}} creatures, which can include you, that you can see within 30 feet of you. Each of the chosen creatures is protected by half cover for 1 minute or until youâ€™re incapacitated. You can spend a Psionic Energy die to take the bonus action again.</description>
+			<description>You can choose up to {{bulwark of force:creatures}} creatures, which can include you, that you can see within 30 feet of you. Each of the chosen creatures is protected by half cover for 1 minute or until you're incapacitated. You can spend a Psionic Energy die to take the bonus action again.</description>
 		</sheet>
 		<rules>
 			<stat name="bulwark of force:creatures" value="1" bonus="base" />

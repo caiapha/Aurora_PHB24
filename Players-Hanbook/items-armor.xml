@@ -89,7 +89,7 @@
 	<element name="Chain Shirt" type="Armor" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARMOR_MEDIUM_CHAIN_SHIRT">
 		<supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
 		<description>
-			<p>Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearerâ€™s upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers.</p>
+			<p>Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer's upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers.</p>
 		</description>
 		<setters>
 			<set name="category">Armor</set>
@@ -127,7 +127,7 @@
 	<element name="Breastplate" type="Armor" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARMOR_MEDIUM_BREASTPLATE">
 		<supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
 		<description>
-			<p>This armor consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearerâ€™s vital organs while leaving the wearer relatively unencumbered.</p>
+			<p>This armor consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer's vital organs while leaving the wearer relatively unencumbered.</p>
 		</description>
 		<setters>
 			<set name="category">Armor</set>
@@ -145,7 +145,7 @@
 	<element name="Half Plate" type="Armor" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARMOR_MEDIUM_HALF_PLATE">
 		<supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
 		<description>
-			<p>Half plate consists of shaped metal plates that cover most of the wearerâ€™s body. It does not include leg protection beyond simple greaves that are attached with leather straps.</p>
+			<p>Half plate consists of shaped metal plates that cover most of the wearer's body. It does not include leg protection beyond simple greaves that are attached with leather straps.</p>
 		</description>
 		<setters>
 			<set name="category">Armor</set>
@@ -167,7 +167,7 @@
 	<element name="Ring Mail" type="Armor" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARMOR_HEAVY_RING_MAIL">
 		<supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
 		<description>
-			<p>This armor is leather armor with heavy rings sewn into it. The rings help reinforce the armor against blows from swords and axes. Ring mail is inferior to chain mail, and it's usually worn only by those who canâ€™t afford better armor.</p>
+			<p>This armor is leather armor with heavy rings sewn into it. The rings help reinforce the armor against blows from swords and axes. Ring mail is inferior to chain mail, and it's usually worn only by those who can't afford better armor.</p>
 		</description>
 		<setters>
 			<set name="category">Armor</set>

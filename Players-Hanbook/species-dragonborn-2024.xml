@@ -19,7 +19,7 @@
       <p><span class="feature">Size.</span> Medium.</p>
       <p><span class="feature">Speed.</span> 30 feet.</p>
       <p><span class="feature">Darkvision.</span> 60 feet.</p>
-      <p><span class="feature">Draconic Ancestry.</span> Choose a type of dragon from the <em>Draconic Ancestors</em> table. It determines the Breathâ€™s shape/save and the damage type you are resistant to.</p>
+      <p><span class="feature">Draconic Ancestry.</span> Choose a type of dragon from the <em>Draconic Ancestors</em> table. It determines the Breath's shape/save and the damage type you are resistant to.</p>
       <p><span class="feature">Breath Weapon.</span> When you take the Attack action, you can replace one of your attacks with an exhalation in a **15-ft cone** or a **5 by 30-ft line** (according to your ancestry). **DC** = 8 + **Con** + **PB**. Damage **1d10** (half on a success), which becomes **2d10** at 5th level, **3d10** at 11th, and **4d10** at 17th. Uses per Long Rest: **equal to your proficiency bonus**.</p>
       <p><span class="feature">Damage Resistance.</span> You have resistance to the damage type of your ancestry.</p>
     </description>
@@ -47,7 +47,7 @@
   <!-- DRACONIC ANCESTRY (container with table) -->
   <element name="Draconic Ancestry (2024)" type="Racial Trait" source="Player's Handbook (2024)" id="ID_RACIAL_TRAIT_DRAGONBORN_2024_DRACONIC_ANCESTRY">
     <description>
-      <p>Choose an ancestry from the table. It indicates the damage type and the Breathâ€™s shape/save.</p>
+      <p>Choose an ancestry from the table. It indicates the damage type and the Breath's shape/save.</p>
       <h5>Draconic Ancestors</h5>
       <table>
         <thead><tr><td>Dragon</td><td>Damage Type</td><td>Breath</td></tr></thead>

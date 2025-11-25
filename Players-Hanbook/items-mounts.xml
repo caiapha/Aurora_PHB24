@@ -109,7 +109,7 @@
 	</element> 
 	<element name="Barding" type="Item" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ITEM_BARDING">
 		<description>
-			<p>Barding is armor designed to protect an animalâ€™s head, neck, chest, and body. Any type of armor shown on the Armor table in this chapter can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much.</p>
+			<p>Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table in this chapter can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much.</p>
 		</description>
 		<setters>
 			<set name="category">Mounts &amp; Vehicles</set>

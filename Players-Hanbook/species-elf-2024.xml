@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Elf (2024)</name>
-    <description>Elf species from the 2024 Playerâ€™s Handbook for Aurora Builder.</description>
+    <description>Elf species from the 2024 Player's Handbook for Aurora Builder.</description>
     <author url="https://aurorabuilder.com">Aurora Builder</author>
     <update version="1.0.0">
       <file name="species-elf-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/species-elf-2024.xml" />
@@ -22,7 +22,7 @@
       <p><span class="feature">Elven Lineage.</span> Choose Drow, High Elf, or Wood Elf. You gain the listed 1st-level benefit now, and at character levels 3 and 5 you learn the listed spells (always prepared). You can cast each once per Long Rest without a spell slot, or using your slots. Choose Intelligence, Wisdom, or Charisma as the spellcasting ability when you select your lineage.</p>
       <p><span class="feature">Fey Ancestry.</span> You have advantage on saving throws to avoid or end the Charmed condition on yourself.</p>
       <p><span class="feature">Keen Senses.</span> You gain proficiency in one of the following skills: Insight, Perception, or Survival.</p>
-      <p><span class="feature">Trance.</span> You donâ€™t sleep; you finish a Long Rest in 4 hours of conscious meditation; magic canâ€™t put you to sleep.</p>
+      <p><span class="feature">Trance.</span> You don't sleep; you finish a Long Rest in 4 hours of conscious meditation; magic can't put you to sleep.</p>
     </description>
 
     <!-- Optional sheet reminder for the chosen spellcasting ability -->
@@ -57,7 +57,7 @@
   </element>
 
   <element name="Trance" type="Racial Trait" source="Player's Handbook (2024)" id="ID_RACIAL_TRAIT_ELF_2024_TRANCE">
-    <description><p>You donâ€™t sleep; you finish a Long Rest in 4 hours of conscious meditation; magic canâ€™t put you to sleep.</p></description>
+    <description><p>You don't sleep; you finish a Long Rest in 4 hours of conscious meditation; magic can't put you to sleep.</p></description>
     <sheet><description>Trance: Long Rest in 4 hours; cannot be magically put to sleep.</description></sheet>
   </element>
 

@@ -53,7 +53,7 @@
           <tr><td>11</td><td>+4</td><td class="left">Subclass Feature</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>â€”</td><td>â€”</td></tr>
           <tr><td>12</td><td>+4</td><td class="left">Ability Score Improvement</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>â€”</td><td>â€”</td></tr>
           <tr><td>13</td><td>+5</td><td class="left">Relentless Hunter</td><td>5</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>â€”</td></tr>
-          <tr><td>14</td><td>+5</td><td class="left">Natureâ€™s Veil</td><td>5</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>â€”</td></tr>
+          <tr><td>14</td><td>+5</td><td class="left">Nature's Veil</td><td>5</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>â€”</td></tr>
           <tr><td>15</td><td>+5</td><td class="left">Subclass Feature</td><td>5</td><td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>â€”</td></tr>
           <tr><td>16</td><td>+5</td><td class="left">Ability Score Improvement</td><td>5</td><td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>â€”</td></tr>
           <tr><td>17</td><td>+6</td><td class="left">Precise Hunter</td><td>6</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
@@ -237,7 +237,7 @@
   <!-- Favored Enemy -->
   <element name="Favored Enemy" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_FAVORED_ENEMY">
     <description>
-      <p>You always have the <em>Hunterâ€™s Mark</em> spell prepared. You can cast it a number of times without expending a spell slot, and you regain all expended uses when you finish a Long Rest (see the Favored Enemy column of the Ranger table).</p>
+      <p>You always have the <em>Hunter's Mark</em> spell prepared. You can cast it a number of times without expending a spell slot, and you regain all expended uses when you finish a Long Rest (see the Favored Enemy column of the Ranger table).</p>
     </description>
     <sheet action="Magic Action" usage="{{ranger:favored_enemy:freecasts}}/Long Rest">
       <description>You can casts Hunter's Mark without expending a spell slot .</description>
@@ -365,15 +365,15 @@
   <!-- Relentless Hunter -->
   <element name="Relentless Hunter" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_RELENTLESS_HUNTER">
     <description>
-      <p>Taking damage cannot break your Concentration on <em>Hunterâ€™s Mark</em>.</p>
+      <p>Taking damage cannot break your Concentration on <em>Hunter's Mark</em>.</p>
     </description>
     <sheet>
-      <description>Damage does not break your Concentration on Hunterâ€™s Mark.</description>
+      <description>Damage does not break your Concentration on Hunter's Mark.</description>
     </sheet>
   </element>
 
-  <!-- Natureâ€™s Veil -->
-  <element name="Natureâ€™s Veil" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_NATURES_VEIL">
+  <!-- Nature's Veil -->
+  <element name="Nature's Veil" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_NATURES_VEIL">
     <description>
       <p><strong>Bonus Action.</strong> You magically become Invisible until the end of your next turn. You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
     </description>
@@ -389,10 +389,10 @@
   <!-- Precise Hunter -->
   <element name="Precise Hunter" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_PRECISE_HUNTER">
     <description>
-      <p>You have Advantage on attack rolls against the creature currently marked by your <em>Hunterâ€™s Mark</em>.</p>
+      <p>You have Advantage on attack rolls against the creature currently marked by your <em>Hunter's Mark</em>.</p>
     </description>
     <sheet>
-      <description>You have Advantage on attack rolls against the creature marked by your Hunterâ€™s Mark.</description>
+      <description>You have Advantage on attack rolls against the creature marked by your Hunter's Mark.</description>
     </sheet>
   </element>
 
@@ -422,10 +422,10 @@
   <!-- Foe Slayer -->
   <element name="Foe Slayer" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_FOE_SLAYER">
     <description>
-      <p>The damage die of your <em>Hunterâ€™s Mark</em> is a d10 instead of a d6.</p>
+      <p>The damage die of your <em>Hunter's Mark</em> is a d10 instead of a d6.</p>
     </description>
     <sheet>
-      <description>Hunterâ€™s Mark damage die becomes d10.</description>
+      <description>Hunter's Mark damage die becomes d10.</description>
     </sheet>
   </element>
 </elements>

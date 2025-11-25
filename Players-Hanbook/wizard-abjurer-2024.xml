@@ -57,13 +57,13 @@
   <!-- ===== Level 3: Arcane Ward ===== -->
   <element name="Arcane Ward" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_WIZARD_ABJURER_FEATURE_ARCANE_WARD">
     <description>
-      <p>You can weave magic around yourself for protection. When you cast an Abjuration spell with a spell slot, you can simultaneously use a strand of the spellâ€™s magic to create a magical ward on yourself that lasts until you finish a Long Rest.</p>
-      <p class="indent">The ward has a Hit Point maximum equal to twice your Wizard level plus your Intelligence modifier. Whenever you take damage, the ward takes the damage instead; apply your Resistances and Vulnerabilities before reducing the wardâ€™s Hit Points. If the damage reduces the ward to 0 Hit Points, you take any remaining damage. While the ward has 0 Hit Points, it canâ€™t absorb damage, but its magic remains.</p>
+      <p>You can weave magic around yourself for protection. When you cast an Abjuration spell with a spell slot, you can simultaneously use a strand of the spell's magic to create a magical ward on yourself that lasts until you finish a Long Rest.</p>
+      <p class="indent">The ward has a Hit Point maximum equal to twice your Wizard level plus your Intelligence modifier. Whenever you take damage, the ward takes the damage instead; apply your Resistances and Vulnerabilities before reducing the ward's Hit Points. If the damage reduces the ward to 0 Hit Points, you take any remaining damage. While the ward has 0 Hit Points, it can't absorb damage, but its magic remains.</p>
       <p class="indent">Whenever you cast an Abjuration spell with a spell slot, the ward regains a number of Hit Points equal to twice the level of the spell slot. Alternatively, as a Bonus Action, you can expend a spell slot to restore Hit Points to the ward equal to twice the level of the spell slot expended.</p>
-      <p class="indent">Once you create the ward, you canâ€™t create it again until you finish a Long Rest.</p>
+      <p class="indent">Once you create the ward, you can't create it again until you finish a Long Rest.</p>
     </description>
     <sheet>
-      <description>When you cast an Abjuration spell with a spell slot, you create on you a Ward that lats until a Long Rest. The ward has {{abjurer:ward:max}} HP and it absorbs damage you would take; it benefits of any Resistance or Vulnerability you have. When you cast an Abjuration spell, it restores HP twice the slot level. As a Bonus Action you can expend a spell slot to restore HP twice the spell slot. Once created, you canâ€™t create it again until a Long Rest.</description>
+      <description>When you cast an Abjuration spell with a spell slot, you create on you a Ward that lats until a Long Rest. The ward has {{abjurer:ward:max}} HP and it absorbs damage you would take; it benefits of any Resistance or Vulnerability you have. When you cast an Abjuration spell, it restores HP twice the slot level. As a Bonus Action you can expend a spell slot to restore HP twice the spell slot. Once created, you can't create it again until a Long Rest.</description>
     </sheet>
     <rules>
       <stat name="abjurer:ward:max" value="intelligence:modifier" />

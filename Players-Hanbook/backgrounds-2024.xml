@@ -10,7 +10,7 @@
 	</info>
 	<element name="Acolyte" type="Background" source="Player's Handbook (2024)" id="ID_PHB24_BACKGROUND_ACOLYTE">
 		<description>
-			<p>Acolyte: you devoted yourself to service in a temple, either nestled in a town or secluded in a sacred grove. There you performed rites in honor of a god or pantheon. You served under a priest and studied religion. Thanks to your priestâ€™s instruction and your own devotion, you also learned how to channel a modicum of divine power in service to your place of worship and the people who prayed there.</p>
+			<p>Acolyte: you devoted yourself to service in a temple, either nestled in a town or secluded in a sacred grove. There you performed rites in honor of a god or pantheon. You served under a priest and studied religion. Thanks to your priest's instruction and your own devotion, you also learned how to channel a modicum of divine power in service to your place of worship and the people who prayed there.</p>
 			<p>Magic initiate (Cleric): once per Long Rest, you can cast the 1st level spell you learned by background without spending a spell slot. You can also cast this spell expending a spell slot you have.</p>
 			<ul class="unstyled">
 				<li><strong>Ability Scores:</strong> Intelligence, Wisdom, Charisma</li>
@@ -72,7 +72,7 @@
  	</element>
 	<element name="Criminal" type="Background" source="Player's Handbook (2024)" id="ID_PHB24_BACKGROUND_CRIMINAL">
 		<description>
-			<p>Criminal: You eked out a living in dark alleyways, cutting purses or burgling shops. Perhaps you were part of a small gang of like-minded wrongdoers who looked out for each other. Or maybe you were a lone wolf, fending for yourself against the local thievesâ€™ guild and more fearsome lawbreakers.</p>
+			<p>Criminal: You eked out a living in dark alleyways, cutting purses or burgling shops. Perhaps you were part of a small gang of like-minded wrongdoers who looked out for each other. Or maybe you were a lone wolf, fending for yourself against the local thieves' guild and more fearsome lawbreakers.</p>
 			<ul class="unstyled">
 				<li><strong>Ability Scores:</strong> Dexterity, Constitution, Intelligence</li>
 				<li><strong>Feat:</strong> Alert</li>

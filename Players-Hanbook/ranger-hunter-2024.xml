@@ -34,23 +34,23 @@
     </rules>
   </element>
 
-  <!-- ===== Level 3: Hunterâ€™s Lore ===== -->
-  <element name="Hunterâ€™s Lore" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_HUNTER_FEATURE_HUNTERS_LORE">
+  <!-- ===== Level 3: Hunter's Lore ===== -->
+  <element name="Hunter's Lore" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_HUNTER_FEATURE_HUNTERS_LORE">
     <description>
-      <p>You can call on the forces of nature to reveal the strengths and weaknesses of your prey. While a creature is marked by your <em>Hunterâ€™s Mark</em>, you know whether that creature has any Immunities, Resistances, or Vulnerabilities, and if it has any, you know what they are.</p>
+      <p>You can call on the forces of nature to reveal the strengths and weaknesses of your prey. While a creature is marked by your <em>Hunter's Mark</em>, you know whether that creature has any Immunities, Resistances, or Vulnerabilities, and if it has any, you know what they are.</p>
     </description>
     <sheet>
-      <description>While your Hunterâ€™s Mark is on a creature, you know its Immunities, Resistances, and Vulnerabilities (if any).</description>
+      <description>While your Hunter's Mark is on a creature, you know its Immunities, Resistances, and Vulnerabilities (if any).</description>
     </sheet>
   </element>
 
-  <!-- ===== Level 3: Hunterâ€™s Prey (choice, swappable on rest) ===== -->
-  <element name="Hunterâ€™s Prey" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_HUNTER_FEATURE_HUNTERS_PREY">
+  <!-- ===== Level 3: Hunter's Prey (choice, swappable on rest) ===== -->
+  <element name="Hunter's Prey" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_HUNTER_FEATURE_HUNTERS_PREY">
     <description>
       <p>You gain one of the following options of your choice. Whenever you finish a Short or Long Rest, you can replace your choice with the other option.</p>
       <ul>
-        <li><strong>Colossus Slayer.</strong> When you hit a creature with a weapon, the weapon deals an extra <strong>1d8</strong> damage to the target if itâ€™s missing any of its Hit Points. You can deal this extra damage only once per turn.</li>
-        <li><strong>Horde Breaker.</strong> Once on each of your turns when you make an attack with a weapon, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target, is within the weaponâ€™s range, and that you havenâ€™t attacked this turn.</li>
+        <li><strong>Colossus Slayer.</strong> When you hit a creature with a weapon, the weapon deals an extra <strong>1d8</strong> damage to the target if it's missing any of its Hit Points. You can deal this extra damage only once per turn.</li>
+        <li><strong>Horde Breaker.</strong> Once on each of your turns when you make an attack with a weapon, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target, is within the weapon's range, and that you haven't attacked this turn.</li>
       </ul>
     </description>
     <sheet usage="After a Short or Long Rest">
@@ -62,14 +62,14 @@
     </rules>
   </element>
 
-  <!-- Hunterâ€™s Prey options -->
+  <!-- Hunter's Prey options -->
   <element name="â€¢ Colossus Slayer" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_HUNTER_FEATURE_COLOSSUS_SLAYER">
     <supports>Hunter Prey 2024</supports>
     <description>
       <p>Your tenacity can wear down even the most resilient foes. When you hit a creature with a weapon, the weapon deals an extra 1d8 damage to the target if it's missing any of its Hit Points. You can deal this extra damage only once per turn.</p>
     </description>
     <sheet>
-      <description>Once per turn, when you hit a creature that isnâ€™t at full HP, deal +1d8 damage.</description>
+      <description>Once per turn, when you hit a creature that isn't at full HP, deal +1d8 damage.</description>
     </sheet>
   </element>
 
@@ -122,18 +122,18 @@
     </sheet>
   </element>
 
-  <!-- ===== Level 11: Superior Hunterâ€™s Prey ===== -->
-  <element name="Superior Hunterâ€™s Prey" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_HUNTER_FEATURE_SUPERIOR_HUNTERS_PREY">
+  <!-- ===== Level 11: Superior Hunter's Prey ===== -->
+  <element name="Superior Hunter's Prey" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_HUNTER_FEATURE_SUPERIOR_HUNTERS_PREY">
     <description>
-      <p>Once per turn when you deal damage to a creature marked by your <em>Hunterâ€™s Mark</em>, you can also deal that spellâ€™s extra damage to a different creature that you can see within 30 feet of the first creature.</p>
+      <p>Once per turn when you deal damage to a creature marked by your <em>Hunter's Mark</em>, you can also deal that spell's extra damage to a different creature that you can see within 30 feet of the first creature.</p>
     </description>
     <sheet usage="1/Turn">
-      <description>When you deal damage to your Hunterâ€™s Mark target, you can also deal the same spellâ€™s extra damage to a different creature within 30 ft of it.</description>
+      <description>When you deal damage to your Hunter's Mark target, you can also deal the same spell's extra damage to a different creature within 30 ft of it.</description>
     </sheet>
   </element>
 
-  <!-- ===== Level 15: Superior Hunterâ€™s Defense ===== -->
-  <element name="Superior Hunterâ€™s Defense" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_HUNTER_FEATURE_SUPERIOR_HUNTERS_DEFENSE">
+  <!-- ===== Level 15: Superior Hunter's Defense ===== -->
+  <element name="Superior Hunter's Defense" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_HUNTER_FEATURE_SUPERIOR_HUNTERS_DEFENSE">
     <description>
       <p><strong>Reaction.</strong> When you take damage, you can give yourself Resistance to that damage and any other damage of the same type until the end of the current turn.</p>
     </description>

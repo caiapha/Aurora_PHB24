@@ -107,7 +107,7 @@
   <!-- ===== Level 20: Holy Nimbus ===== -->
   <element name="Holy Nimbus" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_PALADIN_DEVOTION_FEATURE_HOLY_NIMBUS">
     <description>
-      <p><strong>Bonus Action.</strong> Imbue your Aura of Protection with holy power for 10 minutes or until you end the benefits (no action required). Once you use this feature, you canâ€™t use it again until you finish a Long Rest; you can also restore a use by expending a 5th-level spell slot (no action required).</p>
+      <p><strong>Bonus Action.</strong> Imbue your Aura of Protection with holy power for 10 minutes or until you end the benefits (no action required). Once you use this feature, you can't use it again until you finish a Long Rest; you can also restore a use by expending a 5th-level spell slot (no action required).</p>
       <ul>
         <li><strong>Holy Ward.</strong> You have Advantage on any saving throw you are forced to make by a Fiend or an Undead.</li>
         <li><strong>Radiant Damage.</strong> Whenever an enemy starts its turn in the aura, it takes Radiant damage equal to your Charisma modifier plus your Proficiency Bonus.</li>

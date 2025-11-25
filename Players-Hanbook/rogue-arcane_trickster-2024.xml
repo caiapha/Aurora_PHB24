@@ -138,10 +138,10 @@
   <!-- ===== Level 3: Mage Hand Legerdemain ===== -->
   <element name="Mage Hand Legerdemain" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ROGUE_ARCANE_TRICKSTER_FEATURE_MAGE_HAND_LEGERDEMAIN">
     <description>
-      <p>When you cast <em>Mage Hand</em>, you can cast it as a Bonus Action, and you can make the spectral hand Invisible. You can control the hand as a Bonus Action, and through it you can make Dexterity (Sleight of Hand) checks. The hand can stow or retrieve an object; it can pick locks and disarm traps using your Thievesâ€™ Tools if they are within 30 feet of you and the hand.</p>
+      <p>When you cast <em>Mage Hand</em>, you can cast it as a Bonus Action, and you can make the spectral hand Invisible. You can control the hand as a Bonus Action, and through it you can make Dexterity (Sleight of Hand) checks. The hand can stow or retrieve an object; it can pick locks and disarm traps using your Thieves' Tools if they are within 30 feet of you and the hand.</p>
     </description>
     <sheet action="Bonus Action">
-      <description>You cast Mage Hand which can be Invisible. You can control as a Bonus Action and make Sleight of Hand checks through it, including using Thievesâ€™ Tools within 30 ft.</description>
+      <description>You cast Mage Hand which can be Invisible. You can control as a Bonus Action and make Sleight of Hand checks through it, including using Thieves' Tools within 30 ft.</description>
     </sheet>
   </element>
 
@@ -168,10 +168,10 @@
   <!-- ===== Level 17: Spell Thief ===== -->
   <element name="Spell Thief" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ROGUE_ARCANE_TRICKSTER_FEATURE_SPELL_THIEF">
     <description>
-      <p><strong>Reaction.</strong> Immediately after a creature you can see casts a spell that targets only you, you can force that creature to make a saving throw using its spellcasting ability. On a failed save, you negate the spellâ€™s effect on you, and you steal knowledge of that spell for 8 hours. During that time, you can cast the spell once without expending a spell slot, and the caster canâ€™t cast it. Once you use this feature, you canâ€™t use it again until you finish a Long Rest.</p>
+      <p><strong>Reaction.</strong> Immediately after a creature you can see casts a spell that targets only you, you can force that creature to make a saving throw using its spellcasting ability. On a failed save, you negate the spell's effect on you, and you steal knowledge of that spell for 8 hours. During that time, you can cast the spell once without expending a spell slot, and the caster can't cast it. Once you use this feature, you can't use it again until you finish a Long Rest.</p>
     </description>
     <sheet action="Reaction" usage="1/Long Rest">
-      <description>When a creature casts any spell that targets you, the creature must make a INT Saving Throw DC{{arcane trickster:spellcasting:dc}}. On a failure, you negate the spell effect on you and learn it for 8 hours; you can cast it if you have a spell slot of adequate level, and the caster canâ€™t cast it.</description>
+      <description>When a creature casts any spell that targets you, the creature must make a INT Saving Throw DC{{arcane trickster:spellcasting:dc}}. On a failure, you negate the spell effect on you and learn it for 8 hours; you can cast it if you have a spell slot of adequate level, and the caster can't cast it.</description>
     </sheet>
   </element>
 </elements>

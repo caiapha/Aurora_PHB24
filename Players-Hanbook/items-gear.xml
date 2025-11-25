@@ -31,7 +31,7 @@
 			<set name="stackable">true</set>
 		</setters>
 	</element>
-	<element name="Alchemistâ€™s Fire (flask)" type="Item" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ITEM_ALCHEMISTS_FIRE_FLASK">
+	<element name="Alchemist's Fire (flask)" type="Item" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ITEM_ALCHEMISTS_FIRE_FLASK">
 		<description>
 			<p>This sticky, adhesive fluid ignites when exposed to air. As an action, you can throw this flask up to 20 feet, shattering it on impact. Make a ranged attack against a creature or object, treating the alchemist's fire as an improvised weapon. On a hit, the target takes 1d4 fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames.</p>
 		</description>
@@ -175,7 +175,7 @@
 	</element>
 	<element name="Ball Bearings (bag of 1,000)" type="Item" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ITEM_BALLBEARINGS">
 		<description>
-			<p>As an action, you can spill these tiny metal balls from their pouch to cover a level, square area that is 10 feet on a side. A creature moving across the covered area must succeed on a DC 10 Dexterity saving throw or fall prone. A creature moving through the area at half speed doesnâ€™t need to make the save.</p>
+			<p>As an action, you can spill these tiny metal balls from their pouch to cover a level, square area that is 10 feet on a side. A creature moving across the covered area must succeed on a DC 10 Dexterity saving throw or fall prone. A creature moving through the area at half speed doesn't need to make the save.</p>
 		</description>
 		<setters>
 			<set name="category">Adventuring Gear</set>
@@ -283,7 +283,7 @@
 	</element>
 	<element name="Caltrops (bag of 20)" type="Item" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ITEM_CALTROPS_BAGOF20">
 		<description>
-			<p>As an action, you can spread a bag of caltrops to cover a square area that is 5 feet on a side. Any creature that enters the area must succeed on a DC 15 Dexterity saving throw or stop moving this turn and take 1 piercing damage. Taking this damage reduces the creatureâ€™s walking speed by 10 feet until the creature regains at least 1 hit point. A creature moving through the area at half speed doesnâ€™t need to make the save.</p>
+			<p>As an action, you can spread a bag of caltrops to cover a square area that is 5 feet on a side. Any creature that enters the area must succeed on a DC 15 Dexterity saving throw or stop moving this turn and take 1 piercing damage. Taking this damage reduces the creature's walking speed by 10 feet until the creature regains at least 1 hit point. A creature moving through the area at half speed doesn't need to make the save.</p>
 		</description>
 		<setters>
 			<set name="category">Adventuring Gear</set>
@@ -355,9 +355,9 @@
 			<set name="weight" lb="25">25 lb.</set>
 		</setters>
 	</element>
-	<element name="Climberâ€™s Kit" type="Item" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ITEM_CLIMBERSKIT">
+	<element name="Climber's Kit" type="Item" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ITEM_CLIMBERSKIT">
 		<description>
-			<p>A climberâ€™s kit includes special pitons, boot tips, gloves, and a harness. You can use the climberâ€™s kit as an action to anchor yourself; when you do, you canâ€™t fall more than 25 feet from the point where you anchored yourself, and you canâ€™t climb more than 25 feet away from that point without undoing the anchor.</p>
+			<p>A climber's kit includes special pitons, boot tips, gloves, and a harness. You can use the climber's kit as an action to anchor yourself; when you do, you can't fall more than 25 feet from the point where you anchored yourself, and you can't climb more than 25 feet away from that point without undoing the anchor.</p>
 		</description>
 		<setters>
 			<set name="category">Adventuring Gear</set>
@@ -396,7 +396,7 @@
 			<set name="weight" lb="6">6 lb.</set>
 		</setters>
 	</element>
-	<element name="Clothes, Travelerâ€™s" type="Item" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ITEM_CLOTHES_TRAVELERS">
+	<element name="Clothes, Traveler's" type="Item" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ITEM_CLOTHES_TRAVELERS">
 		<description>
 			<p></p>
 		</description>
@@ -418,7 +418,7 @@
 	</element>
 	<element name="Crowbar" type="Item" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ITEM_CROWBAR">
 		<description>
-			<p>Using a crowbar grants advantage to Strength checks where the crowbarâ€™s leverage can be applied.</p>
+			<p>Using a crowbar grants advantage to Strength checks where the crowbar's leverage can be applied.</p>
 		</description>
 		<setters>
 			<set name="category">Adventuring Gear</set>
@@ -530,7 +530,7 @@
 			<set name="stackable">true</set>
 		</setters>
 	</element>
-	<element name="Healerâ€™s Kit" type="Item" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ITEM_HEALERSKIT">
+	<element name="Healer's Kit" type="Item" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ITEM_HEALERSKIT">
 		<description>
 			<p>This kit is a leather pouch containing bandages, salves, and splints. The kit has ten uses. As an action, you can expend one use of the kit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check. </p>
 		</description>
@@ -689,7 +689,7 @@
 	</element>
 	<element name="Lock" type="Item" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ITEM_LOCK">
 		<description>
-			<p>A key is provided with the lock. Without the key, a creature proficient with thievesâ€™ tools can pick this lock with a successful DC 15 Dexterity check. Your GM may decide that better locks are available for higher prices. </p>
+			<p>A key is provided with the lock. Without the key, a creature proficient with thieves' tools can pick this lock with a successful DC 15 Dexterity check. Your GM may decide that better locks are available for higher prices. </p>
 		</description>
 		<setters>
 			<set name="category">Adventuring Gear</set>
@@ -711,7 +711,7 @@
 	</element>
 	<element name="Manacles" type="Item" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ITEM_MANACLES">
 		<description>
-			<p>These metal restraints can bind a Small or Medium creature. Escaping the manacles requires a successful DC 20 Dexterity check. Breaking them requires a successful DC 20 Strength check. Each set of manacles comes with one key. Without the key, a creature proficient with thievesâ€™ tools can pick the manaclesâ€™ lock with a successful DC 15 Dexterity check. Manacles have 15 hit points.</p>
+			<p>These metal restraints can bind a Small or Medium creature. Escaping the manacles requires a successful DC 20 Dexterity check. Breaking them requires a successful DC 20 Strength check. Each set of manacles comes with one key. Without the key, a creature proficient with thieves' tools can pick the manacles' lock with a successful DC 15 Dexterity check. Manacles have 15 hit points.</p>
 		</description>
 		<setters>
 			<set name="category">Adventuring Gear</set>
@@ -786,7 +786,7 @@
 			<set name="stackable">true</set>
 		</setters>
 	</element>
-	<element name="Pick, Minerâ€™s" type="Item" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ITEM_PICK_MINERS">
+	<element name="Pick, Miner's" type="Item" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ITEM_PICK_MINERS">
 		<description>
 			<p></p>
 		</description>
@@ -946,7 +946,7 @@
 			<set name="weight" lb="0.5">Â½ lb.</set>
 		</setters>
 	</element>
-	<element name="Scale, Merchantâ€™s" type="Item" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ITEM_SCALE_MERCHANTS">
+	<element name="Scale, Merchant's" type="Item" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ITEM_SCALE_MERCHANTS">
 		<description>
 			<p>A scale includes a small balance, pans, and a suitable assortment of weights up to 2 pounds. With it, you can measure the exact weight of small objects, such as raw precious metals or trade goods, to help determine their worth.</p>
 		</description>

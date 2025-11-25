@@ -52,7 +52,7 @@
       <table>
         <thead><tr><th>Paladin Level</th><th>Spells</th></tr></thead>
         <tbody>
-          <tr><td>3</td><td><em>Bane</em>, <em>Hunterâ€™s Mark</em></td></tr>
+          <tr><td>3</td><td><em>Bane</em>, <em>Hunter's Mark</em></td></tr>
           <tr><td>5</td><td><em>Hold Person</em>, <em>Misty Step</em></td></tr>
           <tr><td>9</td><td><em>Haste</em>, <em>Protection from Energy</em></td></tr>
           <tr><td>13</td><td><em>Banishment</em>, <em>Dimension Door</em></td></tr>
@@ -83,10 +83,10 @@
   <!-- ===== Level 7: Relentless Avenger ===== -->
   <element name="Relentless Avenger" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_PALADIN_VENGEANCE_FEATURE_RELENTLESS_AVENGER">
     <description>
-      <p>When you hit a creature with an Opportunity Attack, you can reduce the creatureâ€™s Speed to 0 until the end of the current turn. You can then move up to half your Speed as part of the same Reaction, and this movement does not provoke Opportunity Attacks.</p>
+      <p>When you hit a creature with an Opportunity Attack, you can reduce the creature's Speed to 0 until the end of the current turn. You can then move up to half your Speed as part of the same Reaction, and this movement does not provoke Opportunity Attacks.</p>
     </description>
     <sheet action="Reaction">
-      <description>On a hit with an Opportunity Attack, you reduce the targetâ€™s Speed to 0 until end of turn; then move up to half your Speed as part of the same Reaction without provoking Opportunity Attacks.</description>
+      <description>On a hit with an Opportunity Attack, you reduce the target's Speed to 0 until end of turn; then move up to half your Speed as part of the same Reaction without provoking Opportunity Attacks.</description>
     </sheet>
   </element>
 
@@ -103,7 +103,7 @@
   <!-- ===== Level 20: Avenging Angel ===== -->
   <element name="Avenging Angel" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_PALADIN_VENGEANCE_FEATURE_AVENGING_ANGEL">
     <description>
-      <p><strong>Bonus Action.</strong> You gain the benefits below for 10 minutes or until you end them (no action required). Once you use this feature, you canâ€™t use it again until you finish a Long Rest; you can also restore a use by expending a 5th-level spell slot (no action required).</p>
+      <p><strong>Bonus Action.</strong> You gain the benefits below for 10 minutes or until you end them (no action required). Once you use this feature, you can't use it again until you finish a Long Rest; you can also restore a use by expending a 5th-level spell slot (no action required).</p>
       <ul>
         <li><strong>Flight.</strong> You sprout spectral wings and have a Fly Speed of 60 feet; you can hover.</li>
         <li><strong>Frightful Aura.</strong> Whenever an enemy starts its turn in your Aura of Protection, it must succeed on a Wisdom saving throw or have the Frightened condition for 1 minute or until it takes any damage. Attack rolls against the Frightened creature have Advantage.</li>

@@ -35,7 +35,7 @@
   <!-- ===== Level 3: Primal Companion ===== -->
   <element name="Primal Companion" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_PRIMAL_COMPANION">
     <description>
-      <p>You magically bond with a primal beast that accompanies you in battle. Choose one stat block: <em>Beast of the Land</em>, <em>Beast of the Sea</em>, or <em>Beast of the Sky</em> (appearance as you like). The beast acts on your turn. On your turn, you can use a Bonus Action to command the beast to take the Beastâ€™s Strike action; otherwise, it takes the Dodge action.</p>
+      <p>You magically bond with a primal beast that accompanies you in battle. Choose one stat block: <em>Beast of the Land</em>, <em>Beast of the Sea</em>, or <em>Beast of the Sky</em> (appearance as you like). The beast acts on your turn. On your turn, you can use a Bonus Action to command the beast to take the Beast's Strike action; otherwise, it takes the Dodge action.</p>
       <p class="indent"><strong>Primal Bond.</strong> Add your Proficiency Bonus to any ability check or saving throw the beast makes. The beast uses your Proficiency Bonus. The beast understands the languages you know.</p>
       <p class="indent"><strong>Resummoning and Replacement.</strong> If the beast has died within the last hour, you can use your Magic action to touch it and expend a spell slot of 1st level or higher; after 1 minute, it returns to life with all its Hit Points restored. Whenever you finish a Long Rest, you can summon a different primal beast. The new beast appears in an unoccupied space within 5 feet of you; the previous beast vanishes. The beast vanishes if you die.</p>
     </description>
@@ -62,11 +62,11 @@
   <!-- ===== Level 11: Bestial Fury ===== -->
   <element name="Bestial Fury" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_BESTIAL_FURY">
     <description>
-      <p>When you command your Primal Companion to take the Beastâ€™s Strike action, the beast can use it twice.</p>
-      <p class="indent">In addition, the first time each turn it hits a creature under the effect of your <em>Hunterâ€™s Mark</em> spell, the beast deals extra Force damage equal to the bonus damage of that spell.</p>
+      <p>When you command your Primal Companion to take the Beast's Strike action, the beast can use it twice.</p>
+      <p class="indent">In addition, the first time each turn it hits a creature under the effect of your <em>Hunter's Mark</em> spell, the beast deals extra Force damage equal to the bonus damage of that spell.</p>
     </description>
     <sheet>
-      <description>When you command Beastâ€™s Strike, your companion can strike twice. First time each turn it hits a creature marked by your Hunterâ€™s Mark: 1d{{Bestial Fury:damage}} extra Force damage.</description>
+      <description>When you command Beast's Strike, your companion can strike twice. First time each turn it hits a creature marked by your Hunter's Mark: 1d{{Bestial Fury:damage}} extra Force damage.</description>
     </sheet>
     <rules>
         <stat name="Bestial Fury:damage" value="6" level="11" bonus="base" />

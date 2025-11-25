@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Human (2024)</name>
-    <description>Human species from the 2024 Playerâ€™s Handbook for Aurora Builder (verbatim traits).</description>
+    <description>Human species from the 2024 Player's Handbook for Aurora Builder (verbatim traits).</description>
     <author url="https://aurorabuilder.com">Aurora Builder</author>
     <update version="1.0.0">
       <file name="species-human-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/species-human-2024.xml" />

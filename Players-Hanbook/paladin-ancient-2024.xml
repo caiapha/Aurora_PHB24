@@ -34,8 +34,8 @@
     </rules>
   </element>
 
-  <!-- ===== Level 3: Natureâ€™s Wrath (Channel Divinity) ===== -->
-  <element name="Natureâ€™s Wrath" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_PALADIN_ANCIENTS_FEATURE_NATURES_WRATH">
+  <!-- ===== Level 3: Nature's Wrath (Channel Divinity) ===== -->
+  <element name="Nature's Wrath" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_PALADIN_ANCIENTS_FEATURE_NATURES_WRATH">
     <description>
       <p><strong>Magic Action; Channel Divinity.</strong> You conjure spectral vines. Each creature of your choice that you can see within 15 feet of yourself must succeed on a Strength saving throw or gain the Restrained condition for 1 minute. A restrained creature repeats the save at the end of each of its turns, ending the effect on a success.</p>
     </description>
@@ -101,7 +101,7 @@
   <!-- ===== Level 15: Undying Sentinel ===== -->
   <element name="Undying Sentinel" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_PALADIN_ANCIENTS_FEATURE_UNDYING_SENTINEL">
     <description>
-      <p>When you are reduced to 0 Hit Points and not killed outright, you can drop to 1 Hit Point instead, and you regain Hit Points equal to three times your Paladin level. Once you use this feature, you canâ€™t use it again until you finish a Long Rest. In addition, you canâ€™t be aged magically, and you cease visibly aging.</p>
+      <p>When you are reduced to 0 Hit Points and not killed outright, you can drop to 1 Hit Point instead, and you regain Hit Points equal to three times your Paladin level. Once you use this feature, you can't use it again until you finish a Long Rest. In addition, you can't be aged magically, and you cease visibly aging.</p>
     </description>
     <sheet usage="1/Long Rest">
       <description>When reduced to 0 HP but not killed outright, drop to 1 HP and regain {{undying sentinel}} HP. Moreover you are immune to magical aging and cease visible aging.</description>
@@ -116,7 +116,7 @@
   <!-- ===== Level 20: Elder Champion ===== -->
   <element name="Elder Champion" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_PALADIN_ANCIENTS_FEATURE_ELDER_CHAMPION">
     <description>
-      <p><strong>Bonus Action.</strong> You imbue your Aura of Protection with primal power for 1 minute or until you end the effect (no action required). Once you use this feature, you canâ€™t use it again until you finish a Long Rest; you can also restore a use by expending a 5th-level spell slot (no action required).</p>
+      <p><strong>Bonus Action.</strong> You imbue your Aura of Protection with primal power for 1 minute or until you end the effect (no action required). Once you use this feature, you can't use it again until you finish a Long Rest; you can also restore a use by expending a 5th-level spell slot (no action required).</p>
       <ul>
         <li><strong>Diminish Defiance.</strong> Enemies in the aura have Disadvantage on saving throws against your spells and Channel Divinity options.</li>
         <li><strong>Regeneration.</strong> At the start of each of your turns, you regain 10 Hit Points.</li>

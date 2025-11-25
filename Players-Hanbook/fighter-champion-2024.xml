@@ -79,7 +79,7 @@
 			<p class="indent"><strong><i>Heroic Rally.</i></strong> At the start of each of your turns, you regain Hit Points equal to 5 plus your Constitution modifier if you are Bloodied and have at least 1 Hit Point.</p>
 		</description>
 		<sheet>
-			<description>You have Advantage on Death Saving Throw and a 18-19 roll count as 20. At the start of each of your turns, you regain {{survivor:hp}} hp if you have no more than half of your hp left. You donâ€™t gain this benefit if you have 0 hp.</description>
+			<description>You have Advantage on Death Saving Throw and a 18-19 roll count as 20. At the start of each of your turns, you regain {{survivor:hp}} hp if you have no more than half of your hp left. You don't gain this benefit if you have 0 hp.</description>
 		</sheet>
 		<rules>
 			<stat name="survivor:hp" value="5" />

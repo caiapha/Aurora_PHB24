@@ -29,7 +29,7 @@
       <p><strong>Skills:</strong> Choose two from Arcana, Deception, History, Intimidation, Investigation, Nature, Religion</p>
 
       <h4>Equipment</h4>
-      <p>You start with the following equipment, in addition to the equipment granted by your background: a Light crossbow and 20 bolts or any Simple weapon; a Component pouch or an Arcane focus; a Scholarâ€™s pack or a Dungeoneerâ€™s pack; Leather armor and a Dagger.</p>
+      <p>You start with the following equipment, in addition to the equipment granted by your background: a Light crossbow and 20 bolts or any Simple weapon; a Component pouch or an Arcane focus; a Scholar's pack or a Dungeoneer's pack; Leather armor and a Dagger.</p>
 
       <h5 class="caption">THE WARLOCK</h5>
       <table class="class-features">
@@ -267,7 +267,7 @@
 
   <element name="Contact Patron" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_CONTACT_PATRON">
     <description>
-      <p>You can beseech your patron for insight. The featureâ€™s effects and usage are described in the class.</p>
+      <p>You can beseech your patron for insight. The feature's effects and usage are described in the class.</p>
     </description>
     <sheet usage="1/Long Rest">
       <description>You can cast the Contact Other Plane spell to contact your patreon, without expending a spell slot and automatically succeeding.  </description>

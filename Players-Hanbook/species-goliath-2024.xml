@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Goliath (2024)</name>
-    <description>Goliath species from the 2024 Playerâ€™s Handbook for Aurora Builder.</description>
+    <description>Goliath species from the 2024 Player's Handbook for Aurora Builder.</description>
     <author url="https://aurorabuilder.com">Aurora Builder</author>
     <update version="1.0.0">
       <file name="species-goliath-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/species-goliath-2024.xml" />
@@ -66,11 +66,11 @@
   <element name="Giant Ancestry: Frost's Chill" type="Racial Trait" source="Player's Handbook (2024)" id="ID_GOLIATH_2024_ANCESTRY_FROST">
     <supports>Goliath2024Ancestry</supports>
     <description>
-      <p>When you hit a target with an attack and deal damage, you can also deal <strong>1d6 Cold</strong> damage and reduce the targetâ€™s Speed by 10 feet until the start of your next turn.</p>
+      <p>When you hit a target with an attack and deal damage, you can also deal <strong>1d6 Cold</strong> damage and reduce the target's Speed by 10 feet until the start of your next turn.</p>
       <p>Uses: {{proficiency}}/Long Rest.</p>
     </description>
     <sheet usage="{{proficiency}}/Long Rest">
-      <description>On a hit: +1d6 Cold damages; reduce targetâ€™s Speed by 10 ft until your next turn.</description>
+      <description>On a hit: +1d6 Cold damages; reduce target's Speed by 10 ft until your next turn.</description>
     </sheet>
   </element>
 
@@ -120,7 +120,7 @@
   <!-- LARGE FORM -->
   <element name="Large Form" type="Racial Trait" source="Player's Handbook (2024)" id="ID_GOLIATH_2024_LARGE_FORM">
     <description>
-        <p><strong>5th level.</strong> As a Bonus Action, you can change your size to Large if youâ€™re in a big enough space. This transformation lasts for 10 minutes or until you end it (no action required). For the duration, you have advantage on Strength checks, and your Speed increases by 10 feet. Once you use this trait, you canâ€™t use it again until you finish a Long Rest.</p>
+        <p><strong>5th level.</strong> As a Bonus Action, you can change your size to Large if you're in a big enough space. This transformation lasts for 10 minutes or until you end it (no action required). For the duration, you have advantage on Strength checks, and your Speed increases by 10 feet. Once you use this trait, you can't use it again until you finish a Long Rest.</p>
     </description>
     <sheet action="Bonus Action" usage="1/Long Rest">
         <description>For 10 minutes, your size grows to Large, you have advantage on Strength checks and your Speed increases by 10 ft (end early: no action).</description>

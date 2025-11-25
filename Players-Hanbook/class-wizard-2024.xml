@@ -29,7 +29,7 @@
       <p><strong>Skills:</strong> Choose two from Arcana, History, Insight, Investigation, Medicine, Nature, Religion</p>
 
       <h4>Equipment</h4>
-      <p>You start with the following equipment, in addition to the equipment granted by your background: two Daggers; an Arcane Focus (such as a Quarterstaff) or a Component Pouch; a Spellbook; a Scholarâ€™s Pack; and a Robe (or 55 gp).</p>
+      <p>You start with the following equipment, in addition to the equipment granted by your background: two Daggers; an Arcane Focus (such as a Quarterstaff) or a Component Pouch; a Spellbook; a Scholar's Pack; and a Robe (or 55 gp).</p>
 
       <h5 class="caption">THE WIZARD</h5>
       <table class="class-features">
@@ -132,7 +132,7 @@
       <p>You know three Wizard cantrips of your choice. Whenever you finish a Long Rest, you can replace one of your cantrips from this feature with another Wizard cantrip of your choice. When you reach Wizard levels 4 and 10, you learn another Wizard cantrip of your choice.</p>
       <h5>Spellbook</h5>
       <p>Your wizardly apprenticeship culminated in the creation of a unique book: your spellbook. It starts with six level 1 Wizard spells of your choice. Whenever you gain a Wizard level after 1, add two Wizard spells of your choice to your spellbook. Each of these spells must be of a level for which you have spell slots.</p>
-      <p class="indent">Copying a Spell into the Book. When you find a level 1+ Wizard spell, you can copy it into your spellbook if itâ€™s of a level you can prepare and if you have time to copy it; for each level of the spell, the transcription takes 2 hours and costs 50 gp. Copying a spell you already know into another book takes 1 hour and 10 gp per spell level.</p>
+      <p class="indent">Copying a Spell into the Book. When you find a level 1+ Wizard spell, you can copy it into your spellbook if it's of a level you can prepare and if you have time to copy it; for each level of the spell, the transcription takes 2 hours and costs 50 gp. Copying a spell you already know into another book takes 1 hour and 10 gp per spell level.</p>
       <h5>Spell Slots</h5>
       <p>The Wizard Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest.</p>
       <h5>Prepared Spells of Level 1+</h5>

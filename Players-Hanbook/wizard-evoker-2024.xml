@@ -56,7 +56,7 @@
   <!-- ===== Level 3: Potent Cantrip ===== -->
   <element name="Potent Cantrip" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_WIZARD_EVOKER_FEATURE_POTENT_CANTRIP">
     <description>
-      <p>Your damaging cantrips affect even creatures that avoid the brunt of the effect. When you cast a cantrip at a creature and you miss with the attack roll or the target succeeds on a saving throw against the cantrip, the target takes half the cantripâ€™s damage (if any) but suffers no additional effect from the cantrip.</p>
+      <p>Your damaging cantrips affect even creatures that avoid the brunt of the effect. When you cast a cantrip at a creature and you miss with the attack roll or the target succeeds on a saving throw against the cantrip, the target takes half the cantrip's damage (if any) but suffers no additional effect from the cantrip.</p>
     </description>
     <sheet>
       <description>When you cast a cantrip and either miss the attack roll or the target succeeds on its save, it takes half damage (if any) but no additional effects.</description>
@@ -66,10 +66,10 @@
   <!-- ===== Level 6: Sculpt Spells ===== -->
   <element name="Sculpt Spells" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_WIZARD_EVOKER_FEATURE_SCULPT_SPELLS">
     <description>
-      <p>You can create pockets of relative safety within the effects of your evocations. When you cast an Evocation spell that affects other creatures that you can see, choose a number of them up to 1 + the spellâ€™s level. The chosen creatures automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half damage on a successful save.</p>
+      <p>You can create pockets of relative safety within the effects of your evocations. When you cast an Evocation spell that affects other creatures that you can see, choose a number of them up to 1 + the spell's level. The chosen creatures automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half damage on a successful save.</p>
     </description>
     <sheet>
-      <description>When your Evocation spell affects other creatures you can see, choose up to 1 + the spellâ€™s level of them. They automatically succeed on their saves and take no damage on a success.</description>
+      <description>When your Evocation spell affects other creatures you can see, choose up to 1 + the spell's level of them. They automatically succeed on their saves and take no damage on a success.</description>
     </sheet>
   </element>
 

@@ -37,7 +37,7 @@
   <!-- ===== Level 3: Bonus Proficiencies ===== -->
   <element name="Assassin's tools" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ROGUE_ASSASSIN_FEATURE_ASSASSINS_TOOLS">
     <description>
-      <p>You gain proficiency with the Disguise Kit and the Poisonerâ€™s Kit.</p>
+      <p>You gain proficiency with the Disguise Kit and the Poisoner's Kit.</p>
     </description>
     <sheet display="false" />
     <rules>

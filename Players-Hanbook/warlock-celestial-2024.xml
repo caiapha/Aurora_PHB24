@@ -38,7 +38,7 @@
   <!-- ===== Level 3: Celestial Spells ===== -->
   <element name="Celestial Spells" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_WARLOCK_CELESTIAL_FEATURE_CELESTIAL_SPELLS">
     <description>
-      <p>The magic of your patron ensures you always have certain spells prepared. When you reach a Warlock level specified in the Celestial Spells table, you thereafter always have the listed spells prepared. These spells donâ€™t count against the number of spells you can prepare.</p>
+      <p>The magic of your patron ensures you always have certain spells prepared. When you reach a Warlock level specified in the Celestial Spells table, you thereafter always have the listed spells prepared. These spells don't count against the number of spells you can prepare.</p>
       <h5 class="caption">CELESTIAL SPELLS</h5>
       <table>
         <thead><tr><th>Warlock Level</th><th>Spells</th></tr></thead>

@@ -93,7 +93,7 @@
   <element name="Bastion of Law" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SORCERER_CLOCKWORK_FEATURE_BASTION_OF_LAW">
     <description>
       <p><strong>Bonus Action.</strong> You can spend 1 to 5 Sorcery Points to create a magical ward that lasts until you finish a Long Rest or you use this feature again. The ward has a number of d8s equal to the Sorcery Points spent.</p>
-      <p>When you or a creature you can see within 30 feet takes damage, you can use your Reaction to expend any number of the wardâ€™s d8s, roll them, and reduce the damage by the total rolled.</p>
+      <p>When you or a creature you can see within 30 feet takes damage, you can use your Reaction to expend any number of the ward's d8s, roll them, and reduce the damage by the total rolled.</p>
     </description>
     <sheet action="Bonus Action">
       <description>Spend 1-5 SP to create a ward on you or on a creature within 30 ft of you. The ward has a number of d8 equal to the SP spent. As a Reaction: when  takes damage, expend any number of those d8 to reduce the damage by the total rolled. The ward ends when dice are gone or after a Long Rest.</description>

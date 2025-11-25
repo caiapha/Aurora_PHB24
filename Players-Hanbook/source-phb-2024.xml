@@ -10,8 +10,8 @@
   <!-- ===================== SOURCE: PLAYER'S HANDBOOK (2024) ===================== -->
   <element name="Player's Handbook (2024)" type="Source" source="Core" id="ID_WOTC_SOURCE_PLAYERS_HANDBOOK_2024">
     <description>
-      <p><strong>The revised core rulebook for the worldâ€™s greatest roleplaying game.</strong></p>
-      <p>The <i>Player's Handbook (2024)</i> updates and expands the fifth edition rules, with new options, refreshed class designs, and a modernized presentation for both new and veteran players. Inside youâ€™ll find character creation, the twelve core classes and their subclasses, species and backgrounds, feats, equipment, spells, and the rules you need to play Dungeons &amp; Dragons.</p>
+      <p><strong>The revised core rulebook for the world's greatest roleplaying game.</strong></p>
+      <p>The <i>Player's Handbook (2024)</i> updates and expands the fifth edition rules, with new options, refreshed class designs, and a modernized presentation for both new and veteran players. Inside you'll find character creation, the twelve core classes and their subclasses, species and backgrounds, feats, equipment, spells, and the rules you need to play Dungeons &amp; Dragons.</p>
     </description>
     <setters>
       <set name="abbreviation">PHB24</set>

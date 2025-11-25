@@ -118,11 +118,11 @@
 	<element name="Weapon Bond" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_WEAPON_BOND">
 		<description>
 			<p>At 3rd level, you learn a ritual that creates a magical bond between yourself and one weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. The weapon must be within your reach throughout the ritual, at the conclusion of which you touch the weapon and forge the bond.</p>
-			<p class="indent">Once you have bonded a weapon to yourself, you canâ€™t be disarmed of that weapon unless you are incapacitated. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand.</p>
+			<p class="indent">Once you have bonded a weapon to yourself, you can't be disarmed of that weapon unless you are incapacitated. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand.</p>
 			<p class="indent">You can have up to two bonded weapons, but can summon only one at a time with your bonus action. If you attempt to bond with a third weapon, you must break the bond with one of the other two.</p>
 		</description>
 		<sheet>
-			<description>You learn a 1-hour ritual that magically bond up to two weapons to you. You can perform the ritual during a Short Rest. You canâ€™t be disarmed of these weapons unless you are incapacitated. As a Bonus Action, you can summon one of these weapons per turn.</description>
+			<description>You learn a 1-hour ritual that magically bond up to two weapons to you. You can perform the ritual during a Short Rest. You can't be disarmed of these weapons unless you are incapacitated. As a Bonus Action, you can summon one of these weapons per turn.</description>
 		</sheet>
 	</element>
 	

@@ -64,7 +64,7 @@
           <tr><td>17</td><td><em>Mislead</em></td></tr>
         </tbody>
       </table>
-      <p class="indent">You also possess a fey blessing; choose it from the Feywild Gifts table in the Playerâ€™s Handbook.</p>
+      <p class="indent">You also possess a fey blessing; choose it from the Feywild Gifts table in the Player's Handbook.</p>
     </description>
     <sheet display="false" />
     <rules>
@@ -108,7 +108,7 @@
   <element name="Fey Reinforcements" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_FEY_WANDERER_FEATURE_FEY_REINFORCEMENTS">
     <description>
       <p>You can cast <em>Summon Fey</em> without a Material component. You can also cast it once without a spell slot, and you regain the ability to cast it in this way when you finish a Long Rest.</p>
-      <p class="indent">Whenever you start casting the spell, you can modify it so that it does not require Concentration. If you do so, the spellâ€™s duration becomes 1 minute for that casting.</p>
+      <p class="indent">Whenever you start casting the spell, you can modify it so that it does not require Concentration. If you do so, the spell's duration becomes 1 minute for that casting.</p>
     </description>
     <sheet usage="1/Long Rest">
       <description>You can cast Summon Fey without expending a spell slot. You can modify it so that it does not require Concentration, but the duration is reduced to 1 minute. In any case, you cast it without Material components.</description>
