@@ -765,9 +765,7 @@
 			<p><strong>Spell Change:</strong> whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.</p>
 			<p><strong>Repetable:</strong> you can take this feat more than once, but you must choose a different spell list each time.</p>
 		</description>
-		<sheet>
-			<description>Once per Long Rest, you can cast the 1st level spell you learned without spending a spell slot. You can also cast this spell expending a spell slot you have.</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
 			<select name="Spell List (Magic Initiate)" type="Feat Feature" supports="MagicInitiatePHB24" />
 		</rules>	
@@ -782,9 +780,7 @@
 			<p><strong>Spell Change:</strong> whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.</p>
 			<p><strong>Repetable:</strong> you can take this feat more than once, but you must choose a different spell list each time.</p>
 		</description>
-		<sheet>
-			<description>Once per Long Rest, you can cast the 1st level spell you learned without spending a spell slot. You can also cast this spell expending a spell slot you have.</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
 			<select name="Spell List (Magic Initiate)" type="Feat Feature" supports="MagicInitiatePHB24" />
 		</rules>	
@@ -826,7 +822,7 @@
 	</element>
   	<!-- END OF MAGIC INITIATE SPELL LISTS -->
 	
-	<!-- MARTIAL WEAPON TRAINING s-->
+	<!-- MARTIAL WEAPON TRAINING -->
 	<element name="Martial Weapon Training" type="Feat" source="Player's Handbook (2024)" id="ID_PHB24_FEAT_MARTIAL_WEAPON_TRAINING">
 		<requirements>[level:4]</requirements>
 		<supports>General Feat</supports>
