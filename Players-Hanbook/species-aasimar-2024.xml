@@ -31,7 +31,7 @@
       <set name="weight" modifier="2d6">120 lb.</set>
     </setters>
 
-    <spellcasting name="aasimar" ability="Charisma" prepare="true">
+    <spellcasting name="Aasimar" ability="Charisma" prepare="true">
       <list />
     </spellcasting>
 
@@ -80,7 +80,7 @@
 
   <element name="Light Bearer" type="Racial Trait" source="Player's Handbook (2024)" id="ID_AASIMAR_2024_LIGHT_BEARER">
     <description><p>You know the <em>Light</em> cantrip. Charisma is you spellcasting ability</p></description>
-    <sheet><description>You know the <em>Light</em> cantrip. Spelcasting Ability: <em>Charisma</em></description></sheet>
+    <sheet display="false" />
     <rules><grant type="Spell" id="ID_PHB_SPELL_LIGHT" spellcasting="Aasimar" /></rules>
   </element>
 
