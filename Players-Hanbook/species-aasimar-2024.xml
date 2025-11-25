@@ -81,7 +81,7 @@
   <element name="Light Bearer" type="Racial Trait" source="Player's Handbook (2024)" id="ID_AASIMAR_2024_LIGHT_BEARER">
     <description><p>You know the <em>Light</em> cantrip. Charisma is you spellcasting ability</p></description>
     <sheet display="false" />
-    <rules><grant type="Spell" id="ID_PHB_SPELL_LIGHT" spellcasting="Aasimar" /></rules>
+    <rules><grant type="Spell" id="ID_PHB24_SPELL_LIGHT" spellcasting="Aasimar" /></rules>
   </element>
 
   <element name="Healing Hands" type="Racial Trait" source="Player's Handbook (2024)" id="ID_AASIMAR_2024_HEALING_HANDS">
