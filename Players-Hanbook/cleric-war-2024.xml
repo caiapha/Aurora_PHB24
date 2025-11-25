@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<title>The War Domain Cleric subclass</title>
+		<update version="1.0.0">
+			<file name="cleric-war-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/cleric-war-2024.xml" />
+		</update>
+		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+	</info>
+
+	<!-- War Domain Subclass -->
+	<element name="War Domain" type="Archetype" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_CLERIC_DOMAIN_WAR">
+		<supports>Cleric subclass</supports>
+		<description>
+			<p>War has many manifestations. It can make heroes of ordinary people. It can be desperate and horrific, with acts of cruelty and cowardice eclipsing instances of excellence and courage. Clerics who tap into the magic of the War Domain excel in battle, inspiring others to fight the good fight or offering acts of violence as prayers.</p>	
+			<p class="indent">Gods of the War Domain watch over warriors and reward them for their great deeds. They include champions of honor and chivalry as well as gods of destruction and pillage. Other war gods take a more neutral stance, promoting war in all its manifestations and supporting warriors in any circumstance.</p>
+		
+			<div element="ID_WOTC_PHB24_ARCHETYPE_CLERIC_DOMAIN_WAR_SPELLS" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_CLERIC_DOMAIN_WAR_WAR_PRIEST" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_CLERIC_DOMAIN_WAR_GUIDED_STRIKE" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_CLERIC_DOMAIN_WAR_WAR_GODS_BLESSING" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_CLERIC_DOMAIN_WAR_AVATAR_OF_BATTLE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_CLERIC_DOMAIN_WAR_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_CLERIC_DOMAIN_WAR_WAR_PRIEST" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_CLERIC_DOMAIN_WAR_GUIDED_STRIKE" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_CLERIC_DOMAIN_WAR_WAR_GODS_BLESSING" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_CLERIC_DOMAIN_WAR_AVATAR_OF_BATTLE" level="17" />
+		</rules>
+	</element>
+	<element name="War Domain Spells" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_CLERIC_DOMAIN_WAR_SPELLS">
+		<description>
+			<p>Starting at 3rd level, war has many manifestations. It can make heroes of ordinary people. It can be desperate and horrific, with acts of cruelty and cowardice eclipsing instances of excellence and courage. Clerics who tap into the magic of the War Domain excel in battle, inspiring others to fight the good fight or offering acts of violence as prayers.</p>
+			<table>
+				<thead><tr><td>Level</td><td>Prepared Spells</td></tr></thead>
+				<tr><td>3rd</td><td>Guiding Bolt, Magic Weapon, Shield of Faith, Spiritual Weapon</td></tr>
+				<tr><td>5th</td><td>Crusader's Mantle, Spirit Guardians</td></tr>
+				<tr><td>7th</td><td>Fire Shield, Freedom of Movement</td></tr>
+				<tr><td>9th</td><td>Hold Monster, Steel Wind Strike</td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+		    <grant type="Spell" id="ID_PHB24_SPELL_GUIDING_BOLT" spellcasting="Cleric" prepared="true" level="3" />
+			<grant type="Spell" id="ID_PHB24_SPELL_MAGIC_WEAPON" spellcasting="Cleric" prepared="true" level="3" />
+      		<grant type="Spell" id="ID_PHB24_SPELL_SHIELD_OF_FAITH" spellcasting="Cleric" prepared="true" level="3" />
+			<grant type="Spell" id="ID_PHB24_SPELL_SPIRITUAL_WEAPON" spellcasting="Cleric" prepared="true" level="3" />
+			<grant type="Spell" id="ID_PHB24_SPELL_CRUSADERS_MANTLE" spellcasting="Cleric" prepared="true" level="5" />
+			<grant type="Spell" id="ID_PHB24_SPELL_SPIRIT_GUARDIANS" spellcasting="Cleric" prepared="true" level="5" />
+			<grant type="Spell" id="ID_PHB24_SPELL_FIRE_SHIELD" spellcasting="Cleric" prepared="true" level="7" />
+			<grant type="Spell" id="ID_PHB24_SPELL_FREEDOM_OF_MOVEMENT" spellcasting="Cleric" prepared="true" level="7" />
+			<grant type="Spell" id="ID_PHB24_SPELL_HOLD_MONSTER" spellcasting="Cleric" prepared="true" level="9" />
+			<grant type="Spell" id="ID_PHB24_SPELL_STEEL_WIND_STRIKE" spellcasting="Cleric" prepared="true" level="9" />
+		</rules>
+	</element> 
+	<element name="War Priest" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_CLERIC_DOMAIN_WAR_WAR_PRIEST">
+		<description>
+			<p>Starting at 3rd level, As a Bonus Action, you can make one attack with a weapon or an Unarmed Strike. You can use this Bonus Action a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Short or Long Rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{war priest:count}}/Short Rest">
+			<description>You can make one Weapon or Unarmed Strike.</description>
+		</sheet>
+		<rules>
+			<stat name="war priest:count" value="1" bonus="base" />
+			<stat name="war priest:count" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="Guided Strike" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_CLERIC_DOMAIN_WAR_GUIDED_STRIKE">
+		<description>
+			<p>Starting at 3rd level, when you or a creature within 30 feet of you misses with an attack roll, you can expend one use of your Channel Divinity and give that roll a +10 bonus, potentially causing it to hit. When you use this feature to benefit another creature's attack roll, you must take a Reaction to do so.</p>
+		</description>
+		<sheet usage="Channel Divinity">
+			<description>When you or a creature within 30fr of you misses with an attack roll, you can give a +10 bonus to that roll. When you use this feature to benefit another creature's attack roll, you must take a Reaction to do so.</description>
+		</sheet>
+	</element>
+	<element name="War God's Blessing" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_CLERIC_DOMAIN_WAR_WAR_GODS_BLESSING">
+		<description>
+			<p>Starting at 6th level, you can expend a use of your Channel Divinity to cast Shield of Faith or Spiritual Weapon rather than expending a spell slot. When you cast either spell in this way, the spell doesn't require Concentration. Instead the spell lasts for 1 minute, but it ends early if you cast that spell again, have the Incapacitated condition, or die.</p>
+		</description>
+		<sheet usage="Channel Divinity">
+      			<description>You can cast Shield of Faith or Spiritual Weapon without expending a spell slot. When you cast these spells in this way, they doesn't require Concentration. The spell last for 1 minute, but ends if you cast it again, have the Incapacitated condition or die.</description>
+    		</sheet>
+	</element>
+	<element name="Avatar of Battle" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_CLERIC_DOMAIN_WAR_AVATAR_OF_BATTLE">
+		<description>
+			<p>Starting at 17th level, you gain Resistance to Bludgeoning, Piercing, and Slashing damage.</p>
+		</description>
+		<sheet>
+			<description>You gain Resistance to Bludgeoning, Piercing, and Slashing damage</description>
+		</sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+        </rules>
+	</element>
+</elements>
+
+
+

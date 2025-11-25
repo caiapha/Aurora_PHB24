@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <update version="1.0.0">
+      <file name="ranger-beast_master-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/ranger-beast_master-2024.xml"/>
+    </update>
+    <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+  </info>
+
+  <!-- ===================== RANGER SUBCLASS â€” BEAST MASTER (PHB 2024) ===================== -->
+  <element name="Beast Master" type="Archetype" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_ARCHETYPE_BEAST_MASTER">
+    <supports>RangerSubclass</supports>
+    <description>
+      <h1>Beast Master</h1>
+      <p>Bond with a primal beast that fights at your side.</p>
+
+      <h3>Subclass Features</h3>
+      <p>When you choose this subclass at 3rd level, you gain the following features.</p>
+
+      <div element="ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_PRIMAL_COMPANION" />
+      <div element="ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_EXCEPTIONAL_TRAINING" />
+      <div element="ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_BESTIAL_FURY" />
+      <div element="ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_SHARE_SPELLS" />
+    </description>
+
+    <sheet display="false" />
+    <rules>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_PRIMAL_COMPANION" level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_EXCEPTIONAL_TRAINING" level="7" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_BESTIAL_FURY" level="11" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_SHARE_SPELLS" level="15" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 3: Primal Companion ===== -->
+  <element name="Primal Companion" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_PRIMAL_COMPANION">
+    <description>
+      <p>You magically bond with a primal beast that accompanies you in battle. Choose one stat block: <em>Beast of the Land</em>, <em>Beast of the Sea</em>, or <em>Beast of the Sky</em> (appearance as you like). The beast acts on your turn. On your turn, you can use a Bonus Action to command the beast to take the Beastâ€™s Strike action; otherwise, it takes the Dodge action.</p>
+      <p class="indent"><strong>Primal Bond.</strong> Add your Proficiency Bonus to any ability check or saving throw the beast makes. The beast uses your Proficiency Bonus. The beast understands the languages you know.</p>
+      <p class="indent"><strong>Resummoning and Replacement.</strong> If the beast has died within the last hour, you can use your Magic action to touch it and expend a spell slot of 1st level or higher; after 1 minute, it returns to life with all its Hit Points restored. Whenever you finish a Long Rest, you can summon a different primal beast. The new beast appears in an unoccupied space within 5 feet of you; the previous beast vanishes. The beast vanishes if you die.</p>
+    </description>
+    <sheet action="Magic Action" usage="1/Long Rest">
+      <description>You magically summon a supernatural beast: choose one of the following: Beast of the Land, Beast of the Sea, or Beast of the Sky. In combat, it acts during your turn, can move, take the Dodge Action and Reaction. Expending your Bonus Action, you can command it to use an action from his stat block or other actions. When you take the Attack Action, you can substitute one of your Attacks with the Beast's Strike action. If you are Incapacitated the beast acts on his own and it's not limited to the Dodge action. If the Beast dies within the last hour, you can take a Magic Action and expend a spell slot to revivify the beast and restore all it's HP.</description>
+    </sheet>
+    <rules>
+      <!-- SELECT IS WRONG BUT GRANT DOESN'T PRINT COMPANION SHEET - TO BE FIXED -->      
+      <select type="Companion" name="Primal Companion" supports="PrimalCompanion" number="1" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 7: Exceptional Training ===== -->
+  <element name="Exceptional Training" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_EXCEPTIONAL_TRAINING">
+    <description>
+      <p>When you use your Bonus Action to command your Primal Companion to take an action, you can also command it to take the Dash, Disengage, Dodge, or Help action using its Bonus Action.</p>
+      <p class="indent">In addition, whenever the beast hits with an attack and deals damage, it can deal your choice of Force damage or its normal damage type.</p>
+    </description>
+    <sheet>
+      <description>When you command your companion (Bonus Action), you can also have it Dash, Disengage, Dodge, or Help using its Bonus Action. On a hit, it can deal Force damage instead of its normal type.</description>
+    </sheet>
+  </element>
+
+  <!-- ===== Level 11: Bestial Fury ===== -->
+  <element name="Bestial Fury" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_BESTIAL_FURY">
+    <description>
+      <p>When you command your Primal Companion to take the Beastâ€™s Strike action, the beast can use it twice.</p>
+      <p class="indent">In addition, the first time each turn it hits a creature under the effect of your <em>Hunterâ€™s Mark</em> spell, the beast deals extra Force damage equal to the bonus damage of that spell.</p>
+    </description>
+    <sheet>
+      <description>When you command Beastâ€™s Strike, your companion can strike twice. First time each turn it hits a creature marked by your Hunterâ€™s Mark: 1d{{Bestial Fury:damage}} extra Force damage.</description>
+    </sheet>
+    <rules>
+        <stat name="Bestial Fury:damage" value="6" level="11" bonus="base" />
+        <stat name="Bestial Fury:damage" value="10" level="20" bonus="base" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 15: Share Spells ===== -->
+  <element name="Share Spells" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_SHARE_SPELLS">
+    <description>
+      <p>When you cast a spell targeting yourself, you can also affect your Primal Companion with the spell if the beast is within 30 feet of you.</p>
+    </description>
+    <sheet>
+      <description>When you cast a spell targeting yourself, also affect your companion if within 30 ft.</description>
+    </sheet>
+  </element>
+
+
+  <!-- PRIMAL COMPANIONS -->
+  <element name="Beast of the Land" type="Companion" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_PRIMAL_COMPANION_LAND">
+		<supports>PrimalCompanion</supports>
+        <description />
+		<setters>
+			<set name="strength">14</set>
+			<set name="dexterity">14</set>
+			<set name="constitution">15</set>
+			<set name="intelligence">8</set>
+			<set name="wisdom">14</set>
+			<set name="charisma">11</set>
+			<set name="ac">13 + Wisdom Modifier</set>
+			<set name="hp">5 + 5 * Ranger Lvl</set>
+			<set name="speed">40 ft., climb 40 ft.</set>
+			<set name="senses">darkvision 60 ft.</set>
+            <set name="languages">Understand your languages</set>
+			<set name="skills">Passive Perception 12</set>
+			<set name="type">Beast</set>
+			<set name="size">Medium</set>
+			<set name="alignment">Neutral</set>
+			<set name="challenge">-</set>
+			<set name="traits">ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_PRIMAL_COMPANION_LAND_TRAITS_PRIMAL_BOND</set>
+            <set name="actions">ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_PRIMAL_COMPANION_LAND_BEAST_STRIKE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="13" />
+            <stat name="companion:ac" value="wisdom:modifier" />
+			<stat name="companion:hp:max" value="5" />
+            <stat name="companion:hp:max" value="level:ranger" />
+            <stat name="companion:hp:max" value="level:ranger" />
+            <stat name="companion:hp:max" value="level:ranger" />
+            <stat name="companion:hp:max" value="level:ranger" />
+            <stat name="companion:hp:max" value="level:ranger" />
+			<stat name="companion:speed" value="30" bonus="base" />
+			<stat name="companion:speed:climb" value="30" bonus="base" />
+		</rules>
+	</element>
+	<element name="Primal Bond" type="Companion Trait" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_PRIMAL_COMPANION_LAND_TRAITS_PRIMAL_BOND">
+		<description>
+			<p>Add your Proficiency Bonus to any ability check or saving throw the beast makes.</p>
+		</description>
+		<sheet>
+			<description>Add your Proficiency Bonus to any ability check or saving throw the beast makes.</description>
+		</sheet>
+	</element>
+    <element name="Beast's Strike" type="Companion Action" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_PRIMAL_COMPANION_LAND_BEAST_STRIKE">
+		<description>
+			<p>YBeast's Strike. Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d8 + 2 plus your Wisdom modifier Bludgeoning, Piercing, or Slashing damage (your choice when you summon the beast). If the beast moved at least 20 feet straight toward the target before the hit, the target takes an extra 1d6 damage of the same type, and the target has the Prone condition if it is a Large or smaller creature.</p>
+		</description>
+		<sheet>
+			<description>Melee Attack Roll: +{{beast:attack:modif}}, reach 5 ft. Hit: 1d8 + {{beast:attack:damage}} Bludgeoning, Piercing, or Slashing damage (your choice). If the beast moved at least 20 feet straight toward the target before the hit, the target takes an extra 1d6 damage of the same type, and the target has the Prone condition if it is a Large or smaller creature.</description>
+		</sheet>
+        <rules>
+            <stat name="beast:attack:modif" value="ranger:spellcasting:attack" />
+            <stat name="beast:attack:damage" value="2" />
+            <stat name="beast:attack:damage" value="wisdom:modifier" />
+        </rules>
+	</element>
+
+    <element name="Beast of the Sea" type="Companion" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_PRIMAL_COMPANION_SEA">
+		<supports>PrimalCompanion</supports>
+        <description />
+		<setters>
+			<set name="strength">14</set>
+			<set name="dexterity">14</set>
+			<set name="constitution">15</set>
+			<set name="intelligence">8</set>
+			<set name="wisdom">14</set>
+			<set name="charisma">11</set>
+			<set name="ac">13 + Wisdom Modifier</set>
+			<set name="hp">5 + 5 * Ranger Lvl</set>
+			<set name="speed">5 ft., swim 60 ft.</set>
+			<set name="senses">darkvision 90 ft.</set>
+            <set name="languages">Understand your languages</set>
+			<set name="skills">Passive Perception 12</set>
+			<set name="type">Beast</set>
+			<set name="size">Medium</set>
+			<set name="alignment">Neutral</set>
+			<set name="challenge">-</set>
+			<set name="traits">ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_PRIMAL_COMPANION_SEA_TRAITS_AMPHIBIOUS, ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_PRIMAL_COMPANION_SEA_TRAITS_PRIMAL_BOND</set>
+            <set name="actions">ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_PRIMAL_COMPANION_SEA_BEAST_STRIKE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="13" />
+            <stat name="companion:ac" value="wisdom:modifier" />
+			<stat name="companion:hp:max" value="5" />
+            <stat name="companion:hp:max" value="level:ranger" />
+            <stat name="companion:hp:max" value="level:ranger" />
+            <stat name="companion:hp:max" value="level:ranger" />
+            <stat name="companion:hp:max" value="level:ranger" />
+            <stat name="companion:hp:max" value="level:ranger" />
+			<stat name="companion:speed" value="5" bonus="base" />
+			<stat name="companion:speed:swim" value="90" bonus="base" />
+		</rules>
+	</element>
+	<element name="Amphibious" type="Companion Trait" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_PRIMAL_COMPANION_SEA_TRAITS_AMPHIBIOUS">
+		<description>
+			<p>The beast can breathe air and water.</p>
+		</description>
+		<sheet>
+			<description>The beast can breathe air and water.</description>
+		</sheet>
+	</element>    
+    <element name="Primal Bond" type="Companion Trait" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_PRIMAL_COMPANION_SEA_TRAITS_PRIMAL_BOND">
+		<description>
+			<p>Add your Proficiency Bonus to any ability check or saving throw the beast makes.</p>
+		</description>
+		<sheet>
+			<description>Add your Proficiency Bonus to any ability check or saving throw the beast makes.</description>
+		</sheet>
+	</element>
+    <element name="Beast's Strike" type="Companion Action" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_PRIMAL_COMPANION_SEA_BEAST_STRIKE">
+		<description>
+			<p>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d6 + 2 plus your Wisdom modifier Bludgeoning or Piercing damage (your choice when you summon the beast), and the target has the Grappled condition (escape DC equals your spell save DC).</p>
+		</description>
+		<sheet>
+			<description>Melee Attack Roll: +{{beast:attack:modif}}, reach 5 ft. Hit: 1d6 + {{beast:attack:damage}} Bludgeoning or Piercing, damage (your choice) and the target and the target has the Grappled condition (escape DC equals your spell save DC).</description>
+		</sheet>
+        <rules>
+            <stat name="beast:attack:modif" value="ranger:spellcasting:attack" />
+            <stat name="beast:attack:damage" value="2" />
+            <stat name="beast:attack:damage" value="wisdom:modifier" />
+        </rules>
+	</element>
+
+    <element name="Beast of the Sky" type="Companion" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_PRIMAL_COMPANION_SKY">
+        <supports>PrimalCompanion</supports>
+        <description />
+		<setters>
+			<set name="strength">6</set>
+			<set name="dexterity">16</set>
+			<set name="constitution">13</set>
+			<set name="intelligence">8</set>
+			<set name="wisdom">14</set>
+			<set name="charisma">11</set>
+			<set name="ac">13 + Wisdom Modifier</set>
+			<set name="hp">4 + 4 * Ranger Lvl</set>
+			<set name="speed">10 ft., fly 60 ft.</set>
+			<set name="senses">darkvision 60 ft.</set>
+            <set name="languages">Understand your languages</set>
+			<set name="skills">Passive Perception 12</set>
+			<set name="type">Beast</set>
+			<set name="size">Small</set>
+			<set name="alignment">Neutral</set>
+			<set name="challenge">-</set>
+			<set name="traits">ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_PRIMAL_COMPANION_SKY_TRAITS_FLYBY, ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_PRIMAL_COMPANION_SKY_TRAITS_PRIMAL_BOND</set>
+            <set name="actions">ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_PRIMAL_COMPANION_SKY_BEAST_STRIKE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="13" />
+            <stat name="companion:ac" value="wisdom:modifier" />
+			<stat name="companion:hp:max" value="4" />
+            <stat name="companion:hp:max" value="level:ranger" />
+            <stat name="companion:hp:max" value="level:ranger" />
+            <stat name="companion:hp:max" value="level:ranger" />
+            <stat name="companion:hp:max" value="level:ranger" />
+			<stat name="companion:speed" value="10" bonus="base" />
+			<stat name="companion:speed:fly" value="60" bonus="base" />
+		</rules>
+	</element>
+	<element name="Flyby" type="Companion Trait" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_PRIMAL_COMPANION_SKY_TRAITS_FLYBY">
+		<description>
+			<p>The beast doesn't provoke Opportunity Attacks when it flies out of an enemy's reach.</p>
+		</description>
+		<sheet>
+			<description>The beast can breathe air and water.</description>
+		</sheet>
+	</element>    
+    <element name="Primal Bond" type="Companion Trait" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_PRIMAL_COMPANION_SKY_TRAITS_PRIMAL_BOND">
+		<description>
+			<p>Add your Proficiency Bonus to any ability check or saving throw the beast makes.</p>
+		</description>
+		<sheet>
+			<description>Add your Proficiency Bonus to any ability check or saving throw the beast makes.</description>
+		</sheet>
+	</element>
+    <element name="Beast's Strike" type="Companion Action" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_BEAST_MASTER_FEATURE_PRIMAL_COMPANION_SKY_BEAST_STRIKE">
+		<description>
+			<p>Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d4 + 3 plus your Wisdom modifier Slashing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Attack Roll: +{{beast:attack:modif}}, reach 5 ft. Hit: 1d4 + {{beast:attack:damage}} slashing damages.</description>
+		</sheet>
+        <rules>
+            <stat name="beast:attack:modif" value="ranger:spellcasting:attack" />
+            <stat name="beast:attack:damage" value="3" />
+            <stat name="beast:attack:damage" value="wisdom:modifier" />
+        </rules>
+	</element>
+</elements>  
+
+
+

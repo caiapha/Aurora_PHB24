@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <update version="1.0.0">
+      <file name="class-ranger-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/class-ranger-2024.xml" />
+    </update>
+    <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+  </info>
+
+  <!-- ===================== RANGER (PHB 2024) ===================== -->
+  <element name="Ranger" type="Class" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_RANGER">
+    <description>
+      <h1>Ranger</h1>
+      <p>A peerless hunter who tracks foes, masters the wilds, and wields primal magic.</p>
+
+      <h3>Class Features</h3>
+      <p>As a Ranger, you gain the following class features.</p>
+
+      <h4>Hit Points</h4>
+      <p><strong>Hit Dice:</strong> 1d10 per Ranger level</p>
+      <p><strong>Hit Points at 1st Level:</strong> 10 + your Constitution modifier</p>
+      <p><strong>Hit Points at Higher Levels:</strong> 1d10 (or 6) + your Constitution modifier per Ranger level after 1st</p>
+
+      <h4>Proficiencies</h4>
+      <p><strong>Armor:</strong> Light, Medium, Shields</p>
+      <p><strong>Weapons:</strong> Simple weapons, Martial weapons</p>
+      <p><strong>Tools:</strong> None</p>
+      <p><strong>Saving Throws:</strong> Strength, Dexterity</p>
+      <p><strong>Skills:</strong> Choose three from Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, Survival</p>
+
+      <h4>Equipment</h4>
+      <p>You start with the following equipment, in addition to the equipment granted by your background.</p>
+
+      <h5 class="caption">THE RANGER</h5>
+      <table class="class-features">
+        <thead>
+          <tr>
+            <th>Lvl</th><th>Prof. Bonus</th><th class="left">Features</th><th>Favored Enemy<br/>(free casts)</th><th>Prepared Spells</th>
+            <th>1st</th><th>2nd</th><th>3rd</th><th>4th</th><th>5th</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td> 1</td><td>+2</td><td class="left">Spellcasting; Favored Enemy; Weapon Mastery</td><td>2</td><td>2</td><td>2</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td></tr>
+          <tr><td> 2</td><td>+2</td><td class="left">Deft Explorer; Fighting Style</td><td>2</td><td>3</td><td>2</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td></tr>
+          <tr><td> 3</td><td>+2</td><td class="left">Ranger Subclass</td><td>2</td><td>4</td><td>3</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td></tr>
+          <tr><td> 4</td><td>+2</td><td class="left">Ability Score Improvement</td><td>2</td><td>5</td><td>3</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td></tr>
+          <tr><td> 5</td><td>+3</td><td class="left">Extra Attack</td><td>3</td><td>6</td><td>4</td><td>2</td><td>â€”</td><td>â€”</td><td>â€”</td></tr>
+          <tr><td> 6</td><td>+3</td><td class="left">Roving</td><td>3</td><td>6</td><td>4</td><td>2</td><td>â€”</td><td>â€”</td><td>â€”</td></tr>
+          <tr><td> 7</td><td>+3</td><td class="left">Subclass Feature</td><td>3</td><td>7</td><td>4</td><td>3</td><td>â€”</td><td>â€”</td><td>â€”</td></tr>
+          <tr><td> 8</td><td>+3</td><td class="left">Ability Score Improvement</td><td>3</td><td>7</td><td>4</td><td>3</td><td>â€”</td><td>â€”</td><td>â€”</td></tr>
+          <tr><td> 9</td><td>+4</td><td class="left">Expertise</td><td>4</td><td>8</td><td>4</td><td>3</td><td>2</td><td>â€”</td><td>â€”</td></tr>
+          <tr><td>10</td><td>+4</td><td class="left">Tireless</td><td>4</td><td>8</td><td>4</td><td>3</td><td>2</td><td>â€”</td><td>â€”</td></tr>
+          <tr><td>11</td><td>+4</td><td class="left">Subclass Feature</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>â€”</td><td>â€”</td></tr>
+          <tr><td>12</td><td>+4</td><td class="left">Ability Score Improvement</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>â€”</td><td>â€”</td></tr>
+          <tr><td>13</td><td>+5</td><td class="left">Relentless Hunter</td><td>5</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>â€”</td></tr>
+          <tr><td>14</td><td>+5</td><td class="left">Natureâ€™s Veil</td><td>5</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>â€”</td></tr>
+          <tr><td>15</td><td>+5</td><td class="left">Subclass Feature</td><td>5</td><td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>â€”</td></tr>
+          <tr><td>16</td><td>+5</td><td class="left">Ability Score Improvement</td><td>5</td><td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>â€”</td></tr>
+          <tr><td>17</td><td>+6</td><td class="left">Precise Hunter</td><td>6</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+          <tr><td>18</td><td>+6</td><td class="left">Feral Senses</td><td>6</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+          <tr><td>19</td><td>+6</td><td class="left">Epic Boon</td><td>6</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+          <tr><td>20</td><td>+6</td><td class="left">Foe Slayer</td><td>6</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+        </tbody>
+      </table>
+
+      <!-- Feature includes -->
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_SPELLCASTING" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_FAVORED_ENEMY" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_WEAPON_MASTERY" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_DEFT_EXPLORER" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_FIGHTING_STYLE" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_SUBCLASS" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_ABILITYSCOREIMPROVEMENT" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_EXTRA_ATTACK" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_ROVING" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_EXPERTISE" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_TIRELESS" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_RELENTLESS_HUNTER" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_NATURES_VEIL" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_PRECISE_HUNTER" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_FERAL_SENSES" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_EPIC_BOON" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_FOE_SLAYER" />
+    </description>
+
+    <sheet display="false">
+      <description>A peerless hunter who tracks foes, masters the wilds, and wields primal magic.</description>
+    </sheet>
+
+    <setters>
+      <set name="short">A hunter of the wilds who blends martial skill with primal magic.</set>
+      <set name="hd">d10</set>
+    </setters>
+
+    <rules>
+      <!-- Proficiencies -->
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY"/>
+      <select type="Proficiency" name="Skill Proficiencies (Ranger)" supports="Skill, PHB24, Ranger" number="3" />
+
+      <!-- Grants per level -->
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_SPELLCASTING" level="1"/>
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_FAVORED_ENEMY" level="1"/>
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_WEAPON_MASTERY" level="1"/>
+
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_DEFT_EXPLORER" level="2"/>
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_FIGHTING_STYLE" level="2"/>
+
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_SUBCLASS" level="3"/>
+
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_ABILITYSCOREIMPROVEMENT" level="4"/>
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_EXTRA_ATTACK" level="5"/>
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_ROVING" level="6"/>
+
+      <!-- <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_ABILITYSCOREIMPROVEMENT" level="8"/> -->
+
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_EXPERTISE" level="9"/>
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_TIRELESS" level="10"/>
+
+      <!-- <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_ABILITYSCOREIMPROVEMENT" level="12"/> -->
+
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_RELENTLESS_HUNTER" level="13"/>
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_NATURES_VEIL" level="14"/>
+
+      <!-- <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_ABILITYSCOREIMPROVEMENT" level="16"/> -->
+
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_PRECISE_HUNTER" level="17"/>
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_FERAL_SENSES" level="18"/>
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_EPIC_BOON" level="19"/>
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_FOE_SLAYER" level="20"/>
+    </rules>
+
+    <!-- Multiclass -->
+    <multiclass id="ID_WOTC_PHB24_MULTICLASS_RANGER">
+      <prerequisite>Dexterity 13 and Wisdom 13</prerequisite>
+      <requirements>[dex:13],[wis:13]</requirements>
+      <setters>
+        <set name="multiclass proficiencies">Martial weapons; Light and Medium armor; Shields; one skill from the Ranger list</set>
+      </setters>
+      <rules>
+        <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
+        <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR"/>
+        <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD"/>
+        <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS"/>
+        <select type="Proficiency" name="Ranger Multiclass Skill" supports=" PHB24, Ranger" number="1"/>
+      </rules>
+    </multiclass>
+  </element>
+
+  <!-- ===================== FEATURES ===================== -->
+
+  <!-- Spellcasting -->
+  <element name="Spellcasting" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_SPELLCASTING">
+    <description>
+      <p>You learn to wield primal magic. See chapter 7 for general spellcasting rules. The details below describe how you use those rules with Ranger spells.</p>
+      <h5>Spell Slots</h5>
+      <p>The Ranger table shows how many spell slots you have to cast your 1st-level and higher spells. You regain all expended slots when you finish a Long Rest.</p>
+      <h5>Prepared Spells of Level 1+</h5>
+      <p>You prepare Ranger spells for casting. To start, choose two 1st-level Ranger spells.</p>
+      <p class="indent">Your number of prepared spells increases as you gain Ranger levels, as shown in the Prepared Spells column of the Ranger table. When this number increases, choose additional Ranger spells so that your list matches the number on the table. The spells must be of a level for which you have spell slots.</p>
+      <p class="indent">If another Ranger feature gives you spells that you always have prepared, they do not count against the number you can prepare with this feature.</p>
+      <h5>Changing Your Prepared Spells</h5>
+      <p>Whenever you finish a Long Rest, you can replace one spell on your list with another Ranger spell for which you have spell slots.</p>
+      <h5>Spellcasting Ability</h5>
+      <p>Wisdom is your spellcasting ability for your Ranger spells.</p>
+      <center>
+        <p><strong>Spell Save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
+        <p><strong>Spell Attack Modifier</strong> = your proficiency bonus + your Wisdom modifier</p>
+      </center>
+      <h5>Spellcasting Focus</h5>
+      <p>You can use a Druidic Focus as a spellcasting focus for your Ranger spells.</p>
+    </description>
+
+    <sheet display="false" />
+
+    <spellcasting name="Ranger" ability="Wisdom" prepare="true">
+      <list>RangerPHB24</list>
+    </spellcasting>
+
+    <rules>
+      <!-- Multiclass slots (half-caster) -->
+      <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF" supports="PHB24" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
+
+      <!-- Spell slots (half-caster table) -->
+      <!-- 1st -->
+      <stat name="ranger:spellcasting:slots:1" value="2" level="1" />
+      <stat name="ranger:spellcasting:slots:1" value="1" level="3" />
+      <stat name="ranger:spellcasting:slots:1" value="1" level="5" />
+      <!-- 2nd -->
+      <stat name="ranger:spellcasting:slots:2" value="2" level="5" />
+      <stat name="ranger:spellcasting:slots:2" value="1" level="7" />
+      <!-- 3rd -->
+      <stat name="ranger:spellcasting:slots:3" value="2" level="9" />
+      <stat name="ranger:spellcasting:slots:3" value="1" level="11" />
+      <!-- 4th -->
+      <stat name="ranger:spellcasting:slots:4" value="1" level="13" />
+      <stat name="ranger:spellcasting:slots:4" value="1" level="15" />
+      <stat name="ranger:spellcasting:slots:4" value="1" level="17" />
+      <!-- 5th -->
+      <stat name="ranger:spellcasting:slots:5" value="1" level="17" />
+      <stat name="ranger:spellcasting:slots:5" value="1" level="19" />
+
+      <!-- Prepared spells (as table) -->
+      <stat name="ranger:spellcasting:prepare" value="2"  level="1" />
+      <stat name="ranger:spellcasting:prepare" value="1"  level="2" />
+      <stat name="ranger:spellcasting:prepare" value="1"  level="3" />
+      <stat name="ranger:spellcasting:prepare" value="1"  level="4" />
+      <stat name="ranger:spellcasting:prepare" value="1"  level="5" />
+      <stat name="ranger:spellcasting:prepare" value="1"  level="7" />
+      <stat name="ranger:spellcasting:prepare" value="2"  level="9" />
+      <stat name="ranger:spellcasting:prepare" value="1" level="11" />
+      <stat name="ranger:spellcasting:prepare" value="1" level="13" />
+      <stat name="ranger:spellcasting:prepare" value="1" level="15" />
+      <stat name="ranger:spellcasting:prepare" value="2" level="17" />
+      <stat name="ranger:spellcasting:prepare" value="1" level="19" />
+      <select type="Spell" name="Spellcasting (Ranger)" supports="$(spellcasting:list), $(spellcasting:slots)" level="1" number="2" spellcasting="Ranger" />
+			<select type="Spell" name="Spellcasting (Ranger)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="1" spellcasting="Ranger" />
+			<select type="Spell" name="Spellcasting (Ranger)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" number="1" spellcasting="Ranger" />
+			<select type="Spell" name="Spellcasting (Ranger)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" number="1" spellcasting="Ranger" />
+			<select type="Spell" name="Spellcasting (Ranger)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" number="1" spellcasting="Ranger" />
+			<select type="Spell" name="Spellcasting (Ranger)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" number="1" spellcasting="Ranger" />
+			<select type="Spell" name="Spellcasting (Ranger)" supports="$(spellcasting:list), $(spellcasting:slots)" level="9" number="2" spellcasting="Ranger" />
+			<select type="Spell" name="Spellcasting (Ranger)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" number="1" spellcasting="Ranger" />
+			<select type="Spell" name="Spellcasting (Ranger)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" number="1" spellcasting="Ranger" />
+			<select type="Spell" name="Spellcasting (Ranger)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" number="1" spellcasting="Ranger" />
+			<select type="Spell" name="Spellcasting (Ranger)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" number="2" spellcasting="Ranger" />
+      <select type="Spell" name="Spellcasting (Ranger)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" number="1" spellcasting="Ranger" />
+    </rules>
+  </element>
+
+  <!-- Favored Enemy -->
+  <element name="Favored Enemy" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_FAVORED_ENEMY">
+    <description>
+      <p>You always have the <em>Hunterâ€™s Mark</em> spell prepared. You can cast it a number of times without expending a spell slot, and you regain all expended uses when you finish a Long Rest (see the Favored Enemy column of the Ranger table).</p>
+    </description>
+    <sheet action="Magic Action" usage="{{ranger:favored_enemy:freecasts}}/Long Rest">
+      <description>You can casts Hunter's Mark without expending a spell slot .</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB24_SPELL_HUNTERS_MARK" prepared="true" spellcasting="Ranger" />
+      <stat name="ranger:favored_enemy:freecasts" value="2" level="1" />
+      <stat name="ranger:favored_enemy:freecasts" value="1" level="5" />
+      <stat name="ranger:favored_enemy:freecasts" value="1" level="9" />
+      <stat name="ranger:favored_enemy:freecasts" value="1" level="13" />
+      <stat name="ranger:favored_enemy:freecasts" value="1" level="17" />
+    </rules>
+  </element>
+
+  <!-- Weapon Mastery -->
+  <element name="Weapon Mastery" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_WEAPON_MASTERY">
+    <description>
+      <p>Your training allows you to use the Mastery properties of two kinds of weapons with which you are proficient. You can change the chosen kinds whenever you finish a Long Rest.</p>
+    </description>
+    <sheet>
+      <description>You can use the Mastery property of two proficient weapon kinds; you can change them on a Long Rest.</description>
+    </sheet>
+  </element>
+
+  <!-- Deft Explorer -->
+  <element name="Deft Explorer" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_DEFT_EXPLORER">
+    <description>
+      <p>Thanks to your travels, you gain Expertise in one skill you are proficient with (and lack Expertise) and you learn two additional languages of your choice.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select name="Deft Explorer: Expertise" type="Proficiency" supports="Expertise" number="1" />
+      <select name="Deft Explorer: Language" type="Language" supports="Standard_Lang" />
+    </rules>
+  </element>
+
+  <!-- Fighting Style -->
+  <element name="Fighting Style" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_FIGHTING_STYLE">
+    <description>
+      <p>You gain a <em>Fighting Style</em> feat of your choice (your table may offer class options).</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select type="Class Feature" name="Fighting Style (Ranger)" supports="Fighting_Style_24" level="2" />
+    </rules>
+  </element>
+
+  <!-- Subclass -->
+  <element name="Ranger Subclass" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_SUBCLASS">
+    <description>
+      <p>At 3rd level, choose a Ranger subclass. You gain its features at the Ranger levels noted in the subclass.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select type="Archetype" name="Ranger Subclass" supports="RangerSubclass" level="3" />
+    </rules>
+  </element>
+
+  <!-- ASI -->
+  <element name="Ability Score Improvement" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_ABILITYSCOREIMPROVEMENT">
+    <description>
+      <p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify (at Ranger 4, 8, 12, 16).</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select name="Improvement Option (Ranger 4)"  type="Class Feature" supports="Level Improvement" level="4" />
+      <select name="Improvement Option (Ranger 8)"  type="Class Feature" supports="Level Improvement" level="8" />
+      <select name="Improvement Option (Ranger 12)" type="Class Feature" supports="Level Improvement" level="12" />
+      <select name="Improvement Option (Ranger 16)" type="Class Feature" supports="Level Improvement" level="16" />
+    </rules>
+  </element>
+
+  <!-- Extra Attack -->
+  <element name="Extra Attack" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_EXTRA_ATTACK">
+    <description>
+      <p>When you take the Attack action on your turn, you can attack twice instead of once.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+    </rules>
+  </element>
+
+  <!-- Roving -->
+  <element name="Roving" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_ROVING">
+    <description>
+      <p>Your Speed increases by 10 feet while you are not wearing Heavy Armor. You also gain a Climb Speed and a Swim Speed equal to your Speed.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="innate speed:misc" type="condition" value="10" equipped="[armor:none]||[armor:light]||[armor:medium]" bonus="base" />
+      <stat name="speed:climb" type="condition" value="innate speed" equipped="[armor:none]||[armor:light]||[armor:medium]" />
+      <stat name="speed:swim" type="condition" value="innate speed" equipped="[armor:none]||[armor:light]||[armor:medium]" />
+    </rules>    
+  </element>
+
+  <!-- Expertise (level 9) -->
+  <element name="Expertise" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_EXPERTISE">
+    <description>
+      <p>Choose two of your skill proficiencies with which you lack Expertise. You gain Expertise in those skills.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select type="Proficiency" name="Expertise (Ranger 9)" supports="Expertise" number="2" />
+    </rules>
+  </element>
+
+  <!-- Tireless -->
+  <element name="Tireless" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_TIRELESS">
+    <description>
+      <p><strong>Action.</strong> You can give yourself Temporary Hit Points equal to 1d8 + your Wisdom modifier (minimum of 1). You can use this action a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
+      <p class="indent">Whenever you finish a Short Rest, your Exhaustion level, if any, decreases by 1.</p>
+    </description>
+    <sheet action="Magic Action" usage="{{tireless:uses}}/Long Rest">
+      <description>Gain 1d8 + {{tireless:bonus}} Temporary HP. Also, whenever you finish a Short Rest, your Exhaustion decreases by 1.</description>
+    </sheet>
+    <rules>
+      <stat name="tireless:uses" value="1" bonus="base" />
+      <stat name="tireless:uses" value="wisdom:modifier" bonus="base" />
+      <stat name="tireless:bonus" value="1" bonus="base" />
+      <stat name="tireless:bonus" value="wisdom:modifier" bonus="base" />
+    </rules>
+  </element>
+
+  <!-- Relentless Hunter -->
+  <element name="Relentless Hunter" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_RELENTLESS_HUNTER">
+    <description>
+      <p>Taking damage cannot break your Concentration on <em>Hunterâ€™s Mark</em>.</p>
+    </description>
+    <sheet>
+      <description>Damage does not break your Concentration on Hunterâ€™s Mark.</description>
+    </sheet>
+  </element>
+
+  <!-- Natureâ€™s Veil -->
+  <element name="Natureâ€™s Veil" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_NATURES_VEIL">
+    <description>
+      <p><strong>Bonus Action.</strong> You magically become Invisible until the end of your next turn. You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
+    </description>
+    <sheet action="Bonus Action" usage="{{natures veil:uses}}/Long Rest">
+      <description>You gain the Invisible condition until the end of your next turn.</description>
+    </sheet>
+    <rules>
+      <stat name="natures veil:uses" value="1" bonus="base" />
+      <stat name="natures veil:uses" value="wisdom:modifier" bonus="base" />
+    </rules>
+  </element>
+
+  <!-- Precise Hunter -->
+  <element name="Precise Hunter" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_PRECISE_HUNTER">
+    <description>
+      <p>You have Advantage on attack rolls against the creature currently marked by your <em>Hunterâ€™s Mark</em>.</p>
+    </description>
+    <sheet>
+      <description>You have Advantage on attack rolls against the creature marked by your Hunterâ€™s Mark.</description>
+    </sheet>
+  </element>
+
+  <!-- Feral Senses -->
+  <element name="Feral Senses" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_FERAL_SENSES">
+    <description>
+      <p>Your connection to nature grants heightened senses: you have Blindsight with a range of 30 feet.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Vision" id="ID_PHB24_VISION_BLINDSIGHT" />
+      <stat name="blindsight:range" value="30" bonus="base" />
+    </rules>
+  </element>
+
+  <!-- Epic Boon -->
+  <element name="Epic Boon" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_EPIC_BOON">
+    <description>
+      <p>You gain an Epic Boon feat or another feat of your choice for which you qualify.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select name="Epic Boon (Ranger 19)" type="Feat" supports="Boon Feat||General Feat||Origin Feat"    level="19" optional="true" />
+    </rules>
+  </element>
+
+  <!-- Foe Slayer -->
+  <element name="Foe Slayer" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_FOE_SLAYER">
+    <description>
+      <p>The damage die of your <em>Hunterâ€™s Mark</em> is a d10 instead of a d6.</p>
+    </description>
+    <sheet>
+      <description>Hunterâ€™s Mark damage die becomes d10.</description>
+    </sheet>
+  </element>
+</elements>
+
+
+
+

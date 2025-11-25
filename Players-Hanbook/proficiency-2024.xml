@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <update version="1.0.0">
+          <file name="proficiency-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/proficiency-2024.xml"/>
+        </update>
+        <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+    </info>
+
+    <element name="Acrobatics" type="Proficiency" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_ACROBATICS">
+        <supports>Skill, PHB24, Bard, Fighter, Monk, Rogue</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+        </rules>
+    </element>
+    <element name="Animal Handling" type="Proficiency" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_ANIMAL_HANDLING">
+        <supports>Skill, PHB24, Barbarian, Bard, Druid, Fighter, Ranger</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMAL_HANDLING" />
+        </rules>
+    </element>
+    <element name="Arcana" type="Proficiency" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_ARCANA">
+        <supports>Skill, PHB24, Bard, Druid, Sorcerer, Warlock, Wizard</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+        </rules>
+    </element>
+    <element name="Athletics" type="Proficiency" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_ATHLETICS">
+        <supports>Skill, PHB24, Barbarian, Bard, Fighter, Monk, Paladin, Ranger, Rogue</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+        </rules>
+    </element>
+    <element name="Deception" type="Proficiency" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_DECEPTION">
+        <supports>Skill, PHB24, Bard, Rogue, Sorcerer, Warlock</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+        </rules>
+    </element>
+    <element name="History" type="Proficiency" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_HISTORY">
+        <supports>Skill, PHB24, Bard, Cleric, Fighter, Monk, Warlock, Wizard</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+        </rules>
+    </element>
+    <element name="Insight" type="Proficiency" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_INSIGHT">
+        <supports>Skill, PHB24, Bard, Cleric, Druid, Fighter, Monk, Paladin, Ranger, Rogue, Sorcerer, Wizard</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+        </rules>
+    </element>
+    <element name="Intimidation" type="Proficiency" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_INTIMIDATION">
+        <supports>Skill, PHB24, Barbarian, Bard, Fighter, Paladin, Rogue, Sorcerer, Warlock</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+        </rules>
+    </element>
+    <element name="Investigation" type="Proficiency" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_INVESTIGATION">
+        <supports>Skill, PHB24, Bard, Ranger, Rogue, Warlock, Wizard</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+        </rules>
+    </element>
+    <element name="Medicine" type="Proficiency" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_MEDICINE">
+        <supports>Skill, PHB24, Bard, Cleric, Druid, Paladin, Wizard</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+        </rules>
+    </element>
+    <element name="Nature" type="Proficiency" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_NATURE">
+        <supports>Skill, PHB24, Barbarian, Bard, Druid, Ranger, Warlock, Wizard</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+        </rules>
+    </element>
+    <element name="Perception" type="Proficiency" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_PERCEPTION">
+        <supports>Skill, PHB24, Barbarian, Bard, Druid, Fighter, Ranger, Rogue</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+        </rules>
+    </element>
+    <element name="Performance" type="Proficiency" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_PERFORMANCE">
+        <supports>Skill, PHB24, Bard</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+        </rules>
+    </element>
+    <element name="Persuasion" type="Proficiency" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_PERSUASION">
+        <supports>Skill, PHB24, Bard, Cleric, Fighter, Paladin, Rogue, Sorcerer</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+        </rules>
+    </element>
+    <element name="Religion" type="Proficiency" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_RELIGION">
+        <supports>Skill, PHB24, Bard, Cleric, Druid, Monk, Paladin, Sorcerer, Warlock, Wizard</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+        </rules>
+    </element>
+    <element name="Sleight of Hand" type="Proficiency" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_SLEIGHT_OF_HAND">
+        <supports>Skill, PHB24, Bard, Rogue</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+        </rules>
+    </element>
+    <element name="Stealth" type="Proficiency" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_STEALTH">
+        <supports>Skill, PHB24, Bard, Monk, Ranger, Rogue</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+        </rules>
+    </element>
+    <element name="Survival" type="Proficiency" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_SURVIVAL">
+        <supports>Skill, PHB24, Barbarian, Bard, Druid, Fighter, Ranger</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+        </rules>
+    </element>
+
+    <!-- MUSICAL INSTRUMENTS-->
+    <element name="Bagpipes" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_BAGPIPES">
+        <supports>Musical Instruments</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_BAGPIPES" />
+        </rules>
+    </element>
+    <element name="Drum" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_DRUM">
+            <supports>Musical Instruments</supports>
+            <description />
+            <sheet />
+            <rules>
+                <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DRUM" />
+            </rules>
+    </element>
+    <element name="Dulcimer" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_DULCIMER">
+            <supports>Musical Instruments</supports>
+            <description />
+            <sheet />
+            <rules>
+                <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DULCIMER" />
+            </rules>
+    </element>
+    <element name="Flute" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_FLUTE">
+            <supports>Musical Instruments</supports>
+            <description />
+            <sheet />
+            <rules>
+                <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_FLUTE" />
+            </rules>
+    </element>
+    <element name="Lute" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_LUTE">
+            <supports>Musical Instruments</supports>
+            <description />
+            <sheet />
+            <rules>
+                <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_LUTE" />
+            </rules>
+    </element>
+    <element name="Lyre" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_LYRE">
+            <supports>Musical Instruments</supports>
+            <description />
+            <sheet />
+            <rules>
+                <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_LYRE" />
+            </rules>
+    </element>
+    <element name="Horn" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_HORN">
+            <supports>Musical Instruments</supports>
+            <description />
+            <sheet />
+            <rules>
+                <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HORN" />
+            </rules>
+    </element>
+    <element name="Pan flute" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_PAN_FLUTE">
+            <supports>Musical Instruments</supports>
+            <description />
+            <sheet />
+            <rules>
+                <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_PAN_FLUTE" />
+            </rules>
+    </element>
+    <element name="Shawm" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_SHAWM">
+            <supports>Musical Instruments</supports>
+            <description />
+            <sheet />
+            <rules>
+                <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SHAWM" />
+            </rules>
+    </element>
+    <element name="Viol" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_VIOL">
+            <supports>Musical Instruments</supports>
+            <description />
+            <sheet />
+            <rules>
+                <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VIOL" />
+            </rules>
+    </element>
+
+    <!-- ARTISAN'S TOOLS -->
+    <element name="Alchemist's Supplies" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES">
+        <supports>Artisan tools</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+        </rules>
+    </element>
+    <element name="Brewer's Supplies" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES">
+        <supports>Artisan tools</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES" />
+        </rules>
+    </element>
+    <element name="Calligrapher's Supplies" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES">
+        <supports>Artisan tools</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
+        </rules>
+    </element>
+    <element name="Carpenter's Tools" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS">
+        <supports>Artisan tools</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS" />
+        </rules>
+    </element>
+    <element name="Cartographer's Tools" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS">
+        <supports>Artisan tools</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS" />
+        </rules>
+    </element>
+    <element name="Cobbler's Tools" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_COBBLERS_TOOLS">
+        <supports>Artisan tools</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COBBLERS_TOOLS" />
+        </rules>
+    </element>
+    <element name="Cook's Utensils" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS">
+        <supports>Artisan tools</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
+        </rules>
+    </element>
+    <element name="Disguise Kit" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT">
+        <supports>Artisan tools</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+        </rules>
+    </element>
+    <element name="Forgery Kit" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT">
+        <supports>Artisan tools</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT" />
+        </rules>
+    </element>
+    <element name="Glassblower's Tools" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_GLASSBLOWERS_TOOLS">
+        <supports>Artisan tools</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_GLASSBLOWERS_TOOLS" />
+        </rules>
+    </element>
+    <element name="Herbalism Kit" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT">
+        <supports>Artisan tools</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+        </rules>
+    </element>
+    <element name="Jeweler's Tools" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_JEWELERS_TOOLS">
+        <supports>Artisan tools</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_JEWELERS_TOOLS" />
+        </rules>
+    </element>
+    <element name="Leatherworker's Tools" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_LEATHERWORKERS_TOOLS">
+        <supports>Artisan tools</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_LEATHERWORKERS_TOOLS" />
+        </rules>
+    </element>
+    <element name="Mason's Tools" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_MASONS_TOOLS">
+        <supports>Artisan tools</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_MASONS_TOOLS" />
+        </rules>
+    </element>
+    <element name="Navigator's Tools" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS">
+        <supports>Artisan tools</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS" />
+        </rules>
+    </element>
+    <element name="Painter's Supplies" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_PAINTERS_SUPPLIES">
+        <supports>Artisan tools</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_PAINTERS_SUPPLIES" />
+        </rules>
+    </element>
+    <element name="Poisoner's Kit" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT">
+        <supports>Artisan tools</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT" />
+        </rules>
+    </element>
+    <element name="Potter's Tools" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_POTTERS_TOOLS">
+        <supports>Artisan tools</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POTTERS_TOOLS" />
+        </rules>
+    </element>
+    <element name="Smith's Tools" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS">
+        <supports>Artisan tools</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+        </rules>
+    </element>
+    <element name="Thieves' Tools" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS">
+        <supports>Artisan tools</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+        </rules>
+    </element>
+    <element name="Tinker's Tools" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS">
+        <supports>Artisan tools</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+        </rules>
+    </element>
+    <element name="Weaver's Tools" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_WEAVERS_TOOLS">
+        <supports>Artisan tools</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_WEAVERS_TOOLS" />
+        </rules>
+    </element>
+    <element name="Woodcarver's Tools" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS">
+        <supports>Artisan tools</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS" />
+        </rules>
+    </element>
+
+    <!-- GAMING SETS-->
+    <element name="Dice Set" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_GAMING_SET_PROFICIENCY_DICE_SET">
+        <supports>Gaming Set</supports>
+        <description />
+        <sheet />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_DICE_SET" />
+        </rules>
+    </element>
+    <element name="Dragonchess Set" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_GAMING_SET_PROFICIENCY_DRAGONCHESS_SET">
+            <supports>Gaming Set</supports>
+            <description />
+            <sheet />
+            <rules>
+                <grant type="Proficiency" id="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_DRAGONCHESS_SET" />
+            </rules>
+    </element>
+    <element name="Playing Card Set" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_GAMING_SET_PROFICIENCY_PLAYING_CARD_SET">
+            <supports>Gaming Set</supports>
+            <description />
+            <sheet />
+            <rules>
+                <grant type="Proficiency" id="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_PLAYING_CARD_SET" />
+            </rules>
+    </element>
+    <element name="Three-Dragon Ante Set" type="Proficiency" source="Player's Handbook (2024)" id="ID_PHB24_PROFICIENCY_GAMING_SET_PROFICIENCY_THREE_DRAGON_ANTE_SET">
+            <supports>Gaming Set</supports>
+            <description />
+            <sheet />
+            <rules>
+                <grant type="Proficiency" id="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_THREE_DRAGON_ANTE_SET" />
+            </rules>
+    </element>
+
+</elements>
+
+
+

@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <update version="1.0.0">
+      <file name="paladin-glory-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/paladin-glory-2024.xml" />
+    </update>
+    <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+  </info>
+
+  <!-- ===================== OATH OF GLORY (PHB 2024) ===================== -->
+  <element name="Oath of Glory" type="Archetype" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_PALADIN_ARCHETYPE_GLORY">
+    <supports>PaladinSubclass</supports>
+    <description>
+      <h1>Oath of Glory</h1>
+      <p>Paladins who swear the Oath of Glory seek to prove themselves in battle and deed, inspiring others toward heroic greatness.</p>
+
+      <h3>Subclass Features</h3>
+      <p>When you choose this oath at 3rd level, you gain the following features.</p>
+
+      <div element="ID_WOTC_PHB24_PALADIN_GLORY_FEATURE_PEERLESS_ATHLETE" />
+      <div element="ID_WOTC_PHB24_PALADIN_GLORY_FEATURE_INSPIRING_SMITE" />
+      <div element="ID_WOTC_PHB24_PALADIN_GLORY_FEATURE_OATH_SPELLS" />
+      <div element="ID_WOTC_PHB24_PALADIN_GLORY_FEATURE_AURA_OF_ALACRITY" />
+      <div element="ID_WOTC_PHB24_PALADIN_GLORY_FEATURE_GLORIOUS_DEFENSE" />
+      <div element="ID_WOTC_PHB24_PALADIN_GLORY_FEATURE_LIVING_LEGEND" />
+    </description>
+
+    <sheet display="false" />
+    <rules>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_PALADIN_GLORY_FEATURE_PEERLESS_ATHLETE" level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_PALADIN_GLORY_FEATURE_INSPIRING_SMITE" level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_PALADIN_GLORY_FEATURE_OATH_SPELLS"        level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_PALADIN_GLORY_FEATURE_AURA_OF_ALACRITY"   level="7" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_PALADIN_GLORY_FEATURE_GLORIOUS_DEFENSE"   level="15" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_PALADIN_GLORY_FEATURE_LIVING_LEGEND"      level="20" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 3: Channel Divinity (Peerless Athlete, Inspiring Smite) ===== -->
+  <element name="Peerless Athlete" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_PALADIN_GLORY_FEATURE_PEERLESS_ATHLETE">
+    <description>
+      <p>As a Bonus Action, you can expend one use of your Channel Divinity to augment your athleticism. For 1 hour, you have Advantage on Strength (Athletics) and Dexterity (Acrobatics) checks, and the distance of your Long and High Jumps increases by 10 feet (this extra distance costs movement as normal).</p>
+    </description>
+    <sheet action="Bonus Action" usage="Channel Divinity">
+      <description>For 1 hour you have Advantage on Athletics and Acrobatics checks and 10-ft increased jump distance.</description>
+    </sheet>
+  </element>
+   <element name="Inspiring Smite" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_PALADIN_GLORY_FEATURE_INSPIRING_SMITE">
+    <description>
+      <p>Immediately after you cast Divine Smite, you can expend one use of your Channel Divinity and distribute Temporary Hit Points to creatures of your choice within 30 feet of yourself, which can include you. The total number of Temporary Hit Points equals 2d8 plus your Paladin level, divided among the chosen creatures however you like.</p>
+    </description>
+    <sheet action="on Divine Smite" usage="Channel Divinity">
+      <description>You can distribute a total of 2d8+{{level:paladin}} Temporary HP among creatures of your choice, included you, in 30ft form you.</description>
+    </sheet>
+  </element>
+
+  <!-- ===== Level 3: Oath Spells (always prepared) ===== -->
+  <element name="Oath Spells (Glory)" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_PALADIN_GLORY_FEATURE_OATH_SPELLS">
+    <description>
+      <p>You always have the following spells prepared, and they do not count against the number of Paladin spells you can prepare.</p>
+      <table>
+        <thead><tr><td>Paladin Level</td><td>Spells</td></tr></thead>
+        <tbody>
+          <tr><td>3rd</td><td><em>Guiding Bolt, Heroism</em></td></tr>
+          <tr><td>5th</td><td><em>Enhance Ability, Magic Weapon</em></td></tr>
+          <tr><td>9th</td><td><em>Haste, Protection from Energy</em></td></tr>
+          <tr><td>13th</td><td><em>Compulsion, Freedom of Movement</em></td></tr>
+          <tr><td>17th</td><td><em>Legend Lore, Yolande's Regal Presence</em></td></tr>
+        </tbody>
+      </table>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Spell" id="ID_PHB24_SPELL_GUIDING_BOLT" prepared="true" spellcasting="Paladin" level="3" />
+      <grant type="Spell" id="ID_PHB24_SPELL_HEROISM" prepared="true" spellcasting="Paladin" level="3" />
+      <grant type="Spell" id="ID_PHB24_SPELL_ENHANCE_ABILITY" prepared="true" spellcasting="Paladin" level="5" />
+      <grant type="Spell" id="ID_PHB24_SPELL_MAGIC_WEAPON" prepared="true" spellcasting="Paladin" level="5" />
+      <grant type="Spell" id="ID_PHB24_SPELL_HASTE" prepared="true" spellcasting="Paladin" level="9" />
+      <grant type="Spell" id="ID_PHB24_SPELL_PROTECTION_FROM_ENERGY" prepared="true" spellcasting="Paladin" level="9" />
+      <grant type="Spell" id="ID_PHB24_SPELL_COMPULSION" prepared="true" spellcasting="Paladin" level="13" />
+      <grant type="Spell" id="ID_PHB24_SPELL_FREEDOM_OF_MOVEMENT" prepared="true" spellcasting="Paladin" level="13" />
+      <grant type="Spell" id="ID_PHB24_SPELL_LEGEND_LORE" prepared="true" spellcasting="Paladin" level="17" />
+      <grant type="Spell" id="ID_PHB24_SPELL_YOLANDES_REGAL_PRESENCE" prepared="true" spellcasting="Paladin" level="17" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 7: Aura of Alacrity ===== -->
+  <element name="Aura of Alacrity" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_PALADIN_GLORY_FEATURE_AURA_OF_ALACRITY">
+    <description>
+      <p>Your Speed increases by 10 feet. In addition, whenever an ally enters your Aura of Protection for the first time on a turn or starts their turn there, the ally's Speed increases by 10 feet until the end of their next turn.</p>
+    </description>
+    <sheet>
+      <description>An ally entering or starting his turn in your Aura of Protection gains a speed increase by 10 ft until the end of his next turn.</description>
+    </sheet>
+  </element>
+
+  <!-- ===== Level 15: Glorious Defense ===== -->
+  <element name="Glorious Defense" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_PALADIN_GLORY_FEATURE_GLORIOUS_DEFENSE">
+    <description>
+      <p>You can turn defense into a sudden strike. When you or another creature you can see within 10 feet of you is hit by an attack roll, you can take a Reaction to grant a bonus to the target's AC against that attack, potentially causing it to miss. The bonus equals your Charisma modifier (minimum of +1). If the attack misses, you can make one attack with a weapon against the attacker as part of this Reaction if the attacker is within your weapon's range.</p>
+      <p>You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
+    </description>
+    <sheet action="Reaction" usage="{{glorious defense:uses}}/Long Rest">
+      <description> When an attack roll hits you or an ally of yours, you can add +{{glorious defense:uses}} to the target's AC against that attack; if it misses, you can make one weapon attack against the attacker (if in reach) as part of the Reaction.</description>
+    </sheet>
+    <rules>
+      <stat name="glorious defense:uses" value="1" bonus="base" />
+      <stat name="glorious defense:uses" value="charisma:modifier" bonus="base" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 20: Living Legend ===== -->
+  <element name="Living Legend" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_PALADIN_GLORY_FEATURE_LIVING_LEGEND">
+    <description>
+      <p>You can empower yourself with the legendsâ€”whether true or exaggeratedâ€”of your great deeds. As a Bonus Action, you gain the benefits below for 10 minutes. Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 5 spell slot (no action required).</p>
+      <p class="indent"><strong>Charismatic.</strong> You are blessed with an otherworldly presence and have Advantage on all Charisma checks. </p>
+      <p class="indent"><strong>Saving Throw Reroll.</strong> If you fail a saving throw, you can take a Reaction to reroll it. You must use this new roll.</p>
+      <p class="indent"><strong>Unerring Strike.</strong> Once on each of your turns when you make an attack roll with a weapon and miss, you can cause that attack to hit instead.</p>
+    </description>
+    <sheet action="Bonus Action" usage="1/Long Rest">
+      <description>For 10 minute you gain the following benefits: you have Advantage on Charisma checks; you can take a Reaction to reroll a failed Saving Throw; once per turn, if you miss a weapon attack roll, it hits instead. You can regain one usage expending a 5th level spell slot.</description>
+    </sheet>
+  </element>
+</elements>
+
+
+

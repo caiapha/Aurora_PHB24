@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Cleric</name>
+		<description>The Cleric class from the Player's Handbook (2024) Rev. 2024</description>
+		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+		<update version="1.0.0">
+			<file name="class-cleric-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/class-cleric-2024.xml" />
+		</update>
+	</info>
+	
+	<element name="Cleric" type="Class" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_CLERIC">
+		<description>
+			<h4>CREATING A CLERIC</h4>
+			<p>As you create a cleric, the most important question to consider is which deity to serve and what principles you want your character to embody. The Player's Handbook (2024) includes lists of many of the gods of the multiverse. Check with your DM to learn which deities are in your campaign.</p>
+			<p class="indent">Once youâ€™ve chosen a deity, consider your clericâ€™s relationship to that god. Did you enter this service willingly? Or did the god choose you, impelling you into service with no regard for your wishes? How do the temple priests of your faith regard you: as a champion or a troublemaker? What are your ultimate goals? Does your deity have a special task in mind for you? Or are you striving to prove yourself worthy of a great quest?</p>
+			<h5 class="caption">QUICK BUILD</h5>
+			<p>You can make a cleric quickly by following these suggestions. First, Wisdom should be your highest ability score, followed by Strength or Constitution. Second, choose the acolyte background.</p>
+			<h3>CLASS FEATURES</h3>
+			<p>As a cleric, you gain the following class features.</p>
+			<h5 class="caption">HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d8 per cleric level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per cleric level after 1st </li>
+			</ul>
+			<h5 class="caption">PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> Light armor, medium armor, shield</li>
+				<li><strong>Weapons:</strong> Simple weapons</li>
+				<li><strong>Tools:</strong> None</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Wisdom, Charisma</li>
+				<li><strong>Skills:</strong> Choose two from History, Insight, Medicine, Persuasion, and Religion</li>
+			</ul>
+			<h5 class="caption">EQUIPMENT</h5>
+			<p>You start with the following equipment:</p>
+			<ul>
+				<li><i>(A)</i> Chain Shirt, Shield, Mace, Holy Symbol, Priest's Pack, 7 GP</li>
+				<li><i>(B)</i> 50GP</li>
+			</ul>
+			<h5 class="caption">THE CLERIC</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td>Prof. Bonus</td><td class="left">Features</td><td>Channel Divinity</td><td class="col-10">Cantrips Known</td><td>Prepared Spell</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td><td>6th</td><td>7th</td><td>8th</td><td>9th</td></tr>
+				</thead>
+				<tr><td> 1st</td><td>+2</td><td class="left">Spellcasting, Divine Order</td><td>â€”</td><td>3</td><td>4</td><td>2</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td></tr>
+				<tr><td> 2nd</td><td>+2</td><td class="left">Channel Divinity</td><td>2</td><td>3</td><td>5</td><td>3</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td></tr>
+				<tr><td> 3rd</td><td>+2</td><td class="left">Cleric Subclass</td><td>2</td><td>3</td><td>6</td><td>4</td><td>2</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td></tr>
+				<tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td><td>2</td><td>4</td><td>7</td><td>4</td><td>3</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td></tr>
+				<tr><td> 5th</td><td>+3</td><td class="left">Sear Undead</td><td>2</td><td>4</td><td>9</td><td>4</td><td>3</td><td>2</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td></tr>
+				<tr><td> 6th</td><td>+3</td><td class="left">Subclass feature</td><td>3</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td></tr>
+				<tr><td> 7th</td><td>+3</td><td class="left">Blessed Strike</td><td>3</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td></tr>
+				<tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td><td>3</td><td>4</td><td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td></tr>
+				<tr><td> 9th</td><td>+4</td><td class="left">â€”</td><td>3</td><td>4</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td></tr>
+				<tr><td>10th</td><td>+4</td><td class="left">Divine Intervention</td><td>3</td><td>5</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td></tr>
+				<tr><td>11th</td><td>+4</td><td class="left">â€”</td><td>3</td><td>5</td><td>16</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>â€”</td><td>â€”</td><td>â€”</td></tr>
+				<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td><td>3</td><td>5</td><td>16</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>â€”</td><td>â€”</td><td>â€”</td></tr>
+				<tr><td>13th</td><td>+5</td><td class="left">â€”</td><td>3</td><td>5</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>â€”</td><td>â€”</td></tr>
+				<tr><td>14th</td><td>+5</td><td class="left">Improved Blessed Strike</td><td>3</td><td>5</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>â€”</td><td>â€”</td></tr>
+				<tr><td>15th</td><td>+5</td><td class="left">â€”</td><td>3</td><td>5</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>â€”</td></tr>
+				<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td><td>3</td><td>5</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>â€”</td></tr>
+				<tr><td>17th</td><td>+6</td><td class="left">Subclass feature</td><td>3</td><td>5</td><td>19</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>18th</td><td>+6</td><td class="left">â€”</td><td>4</td><td>5</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>19th</td><td>+6</td><td class="left">Epic Boon</td><td>4</td><td>5</td><td>21</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
+				<tr><td>20th</td><td>+6</td><td class="left">Greater Divine Intervention</td><td>4</td><td>5</td><td>22</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
+			</table>
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_ORDER" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY_DIVINE_SPARK" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY_TURN_UNDEAD" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SUBCLASS" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_ABILITYSCOREIMPROVEMENT_CLERIC" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SEAR_UNDEAD" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_BLESSED_STRIKE" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_INTERVENTION" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_IMPROVED_BLESSED_STRIKE" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_EPIC_BOON" />
+			<div element="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_GREATER_DIVINE_INTERVENTION" />
+		</description>
+		<sheet display="false">
+			<description>A priestly champion who wields divine magic in service of a higher power.</description>
+		</sheet>
+		<setters>
+			<set name="short">A priestly champion who wields divine magic in service of a higher power.</set>
+			<set name="hd">d8</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WOTC_PHB24_MULTICLASS_CLERIC"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_WOTC_PHB24_MULTICLASS_CLERIC"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD" requirements="!ID_WOTC_PHB24_MULTICLASS_CLERIC"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_PHB24_MULTICLASS_CLERIC"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_WOTC_PHB24_MULTICLASS_CLERIC"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_WOTC_PHB24_MULTICLASS_CLERIC"/>
+			<select type="Proficiency" name="Skill Proficiency (Cleric)" supports="Skill, PHB24, Cleric" number="2" requirements="!ID_WOTC_PHB24_MULTICLASS_CLERIC"/>
+
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_ORDER" level="1" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY" level="2" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SUBCLASS" level="3" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_ABILITYSCOREIMPROVEMENT_CLERIC" level="4" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SEAR_UNDEAD" level="5" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_BLESSED_STRIKE" level="7" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_INTERVENTION" level="10" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_IMPROVED_BLESSED_STRIKE" level="14" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_EPIC_BOON" level="19" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_GREATER_DIVINE_INTERVENTION" level="20" />
+		</rules>
+		<multiclass id="ID_WOTC_PHB24_MULTICLASS_CLERIC">
+			<prerequisite>Wisdom 13</prerequisite>
+			<requirements>[wis:13]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Light armor, medium armor, shields</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD" />
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Spellcasting" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SPELLCASTING_CLERIC">
+		<description>
+			<p>You have learned to cast spells through prayer and meditation. See chapter 7 for the rules on spellcasting. The information below details how you use those rules with Cleric spells, which appear on the Cleric spell list later in the class's description.</p>
+			<h5 class="caption">CANTRIPS</h5>
+			<p>At 1st level, You know three cantrips of your choice from the Cleric spell list. Guidance, Sacred Flame, and Thaumaturgy are recommended. Whenever you gain a Cleric level, you can replace one of your cantrips with another cantrip of your choice from the Cleric spell list. When you reach Cleric levels 4 and 10, you learn another cantrip of your choice from the Cleric spell list, as shown in the Cantrips column of the Cleric Features table</p>
+			<h5 class="caption">SPELL SLOTS</h5>
+			<p>The Cleric Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest.</p>
+			<h5 class="caption">PREPARED SPELLS OF LEVEL 1+</h5>
+			<p>You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose four level 1 spells from the Cleric spell list. Bless, Cure Wounds, Guiding Bolt, and Shield of Faith are recommended.</p>
+			<p class="indent">The number of spells on your list increases as you gain Cleric levels, as shown in the Prepared Spells column of the Cleric Features table. Whenever that number increases, choose additional spells from the Cleric spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 3 Cleric, your list of prepared spells can include six spells of levels 1 and 2 in any combination.</p>
+			<p class="indent">If another Cleric feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Cleric spells for you.</p>
+			<h5 class="caption">CHANGING YOUR PREPARED SPELLS</h5>
+			<p>Whenever you finish a Long Rest, you can change your list of prepared spells, replacing any of the spells there with other Cleric spells for which you have spell slots.</p>
+			<h5 class="caption">SPELLCASTING ABILITY</h5>
+			<p>Wisdom is your spellcasting ability for your cleric spells. The power of your spells comes from your devotion to your deity. You use your Wisdom whenever a cleric spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a cleric spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Wisdom modifier</p>
+			</center>
+			<h5 class="caption">SPELLCASTING FOCUS</h5>
+			<p>You can use a holy symbol as a spellcasting focus for your cleric spells.</p>
+		</description>
+		<sheet display="false">
+			<description>You can prepare {{cleric:spellcasting:prepare}} spells from the cleric spell list. You can use a holy symbol as your spellcasting focus.</description>
+		</sheet>
+		<spellcasting name="Cleric" ability="Wisdom" prepare="true" allowReplace="true">
+			<list>ClericPHB24</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
+			<grant type="Proficiency" id="ID_INTERNAL_PROFICIENCY_SPELLFOCUS_GROUP_HOLY_SYMBOL" />
+
+			<stat name="cleric:spellcasting:slots:1" value="2" level="1" />
+			<stat name="cleric:spellcasting:slots:1" value="1" level="2" />
+			<stat name="cleric:spellcasting:slots:1" value="1" level="3" />
+			<stat name="cleric:spellcasting:slots:2" value="2" level="3" />
+			<stat name="cleric:spellcasting:slots:2" value="1" level="4" />
+			<stat name="cleric:spellcasting:slots:3" value="2" level="5" />
+			<stat name="cleric:spellcasting:slots:3" value="1" level="6" />
+			<stat name="cleric:spellcasting:slots:4" value="1" level="7" />
+			<stat name="cleric:spellcasting:slots:4" value="1" level="8" />
+			<stat name="cleric:spellcasting:slots:4" value="1" level="9" />
+			<stat name="cleric:spellcasting:slots:5" value="1" level="9" />
+			<stat name="cleric:spellcasting:slots:5" value="1" level="10" />
+			<stat name="cleric:spellcasting:slots:5" value="1" level="18" />
+			<stat name="cleric:spellcasting:slots:6" value="1" level="11" />
+			<stat name="cleric:spellcasting:slots:6" value="1" level="19" />
+			<stat name="cleric:spellcasting:slots:7" value="1" level="13" />
+			<stat name="cleric:spellcasting:slots:7" value="1" level="20" />
+			<stat name="cleric:spellcasting:slots:8" value="1" level="15" />
+			<stat name="cleric:spellcasting:slots:9" value="1" level="17" />
+
+			<stat name="cleric:spellcasting:prepare" value="4" level="1" />
+			<stat name="cleric:spellcasting:prepare" value="1" level="2" />
+			<stat name="cleric:spellcasting:prepare" value="1" level="3" />
+			<stat name="cleric:spellcasting:prepare" value="1" level="4" />
+			<stat name="cleric:spellcasting:prepare" value="2" level="5" />
+			<stat name="cleric:spellcasting:prepare" value="1" level="6" />
+			<stat name="cleric:spellcasting:prepare" value="1" level="7" />
+			<stat name="cleric:spellcasting:prepare" value="1" level="8" />
+			<stat name="cleric:spellcasting:prepare" value="2" level="9" />
+			<stat name="cleric:spellcasting:prepare" value="1" level="10" />
+			<stat name="cleric:spellcasting:prepare" value="1" level="11" />
+			<stat name="cleric:spellcasting:prepare" value="1" level="13" />
+			<stat name="cleric:spellcasting:prepare" value="1" level="15" />
+			<stat name="cleric:spellcasting:prepare" value="1" level="17" />
+			<stat name="cleric:spellcasting:prepare" value="1" level="18" />
+			<stat name="cleric:spellcasting:prepare" value="1" level="19" />
+			<stat name="cleric:spellcasting:prepare" value="1" level="20" />
+
+			<select type="Spell" name="Cantrip (Cleric)" supports="$(spellcasting:list), 0" level="1" number="3" spellcasting="Cleric" />
+			<select type="Spell" name="Cantrip (Cleric)" supports="$(spellcasting:list), 0" level="4" number="1" spellcasting="Cleric" />
+			<select type="Spell" name="Cantrip (Cleric)" supports="$(spellcasting:list), 0" level="10" number="1" spellcasting="Cleric" />
+			<select type="Spell" name="Spellcasting (Cleric)" supports="$(spellcasting:list), $(spellcasting:slots)" level="1" number="4" spellcasting="Cleric" />
+			<select type="Spell" name="Spellcasting (Cleric)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="1" spellcasting="Cleric" />
+			<select type="Spell" name="Spellcasting (Cleric)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" number="1" spellcasting="Cleric" />
+			<select type="Spell" name="Spellcasting (Cleric)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" number="1" spellcasting="Cleric" />
+			<select type="Spell" name="Spellcasting (Cleric)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" number="2" spellcasting="Cleric" />
+			<select type="Spell" name="Spellcasting (Cleric)" supports="$(spellcasting:list), $(spellcasting:slots)" level="6" number="1" spellcasting="Cleric" />
+			<select type="Spell" name="Spellcasting (Cleric)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" number="1" spellcasting="Cleric" />
+			<select type="Spell" name="Spellcasting (Cleric)" supports="$(spellcasting:list), $(spellcasting:slots)" level="8" number="1" spellcasting="Cleric" />
+			<select type="Spell" name="Spellcasting (Cleric)" supports="$(spellcasting:list), $(spellcasting:slots)" level="9" number="2" spellcasting="Cleric" />
+			<select type="Spell" name="Spellcasting (Cleric)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" number="1" spellcasting="Cleric" />
+			<select type="Spell" name="Spellcasting (Cleric)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" number="1" spellcasting="Cleric" />
+			<select type="Spell" name="Spellcasting (Cleric)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" number="1" spellcasting="Cleric" />
+			<select type="Spell" name="Spellcasting (Cleric)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" number="1" spellcasting="Cleric" />
+			<select type="Spell" name="Spellcasting (Cleric)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" number="1" spellcasting="Cleric" />
+			<select type="Spell" name="Spellcasting (Cleric)" supports="$(spellcasting:list), $(spellcasting:slots)" level="18" number="1" spellcasting="Cleric" />
+			<select type="Spell" name="Spellcasting (Cleric)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" number="1" spellcasting="Cleric" />
+			<select type="Spell" name="Spellcasting (Cleric)" supports="$(spellcasting:list), $(spellcasting:slots)" level="20" number="1" spellcasting="Cleric" />
+		</rules>
+	</element>
+	<element name="Divine Order" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_ORDER">
+		<description>
+			<p>You have dedicated yourself to one of the following sacred roles of your choice.</p>
+			<p><strong>Protector:</strong> trained for battle, you gain proficiency with Martial weapons and training with Heavy armor.</p>
+			<p><strong>Thaumaturge</strong> you know one extra cantrip from the Cleric spell list. In addition, your mystical connection to the divine gives you a bonus to your Intelligence (Arcana or Religion) checks. The bonus equals your Wisdom modifier (minimum of +1).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Divine Order" supports="Divine Order" />
+		</rules>
+	</element>
+	<element name="Channel Divinity" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY">
+		<description>
+			<p>At 2nd level, You can channel divine energy directly from the Outer Planes to fuel magical effects. You start with two such effects: Divine Spark and Turn Undead, each of which is described below. Each time you use this class's Channel Divinity, choose which Channel Divinity effect from this class to create. You gain additional effect options at higher Cleric levels.</p>
+			<p class="indent">You can use this class's Channel Divinity twice. You regain one of its expended uses when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest. You gain additional uses when you reach certain Cleric levels, as shown in the Channel Divinity column of the Cleric Features table.</p>
+			<p class="indent">If a Channel Divinity effect requires a saving throw, the DC equals the spell save DC from this class's Spellcasting feature.</p>
+		</description>
+		<sheet usage="{{channel divinity:count}}/Long Rest" />
+		<rules>
+			<stat name="channel divinity:count" value="2" bonus="base" />
+			<stat name="channel divinity:count" value="3" level="6" bonus="base" />
+			<stat name="channel divinity:count" value="4" level="18" bonus="base" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY_DIVINE_SPARK" />
+			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY_TURN_UNDEAD" />
+		</rules>
+	</element>
+	<element name="Cleric Subclass" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SUBCLASS">
+		<description>
+			<p>At 3rd level, you gain a Cleric subclass of your choice. A subclass is a specialization that grants you features at certain Cleric levels. For the rest of your career, you gain each of your subclass's features that are of your Cleric level or lower.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Cleric Subclass" supports="Cleric subclass" level="3" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_ABILITYSCOREIMPROVEMENT_CLERIC">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, you gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Cleric levels 8, 12, and 16.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select name="Improvement Option (Cleric 4)" type="Class Feature" supports="Level Improvement" level="4" />
+			<select name="Improvement Option (Cleric 8)" type="Class Feature" supports="Level Improvement" level="8" />
+			<select name="Improvement Option (Cleric 12)" type="Class Feature" supports="Level Improvement" level="12" />
+			<select name="Improvement Option (Cleric 16)" type="Class Feature" supports="Level Improvement" level="16" />
+		</rules>
+	</element>
+	<element name="Sear Undead" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_SEAR_UNDEAD">
+		<description>
+			<p>Starting at 5th level, Whenever you use Turn Undead, you can roll a number of d8s equal to your Wisdom modifier (minimum of 1d8) and add the rolls together. Each Undead that fails its saving throw against that use of Turn Undead takes Radiant damage equal to the roll's total. This damage doesn't end the turn effect.</p>
+		</description>
+		<sheet>
+			<description>Each undead that fails the Saving Throw against your Turn Undead, takes {{sear undead:count}}d8 Radiant Damage. This damage doesn't end the Turn Undead effect.</description>
+			
+		</sheet>
+		<rules>
+			<stat name="sear undead:count" value="1" bonus="base" />
+			<stat name="sear undead:count" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="Blessed Strike" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_BLESSED_STRIKE">
+		<description>
+			<p>Divine power infuses you in battle. You gain one of the following options of your choice (if you get either option from a Cleric subclass in an older book, use only the option you choose for this feature).</p>
+			<p><strong>Divine Strike:</strong> once on each of your turns when you hit a creature with an attack roll using a weapon, you can cause the target to take an extra 1d8 Necrotic or Radiant damage (your choice).</p>
+			<p><strong>Potent Spellcasting.</strong> Add your Wisdom modifier to the damage you deal with any Cleric cantrip.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select name="Blessed Strike" type="Class Feature" supports="Blessed Strike" /> 
+		</rules>
+	</element>	
+	<element name="Divine Intervention" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_INTERVENTION">
+		<description>
+			<p>Beginning at 10th level, you can call on your deity or pantheon to intervene on your behalf. As a Magic action, choose any Cleric spell of level 5 or lower that doesn't require a Reaction to cast. As part of the same action, you cast that spell without expending a spell slot or needing Material components. You can't use this feature again until you finish a Long Rest.</p>
+		</description>
+		<sheet action="Magic Action" usage="1/Long Rest">
+			<description>You can cast a cleric spell of level 5 or lower that doesn't require a Reaction to cast, without expending a spell slot and material components.</description>
+		</sheet>
+	</element>
+	<element name="Improved Blessed Strike" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_IMPROVED_BLESSED_STRIKE">
+		<description>
+			<p>Beginning at 14th level, The option you chose for Blessed Strikes grows more powerful.</p>
+			<p><strong>Divine Strike:</strong> The extra damage of your Divine Strike increases to 2d8.</p>
+			<p><strong>Potent Spellcasting.</strong>  When you cast a Cleric cantrip and deal damage to a creature with it, you can give vitality to yourself or another creature within 60 feet of yourself, granting a number of Temporary Hit Points equal to twice your Wisdom modifier.</p>
+		</description>
+		<sheet display="false" /> <!-- included in Bless Strike options -->
+	</element>	
+	<element name="Epic Boon" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_EPIC_BOON">
+		<description>
+			<p>At 19th level, you gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of Spell Recall is recommended.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select name="Epic Boon (Cleric)" type="Feat" supports="Origin Feat||General Feat||Boon Feat" />
+		</rules>
+	</element>
+	<element name="Greater Divine Intervention" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_GREATER_DIVINE_INTERVENTION">
+		<description>
+			<p>You can call on even more powerful divine intervention. When you use your Divine Intervention feature, you can choose Wish when you select a spell. If you do so, you can't use Divine Intervention again until you finish 2d4 Long Rests.</p>
+		</description>
+		<sheet>
+			<description>When you use your Divine Intervention feature, you can choose Wish when you select a spell. If you do so, you can't use Divine Intervention again until you finish 2d4 Long Rests.</description>
+		</sheet>
+	</element>
+	<!-- DIVINE ORDER CHOICE -->
+	<element name="Protector" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_ORDER_PROTECTOR">
+		<supports>Divine Order</supports>
+		<description>
+			<p>Trained for battle, you gain proficiency with Martial weapons and training with Heavy armor.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+		</rules>
+	</element>
+	<element name="Thaumaturge" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_DIVINE_ORDER_THAUMATURGE">
+		<supports>Divine Order</supports>
+		<description>
+			<p>You know one extra cantrip from the Cleric spell list. In addition, your mystical connection to the divine gives you a bonus to your Intelligence (Arcana or Religion) checks. The bonus equals your Wisdom modifier (minimum of +1).</p>
+		</description>
+		<sheet display="false" />	
+		<rules>
+			<select type="Spell" name="Cantrip (Thaumaturge)" supports="$(spellcasting:list), 0" level="1" number="1" spellcasting="Cleric" />
+			<stat name="Arcana:misc" value="1" bonus="base" />
+			<stat name="Arcana:misc" value="wisdom:modifier" bonus="base" />
+			<stat name="Religion:misc" value="1" bonus="base" />
+			<stat name="Religion:misc" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+	
+	<!-- CHANNEL DIVINITY -->
+	<element name="Channel Divinity: Divine Spark" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY_DIVINE_SPARK">
+		<description>
+			<p>As a Magic action, you point your Holy Symbol at another creature you can see within 30 feet of yourself and focus divine energy at it. Roll 1d8 and add your Wisdom modifier. You either restore Hit Points to the creature equal to that total or force the creature to make a Constitution saving throw. On a failed save, the creature takes Necrotic or Radiant damage (your choice) equal to that total. On a successful save, the creature takes half as much damage (round down).</p>
+			<p class="indent">You roll an additional d8 when you reach Cleric levels 7 (2d8), 13 (3d8), and 18 (4d8).</p>
+		</description>
+		<sheet alt="Divine Spark" action="Magic Action"  usage="Channel Divinity">
+			<description>Roll {{divine spark:count}}d8+{{wisdom:modifier}}. A creature you can see within 30ft gains Hit Points equal to the roll's result. Otherwise, you force it to make a CON Saving Throw DC{{divine spark:dc}}. On a fail the creature takes Radiant of Necrotic (your choice) damages equal to the rolled number. On a success, the damage is halved.</description>
+		</sheet>
+		<rules>
+			<stat name="divine spark:count" value="1" />
+			<stat name="divine spark:count" value="1" level="7" />
+			<stat name="divine spark:count" value="1" level="13" />
+			<stat name="divine spark:count" value="1" level="18" />
+			<stat name="divine spark:dc" value="8" />
+			<stat name="divine spark:dc" value="proficiency" />
+			<stat name="divine spark:dc" value="wisdom:modifier" />
+		</rules>
+	</element>
+	<element name="Channel Divinity: Turn Undead" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_CHANNEL_DIVINITY_TURN_UNDEAD">
+		<description>
+			<p>As a Magic action, you present your Holy Symbol and censure Undead creatures. Each Undead of your choice within 30 feet of you must make a Wisdom saving throw. If the creature fails its save, it has the Frightened and Incapacitated conditions for 1 minute. For that duration, it tries to move as far from you as it can on its turns. This effect ends early on the creature if it takes any damage, if you have the Incapacitated condition, or if you die.</p>
+		</description>
+		<sheet alt="Turn Undead" action="Magic Action" usage="Channel Divinity">
+			<description>Each undead of your choice within 30 feet of you must make a WIS Saving Throw DC{{turn undead:dc}}. If the creature fails its saving throw, it has the Frightened and Incapacitated conditions for 1 minute. it tries to move as far from you as it can on its turns. This effect ends early on the creature if it takes any damage, if you have the Incapacitated condition, or if you die.</description>
+		</sheet>
+		<rules>
+			<stat name="turn undead:dc" value="8" />
+			<stat name="turn undead:dc" value="proficiency" />
+			<stat name="turn undead:dc" value="wisdom:modifier" />
+		</rules>
+	</element>
+	<!-- BLESSED STRIKE -->
+	<element name="Divine Strike" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_BLESSED_STRIKE_DIVINE_STRIKE">
+		<supports>Blessed Strike</supports>
+		<description>
+			<p>Once on each of your turns when you hit a creature with an attack roll using a weapon, you can cause the target to take an extra 1d8 Necrotic or Radiant damage (your choice).</p>
+			<p>At 14th level, the extra damage increase to 2d8</p>
+		</description>	
+		<sheet alt="Divine Strike">
+			<description level="7">Once on each of your turns when you hit a creature with an attack roll using a weapon, you can cause the target to take an extra 1d8 Necrotic or Radiant damage (your choice)</description>
+			<description level="14">Once on each of your turns when you hit a creature with an attack roll using a weapon, you can cause the target to take an extra 2d8 Necrotic or Radiant damage (your choice)</description>
+		</sheet>	
+	</element>		
+	<element name="Potent Spellcasting" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_CLERIC_BLESSED_STRIKE_POTENT_SPELLCASTING">
+		<supports>Blessed Strike</supports>
+		<description>		
+			<p>Add your Wisdom modifier to the damage you deal with any Cleric cantrip.</p>
+			<p>>At 14th level, when you cast a Cleric cantrip and deal damage to a creature with it, you can give vitality to yourself or another creature within 60 feet from you, granting a number of Temporary Hit Points equal to twice your Wisdom modifier.</p>
+		</description>
+		<sheet alt="Potent Spellcasting">
+			<description level="7">Add your Wisdom modifier to the damage you deal with any Cleric cantrip.</description>
+			<description level="14">Add your Wisdom modifier to the damage you deal with any Cleric cantrip. In addition, dealing damage with a Cleric Cantrip grants you, or a crature of your choice within 60ft form you, {{potent spell:hp}} temporary Hit Points.</description>
+		</sheet>
+		<rules>
+			<stat name="potent spell:hp" value="wisdom:modifier" />
+			<stat name="potent spell:hp" value="wisdom:modifier" />
+		</rules>
+	</element>	
+</elements>
+
+

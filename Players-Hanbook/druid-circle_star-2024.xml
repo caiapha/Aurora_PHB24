@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="1.0.0">
+		<file name="druid-circle_star-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/druid-circle_star-2024.xml" />
+		</update>
+		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+	</info>
+
+	<!-- Circle of Star Subclass -->
+	<element name="Circle of the Star" type="Archetype" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_CIRCLE_OF_THE_STAR">
+		<supports>Druid subclass</supports>
+		<description>
+			<p>The Circle of the Stars has tracked heavenly patterns since time immemorial, discovering secrets hidden amid the constellations. By understanding these secrets, the Druids of this circle seek to harness the powers of the cosmos.</p>
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_STAR_MAP" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_STARRY_FORM" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_COSMIC_OMEN" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_TWINKLING_CONSTELLATION" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_FULL_OF_STARS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_STAR_MAP" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_STARRY_FORM" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_COSMIC_OMEN" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_TWINKLING_CONSTELLATION" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_FULL_OF_STARS" level="14" /> 
+		</rules>
+	</element>
+	<element name="Star Map" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_STAR_MAP">
+		<description>
+			<p>At 3rd level, you've created a star chart as part of your heavenly studies. It is a Tiny object, and you can use it as a Spellcasting Focus for your Druid spells. You determine its form by rolling on the Star Map table or by choosing one.</p>
+            <p class="indent">While holding the map, you have the Guidance and Guiding Bolt spells prepared, and you can cast Guiding Bolt without expending a spell slot. You can cast it in that way a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>     
+            <p class="indent">If you lose the map, you can perform a 1-hour ceremony to magically create a replacement. This ceremony can be performed during a Short or Long Rest, and it destroys the previous map.</p> 
+            <h5 class="caption">Star Map</h5>      
+      			<table>
+        			<thead><tr><td>1d6</td><td>Map Form</td></tr></thead>
+          			<tr><td>1</td><td>A scroll bearing depictions of constellations</td></tr>
+          			<tr><td>2</td><td>A stone tablet with fine holes drilled through it</td></tr>
+          			<tr><td>3</td><td>An owlbear hide tooled with stellar symbols</td></tr>
+          			<tr><td>4</td><td>A collection of maps bound in an ebony cover</td></tr>
+                    <tr><td>5</td><td>A crystal engraved with starry patterns</td></tr>
+                    <tr><td>6</td><td>A glass disk etched with constellations</td></tr>
+        		</table>
+		</description>
+		<sheet usage="{{map:usage}}/Long Rest">
+			<description>Holding your Star Map, you can cast Guiding Bolt without expending a spell slot. You can replace your Star Map performing a 1-hour ceremony. This ceremony can be performed during a Short or Long Rest, and it destroys the previous map.</description>
+		</sheet>
+      		<rules>
+        		<grant type="Spell" id="ID_PHB24_SPELL_GUIDING_BOLT" spellcasting="Druid" prepared="true" />
+        		<grant type="Spell" id="ID_PHB24_SPELL_GUIDANCE" spellcasting="Druid" prepared="true" />
+		        <stat name="map:usage" value="1" bonus="base" />
+		        <stat name="map:usage" value="wisdom:modifier" bonus="base" />
+      		</rules>
+	</element>
+	<element name="Starry Form" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_STARRY_FORM">
+		<description>
+		<p>Starting at 3rd level, as a Bonus Action, you can expend a use of your Wild Shape feature to take on a starry form rather than shape-shifting.</p>
+        <p class="indent">While in your starry form, you retain your game statistics, but your body becomes luminous, your joints glimmer like stars, and glowing lines connect them as on a star chart. This form sheds bright Light in a 10-foot radius and dim Light for an additional 10 feet. The form lasts for 10 minutes. It ends early if you dismiss it (no action required), have the Incapacitated condition, or use this feature again.</p>
+        <p class="indent">Whenever you assume your starry form, choose which of the following constellations glimmers on your body; your choice gives you certain benefits while in the form.</p>
+        <p><strong>Archer:</strong> a constellation of an archer appears on you. When you activate this form and as a Bonus Action on your subsequent turns while it lasts, you can make a ranged spell attack, hurling a luminous arrow that targets one creature within 60 feet of yourself. On a hit, the attack deals Radiant damage equal to 1d8 plus your Wisdom modifier.</p>
+        <p><strong>Chalice:</strong> a constellation of a life-giving goblet appears on you. Whenever you cast a spell using a spell slot that restores Hit Points to a creature, you or another creature within 30 feet of you can regain Hit Points equal to 1d8 plus your Wisdom modifier.</p>
+        <p><strong>Dragon:</strong> a constellation of a wise dragon appears on you. When you make an Intelligence or a Wisdom check or a Constitution saving throw to maintain Concentration, you can treat a roll of 9 or lower on the d20 as a 10.</p>
+    </description>
+	<sheet action="Bonus Action">
+		<description>Expending one Wild Shape use, for 10 minutes your body sheds bright Light in a 10-foot radius and dim Light for an additional 10 feet. In addition, you gain one of the following effects of your choice:</description>
+		<description level="10">Expending one Wild Shape use, for 10 minutes your body sheds bright Light in a 10-foot radius and dim Light for an additional 10 feet. In addition, you gain one of the following effects of your choice, which you can change at the start of each turn:</description>
+	</sheet>
+    <rules>    
+     		<grant name="The Archer" type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_STARRY_FORM_ARCHER" />
+     		<grant name="The Chalice" type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_STARRY_FORM_CHALICE" />
+     		<grant name="The Dragon" type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_STARRY_FORM_DRAGON" />
+	        <stat name="starry_form:dice" value="1" />
+	        <stat name="starry_form:dice" value="1" level="10" />
+    </rules>
+	</element>
+	<element name="Cosmic Omen" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_COSMIC_OMEN">
+		<description>
+			<p>Starting at 6th level, whenever you finish a Long Rest, you can consult your Star Map for omens and roll a die. Until you finish your next Long Rest, you gain access to a special Reaction based on whether you rolled an even or an odd number on the die:</p>
+			<p><strong>Weal (even)</strong> Whenever a creature you can see within 30 feet of you is about to make a d20 Test, you can take a Reaction to roll 1d6 and add the number rolled to the total.</p>
+		  <p><strong>Woe (odd)</strong> Whenever a creature you can see within 30 feet of you is about to make a d20 Test, you can take a Reaction to roll 1d6 and subtract the number rolled from the total.</p>
+      <p class="indent">You can use this Reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>    
+    </description>
+		<sheet action="Reaction" usage="{{cosmic_omen:usage}}/Long Rest">
+      <description>Whenever you finish a Long Rest, roll a die and gain one of the following benefits:</description>
+    </sheet>
+    <rules>
+      	<stat name="cosmic_omen:usage" value="1" bonus="base" />
+      	<stat name="cosmic_omen:usage" value="wisdom:modifier" bonus="base" />
+	<grant name="Weal" type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_COSMIC_OMEN_WEAL" />
+ 	<grant name="Woe" type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_COSMIC_OMEN_WOE" />
+    </rules>
+  </element>
+	<element name="Twinkling Constellation" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_TWINKLING_CONSTELLATION">
+		<description>
+			<p>Starting at 10th level, the constellations of your Starry Form improve. The 1d8 of the Archer and the Chalice becomes 2d8, and while the Dragon is active, you have a Fly Speed of 20 feet and can hover.</p>
+			<p class="indent">Moreover, at the start of each of your turns while in your Starry Form, you can change which constellation glimmers on your body.</p>
+     </description>
+		<sheet display="false" /> <!-- included in Starry form -->
+			
+	</element>
+	<element name="Full of Stars" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_FULL_OF_STARS">
+		<description>
+			<p>Starting at 14th level, while in your Starry Form, you become partially incorporeal, giving you Resistance to Bludgeoning, Piercing, and Slashing damage.</p>
+		</description>
+		<sheet>
+			<description>while in your Starry Form, you become partially incorporeal, giving you Resistance to Bludgeoning, Piercing, and Slashing damage.</description>
+		</sheet>
+	</element>
+
+  <!-- STARRY FORMS -->
+  <element name="â€¢ The Archer" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_STARRY_FORM_ARCHER">
+  <sheet>
+    <description>As a Bonus Action, you can make a Ranged Spell Attack, dealing on a hit {{starry_form:dice}}d8+{{wisdom:modifier}} Radiant damages.</description>
+  </sheet>  
+  </element>
+  <element name="â€¢ The Chalice" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_STARRY_FORM_CHALICE">
+  <sheet>
+    <description>Whenever you cast a spell using a spell slot that restores Hit Points to a creature, you or another creature within 30 feet of you can regain Hit Points equal to {{starry_form:dice}}d8+{{wisdom:modifier}}.</description>
+  </sheet>  
+  </element>
+  <element name="â€¢ The Dragon" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_STARRY_FORM_DRAGON">
+  <sheet>
+    <description>When you make an Intelligence or a Wisdom check or a Constitution saving throw to maintain Concentration, you can treat a roll of 9 or lower on the d20 as a 10.</description>
+    <description level="10">You have a Fly Speed of 20 feet and can hover. Moreover, when you make an Intelligence or a Wisdom check or a Constitution saving throw to maintain Concentration, you can treat a roll of 9 or lower on the d20 as a 10.</description>
+  </sheet>  
+  </element>
+  
+<!-- COSMIC OMEN -->
+ <element name="â€¢ Weal (even)" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_COSMIC_OMEN_WEAL">
+  <sheet>
+    <description>Whenever a creature you can see within 30 feet of you is about to make a d20 Test, you can take a Reaction to roll 1d6 and add the number rolled to the total.</description>
+  </sheet>  
+ </element>
+ <element name="â€¢ Woe (odd)" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_STAR_COSMIC_OMEN_WOE">
+  <sheet>
+    <description>Whenever a creature you can see within 30 feet of you is about to make a d20 Test, you can take a Reaction to roll 1d6 and subtract the number rolled from the total.</description>
+  </sheet>  
+ </element> 
+</elements>
+
+
+

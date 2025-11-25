@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <update version="1.0.0">
+            <file name="weapon_masteries-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/weapon_masteries-2024.xml" />
+        </update>
+        <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+    </info>
+
+    <element name="Cleave" type="WeaponMastery" source="internal" id="ID_WOTC_PHB24_WEAPONMASTERY_CLEAVE">
+        <description>
+            <p>If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.</p>
+        </description>
+        <sheet display="false" />
+    </element>
+    <element name="Graze" type="WeaponMastery" source="internal" id="ID_WOTC_PHB24_WEAPONMASTERY_GRAZE">
+        <description>
+            <p>If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.</p>
+        </description>
+        <sheet display="false" />
+    </element>
+    <element name="Nick" type="WeaponMastery" source="internal" id="ID_WOTC_PHB24_WEAPONMASTERY_NICK">
+        <description>
+            <p>When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn.</p>
+        </description>
+        <sheet display="false" />
+    </element>
+    <element name="Push" type="WeaponMastery" source="internal" id="ID_WOTC_PHB24_WEAPONMASTERY_PUSH">
+        <description>
+            <p>If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.</p>
+        </description>
+        <sheet display="false" />
+    </element>
+    <element name="Sap" type="WeaponMastery" source="internal" id="ID_WOTC_PHB24_WEAPONMASTERY_SAP">
+        <description>
+            <p>If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.</p>
+        </description>
+        <sheet display="false" />
+    </element>
+    <element name="Slow" type="WeaponMastery" source="internal" id="ID_WOTC_PHB24_WEAPONMASTERY_SLOW">
+        <description>
+            <p>If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.</p>
+        </description>
+        <sheet display="false" />
+    </element>
+    <element name="Topple" type="WeaponMastery" source="internal" id="ID_WOTC_PHB24_WEAPONMASTERY_TOPPLE">
+        <description>
+            <p>If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.</p>
+        </description>
+        <sheet display="false" />
+    </element>
+    <element name="Vex" type="WeaponMastery" source="internal" id="ID_WOTC_PHB24_WEAPONMASTERY_VEX">
+        <description>
+            <p>If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.</p>
+        </description>
+        <sheet display="false" />
+    </element>
+</elements>
+
+

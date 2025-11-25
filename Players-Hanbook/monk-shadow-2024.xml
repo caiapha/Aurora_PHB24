@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <title>Monk â€“ Warrior of Shadow (PHB 2024)</title>
+    <update version="1.0.0">
+      <file name="monk-warrior_shadow-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/monk-warrior_shadow-2024.xml" />
+    </update>
+    <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+  </info>
+
+  <!-- Warrior of Shadow Subclass -->
+  <element name="Warrior of Shadow" type="Archetype" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_MONK_WARRIOR_OF_SHADOW">
+    <supports>MonkSubclass</supports>
+    <description>
+      <p>Warriors of Shadow blend strict discipline with darkness and illusion, bending dim light to slip unseen between foes and strike from obscurity.</p>
+      <div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_SHADOW_SHADOW_ARTS" />
+      <div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_SHADOW_SHADOW_STEP" />
+      <!-- INCLUDED IN SHADOW STEP -->
+      <div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_SHADOW_CLOAK_OF_SHADOWS" />
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_SHADOW_SHADOW_ARTS" level="3"/>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_SHADOW_SHADOW_STEP" level="6"/>
+      <!-- INCLUDED IN SHADOW STEP -->
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_SHADOW_CLOAK_OF_SHADOWS" level="17"/>
+    </rules>
+  </element>
+
+  <!-- 3rd: Shadow Arts -->
+  <element name="Shadow Arts" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_SHADOW_SHADOW_ARTS">
+    <description>
+      <p><em>3rd-level Warrior of Shadow feature</em></p>
+      <p>You learn to wield magical darkness and subtle illusion.</p>
+      <p class="indent"><strong>Minor Illusion.</strong> You know the <em>Minor Illusion</em> cantrip. Wisdom is your spellcasting ability for it.</p>
+      <p class="indent"><strong>Darkvision.</strong> You have Darkvision out to 60 feet. If you already have Darkvision, its range increases by 60 feet.</p>
+      <p class="indent"><strong>Darkness Shroud.</strong> As a Magic action, you can expend 1 Focus Point to cast <em>Darkness</em> without material components, centered on a point you can see within range as normal. While the spell persists, you can see normally through the darkness you created, and at the start of each of your turns you can move that area of darkness up to 60 feet to a point you can see.</p>
+    </description>
+    <sheet>
+      <description>You can cast Minor Illusion as a Magic Action. Expending 1 Focus Point, you can cast the Darkness spell without spell components. You can see wihtin the spell's area. You can move the area of Darkness to a space within 60ft of you at the start of your turn.</description>
+    </sheet>
+    <rules>
+      <!-- Cantrip (uses Monk/Wisdom as specified) -->
+      <grant type="Spell" id="ID_PHB24_SPELL_MINOR_ILLUSION" />
+      <!-- Darkness casting via Focus; we also grant the spell for listing, but usage is via Focus, not slots -->
+      <grant type="Spell" id="ID_PHB24_SPELL_DARKNESS" />
+      <!-- Darkvision: grant baseline and +60ft in case Darkvision and Superior Darkvision already present -->
+      <grant type="Vision" requirements="ID_PHB24_VISION_DARKVISION" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_SHADOW_SHADOW_ARTS_SUPERIOR_DARKVISION" />
+      <grant type="Vision" requirements="ID_PHB24_VISION_SUPERIORDARKVISION" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_SHADOW_SHADOW_ARTS_IMPROVED_SUPERIOR_DARKVISION" />
+      <grant type="Vision" requirements="!ID_PHB24_VISION_DARKVISION" id="ID_PHB24_VISION_DARKVISION" />
+    </rules>
+  </element>
+
+  <element name="Shadow Arts" type="Vision" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_SHADOW_SHADOW_ARTS_SUPERIOR_DARKVISION">
+    <description display="false" />
+    <sheet display="false" />
+    <rules>
+        <stat name="darkvision:range" value="120" bonus="base" />
+    </rules>
+  </element>
+    <element name="Shadow Arts" type="Vision" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_SHADOW_SHADOW_ARTS_IMPROVED_SUPERIOR_DARKVISION">
+    <description display="false" />
+    <sheet display="false" />
+    <rules>
+        <stat name="darkvision:range" value="180" bonus="base" />
+    </rules>
+  </element>
+
+  <!-- 6th: Shadow Step -->
+  <element name="Shadow Step" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_SHADOW_SHADOW_STEP">
+    <description>
+      <p><em>6th-level Warrior of Shadow feature</em></p>
+      <p>While you are in Dim Light or Darkness, you can step between shadows. As a Bonus Action, you teleport up to 60 feet to an unoccupied space you can see that is also in Dim Light or Darkness. You then have Advantage on the first melee attack you make before the end of the same turn.</p>
+    </description>
+    <sheet action="Bonus Action">
+      <description level="6">While entirely within Dim Light or Darkness, you can teleport up to 60 ft to Dim Light/Darkness area you can see; you have Advantage on the first melee attack you make this turn.</description>
+      <description level="11">While entirely within Dim Light or Darkness, you can teleport up to 60 ft to Dim Light/Darkness area you can see; you have Advantage on the first melee attack you make this turn. Expending 1 Focus Point you can start/end in any Light condition. Moreover, after the teleport you can make an Unarmed Strike as part of the Bonus Action.</description>
+    </sheet>
+  </element>
+
+  <!-- 17th: Cloak of Shadows -->
+  <element name="Cloak of Shadows" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_SHADOW_CLOAK_OF_SHADOWS">
+    <description>
+      <p><em>17th-level Warrior of Shadow feature</em></p>
+      <p>As a Magic action while entirely within Dim Light or Darkness, you can expend 3 Focus Points to shroud yourself with shadows for 1 minute, until you have the Incapacitated condition, or until you end your turn in Bright Light. While shrouded by these shadows, you gain the following benefits.</p>
+      <p class="indent"><strong>Invisibility.</strong> You have the Invisible condition.</p>
+      <p class="indent"><strong>Partially Incorporeal.</strong> You can move through occupied spaces as if they were Difficult Terrain. If you end your turn in such a space, you are shunted to the last unoccupied space you were in.</p>
+      <p class="indent"><strong>Shadow Flurry.</strong> You can use your Flurry of Blows without expending any Focus Points.</p>
+    </description>
+    <sheet action="Magic Action">
+      <description>While in Dim Light/Darkness, expend 3 Focus Points to gain for 1 minute the following benerif: Invisible condition; you can move in occupied spaces as in Difficult Terrain; You can use your Flurry of Blows without expending any Focus Points. The effects ends if you don't end your turn in Dim Light/Darkness or if you are Incapacitated.</description> 
+    </sheet>
+  </element>
+</elements>
+
+
+

@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Tiefling (2024)</name>
+    <description>Tiefling species from the 2024 Player's Handbook</description>
+    <author url="https://aurorabuilder.com">Aurora Builder</author>
+    <update version="1.0.0">
+      <file name="species-tiefling-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/species-tiefling-2024.xml" />
+    </update>
+    <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+  </info>
+
+  <!-- SPECIE -->
+  <element name="Tiefling (2024)" type="Race" source="Player's Handbook (2024)" id="ID_SPECIES_TIEFLING_2024">
+    <description>
+      <p class="flavor">Tieflings born in the Lower Planes or with fiendish ancestors. Their legacy grants supernatural powers.</p>
+      <h4>TIEFLING TRAITS (2024)</h4>
+      <p><span class="feature">Creature Type.</span> Humanoid</p>
+      <p><span class="feature">Size.</span> Medium (4â€“7 ft.) or Small (3â€“4 ft.), chosen when you select this species.</p>
+      <p><span class="feature">Speed.</span> 30 feet.</p>
+      <p><span class="feature">Darkvision.</span> 60 feet.</p>
+      <p><span class="feature">Fiendish Legacy.</span> Choose a legacy (Abyssal, Chthonic, Infernal) that grants you a damage resistance, a cantrip, and spells at levels 3 and 5.</p>
+      <p><span class="feature">Otherworldly Presence.</span> You know the <em>Thaumaturgy</em> cantrip.</p>
+      <p class="rules">In 2024 this species does not grant ability score increases. Languages are chosen during character creation.</p>
+    </description>
+    <sheet display="false" />
+    <setters>
+      <set name="height" modifier="2d8">4'9"</set>
+      <set name="weight" modifier="2d4">110 lb.</set>
+    </setters>
+    <rules>
+
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Vision" id="ID_PHB24_VISION_DARKVISION" />
+
+      <!-- Size choice -->
+      <select name="Size (Tiefling 2024)" type="Racial Trait" supports="Tiefling 2024 Size Choice" number="1" />
+
+      <!-- Otherworldly Presence (Thaumaturgy) -->
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_TIEFLING_2024_OTHERWORLDLY_PRESENCE" />
+
+      <!-- Fiendish Legacy choice -->
+      <select name="Fiendish Legacy" type="Racial Trait" supports="Tiefling 2024 Legacy" number="1" />
+      
+      <!-- Spellcasting Ability -->
+      <select name="Spellcasting Ability" type="Racial Trait" supports="Tiefling2024SpellcastingAbility" number="1" />
+      <grant type="Language" id="ID_LANGUAGE_COMMON" />
+    </rules>
+  </element>
+
+  <!-- SIZE CHOICES -->
+  <element name="Size: Medium" type="Racial Trait" source="Player's Handbook (2024)" id="ID_RACIAL_TRAIT_TIEFLING_2024_SIZE_MEDIUM">
+    <supports>Tiefling 2024 Size Choice</supports>
+    <description><p>Your size is Medium.</p></description>
+    <sheet display="false"/>
+    <rules>
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+    </rules>
+  </element>
+
+  <element name="Size: Small" type="Racial Trait" source="Player's Handbook (2024)" id="ID_RACIAL_TRAIT_TIEFLING_2024_SIZE_SMALL">
+    <supports>Tiefling 2024 Size Choice</supports>
+    <description><p>Your size is Small.</p></description>
+    <sheet display="false"/>
+    <rules>
+      <grant type="Size" id="ID_SIZE_SMALL" />
+    </rules>
+  </element>
+
+  <!-- OTHERWORLDLY PRESENCE -->
+  <element name="Otherworldly Presence" type="Racial Trait" source="Player's Handbook (2024)" id="ID_RACIAL_TRAIT_TIEFLING_2024_OTHERWORLDLY_PRESENCE">
+    <description>
+      <p>You know the <em>Thaumaturgy</em> cantrip.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" spellcasting="Fiendish Legacy" />
+    </rules>
+  </element>
+
+  <!-- LEGACY: ABYSSAL -->
+  <element name="Fiendish Legacy: Abyssal" type="Racial Trait" source="Player's Handbook (2024)" id="ID_RACIAL_TRAIT_TIEFLING_2024_LEGACY_ABYSSAL">
+    <supports>Tiefling 2024 Legacy</supports>
+    <description>
+      <p><strong>Resistance:</strong> Poison.</p>
+      <p><strong>Cantrip:</strong> <em>Poison Spray</em>.</p>
+      <p><strong>Spells:</strong> 3rd level <em>Ray of Sickness</em> (1/day without a slot, or with slots); 5th level <em>Hold Person</em> (same rules).</p>
+    </description>
+    <sheet>
+      <description>Once per Long Rest, you can cast your 1+ level Legacy spells without expending a spell slot. You can also cast them expending a spell slot of the appropriate level. </description>
+    </sheet>
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+      <grant type="Spell" id="ID_PHB_SPELL_POISON_SPRAY" spellcasting="Fiendish Legacy" />
+      <grant type="Spell" id="ID_PHB_SPELL_RAY_OF_SICKNESS" level="3" prepared="true" spellcasting="Fiendish Legacy" />
+      <grant type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" level="5" prepared="true" spellcasting="Fiendish Legacy" />
+    </rules>
+  </element>
+
+  <!-- LEGACY: CHTHONIC -->
+  <element name="Fiendish Legacy: Chthonic" type="Racial Trait" source="Player's Handbook (2024)" id="ID_RACIAL_TRAIT_TIEFLING_2024_LEGACY_CHTHONIC">
+    <supports>Tiefling 2024 Legacy</supports>
+    <description>
+      <p><strong>Resistance:</strong> Necrotic.</p>
+      <p><strong>Cantrip:</strong> <em>Chill Touch</em>.</p>
+      <p><strong>Spells:</strong> 3rd level <em>False Life</em> (1/day without a slot, or with slots); 5th level <em>Ray of Enfeeblement</em> (same rules).</p>
+    </description>
+    <sheet>
+      <description>Once per Long Rest, you can cast your 1+ level Legacy spells without expending a spell slot. You can also cast them expending a spell slot of the appropriate level. </description>
+    </sheet>
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+      <grant type="Spell" id="ID_PHB_SPELL_CHILL_TOUCH" spellcasting="Fiendish Legacy" />
+      <grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" level="3" prepared="true" spellcasting="Fiendish Legacy" />
+      <grant type="Spell" id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT" level="5" prepared="true" spellcasting="Fiendish Legacy" />
+    </rules>
+  </element>
+
+  <!-- LEGACY: INFERNAL -->
+  <element name="Fiendish Legacy: Infernal" type="Racial Trait" source="Player's Handbook (2024)" id="ID_RACIAL_TRAIT_TIEFLING_2024_LEGACY_INFERNAL">
+    <supports>Tiefling 2024 Legacy</supports>
+    <description>
+      <p><strong>Resistance:</strong> Fire.</p>
+      <p><strong>Cantrip:</strong> <em>Fire Bolt</em>.</p>
+      <p><strong>Spells:</strong> 3rd level <em>Hellish Rebuke</em> (1/day without a slot, or with slots); 5th level <em>Darkness</em> (same rules).</p>
+    </description>
+    <sheet>
+      <description>Once per Long Rest, you can cast your 1+ level Legacy spells without expending a spell slot. You can also cast them expending a spell slot of the appropriate level. </description>
+    </sheet>
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+      <grant type="Spell" id="ID_PHB_SPELL_FIRE_BOLT" spellcasting="Fiendish Legacy" />
+      <grant type="Spell" id="ID_PHB_SPELL_HELLISH_REBUKE" level="3" prepared="true" spellcasting="Fiendish Legacy" />
+      <grant type="Spell" id="ID_PHB_SPELL_DARKNESS" level="5" prepared="true" spellcasting="Fiendish Legacy" />
+    </rules>
+  </element>
+
+  <!-- Spellcasting Ability Selection -->
+
+    <element name="Intelligence" type="Racial Trait" source="Player's Handbook (2024)" id="ID_RACIAL_TRAIT_TIEFLINGS_2024_LINEAGE_SPELLCASTING_ABILITY_INT">
+    <supports>Tiefling2024SpellcastingAbility</supports>
+        <description><p>Your lineage spellcasting ability is <strong>Intelligence</strong>.</p></description>
+    <sheet display="false" />
+    <spellcasting name="Fiendish Legacy" ability="Intelligence" prepare="true">
+      <list />
+    </spellcasting>
+  </element>
+
+  <element name="Wisdom" type="Racial Trait" source="Player's Handbook (2024)" id="ID_RACIAL_TRAIT_TIEFLINGS_2024_LINEAGE_SPELLCASTING_ABILITY_WIS">
+    <supports>Tiefling2024SpellcastingAbility</supports>
+    <description><p>Your lineage spellcasting ability is <strong>Wisdom</strong>.</p></description>
+    <sheet display="false" />
+    <spellcasting name="Fiendish Legacy" ability="Wisdom" prepare="true">
+      <list />
+    </spellcasting>
+   </element>
+  <element name="Charisma" type="Racial Trait" source="Player's Handbook (2024)" id="ID_RACIAL_TRAIT_TIEFLINGS_2024_LINEAGE_SPELLCASTING_ABILITY_CHA">
+    <supports>Tiefling2024SpellcastingAbility</supports>
+        <description><p>Your lineage spellcasting ability is <strong>Charisma</strong>.</p></description>
+    <sheet display="false" />
+    <spellcasting name="Fiendish Legacy" ability="Charisma" prepare="true">
+      <list />
+    </spellcasting>
+  </element>
+</elements>
+
+
+

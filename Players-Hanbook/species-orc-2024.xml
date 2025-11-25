@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Orc (2024)</name>
+    <description>Orc species from the 2024 Playerâ€™s Handbook for Aurora Builder (verbatim traits).</description>
+    <author url="https://aurorabuilder.com">Aurora Builder</author>
+    <update version="1.0.0">
+      <file name="species-orc-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/species-orc-2024.xml" />
+    </update>
+    <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+  </info>
+
+  <!-- SPECIES -->
+  <element name="Orc (2024)" type="Race" source="Player's Handbook (2024)" id="ID_SPECIES_ORC_2024">
+    <description>
+      <h4>ORC TRAITS</h4>
+      <p><span class="feature">Creature Type.</span> Humanoid</p>
+      <p><span class="feature">Size.</span> Medium (about 6â€“7 feet tall)</p>
+      <p><span class="feature">Speed.</span> 30 feet</p>
+      <p><span class="feature">Adrenaline Rush.</span> You can take the Dash action as a Bonus Action. When you do so, you gain a number of Temporary Hit Points equal to your Proficiency Bonus. You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest.</p>
+      <p><span class="feature">Darkvision.</span> You have Darkvision with a range of 120 feet.</p>
+      <p><span class="feature">Relentless Endurance.</span> When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 Hit Point instead. Once you use this trait, you canâ€™t do so again until you finish a Long Rest.</p>
+    </description>
+
+    <sheet display="false" />
+
+    <rules>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Vision" id="ID_PHB24_VISION_SUPERIORDARKVISION" />
+
+      <grant type="Racial Trait" id="ID_ORC_2024_ADRENALINE_RUSH" />
+      <grant type="Racial Trait" id="ID_ORC_2024_RELENTLESS_ENDURANCE" />
+      <grant type="Language" id="ID_LANGUAGE_COMMON" />
+    </rules>
+  </element>
+
+  <!-- TRAITS -->
+  <element name="Adrenaline Rush" type="Racial Trait" source="Player's Handbook (2024)" id="ID_ORC_2024_ADRENALINE_RUSH">
+    <description>
+      <p>You can take the Dash action as a Bonus Action. When you do so, you gain a number of Temporary Hit Points equal to your Proficiency Bonus.</p>
+      <p>You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest.</p>
+    </description>
+    <sheet action="Bonus Action" usage="{{proficiency}}/Short or Long Rest">
+      <description>You can take the Dash Action and gain {{proficiency}} Temporary Hit Points.</description>
+    </sheet>
+  </element>
+
+  <element name="Relentless Endurance" type="Racial Trait" source="Player's Handbook (2024)" id="ID_ORC_2024_RELENTLESS_ENDURANCE">
+    <description>
+      <p>When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 Hit Point instead. Once you use this trait, you canâ€™t do so again until you finish a Long Rest.</p>
+    </description>
+    <sheet usage="1/Long Rest">
+      <description>Drop to 1 HP instead of 0 HP when not killed outright.</description>
+    </sheet>
+  </element>
+</elements>
+
+
+

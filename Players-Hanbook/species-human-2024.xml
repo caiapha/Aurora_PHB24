@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Human (2024)</name>
+    <description>Human species from the 2024 Playerâ€™s Handbook for Aurora Builder (verbatim traits).</description>
+    <author url="https://aurorabuilder.com">Aurora Builder</author>
+    <update version="1.0.0">
+      <file name="species-human-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/species-human-2024.xml" />
+    </update>
+    <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+  </info>
+
+  <!-- SPECIES -->
+  <element name="Human (2024)" type="Race" source="Player's Handbook (2024)" id="ID_SPECIES_HUMAN_2024">
+    <description>
+      <h4>HUMAN TRAITS</h4>
+      <p><span class="feature">Creature Type.</span> Humanoid</p>
+      <p><span class="feature">Size.</span> Medium (about 4â€“7 feet tall) or Small (about 2â€“4 feet tall), chosen when you select this species</p>
+      <p><span class="feature">Speed.</span> 30 feet</p>
+      <p><span class="feature">Resourceful.</span> You gain Heroic Inspiration whenever you finish a Long Rest.</p>
+      <p><span class="feature">Skillful.</span> You gain proficiency in one skill of your choice.</p>
+      <p><span class="feature">Versatile.</span> You gain an Origin feat of your choice (see â€œFeatsâ€)</p>
+    </description>
+
+    <sheet display="false" />
+
+    <setters>
+      <set name="height" modifier="2d10">5'6"</set>
+      <set name="weight" modifier="2d4">150 lb.</set>
+    </setters>
+
+    <rules>
+      <stat name="innate speed" value="30" bonus="base"/>
+
+      <!-- Size choice (Medium or Small) -->
+      <select type="Racial Trait" name="Size (Human 2024)" supports="Human2024SizeChoice" number="1" />
+
+      <!-- Shared traits -->
+      <grant type="Racial Trait" id="ID_HUMAN_2024_RESOURCEFUL" />
+      <grant type="Racial Trait" id="ID_HUMAN_2024_SKILLFUL" />
+      <grant type="Racial Trait" id="ID_HUMAN_2024_VERSATILE" />
+      <grant type="Language" id="ID_LANGUAGE_COMMON" />
+    </rules>
+  </element>
+
+  <!-- SIZE CHOICES -->
+  <element name="Size: Medium" type="Racial Trait" source="Player's Handbook (2024)" id="ID_HUMAN_2024_SIZE_MEDIUM">
+    <supports>Human2024SizeChoice</supports>
+    <description><p>Your size is Medium.</p></description>
+    <sheet display="false" />
+    <rules><grant type="Size" id="ID_SIZE_MEDIUM" /></rules>
+  </element>
+
+  <element name="Size: Small" type="Racial Trait" source="Player's Handbook (2024)" id="ID_HUMAN_2024_SIZE_SMALL">
+    <supports>Human2024SizeChoice</supports>
+    <description><p>Your size is Small.</p></description>
+    <sheet display="false" />
+    <rules><grant type="Size" id="ID_SIZE_SMALL" /></rules>
+  </element>
+
+  <!-- TRAITS -->
+  <element name="Resourceful" type="Racial Trait" source="Player's Handbook (2024)" id="ID_HUMAN_2024_RESOURCEFUL">
+    <description><p>You gain Heroic Inspiration whenever you finish a Long Rest.</p></description>
+    <sheet><description>You Gain an Heroic Inspiration after each Long Rest.</description></sheet>
+  </element>
+
+  <element name="Skillful" type="Racial Trait" source="Player's Handbook (2024)" id="ID_HUMAN_2024_SKILLFUL">
+    <description><p>You gain proficiency in one skill of your choice.</p></description>
+    <sheet display="false" />
+    <rules>
+      <!-- Any skill -->
+      <select type="Proficiency" name="Skill Proficiency (Human)" supports="Skill" number="1" />
+    </rules>
+  </element>
+
+  <element name="Versatile" type="Racial Trait" source="Player's Handbook (2024)" id="ID_HUMAN_2024_VERSATILE">
+    <description><p>You gain an Origin feat of your choice (see â€œFeatsâ€). Skilled is recommended.</p></description>
+    <sheet display="false" />
+    <rules>
+      <!-- Allow picking any feat; table guidance will handle â€œOriginâ€ category -->
+      <select type="Feat" name="Origin Feat (Human Versatile)" supports="Origin Feat" number="1" />
+    </rules>
+  </element>
+</elements>
+
+
+

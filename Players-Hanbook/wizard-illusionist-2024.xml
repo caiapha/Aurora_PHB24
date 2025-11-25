@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <update version="1.0.0">
+      <file name="wizard-illusionist-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/wizard-illusionist-2024.xml" />
+    </update>
+    <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+  </info>
+
+  <!-- ===================== WIZARD SUBCLASS: ILLUSIONIST (PHB 2024) ===================== -->
+  <element name="Illusionist" type="Archetype" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_WIZARD_ARCHETYPE_ILLUSIONIST">
+    <supports>WizardSubclass</supports>
+    <description>
+      <h1>Illusionist</h1>
+      <p>Weave subtle spells of deception.</p>
+
+      <h3>Subclass Features</h3>
+      <p>When you choose this subclass at 3rd level, you gain the following features.</p>
+
+      <div element="ID_WOTC_PHB24_WIZARD_ILLUSIONIST_FEATURE_ILLUSION_SAVANT" />
+      <div element="ID_WOTC_PHB24_WIZARD_ILLUSIONIST_FEATURE_IMPROVED_ILLUSIONS" />
+      <div element="ID_WOTC_PHB24_WIZARD_ILLUSIONIST_FEATURE_PHANTASMAL_CREATURES" />
+      <div element="ID_WOTC_PHB24_WIZARD_ILLUSIONIST_FEATURE_ILLUSORY_SELF" />
+      <div element="ID_WOTC_PHB24_WIZARD_ILLUSIONIST_FEATURE_ILLUSORY_REALITY" />
+    </description>
+
+    <sheet display="false" />
+    <rules>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_WIZARD_ILLUSIONIST_FEATURE_ILLUSION_SAVANT" level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_WIZARD_ILLUSIONIST_FEATURE_IMPROVED_ILLUSIONS" level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_WIZARD_ILLUSIONIST_FEATURE_PHANTASMAL_CREATURES" level="6" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_WIZARD_ILLUSIONIST_FEATURE_ILLUSORY_SELF" level="10" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_WIZARD_ILLUSIONIST_FEATURE_ILLUSORY_REALITY" level="14" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 3: Illusion Savant ===== -->
+  <element name="Illusion Savant" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_WIZARD_ILLUSIONIST_FEATURE_ILLUSION_SAVANT">
+    <description>
+      <p>Choose two Wizard spells from the Illusion school, each no higher than level 2, and add them to your spellbook for free.</p>
+      <p>In addition, whenever you gain access to a new level of spell slots in this class, you can add one Wizard spell from the Illusion school to your spellbook for free. The chosen spell must be of a level for which you have spell slots.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select name="Illusion Savant (3 level)" type="Spell" supports="Illusion, WizardPHB24, $(spellcasting:slots)" number="2" level="3" spellcasting="wizard" />
+      <select name="Illusion Savant (5 level)" type="Spell" supports="Illusion, WizardPHB24, $(spellcasting:slots)" number="1" level="5" spellcasting="wizard" />
+      <select name="Illusion Savant (7 level)" type="Spell" supports="Illusion, WizardPHB24, $(spellcasting:slots)" number="1" level="7" spellcasting="wizard" />
+      <select name="Illusion Savant (9 level)" type="Spell" supports="Illusion, WizardPHB24, $(spellcasting:slots)" number="1" level="9" spellcasting="wizard" />
+      <select name="Illusion Savant (11 level)" type="Spell" supports="Illusion, WizardPHB24, $(spellcasting:slots)" number="1" level="11" spellcasting="wizard" />
+      <select name="Illusion Savant (13 level)" type="Spell" supports="Illusion, WizardPHB24, $(spellcasting:slots)" number="1" level="13" spellcasting="wizard" />
+      <select name="Illusion Savant (15 level)" type="Spell" supports="Illusion, WizardPHB24, $(spellcasting:slots)" number="1" level="15" spellcasting="wizard" />
+      <select name="Illusion Savant (17 level)" type="Spell" supports="Illusion, WizardPHB24, $(spellcasting:slots)" number="1" level="17" spellcasting="wizard" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 3: Improved Illusions ===== -->
+  <element name="Improved Illusions" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_WIZARD_ILLUSIONIST_FEATURE_IMPROVED_ILLUSIONS">
+    <description>
+      <p>You can cast Illusion spells without providing Verbal components, and if an Illusion spell you cast has a range of 10 or more feet, its range increases by 60 feet.</p>
+      <p class="indent">You also know the <em>Minor Illusion</em> cantrip. If you already know it, you instead learn a different Wizard cantrip of your choice. This cantrip doesnâ€™t count against the number of cantrips you know. You can create both a sound and an image with a single casting of <em>Minor Illusion</em>, and you can cast it as a Bonus Action.</p>
+    </description>
+    <sheet>
+      <description>Illusion spells require no Verbal component. If an Illusion spell has range â‰¥10 ft, increase its range by 60 ft. Your Minor Illusion can create sound and image together and you cast it as a Bonus Action.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" requirements="ID_PHB24_SPELL_MINOR_ILLUSION" id="ID_WOTC_PHB24_WIZARD_ILLUSIONIST_FEATURE_IMPROVED_ILLUSIONS_ALT1" />
+      <grant type="Archetype Feature" requirements="!ID_PHB24_SPELL_MINOR_ILLUSION" id="ID_WOTC_PHB24_WIZARD_ILLUSIONIST_FEATURE_IMPROVED_ILLUSIONS_ALT2" />       
+    </rules>
+  </element>
+  <!-- improved illusion solutions -->
+  <element name="Improved Illusion" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_WIZARD_ILLUSIONIST_FEATURE_IMPROVED_ILLUSIONS_ALT1">
+    <description />
+    <sheet display="false" />
+    <rules>
+      <select name="Improved Illusionist" type="Spell" supports="WizardPHB24, 0" spellcasting="wizard" />
+    </rules>
+  </element>
+  <element name="Improved Illusion" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_WIZARD_ILLUSIONIST_FEATURE_IMPROVED_ILLUSIONS_ALT2">
+    <description />
+    <sheet display="false" />
+    <rules>
+      <grant type="Spell" id="ID_PHB24_SPELL_MINOR_ILLUSION" spellcasting="wizard" />
+    </rules>
+  </element>
+  <!-- ===== Level 6: Phantasmal Creatures ===== -->
+  <element name="Phantasmal Creatures" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_WIZARD_ILLUSIONIST_FEATURE_PHANTASMAL_CREATURES">
+    <description>
+      <p>You always have the <em>Summon Beast</em> and <em>Summon Fey</em> spells prepared. Whenever you cast either spell, you can change its school to Illusion, causing the summoned creature to appear spectral.</p>
+      <p class="indent">You can cast the Illusion version of each spell without expending a spell slot, but doing so halves the creatureâ€™s Hit Points. Once you cast either spell in this way, you canâ€™t cast that spell without a slot again until you finish a Long Rest.</p>
+    </description>
+    <sheet usage="1/Long Rest Each Spell">
+      <description> You can cast an Illusion version of Summon Beast and Summon Fey without expending a slot; that creature has half its normal HP.</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB24_SPELL_SUMMON_BEAST" prepared="true" spellcasting="wizard" />
+      <grant type="Spell" id="ID_PHB24_SPELL_SUMMON_FEY" prepared="true" spellcasting="wizard" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 10: Illusory Self ===== -->
+  <element name="Illusory Self" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_WIZARD_ILLUSIONIST_FEATURE_ILLUSORY_SELF">
+    <description>
+      <p>When a creature hits you with an attack roll, you can take a Reaction to interpose an illusory duplicate of yourself between the attacker and yourself. The attack automatically misses you, then the illusion dissipates.</p>
+      <p>Once you use this feature, you canâ€™t use it again until you finish a Short or Long Rest. You can also restore your use of it by expending a level 2 or higher spell slot (no action required).</p>
+    </description>
+    <sheet action="Reaction" usage="1/Short Rest">
+      <description>When a creature hits you with an attack roll, cause the attack to miss. You can restore a use by expending a 2nd-level+ spell slot (no action).</description>
+    </sheet>
+  </element>
+
+  <!-- ===== Level 14: Illusory Reality ===== -->
+  <element name="Illusory Reality" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_WIZARD_ILLUSIONIST_FEATURE_ILLUSORY_REALITY">
+    <description>
+      <p>You have learned to weave shadow magic into your illusions to give them a semi-reality. When you cast an Illusion spell with a spell slot, you can choose one inanimate, nonmagical object that is part of the illusion and make that object real. You can do this on your turn as a Bonus Action while the spell is ongoing. The object remains real for 1 minute, during which it can't deal damage or give any conditions. For example, you can create an illusion of a bridge over a chasm and then make it real and cross it.</p>
+    </description>
+    <sheet action="Bonus Action">
+      <description>While an Illusion 1st+ level spell you cast is ongoing, make one inanimate, nonmagical object in the illusion real for 1 minute (it canâ€™t deal damage or impose conditions).</description>
+    </sheet>
+  </element>
+</elements>
+
+
+

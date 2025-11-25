@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <update version="1.0.0">
+      <file name="class-paladin-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/class-paladin-2024.xml" />
+    </update>
+    <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+  </info>
+
+  <!-- ===================== PALADIN (PHB 2024) ===================== -->
+  <element name="Paladin" type="Class" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_PALADIN">
+    <description>
+      <h1>Paladin</h1>
+      <p>A holy warrior bound to a sacred oath.</p>
+
+      <h3>Class Features</h3>
+      <p>As a Paladin, you gain the following class features.</p>
+
+      <h4>Hit Points</h4>
+      <p><strong>Hit Dice:</strong> 1d10 per Paladin level</p>
+      <p><strong>Hit Points at 1st Level:</strong> 10 + your Constitution modifier</p>
+      <p><strong>Hit Points at Higher Levels:</strong> 1d10 (or 6) + your Constitution modifier per Paladin level after 1st</p>
+
+      <h4>Proficiencies</h4>
+      <p><strong>Armor:</strong> Light, Medium, Heavy, Shields</p>
+      <p><strong>Weapons:</strong> Simple weapons, Martial weapons</p>
+      <p><strong>Tools:</strong> None</p>
+      <p><strong>Saving Throws:</strong> Wisdom, Charisma</p>
+      <p><strong>Skills:</strong> Choose two from Athletics, Insight, Intimidation, Medicine, Persuasion, Religion</p>
+
+      <h4>Equipment</h4>
+      <p>You start with the following equipment, in addition to the equipment granted by your background: a Martial weapon and a Shield or two Martial weapons; five Javelins or any Simple melee weapon; Chain Mail; and a Holy Symbol.</p>
+
+      <h5 class="caption">THE PALADIN</h5>
+      <table class="class-features">
+        <thead>
+          <tr>
+            <th>Lvl</th><th>Prof. Bonus</th><th class="left">Features</th><th>Channel Divinity</th><th>Prepared Spells</th>
+            <th>1st</th><th>2nd</th><th>3rd</th><th>4th</th><th>5th</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td> 1st</td><td>+2</td><td class="left">Lay On Hands; Spellcasting; Weapon Mastery</td><td>â€”</td><td>2</td><td>2</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td></tr>
+          <tr><td> 2nd</td><td>+2</td><td class="left">Fighting Style; Paladinâ€™s Smite</td><td>â€”</td><td>3</td><td>2</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td></tr>
+          <tr><td> 3rd</td><td>+2</td><td class="left">Channel Divinity; Paladin Subclass</td><td>2</td><td>4</td><td>3</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td></tr>
+          <tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td><td>2</td><td>5</td><td>3</td><td>â€”</td><td>â€”</td><td>â€”</td><td>â€”</td></tr>
+          <tr><td> 5th</td><td>+3</td><td class="left">Extra Attack; Faithful Steed</td><td>2</td><td>6</td><td>4</td><td>2</td><td>â€”</td><td>â€”</td><td>â€”</td></tr>
+          <tr><td> 6th</td><td>+3</td><td class="left">Aura of Protection</td><td>2</td><td>6</td><td>4</td><td>2</td><td>â€”</td><td>â€”</td><td>â€”</td></tr>
+          <tr><td> 7th</td><td>+3</td><td class="left">Subclass feature</td><td>2</td><td>7</td><td>4</td><td>3</td><td>â€”</td><td>â€”</td><td>â€”</td></tr>
+          <tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td><td>2</td><td>7</td><td>4</td><td>3</td><td>â€”</td><td>â€”</td><td>â€”</td></tr>
+          <tr><td> 9th</td><td>+4</td><td class="left">Abjure Foes (Channel Divinity)</td><td>2</td><td>9</td><td>4</td><td>3</td><td>2</td><td>â€”</td><td>â€”</td></tr>
+          <tr><td>10th</td><td>+4</td><td class="left">Aura of Courage</td><td>2</td><td>9</td><td>4</td><td>3</td><td>2</td><td>â€”</td><td>â€”</td></tr>
+          <tr><td>11th</td><td>+4</td><td class="left">Radiant Strikes</td><td>3</td><td>10</td><td>4</td><td>3</td><td>3</td><td>â€”</td><td>â€”</td></tr>
+          <tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td><td>3</td><td>10</td><td>4</td><td>3</td><td>3</td><td>â€”</td><td>â€”</td></tr>
+          <tr><td>13th</td><td>+5</td><td class="left">â€”</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>â€”</td></tr>
+          <tr><td>14th</td><td>+5</td><td class="left">Restoring Touch</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>â€”</td></tr>
+          <tr><td>15th</td><td>+5</td><td class="left">Subclass feature</td><td>3</td><td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>â€”</td></tr>
+          <tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td><td>3</td><td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>â€”</td></tr>
+          <tr><td>17th</td><td>+6</td><td class="left">â€”</td><td>3</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+          <tr><td>18th</td><td>+6</td><td class="left">Aura Expansion</td><td>3</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+          <tr><td>19th</td><td>+6</td><td class="left">Epic Boon</td><td>3</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+          <tr><td>20th</td><td>+6</td><td class="left">Subclass feature</td><td>3</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+        </tbody>
+      </table>
+
+      <!-- Feature includes -->
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_LAY_ON_HANDS" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_SPELLCASTING" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_WEAPON_MASTERY" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_FIGHTING_STYLE" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_PALADINS_SMITE" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_CHANNEL_DIVINITY" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_SUBCLASS" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_ABILITYSCOREIMPROVEMENT" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_EXTRA_ATTACK" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_FAITHFUL_STEED" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_AURA_OF_PROTECTION" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_ABJURE_FOES" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_AURA_OF_COURAGE" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_RADIANT_STRIKES" />
+      <!-- RESTORING_TOUCH" INCLUDED IN LAY ON HANDS -->
+      <!-- AURA_EXPANSION InCLUDED IN AURA OF PROTECTION -->
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_EPIC_BOON" />
+    </description>
+
+    <sheet display="false">
+      <description>A holy warrior bound to a sacred oath.</description>
+    </sheet>
+
+    <setters>
+      <set name="short">A holy warrior bound to a sacred oath.</set>
+      <set name="hd">d10</set>
+    </setters>
+
+    <!-- UNICO BLOCCO RULES -->
+    <rules>
+      <!-- Proficiencies -->
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA"/>
+      <select type="Proficiency" name="Skill Proficiency (Paladin)" supports="Skill, PHB24, Paladin" number="2" />
+
+      <!-- Grants per livello -->
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_LAY_ON_HANDS" level="1" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_SPELLCASTING" level="1" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_WEAPON_MASTERY" level="1" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_FIGHTING_STYLE" level="2" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_PALADINS_SMITE" level="2" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_CHANNEL_DIVINITY" level="3" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_SUBCLASS" level="3" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_ABILITYSCOREIMPROVEMENT" level="4" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_EXTRA_ATTACK" level="5" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_FAITHFUL_STEED" level="5" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_AURA_OF_PROTECTION" level="6" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_ABILITYSCOREIMPROVEMENT" level="8" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_ABJURE_FOES" level="9" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_AURA_OF_COURAGE" level="10" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_RADIANT_STRIKES" level="11" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_ABILITYSCOREIMPROVEMENT" level="12" />
+      <!-- RESTORING_TOUCH" INCLUDED IN LAY ON HANDS -->
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_ABILITYSCOREIMPROVEMENT" level="16" />
+      <!-- AURA_EXPANSION InCLUDED IN AURA OF PROTECTION -->
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_EPIC_BOON" level="19" />
+    </rules>
+
+    <!-- Multiclass (il suo <rules> Ã¨ OK) -->
+    <multiclass id="ID_WOTC_PHB24_MULTICLASS_PALADIN">
+      <prerequisite>Strength 13 and Charisma 13</prerequisite>
+      <requirements>[str:13],[cha:13]</requirements>
+      <setters>
+        <set name="multiclass proficiencies">Martial weapons; Light and Medium armor; Shields</set>
+      </setters>
+      <rules>
+        <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
+        <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR"/>
+        <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD"/>
+        <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS"/>
+      </rules>
+    </multiclass>
+  </element>
+
+  <!-- ===================== FEATURES ===================== -->
+
+  <element name="Lay On Hands" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_LAY_ON_HANDS">
+    <description>
+      <p>Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you finish a Long Rest. With that pool, you can restore a total number of Hit Points equal to five times your Paladin level.</p>
+      <p class="indent"><strong>Bonus Action.</strong> Touch a creature (including yourself) and restore Hit Points up to the amount remaining in the pool. You can also expend 5 HP from the pool to remove the <strong>Poisoned</strong> condition (those points donâ€™t restore HP).</p>
+    </description>
+    <sheet action="Bonus Action" usage="pool/Long Rest">
+      <description level="1">You have a pool of {{lay on hands:pool}} HP. Touching a creature you can restore an amount of Hit Points of your choice, up to the amount remaining in the pool. You can remove Poisoned condition spending 5 points from the pool.</description>
+      <description level="14">You have a pool of {{lay on hands:pool}} HP. Touching a creature you can restore an amount of Hit Points of your choice, up to the amount remaining in the pool. You can remove Poisoned, Blinded, Charmed, Deafened, Frightened, Paralyzed, or Stunned condition spending 5 points from the pool.</description>
+    </sheet>
+    <rules>
+      <stat name="lay on hands:pool" value="level:paladin" />
+      <stat name="lay on hands:pool" value="level:paladin" />
+      <stat name="lay on hands:pool" value="level:paladin" />
+      <stat name="lay on hands:pool" value="level:paladin" />
+      <stat name="lay on hands:pool" value="level:paladin" />
+    </rules>
+  </element>
+
+  <element name="Spellcasting" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_SPELLCASTING">
+    <description>
+      <p>You learn to draw on divine magic through prayer to cast spells. See chapter 7 for general spellcasting rules. The information below details how you use those rules with Paladin spells.</p>
+
+      <h5>Spell Slots</h5>
+      <p>The Paladin table shows how many spell slots you have to cast your 1st-level and higher spells. You regain all expended slots when you finish a Long Rest.</p>
+
+      <h5>Prepared Spells of Level 1+</h5>
+      <p>You prepare Paladin spells for casting. To start, choose two 1st-level spells from the Paladin spell list.</p>
+      <p class="indent">The number of spells on your prepared list increases as you gain Paladin levels, as shown in the Prepared Spells column of the Paladin table. When this number increases, choose additional Paladin spells so that your list matches the number on the table. The spells must be of a level for which you have spell slots.</p>
+      <p class="indent">If another Paladin feature gives you spells you always have prepared, they donâ€™t count against the number of spells you can prepare with this feature.</p>
+
+      <h5>Changing Your Prepared Spells</h5>
+      <p>Whenever you finish a Long Rest, you can change your prepared list, replacing any spells with other Paladin spells for which you have spell slots.</p>
+
+      <h5>Spellcasting Ability</h5>
+      <p>Charisma is your spellcasting ability for your Paladin spells.</p>
+      <center>
+        <p><strong>Spell Save DC</strong> = 8 + your proficiency bonus + your Charisma modifier</p>
+        <p><strong>Spell Attack Modifier</strong> = your proficiency bonus + your Charisma modifier</p>
+      </center>
+
+      <h5>Spellcasting Focus</h5>
+      <p>You can use a Holy Symbol as a spellcasting focus for your Paladin spells.</p>
+    </description>
+
+    <sheet display="false" />
+
+    <spellcasting name="Paladin" ability="Charisma" prepare="true">
+      <list>PaladinPHB24</list>
+    </spellcasting>
+
+    <rules>
+      <!-- Multiclass slots (half-caster) -->
+      <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF" supports="PHB24" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
+
+      <!-- Spell slots (incrementali, 1â€“5) -->
+      <!-- 1st -->
+      <stat name="paladin:spellcasting:slots:1" value="2" level="1" />
+      <stat name="paladin:spellcasting:slots:1" value="1" level="3" />
+      <stat name="paladin:spellcasting:slots:1" value="1" level="5" />
+
+      <!-- 2nd -->
+      <stat name="paladin:spellcasting:slots:2" value="2" level="5" />
+      <stat name="paladin:spellcasting:slots:2" value="1" level="7" />
+
+      <!-- 3rd -->
+      <stat name="paladin:spellcasting:slots:3" value="2" level="9" />
+      <stat name="paladin:spellcasting:slots:3" value="1" level="11" />
+
+      <!-- 4th -->
+      <stat name="paladin:spellcasting:slots:4" value="1" level="13" />
+      <stat name="paladin:spellcasting:slots:4" value="1" level="15" />
+      <stat name="paladin:spellcasting:slots:4" value="1" level="17" />
+
+      <!-- 5th -->
+      <stat name="paladin:spellcasting:slots:5" value="1" level="17" />
+      <stat name="paladin:spellcasting:slots:5" value="1" level="19" />
+
+      <!-- Prepared spells (colonna della tabella) -->
+      <stat name="paladin:spellcasting:prepare" value="2" level="1" />
+      <stat name="paladin:spellcasting:prepare" value="1" level="2" />
+      <stat name="paladin:spellcasting:prepare" value="1" level="3" />
+      <stat name="paladin:spellcasting:prepare" value="1" level="4" />
+      <stat name="paladin:spellcasting:prepare" value="1" level="5" />
+      <stat name="paladin:spellcasting:prepare" value="1" level="7" />
+      <stat name="paladin:spellcasting:prepare" value="2" level="9" />
+      <stat name="paladin:spellcasting:prepare" value="1" level="11" />
+      <stat name="paladin:spellcasting:prepare" value="1" level="13" />
+      <stat name="paladin:spellcasting:prepare" value="1" level="15" />
+      <stat name="paladin:spellcasting:prepare" value="2" level="17" />
+      <stat name="paladin:spellcasting:prepare" value="1" level="19" />
+      <select type="Spell" name="Spellcasting (Paladin)" supports="$(spellcasting:list), $(spellcasting:slots)" level="1" number="2" spellcasting="Paladin" />
+			<select type="Spell" name="Spellcasting (Paladin)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="1" spellcasting="Paladin" />
+			<select type="Spell" name="Spellcasting (Paladin)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" number="1" spellcasting="Paladin" />
+			<select type="Spell" name="Spellcasting (Paladin)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" number="1" spellcasting="Paladin" />
+			<select type="Spell" name="Spellcasting (Paladin)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" number="1" spellcasting="Paladin" />
+			<select type="Spell" name="Spellcasting (Paladin)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" number="1" spellcasting="Paladin" />
+			<select type="Spell" name="Spellcasting (Paladin)" supports="$(spellcasting:list), $(spellcasting:slots)" level="9" number="2" spellcasting="Paladin" />
+			<select type="Spell" name="Spellcasting (Paladin)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" number="1" spellcasting="Paladin" />
+			<select type="Spell" name="Spellcasting (Paladin)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" number="1" spellcasting="Paladin" />
+			<select type="Spell" name="Spellcasting (Paladin)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" number="1" spellcasting="Paladin" />
+			<select type="Spell" name="Spellcasting (Paladin)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" number="2" spellcasting="Paladin" />
+      <select type="Spell" name="Spellcasting (Paladin)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" number="1" spellcasting="Paladin" />
+    </rules>
+  </element>
+
+  <element name="Weapon Mastery" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_WEAPON_MASTERY">
+    <description>
+      <p>Your training allows you to use the Mastery properties of two kinds of weapons with which you are proficient. You can change the chosen kinds whenever you finish a Long Rest.</p>
+    </description>
+    <sheet>
+      <description>You can use the Mastery property of two proficient weapon kinds; you can change them on a Long Rest.</description>
+    </sheet>
+  </element>
+
+  <element name="Fighting Style" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_FIGHTING_STYLE">
+    <description>
+      <p>You gain a <em>Fighting Style</em> feat of your choice (see feats). Your table may also offer class options.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select type="Class Feature" name="Fighting Style (Paladin)" supports="Fighting_Style_24, Paladin" />
+    </rules>
+  </element>
+
+  <element name="Paladinâ€™s Smite" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_PALADINS_SMITE">
+    <description>
+      <p>You always have the <em>Divine Smite</em> spell prepared. You can also cast it once without expending a spell slot; you regain this ability when you finish a Long Rest.</p>
+    </description>
+    <sheet>
+      <description>You always have Divine Smite prepared and once per Long Rest you can cast it without spending a spell slot.</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB24_SPELL_DIVINE_SMITE" prepared="true" spellcasting="Paladin" />
+    </rules>
+  </element>
+
+  <element name="Channel Divinity" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_CHANNEL_DIVINITY">
+    <description>
+      <p>You can channel divine energy to fuel magical effects. You start with the <em>Divine Sense</em> option; other class or subclass features grant additional options.</p>
+      <p class="indent"><strong>Uses.</strong> You can use Channel Divinity twice. You regain one expended use when you finish a Short Rest, and all expended uses when you finish a Long Rest. At 11th level, you gain a third use.</p>
+      <h6>DIVINE SENSE</h6>
+      <p><strong>Bonus Action.</strong> For 10 minutes or until you are Incapacitated, you know the location of any Celestial, Fiend, or Undead within 60 feet of you and detect consecrated or desecrated places or objects in the same radius.</p>
+    </description>
+    <sheet Action="Bonus Action" usage="{{paladin:channeldivinity:uses}}/Long Rest">
+      <description>You activate one Channel Divinity effect. You ragain one expended use on a Short Rest.</description>
+    </sheet>
+    <rules>
+      <stat name="paladin:channeldivinity:uses" value="2" bonus="base"/>
+      <stat name="paladin:channeldivinity:uses" value="3" bonus="base" level="11"/>
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_DIVINE_SENSE" />
+    </rules>
+  </element>
+
+  <element name="Divine Sense" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_DIVINE_SENSE">
+    <description>
+      <p><strong>Divine Sense.</strong>As a Bonus Action, you can open your awareness to detect Celestials, Fiends, and Undead. For the next 10 minutes or until you have the Incapacitated condition, you know the location of any creature of those types within 60 feet of yourself, and you know its creature type. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the Hallow spell.</p>
+    </description>
+    <sheet action="Channel Divinity">
+      <description> For the next 10 minutes or until you have the Incapacitated condition, you know the location of any Celestials, Fiends, and Undead creature within 60 feet of yourself, and you know its creature type. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated.</description>
+    </sheet>
+  </element>
+
+  <element name="Paladin Subclass" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_SUBCLASS">
+    <description>
+      <p>At 3rd level, choose a Paladin subclass (Oath). You gain its features at the Paladin levels noted in the subclass.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select type="Archetype" name="Paladin Subclass" supports="PaladinSubclass" level="3" />
+    </rules>
+  </element>
+
+  <element name="Ability Score Improvement" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_ABILITYSCOREIMPROVEMENT">
+    <description>
+      <p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify (at Paladin 4, 8, 12, 16).</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select name="Improvement Option (Paladin 4)"  type="Class Feature" supports="Level Improvement" level="4" />
+      <select name="Improvement Option (Paladin 8)"  type="Class Feature" supports="Level Improvement" level="8" />
+      <select name="Improvement Option (Paladin 12)" type="Class Feature" supports="Level Improvement" level="12" />
+      <select name="Improvement Option (Paladin 16)" type="Class Feature" supports="Level Improvement" level="16" />
+    </rules>
+  </element>
+
+  <element name="Extra Attack" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_EXTRA_ATTACK">
+    <description>
+      <p>When you take the Attack action on your turn, you can attack twice instead of once.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="extra attack:count" value="2" bonus="extra attack" />
+    </rules>
+  </element>
+
+  <element name="Faithful Steed" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_FAITHFUL_STEED">
+    <description>
+      <p>You always have <em>Find Steed</em> prepared. You can also cast it once without expending a spell slot; you regain this ability when you finish a Long Rest.</p>
+    </description>
+    <sheet>
+      <description>You always have Find Steed prepared and can cast it once per Long Rest without spending a spell slot.</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB24_SPELL_FIND_STEED" prepared="true" spellcasting="Paladin" />
+    </rules>
+  </element>
+
+  <element name="Aura of Protection" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_AURA_OF_PROTECTION">
+    <description>
+      <p>While you are conscious, you and friendly creatures within 10 feet of you gain a bonus to all saving throws equal to your Charisma modifier (minimum +1). If multiple paladin auras overlap, a creature benefits from only one (its choice).</p>
+    </description>
+    <sheet>
+      <description>You produce an {{aura of protection:size}}-ft Emanation  (inactive if Incapacitated): you and allies in the emanation gain a +{{aura of protection:bonus}} to all saving throws (only one Aura of Protection applies if multiple overlap).</description> -->
+    </sheet>
+    <rules>
+      <stat name="aura of protection:bonus" value="1" bonus="base" />
+      <stat name="aura of protection:bonus" value="{{charisma:modifier}}" bonus="base" />
+      <stat name="aura of protection:size" value="10" bonus="base" level="6" />
+      <stat name="aura of protection:size" value="30" bonus="base" level="18" />
+    </rules>
+  </element>
+
+  <element name="Abjure Foes" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_ABJURE_FOES">
+    <description>
+      <p><strong>Magic Action.</strong> Expend one use of Channel Divinity; choose up to a number of creatures equal to your Charisma modifier (minimum of one) within 60 feet that you can see. Each must succeed on a Wisdom saving throw or be <strong>Frightened</strong> for 1 minute or until it takes any damage. While Frightened in this way, on each of its turns the target can only move, or take an action, or take a Bonus Action (choose one).</p>
+    </description>
+    <sheet action="Magic Action" usage="Channel Divinity">
+      <description>Choose up to {{Abjuration Foes:creatures}} creatures within 60 ft; WIS save (DC {{paladin:spellcasting:dc}}) or Frightened for 1 min or until damaged. While Frightened this way: each turn the target can only move, or take an action, or a Bonus Action.</description>
+    </sheet>
+    <rules>
+      <stat name="Abjuration Foes:creatures" value="1" bonus="base" />
+      <stat name="Abjuration Foes:creatures" value="charisma:modifier" bonus="base" />
+    </rules>
+  </element>
+
+  <element name="Aura of Courage" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_AURA_OF_COURAGE">
+    <description>
+      <p>While within your Aura of Protection, you and friendly creatures have Immunity to the <strong>Frightened</strong> condition. If a Frightened ally enters the aura, the condition has no effect on that ally while there.</p>
+    </description>
+    <sheet>
+      <description>Within your Aura of Protection: you and allies are Immune to Frightened; entering allies ignore Frightened while in the aura.</description>
+    </sheet>
+  </element>
+
+  <element name="Radiant Strikes" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_RADIANT_STRIKES">
+    <description>
+      <p>Your melee weapon attacks and Unarmed Strikes deal an extra <strong>1d8 Radiant</strong> damage on a hit.</p>
+    </description>
+    <sheet>
+      <description>Your melee weapon and Unarmed Strikes deal +1d8 Radiant damage.</description>
+    </sheet>
+  </element>
+
+  <!-- <element name="Restoring Touch" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_RESTORING_TOUCH">
+    <description>
+      <p>When you use Lay On Hands on a creature, you can also remove one or more of these conditions: <strong>Blinded, Charmed, Deafened, Frightened, Paralyzed,</strong> or <strong>Stunned</strong>. For each condition removed, expend 5 HP from your Lay On Hands pool; those points donâ€™t also restore HP.</p>
+    </description>
+    <sheet>
+      <description>Lay On Hands: remove a listed condition by expending 5 HP from the pool per condition (no HP restored for those points).</description>
+    </sheet>
+  </element> -->
+
+  <!-- <element name="Aura Expansion" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_AURA_EXPANSION">
+    <description>
+      <p>Your Aura of Protectionâ€™s radius increases to <strong>30 feet</strong>.</p>
+    </description>
+    <sheet>
+      <description>Aura of Protection radius becomes 30 ft.</description>
+    </sheet>
+  </element> -->
+
+  <element name="Epic Boon" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_PALADIN_EPIC_BOON">
+    <description>
+      <p>You gain an Epic Boon feat (see chapter 5) or another feat of your choice for which you qualify.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select name="Epic Boon (Paladin 19)" type="Feat" supports="Origin Feat||General Feat||Boon Feat"  level="19" />
+    </rules>
+  </element>
+</elements>
+
+
+

@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <update version="1.0.0">
+      <file name="ranger-hunter-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/ranger-hunter-2024.xml" />
+    </update>
+    <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+  </info>
+
+  <!-- ===================== RANGER SUBCLASS â€” HUNTER (PHB 2024) ===================== -->
+  <element name="Hunter" type="Archetype" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_ARCHETYPE_HUNTER">
+    <supports>RangerSubclass</supports>
+    <description>
+      <h1>Hunter</h1>
+      <p>You stalk prey in the wilds and elsewhere, protecting nature and people from destructive forces.</p>
+
+      <h3>Subclass Features</h3>
+      <p>When you choose this subclass at 3rd level, you gain the following features.</p>
+
+      <div element="ID_WOTC_PHB24_RANGER_HUNTER_FEATURE_HUNTERS_LORE" />
+      <div element="ID_WOTC_PHB24_RANGER_HUNTER_FEATURE_HUNTERS_PREY" />
+      <div element="ID_WOTC_PHB24_RANGER_HUNTER_FEATURE_DEFENSIVE_TACTICS" />
+      <div element="ID_WOTC_PHB24_RANGER_HUNTER_FEATURE_SUPERIOR_HUNTERS_PREY" />
+      <div element="ID_WOTC_PHB24_RANGER_HUNTER_FEATURE_SUPERIOR_HUNTERS_DEFENSE" />
+    </description>
+
+    <sheet display="false" />
+    <rules>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_RANGER_HUNTER_FEATURE_HUNTERS_LORE"               level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_RANGER_HUNTER_FEATURE_HUNTERS_PREY"               level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_RANGER_HUNTER_FEATURE_DEFENSIVE_TACTICS"          level="7" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_RANGER_HUNTER_FEATURE_SUPERIOR_HUNTERS_PREY"      level="11" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_RANGER_HUNTER_FEATURE_SUPERIOR_HUNTERS_DEFENSE"   level="15" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 3: Hunterâ€™s Lore ===== -->
+  <element name="Hunterâ€™s Lore" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_HUNTER_FEATURE_HUNTERS_LORE">
+    <description>
+      <p>You can call on the forces of nature to reveal the strengths and weaknesses of your prey. While a creature is marked by your <em>Hunterâ€™s Mark</em>, you know whether that creature has any Immunities, Resistances, or Vulnerabilities, and if it has any, you know what they are.</p>
+    </description>
+    <sheet>
+      <description>While your Hunterâ€™s Mark is on a creature, you know its Immunities, Resistances, and Vulnerabilities (if any).</description>
+    </sheet>
+  </element>
+
+  <!-- ===== Level 3: Hunterâ€™s Prey (choice, swappable on rest) ===== -->
+  <element name="Hunterâ€™s Prey" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_HUNTER_FEATURE_HUNTERS_PREY">
+    <description>
+      <p>You gain one of the following options of your choice. Whenever you finish a Short or Long Rest, you can replace your choice with the other option.</p>
+      <ul>
+        <li><strong>Colossus Slayer.</strong> When you hit a creature with a weapon, the weapon deals an extra <strong>1d8</strong> damage to the target if itâ€™s missing any of its Hit Points. You can deal this extra damage only once per turn.</li>
+        <li><strong>Horde Breaker.</strong> Once on each of your turns when you make an attack with a weapon, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target, is within the weaponâ€™s range, and that you havenâ€™t attacked this turn.</li>
+      </ul>
+    </description>
+    <sheet usage="After a Short or Long Rest">
+        <description>Choose one of the following effects:</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_RANGER_HUNTER_FEATURE_COLOSSUS_SLAYER" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_RANGER_HUNTER_FEATURE_HORDE_BREAKER" />
+    </rules>
+  </element>
+
+  <!-- Hunterâ€™s Prey options -->
+  <element name="â€¢ Colossus Slayer" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_HUNTER_FEATURE_COLOSSUS_SLAYER">
+    <supports>Hunter Prey 2024</supports>
+    <description>
+      <p>Your tenacity can wear down even the most resilient foes. When you hit a creature with a weapon, the weapon deals an extra 1d8 damage to the target if it's missing any of its Hit Points. You can deal this extra damage only once per turn.</p>
+    </description>
+    <sheet>
+      <description>Once per turn, when you hit a creature that isnâ€™t at full HP, deal +1d8 damage.</description>
+    </sheet>
+  </element>
+
+  <element name="â€¢ Horde Breaker" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_HUNTER_FEATURE_HORDE_BREAKER">
+    <supports>Hunter Prey 2024</supports>
+    <description>
+      <p>Once on each of your turns when you make an attack with a weapon, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target, that is within the weapon's range, and that you haven't attacked this turn</p>
+    </description>
+    <sheet>
+      <description>Once per turn, after you make a weapon attack, make another attack with the same weapon vs a different creature within 5 ft of the original target and within range (not a creature you have already attacked this turn).</description>
+    </sheet>
+  </element>
+
+  <!-- ===== Level 7: Defensive Tactics (choice, swappable on rest) ===== -->
+  <element name="Defensive Tactics" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_HUNTER_FEATURE_DEFENSIVE_TACTICS">
+    <description>
+      <p>You gain one of the following options of your choice. Whenever you finish a Short or Long Rest, you can replace your choice with the other option.</p>
+      <ul>
+        <li><strong>Escape the Horde.</strong> Opportunity Attacks have Disadvantage against you.</li>
+        <li><strong>Multiattack Defense.</strong> When a creature hits you with an attack roll, that creature has Disadvantage on all other attack rolls against you this turn.</li>
+      </ul>
+    </description>
+    <sheet usage="After a Short or Long Rest">
+        <description>Choose one of the following effects:</description>
+    </sheet>    
+    <rules>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_RANGER_HUNTER_FEATURE_ESCAPE_THE_HORDE" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_RANGER_HUNTER_FEATURE_MULTIATTACK_DEFENSE" />
+    </rules>
+  </element>
+
+  <!-- Defensive Tactics options -->
+  <element name="â€¢ Escape the Horde" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_HUNTER_FEATURE_ESCAPE_THE_HORDE">
+    <supports>Hunter Defense 2024</supports>
+    <description>
+      <p>Opportunity Attacks have Disadvantage against you.</p>
+    </description>
+    <sheet>
+      <description>Opportunity Attacks against you have Disadvantage.</description>
+    </sheet>
+  </element>
+
+  <element name="â€¢ Multiattack Defense" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_HUNTER_FEATURE_MULTIATTACK_DEFENSE">
+    <supports>Hunter Defense 2024</supports>
+    <description>
+      <p>When a creature hits you with an attack roll, that creature has Disadvantage on all other attack rolls against you this turn.</p>
+    </description>
+    <sheet>
+      <description>When a creature hits you, it has Disadvantage on all other attack rolls against you this turn.</description>
+    </sheet>
+  </element>
+
+  <!-- ===== Level 11: Superior Hunterâ€™s Prey ===== -->
+  <element name="Superior Hunterâ€™s Prey" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_HUNTER_FEATURE_SUPERIOR_HUNTERS_PREY">
+    <description>
+      <p>Once per turn when you deal damage to a creature marked by your <em>Hunterâ€™s Mark</em>, you can also deal that spellâ€™s extra damage to a different creature that you can see within 30 feet of the first creature.</p>
+    </description>
+    <sheet usage="1/Turn">
+      <description>When you deal damage to your Hunterâ€™s Mark target, you can also deal the same spellâ€™s extra damage to a different creature within 30 ft of it.</description>
+    </sheet>
+  </element>
+
+  <!-- ===== Level 15: Superior Hunterâ€™s Defense ===== -->
+  <element name="Superior Hunterâ€™s Defense" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_HUNTER_FEATURE_SUPERIOR_HUNTERS_DEFENSE">
+    <description>
+      <p><strong>Reaction.</strong> When you take damage, you can give yourself Resistance to that damage and any other damage of the same type until the end of the current turn.</p>
+    </description>
+    <sheet action="Reaction">
+      <description>When you take damage, gain Resistance to that damage type until end of the current turn.</description>
+    </sheet>
+  </element>
+
+</elements>
+
+
+

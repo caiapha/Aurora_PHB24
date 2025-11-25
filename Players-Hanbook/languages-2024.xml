@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>New Languages</name>
+		<update version="1.0.0">
+			<file name="languages-new.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/languages-new.xml" />
+		</update>
+		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+	</info>
+
+	<!-- Standard_Lang -->
+	<element name="Primordial" type="Language" source="Player's Handbook (2024)" id="ID_LANGUAGE_PRIMORDIAL">
+		<supports>Standard_Lang</supports>
+		<description>
+			<p>Typically spoken by Elementals and similar creaturs.</p>
+		</description>
+		<setters>
+			<set name="Standard_Lang">true</set>
+			<set name="speakers">Elemental and similar creaturs</set>
+			<set name="script">Dwarvish</set>
+		</setters>
+	</element>
+	<element name="Aquan" type="Language" source="Player's Handbook (2024)" id="ID_LANGUAGE_AQUAN">
+		<supports>Standard_Lang</supports>
+		<description>
+			<p>Typically spoken by Water Elementals and similar creaturs.</p>
+		</description>
+		<setters>
+			<set name="Standard_Lang">true</set>
+			<set name="speakers">Water Elementals and similar creaturs</set>
+			<set name="script">Dwarvish</set>
+		</setters>
+	</element>
+	<element name="Auran" type="Language" source="Player's Handbook (2024)" id="ID_LANGUAGE_AURAN">
+		<supports>Standard_Lang</supports>
+		<description>
+			<p>Typically spoken by Air Elementals and similar creaturs.</p>
+		</description>
+		<setters>
+			<set name="Standard_Lang">true</set>
+			<set name="speakers">Air Elementals and similar creaturs</set>
+			<set name="script">Dwarvish</set>
+		</setters>
+	</element>
+	<element name="Ignan" type="Language" source="Player's Handbook (2024)" id="ID_LANGUAGE_IGNAN">
+		<supports>Standard_Lang</supports>
+		<description>
+			<p>Typically spoken by Fire Elementals and similar creaturs.</p>
+		</description>
+		<setters>
+			<set name="Standard_Lang">true</set>
+			<set name="speakers">Fire Elemental and similar creaturs</set>
+			<set name="script">Dwarvish</set>
+		</setters>
+	</element>
+	<element name="Terran" type="Language" source="Player's Handbook (2024)" id="ID_LANGUAGE_TERRAN">
+		<supports>Standard_Lang</supports>
+		<description>
+			<p>Typically spoken by Earth Elementals and similar creaturs.</p>
+		</description>
+		<setters>
+			<set name="Standard_Lang">true</set>
+			<set name="speakers">Earth Elemental and similar creaturs</set>
+			<set name="script">Dwarvish</set>
+		</setters>
+	</element>
+</elements>
+
+

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Dwarf (2024)</name>
+    <description>Dwarf species from the 2024 Player's Handbook for Aurora Builder (no Ability Score Increases from species).</description>
+    <author url="https://aurorabuilder.com">Aurora Builder</author>
+    <update version="1.0.0">
+      <file name="species-dwarf-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/species-dwarf-2024.xml" />
+    </update>
+    <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+  </info>
+
+  <!-- SPECIE -->
+  <element name="Dwarf (2024)" type="Race" source="Player's Handbook (2024)" id="ID_SPECIES_DWARF_2024">
+    <description>
+      <p class="flavor">Tenacious, loyal, and tempered by stone: dwarves embody the resilience of the mountains.</p>
+      <h4>DWARF TRAITS (2024)</h4>
+      <p><span class="feature">Creature Type.</span> Humanoid</p>
+      <p><span class="feature">Size.</span> Medium</p>
+      <p><span class="feature">Speed.</span> 30 feet</p>
+      <p><span class="feature">Darkvision.</span> 60 feet</p>
+      <p><span class="feature">Dwarven Resilience.</span> You have advantage on saving throws against poison and resistance to poison damage.</p>
+      <p><span class="feature">Dwarven Toughness.</span> Your Hit Point maximum increases by 1, and it increases by 1 again whenever you gain a level.</p>
+      <p><span class="feature">Stonecunning.</span> You have innate familiarity with stone and masonry; the DM can provide you additional details when you examine stone structures (flavor trait; no fixed numeric bonus in this version).</p>
+    </description>
+    <sheet display="false" />
+    <setters>
+      <set name="height" modifier="2d4">4'5"</set>
+      <set name="weight" modifier="2d6">150 lb.</set>
+    </setters>
+
+    <rules>
+      <!-- Nessun ASI dalla specie -->
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Vision" id="ID_PHB24_VISION_DARKVISION" />
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_DWARF_2024_DWARVEN_RESILIENCE" />
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_DWARF_2024_DWARVEN_TOUGHNESS" />
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_DWARF_2024_STONECUNNING" />
+      <!-- Taglia fissa: Medium -->
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_COMMON" />
+    </rules>
+  </element>
+
+  <!-- TRAITS -->
+
+  <element name="Dwarven Resilience" type="Racial Trait" source="Player's Handbook (2024)" id="ID_RACIAL_TRAIT_DWARF_2024_DWARVEN_RESILIENCE">
+    <description>
+      <p>You have advantage on saving throws against poison and resistance to poison damage.</p>
+    </description>
+    <sheet>
+      <description>You have advantage on Saving Throw aginst Poison and resistence to poison damage</description>
+    </sheet>
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+      <!-- Il vantaggio ai TS contro veleno Ã¨ gestito come testo; se usi una casa-regola, puoi mappare con un tag condizionale personalizzato. -->
+    </rules>
+  </element>
+
+  <element name="Dwarven Toughness" type="Racial Trait" source="Player's Handbook (2024)" id="ID_RACIAL_TRAIT_DWARF_2024_DWARVEN_TOUGHNESS">
+    <description>
+      <p>Your starting Hit Points increase by 1. Each time you gain a level, you gain 1 additional Hit Point.</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="hp" value="level" bonus="racial" />
+    </rules>
+  </element>
+
+  <element name="Stonecunning" type="Racial Trait" source="Player's Handbook (2024)" id="ID_RACIAL_TRAIT_DWARF_2024_STONECUNNING">
+    <description>
+      <p>As a Bonus Action, you gain Tremorsense with a range of 60 feet for 10 minutes. You must be on a stone surface or touching a stone surface to use this Tremorsense. The stone can be natural or worked. You can use this Bonus Action a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+    </description>
+    <sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+      <description> You gain Tremorsense with a range of 60 ft. for 10 minutes. You must touch or stand on a stone surface to use this sense</description>
+    </sheet>
+  </element>
+</elements>
+
+
+

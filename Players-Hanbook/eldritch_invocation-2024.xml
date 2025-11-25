@@ -1,0 +1,736 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name></name>
+		<update version="1.0.0">
+			<file name="eldritch-invocations-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/eldritch-invocations-2024.xml" />
+		</update>
+		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+	</info>
+
+	<!-- Eldritch Invocations -->
+	<element name="Agonizing Blast" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_BLAST_1">
+		<supports>EldritchInvocationPHB24</supports>
+		<prerequisite>2nd level, damage dealing cantrip</prerequisite>
+		<requirements>[level:warlock:2]</requirements>
+		<description>
+			<p><em>Prerequisites: Level 2+ Warlock, a Warlock Cantrip That Deals Damage</em></p>
+			<p>Choose one of your known Warlock cantrips that deals damage. You can add your Charisma modifier to that spell's damage rolls.</p>
+			<p><strong>Repeatable.</strong> You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="agonizing blast:damage" value="1" bonus="base" />
+			<stat name="agonizing blast:damage" value="charisma:modifier" bonus="base" />
+			<select name="agonizing blast cantrip" type="Class Feature" supports="Agonizing Blast" number="1" />
+		</rules>
+	</element>
+	<element name="Agonizing Blast" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_BLAST_2">
+		<supports>EldritchInvocationPHB24</supports>
+		<prerequisite>2nd level, damage dealing cantrip</prerequisite>
+		<requirements>ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_BLAST_1, [level:warlock:2]</requirements>
+		<description>
+			<p><em>Prerequisites: Level 2+ Warlock, a Warlock Cantrip That Deals Damage</em></p>
+			<p>Choose one of your known Warlock cantrips that deals damage. You can add your Charisma modifier to that spell's damage rolls.</p>
+			<p><strong>Repeatable.</strong> You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="agonizing blast:damage" value="1" bonus="base" />
+			<stat name="agonizing blast:damage" value="charisma:modifier" bonus="base" />
+			<select name="agonizing blast cantrip" type="Class Feature" supports="Agonizing Blast" number="1" />
+		</rules>
+	</element>
+	<element name="Agonizing Blast" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_BLAST_3">
+		<supports>EldritchInvocationPHB24</supports>
+		<prerequisite>2nd level, damage dealing cantrip</prerequisite>
+		<requirements>ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_BLAST_2, [level:warlock:2]</requirements>
+		<description>
+			<p><em>Prerequisites: Level 2+ Warlock, a Warlock Cantrip That Deals Damage</em></p>
+			<p>Choose one of your known Warlock cantrips that deals damage. You can add your Charisma modifier to that spell's damage rolls.</p>
+			<p><strong>Repeatable.</strong> You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="agonizing blast:damage" value="1" bonus="base" />
+			<stat name="agonizing blast:damage" value="charisma:modifier" bonus="base" />
+			<select name="agonizing blast cantrip" type="Class Feature" supports="Agonizing Blast" number="1" />
+		</rules>
+	</element>
+	<element name="Agonizing Blast" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_BLAST_4">
+		<supports>EldritchInvocationPHB24</supports>
+		<prerequisite>2nd level, damage dealing cantrip</prerequisite>
+		<requirements>ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_BLAST_3, [level:warlock:2]</requirements>
+		<description>
+			<p><em>Prerequisites: Level 2+ Warlock, a Warlock Cantrip That Deals Damage</em></p>
+			<p>Choose one of your known Warlock cantrips that deals damage. You can add your Charisma modifier to that spell's damage rolls.</p>
+			<p><strong>Repeatable.</strong> You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="agonizing blast:damage" value="1" bonus="base" />
+			<stat name="agonizing blast:damage" value="charisma:modifier" bonus="base" />
+			<select name="agonizing blast cantrip" type="Class Feature" supports="Agonizing Blast" number="1" />
+		</rules>
+	</element>
+	<element name="Agonizing Blast" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_BLAST_5">
+		<supports>EldritchInvocationPHB24</supports>
+		<prerequisite>2nd level, damage dealing cantrip</prerequisite>
+		<requirements>ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_BLAST_4, [level:warlock:2]</requirements>
+		<description>
+			<p><em>Prerequisites: Level 2+ Warlock, a Warlock Cantrip That Deals Damage</em></p>
+			<p>Choose one of your known Warlock cantrips that deals damage. You can add your Charisma modifier to that spell's damage rolls.</p>
+			<p><strong>Repeatable.</strong> You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="agonizing blast:damage" value="1" bonus="base" />
+			<stat name="agonizing blast:damage" value="charisma:modifier" bonus="base" />
+			<select name="agonizing blast cantrip" type="Class Feature" supports="Agonizing Blast" number="1" />
+		</rules>
+	</element>
+	<element name="Agonizing Blast" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_BLAST_6">
+		<supports>EldritchInvocationPHB24</supports>
+		<prerequisite>2nd level, damage dealing cantrip</prerequisite>
+		<requirements>ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_BLAST_5, [level:warlock:2]</requirements>
+		<description>
+			<p><em>Prerequisites: Level 2+ Warlock, a Warlock Cantrip That Deals Damage</em></p>
+			<p>Choose one of your known Warlock cantrips that deals damage. You can add your Charisma modifier to that spell's damage rolls.</p>
+			<p><strong>Repeatable.</strong> You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="agonizing blast:damage" value="1" bonus="base" />
+			<stat name="agonizing blast:damage" value="charisma:modifier" bonus="base" />
+			<select name="agonizing blast cantrip" type="Class Feature" supports="Agonizing Blast" number="1" />
+		</rules>
+	</element>
+	<element name="Agonizing Blast" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_BLAST_7">
+		<supports>EldritchInvocationPHB24</supports>
+		<prerequisite>2nd level, damage dealing cantrip</prerequisite>
+		<requirements>ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_BLAST_6, [level:warlock:2]</requirements>
+		<description>
+			<p><em>Prerequisites: Level 2+ Warlock, a Warlock Cantrip That Deals Damage</em></p>
+			<p>Choose one of your known Warlock cantrips that deals damage. You can add your Charisma modifier to that spell's damage rolls.</p>
+			<p><strong>Repeatable.</strong> You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="agonizing blast:damage" value="1" bonus="base" />
+			<stat name="agonizing blast:damage" value="charisma:modifier" bonus="base" />
+			<select name="agonizing blast cantrip" type="Class Feature" supports="Agonizing Blast" number="1" />
+		</rules>
+	</element>
+
+	<!-- Agonizing blast selections -->
+	<element name="Agonizing Blast: Blade Ward" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_BLAST_BLADE_WARD">
+		<supports>Agonizing Blast</supports>
+		<description />
+		<sheet>
+			<description>When you cast Blade Ward, add {{agonizing blast:damage}} to the damage it deals on a hit.</description>
+		</sheet>
+	</element>	
+	<element name="Agonizing Blast: Chill Touch" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_BLAST_CHILL_TOUCH">
+		<supports>Agonizing Blast</supports>
+		<description />
+		<sheet>
+			<description>When you cast Chill Touch, add {{agonizing blast:damage}} to the damage it deals on a hit.</description>
+		</sheet>
+	</element>	
+	<element name="Agonizing Blast: Eldritch Blast" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_BLAST_ELDRITCH_BLAST">
+		<supports>Agonizing Blast</supports>
+		<description />
+		<sheet>
+			<description>When you cast Eldritch Blast, add {{agonizing blast:damage}} to the damage it deals on a hit.</description>
+		</sheet>
+	</element>
+	<element name="Agonizing Blast: Mind Sliver" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_BLAST_MIND_SLIVER">
+		<supports>Agonizing Blast</supports>
+		<description />
+		<sheet>
+			<description>When you cast Mind Sliver, add {{agonizing blast:damage}} to the damage it deals on a hit.</description>
+		</sheet>
+	</element>
+	<element name="Agonizing Blast: Poison Spray" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_BLAST_POISON_SPRAY">
+		<supports>Agonizing Blast</supports>
+		<description />
+		<sheet>
+			<description>When you cast Poison Spray, add {{agonizing blast:damage}} to the damage it deals on a hit.</description>
+		</sheet>
+	</element>
+	<element name="Agonizing Blast: Thunderclap" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_BLAST_THUNDERCLAP">
+		<supports>Agonizing Blast</supports>
+		<description />
+		<sheet>
+			<description>When you cast Thunderclap, add {{agonizing blast:damage}} to the damage it deals on a hit.</description>
+		</sheet>
+	</element>
+	<element name="Agonizing Blast: Toll the Dead" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_BLAST_TOLL_THE_DEAD">
+		<supports>Agonizing Blast</supports>
+		<description />
+		<sheet>
+			<description>When you cast Toll the Dead, add {{agonizing blast:damage}} to the damage it deals on a hit.</description>
+		</sheet>
+	</element>
+	<!-- end agonizing blast selection -->
+
+	<element name="Armor of Shadows" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_ARMOR_OF_SHADOWS">
+		<supports>EldritchInvocationPHB24</supports>
+		<description>
+			<p>You can cast <em>mage armor</em> on yourself at will, without expending a spell slot or material components.</p>
+			<div class="reference">
+				<div element="ID_PHB24_SPELL_MAGE_ARMOR" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can cast mage armor on yourself at will, without expending a spell slot or material components.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB24_SPELL_MAGE_ARMOR" spellcasting="warlock" />
+		</rules>
+	</element>
+	<element name="Ascendant Step" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_ASCENDANT_STEP">
+		<supports>EldritchInvocationPHB24</supports>
+		<prerequisite>5th level</prerequisite>
+		<requirements>[level:warlock:5]</requirements>
+		<description>
+			<p><em>Prerequisite: 5th level</em></p>
+			<p>You can cast <em>levitate</em> on yourself at will, without expending a spell slot.</p>
+			<div class="reference">
+				<div element="ID_PHB24_SPELL_LEVITATE" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can cast levitate on yourself at will, without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB24_SPELL_LEVITATE" spellcasting="warlock" />
+		</rules>
+	</element>
+	<element name="Devilâ€™s Sight" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_DEVILS_SIGHT">
+		<supports>EldritchInvocationPHB24</supports>
+		<prerequisite>2nd level</prerequisite>
+		<requirements>[level:warlock:2]</requirements>
+		<description>
+			<p>You can see normally in Dim Light and Darknessâ€”both magical and nonmagicalâ€”within 120 feet of yourself.</p>
+		</description>
+		<sheet>
+			<description>You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet.</description>
+		</sheet>
+	</element>
+	<element name="Devouring Blade" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_DEVOURING_BLADE">
+		<prerequisite>12th level, Thirsting Blade</prerequisite>
+		<requirements>[level:warlock:12], ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_THIRSTING_BLADE</requirements>
+		<supports>EldritchInvocationPHB24</supports>
+		<description>
+			<p>The Extra Attack of your Thirsting Blade invocation confers two extra attacks rather than one.</p>
+		</description>
+		<sheet>
+			<!-- for future: include devouring blade in Tirsting Blade description -->
+			<description>The Extra Attack of your Thirsting Blade invocation confers two extra attacks rather than one.</description>
+		</sheet>
+	</element>
+	<element name="Eldritch Mind" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_ELDRITCH_MIND">
+		<supports>EldritchInvocationPHB24</supports>
+		<description>
+			<p>You have Advantage on Constitution saving throws that you make to maintain Concentration.</p>
+		</description>
+		<sheet>
+			<description>You have Advantage on Constitution saving throws that you make to maintain Concentration.</description>
+		</sheet>
+	</element>
+	<element name="Eldritch Smite" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_ELDRITCH_SMITE">
+		<prerequisite>5th level, Pact of the Blade</prerequisite>
+		<requirements>[level:warlock:5], ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_PACT_OF_THE_BLADE</requirements>
+		<supports>EldritchInvocationPHB24</supports>
+		<description>
+			<p>Once per turn when you hit a creature with your pact weapon, you can expend a Pact Magic spell slot to deal an extra 1d8 Force damage to the target, plus another 1d8 per level of the spell slot, and you can give the target the Prone condition if it is Huge or smaller.</p>
+		</description>
+		<sheet>
+			<description>On a hit with the Pact Weapon, expend a Spell slot to deal extra 1d8 Force Damage plus 1d8 per spell slot level. The target has the Prone condition if it's Huge or smaller.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB24_SPELL_DETECT_MAGIC" spellcasting="warlock" />
+		</rules>
+	</element>
+	<element name="Eldritch Spear" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_ELDRITCH_SPEAR_1">
+		<supports>EldritchInvocationPHB24</supports>
+		<prerequisite>2nd level, dealing damage cantrip</prerequisite>
+		<requirements>[level:warlock:2]</requirements>
+		<description>
+			<p><em>Prerequisite: warlock level 2 and a dealing damage cantrip</em></p>
+			<p>Choose one of your known Warlock cantrips that deals damage and has a range of 10+ feet. When you cast that spell, its range increases by a number of feet equal to 30 times your Warlock level.</p>
+			<p><strong>Repeatable.</strong> You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select name="Eldritch Spear cantrip" type="Class Feature" supports="Eldritch Spear" number="1" />
+		</rules>
+	</element>
+	<element name="Eldritch Spear" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_ELDRITCH_SPEAR_2">
+		<supports>EldritchInvocationPHB24</supports>
+		<prerequisite>2nd level, dealing damage cantrip</prerequisite>
+		<requirements>[level:warlock:2], ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_ELDRITCH_SPEAR_1</requirements>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<select name="Eldritch Spear cantrip" type="Class Feature" supports="Eldritch Spear" number="1" />
+		</rules>
+	</element>
+	<element name="Eldritch Spear" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_ELDRITCH_SPEAR_3">
+		<supports>EldritchInvocationPHB24</supports>
+		<prerequisite>2nd level, dealing damage cantrip</prerequisite>
+		<requirements>[level:warlock:2], ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_ELDRITCH_SPEAR_2</requirements>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<select name="Eldritch Spear cantrip" type="Class Feature" supports="Eldritch Spear" number="1" />
+		</rules>
+	</element>
+	<element name="Eldritch Spear" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_ELDRITCH_SPEAR_4">
+		<supports>EldritchInvocationPHB24</supports>
+		<prerequisite>2nd level, dealing damage cantrip</prerequisite>
+		<requirements>[level:warlock:2], ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_ELDRITCH_SPEAR_3</requirements>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<select name="Eldritch Spear cantrip" type="Class Feature" supports="Eldritch Spear" number="1" />
+		</rules>
+	</element>
+
+	<!-- eldritch spear choice -->
+	<element name="Eldritch Spear: Eldritch Blast" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_ ELDRITCH_SPEAR_ELDRITCH_BLAST">
+		<supports>Eldritch Spear</supports>
+		<description />
+		<sheet>
+			<description>The range of Eldritch Blast is increased by 30 times your Warlock level. </description>
+		</sheet>
+	</element>
+	<element name="Eldritch Spear: Mind Sliver" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_ ELDRITCH_SPEAR_MIND_SLIVER">
+		<supports>Eldritch Spear</supports>
+		<description />
+		<sheet>
+			<description>The range of Mind Slivr is increased by 30 times your Warlock level. </description>
+		</sheet>
+	</element>
+	<element name="Eldritch Spear: Poison Spray" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_ ELDRITCH_SPEAR_POISON_SPRAY">
+		<supports>Eldritch Spear</supports>
+		<description />
+		<sheet>
+			<description>The range of Poison Spray is increased by 30 times your Warlock level. </description>
+		</sheet>
+	</element>
+	<element name="Eldritch Spear: Toll the Dead" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_ ELDRITCH_SPEAR_TOLL_THE_DEAD">
+		<supports>Eldritch Spear</supports>
+		<description />
+		<sheet>
+			<description>The range of Toll the Dead is increased by 30 times your Warlock level. </description>
+		</sheet>
+	</element>
+	<!-- and eldritch spear choice-->
+
+	<element name="Fiendish Vigor" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_FIENDISH_VIGOR">
+		<prerequisite>2nd level,</prerequisite>
+		<requirements>[level:warlock:2]</requirements>
+		<supports>EldritchInvocationPHB24</supports>
+		<description>
+			<p>You can cast False Life on yourself without expending a spell slot. When you cast the spell with this feature, you don't roll the die for the Temporary Hit Points; you automatically get the highest number on the die.</p>
+		</description>
+		<sheet>
+			<description>You can cast false life on yourself at will, without expending a spell slot. You gain the maximum possible Temporary HP.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB24_SPELL_FALSE_LIFE" spellcasting="warlock" />
+		</rules>
+	</element>
+	<element name="Gaze of Two Minds" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_GAZE_OF_TWO_MINDS">
+		<prerequisite>5th level</prerequisite>
+		<requirements>[level:warlock:5]</requirements>
+		<supports>EldritchInvocationPHB24</supports>
+		<description>
+			<p>You can use a Bonus Action to touch a willing creature and perceive through its senses until the end of your next turn. As long as the creature is on the same plane of existence as you, you can take a Bonus Action on subsequent turns to maintain this connection, extending the duration until the end of your next turn. The connection ends if you don't maintain it in this way.</p>
+			<p>While perceiving through the other creature's senses, you benefit from any special senses possessed by that creature, and you can cast spells as if you were in your space or the other creature's space if the two of you are within 60 feet of each other.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can touch a willing creature and perceive through its senses until the end of your next turn. Expend a Bonus Action to extend the duration until the end of your next turn. You benefit from any special senses possessed by that creature and you can cast as you were in its position, if it is within 60ft from you.</description>
+		</sheet>
+	</element>
+	
+	<element name="Gift of the Depths" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_GIFT_OF_THE_DEPTHS">
+		<prerequisite>5th level</prerequisite>
+		<requirements>[level:warlock:5]</requirements>
+		<supports>EldritchInvocationPHB24</supports>
+		<description>
+			<p>You can breathe underwater, and you gain a Swim Speed equal to your Speed.</p>
+			<p>You can also cast Water Breathing once without expending a spell slot. You regain the ability to cast it in this way again when you finish a Long Rest.</p>
+		<div class="reference">
+			<div element="ID_PHB24_SPELL_WATER_BREATHING" />
+		</div>
+		</description>
+		<sheet>
+			<description>You can breathe underwater; You can cast Water Breathing once per Long Rest without using a spell slot.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:swim" value="speed" bonus="base" />
+			<grant type="Spell" id="ID_PHB24_SPELL_WATER_BREATHING" spellcasting="warlock" />
+		</rules>
+	</element>
+
+    <element name="Gift of the Protectors" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_GIFT_OF_THE_PROTECTORS">
+   		<prerequisite>9th level, Pact of the Tome</prerequisite>
+		<requirements>[level:warlock:9], ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_PACT_OF_THE_TOME</requirements>
+		<supports>EldritchInvocationPHB24</supports>
+    	<prerequisite>Pact of the Tome Invocation</prerequisite>
+		<description>
+			<p><em>Prerequisite: Pact of the Tome invocation</em></p>
+			<p>A new page appears in your Book of Shadows when you conjure it. With your permission, a creature can take an action to write its name on that page, which can contain a number of names equal to your Charisma modifier (minimum of one name).</p>
+			<p>When any creature whose name is on the page is reduced to 0 Hit Points but not killed outright, the creature magically drops to 1 Hit Point instead. Once this magic is triggered, no creature can benefit from it until you finish a Long Rest.</p>
+			<p>As a Magic action, you can erase a name on the page by touching it.</p>
+		</description>
+		<sheet>
+			<description>You can write up to {{protector:names}} names of creatures in your Tome. Once per Long Rest, the first of these creatures that drops to 0 HP but is not killed gains 1 HP. As a Magic Action, you can delete a name from the Tome.</description>
+		</sheet>
+		<rules>
+			<stat name="protector:names" value="1" bonus="base" />
+			<stat name="protector:names" value="charisma:modifier" bonus="base" />
+		</rules>
+	</element>
+
+   <element name="Investment of the Chain Master" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_INVESTMENT_OF_THE_CHAIN_MASTER">
+    <supports>EldritchInvocationPHB24, Pact of the Chain</supports>
+    <prerequisite>5th level, Pact of the Chain</prerequisite>
+    <requirements>[level:warlock:5], ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_PACT_OF_THE_CHAIN</requirements>
+    <description>
+      <p><em>Prerequisites:</em> Level 5+ Warlock, Pact of the Chain</p>
+      <p>When you cast Find Familiar, you infuse the summoned familiar with a measure of your eldritch power, granting the creature the following benefits.</p>
+	  <p class="indent"><strong>Aerial or Aquatic.</strong> The familiar gains either a Fly Speed or a Swim Speed (your choice) of 40 feet.</p>
+	  <p class="indent"><strong>Quick Attack.</strong> As a Bonus Action, you can command the familiar to take the Attack action.</p>
+	  <p class="indent"><strong>Necrotic or Radiant Damage.</strong> Whenever the familiar deals Bludgeoning, Piercing, or Slashing damage, you can make it deal Necrotic or Radiant damage instead.</p>
+	  <p class="indent"><strong>Your Save DC.</strong> If the familiar forces a creature to make a saving throw, it uses your spell save DC.</p>
+	  <p class="indent"><strong>Resistance.</strong> When the familiar takes damage, you can take a Reaction to grant it Resistance against that damage.</p>
+    </description>
+    <sheet>
+		<description>Your Familiar gains the following benefits: â€¢ 40ft. Fly or Swim speed; â€¢ you can take a Bonus Action to make it takes the Attack Action; â€¢ it can deal Radiant or Necrotic; â€¢ it uses your DC; â€¢ when it takes damage, as a Reaction you can grant it Resistance against that damage type.</description>
+	</sheet>
+  </element>
+
+  <element name="Lessons of the First Ones" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_LESSONS_OF_THE_FIRST_ONES_1">
+    <supports>EldritchInvocationPHB24</supports>
+    <prerequisite>2nd level</prerequisite>
+    <requirements>[level:warlock:2]</requirements>
+    <description>
+      <p><em>Prerequisite: 2nd level</em></p>
+      <p>You have received knowledge from an elder entity of the multiverse, allowing you to gain one Origin feat of your choice.</p>
+	  <p><strong>Repeatable.</strong> You can gain this invocation more than once. Each time you do so, choose a different Origin feat.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select name="Lessons of the First Ones (Feat)" type="Feat" supports="Origin Feat" number="1" />
+    </rules>
+  </element>
+  <element name="Lessons of the First Ones" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_LESSONS_OF_THE_FIRST_ONES_2">
+    <supports>EldritchInvocationPHB24</supports>
+    <prerequisite>2nd level</prerequisite>
+    <requirements>[level:warlock:2], ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_LESSONS_OF_THE_FIRST_ONES_1</requirements>
+    <description />
+    <sheet display="false" />
+    <rules>
+      <select name="Lessons of the First Ones (Feat)" type="Feat" supports="Origin Feat" number="1" />
+    </rules>
+  </element>
+  <element name="Lessons of the First Ones" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_LESSONS_OF_THE_FIRST_ONES_3">
+    <supports>EldritchInvocationPHB24</supports>
+    <prerequisite>2nd level</prerequisite>
+    <requirements>[level:warlock:2], ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_LESSONS_OF_THE_FIRST_ONES_2</requirements>
+    <description />
+    <sheet display="false" />
+    <rules>
+      <select name="Lessons of the First Ones (Feat)" type="Feat" supports="Origin Feat" number="1" />
+    </rules>
+  </element>
+  <element name="Lessons of the First Ones" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_LESSONS_OF_THE_FIRST_ONES_4">
+    <supports>EldritchInvocationPHB24</supports>
+    <prerequisite>2nd level</prerequisite>
+    <requirements>[level:warlock:2], ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_LESSONS_OF_THE_FIRST_ONES_3</requirements>
+    <description />
+    <sheet display="false" />
+    <rules>
+      <select name="Lessons of the First Ones (Feat)" type="Feat" supports="Origin Feat" number="1" />
+    </rules>
+  </element>
+
+  <element name="Lifedrinker" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_LIFEDRINKER">
+		<supports>EldritchInvocationPHB24, Pact of the Blade</supports>
+		<prerequisite>9th level, Pact of the Blade</prerequisite>
+		<requirements>[level:warlock:9],ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_PACT_OF_THE_BLADE</requirements>
+		<description>
+			<p><em>Prerequisite: 9th level, Pact of the Blade</em></p>
+			<p>Once per turn when you hit a creature with your pact weapon, you can deal an extra 1d6 Necrotic, Psychic, or Radiant damage (your choice) to the creature, and you can expend one of your Hit Point Dice to roll it and regain a number of Hit Points equal to the roll plus your Constitution modifier (minimum of 1 Hit Point).</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you hit a creature with your pact weapon, the creature takes 1d6 extra Radiant, Necrotic or Psychic damage. Than you can expend a Hit Point die to ragain HP equal to the rolled number plus {{lifedrinker:damage}}.</description>
+		</sheet>
+		<rules>
+			<stat name="lifedrinker:damage" value="1" bonus="base"/>
+			<stat name="lifedrinker:damage" value="constitution:modifier" bonus="base"/>
+		</rules>
+	</element>
+
+	<element name="Mask of Many Faces" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_MASK_OF_MANY_FACES">
+		<supports>EldritchInvocationPHB24</supports>
+		<prerequisite>2nd level</prerequisite>
+		<requirements>[level:warlock:2]</requirements>
+		<description>
+			<p>You can cast <em>disguise self</em> at will, without expending a spell slot.</p>
+			<div class="reference">
+				<div element="ID_PHB24_SPELL_DISGUISE_SELF" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can cast disguise self at will, without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB24_SPELL_DISGUISE_SELF" spellcasting="warlock" />
+		</rules>
+	</element>
+
+	<element name="Master of Myriad Forms" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_MASTER_OF_MYRIAD_FORMS">
+		<supports>EldritchInvocationPHB24</supports>
+		<prerequisite>5th level</prerequisite>
+		<requirements>[level:warlock:5]</requirements>
+		<description>
+			<p><em>Prerequisite: 5th level</em></p>
+			<p>You can cast <em>alter self</em>, without expending a spell slot.</p>
+			<div class="reference">
+				<div element="ID_PHB24_SPELL_ALTER_SELF" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can cast alter self, without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB24_SPELL_ALTER_SELF" spellcasting="warlock" />
+		</rules>
+	</element>
+
+	<element name="Misty Visions" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_MISTY_VISIONS">
+		<supports>EldritchInvocationPHB24</supports>
+		<prerequisite>2nd level</prerequisite>
+		<requirements>[level:warlock:2]</requirements>
+		<description>
+			<p>You can cast <em>silent image</em>, without expending a spell slot.</p>
+			<div class="reference">
+				<div element="ID_PHB24_SPELL_SILENT_IMAGE" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can cast silent image, without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB24_SPELL_SILENT_IMAGE" spellcasting="warlock" />
+		</rules>
+	</element>
+
+	<element name="One with Shadows" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_ONE_WITH_SHADOWS">
+		<supports>EldritchInvocationPHB24</supports>
+		<prerequisite>5th level</prerequisite>
+		<requirements>[level:warlock:5]</requirements>
+		<description>
+			<p><em>Prerequisite: 5th level</em></p>
+			<p>While you're in an area of Dim Light or Darkness, you can cast Invisibility on yourself without expending a spell slot.</p>
+		</description>
+		<sheet action="Action">
+			<description>While you're in an area of Dim Light or Darkness, you can cast Invisibility on yourself without expending a spell slot.</description>
+		</sheet>
+	</element>
+
+  <element name="Otherworldly Leap" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_OTHERWORLDLY_LEAP">
+		<supports>EldritchInvocationPHB24</supports>
+		<prerequisite>2nd level</prerequisite>
+		<requirements>[level:warlock:2]</requirements>
+		<description>
+			<p><em>Prerequisite: 2nd level</em></p>
+			<p>You can cast <em>jump</em> on yourself at will, without expending a spell slot.</p>
+			<div class="reference">
+				<div element="ID_PHB24_SPELL_JUMP" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can cast jump on yourself at will, without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB24_SPELL_JUMP" spellcasting="warlock" />
+		</rules>
+	</element>
+
+	  <!-- ========= Pact of the Blade (as Invocation) ========= -->
+  <element name="Pact of the Blade" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_PACT_OF_THE_BLADE">
+    <supports>EldritchInvocationPHB24</supports>
+    <description>
+      <p>As a Bonus Action, you can conjure a pact weapon in your handâ€”a Simple or Martial Melee weapon of your choice with which you bondâ€”or create a bond with a magic weapon you touch; you can't bond with a magic weapon if someone else is attuned to it or another Warlock is bonded with it. Until the bond ends, you have proficiency with the weapon, and you can use it as a Spellcasting Focus.</p>
+	  <p>Whenever you attack with the bonded weapon, you can use your Charisma modifier for the attack and damage rolls instead of using Strength or Dexterity; and you can cause the weapon to deal Necrotic, Psychic, or Radiant damage or its normal damage type.</p>
+	  <p>Your bond with the weapon ends if you use this feature's Bonus Action again, if the weapon is more than 5 feet away from you for 1 minute or more, or if you die. A conjured weapon disappears when the bond ends.</p>
+    </description>
+    <sheet action="Bonus Action">
+      <description>You can conjure/bind a pact weapon; youâ€™re proficient with it and can be used as a spellcasting focus. You can attack using Charisma instead of Strength and deal Necrotic, Radiant or Psychic damage.</description>
+    </sheet>
+  </element>
+
+  <!-- ========= Pact of the Chain (as Invocation) ========= -->
+  <element name="Pact of the Chain" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_PACT_OF_THE_CHAIN">
+    <supports>EldritchInvocationPHB24</supports>
+    <description>
+      <p>You learn the Find Familiar spell and can cast it as a Magic action without expending a spell slot.</p>
+	  <p>When you cast the spell, you choose one of the normal forms for your familiar or one of the following special forms: Imp, Pseudodragon, Quasit, Skeleton, Slaad Tadpole, Sphinx of Wonder, Sprite, or Venomous Snake (see appendix B for the familiar's stat block).</p>
+	  <p>Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack of its own with its Reaction.</p>	
+    </description>
+    <sheet>
+      <description>You can cast Find Familiar without expendind a spell slot. You can forego one of your attacks to allow your familiar to take an attack action with its Reaction.</description>
+    </sheet>
+    <rules>
+        <grant type="Spell" id="ID_PHB24_SPELL_FIND_FAMILIAR" spellcasting="warlock" />
+    </rules>
+  </element>
+
+  <!-- ========= Pact of the Tome (as Invocation) ========= -->
+  <element name="Pact of the Tome" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_PACT_OF_THE_TOME">
+    <supports>EldritchInvocationPHB24</supports>
+    <description>
+      <p>Stitching together strands of shadow, you conjure forth a book in your hand at the end of a Short or Long Rest. This Book of Shadows (you determine its appearance) contains eldritch magic that only you can access, granting you the benefits below. The book disappears if you conjure another book with this feature or if you die.</p>
+	  <p><strong>Cantrips and Rituals.</strong> When the book appears, choose three cantrips, and choose two level 1 spells that have the Ritual tag. The spells can be from any class's spell list, and they must be spells you don't already have prepared. While the book is on your person, you have the chosen spells prepared, and they function as Warlock spells for you.</p>
+	  <p><strong>Spellcasting Focus.</strong> You can use the book as a Spellcasting Focus.</p>
+	</description>
+    <sheet usage="after a Short Rest">
+      <description>You conjure the Book of Shadows, which can be used as Spellcasting Focus</description>
+    </sheet>
+    <rules>
+     <select name="Pact of the Tome Cantrips" type="Spell" supports="(BardPHB24||ClericPHB24||DruidPHB24||PaladinPHB24||RangerPHB24||SorcererPHB24||WizardPHB24), 0" number="3" />
+	 <select name="Pact of the Tome Spells" type="Spell" supports="(BardPHB24||ClericPHB24||DruidPHB24||PaladinPHB24||RangerPHB24||SorcererPHB24||WizardPHB24), 1, Ritual" number="2" /> 
+    </rules>
+  </element>
+	
+	<element name="Repelling Blast" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_REPELLING_BLAST_1">
+		<supports>EldritchInvocationPHB24</supports>
+		<prerequisite>2nd level</prerequisite>
+		<requirements>[level:warlock:2]</requirements>
+		<description>
+			<p><em>a Cantrip with Attack Roll</em></p>
+			<p>Choose one of your known Warlock cantrips that requires an attack roll. When you hit a Large or smaller creature with that cantrip, you can push the creature up to 10 feet straight away from you.</p>
+			<p><strong>Repeatable.</strong> You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select name="Repelling Blast: cantrip" type="Class Feature" supports="Repelling Blast" number="1" />
+		</rules>
+	</element>
+	<element name="Repelling Blast" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_REPELLING_BLAST_2">
+		<supports>EldritchInvocationPHB24</supports>
+		<prerequisite>2nd level</prerequisite>
+		<requirements>[level:warlock:2], ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_REPELLING_BLAST_1</requirements>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<select name="Repelling Blast: cantrip" type="Class Feature" supports="Repelling Blast" number="1" />
+		</rules>
+	</element>
+	<element name="Repelling Blast" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_REPELLING_BLAST_3">
+		<supports>EldritchInvocationPHB24</supports>
+		<prerequisite>2nd level</prerequisite>
+		<requirements>[level:warlock:2], ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_REPELLING_BLAST_2</requirements>
+		<description />
+		<sheet display="false" />
+		<rules>
+			<select name="Repelling Blast: cantrip" type="Class Feature" supports="Repelling Blast" number="1" />
+		</rules>
+	</element>
+
+	<!-- repelling blast selection -->
+	<element name="Repelling Blast: Chill Touch" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_REPELLING_BLAST_CHILL_TOUCH">
+		<supports>Repelling Blast</supports>
+		<description />
+		<sheet>
+			<description>On a hit, Chill Touch cantrip can push a Large or smaller creature up to 10 ft. away from you </description>
+		</sheet>
+	</element>
+	<element name="Repelling Blast: Eldritch Blast" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_REPELLING_BLAST_ELDRITCH_BLAST">
+		<supports>Repelling Blast</supports>
+		<description />
+		<sheet>
+			<description>On a hit, Eldritch Blast cantrip can push a Large or smaller creature up to 10 ft. away from you </description>
+		</sheet>
+	</element>
+	<element name="Repelling Blast: Poison Spray" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_REPELLING_BLAST_POISON_SPRAY">
+		<supports>Repelling Blast</supports>
+		<description />
+		<sheet>
+			<description>On a hit, Poison Spray cantrip can push a Large or smaller creature up to 10 ft. away from you </description>
+		</sheet>
+	</element>
+	<!-- end repelling blast selection -->
+	
+	<element name="Thirsting Blade" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_THIRSTING_BLADE">
+		<supports>EldritchInvocationPHB24, Pact of the Blade</supports>
+		<prerequisite>5th level, Pact of the Blade</prerequisite>
+		<requirements>[level:warlock:5], ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_PACT_OF_THE_BLADE</requirements>
+		<description>
+			<p><em>Prerequisite: 5th level, Pact of the Blade feature</em></p>
+			<p>You gain the Extra Attack feature for your pact weapon only. With that feature, you can attack twice with the weapon instead of once when you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>Taking the Attack Action with your Pact Weapon, you can attack twice.</description>
+		</sheet>
+	</element>
+	<element name="Visions of Distant Realms" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_VISIONS_OF_DISTANT_REALMS">
+		<supports>EldritchInvocationPHB24</supports>
+		<prerequisite>9th level</prerequisite>
+		<requirements>[level:warlock:9]</requirements>
+		<description>
+			<p><em>Prerequisite: 9th level</em></p>
+			<p>You can cast <em>arcane eye</em> at will, without expending a spell slot.</p>
+			<div class="reference">
+				<div element="ID_PHB24_SPELL_ARCANE_EYE" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can cast arcane eye, without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB24_SPELL_ARCANE_EYE" spellcasting="warlock" />
+		</rules>
+	</element>
+	<element name="Whispers of the Grave" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WHISPERS_OF_THE_GRAVE">
+		<supports>EldritchInvocationPHB24</supports>
+		<prerequisite>7th level</prerequisite>
+		<requirements>[level:warlock:7]</requirements>
+		<description>
+			<p><em>Prerequisite: 7th level</em></p>
+			<p>You can cast <em>speak with dead</em> at will, without expending a spell slot.</p>
+			<div class="reference">
+				<div element="ID_PHB24_SPELL_SPEAK_WITH_DEAD" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can cast speak with dead, without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB24_SPELL_SPEAK_WITH_DEAD" spellcasting="warlock" />
+		</rules>
+	</element>
+	<element name="Witch Sight" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WITCH_SIGHT">
+		<supports>EldritchInvocationPHB24</supports>
+		<prerequisite>15th level</prerequisite>
+		<requirements>[level:warlock:15]</requirements>
+		<description>
+			<p><em>Prerequisite: 15th level</em></p>
+			<p>You have Truesight with a range of 30 feet.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Vision" id="ID_PHB24_VISION_TRUESIGHT" />
+			<stat name="truesight:range" value="30" bonus="base" />
+		</rules>
+	</element>
+</elements>
+
+
+

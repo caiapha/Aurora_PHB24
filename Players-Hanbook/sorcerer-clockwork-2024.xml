@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <update version="1.0.0">
+      <file name="sorcerer-clockwork-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/sorcerer-clockwork-2024.xml" />
+    </update>
+    <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+  </info>
+
+  <!-- ===================== CLOCKWORK SORCERY (PHB 2024) ===================== -->
+  <element name="Clockwork Sorcery" type="Archetype" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SORCERER_ARCHETYPE_CLOCKWORK">
+    <supports>SorcererSubclass</supports>
+    <description>
+      <h1>Clockwork Sorcery</h1>
+      <p>Channel cosmic forces of order shaped by Mechanus and its modrons.</p>
+
+      <h3>Subclass Features</h3>
+      <p>When you choose this subclass at 3rd level, you gain the following features.</p>
+
+      <div element="ID_WOTC_PHB24_SORCERER_CLOCKWORK_FEATURE_CLOCKWORK_SPELLS" />
+      <div element="ID_WOTC_PHB24_SORCERER_CLOCKWORK_FEATURE_RESTORE_BALANCE" />
+      <div element="ID_WOTC_PHB24_SORCERER_CLOCKWORK_FEATURE_BASTION_OF_LAW" />
+      <div element="ID_WOTC_PHB24_SORCERER_CLOCKWORK_FEATURE_TRANCE_OF_ORDER" />
+      <div element="ID_WOTC_PHB24_SORCERER_CLOCKWORK_FEATURE_CLOCKWORK_CAVALCADE" />
+
+      <h5 class="caption">Manifestations of Order</h5>
+      <p>When you cast a Sorcerer spell, your link to order can show in various ways: spectral cogwheels, clock hands spinning in your eyes, brassy sheen on the skin, floating equations and geometric objects, your focus becoming a tiny mechanism, or ordered sounds of whirring and ticking. :contentReference[oaicite:1]{index=1}</p>
+    </description>
+
+    <sheet display="false"/>
+    <rules>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_SORCERER_CLOCKWORK_FEATURE_CLOCKWORK_SPELLS" level="3"/>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_SORCERER_CLOCKWORK_FEATURE_RESTORE_BALANCE" level="3"/>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_SORCERER_CLOCKWORK_FEATURE_BASTION_OF_LAW" level="6"/>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_SORCERER_CLOCKWORK_FEATURE_TRANCE_OF_ORDER" level="14"/>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_SORCERER_CLOCKWORK_FEATURE_CLOCKWORK_CAVALCADE" level="18"/>
+    </rules>
+  </element>
+
+  <!-- ===== Level 3: Clockwork Spells (always prepared) ===== -->
+  <element name="Clockwork Spells" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SORCERER_CLOCKWORK_FEATURE_CLOCKWORK_SPELLS">
+    <description>
+      <p>When you reach a Sorcerer level specified in the Clockwork Spells table, you thereafter always have the listed spells prepared.</p>
+      <table>
+        <thead><tr><th>Sorcerer Level</th><th>Spells</th></tr></thead>
+        <tbody>
+          <tr><td>3</td><td><em>Aid</em>, <em>Alarm</em>, <em>Lesser Restoration</em>, <em>Protection from Evil and Good</em></td></tr>
+          <tr><td>5</td><td><em>Dispel Magic</em>, <em>Protection from Energy</em></td></tr>
+          <tr><td>7</td><td><em>Freedom of Movement</em>, <em>Summon Construct</em></td></tr>
+          <tr><td>9</td><td><em>Greater Restoration</em>, <em>Wall of Force</em></td></tr>
+        </tbody>
+      </table>
+      <p>These spells do not count against the number of spells you can prepare. :contentReference[oaicite:2]{index=2}</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <!-- Level 3 -->
+      <grant type="Spell" id="ID_PHB24_SPELL_AID" prepared="true" spellcasting="Sorcerer" level="3"/>
+      <grant type="Spell" id="ID_PHB24_SPELL_ALARM" prepared="true" spellcasting="Sorcerer" level="3"/>
+      <grant type="Spell" id="ID_PHB24_SPELL_LESSER_RESTORATION" prepared="true" spellcasting="Sorcerer" level="3"/>
+      <grant type="Spell" id="ID_PHB24_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" prepared="true" spellcasting="Sorcerer" level="3"/>
+
+      <!-- Level 5 -->
+      <grant type="Spell" id="ID_PHB24_SPELL_DISPEL_MAGIC" prepared="true" spellcasting="Sorcerer" level="5"/>
+      <grant type="Spell" id="ID_PHB24_SPELL_PROTECTION_FROM_ENERGY" prepared="true" spellcasting="Sorcerer" level="5"/>
+
+      <!-- Level 7 -->
+      <grant type="Spell" id="ID_PHB24_SPELL_FREEDOM_OF_MOVEMENT" prepared="true" spellcasting="Sorcerer" level="7"/>
+      <grant type="Spell" id="ID_PHB24_SPELL_SUMMON_CONSTRUCT" prepared="true" spellcasting="Sorcerer" level="7"/>
+
+      <!-- Level 9 -->
+      <grant type="Spell" id="ID_PHB24_SPELL_GREATER_RESTORATION" prepared="true" spellcasting="Sorcerer" level="9"/>
+      <grant type="Spell" id="ID_PHB24_SPELL_WALL_OF_FORCE" prepared="true" spellcasting="Sorcerer" level="9"/>
+    </rules>
+  </element>
+
+  <!-- ===== Level 3: Restore Balance ===== -->
+  <element name="Restore Balance" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SORCERER_CLOCKWORK_FEATURE_RESTORE_BALANCE">
+    <description>
+      <p><strong>Reaction.</strong> When a creature you can see within 60 feet makes an attack roll, ability check, or saving throw with Advantage or Disadvantage, you can use your Reaction to negate Advantage or Disadvantage for that roll.</p>
+      <p>You can use this feature a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p>
+    </description>
+    <sheet action="Reaction" usage="{{clockwork:restore:uses}}/Long Rest">
+      <description>When a creature within 60 ft rolls with Advantage or Disadvantage, you negate Advantage or Disadvantage for that roll.</description>
+    </sheet>
+    <rules>
+      <stat name="clockwork:restore:uses" value="1" bonus="base" />
+      <stat name="clockwork:restore:uses" value="proficiency" bonus="base" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 6: Bastion of Law ===== -->
+  <element name="Bastion of Law" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SORCERER_CLOCKWORK_FEATURE_BASTION_OF_LAW">
+    <description>
+      <p><strong>Bonus Action.</strong> You can spend 1 to 5 Sorcery Points to create a magical ward that lasts until you finish a Long Rest or you use this feature again. The ward has a number of d8s equal to the Sorcery Points spent.</p>
+      <p>When you or a creature you can see within 30 feet takes damage, you can use your Reaction to expend any number of the wardâ€™s d8s, roll them, and reduce the damage by the total rolled.</p>
+    </description>
+    <sheet action="Bonus Action">
+      <description>Spend 1-5 SP to create a ward on you or on a creature within 30 ft of you. The ward has a number of d8 equal to the SP spent. As a Reaction: when  takes damage, expend any number of those d8 to reduce the damage by the total rolled. The ward ends when dice are gone or after a Long Rest.</description>
+    </sheet>
+  </element>
+
+  <!-- ===== Level 14: Trance of Order ===== -->
+  <element name="Trance of Order" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SORCERER_CLOCKWORK_FEATURE_TRANCE_OF_ORDER">
+    <description>
+      <p><strong>Bonus Action.</strong> You enter a trance for 1 minute. For the duration, attacks cannot gain Advantage against you, and any attack roll or ability check you make that is a 9 or lower on the d20 counts as a 10.</p>
+      <p>Once you use this feature, you cannot use it again until you finish a Long Rest, unless you spend 5 Sorcery Points to use it again.</p>
+    </description>
+    <sheet action="Bonus Action" usage="1/Long Rest">
+      <description>For 1 minute: attacks cannot have Advantage against you; your d20 results of 9 or lower on attack rolls and ability checks count as 10. You can restore one use by spending 5 Sorcery Points.</description>
+    </sheet>
+  </element>
+
+  <!-- ===== Level 18: Clockwork Cavalcade ===== -->
+  <element name="Clockwork Cavalcade" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SORCERER_CLOCKWORK_FEATURE_CLOCKWORK_CAVALCADE">
+    <description>
+      <p><strong>Magic Action.</strong> You summon a 30-foot cube of clockwork spirits that mends the world in three ways: it restores hit points to creatures of your choice in the area, repairs damaged objects and structures in the area, and ends certain ongoing spells in the area (as specified by the feature).</p>
+      <p>Once you use this feature, you cannot use it again until you finish a Long Rest, unless you spend 5 Sorcery Points to use it again.</p>
+    </description>
+    <sheet action="Magic Action" usage="1/Long Rest">
+      <description>Summon an instantaneous 30-ft cube centred on you to manifest the following effects: â€¢ restore up to 100 HP, divided as you choose, to creatures inside the cube, â€¢ repair any object; â€¢ Dispel any 6th-level or lower spell on creatures and objects of your choice in the area. You can restore one use by spending 7 Sorcery Points.</description>
+    </sheet>
+  </element>
+
+</elements>
+
+
+

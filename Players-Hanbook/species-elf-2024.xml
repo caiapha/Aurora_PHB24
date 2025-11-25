@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Elf (2024)</name>
+    <description>Elf species from the 2024 Playerâ€™s Handbook for Aurora Builder.</description>
+    <author url="https://aurorabuilder.com">Aurora Builder</author>
+    <update version="1.0.0">
+      <file name="species-elf-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/species-elf-2024.xml" />
+    </update>
+    <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+  </info>
+
+  <!-- SPECIES -->
+  <element name="Elf (2024)" type="Race" source="Player's Handbook (2024)" id="ID_SPECIES_ELF_2024">
+    <description>
+      <p class="flavor">Graceful and innately magical, elves balance keen senses with a meditative Trance.</p>
+      <h4>ELF TRAITS (2024)</h4>
+      <p><span class="feature">Creature Type.</span> Humanoid</p>
+      <p><span class="feature">Size.</span> Medium</p>
+      <p><span class="feature">Speed.</span> 30 feet</p>
+      <p><span class="feature">Darkvision.</span> 60 feet</p>
+      <p><span class="feature">Elven Lineage.</span> Choose Drow, High Elf, or Wood Elf. You gain the listed 1st-level benefit now, and at character levels 3 and 5 you learn the listed spells (always prepared). You can cast each once per Long Rest without a spell slot, or using your slots. Choose Intelligence, Wisdom, or Charisma as the spellcasting ability when you select your lineage.</p>
+      <p><span class="feature">Fey Ancestry.</span> You have advantage on saving throws to avoid or end the Charmed condition on yourself.</p>
+      <p><span class="feature">Keen Senses.</span> You gain proficiency in one of the following skills: Insight, Perception, or Survival.</p>
+      <p><span class="feature">Trance.</span> You donâ€™t sleep; you finish a Long Rest in 4 hours of conscious meditation; magic canâ€™t put you to sleep.</p>
+    </description>
+
+    <!-- Optional sheet reminder for the chosen spellcasting ability -->
+    <sheet display="false" />
+
+    <setters>
+      <set name="height" modifier="2d10">5'0"</set>
+      <set name="weight" modifier="1d4">100 lb.</set>
+    </setters>
+
+    <rules>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Vision" id="ID_PHB24_VISION_DARKVISION" />
+
+      <!-- Shared traits -->
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_ELF_2024_FEY_ANCESTRY" />
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_ELF_2024_TRANCE" />
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_ELF_2024_KEEN_SENSES" />
+
+      <!-- Lineage -->
+      <select type="Racial Trait" name="Elven Lineage" supports="Elf2024Lineage" number="1" />
+      <select type="Racial Trait" name="Spellcasting Ability (Elf Lineage)" supports="Elf2024SpellcastingAbility" number="1" />
+      <grant type="Language" id="ID_LANGUAGE_COMMON" />
+    </rules>
+  </element>
+
+  <!-- SHARED TRAITS -->
+  <element name="Fey Ancestry" type="Racial Trait" source="Player's Handbook (2024)" id="ID_RACIAL_TRAIT_ELF_2024_FEY_ANCESTRY">
+    <description><p>You have advantage on saving throws to avoid or end the Charmed condition on yourself.</p></description>
+    <sheet><description>Advantage on saves to avoid/end Charmed.</description></sheet>
+  </element>
+
+  <element name="Trance" type="Racial Trait" source="Player's Handbook (2024)" id="ID_RACIAL_TRAIT_ELF_2024_TRANCE">
+    <description><p>You donâ€™t sleep; you finish a Long Rest in 4 hours of conscious meditation; magic canâ€™t put you to sleep.</p></description>
+    <sheet><description>Trance: Long Rest in 4 hours; cannot be magically put to sleep.</description></sheet>
+  </element>
+
+  <element name="Keen Senses" type="Racial Trait" source="Player's Handbook (2024)" id="ID_RACIAL_TRAIT_ELF_2024_KEEN_SENSES">
+    <description><p>You gain proficiency in one of the following skills: Insight, Perception, or Survival (your choice).</p></description>
+    <sheet display="false"/>
+    <rules>
+      <select type="Racial Trait" name="Keen Senses Choice" supports="KeenSensesSkills" number="1" />
+    </rules>
+  </element>
+
+  <!-- KEEN SENSES CHOICE -->
+  <element name="Keen Sense: Insight" type="Racial Trait" source="Player's Handbook (2024)" id="ID_RACIAL_TRAIT_ELF_2024_KEEN_SENSES_INSIGHT">
+    <supports>KeenSensesSkills</supports>
+        <description><p>you gain proficiency in <strong>Insight</strong>.</p></description>
+    <sheet display="false" />
+    <rules><grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" /></rules>
+  </element>
+  <element name="Keen Sense: Perception" type="Racial Trait" source="Player's Handbook (2024)" id="ID_RACIAL_TRAIT_ELF_2024_KEEN_SENSES_PERCEPTION">
+    <supports>KeenSensesSkills</supports>
+        <description><p>you gain proficiency in <strong>Perception</strong>.</p></description>
+    <sheet display="false" />
+    <rules><grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" /></rules>
+  </element>
+  <element name="Keen Sense: Survival" type="Racial Trait" source="Player's Handbook (2024)" id="ID_RACIAL_TRAIT_ELF_2024_KEEN_SENSES_SURVIVAL">
+    <supports>KeenSensesSkills</supports>
+        <description><p>you gain proficiency in <strong>Survival</strong>.</p></description>
+    <sheet display="false" />
+    <rules><grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" /></rules>
+  </element>
+
+  <!-- LINEAGES -->
+  <!-- DROW -->
+  <element name="Elven Lineage: Drow" type="Racial Trait" source="Player's Handbook (2024)" id="ID_RACIAL_TRAIT_ELF_2024_LINEAGE_DROW">
+    <supports>Elf2024Lineage</supports>
+    <description>
+      <p><strong>Darkvision.</strong> Your Darkvision range is 120 feet.</p>
+      <p><strong>1st level.</strong> You know the <em>Dancing Lights</em> cantrip.</p>
+      <p><strong>3rd level.</strong> You learn <em>Faerie Fire</em> (always prepared; 1/Long Rest without a slot, or with slots).</p>
+      <p><strong>5th level.</strong> You learn <em>Darkness</em> (same rules).</p>
+    </description>
+    <sheet>
+      <description>Once per Long Rest, you can cast your 1+ level Lineage spells without expending a spell slot. You can also cast them expending a spell slot of the appropriate level. </description>
+    </sheet>
+    <rules>
+      <grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
+      <grant type="Spell" id="ID_PHB_SPELL_DANCING_LIGHTS" prepared="true"  spellcasting="Elven lineage" />
+      <grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" level="3" prepared="true"  spellcasting="Elven lineage" />
+      <grant type="Spell" id="ID_PHB_SPELL_DARKNESS" level="5" prepared="true"  spellcasting="Elven lineage" />
+    </rules>
+  </element>
+
+  <!-- HIGH ELF -->
+  <element name="Elven Lineage: High Elf" type="Racial Trait" source="Player's Handbook (2024)" id="ID_RACIAL_TRAIT_ELF_2024_LINEAGE_HIGH">
+    <supports>Elf2024Lineage</supports>
+    <description>
+      <p><strong>1st level.</strong> You know <em>Prestidigitation</em>. After a Long Rest, you can replace it with another Wizard cantrip.</p>
+      <p><strong>3rd level.</strong> You learn <em>Detect Magic</em> (always prepared; 1/Long Rest without a slot, or with slots).</p>
+      <p><strong>5th level.</strong> You learn <em>Misty Step</em> (same rules).</p>
+    </description>
+    <sheet>
+      <description>Once per Long Rest, you can cast your 1+ level Lineage spells without expending a spell slot. You can also cast them expending a spell slot of the appropriate level. </description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_PRESTIDIGITATION" prepared="true"  spellcasting="Elven lineage" />
+      <grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" level="3" prepared="true"  spellcasting="Elven lineage" />
+      <grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" level="5" prepared="true"  spellcasting="Elven lineage" />
+      <select type="Spell" name="High Elf: Replace Prestidigitation (optional)" supports="Wizard,0" optional="true" spellcasting="Elven lineage" />
+    </rules>
+  </element>
+
+  <!-- WOOD ELF -->
+  <element name="Elven Lineage: Wood Elf" type="Racial Trait" source="Player's Handbook (2024)" id="ID_RACIAL_TRAIT_ELF_2024_LINEAGE_WOOD">
+    <supports>Elf2024Lineage</supports>
+    <description>
+      <p><strong>1st level.</strong> Your Speed becomes 35 feet. You know <em>Druidcraft</em>.</p>
+      <p><strong>3rd level.</strong> You learn <em>Longstrider</em> (always prepared; 1/Long Rest without a slot, or with slots).</p>
+      <p><strong>5th level.</strong> You learn <em>Pass without Trace</em> (same rules).</p>
+    </description>
+    <sheet>
+      <description>Once per Long Rest, you can cast your 1+ level Lineage spells without expending a spell slot. You can also cast them expending a spell slot of the appropriate level. </description>
+    </sheet>
+    <rules>
+      <stat name="innate speed" value="35" bonus="base" />
+      <grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT" prepared="true" spellcasting="Elven lineage" />
+      <grant type="Spell" id="ID_PHB_SPELL_LONGSTRIDER" level="3" prepared="true"  spellcasting="Elven lineage" />
+      <grant type="Spell" id="ID_PHB_SPELL_PASS_WITHOUT_TRACE" prepared="true"  level="5" spellcasting="Elven lineage" />
+    </rules>
+  </element>
+
+    <!-- SPELLCASTING ABILITY FOR LINEAGE -->
+  <element name="Intelligence" type="Racial Trait" source="Player's Handbook (2024)" id="ID_RACIAL_TRAIT_ELF_2024_LINEAGE_SPELLCASTING_ABILITY_INT">
+    <supports>Elf2024SpellcastingAbility</supports>
+        <description><p>Your lineage spellcasting ability is <strong>Intelligence</strong>.</p></description>
+    <sheet display="false" />
+    <spellcasting name="Elven lineage" ability="Intelligence" prepare="true">
+      <list />
+    </spellcasting>
+  </element>
+
+  <element name="Wisdom" type="Racial Trait" source="Player's Handbook (2024)" id="ID_RACIAL_TRAIT_ELF_2024_LINEAGE_SPELLCASTING_ABILITY_WIS">
+    <supports>Elf2024SpellcastingAbility</supports>
+    <description><p>Your lineage spellcasting ability is <strong>Wisdom</strong>.</p></description>
+    <sheet display="false" />
+    <spellcasting name="Elven lineage" ability="Wisdom" prepare="true">
+      <list />
+    </spellcasting>
+   </element>
+  <element name="Charisma" type="Racial Trait" source="Player's Handbook (2024)" id="ID_RACIAL_TRAIT_ELF_2024_LINEAGE_SPELLCASTING_ABILITY_CHA">
+    <supports>Elf2024SpellcastingAbility</supports>
+        <description><p>Your lineage spellcasting ability is <strong>Charisma</strong>.</p></description>
+    <sheet display="false" />
+    <spellcasting name="Elven lineage" ability="Charisma" prepare="true">
+      <list />
+    </spellcasting>
+  </element>
+
+</elements>
+
+
+

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Halfling (2024)</name>
+    <description>Halfling species from the 2024 Playerâ€™s Handbook for Aurora Builder (no subraces/lineages).</description>
+    <author url="https://aurorabuilder.com">Aurora Builder</author>
+    <update version="1.0.0">
+      <file name="species-halfling-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/species-halfling-2024.xml" />
+    </update>
+    <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+  </info>
+
+  <element name="Halfling (2024)" type="Race" source="Player's Handbook (2024)" id="ID_SPECIES_HALFLING_2024">
+    <description>
+      <p class="flavor">Small in stature but big in heart, halflings blend courage, luck, and quiet footwork.</p>
+      <h4>HALFLING TRAITS (2024)</h4>
+      <p><span class="feature">Creature Type.</span> Humanoid</p>
+      <p><span class="feature">Size.</span> Small</p>
+      <p><span class="feature">Speed.</span> 30 feet</p>
+      <p><span class="feature">Lucky.</span> When you roll a 1 on the d20 for a d20 Test, you can reroll the die, and you must use the new roll.</p>
+      <p><span class="feature">Brave.</span> You have advantage on saving throws to avoid or end the Frightened condition on yourself.</p>
+      <p><span class="feature">Halfling Nimbleness.</span> You can move through the space of any creature that is of a size larger than yours.</p>
+      <p class="rules">In 2024, species donâ€™t grant Ability Score Increases or languages; those come from Origin (Background + chosen languages).</p>
+    </description>
+
+    <sheet display="false" />
+    <setters>
+      <set name="height" modifier="2d4">3'0"</set>
+      <set name="weight" modifier="1d4">40 lb.</set>
+    </setters>
+
+    <rules>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_SMALL" />
+      <grant type="Racial Trait" id="ID_HALFLING_2024_SIZE" />
+      <grant type="Racial Trait" id="ID_HALFLING_2024_LUCKY" />
+      <grant type="Racial Trait" id="ID_HALFLING_2024_BRAVE" />
+      <grant type="Racial Trait" id="ID_HALFLING_2024_NIMBLENESS" />
+      <grant type="Racial Trait" id="ID_HALFLING_2024_NATURALLY_STEALTHY" />
+      <grant type="Language" id="ID_LANGUAGE_COMMON" />
+    </rules>
+  </element>
+
+  <element name="Small Sized" type="Racial Trait" source="Player's Handbook (2024)" id="ID_HALFLING_2024_SIZE">
+    <description />
+    <sheet><description>Your size is Small</description></sheet>
+  </element>
+
+  <element name="Lucky" type="Racial Trait" source="Player's Handbook (2024)" id="ID_HALFLING_2024_LUCKY">
+    <description><p>When you roll a 1 on the d20 for a d20 Test, you can reroll the die, and you must use the new roll.</p></description>
+    <sheet><description>You can reroll a 1 on d20 Tests and use the new roll.</description></sheet>
+  </element>
+
+  <element name="Brave" type="Racial Trait" source="Player's Handbook (2024)" id="ID_HALFLING_2024_BRAVE">
+    <description><p>You have advantage on saving throws to avoid or end the Frightened condition on yourself.</p></description>
+    <sheet><description>You have advantage on saves vs. Frightened condition.</description></sheet>
+  </element>
+
+  <element name="Halfling Nimbleness" type="Racial Trait" source="Player's Handbook (2024)" id="ID_HALFLING_2024_NIMBLENESS">
+    <description><p>You can move through the space of any creature that is of a size larger than yours.</p></description>
+    <sheet><description>You can move through spaces of larger creatures, but you cannot stop in it.</description></sheet>
+  </element>
+
+  <element name="Naturally Stealthy" type="Racial Trait" source="Player's Handbook (2024)" id="ID_HALFLING_2024_NATURALLY_STEALTHY">
+    <description><p>You can take the Hide action even when you are obscured only by a creature that is at least one size larger than you.</p></description>
+    <sheet><description>You can take the Hide action even when you are obscured only by a creature that is at least one size larger than you.</description></sheet>
+  </element>
+
+
+</elements>
+
+
+

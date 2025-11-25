@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Dragonborn (2024)</name>
+    <description>Dragonborn species from the 2024 Player's Handbook, faithfully modeled for Aurora Builder.</description>
+    <author url="https://aurorabuilder.com">Aurora Builder</author>
+    <update version="1.0.0">
+      <file name="species-dragonborn-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/species-dragonborn-2024.xml" />
+    </update>
+    <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+  </info>
+
+  <!-- SPECIES -->
+  <element name="Dragonborn (2024)" type="Race" source="Player's Handbook (2024)" id="ID_SPECIES_DRAGONBORN_2024">
+    <description>
+      <p class="flavor">Descendants of dragons, dragonborn manifest an elemental breath and a resistance tied to their ancestry.</p>
+      <h4>DRAGONBORN TRAITS (2024)</h4>
+      <p><span class="feature">Creature Type.</span> Humanoid</p>
+      <p><span class="feature">Size.</span> Medium.</p>
+      <p><span class="feature">Speed.</span> 30 feet.</p>
+      <p><span class="feature">Darkvision.</span> 60 feet.</p>
+      <p><span class="feature">Draconic Ancestry.</span> Choose a type of dragon from the <em>Draconic Ancestors</em> table. It determines the Breathâ€™s shape/save and the damage type you are resistant to.</p>
+      <p><span class="feature">Breath Weapon.</span> When you take the Attack action, you can replace one of your attacks with an exhalation in a **15-ft cone** or a **5 by 30-ft line** (according to your ancestry). **DC** = 8 + **Con** + **PB**. Damage **1d10** (half on a success), which becomes **2d10** at 5th level, **3d10** at 11th, and **4d10** at 17th. Uses per Long Rest: **equal to your proficiency bonus**.</p>
+      <p><span class="feature">Damage Resistance.</span> You have resistance to the damage type of your ancestry.</p>
+    </description>
+    <sheet display="false" />
+    <setters>
+      <set name="height" modifier="2d8">5'6"</set>
+      <set name="weight" modifier="2d6">175 lb.</set>
+    </setters>
+    <rules>
+      <!-- No ASI -->
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Vision" id="ID_PHB24_VISION_DARKVISION" />
+      <!-- Fixed size -->
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <!-- Core traits -->
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_DRAGONBORN_2024_DRACONIC_ANCESTRY" />
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_DRAGONBORN_2024_BREATH_WEAPON" />
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_DRAGONBORN_2024_DRACONIC_FLIGHT" level="5" />
+      <!-- Ancestry selection (sets resistance and shows shape/save) -->
+      <select type="Racial Trait" name="Draconic Ancestry (2024)" supports="Draconic Ancestry 2024" />
+      <grant type="Language" id="ID_LANGUAGE_COMMON" />
+   </rules>
+  </element>
+
+  <!-- DRACONIC ANCESTRY (container with table) -->
+  <element name="Draconic Ancestry (2024)" type="Racial Trait" source="Player's Handbook (2024)" id="ID_RACIAL_TRAIT_DRAGONBORN_2024_DRACONIC_ANCESTRY">
+    <description>
+      <p>Choose an ancestry from the table. It indicates the damage type and the Breathâ€™s shape/save.</p>
+      <h5>Draconic Ancestors</h5>
+      <table>
+        <thead><tr><td>Dragon</td><td>Damage Type</td><td>Breath</td></tr></thead>
+        <tr><td>Black</td><td>Acid</td><td>5Ã—30 ft line (Dex. save)</td></tr>
+        <tr><td>Blue</td><td>Lightning</td><td>5Ã—30 ft line (Dex. save)</td></tr>
+        <tr><td>Brass</td><td>Fire</td><td>5Ã—30 ft line (Dex. save)</td></tr>
+        <tr><td>Bronze</td><td>Lightning</td><td>5Ã—30 ft line (Dex. save)</td></tr>
+        <tr><td>Copper</td><td>Acid</td><td>5Ã—30 ft line (Dex. save)</td></tr>
+        <tr><td>Gold</td><td>Fire</td><td>15 ft cone (Dex. save)</td></tr>
+        <tr><td>Green</td><td>Poison</td><td>15 ft cone (Con. save)</td></tr>
+        <tr><td>Red</td><td>Fire</td><td>15 ft cone (Dex. save)</td></tr>
+        <tr><td>Silver</td><td>Cold</td><td>15 ft cone (Con. save)</td></tr>
+        <tr><td>White</td><td>Cold</td><td>15 ft cone (Con. save)</td></tr>
+      </table>
+    </description>
+    <sheet display="false" />
+  </element>
+
+  <!-- BREATH WEAPON (2024) -->
+  <element name="Breath Weapon" type="Racial Trait" source="Player's Handbook (2024)" id="ID_RACIAL_TRAIT_DRAGONBORN_2024_BREATH_WEAPON">
+    <description>
+      <p>When you take the Attack action, you can replace one of your attacks with a Breath. DC = 8 + Con mod + PB. Damage: 1d10 (2d10 at 5th, 3d10 at 11th, 4d10 at 17th), half on a success. Uses = PB per Long Rest.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="Breath_Weapon_CD" value="8" />
+      <stat name="Breath_Weapon_CD" value="constitution:modifier" />
+      <stat name="Breath_Weapon_CD" value="proficiency" />
+      <stat name="Breath_Weapon_dice" value="1" />
+      <stat name="Breath_Weapon_dice" value="1" level="5" />
+      <stat name="Breath_Weapon_dice" value="1" level="11" />
+      <stat name="Breath_Weapon_dice" value="1" level="17" />
+    </rules>
+  </element>
+
+  <!-- ANCESTRY SELECTORS: set resistance and show shape/save -->
+  <element name="Draconic Ancestry (Black)" type="Racial Trait" source="Player's Handbook (2024)" id="ID_DRAGONBORN_2024_ANCESTRY_BLACK">
+    <supports>Draconic Ancestry 2024</supports>
+    <description><p>Acid; 5Ã—30 ft line (Dex. save)</p></description>
+    <sheet action="Attack" usage="{{proficiency}}/Long Rest"><description>Weapon Breath: {{Breath_Weapon_dice}}d10 acid damage, 5Ã—30 ft line. Dex save CD{{Breath_Weapon_CD}}</description></sheet>
+    <rules><grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID"/></rules>
+  </element>
+
+  <element name="Draconic Ancestry (Blue)" type="Racial Trait" source="Player's Handbook (2024)" id="ID_DRAGONBORN_2024_ANCESTRY_BLUE">
+    <supports>Draconic Ancestry 2024</supports>
+    <description><p>Lightning; 5Ã—30 ft line (Dex. save)</p></description>
+    <sheet action="Attack" usage="{{proficiency}}/Long Rest"><description>Weapon Breath: {{Breath_Weapon_dice}}d10 lightning damage, 5Ã—30 ft line. Dex save CD{{Breath_Weapon_CD}}</description></sheet>
+    <rules><grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING"/></rules>
+  </element>
+
+  <element name="Draconic Ancestry (Brass)" type="Racial Trait" source="Player's Handbook (2024)" id="ID_DRAGONBORN_2024_ANCESTRY_BRASS">
+    <supports>Draconic Ancestry 2024</supports>
+    <description><p>Fire; 5Ã—30 ft line (Dex. save)</p></description>
+    <sheet action="Attack" usage="{{proficiency}}/Long Rest"><description>Weapon Breath: {{Breath_Weapon_dice}}d10 fire damage, 5Ã—30 ft line. Dex save CD{{Breath_Weapon_CD}}</description></sheet>
+    <rules><grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE"/></rules>
+  </element>
+
+  <element name="Draconic Ancestry (Bronze)" type="Racial Trait" source="Player's Handbook (2024)" id="ID_DRAGONBORN_2024_ANCESTRY_BRONZE">
+    <supports>Draconic Ancestry 2024</supports>
+    <description><p>Lightning; 5Ã—30 ft line (Dex. save)</p></description>
+    <sheet action="Attack" usage="{{proficiency}}/Long Rest"><description>Weapon Breath: {{Breath_Weapon_dice}}d10 lightning damage, 5Ã—30 ft line. Dex save CD{{Breath_Weapon_CD}}</description></sheet>
+    <rules><grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING"/></rules>
+  </element>
+
+  <element name="Draconic Ancestry (Copper)" type="Racial Trait" source="Player's Handbook (2024)" id="ID_DRAGONBORN_2024_ANCESTRY_COPPER">
+    <supports>Draconic Ancestry 2024</supports>
+    <description><p>Acid; 5Ã—30 ft line (Dex. save)</p></description>
+    <sheet action="Attack" usage="{{proficiency}}/Long Rest"><description>Weapon Breath: {{Breath_Weapon_dice}}d10 acid damage, 5Ã—30 ft line. Dex save CD{{Breath_Weapon_CD}}</description></sheet>
+    <rules><grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID"/></rules>
+  </element>
+
+  <element name="Draconic Ancestry (Gold)" type="Racial Trait" source="Player's Handbook (2024)" id="ID_DRAGONBORN_2024_ANCESTRY_GOLD">
+    <supports>Draconic Ancestry 2024</supports>
+    <description><p>Fire; 15 ft cone (Dex. save)</p></description>
+    <sheet action="Attack" usage="{{proficiency}}/Long Rest"><description>Weapon Breath: {{Breath_Weapon_dice}}d10 fire damage, 15 ft cone. Dex save CD{{Breath_Weapon_CD}}</description></sheet>
+    <rules><grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE"/></rules>
+  </element>
+
+  <element name="Draconic Ancestry (Green)" type="Racial Trait" source="Player's Handbook (2024)" id="ID_DRAGONBORN_2024_ANCESTRY_GREEN">
+    <supports>Draconic Ancestry 2024</supports>
+    <description><p>Poison; 15 ft cone (Con. save)</p></description>
+    <sheet action="Attack" usage="{{proficiency}}/Long Rest"><description>Weapon Breath: {{Breath_Weapon_dice}}d10 poison damage, 15 ft cone. Con save CD{{Breath_Weapon_CD}}</description></sheet>
+    <rules><grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON"/></rules>
+  </element>
+
+  <element name="Draconic Ancestry (Red)" type="Racial Trait" source="Player's Handbook (2024)" id="ID_DRAGONBORN_2024_ANCESTRY_RED">
+    <supports>Draconic Ancestry 2024</supports>
+    <description><p>Fire; 15 ft cone (Dex. save)</p></description>
+    <sheet action="Attack" usage="{{proficiency}}/Long Rest"><description>Weapon Breath: {{Breath_Weapon_dice}}d10 fire damage, 15 ft cone. Dex save CD{{Breath_Weapon_CD}}</description></sheet>
+    <rules><grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE"/></rules>
+  </element>
+
+  <element name="Draconic Ancestry (Silver)" type="Racial Trait" source="Player's Handbook (2024)" id="ID_DRAGONBORN_2024_ANCESTRY_SILVER">
+    <supports>Draconic Ancestry 2024</supports>
+    <description><p>Cold; 15 ft cone (Con. save)</p></description>
+    <sheet action="Attack" usage="{{proficiency}}/Long Rest"><description>Weapon Breath: {{Breath_Weapon_dice}}d10 cold damage, 15 ft cone. Con save CD{{Breath_Weapon_CD}}</description></sheet>
+    <rules><grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD"/></rules>
+  </element>
+
+  <element name="Draconic Ancestry (White)" type="Racial Trait" source="Player's Handbook (2024)" id="ID_DRAGONBORN_2024_ANCESTRY_WHITE">
+    <supports>Draconic Ancestry 2024</supports>
+    <description><p>Cold; 15 ft cone (Con. save)</p></description>
+    <sheet action="Attack" usage="{{proficiency}}/Long Rest"><description>Weapon Breath: {{Breath_Weapon_dice}}d10 cold damage, 15 ft cone. Con save CD{{Breath_Weapon_CD}}</description></sheet>
+    <rules><grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD"/></rules>
+  </element>
+
+  <element name="Draconic Flight" type="Racial Trait" source="Player's Handbook (2024)" id="ID_RACIAL_TRAIT_DRAGONBORN_2024_DRACONIC_FLIGHT">
+    <description>
+      <p>When you reach character level 5, you can channel draconic magic to give yourself temporary flight. As a Bonus Action, you sprout spectral wings on your back that last for 10 minutes or until you retract the wings (no action required) or have the Incapacitated condition. During that time, you have a Fly Speed equal to your Speed. Your wings appear to be made of the same energy as your Breath Weapon. Once you use this trait, you can't use it again until you finish a Long Rest.</p>
+    </description>
+    <sheet action="Bonus Action" usage="1/Long Rest">
+      <description>you gain {{speed}} ft. flying speed. This effect ends in 10 minuts or until you retract the wings (no action required) or have the Incapacitated condition.</description>
+    </sheet>
+  </element>
+</elements>
+
+
+

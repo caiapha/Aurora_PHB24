@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <update version="1.0.0">
+      <file name="class-rogue-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/class-rogue-2024.xml" />
+    </update>
+    <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+  </info>
+
+  <!-- ===================== ROGUE (PHB 2024) ===================== -->
+  <element name="Rogue" type="Class" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_ROGUE">
+    <description>
+      <h1>Rogue</h1>
+      <p>A master of stealth, skill, and decisive strikes.</p>
+
+      <h3>Class Features</h3>
+      <p>As a Rogue, you gain the following class features.</p>
+
+      <h4>Hit Points</h4>
+      <p><strong>Hit Dice:</strong> 1d8 per Rogue level</p>
+      <p><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</p>
+      <p><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per Rogue level after 1st</p>
+
+      <h4>Proficiencies</h4>
+      <p><strong>Armor:</strong> Light armor</p>
+      <p><strong>Weapons:</strong> Simple weapons, and Martial weapons that have the Finesse or Light property</p>
+      <p><strong>Tools:</strong> Thievesâ€™ Tools</p>
+      <p><strong>Saving Throws:</strong> Dexterity, Intelligence</p>
+      <p><strong>Skills:</strong> Choose four from Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Persuasion, Sleight of Hand, Stealth</p>
+
+      <h4>Equipment</h4>
+      <p>You start with the following equipment, in addition to the equipment granted by your background.</p>
+
+      <h5 class="caption">THE ROGUE</h5>
+      <table class="class-features">
+        <thead>
+          <tr>
+            <th>Lvl</th><th>Prof. Bonus</th><th class="left">Features</th><th>Sneak Attack</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td> 1</td><td>+2</td><td class="left">Expertise; Sneak Attack; Thievesâ€™ Cant; Weapon Mastery</td><td>1d6</td></tr>
+          <tr><td> 2</td><td>+2</td><td class="left">Cunning Action</td><td>1d6</td></tr>
+          <tr><td> 3</td><td>+2</td><td class="left">Rogue Subclass; Steady Aim</td><td>2d6</td></tr>
+          <tr><td> 4</td><td>+2</td><td class="left">Ability Score Improvement</td><td>2d6</td></tr>
+          <tr><td> 5</td><td>+3</td><td class="left">Cunning Strike; Uncanny Dodge</td><td>3d6</td></tr>
+          <tr><td> 6</td><td>+3</td><td class="left">Expertise</td><td>3d6</td></tr>
+          <tr><td> 7</td><td>+3</td><td class="left">Evasion; Reliable Talent</td><td>4d6</td></tr>
+          <tr><td> 8</td><td>+3</td><td class="left">Ability Score Improvement</td><td>4d6</td></tr>
+          <tr><td> 9</td><td>+4</td><td class="left">Subclass Feature</td><td>5d6</td></tr>
+          <tr><td>10</td><td>+4</td><td class="left">Ability Score Improvement</td><td>5d6</td></tr>
+          <tr><td>11</td><td>+4</td><td class="left">Improved Cunning Strike</td><td>6d6</td></tr>
+          <tr><td>12</td><td>+4</td><td class="left">Ability Score Improvement</td><td>6d6</td></tr>
+          <tr><td>13</td><td>+5</td><td class="left">Subclass Feature</td><td>7d6</td></tr>
+          <tr><td>14</td><td>+5</td><td class="left">Devious Strikes</td><td>7d6</td></tr>
+          <tr><td>15</td><td>+5</td><td class="left">Slippery Mind</td><td>8d6</td></tr>
+          <tr><td>16</td><td>+5</td><td class="left">Ability Score Improvement</td><td>8d6</td></tr>
+          <tr><td>17</td><td>+6</td><td class="left">Subclass Feature</td><td>9d6</td></tr>
+          <tr><td>18</td><td>+6</td><td class="left">Elusive</td><td>9d6</td></tr>
+          <tr><td>19</td><td>+6</td><td class="left">Epic Boon</td><td>10d6</td></tr>
+          <tr><td>20</td><td>+6</td><td class="left">Stroke of Luck</td><td>10d6</td></tr>
+        </tbody>
+      </table>
+
+      <!-- Feature includes -->
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_EXPERTISE" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_SNEAK_ATTACK" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_THIEVES_CANT" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_WEAPON_MASTERY" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_CUNNING_ACTION" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_SUBCLASS" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_STEADY_AIM" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_ABILITYSCOREIMPROVEMENT" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_UNCANNY_DODGE" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_EVASION" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_RELIABLE_TALENT" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_IMPROVED_CUNNING_STRIKE" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_DEVIOUS_STRIKES" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_SLIPPERY_MIND" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_ELUSIVE" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_EPIC_BOON" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_STROKE_OF_LUCK" />
+    </description>
+
+    <sheet display="false">
+      <description>A master of stealth, skill, and decisive strikes.</description>
+    </sheet>
+
+    <setters>
+      <set name="short">A deft infiltrator who deals precise, devastating strikes.</set>
+      <set name="hd">d8</set>
+    </setters>
+
+    <!-- UNICO BLOCCO RULES -->
+    <rules>
+      <!-- Proficiencies -->
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" supports="ID_INTERNAL_WEAPON_PROPERTY_LIGHT||ID_INTERNAL_WEAPON_PROPERTY_FINESSE" optional="true" />
+      <grant type="Proficiency" id="ID_WOTC_PHB_ITEM_TOOL_THIEVES_TOOLS"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE"/>
+      <select type="Proficiency" name="Skill Proficiencies (Rogue)" supports="Skill,PHB24, Rogue" number="4" />
+
+      <!-- Grants per level -->
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_EXPERTISE" level="1"/>
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_SNEAK_ATTACK" level="1"/>
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_THIEVES_CANT" level="1"/>
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_WEAPON_MASTERY" level="1"/>
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_CUNNING_ACTION" level="2"/>
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_SUBCLASS" level="3"/>
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_STEADY_AIM" level="3"/>
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_ABILITYSCOREIMPROVEMENT" level="4"/>
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE" level="5"/>
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_UNCANNY_DODGE" level="5"/>
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_EVASION" level="7"/>
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_RELIABLE_TALENT" level="7"/>
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_SUBCLASS" level="9"/>
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_IMPROVED_CUNNING_STRIKE" level="11"/>
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_DEVIOUS_STRIKES" level="14"/>
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_SLIPPERY_MIND" level="15"/>
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_ELUSIVE" level="18"/>
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_EPIC_BOON" level="19"/>
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_STROKE_OF_LUCK" level="20"/>
+    </rules>
+
+    <!-- Multiclass -->
+    <multiclass id="ID_WOTC_PHB24_MULTICLASS_ROGUE">
+      <prerequisite>Dexterity 13</prerequisite>
+      <requirements>[dex:13]</requirements>
+      <setters>
+        <set name="multiclass proficiencies">Light armor; Thievesâ€™ Tools; one skill from the Rogue list</set>
+      </setters>
+      <rules>
+        <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_LIGHT"/>
+        <grant type="Proficiency" id="ID_WOTC_PHB_ITEM_TOOL_THIEVES_TOOLS"/>
+        <select type="Proficiency" name="Rogue Multiclass Skill" supports="Skill, PHB24, Rogue" number="1"/>
+      </rules>
+    </multiclass>
+  </element>
+
+  <!-- ===================== FEATURES ===================== -->
+
+  <!-- Expertise -->
+  <element name="Expertise" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_EXPERTISE">
+    <description>
+      <p>You gain Expertise in two of your skill proficiencies of your choice.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select type="Proficiency" name="Expertise (Rogue 1 lvl)" supports="Expertise" number="2" level="1" />
+      <select type="Proficiency" name="Expertise (Rogue 6 lvl)" supports="Expertise" number="2" level="6" />      
+    </rules>
+  </element>
+
+  <!-- Sneak Attack -->
+  <element name="Sneak Attack" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_SNEAK_ATTACK">
+    <description>
+      <p>Once per turn, when you hit a creature with a Finesse or Ranged weapon and you have Advantage on the attack roll (or an ally of the target is within 5 feet of it and not Incapacitated, and you donâ€™t have Disadvantage), you deal extra damage as shown in the Rogue table.</p>
+    </description>
+    <sheet usage="1/Turn">
+      <description>If you have Advantage on an attack or an ally is adjacent to your target (and you donâ€™t have Disadvantage), on a hit with a Finesse or Ranged weapon, add {{sneak attack:dice:number}}d6 extra damage.</description>
+    </sheet>
+    <rules>
+        <stat name="sneak attack:dice:number" value="1" bonus="base" level="1" />
+        <stat name="sneak attack:dice:number" value="2" bonus="base" level="3" />
+        <stat name="sneak attack:dice:number" value="3" bonus="base" level="5" />
+        <stat name="sneak attack:dice:number" value="4" bonus="base" level="7" />
+        <stat name="sneak attack:dice:number" value="5" bonus="base" level="9" />
+        <stat name="sneak attack:dice:number" value="6" bonus="base" level="11" />
+        <stat name="sneak attack:dice:number" value="7" bonus="base" level="13" />
+        <stat name="sneak attack:dice:number" value="8" bonus="base" level="15" />
+        <stat name="sneak attack:dice:number" value="9" bonus="base" level="17" />
+        <stat name="sneak attack:dice:number" value="10" bonus="base" level="19" />
+    </rules>
+  </element>
+
+  <!-- Thievesâ€™ Cant (and an extra language) -->
+  <element name="Thievesâ€™ Cant" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_THIEVES_CANT">
+    <description>
+      <p>You know Thievesâ€™ Cant and one additional language of your choice.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Proficiency" id="ID_WOTC_PHB_LANGUAGE_THIEVES_CANT" />
+      <select type="Language" name="Thievesâ€™ Cant: Extra Language" supports="Standard_Lang" number="1" />
+    </rules>
+  </element>
+
+  <!-- Weapon Mastery -->
+  <element name="Weapon Mastery" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_WEAPON_MASTERY">
+    <description>
+      <p>Your training lets you use the Mastery properties of two kinds of weapons with which you are proficient. You can change the chosen kinds whenever you finish a Long Rest.</p>
+    </description>
+    <sheet>
+      <description>You can use the Mastery properties of two proficient weapon kinds; you can change them on a Long Rest.</description>
+    </sheet>
+  </element>
+
+  <!-- Cunning Action -->
+  <element name="Cunning Action" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_CUNNING_ACTION">
+    <description>
+      <p><strong>Bonus Action.</strong> On your turn, you can take the Dash, Disengage, or Hide action.</p>
+    </description>
+    <sheet action="Bonus Action">
+      <description>You can take Dash, Disengage, or Hide action.</description>
+    </sheet>
+  </element>
+
+  <!-- Subclass -->
+  <element name="Rogue Subclass" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_SUBCLASS">
+    <description>
+      <p>At 3rd level, choose a Rogue subclass. You gain its features at the Rogue levels noted in the subclass.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select type="Archetype" name="Rogue Subclass" supports="RogueSubclass" level="3" />
+    </rules>
+  </element>
+
+  <!-- Steady Aim -->
+  <element name="Steady Aim" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_STEADY_AIM">
+    <description>
+      <p><strong>Bonus Action.</strong> If you havenâ€™t moved this turn, you can give yourself Advantage on your next attack roll on the current turn. After you use this feature, your Speed is 0 until the end of the current turn.</p>
+    </description>
+    <sheet action="Bonus Action">
+      <description>If you havenâ€™t moved this turn, gain Advantage on your next attack this turn; your Speed becomes 0 until end of turn.</description>
+    </sheet>
+  </element>
+
+  <!-- ASI -->
+  <element name="Ability Score Improvement" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_ABILITYSCOREIMPROVEMENT">
+    <description>
+      <p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify (at Rogue 4, 8, 10, 12, 16).</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select name="Improvement Option (Rogue 4)"  type="Class Feature" supports="Level Improvement" level="4" />
+      <select name="Improvement Option (Rogue 8)"  type="Class Feature" supports="Level Improvement" level="8" />
+      <select name="Improvement Option (Rogue 10)" type="Class Feature" supports="Level Improvement" level="10" />
+      <select name="Improvement Option (Rogue 12)" type="Class Feature" supports="Level Improvement" level="12" />
+      <select name="Improvement Option (Rogue 16)" type="Class Feature" supports="Level Improvement" level="16" />
+    </rules>
+  </element>
+
+  <!-- Cunning Strike -->
+  <element name="Cunning Strike" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE">
+    <description>
+      <p>When you deal Sneak Attack damage, you can forgo some of that damage to add an extra effect. Each effect has a die cost; remove that many Sneak Attack dice before rolling. The effect occurs immediately after damage is dealt. Save DC for effects that require one = 8 + your Dexterity modifier + your Proficiency Bonus.</p>
+      <ul>
+        <li><strong>Poison (Cost: 1d6).</strong> Target makes a Constitution save; on a fail it has the Poisoned condition for 1 minute (save ends at end of each of its turns). You must have a Poisonerâ€™s Kit on your person.</li>
+        <li><strong>Trip (Cost: 1d6).</strong> If the target is Large or smaller, it must make a Dexterity save or have the Prone condition.</li>
+        <li><strong>Withdraw (Cost: 1d6).</strong> Immediately after the attack, you move up to half your Speed without provoking Opportunity Attacks.</li>
+      </ul>
+    </description>
+    <sheet>
+      <description>When you deal Sneak Attack damage, you can forego some damage dice to add up to {{rogue:cunningstrike:uses}} of the following effects.</description>
+    </sheet>
+    <rules>
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_POISON" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_TRIP" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_WITHDRAW" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_DAZE" level="14" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_KNOCK_OUT" level="14" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_OBSCURE" level="14" />
+
+      <stat name="rogue:cunningstrike:dc" value="8" />
+      <stat name="rogue:cunningstrike:dc" value="dexterity:modifier" />
+      <stat name="rogue:cunningstrike:dc" value="proficiency" />
+      <stat name="rogue:cunningstrike:uses" value="1" level="5" bonus="base" />
+      <stat name="rogue:cunningstrike:uses" value="2" level="11" bonus="base" />
+    </rules>
+  </element>
+
+  <!-- Cunning Strike effects -->
+      <element name="â€¢ Poison (Cost: 1d6)" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_POISON">
+        <description>
+          <p><strong>Poison (Cost: 1d6).</strong> You add a toxin to your strike, forcing the target to make a Constitution saving throw. On a failed save, the target has the Poisoned condition for 1 minute. At the end of each of its turns, the Poisoned target repeats the save, ending the effect on itself on a success. To use this effect, you must have a Poisoner's Kit on your person.</p>
+        </description>
+        <sheet>
+          <description>The target must succeed on a CON Saving Throw DC{{rogue:cunningstrike:dc}} or be Poisoned for 1 minute. It repeats the ST at the end of his turn.</description>
+        </sheet>
+      </element> 
+
+      <element name="â€¢ Trip (Cost: 1d6)" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_TRIP">
+        <description>
+          <p><strong>Trip (Cost: 1d6).</strong> If the target is Large or smaller, it must succeed on a Dexterity saving throw or have the Prone condition.</p>
+        </description>
+        <sheet>
+          <description>If the target is Large or smaller, it must succeed on a DEX Saving Throw DC{{rogue:cunningstrike:dc}} or have the Prone condition.</description>
+        </sheet>
+      </element>
+      
+      <element name="â€¢ Withdraw (Cost: 1d6)" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_WITHDRAW">
+        <description>
+          <p><strong>Withdraw  (Cost: 1d6).</strong> Immediately after the attack, you move up to half your Speed without provoking Opportunity Attacks.</p>
+        </description>
+        <sheet>
+          <description>Immediately after the attack, you can move up to half of your speed without provoking Opportunity Attacks.</description>
+        </sheet>
+      </element>
+
+      <element name="â€¢ Daze (Cost: 2d6)" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_DAZE">
+        <description>
+          <p><strong>Daze (Cost: 2d6).</strong> The target must succeed on a Constitution saving throw, or on its next turn, it can do only one of the following: move or take an action or a Bonus Action.</p>
+        </description>
+        <sheet>
+          <description>The target must succeed on a CON Saving Throw DC{{rogue:cunningstrike:dc}} or, in the next turn, it can do only one of the followgin: move, take an action, take a Bonus Action.</description>
+        </sheet>
+      </element>
+
+      <element name="â€¢ Knock Out (Cost: 6d6)" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_KNOCK_OUT">
+        <description>
+          <p><strong>Knock Out (Cost: 6d6).</strong> The target must succeed on a Constitution saving throw, or it has the Unconscious condition for 1 minute or until it takes any damage. The Unconscious target repeats the save at the end of each of its turns, ending the effect on itself on a success.</p>
+        </description>
+        <sheet>
+          <description>The target must succeed on a CON Saving Throw DC{{rogue:cunningstrike:dc}} or became Unconscious for 1 minute or until it takes damages. It repeats the TS at the end of each of his turns.</description>
+        </sheet>
+      </element>
+
+      <element name="â€¢ Obscure (Cost: 3d6)" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_OBSCURE">
+        <description>
+          <p><strong>Obscure (Cost: 3d6).</strong> The target must succeed on a Dexterity saving throw, or it has the Blinded condition until the end of its next turn.</p>
+        </description>
+        <sheet>
+          <description>The target must succeed on a DEX Saving Throw DC{{rogue:cunningstrike:dc}}, or it has the Blinded condition until the end of its next turn.</description>
+        </sheet>
+      </element>
+
+  <!-- Uncanny Dodge -->
+  <element name="Uncanny Dodge" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_UNCANNY_DODGE">
+    <description>
+      <p><strong>Reaction.</strong> When an attacker you can see hits you with an attack roll, you can use your Reaction to halve the attackâ€™s damage (round down).</p>
+    </description>
+    <sheet action="Reaction">
+      <description>Halve the attackâ€™s damage from a attacker you can see.</description>
+    </sheet>
+  </element>
+
+  <!-- Evasion -->
+  <element name="Evasion" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_EVASION">
+    <description>
+      <p>When an effect allows you to make a Dexterity save to take only half damage, you instead take no damage on a success and only half on a failure. You canâ€™t use this feature if you are Incapacitated.</p>
+    </description>
+    <sheet>
+      <description>When you roll a DEX Saving Throw to halve damage, on success you take no namage. On a fail you take half damage.</description>
+    </sheet>
+  </element>
+
+  <!-- Reliable Talent -->
+  <element name="Reliable Talent" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_RELIABLE_TALENT">
+    <description>
+      <p>Whenever you make an ability check that uses one of your skill or tool proficiencies, you can treat a d20 roll of 9 or lower as a 10.</p>
+    </description>
+    <sheet>
+      <description>Rolling checks on skill or tools you are proficient with, you can treat d20 rolls of 9 or lower as 10.</description>
+    </sheet>
+  </element>
+
+  <!-- Improved Cunning Strike -->
+  <element name="Improved Cunning Strike" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_IMPROVED_CUNNING_STRIKE">
+    <description>
+      <p>When you deal Sneak Attack damage, you can use up to two Cunning Strike effects at once, paying the die cost for each.</p>
+    </description>
+    <sheet display="false" />
+    <!-- included in cunning strike -->
+  </element>
+
+  <!-- Devious Strikes -->
+  <element name="Devious Strikes" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_DEVIOUS_STRIKES">
+    <description>
+      <p>You add the following options to your Cunning Strike list:</p>
+      <ul>
+        <li><strong>Daze (Cost: 2d6).</strong> CON save; on a fail, on its next turn the target can do only one of the following: move or take an action or a Bonus Action.</li>
+        <li><strong>Knock Out (Cost: 6d6).</strong> CON save; on a fail, the target is Unconscious for 1 minute or until it takes any damage (save ends at end of each of its turns).</li>
+        <li><strong>Obscure (Cost: 3d6).</strong> DEX save; on a fail, the target has the Blinded condition until the end of its next turn.</li>
+      </ul>
+    </description>
+    <sheet display="false" />
+    <!-- included in cunning strike effects -->
+  </element>
+
+  <!-- Slippery Mind -->
+  <element name="Slippery Mind" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_SLIPPERY_MIND">
+    <description>
+      <p>Your mind is hard to sway; you gain proficiency in Wisdom and Charisma saving throws.</p>
+    </description>
+    <sheet>
+      <description>Gain proficiency in Wisdom and Charisma saving throws.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+    </rules>
+  </element>
+
+  <!-- Elusive -->
+  <element name="Elusive" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_ELUSIVE">
+    <description>
+      <p>No attack roll can have Advantage against you unless you are Incapacitated.</p>
+    </description>
+    <sheet>
+      <description>Attack rolls canâ€™t have Advantage against you unless you are Incapacitated.</description>
+    </sheet>
+  </element>
+
+  <!-- Epic Boon -->
+  <element name="Epic Boon" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_EPIC_BOON">
+    <description>
+      <p>You gain an Epic Boon feat or another feat of your choice for which you qualify.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select name="Epic Boon" type="Feat" supports="Boon Feat||General Feat||Origin Feat"    level="19" optional="true" />
+    </rules>
+  </element>
+
+  <!-- Stroke of Luck -->
+  <element name="Stroke of Luck" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ROGUE_STROKE_OF_LUCK">
+    <description>
+      <p>If you fail a d20 Test, you can turn the roll into a 20. Once you use this feature, you canâ€™t use it again until you finish a Short or Long Rest.</p>
+    </description>
+    <sheet usage="1/Short Rest">
+      <description>When you fail a d20 Test, you can make the roll a 20.</description>
+    </sheet>
+  </element>
+</elements>
+
+
+

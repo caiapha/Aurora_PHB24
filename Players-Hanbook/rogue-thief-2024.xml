@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <update version="1.0.0">
+      <file name="rogue-thief-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/rogue-thief-2024.xml" />
+    </update>
+    <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+  </info>
+
+  <!-- ===================== ROGUE SUBCLASS â€” THIEF (PHB 2024) ===================== -->
+  <element name="Thief" type="Archetype" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ROGUE_ARCHETYPE_THIEF">
+    <supports>RogueSubclass</supports>
+    <description>
+      <h1>Thief</h1>
+      <p>A mix of burglar, treasure hunter, and explorer, you are the epitome of an adventurer. You gain abilities useful for delving into ruins and getting maximum benefit from the magic items you find there.</p>
+
+      <h3>Subclass Features</h3>
+      <p>When you choose this subclass at 3rd level, you gain the following features.</p>
+
+      <div element="ID_WOTC_PHB24_ROGUE_THIEF_FEATURE_FAST_HANDS" />
+      <div element="ID_WOTC_PHB24_ROGUE_THIEF_FEATURE_SECOND_STORY_WORK" />
+      <div element="ID_WOTC_PHB24_ROGUE_THIEF_FEATURE_SUPREME_SNEAK" />
+      <div element="ID_WOTC_PHB24_ROGUE_THIEF_FEATURE_USE_MAGIC_DEVICE" />
+      <div element="ID_WOTC_PHB24_ROGUE_THIEF_FEATURE_THIEFS_REFLEXES" />
+    </description>
+
+    <sheet display="false" />
+    <rules>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_ROGUE_THIEF_FEATURE_FAST_HANDS"           level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_ROGUE_THIEF_FEATURE_SECOND_STORY_WORK"    level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_ROGUE_THIEF_FEATURE_SUPREME_SNEAK"        level="9" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_ROGUE_THIEF_FEATURE_USE_MAGIC_DEVICE"     level="13" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_ROGUE_THIEF_FEATURE_THIEFS_REFLEXES"      level="17" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 3: Fast Hands ===== -->
+  <element name="Fast Hands" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ROGUE_THIEF_FEATURE_FAST_HANDS">
+    <description>
+      <p>As a Bonus Action, you can do one of the following.</p>
+      <ul>
+        <li><strong>Sleight of Hand.</strong> Make a Dexterity (Sleight of Hand) check to pick a lock or disarm a trap with Thievesâ€™ Tools or to pick a pocket.</li>
+        <li><strong>Use an Object.</strong> Take the Utilize action, or take the Magic action to use a magic item that requires that action.</li>
+      </ul>
+    </description>
+    <sheet action="Bonus Action">
+      <description>You can take the Utilize or the Magic Action to use a Magic Item. You can make a Sleight of Hand (Dexterity) check to pick a lock or disarm a trap or pick a pocket.</description>
+    </sheet>
+  </element>
+
+  <!-- ===== Level 3: Second-Story Work ===== -->
+  <element name="Second-Story Work" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ROGUE_THIEF_FEATURE_SECOND_STORY_WORK">
+    <description>
+      <p>Youâ€™ve trained to get into especially hard-to-reach places, granting you these benefits.</p>
+      <ul>
+        <li><strong>Climber.</strong> You gain a Climb Speed equal to your Speed.</li>
+        <li><strong>Jumper.</strong> You can determine your jump distance using your Dexterity rather than your Strength.</li>
+      </ul>
+    </description>
+    <sheet>
+      <description>You determine jump distance using Dexterity instead of Strength.</description>
+    </sheet>
+    <rules>
+        <stat name="speed:climb" value="speed" bonus="base" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 9: Supreme Sneak (adds a Cunning Strike option) ===== -->
+  <element name="Supreme Sneak" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ROGUE_THIEF_FEATURE_SUPREME_SNEAK">
+    <description>
+      <p>You gain the following Cunning Strike option.</p>
+      <p><strong>Stealth Attack (Cost: 1d6).</strong> If you have the Hide actionâ€™s Invisible condition, this attack doesnâ€™t end that condition on you if you end the turn behind Three-Quarters Cover or Total Cover.</p>
+    </description>
+    <sheet>
+        <description>You gain the following Cunning Strike option:</description>
+    </sheet>
+    <rules>
+        <grant type="Archetype Feature" id="ID_WOTC_PHB24_ROGUE_THIEF_FEATURE_SUPREME_SNEAK_STEALTH_ATTACK" />
+    </rules>
+  </element>
+
+  <element name="â€¢ Stealt attack (Cost: 1d6)" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ROGUE_THIEF_FEATURE_SUPREME_SNEAK_STEALTH_ATTACK">
+    <description />
+    <sheet>
+        <description>If you have the Hide action's Invisible condition, this attack doesn't end that condition on you if you end the turn behind Three-Quarters Cover or Total Cover.</description>
+    </sheet>
+  </element>
+
+  <!-- ===== Level 13: Use Magic Device ===== -->
+  <element name="Use Magic Device" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ROGUE_THIEF_FEATURE_USE_MAGIC_DEVICE">
+    <description>
+      <p>Youâ€™ve learned how to maximize use of magic items, granting you the following benefits.</p>
+      <ul>
+        <li><strong>Attunement.</strong> You can attune to up to four magic items at once.</li>
+        <li><strong>Charges.</strong> Whenever you use a magic item property that expends charges, roll 1d6. On a roll of 6, you use the property without expending the charges.</li>
+        <li><strong>Scrolls.</strong> You can use any <em>Spell Scroll</em>, using Intelligence as your spellcasting ability for the spell. If the spell is a cantrip or a level 1 spell, you can cast it reliably. If the scroll contains a higher-level spell, you must first succeed on an Intelligence (Arcana) check (DC 10 plus the spellâ€™s level). On a successful check, you cast the spell from the scroll. On a failed check, the scroll disintegrates.</li>
+      </ul>
+    </description>
+    <sheet>
+      <description>Attune to up to four magic items. When using a charged item, on a 6 on 1d6 you donâ€™t expend charges. You can use any Spell Scroll (INT as spellcasting ability); for level 2 or higher scrolls, make an INT (Arcana) check vs DC 10 + spell level or the scroll is lost.</description>
+    </sheet>
+  </element>
+
+  <!-- ===== Level 17: Thiefâ€™s Reflexes ===== -->
+  <element name="Thiefâ€™s Reflexes" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ROGUE_THIEF_FEATURE_THIEFS_REFLEXES">
+    <description>
+      <p>You are adept at laying ambushes and quickly escaping danger. You can take two turns during the first round of any combat. You take your first turn at your normal Initiative and your second turn at your Initiative minus 10.</p>
+    </description>
+    <sheet>
+      <description>In the first round of combat, you take two turns: one at your normal Initiative and one at Initiative minus 10.</description>
+    </sheet>
+  </element>
+
+</elements>
+
+
+

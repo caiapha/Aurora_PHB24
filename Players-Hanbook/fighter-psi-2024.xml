@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Psi Warrior</name>
+		<description>The Psi Warrior from the Player's Handbook (2024)</description>
+		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+		<update version="1.0.0">
+			<file name="fighter-psi-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/fighter-psi-2024.xml" />
+		</update>
+	</info>
+	<element name="Psi Warrior" type="Archetype" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FIGHTER_PSI_WARRIOR">
+		<supports>Fighter subclass</supports>
+		<description>
+			<p>Psi Warriors awaken the power of their minds to augment their physical might. They harness this psionic power to infuse their weapon strikes, lash out with telekinetic energy, and create barriers of mental force.</p>
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_PSI_WARRIOR_PSIONIC_POWER" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_PSI_WARRIOR_TELEKINETIC_ADEPT" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_PSI_WARRIOR_GUARDED_MIND" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_PSI_WARRIOR_BULWARK_OF_FORCE" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_PSI_WARRIOR_TELEKINETIC_MASTER" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_PSI_WARRIOR_PSIONIC_POWER" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_PSI_WARRIOR_TELEKINETIC_ADEPT" level="7" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_PSI_WARRIOR_GUARDED_MIND" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_PSI_WARRIOR_BULWARK_OF_FORCE" level="15" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_PSI_WARRIOR_TELEKINETIC_MASTER" level="18" />
+		</rules>
+	</element>
+	<element name="Psionic Power" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_PSI_WARRIOR_PSIONIC_POWER">
+		<description>
+			<p><em>3rd-level Psi Warrior feature</em></p>
+			<p>You harbor a wellspring of psionic energy within yourself. It is represented by your Psionic Energy Dice, which fuel powers you have from this subclass. The Psi Warrior Energy Dice table shows the die size and number of these dice you have when you reach certain Fighter levels.</p>
+			<table>
+				<thead>
+					<tr><td>Fighter level</td><td>Die Size</td><td>Number</td></tr>
+				</thead>
+					<tr><td>3</td><td>D6</td><td>4</td></tr>
+					<tr><td>5</td><td>D8</td><td>6</td></tr>
+					<tr><td>9</td><td>D8</td><td>8</td></tr>
+					<tr><td>11</td><td>D10</td><td>8</td></tr>
+					<tr><td>13</td><td>D10</td><td>10</td></tr>
+					<tr><td>17</td><td>D12</td><td>12</td></tr>
+			</table>
+			<p class="indent">Any features in this subclass that use a Psionic Energy Die use only the dice from this subclass. Some of your powers expend the Psionic Energy Die, as specified in a power's description, and you can't use a power if it requires you to use a die when all your Psionic Energy Dice are expended.</p>
+			<p class="indent">You regain one of your expended Psionic Energy Dice when you finish a Short Rest, and you regain all of them when you finish a Long Rest.</p>
+			<p class="indent">The powers below use your Psionic Energy dice.</p>
+			<p class="indent"><strong><em>Protective Field.</em></strong> When you or another creature you can see within 30 feet of you takes damage, you can take a Reaction to expend one Psionic Energy Die, roll the die, and reduce the damage taken by the number rolled plus your Intelligence modifier (minimum reduction of 1), as you create a momentary shield of telekinetic force.</p>
+			<p class="indent"><strong><em>Psionic Strike.</em></strong> You can propel your weapons with psionic force. Once on each of your turns, immediately after you hit a target within 30 feet of yourself with an attack and deal damage to it with a weapon, you can expend one Psionic Energy Die, rolling it and dealing Force damage to the target equal to the number rolled plus your Intelligence modifier.</p>
+			<p class="indent"><strong><em>Telekinetic Movement.</em></strong> You can move an object or a creature with your mind. As a Magic Action, choose one target you can see within 30 feet of yourself; the target must be a loose object that is Large or smaller or one willing creature other than you. You transport the target up to 30 feet to an unoccupied space you can see. Alternatively, if the target is a Tiny object, you can transport it to or from your hand. Once you take this action, you can't do so again until you finish a Short or Long Rest unless you expend a Psionic Energy Die (no action required) to restore your use of it.</p>
+		</description>
+		<sheet usage="{{psionic power:dice:amount}}d{{psionic power:dice:size}}/Long Rest">
+			<description>Your Psionic Energy dice are each a d{{psionic power:dice:size}}. You can regain one expended Psionic Energy die on a Short Rest.</description>
+		</sheet>
+		<rules>
+			<stat name="psionic power:dice:size" value="6" />
+			<stat name="psionic power:dice:size" value="2" level="5" />
+			<stat name="psionic power:dice:size" value="2" level="11" />
+			<stat name="psionic power:dice:size" value="2" level="17" />
+			<stat name="psionic power:dice:amount" value="4" level="3" />
+			<stat name="psionic power:dice:amount" value="2" level="5" />
+			<stat name="psionic power:dice:amount" value="2" level="9" />
+			<stat name="psionic power:dice:amount" value="2" level="13"/>
+			<stat name="psionic power:dice:amount" value="2" level="17"/>
+			<stat name="psionic power:dc" value="8" bonus="base" />
+			<stat name="psionic power:dc" value="proficiency" bonus="proficiency" />
+			<stat name="psionic power:dc" value="intelligence:modifier" bonus="ability" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_PSI_WARRIOR_PSIONIC_POWER_PROTECTIVE_FIELD"  />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_PSI_WARRIOR_PSIONIC_POWER_PSIONIC_STRIKE"  />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_PSI_WARRIOR_PSIONIC_POWER_TELEKINETIC_MOVEMENT"  />
+		</rules>
+	</element>
+	<element name="Protective Field" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_PSI_WARRIOR_PSIONIC_POWER_PROTECTIVE_FIELD">
+		<compendium display="false" />
+		<description>
+			<p>When you or another creature you can see within 30 feet of you takes damage, you can take a Reaction to expend one Psionic Energy Die, roll the die, and reduce the damage taken by the number rolled plus your Intelligence modifier (minimum reduction of 1), as you create a momentary shield of telekinetic force.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When you or another creature you can see within 30 feet of you takes damage, you can expend one Psionic Energy die, roll the die, and reduce the damage taken by {{protective field:intelligence}} plus the number rolled.</description>
+		</sheet>
+		<rules>
+			<stat name="protective field:intelligence" value="1" bonus="base" />
+			<stat name="protective field:intelligence" value="intelligence:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="Psionic Strike" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_PSI_WARRIOR_PSIONIC_POWER_PSIONIC_STRIKE">
+		<compendium display="false" />
+		<description>
+			<p>You can propel your weapons with psionic force. Once on each of your turns, immediately after you hit a target within 30 feet of yourself with an attack and deal damage to it with a weapon, you can expend one Psionic Energy Die, rolling it and dealing Force damage to the target equal to the number rolled plus your Intelligence modifier.</p>
+		</description>
+		<sheet>
+			<description>Once on each of your turns, immediately after you hit a target within 30 feet of you with a weapon attack and deal damage to it with a weapon, you can expend one Psionic Energy die, rolling it and dealing force damage to the target equal to {{intelligence:modifier}} plus the number rolled.</description>
+		</sheet>
+	</element>
+	<element name="Telekinetic Movement" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_PSI_WARRIOR_PSIONIC_POWER_TELEKINETIC_MOVEMENT">
+		<compendium display="false" />
+		<description>
+			<p>You can move an object or a creature with your mind. As a Magic Action, choose one target you can see within 30 feet of yourself; the target must be a loose object that is Large or smaller or one willing creature other than you. You transport the target up to 30 feet to an unoccupied space you can see. Alternatively, if the target is a Tiny object, you can transport it to or from your hand.</p>
+			<p class="indent">Once you take this action, you can't do so again until you finish a Short or Long Rest unless you expend a Psionic Energy Die (no action required) to restore your use of it.</p>
+		</description>
+		<sheet action="Action" usage="1/Short Rest">
+			<description>You can move an object or a creature with your mind. As a Magic Action, choose one target you can see within 30 feet of yourself; the target must be a loose object that is Large or smaller or one willing creature other than you. You transport the target up to 30 feet to an unoccupied space you can see. Alternatively, if the target is a Tiny object, you can transport it to or from your hand.</description>
+		</sheet>
+	</element>
+	<element name="Telekinetic Adept" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_PSI_WARRIOR_TELEKINETIC_ADEPT">
+		<description>
+			<p><em>7th-level Psi Warrior feature</em></p>
+			<p>You have mastered new ways to use your telekinetic abilities, detailed below.</p>
+			<p class="indent"><strong><em>Psi-Powered Leap.</em></strong> As a Bonus Action, you gain a Fly Speed equal to twice your Speed until the end of the current turn. Once you take this Bonus Action, you can't do so again until you finish a Short or Long Rest unless you expend a Psionic Energy Die (no action required) to restore your use of it.</p>
+			<p class="indent"><strong><em>Telekinetic Thrust.</em></strong> When you deal damage to a target with your Psionic Strike, you can force the target to make a Strength saving throw (DC 8 plus your Intelligence modifier and Proficiency Bonus). On a failed save, you can give the target the Prone condition or transport it up to 10 feet horizontally.</p>
+		</description>
+		<sheet display="false">
+			<description>You have mastered new ways to use your telekinetic abilities.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_PSI_WARRIOR_TELEKINETIC_ADEPT_PSI_POWERED_LEAP"  />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_PSI_WARRIOR_TELEKINETIC_ADEPT_TELEKINETIC_THRUST"  />
+		</rules>
+	</element>
+	<element name="Psi-Powered Leap" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_PSI_WARRIOR_TELEKINETIC_ADEPT_PSI_POWERED_LEAP">
+		<compendium display="false" />
+		<description display="false">
+			<p>As a bonus action, you can propel your body with your mind. You gain a flying speed equal to twice your walking speed until the end of the current turn. Once you take this bonus action, you canâ€™t do so again until you finish a short or long rest, unless you expend a Psionic Energy die to take it again.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short Rest">
+			<description>You gain a {{psi powered leap:speed}}ft flying speed until the end of the current turn. You ragin a use expending a Psionic Energy die.</description>
+		</sheet>
+		<rules>
+			<stat name="psi powered leap:speed" value="speed" />
+			<stat name="psi powered leap:speed" value="speed" />
+		</rules>
+	</element>
+	<element name="Telekinetic Thrust" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_PSI_WARRIOR_TELEKINETIC_ADEPT_TELEKINETIC_THRUST">
+		<compendium display="false" />
+		<description display="false">
+			<p>When you deal damage to a target with your Psionic Strike, you can force the target to make a Strength saving throw against a DC equal to 8 + your proficiency bonus + your Intelligence modifier. If the save fails, you can knock the target prone or move it up to 10 feet in any direction horizontally.</p>
+		</description>
+		<sheet>
+			<description>When you deal damage to a target with your Psionic Strike, you can force the target to make a DC{{psionic power:dc}} Strength save. If the save fails, you can knock the target prone or move it up to 10 feet in any direction horizontally.</description>
+		</sheet>
+	</element>
+	<element name="Guarded Mind" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_PSI_WARRIOR_GUARDED_MIND">
+		<description>
+			<p><em>10th-level Psi Warrior feature</em></p>
+			<p>You have Resistance to Psychic damage. Moreover, if you start your turn with the Charmed or Frightened condition, you can expend a Psionic Energy Die (no action required) and end every effect on yourself giving you those conditions.</p>
+		</description>
+		<sheet>
+			<description>You gain Resistance to Psychic damage and, if you start your turn Charmed or Frightened, you can expend a Psionic Energy Die (no action required) and end every effect on yourself giving you those conditions.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+		</rules>
+	</element>
+	<element name="Bulwark of Force" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_PSI_WARRIOR_BULWARK_OF_FORCE">
+		<description>
+			<p><em>15th-level Psi Warrior feature</em></p>
+			<p>You can shield yourself and others with telekinetic force. As a Bonus Action, you can choose creatures, including yourself, within 30 feet of yourself, up to a number of creatures equal to your Intelligence modifier (minimum of one creature). Each of the chosen creatures has Half Cover for 1 minute or until you have the Incapacitated condition.</p>
+			<p class="indent">Once you use this feature, you can't do so again until you finish a Long Rest unless you expend a Psionic Energy Die (no action required) to restore your use of it.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>You can choose up to {{bulwark of force:creatures}} creatures, which can include you, that you can see within 30 feet of you. Each of the chosen creatures is protected by half cover for 1 minute or until youâ€™re incapacitated. You can spend a Psionic Energy die to take the bonus action again.</description>
+		</sheet>
+		<rules>
+			<stat name="bulwark of force:creatures" value="1" bonus="base" />
+			<stat name="bulwark of force:creatures" value="intelligence:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="Telekinetic Master" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_PSI_WARRIOR_TELEKINETIC_MASTER">
+		<description>
+			<p><em>18th-level Psi Warrior feature</em></p>
+			<p>You always have the Telekinesis spell prepared. With this feature, you can cast it without a spell slot or components, and your spellcasting ability for it is Intelligence. On each of your turns while you maintain Concentration on it, including the turn when you cast it, you can make one attack with a weapon as a Bonus Action.</p>
+			<p class="indent">Once you cast the spell with this feature, you can't do so in this way again until you finish a Long Rest unless you expend a Psionic Energy Die (no action required) to restore your use of it.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You always have the Telekinesis spell prepared. With this feature, you can cast it without a spell slot or components, and your spellcasting ability for it is Intelligence. On each of your turns while you maintain Concentration on it, including the turn when you cast it, you can make one attack with a weapon as a Bonus Action. You can expend a Psionic Energy die (no action required) to cast the spell again.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB24_SPELL_TELEKINESIS" /> 
+		</rules>
+	</element>	
+  
+</elements>
+
+

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="1.0.0">
+		<file name="druid-circle_sea-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/druid-circle_sea-2024.xml" />
+		</update>
+		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+	</info>
+
+	<!-- Circle of Sea Subclass -->
+	<element name="Circle of the Sea" type="Archetype" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_CIRCLE_OF_THE_SEA">
+		<supports>Druid subclass</supports>
+		<description>
+			<p>Druids of the Circle of the Sea draw on the tempestuous forces of oceans and storms. Some view themselves as embodiments of nature's wrath, seeking vengeance against those who despoil nature. Others seek mystical unity with nature by attuning themselves to the ebb and flow of the tides, following the rush of currents and waves and listening to the inscrutable whispers and roars of the winds.</p>
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_SEA_SPELL" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_SEA_WRATH_OF_THE_SEA" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_SEA_AQUATIC_AFFINITY" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_SEA_STORMBORN" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_SEA_OCEAN_GIFT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_SEA_SPELL" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_SEA_WRATH_OF_THE_SEA" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_SEA_AQUATIC_AFFINITY" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_SEA_STORMBORN" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_SEA_OCEAN_GIFT" level="14" /> 
+		</rules>
+	</element>
+	<element name="Circle of the Sea Spells" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_SEA_SPELL">
+		<description>
+			<p>Starting at 3rd level, when you reach a Druid level specified in the Circle of the Sea Spells table, you thereafter always have the listed spells prepared.</p>
+      			<h5 class="caption">Circle of the Sea Spells</h5>      
+      			<table>
+        			<thead><tr><td>Druid Level</td><td>Prepared Spell</td></tr></thead>
+          			<tr><td>3</td><td>Fog Cloud, Gust of Wind, Ray of Frost, Shatter, Thunderwave</td></tr>
+          			<tr><td>5</td><td>Lightning Bolt, Water Breathing</td></tr>
+          			<tr><td>7</td><td>Control Water, Ice Storm</td></tr>
+          			<tr><td>9</td><td>Conjure Elemental, Hold Monster</td></tr>
+        		</table>
+		</description>
+		<sheet>
+			<description>The Circle Spells are always prepared.</description>
+		</sheet>
+      		<rules>
+        		<grant type="Spell" id="ID_PHB24_SPELL_FOG_CLOUD" level="3" spellcasting="Druid" prepared="true" />
+        		<grant type="Spell" id="ID_PHB24_SPELL_GUST_OF_WIND" level="3" spellcasting="Druid" prepared="true" />
+        		<grant type="Spell" id="ID_PHB24_SPELL_RAY_OF_FROST" level="3" spellcasting="Druid" prepared="true" />
+            	<grant type="Spell" id="ID_PHB24_SPELL_SHATTER" level="3" spellcasting="Druid" prepared="true" />
+            	<grant type="Spell" id="ID_PHB24_SPELL_THUNDERWAVE" level="3" spellcasting="Druid" prepared="true" />
+        		<grant type="Spell" id="ID_PHB24_SPELL_LIGHTNING_BOLT" level="5" spellcasting="Druid" prepared="true" />
+            	<grant type="Spell" id="ID_PHB24_SPELL_WATER_BREATHING" level="5" spellcasting="Druid" prepared="true" />
+        		<grant type="Spell" id="ID_PHB24_SPELL_CONTROL_WATER" level="7" spellcasting="Druid" prepared="true" />
+            	<grant type="Spell" id="ID_PHB24_SPELL_ICE_STORM" level="7" spellcasting="Druid" prepared="true" />
+        		<grant type="Spell" id="ID_PHB24_SPELL_CONJURE_ELEMENTAL" spellcasting="Druid" prepared="true" />
+            	<grant type="Spell" id="ID_PHB24_SPELL_HOLD_MONSTER" level="9" spellcasting="Druid" prepared="true" />
+      		</rules>
+	</element>
+	<element name="Wrath of the Sea" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_SEA_WRATH_OF_THE_SEA">
+		<description>
+			<p>Starting at 3rd level, As a Bonus Action, you can expend a use of your Wild Shape to manifest a 5-foot Emanation that takes the form of ocean spray that surrounds you for 10 minutes. It ends early if you dismiss it (no action required), manifest it again, or have the Incapacitated condition.</p>
+			<p class="indent">When you manifest the Emanation and as a Bonus Action on your subsequent turns, you can choose another creature you can see in the Emanation. The target must succeed on a Constitution saving throw against your spell save DC or take Cold damage and, if the creature is Large or smaller, be pushed up to 15 feet away from you. To determine this damage, roll a number of d6s equal to your Wisdom modifier (minimum of one die).</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can expend one Wild Shape use to create a {{emanation:size}}-foot Emanation from on you. Once per turn, a creature of your choice in the Emanation must succeed on a CON Saving Throw DC{{wrath:dc}} or take {{wrath:dice}}d6 of Cold damage. Moreover, if the creature is Large or smaller, it is pushed up to 15ft away.</description>
+		</sheet>
+    		<rules>    
+     			<stat name="wrath:dc" value="8" />
+          		<stat name="wrath:dc" value="proficiency" />
+          		<stat name="wrath:dc" value="wisdom:modifier" />      			
+          		<stat name="wrath:dice" value="1" bonus="base" />
+			    <stat name="wrath:dice" value="wisdom:modifier" bonus="base" />
+			    <stat name="emanation:size" value="5" />
+          		<stat name="emanation:size" value="10" level="6" />
+    		</rules>
+	</element>
+	<element name="Aquatic Affinity" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_SEA_AQUATIC_AFFINITY">
+		<description>
+			<p>Starting at 6th level, The size of the Emanation created by your Wrath of the Sea increases to 10 feet.</p>
+			<p class="indent">In addition, you gain a Swim Speed equal to your Speed.</p>
+		</description>
+		<sheet display="false" /> <!-- Included in Wrath of the Sea -->
+	  <rules>
+      		<stat name="speed:swim" value="speed" bonus="base" />
+	  </rules>
+  </element>
+	<element name="Stormborn" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_SEA_STORMBORN">
+		<description>
+			<p>Starting at 10th level, your Wrath of the Sea confers two more benefits while active, as detailed below.</p>
+			<p class="indent"><strong>Flight:</strong> you gain a Fly Speed equal to your Speed.</p>
+      <p class="indent"><strong>Resistance:</strong> you have Resistance to Cold, Lightning, and Thunder damage.</p>
+ 		</description>
+		<sheet>
+			<description>Wrath of the Sea gives you a Fly Speed equal to your Speed and Resistance to Cold, Lightning, and Thunder damage.</description>
+		</sheet>
+	</element>
+	<element name="Ocean Gift" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_SEA_OCEAN_GIFT">
+		<description>
+			<p>Starting at 14th level, instead of manifesting the Emanation of Wrath of the Sea around yourself, you can manifest it around one willing creature within 60 feet of yourself. That creature gains all the benefits of the Emanation and uses your spell save DC and Wisdom modifier for it.</p>
+      <p class="indent">In addition, you can manifest the Emanation around both the other creature and yourself if you expend two uses of your Wild Shape instead of one when manifesting it.</p>
+		</description>
+		<sheet>
+            <description>You can manifest Wrath of the Sea on a willing creature within 60 feet instead of on yourself; that creature uses your spell save DC and Wisdom modifier for the feature. By expending two uses of Wild Shape, you can manifest it on both yourself and a willing creature.</description>
+        </sheet>
+	</element>
+</elements>
+
+
+

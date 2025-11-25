@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <update version="1.0.0">
+      <file name="wizard-abjurer-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/wizard-abjurer-2024.xml" />
+    </update>
+    <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+  </info>
+
+  <!-- ===================== WIZARD SUBCLASS: ABJURER (PHB 2024) ===================== -->
+  <element name="Abjurer" type="Archetype" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_WIZARD_ARCHETYPE_ABJURER">
+    <supports>WizardSubclass</supports>
+    <description>
+      <h1>Abjurer</h1>
+      <p>Shield companions and banish foes. Your study focuses on magic that blocks, banishes, or protects.</p>
+
+      <h3>Subclass Features</h3>
+      <p>When you choose this subclass at 3rd level, you gain the following features.</p>
+
+      <div element="ID_WOTC_PHB24_WIZARD_ABJURER_FEATURE_ABJURATION_SAVANT" />
+      <div element="ID_WOTC_PHB24_WIZARD_ABJURER_FEATURE_ARCANE_WARD" />
+      <div element="ID_WOTC_PHB24_WIZARD_ABJURER_FEATURE_PROJECTED_WARD" />
+      <div element="ID_WOTC_PHB24_WIZARD_ABJURER_FEATURE_IMPROVED_ABJURATION" />
+      <div element="ID_WOTC_PHB24_WIZARD_ABJURER_FEATURE_SPELL_RESISTANCE" />
+    </description>
+
+    <sheet display="false" />
+    <rules>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_WIZARD_ABJURER_FEATURE_ABJURATION_SAVANT" level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_WIZARD_ABJURER_FEATURE_ARCANE_WARD" level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_WIZARD_ABJURER_FEATURE_PROJECTED_WARD" level="6" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_WIZARD_ABJURER_FEATURE_IMPROVED_ABJURATION" level="10" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_WIZARD_ABJURER_FEATURE_SPELL_RESISTANCE" level="14" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 3: Abjuration Savant ===== -->
+  <element name="Abjuration Savant" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_WIZARD_ABJURER_FEATURE_ABJURATION_SAVANT">
+    <description>
+      <p>Choose two Wizard spells from the Abjuration school, each no higher than level 2, and add them to your spellbook for free.</p>
+      <p>In addition, whenever you gain access to a new level of spell slots in this class, you can add one Wizard spell from the Abjuration school to your spellbook for free. The chosen spell must be of a level for which you have spell slots.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+        <select name="Abjuration Savant (3 level)" type="Spell" supports="Abjuration, WizardPHB24, $(spellcasting:slots)" number="2" level="3" spellcasting="wizard" />
+        <select name="Abjuration Savant (5 level)" type="Spell" supports="Abjuration, WizardPHB24, $(spellcasting:slots)" number="1" level="5" spellcasting="wizard" />
+        <select name="Abjuration Savant (7 level)" type="Spell" supports="Abjuration, WizardPHB24, $(spellcasting:slots)" number="1" level="7" spellcasting="wizard" />
+        <select name="Abjuration Savant (9 level)" type="Spell" supports="Abjuration, WizardPHB24, $(spellcasting:slots)" number="1" level="9" spellcasting="wizard" />
+        <select name="Abjuration Savant (11 level)" type="Spell" supports="Abjuration, WizardPHB24, $(spellcasting:slots)" number="1" level="11" spellcasting="wizard" />
+        <select name="Abjuration Savant (13 level)" type="Spell" supports="Abjuration, WizardPHB24, $(spellcasting:slots)" number="1" level="13" spellcasting="wizard" />
+        <select name="Abjuration Savant (15 level)" type="Spell" supports="Abjuration, WizardPHB24, $(spellcasting:slots)" number="1" level="15" spellcasting="wizard" />
+        <select name="Abjuration Savant (17 level)" type="Spell" supports="Abjuration, WizardPHB24, $(spellcasting:slots)" number="1" level="17" spellcasting="wizard" />
+
+    </rules>
+  </element>
+
+  <!-- ===== Level 3: Arcane Ward ===== -->
+  <element name="Arcane Ward" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_WIZARD_ABJURER_FEATURE_ARCANE_WARD">
+    <description>
+      <p>You can weave magic around yourself for protection. When you cast an Abjuration spell with a spell slot, you can simultaneously use a strand of the spellâ€™s magic to create a magical ward on yourself that lasts until you finish a Long Rest.</p>
+      <p class="indent">The ward has a Hit Point maximum equal to twice your Wizard level plus your Intelligence modifier. Whenever you take damage, the ward takes the damage instead; apply your Resistances and Vulnerabilities before reducing the wardâ€™s Hit Points. If the damage reduces the ward to 0 Hit Points, you take any remaining damage. While the ward has 0 Hit Points, it canâ€™t absorb damage, but its magic remains.</p>
+      <p class="indent">Whenever you cast an Abjuration spell with a spell slot, the ward regains a number of Hit Points equal to twice the level of the spell slot. Alternatively, as a Bonus Action, you can expend a spell slot to restore Hit Points to the ward equal to twice the level of the spell slot expended.</p>
+      <p class="indent">Once you create the ward, you canâ€™t create it again until you finish a Long Rest.</p>
+    </description>
+    <sheet>
+      <description>When you cast an Abjuration spell with a spell slot, you create on you a Ward that lats until a Long Rest. The ward has {{abjurer:ward:max}} HP and it absorbs damage you would take; it benefits of any Resistance or Vulnerability you have. When you cast an Abjuration spell, it restores HP twice the slot level. As a Bonus Action you can expend a spell slot to restore HP twice the spell slot. Once created, you canâ€™t create it again until a Long Rest.</description>
+    </sheet>
+    <rules>
+      <stat name="abjurer:ward:max" value="intelligence:modifier" />
+      <stat name="abjurer:ward:max" value="level:wizard" />
+      <stat name="abjurer:ward:max" value="level:wizard" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 6: Projected Ward ===== -->
+  <element name="Projected Ward" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_WIZARD_ABJURER_FEATURE_PROJECTED_WARD">
+    <description>
+      <p>When a creature that you can see within 30 feet of yourself takes damage, you can take a Reaction to cause your Arcane Ward to absorb that damage. If this damage reduces the ward to 0 Hit Points, the warded creature takes any remaining damage. If that creature has any Resistances or Vulnerabilities, apply them before reducing the ward's Hit Points.</p>
+    </description>
+    <sheet action="Reaction">
+      <description>When a creature within 30 ft takes damage, your Arcane Ward can absorb it. If the Ward drops to 0 HP, the creature takes any remaining damage. Resistance and Vulnerability of the creature applies to the Ward.</description>
+    </sheet>
+  </element>
+
+  <!-- ===== Level 10: Improved Abjuration ===== -->
+  <element name="Improved Abjuration" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_WIZARD_ABJURER_FEATURE_IMPROVED_ABJURATION">
+    <description>
+      <p>You always have the Counterspell and Dispel Magic spells prepared. In addition, you can cast Dispel Magic as a Bonus Action, and you can add your Proficiency Bonus to its ability check.</p>
+      <p>When you cast either spell with a spell slot, that slot isn't expended if the spell fails to stop a spell.</p>
+    </description>
+    <sheet>
+      <description>You can cast Dispel Magic as a Bonus Action and add {{proficiency}} to the ability check roll. You don't expend the spell slot if your Couterspell or Dispel Magic fails.</description>
+    </sheet>
+  </element>
+
+  <!-- ===== Level 14: Spell Resistance ===== -->
+  <element name="Spell Resistance" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_WIZARD_ABJURER_FEATURE_SPELL_RESISTANCE">
+    <description>
+      <p>You have Advantage on saving throws against spells, and you have Resistance to the damage of spells.</p>
+    </description>
+    <sheet>
+      <description>You have Advantage on saving throws against spells and Resistance to damage from spells.</description>
+    </sheet>
+  </element>
+</elements>
+
+

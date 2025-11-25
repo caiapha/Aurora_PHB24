@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <update version="1.0.0">
+      <file name="ranger-fey_wanderer-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/ranger-fey_wanderer-2024.xml" />
+    </update>
+    <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+  </info>
+
+  <!-- ===================== RANGER SUBCLASS â€” FEY WANDERER (PHB 2024) ===================== -->
+  <element name="Fey Wanderer" type="Archetype" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_ARCHETYPE_FEY_WANDERER">
+    <supports>RangerSubclass</supports>
+    <description>
+      <h1>Fey Wanderer</h1>
+      <p>A ranger touched by the Feywild, blending eerie mirth with dreadful fury.</p>
+
+      <h3>Subclass Features</h3>
+      <p>When you choose this subclass at 3rd level, you gain the following features.</p>
+
+      <div element="ID_WOTC_PHB24_RANGER_FEY_WANDERER_FEATURE_DREADFUL_STRIKES" />
+      <div element="ID_WOTC_PHB24_RANGER_FEY_WANDERER_FEATURE_FEY_WANDERER_SPELLS" />
+      <div element="ID_WOTC_PHB24_RANGER_FEY_WANDERER_FEATURE_OTHERWORLDLY_GLAMOUR" />
+      <div element="ID_WOTC_PHB24_RANGER_FEY_WANDERER_FEATURE_BEGUILING_TWIST" />
+      <div element="ID_WOTC_PHB24_RANGER_FEY_WANDERER_FEATURE_FEY_REINFORCEMENTS" />
+      <div element="ID_WOTC_PHB24_RANGER_FEY_WANDERER_FEATURE_MISTY_WANDERER" />
+    </description>
+
+    <sheet display="false" />
+    <rules>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_RANGER_FEY_WANDERER_FEATURE_DREADFUL_STRIKES"        level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_RANGER_FEY_WANDERER_FEATURE_FEY_WANDERER_SPELLS"     level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_RANGER_FEY_WANDERER_FEATURE_OTHERWORLDLY_GLAMOUR"    level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_RANGER_FEY_WANDERER_FEATURE_BEGUILING_TWIST"         level="7" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_RANGER_FEY_WANDERER_FEATURE_FEY_REINFORCEMENTS"      level="11" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_RANGER_FEY_WANDERER_FEATURE_MISTY_WANDERER"          level="15" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 3: Dreadful Strikes ===== -->
+  <element name="Dreadful Strikes" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_FEY_WANDERER_FEATURE_DREADFUL_STRIKES">
+    <description>
+      <p>You can augment your weapon strikes with mind-scarring magic from the Feywild. When you hit a creature with a weapon, you can deal an extra <strong>1d4 Psychic</strong> damage to the target, which can take this extra damage only once per turn. The extra damage increases to <strong>1d6</strong> when you reach Ranger level 11.</p>
+    </description>
+    <sheet>
+      <description>Once per turn when you hit with a weapon, deal 1d{{dreadful strike:dice}} Psychic extra damage.</description>
+    </sheet>
+    <rules>
+        <stat name="dreadful strike:dice" value="4" bonus="base" level="3" />
+        <stat name="dreadful strike:dice" value="6" bonus="base" level="11" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 3: Fey Wanderer Spells (always prepared) ===== -->
+  <element name="Fey Wanderer Spells" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_FEY_WANDERER_FEATURE_FEY_WANDERER_SPELLS">
+    <description>
+      <p>When you reach a Ranger level specified in the Fey Wanderer Spells table, you thereafter always have the listed spells prepared.</p>
+      <table>
+        <thead><tr><th>Ranger Level</th><th>Spells</th></tr></thead>
+        <tbody>
+          <tr><td>3</td><td><em>Charm Person</em></td></tr>
+          <tr><td>5</td><td><em>Misty Step</em></td></tr>
+          <tr><td>9</td><td><em>Summon Fey</em></td></tr>
+          <tr><td>13</td><td><em>Dimension Door</em></td></tr>
+          <tr><td>17</td><td><em>Mislead</em></td></tr>
+        </tbody>
+      </table>
+      <p class="indent">You also possess a fey blessing; choose it from the Feywild Gifts table in the Playerâ€™s Handbook.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Spell" id="ID_PHB24_SPELL_CHARM_PERSON" prepared="true" spellcasting="Ranger" level="3"/>
+      <grant type="Spell" id="ID_PHB24_SPELL_MISTY_STEP" prepared="true" spellcasting="Ranger" level="5"/>
+      <grant type="Spell" id="ID_PHB24_SPELL_SUMMON_FEY" prepared="true" spellcasting="Ranger" level="9"/>
+      <grant type="Spell" id="ID_PHB24_SPELL_DIMENSION_DOOR" prepared="true" spellcasting="Ranger" level="13"/>
+      <grant type="Spell" id="ID_PHB24_SPELL_MISLEAD" prepared="true" spellcasting="Ranger" level="17"/>
+      <select name="Fey Blessing" type="Archetype Feature" supports="FeyBlessing" number="1" />   
+    </rules>
+  </element>
+
+  <!-- ===== Level 3: Otherworldly Glamour ===== -->
+  <element name="Otherworldly Glamour" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_FEY_WANDERER_FEATURE_OTHERWORLDLY_GLAMOUR">
+    <description>
+      <p>Whenever you make a Charisma check, you gain a bonus to the check equal to your Wisdom modifier (minimum of +1).</p>
+      <p class="indent">You also gain proficiency in one of these skills of your choice: <em>Deception</em>, <em>Performance</em>, or <em>Persuasion</em>.</p>
+    </description>
+    <sheet>
+      <description>Add {{otherworldly glamour:bonus}}to any Charisma check.</description>
+    </sheet>
+    <rules>
+      <stat name="otherworldly glamour:bonus" valute="1" bonus="base" />
+      <stat name="otherworldly glamour:bonus" valute="wisdom:modifier" bonus="base" />
+      <select type="Proficiency" name="Otherworldly Glamour: Skill" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_PERSUASION" number="1" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 7: Beguiling Twist ===== -->
+  <element name="Beguiling Twist" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_FEY_WANDERER_FEATURE_BEGUILING_TWIST">
+    <description>
+      <p>The magic of the Feywild guards your mind. You have Advantage on saving throws to avoid or end the <strong>Charmed</strong> or <strong>Frightened</strong> condition.</p>
+      <p class="indent">In addition, whenever you or a creature you can see within 120 feet of you succeeds on a saving throw to avoid or end the Charmed or Frightened condition, you can take a <strong>Reaction</strong> to force a different creature you can see within 120 feet of yourself to make a Wisdom saving throw against your spell save DC. On a failed save, the target is <strong>Charmed</strong> or <strong>Frightened</strong> (your choice) for 1 minute. The target repeats the save at the end of each of its turns, ending the effect on itself on a success.</p>
+    </description>
+    <sheet action="Reaction">
+      <description>Advantage on saves vs Charmed/Frightened. When a creature you see succeeds on a save vs Charmed/Frightened, force another creature (within 120 ft) to make a WIS save (DC {{ranger:spellcasting:dc}}) or be Charmed or Frightened (your choice) for 1 minute (save ends at end of its turns).</description>
+    </sheet>
+  </element>
+
+  <!-- ===== Level 11: Fey Reinforcements ===== -->
+  <element name="Fey Reinforcements" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_FEY_WANDERER_FEATURE_FEY_REINFORCEMENTS">
+    <description>
+      <p>You can cast <em>Summon Fey</em> without a Material component. You can also cast it once without a spell slot, and you regain the ability to cast it in this way when you finish a Long Rest.</p>
+      <p class="indent">Whenever you start casting the spell, you can modify it so that it does not require Concentration. If you do so, the spellâ€™s duration becomes 1 minute for that casting.</p>
+    </description>
+    <sheet usage="1/Long Rest">
+      <description>You can cast Summon Fey without expending a spell slot. You can modify it so that it does not require Concentration, but the duration is reduced to 1 minute. In any case, you cast it without Material components.</description>
+    </sheet>
+  </element>
+
+  <!-- ===== Level 15: Misty Wanderer ===== -->
+  <element name="Misty Wanderer" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_FEY_WANDERER_FEATURE_MISTY_WANDERER">
+    <description>
+      <p>You can cast <em>Misty Step</em> without expending a spell slot a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
+      <p class="indent">Whenever you cast <em>Misty Step</em>, you can bring along one willing creature you can see within 5 feet of yourself. That creature teleports to an unoccupied space of your choice within 5 feet of your destination space.</p>
+    </description>
+    <sheet action="Bonus Action" usage="{{misty wanderer:uses}}/Long Rest">
+      <description>You can cast Misty Step without expending a spell slot; you can bring with you one willing creature within 5 ft and move it to a free space within 5 ft of your destination.</description>
+    </sheet>
+    <rules>
+      <stat name="misty wanderer:uses" value="1" bonus="base" />
+      <stat name="misty wanderer:uses" value="wisdom:modifier" bonus="base" />
+    </rules>
+  </element>
+
+   <!-- Fey Blessing -->
+   <element name="Illusory butterflies" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_FEY_WANDERER_FEATURE_FEY_WANDERER_SPELLS_ILLUSORY_BUTTERFLIES"> 
+    <supports>FeyBlessing</supports>
+    <description>Illusory butterflies flutter around you while you take a Short or Long Rest.</description>
+    <sheet><description>Illusory butterflies flutter around you while you take a Short or Long Rest.</description></sheet>
+   </element>
+   <element name="Flowers bloom" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_FEY_WANDERER_FEATURE_FEY_WANDERER_SPELLS_FLOWERS_BLOOM"> 
+    <supports>FeyBlessing</supports>
+    <description>Flowers bloom from your hair each dawn.</description>
+    <sheet><description>Flowers bloom from your hair each dawn.</description></sheet>
+   </element>
+   <element name="Cinnamon Smell" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_FEY_WANDERER_FEATURE_FEY_WANDERER_SPELLS_CINNAMON_SMELL"> 
+    <supports>FeyBlessing</supports>
+    <description>You faintly smell of cinnamon, lavender, nutmeg, or another comforting herb or spice.</description>
+    <sheet><description>You faintly smell of cinnamon, lavender, nutmeg, or another comforting herb or spice.</description></sheet>
+   </element>   
+   <element name="Dancing Shadow" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_FEY_WANDERER_FEATURE_FEY_WANDERER_SPELLS_DANCING_SHADOW"> 
+    <supports>FeyBlessing</supports>
+    <description>Your shadow dances while no one is looking directly at it.</description>
+    <sheet><description>Your shadow dances while no one is looking directly at it.</description></sheet>
+   </element> 
+   <element name="Sprouting Horns" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_FEY_WANDERER_FEATURE_FEY_WANDERER_SPELLS_HORNS"> 
+    <supports>FeyBlessing</supports>
+    <description>Horns or antlers sprout from your head</description>
+    <sheet><description>Horns or antlers sprout from your head</description></sheet>
+   </element>
+   <element name="Changing Skin" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_FEY_WANDERER_FEATURE_FEY_WANDERER_SPELLS_CHANGING_SKIN"> 
+    <supports>FeyBlessing</supports>
+    <description>Your skin and hair change color each dawn.</description>
+    <sheet><description>Your skin and hair change color each dawn.</description></sheet>
+   </element> 
+</elements>
+
+
+

@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <update version="1.0.0">
+      <file name="ranger-gloom_stalker-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/ranger-gloom_stalker-2024.xml" />
+    </update>
+    <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+  </info>
+
+  <!-- ===================== RANGER SUBCLASS â€” GLOOM STALKER (PHB 2024) ===================== -->
+  <element name="Gloom Stalker" type="Archetype" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_ARCHETYPE_GLOOM_STALKER">
+    <supports>RangerSubclass</supports>
+    <description>
+      <h1>Gloom Stalker</h1>
+      <p>Gloom Stalkers are at home in the darkest places, ambushing threats before they can reach the broader world.</p>
+
+      <h3>Subclass Features</h3>
+      <p>When you choose this subclass at 3rd level, you gain the following features.</p>
+
+      <div element="ID_WOTC_PHB24_RANGER_GLOOM_STALKER_FEATURE_DREAD_AMBUSHER" />
+      <div element="ID_WOTC_PHB24_RANGER_GLOOM_STALKER_FEATURE_SUBCLASS_SPELLS" />
+      <div element="ID_WOTC_PHB24_RANGER_GLOOM_STALKER_FEATURE_UMBRAL_SIGHT" />
+      <div element="ID_WOTC_PHB24_RANGER_GLOOM_STALKER_FEATURE_IRON_MIND" />
+      <div element="ID_WOTC_PHB24_RANGER_GLOOM_STALKER_FEATURE_STALKERS_FLURRY" />
+      <div element="ID_WOTC_PHB24_RANGER_GLOOM_STALKER_FEATURE_SHADOWY_DODGE" />
+    </description>
+
+    <sheet display="false" />
+    <rules>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_RANGER_GLOOM_STALKER_FEATURE_DREAD_AMBUSHER"    level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_RANGER_GLOOM_STALKER_FEATURE_SUBCLASS_SPELLS"   level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_RANGER_GLOOM_STALKER_FEATURE_UMBRAL_SIGHT"      level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_RANGER_GLOOM_STALKER_FEATURE_IRON_MIND"         level="7" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_RANGER_GLOOM_STALKER_FEATURE_STALKERS_FLURRY"   level="11" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_RANGER_GLOOM_STALKER_FEATURE_SHADOWY_DODGE"     level="15" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 3: Dread Ambusher ===== -->
+  <element name="Dread Ambusher" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_GLOOM_STALKER_FEATURE_DREAD_AMBUSHER">
+    <description>
+      <p>You master fearsome ambushes:</p>
+      <ul>
+        <li><strong>Ambusherâ€™s Leap.</strong> At the start of the first turn of each combat, your Speed increases by 10 feet until the end of that turn.</li>
+        <li><strong>Dreadful Strike.</strong> When you hit a creature with a weapon, you can deal an extra <strong>2d6 Psychic</strong> damage. You can use this benefit only once per turn, and a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Long Rest.</li>
+        <li><strong>Initiative Bonus.</strong> When you roll Initiative, add your Wisdom modifier to the roll.</li>
+      </ul>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="gloom stalker:dreadful strike:uses" value="1" bonus="base" />
+      <stat name="gloom stalker:dreadful strike:uses" value="wisdom:modifier" bonus="base" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_RANGER_GLOOM_STALKER_FEATURE_DREAD_AMBUSHER_AMBUSHERS_LEAP" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_RANGER_GLOOM_STALKER_FEATURE_DREAD_AMBUSHER_DREADFUL_STRIKE" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_RANGER_GLOOM_STALKER_FEATURE_DREAD_AMBUSHER_INITIATIVE_BONUS" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 3: Gloom Stalker Spells (always prepared) ===== -->
+  <element name="Gloom Stalker Spells" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_GLOOM_STALKER_FEATURE_SUBCLASS_SPELLS">
+    <description>
+      <p>When you reach a Ranger level specified in the Gloom Stalker Spells table, you thereafter always have the listed spells prepared.</p>
+      <table>
+        <thead><tr><th>Ranger Level</th><th>Spells</th></tr></thead>
+        <tbody>
+          <tr><td>3</td><td><em>Disguise Self</em></td></tr>
+          <tr><td>5</td><td><em>Rope Trick</em></td></tr>
+          <tr><td>9</td><td><em>Fear</em></td></tr>
+          <tr><td>13</td><td><em>Greater Invisibility</em></td></tr>
+          <tr><td>17</td><td><em>Seeming</em></td></tr>
+        </tbody>
+      </table>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Spell" id="ID_PHB24_SPELL_DISGUISE_SELF" prepared="true" spellcasting="Ranger" level="3"/>
+      <grant type="Spell" id="ID_PHB24_SPELL_ROPE_TRICK" prepared="true" spellcasting="Ranger" level="5"/>
+      <grant type="Spell" id="ID_PHB24_SPELL_FEAR" prepared="true" spellcasting="Ranger" level="9"/>
+      <grant type="Spell" id="ID_PHB24_SPELL_GREATER_INVISIBILITY" prepared="true" spellcasting="Ranger" level="13"/>
+      <grant type="Spell" id="ID_PHB24_SPELL_SEEMING" prepared="true" spellcasting="Ranger" level="17"/>
+    </rules>
+  </element>
+
+  <!-- ===== Level 3: Umbral Sight ===== -->
+  <element name="Umbral Sight" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_GLOOM_STALKER_FEATURE_UMBRAL_SIGHT">
+    <description>
+      <p>You gain Darkvision with a range of 60 feet. If you already have Darkvision when you gain this feature, its range increases by 60 feet.</p>
+      <p class="indent">While entirely in Darkness, you are Invisible to any creature that relies on Darkvision to see you in that Darkness.</p>
+    </description>
+    <sheet>
+      <description>While entirely in Darkness, you gain the Invisible condition to creatures that rely on Darkvision to see you in that Darkness.</description>
+    </sheet>
+    <rules>
+      <grant type="Vision" requirements="ID_PHB24_VISION_DARKVISION" id="ID_WOTC_PHB24_RANGER_GLOOM_STALKER_UMBRAL_SIGHT_SUPERIOR_DARKVISION" />
+      <grant type="Vision" requirements="ID_PHB24_VISION_SUPERIORDARKVISION" id="ID_WOTC_PHB24_RANGER_GLOOM_STALKER_UMBRAL_SIGHT_IMPROVED_SUPERIOR_DARKVISION" />
+      <grant type="Vision" requirements="!ID_PHB24_VISION_DARKVISION"        id="ID_PHB24_VISION_DARKVISION" />
+    </rules>
+  </element>
+
+  <!-- Helper visions for range setting -->
+  <element name="Umbral Sight" type="Vision" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_GLOOM_STALKER_UMBRAL_SIGHT_SUPERIOR_DARKVISION">
+    <description display="false" />
+    <sheet display="false" />
+    <rules>
+      <stat name="darkvision:range" value="120" bonus="base" />
+    </rules>
+  </element>
+  <element name="Umbral Sight" type="Vision" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_GLOOM_STALKER_UMBRAL_SIGHT_IMPROVED_SUPERIOR_DARKVISION">
+    <description display="false" />
+    <sheet display="false" />
+    <rules>
+      <stat name="darkvision:range" value="180" bonus="base" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 7: Iron Mind ===== -->
+  <element name="Iron Mind" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_GLOOM_STALKER_FEATURE_IRON_MIND">
+    <description>
+      <p>You gain proficiency in Wisdom saving throws. If you already have this proficiency, you instead gain proficiency in Intelligence or Charisma saving throws (your choice).</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select type="Proficiency" name="Iron Mind" requirements="ID_PROFICIENCY_SAVINGTHROW_WISDOM" supports="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE|ID_PROFICIENCY_SAVINGTHROW_CHARISMA" optional="true" number="1" />
+      <grant type="Proficiency" requirements="!ID_PROFICIENCY_SAVINGTHROW_WISDOM" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 11: Stalker's Flurry ===== -->
+  <element name="Stalker's Flurry" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_GLOOM_STALKER_FEATURE_STALKERS_FLURRY">
+    <description>
+      <p>Your Dreadful Strikeâ€™s Psychic damage becomes <strong>2d8</strong>.</p>
+      <p class="indent">In addition, when you apply Dreadful Strike from your Dread Ambusher feature, you can also cause one of the following effects:</p>
+      <ul>
+        <li><strong>Sudden Strike.</strong> Make another attack with the same weapon against a different creature within 5 feet of the original target and within the weaponâ€™s range.</li>
+        <li><strong>Mass Fear.</strong> The target and each creature within 10 feet of it must make a Wisdom saving throw against your spell save DC. On a failed save, a creature has the Frightened condition until the start of your next turn.</li>
+      </ul>
+    </description>
+    <sheet display="false" />
+    <!-- included in Dreadful Strike -->
+  </element>
+
+  <!-- ===== Level 15: Shadowy Dodge ===== -->
+  <element name="Shadowy Dodge" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_GLOOM_STALKER_FEATURE_SHADOWY_DODGE">
+    <description>
+      <p><strong>Reaction.</strong> When a creature makes an attack roll against you, impose Disadvantage on that roll. Whether the attack hits or misses, you can then teleport up to 30 feet to an unoccupied space you can see.</p>
+    </description>
+    <sheet action="Reaction">
+      <description>You can impose Disadvantage on an attack against you; then you can teleport up to 30 ft to a space you can see.</description>
+    </sheet>
+  </element>
+
+
+  <!-- DREAD AMUSHER EFFECTS -->
+  <element name="Ambusher's Leap" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_GLOOM_STALKER_FEATURE_DREAD_AMBUSHER_AMBUSHERS_LEAP">
+    <description>
+      <p>At the start of your first turn of each combat, your Speed increases by 10 feet until the end of that turn.</p>
+    </description>
+    <sheet>
+      <description>At the start of your first turn of each combat, your Speed increases by 10 feet until the end of that turn.</description>
+    </sheet>
+  </element>
+  <element name="Dreadful Strike" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_GLOOM_STALKER_FEATURE_DREAD_AMBUSHER_DREADFUL_STRIKE">
+    <description>
+      <p>When you attack a creature and hit it with a weapon, you can deal an extra 2d6 Psychic damage. You can use this benefit only once per turn, you can use it a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
+    </description>
+    <sheet action="on Attack" usage="{{dreadful strike:usage}}/Long Rest">
+      <description>Once per turn, on a hit you deal 2d{{dreadful strike:dice}} Psychic extra damages.</description>
+      <description level="11">Once per turn, on a hit you deal 2d{{dreadful strike:dice}} Psychic extra damages. You can make one additional attack to a different crature within 5ft on the original target and in the weapon reach. Moreover, the target and each creature within 10ft. must succede a Wis Saving Throw DC{{ranger:spellcasting:dc}} or be Frightened untile the start of your next turn.</description>
+    </sheet>
+    <rules>
+      <stat name="dreadful strike:dice" value="6" bonus="base" level="3" />
+      <stat name="dreadful strike:dice" value="8" bonus="base" level="11" />
+      <stat name="dreadful strike:usage" value="wisdom:modifier" bonus="base" />
+      <stat name="dreadful strike:usage" value="1" bonus="base" />
+    </rules>
+  </element>
+  <element name="Initiative Bonus" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_RANGER_GLOOM_STALKER_FEATURE_DREAD_AMBUSHER_INITIATIVE_BONUS">
+    <description>
+      <p>When you roll initiative, you can add your Wisdom modifier to the roll</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="initiative" value="wisdom:modifier" bonus="initiative" />
+    </rules>
+  </element>
+</elements>
+
+

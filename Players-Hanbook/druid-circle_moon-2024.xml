@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="1.0.0">
+		<file name="druid-circle_moon-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/druid-circle_moon-2024.xml" />
+		</update>
+		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+	</info>
+
+	<!-- Circle of Moon Subclass -->
+	<element name="Circle of the Moon" type="Archetype" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_CIRCLE_OF_THE_MOON">
+		<supports>Druid subclass</supports>
+		<description>
+			<p>Druids of the Circle of the Moon draw on lunar magic to transform themselves. Their order gathers under the moon to share news and perform rituals.</p>
+      		<p class="indent">Changeable as the moon, a Druid of this circle might prowl as a great cat one night, soar over the treetops as an eagle the next day, and then crash through undergrowth as a bear to drive off a trespassing monster. The wild is in the Druid's blood.</p>
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_SPELL" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_FORMS" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_IMPROVED_FORMS" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_MOONLIGHT_STEP" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_LUNAR_FORM" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_SPELL" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_FORMS" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_IMPROVED_FORMS" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_MOONLIGHT_STEP" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_LUNAR_FORM" level="14" /> 
+		</rules>
+	</element>
+	<element name="Circle of the Moon Spells" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_SPELL">
+		<description>
+			<p>When you reach a Druid level specified in the Circle of the Moon Spells table, you thereafter always have the listed spells prepared.</p>
+      			<p class="indent">In addition, you can cast the spells from this feature while you're in a Wild Shape form.</p>
+      			<h5 class="caption">Circle of the Moon Spells</h5>      
+      			<table>
+        			<thead><tr><td>Druid Level</td><td>Prepared Spell</td></tr></thead>
+          			<tr><td>3</td><td>Cure Wounds, Moonbeam, Starry Wisp</td></tr>
+          			<tr><td>5</td><td>Conjure Animals</td></tr>
+          			<tr><td>7</td><td>Fount of Moonlight</td></tr>
+          			<tr><td>9</td><td>Mass Cure Wounds</td></tr>
+        		</table>
+		</description>
+		<sheet>
+			<description>The Circle Spells are always prepared. You can cast them also in Wild Shape form.</description>
+		</sheet>
+      		<rules>
+        		<grant type="Spell" id="ID_PHB24_SPELL_CURE_WOUNDS" level="3" spellcasting="Druid" prepared="true" />
+        		<grant type="Spell" id="ID_PHB24_SPELL_MOONBEAM" level="3" spellcasting="Druid" prepared="true" />
+        		<grant type="Spell" id="ID_PHB24_SPELL_STARRY_WISP" level="3" spellcasting="Druid" prepared="true" />
+        		<grant type="Spell" id="ID_PHB24_SPELL_CONJURE_ANIMALS" level="5" spellcasting="Druid" prepared="true" />
+        		<grant type="Spell" id="ID_PHB24_SPELL_FOUNT_OF_MOONLIGHT" level="7" spellcasting="Druid" prepared="true" />
+        		<grant type="Spell" id="ID_PHB24_SPELL_MASS_CURE_WOUNDS" level="9" spellcasting="Druid" prepared="true" />
+      		</rules>
+	</element>
+	<element name="Circle Forms" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_FORMS">
+		<description>
+			<p>Starting at 3th level, You can channel lunar magic when you assume a Wild Shape form, granting you the benefits below.</p>
+			<p class="indent"><strong>Challenge Rating.</strong> The maximum Challenge Rating for the form equals your Druid level divided by 3 (round down).</p>
+			<p class="indent"><strong>Armor Class.</strong> Until you leave the form, your AC equals 13 plus your Wisdom modifier if that total is higher than the Beast's AC.</p>
+      			<p class="indent"><strong>Temporary Hit Points.</strong> You gain a number of Temporary Hit Points equal to three times your Druid level.</p>
+		</description>
+		<sheet>
+			<description>The Challenge Rating of the Beast Form is equal to {{wild_shape:cr}}. The AC of your Wild Shape is {{wild_shape:ac}}, if higher than the Beast's AC.</description>
+		</sheet>
+    		<rules>    
+      			<stat name="wild_shape:cr" value="1" bonus="base" level="3"/>
+                <stat name="wild_shape:cr" value="2" bonus="base" level="6"/>
+                <stat name="wild_shape:cr" value="3" bonus="base" level="9"/>
+                <stat name="wild_shape:cr" value="4" bonus="base" level="12"/>
+                <stat name="wild_shape:cr" value="5" bonus="base" level="15"/>
+                <stat name="wild_shape:cr" value="6" bonus="base" level="18"/>
+                <stat name="wild_shape:hp" value="level:druid" />
+                <stat name="wild_shape:hp" value="level:druid" />
+                <stat name="wild_shape:ac" value="13" />
+                <stat name="wild_shape:ac" value="wisdom:modifier" />
+    		</rules>
+	</element>
+	<element name="Improved Forms" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_IMPROVED_FORMS">
+		<description>
+			<p>Starting at 6th level, While in a Wild Shape form, you gain the following benefits.</p>
+			<p class="indent"><strong>Lunar Radiance.</strong> Each of your attacks in a Wild Shape form can deal its normal damage type or Radiant damage. You make this choice each time you hit with those attacks.</p>
+			<p class="indent"><strong>Increased Toughness.</strong> You can add your Wisdom modifier to your Constitution saving throws.</p>
+		</description>
+		<sheet>
+			<description>While in Wild Shape, each time you hit with an attack, you can choose to deal normal or Radiant damage. You can also add your Wisdom modifier to Constitution Saving Throw.</description>
+		</sheet>
+	</element>
+	<element name="Moonlight Step" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_MOONLIGHT_STEP">
+		<description>
+			<p>Starting at 10th level, you magically transport yourself, reappearing amid a burst of moonlight. As a Bonus Action, you teleport up to 30 feet to an unoccupied space you can see, and you have Advantage on the next attack roll you make before the end of this turn.</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest. You can also regain uses by expending a level 2+ spell slot for each use you want to restore (no action required).</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{lunar_step}}/Long Rest">
+			<description>You can teleport to an unoccupied space within 30ft and, before the end of your turn, you gain Advantage on your next attack roll. You can regain uno use expendig a 2+ spell slot (no action required).</description>
+		</sheet>
+		<rules>
+            <stat name="lunar_step" value="1" bonus="base" />
+			<stat name="lunar_step" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="Lunar Form" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_MOON_LUNAR_FORM">
+		<description>
+			<p>Starting at 14th level, the power of the moon suffuses you, granting you the following benefits.</p>
+			<p class="indent"><strong>Improved Lunar Radiance:</strong> once per turn, you can deal an extra 2d10 Radiant damage to a target you hit with a Wild Shape form's attack.</p>
+			<p class="indent"><strong>Shared Moonlight:</strong> whenever you use Moonlight Step, you can also teleport one willing creature. That creature must be within 10 feet of you, and you teleport it to an unoccupied space you can see within 10 feet of your destination space.</p>
+		</description>
+		<sheet>
+			<description>While in Wild Shape, Once per Turn you can deal extra 2d10 radiant damage with an attack. Moreover, using Moonlight Step, you can also teleport a willing creature which is within 10 ft from you. The creature is teleported in an unoccupied space within 10ft from your destination.</description>
+		</sheet>
+	</element>
+</elements>
+
+
+

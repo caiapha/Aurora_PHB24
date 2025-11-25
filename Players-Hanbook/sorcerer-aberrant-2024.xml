@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <update version="1.0.0">
+      <file name="sorcerer-aberrant-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/sorcerer-aberrant-2024.xml" />
+    </update>
+    <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+  </info>
+
+  <!-- ===================== SORCERER SUBCLASS â€” ABERRANT SORCERY (PHB 2024) ===================== -->
+  <element name="Aberrant Sorcery" type="Archetype" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SORCERER_ARCHETYPE_ABERRANT">
+    <supports>SorcererSubclass</supports>
+    <description>
+      <h1>Aberrant Sorcery</h1>
+      <p>Your magic springs from a mind altered by alien influence, warping your spells and your very flesh.</p>
+
+      <h3>Subclass Features</h3>
+      <p>When you choose this subclass at 3rd level, you gain the following features.</p>
+
+      <div element="ID_WOTC_PHB24_SORCERER_ABERRANT_FEATURE_PSIONIC_SPELLS" />
+      <div element="ID_WOTC_PHB24_SORCERER_ABERRANT_FEATURE_TELEPATHIC_SPEECH" />
+      <div element="ID_WOTC_PHB24_SORCERER_ABERRANT_FEATURE_PSIONIC_SORCERY" />
+      <div element="ID_WOTC_PHB24_SORCERER_ABERRANT_FEATURE_PSYCHIC_DEFENSES" />
+      <div element="ID_WOTC_PHB24_SORCERER_ABERRANT_FEATURE_REVELATION_IN_FLESH" />
+      <div element="ID_WOTC_PHB24_SORCERER_ABERRANT_FEATURE_WARPING_IMPLSION" />
+    </description>
+
+    <sheet display="false" />
+    <rules>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_SORCERER_ABERRANT_FEATURE_PSIONIC_SPELLS"         level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_SORCERER_ABERRANT_FEATURE_TELEPATHIC_SPEECH"      level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_SORCERER_ABERRANT_FEATURE_PSIONIC_SORCERY"        level="6" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_SORCERER_ABERRANT_FEATURE_PSYCHIC_DEFENSES"       level="6" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_SORCERER_ABERRANT_FEATURE_REVELATION_IN_FLESH"    level="14" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_SORCERER_ABERRANT_FEATURE_WARPING_IMPLSION"       level="18" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 3: Psionic Spells (always prepared) ===== -->
+  <element name="Psionic Spells" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SORCERER_ABERRANT_FEATURE_PSIONIC_SPELLS">
+    <description>
+      <p>When you reach a Sorcerer level specified in the Psionic Spells table, you thereafter always have the listed spells prepared, and they count as Sorcerer spells for you. These spells do not count against the number of spells you can prepare each day.</p>
+      <table>
+        <thead><tr><th>Sorcerer Level</th><th>Spells</th></tr></thead>
+        <tbody>
+          <tr><td>3</td><td><em>Arms of Hadar</em>, <em>Calm Emotions</em>, <em>Detect Thoughts</em>, <em>Dissonant Whispers</em>, <em>Mind Silver</em></td></tr>
+          <tr><td>5</td><td><em>Hunger of Hadar</em>, <em>Sending</em></td></tr>
+          <tr><td>7</td><td><em>Evardâ€™s Black Tentacles</em>, <em>Summon Aberration</em></td></tr>
+          <tr><td>9</td><td><em>Raryâ€™s Telepathic Bond</em>, <em>Telekinesis</em></td></tr>
+        </tbody>
+      </table>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Spell" id="ID_PHB24_SPELL_ARMS_OF_HADAR" prepared="true" spellcasting="Sorcerer" level="3" />
+      <grant type="Spell" id="ID_PHB24_SPELL_CALM_EMOTIONS" prepared="true" spellcasting="Sorcerer" level="3" />
+      <grant type="Spell" id="ID_PHB24_SPELL_DETECT_THOUGHTS" prepared="true" spellcasting="Sorcerer" level="3" />
+      <grant type="Spell" id="ID_PHB24_SPELL_DISSONANT_WHISPERS" prepared="true" spellcasting="Sorcerer" level="3" />
+      <grant type="Spell" id="ID_PHB24_SPELL_MIND_SLIVER" prepared="true" spellcasting="Sorcerer" level="3" />
+
+      <grant type="Spell" id="ID_PHB24_SPELL_HUNGER_OF_HADAR" prepared="true" spellcasting="Sorcerer" level="5" />
+      <grant type="Spell" id="ID_PHB24_SPELL_SENDING"  prepared="true" spellcasting="Sorcerer" level="5" />
+
+      <grant type="Spell" id="ID_PHB24_SPELL_EVARDS_BLACK_TENTACLES" prepared="true" spellcasting="Sorcerer" level="7" />
+      <grant type="Spell" id="ID_PHB24_SPELL_SUMMON_ABERRATION" prepared="true" spellcasting="Sorcerer" level="7" />
+
+      <grant type="Spell" id="ID_PHB24_SPELL_RARYS_TELEPATHIC_BOND" prepared="true" spellcasting="Sorcerer" level="9" />
+      <grant type="Spell" id="ID_PHB24_SPELL_TELEKINESIS" prepared="true" spellcasting="Sorcerer" level="9" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 3: Telepathic Speech ===== -->
+  <element name="Telepathic Speech" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SORCERER_ABERRANT_FEATURE_TELEPATHIC_SPEECH">
+    <description>
+      <p>You can form a telepathic connection between your mind and the mind of another. As a Bonus Action, choose one creature you can see within 30 feet of yourself. You and the chosen creature can communicate telepathically with each other while the two of you are within a number of miles of each other equal to your Charisma modifier (minimum of 1 mile). To understand each other, you each must mentally use a language the other knows.</p>
+      <p class="indent">The telepathic connection lasts for a number of minutes equal to your Sorcerer level. It ends early if you use this ability to form a connection with a different creature.</p>
+    </description>
+    <sheet action="Bonus Action">
+      <description>Choose a creature within 30 ft from you. For {{level:sorcerer}} minutes you can telepatically communicate with that creature, until it stays in {{telepathic:distance}} miles; shared language required.</description>
+    </sheet>
+    <rules>
+        <stat name="telepathic:distance" value="1" bonus="base" />
+        <stat name="telepathic:distance" value="charisma:modifier" bonus="base" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 6: Psionic Sorcery ===== -->
+  <element name="Psionic Sorcery" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SORCERER_ABERRANT_FEATURE_PSIONIC_SORCERY">
+    <description>
+      <p>When you cast a spell gained from your Psionic Spells feature of level 1 or higher, you can cast it by expending a spell slot as normal or by spending a number of Sorcery Points equal to the spellâ€™s level. If you cast the spell using Sorcery Points, the spell requires no Verbal or Somatic components, and it requires no Material components unless they are consumed by the spell or have a cost in gp.</p>
+    </description>
+    <sheet>
+      <description>Psionic Spells can be cast with Sorcery Points equal to spell level; if so, no V, S, and no M components unless consumed or costly.</description>
+    </sheet>
+  </element>
+
+  <!-- ===== Level 6: Psychic Defenses ===== -->
+  <element name="Psychic Defenses" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SORCERER_ABERRANT_FEATURE_PSYCHIC_DEFENSES">
+    <description>
+      <p>You have Resistance to Psychic damage, and you have Advantage on saving throws to avoid or end the Charmed or Frightened condition.</p>
+    </description>
+    <sheet>
+      <description>You have Advantage on saves vs Charmed and Frightened.</description>
+    </sheet>
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 14: Revelation in Flesh ===== -->
+  <element name="Revelation in Flesh" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SORCERER_ABERRANT_FEATURE_REVELATION_IN_FLESH">
+    <description>
+      <p>As a Bonus Action, you can spend 1 Sorcery Point or more to magically alter your body for 10 minutes. For each Sorcery Point you spend, choose one of the following benefits; you can choose the same benefit multiple times. The effects last until the alteration ends.</p>
+      <ul>
+        <li><strong>Aberrant Movement.</strong> Your Speed increases by 10 feet, and you can move through a space as narrow as 1 inch wide without squeezing.</li>
+        <li><strong>Amphibious Form.</strong> You gain a Swim Speed equal to twice your Speed, and you can breathe underwater.</li>
+        <li><strong>Ocular Mastery.</strong> You gain Darkvision with a range of 120 feet, and you can see Invisible creatures and objects within that range.</li>
+        <li><strong>Tentacular Limbs.</strong> A number of tentacles sprout from your body. As a Bonus Action, you can make one melee spell attack with a reach of 10 feet that deals Force damage equal to 1d10 + your Charisma modifier.</li>
+      </ul>
+    </description>
+    <sheet action="Bonus Action">
+      <description>You can spend 1+SP to gain one effect for each SP expended: â€¢ you gain {{swimspeed}}ft swim speed and you breathe underwater. â€¢ you gain {{innate speed}} ft. fying speed â€¢ you see the Invisible within 60 ft. â€¢ you can move through 1 inch narrow spaces and you can expend 5ft of movement to excape the Grappled condition.</description>
+    </sheet>
+    <rules>
+      <stat name="swimspeed" value="innate speed" />
+      <stat name="swimspeed" value="innate speed" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 18: Warping Implosion ===== -->
+  <element name="Warping Implosion" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SORCERER_ABERRANT_FEATURE_WARPING_IMPLSION">
+    <description>
+      <p>You can unleash a space-warping anomaly. As a Magic action, you teleport to an unoccupied space you can see within 120 feet of yourself. Immediately after you disappear, each creature within 30 feet of the space you left must make a Strength saving throw against your spell save DC. On a failed save, a creature takes 3d10 Force damage and is pulled straight toward the space you left, ending in an unoccupied space as close to your former space as possible. On a successful save, the creature takes half as much damage only.</p>
+      <p class="indent">Once you use this feature, you cannot use it again until you finish a Long Rest or you expend 5 Sorcery Points to use it again.</p>
+    </description>
+    <sheet action="Magic Action" usage="1/Long Rest">
+      <description>You telepert yourself in a free space you can see within 120 ft. Any creature within 30ft. from the starting poin must make a STR Saving Throw DC {{spellcasting:dc}} or take 3d10 Force damages (saves halves), and is pulled as much as possible thoward the starging point. You can restore a use expeding 5 SP.</description>
+    </sheet>
+  </element>
+</elements>
+
+
+

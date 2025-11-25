@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <update version="1.0.0">
+      <file name="paladin-vengeance-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/paladin-vengeance-2024.xml" />
+    </update>
+    <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+  </info>
+
+  <!-- ===================== OATH OF VENGEANCE (PHB 2024) ===================== -->
+  <element name="Oath of Vengeance" type="Archetype" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_PALADIN_ARCHETYPE_VENGEANCE">
+    <supports>PaladinSubclass</supports>
+    <description>
+      <h1>Oath of Vengeance</h1>
+      <p>Punish evildoers at any cost.</p>
+
+      <h3>Subclass Features</h3>
+      <p>When you choose this oath at 3rd level, you gain the following features.</p>
+
+      <div element="ID_WOTC_PHB24_PALADIN_VENGEANCE_FEATURE_VOW_OF_ENMITY" />
+      <div element="ID_WOTC_PHB24_PALADIN_VENGEANCE_FEATURE_OATH_SPELLS" />
+      <div element="ID_WOTC_PHB24_PALADIN_VENGEANCE_FEATURE_RELENTLESS_AVENGER" />
+      <div element="ID_WOTC_PHB24_PALADIN_VENGEANCE_FEATURE_SOUL_OF_VENGEANCE" />
+      <div element="ID_WOTC_PHB24_PALADIN_VENGEANCE_FEATURE_AVENGING_ANGEL" />
+    </description>
+
+    <sheet display="false" />
+    <rules>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_PALADIN_VENGEANCE_FEATURE_VOW_OF_ENMITY" level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_PALADIN_VENGEANCE_FEATURE_OATH_SPELLS"   level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_PALADIN_VENGEANCE_FEATURE_RELENTLESS_AVENGER" level="7" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_PALADIN_VENGEANCE_FEATURE_SOUL_OF_VENGEANCE" level="15" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_PALADIN_VENGEANCE_FEATURE_AVENGING_ANGEL"   level="20" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 3: Vow of Enmity (Channel Divinity) ===== -->
+  <element name="Vow of Enmity" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_PALADIN_VENGEANCE_FEATURE_VOW_OF_ENMITY">
+    <description>
+      <p>When you take the Attack action, you can expend one use of Channel Divinity to vow enmity against one creature you can see within 30 feet of yourself. You have Advantage on attack rolls against that creature for 1 minute or until you use this feature again.</p>
+      <p class="indent">If the creature drops to 0 Hit Points before the vow ends, you can transfer the vow to a different creature within 30 feet of yourself (no action required).</p>
+    </description>
+    <sheet action="on an Attack Action" usage="Channel Divinity">
+      <description>For 1 minute, you have Advantage on attack rolls against a creature of your choice within 30 ft. If the target drops to 0 HP before the end of the effect, you can transfer it to a creature within 30 ft (no action required).</description>
+    </sheet>
+  </element>
+
+  <!-- ===== Level 3: Oath Spells (always prepared) ===== -->
+  <element name="Oath of Vengeance Spells" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_PALADIN_VENGEANCE_FEATURE_OATH_SPELLS">
+    <description>
+      <p>The magic of your oath ensures you always have certain spells ready; when you reach a Paladin level specified in the Oath of Vengeance Spells table, you thereafter always have the listed spells prepared.</p>
+      <table>
+        <thead><tr><th>Paladin Level</th><th>Spells</th></tr></thead>
+        <tbody>
+          <tr><td>3</td><td><em>Bane</em>, <em>Hunterâ€™s Mark</em></td></tr>
+          <tr><td>5</td><td><em>Hold Person</em>, <em>Misty Step</em></td></tr>
+          <tr><td>9</td><td><em>Haste</em>, <em>Protection from Energy</em></td></tr>
+          <tr><td>13</td><td><em>Banishment</em>, <em>Dimension Door</em></td></tr>
+          <tr><td>17</td><td><em>Hold Monster</em>, <em>Scrying</em></td></tr>
+        </tbody>
+      </table>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <!-- Level 3 -->
+      <grant type="Spell" id="ID_PHB24_SPELL_BANE" prepared="true" spellcasting="Paladin" level="3"/>
+      <grant type="Spell" id="ID_PHB24_SPELL_HUNTERS_MARK" prepared="true" spellcasting="Paladin" level="3"/>
+      <!-- Level 5 -->
+      <grant type="Spell" id="ID_PHB24_SPELL_HOLD_PERSON" prepared="true" spellcasting="Paladin" level="5"/>
+      <grant type="Spell" id="ID_PHB24_SPELL_MISTY_STEP" prepared="true" spellcasting="Paladin" level="5"/>
+      <!-- Level 9 -->
+      <grant type="Spell" id="ID_PHB24_SPELL_HASTE" prepared="true" spellcasting="Paladin" level="9"/>
+      <grant type="Spell" id="ID_PHB24_SPELL_PROTECTION_FROM_ENERGY" prepared="true" spellcasting="Paladin" level="9"/>
+      <!-- Level 13 -->
+      <grant type="Spell" id="ID_PHB24_SPELL_BANISHMENT" prepared="true" spellcasting="Paladin" level="13"/>
+      <grant type="Spell" id="ID_PHB24_SPELL_DIMENSION_DOOR" prepared="true" spellcasting="Paladin" level="13"/>
+      <!-- Level 17 -->
+      <grant type="Spell" id="ID_PHB24_SPELL_HOLD_MONSTER" prepared="true" spellcasting="Paladin" level="17"/>
+      <grant type="Spell" id="ID_PHB24_SPELL_SCRYING" prepared="true" spellcasting="Paladin" level="17"/>
+    </rules>
+  </element>
+
+  <!-- ===== Level 7: Relentless Avenger ===== -->
+  <element name="Relentless Avenger" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_PALADIN_VENGEANCE_FEATURE_RELENTLESS_AVENGER">
+    <description>
+      <p>When you hit a creature with an Opportunity Attack, you can reduce the creatureâ€™s Speed to 0 until the end of the current turn. You can then move up to half your Speed as part of the same Reaction, and this movement does not provoke Opportunity Attacks.</p>
+    </description>
+    <sheet action="Reaction">
+      <description>On a hit with an Opportunity Attack, you reduce the targetâ€™s Speed to 0 until end of turn; then move up to half your Speed as part of the same Reaction without provoking Opportunity Attacks.</description>
+    </sheet>
+  </element>
+
+  <!-- ===== Level 15: Soul of Vengeance ===== -->
+  <element name="Soul of Vengeance" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_PALADIN_VENGEANCE_FEATURE_SOUL_OF_VENGEANCE">
+    <description>
+      <p>Immediately after a creature under the effect of your Vow of Enmity hits or misses with an attack roll, you can take a Reaction to make a melee attack against that creature if it is within range.</p>
+    </description>
+    <sheet action="Reaction">
+      <description>After a creature affected by your Vow of Enmity hits or misses with an attack roll, make one melee attack against it, if within range.</description>
+    </sheet>
+  </element>
+
+  <!-- ===== Level 20: Avenging Angel ===== -->
+  <element name="Avenging Angel" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_PALADIN_VENGEANCE_FEATURE_AVENGING_ANGEL">
+    <description>
+      <p><strong>Bonus Action.</strong> You gain the benefits below for 10 minutes or until you end them (no action required). Once you use this feature, you canâ€™t use it again until you finish a Long Rest; you can also restore a use by expending a 5th-level spell slot (no action required).</p>
+      <ul>
+        <li><strong>Flight.</strong> You sprout spectral wings and have a Fly Speed of 60 feet; you can hover.</li>
+        <li><strong>Frightful Aura.</strong> Whenever an enemy starts its turn in your Aura of Protection, it must succeed on a Wisdom saving throw or have the Frightened condition for 1 minute or until it takes any damage. Attack rolls against the Frightened creature have Advantage.</li>
+      </ul>
+    </description>
+    <sheet action="Bonus Action" usage="1/Long Rest">
+      <description>For 10 minutes you gain the following benefits: Fly Speed 60 ft. Enemies starting their turn in your Aura of Protection must make a WIS Saving Throw (DC {{paladin:spellcasting:dc}}) or be Frightened for 1 minute or until damaged; attacks against a Frightened creature have Advantage. You can also restore one use by expending a 5th-level spell slot.</description>
+    </sheet>
+  </element>
+</elements>
+
+
+

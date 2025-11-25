@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <update version="1.0.0">
+      <file name="warlock-celestial-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/warlock-celestial-2024.xml" />
+    </update>
+    <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+  </info>
+
+  <!-- ===================== WARLOCK SUBCLASS: CELESTIAL (PHB 2024) ===================== -->
+  <element name="Celestial Patron" type="Archetype" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_WARLOCK_ARCHETYPE_CELESTIAL">
+    <supports>WarlockSubclass</supports>
+    <description>
+      <h1>Celestial Patron</h1>
+      <p>Your pact binds you to a radiant beingâ€”an empyreal solar, a unicorn of legend, or another luminous agent of the Upper Planes.</p>
+
+      <h3>Subclass Features</h3>
+      <p>When you choose this patron at 3rd level, you gain the following features.</p>
+
+      <div element="ID_WOTC_PHB24_WARLOCK_CELESTIAL_FEATURE_CELESTIAL_SPELLS" />
+      <div element="ID_WOTC_PHB24_WARLOCK_CELESTIAL_FEATURE_HEALING_LIGHT" />
+      <div element="ID_WOTC_PHB24_WARLOCK_CELESTIAL_FEATURE_RADIANT_SOUL" />
+      <div element="ID_WOTC_PHB24_WARLOCK_CELESTIAL_FEATURE_CELESTIAL_RESILIENCE" />
+      <div element="ID_WOTC_PHB24_WARLOCK_CELESTIAL_FEATURE_SEARING_VENGEANCE" />
+    </description>
+
+    <sheet display="false" />
+    <rules>
+      <!-- Grants at the appropriate levels -->
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_WARLOCK_CELESTIAL_FEATURE_CELESTIAL_SPELLS"    level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_WARLOCK_CELESTIAL_FEATURE_HEALING_LIGHT"       level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_WARLOCK_CELESTIAL_FEATURE_RADIANT_SOUL"        level="6" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_WARLOCK_CELESTIAL_FEATURE_CELESTIAL_RESILIENCE" level="10" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_WARLOCK_CELESTIAL_FEATURE_SEARING_VENGEANCE"   level="14" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 3: Celestial Spells ===== -->
+  <element name="Celestial Spells" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_WARLOCK_CELESTIAL_FEATURE_CELESTIAL_SPELLS">
+    <description>
+      <p>The magic of your patron ensures you always have certain spells prepared. When you reach a Warlock level specified in the Celestial Spells table, you thereafter always have the listed spells prepared. These spells donâ€™t count against the number of spells you can prepare.</p>
+      <h5 class="caption">CELESTIAL SPELLS</h5>
+      <table>
+        <thead><tr><th>Warlock Level</th><th>Spells</th></tr></thead>
+        <tbody>
+          <tr><td>3</td><td>Aid, Cure Wounds, Guiding Bolt, Lesser Restoration, Light, Sacred Flame</td></tr>
+          <tr><td>5</td><td>Daylight, Revivify</td></tr>
+          <tr><td>7</td><td>Guardian of Faith, Wall of Fire</td></tr>
+          <tr><td>9</td><td>Greater Restoration, Summon Celestial</td></tr>
+        </tbody>
+      </table>
+    </description>
+    <sheet display="false" />
+    <rules>
+        <grant type="Spell" id="ID_PHB24_SPELL_AID" prepared="true" spellcasting="warlock" level="3" />
+        <grant type="Spell" id="ID_PHB24_SPELL_CURE_WOUNDS" prepared="true" spellcasting="warlock" level="3" />
+        <grant type="Spell" id="ID_PHB24_SPELL_GUIDING_BOLT" prepared="true" spellcasting="warlock" level="3" />
+        <grant type="Spell" id="ID_PHB24_SPELL_LESSER_RESTORATION" prepared="true" spellcasting="warlock" level="3" />
+        <grant type="Spell" id="ID_PHB24_SPELL_LIGHT" prepared="true" spellcasting="warlock" level="3" />
+        <grant type="Spell" id="ID_PHB24_SPELL_SACRED_FLAME" prepared="true" spellcasting="warlock" level="3" />
+        <grant type="Spell" id="ID_PHB24_SPELL_DAYLIGHT" prepared="true" spellcasting="warlock" level="5" />
+        <grant type="Spell" id="ID_PHB24_SPELL_REVIVIFY" prepared="true" spellcasting="warlock" level="5" />
+        <grant type="Spell" id="ID_PHB24_SPELL_GUARDIAN_OF_FAITH" prepared="true" spellcasting="warlock" level="7" />
+        <grant type="Spell" id="ID_PHB24_SPELL_WALL_OF_FIRE" prepared="true" spellcasting="warlock" level="7" />
+        <grant type="Spell" id="ID_PHB24_SPELL_GREATER_RESTORATION" prepared="true" spellcasting="warlock" level="9" />
+        <grant type="Spell" id="ID_PHB24_SPELL_SUMMON_CELESTIAL" prepared="true" spellcasting="warlock" level="9" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 3: Healing Light ===== -->
+  <element name="Healing Light" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_WARLOCK_CELESTIAL_FEATURE_HEALING_LIGHT">
+    <description>
+      <p><strong>Bonus Action.</strong> You have a pool of d6s you can spend to heal a creature within 60 feet of yourself that you can see. The pool contains a number of d6s equal to <strong>1 + your Warlock level</strong>. As a Bonus Action, choose a creature you can see within 60 feet and spend up to a number of dice equal to your Charisma modifier (minimum of one). Roll the spent dice and restore a total equal to the result.</p>
+      <p>You regain all expended dice when you finish a Long Rest.</p>
+    </description>
+    <sheet action="Bonus Action" usage="{{celestial:healinglight:pool}}/Long Rest">
+      <description>You have a {{celestial:healinglight:pool}}d6 dice pool. As a Bonus Action, spend up to {{celestial:healinglight:max}} dice from the pool to heal yourself or a target within 60ft.</description>
+    </sheet>
+    <rules>
+      <stat name="celestial:healinglight:pool" value="1" />
+      <stat name="celestial:healinglight:pool" value="level:warlock" />
+      <stat name="celestial:healinglight:max" value="1" bonus="base" />
+      <stat name="celestial:healinglight:max" value="charisma:modifier" bonus="base" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 6: Radiant Soul ===== -->
+  <element name="Radiant Soul" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_WARLOCK_CELESTIAL_FEATURE_RADIANT_SOUL">
+    <description>
+      <p>You gain Resistance to Radiant damage. In addition, once on each of your turns when you deal Radiant or Fire damage to a creature, you can add your Charisma modifier to one damage roll of that spell or attack.</p>
+    </description>
+    <sheet usage="1/Turn">
+      <description>Add {{charisma:modifier}} to the damage you deal to a target with a Radiant or Fire damage Spell.</description>
+    </sheet>
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 10: Celestial Resilience ===== -->
+  <element name="Celestial Resilience" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_WARLOCK_CELESTIAL_FEATURE_CELESTIAL_RESILIENCE">
+    <description>
+      <p>You gain Temporary Hit Points whenever you use your Magical Cunning feature or finish a Short or Long Rest. These Temporary Hit Points equal your Warlock level plus your Charisma modifier. Additionally, choose up to five creatures you can see when you gain the points. Those creatures each gain Temporary Hit Points equal to half your Warlock level plus your Charisma modifier.</p>
+    </description>
+    <sheet>
+      <description>Whenever you use a Magical Cunning feature or finish a Short or Long Rest, you gain {{celestial resilience:hp}} Temporary HP. Additionally, choose up to 5 creatures which gain {{celestial resilience:companion:hp}} Temporary HP.</description>
+    </sheet>
+    <rules>
+      <stat name="celestial resilience:hp" value="level:warlock" />
+      <stat name="celestial resilience:hp" value="charisma:modifier" />
+      <stat name="celestial resilience:companion:hp" value="level:warlock:half" />
+      <stat name="celestial resilience:companion:hp" value="charisma:modifier" />
+
+    </rules>
+  </element>
+
+  <!-- ===== Level 14: Searing Vengeance ===== -->
+  <element name="Searing Vengeance" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_WARLOCK_CELESTIAL_FEATURE_SEARING_VENGEANCE">
+    <description>
+      <p>When you or an ally within 60 feet of you is about to make a Death Saving Throw, you can unleash radiant energy to save the creature. The creature regains Hit Points equal to half its Hit Point maximum and can end the Prone condition on itself. Each creature of your choice that is within 30 feet of the creature takes Radiant damage equal to 2d8 plus your Charisma modifier, and each has the Blinded condition until the end of the current turn.</p>
+      <p>Once you use this feature, you can't use it again until you finish a Long Rest.</p>
+    </description>
+    <sheet action="Reaction" usage="1/Long Rest">
+      <description>When a creature within 60ft. of you is about to making a Death Saving Throw, it regains half of his HP and end the Prone condition. Any crature of your choice within 30ft from that creature takes 2d8+{{charisma:modifier}} Radiant damages and has the Blinded condition until the end of the turn.</description>
+    </sheet>
+  </element>
+
+</elements>
+
+
+

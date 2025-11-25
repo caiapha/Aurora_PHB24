@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <update version="1.0.0">
+      <file name="rogue-assassin-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/rogue-assassin-2024.xml" />
+    </update>
+    <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+  </info>
+
+  <!-- ===================== ROGUE SUBCLASS â€” ASSASSIN (PHB 2024) ===================== -->
+  <element name="Assassin" type="Archetype" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ROGUE_ARCHETYPE_ASSASSIN">
+    <supports>RogueSubclass</supports>
+    <description>
+      <h1>Assassin</h1>
+      <p>You practice the grim art of swift elimination through stealth, poison, and deception.</p>
+
+      <h3>Subclass Features</h3>
+      <p>When you choose this subclass at 3rd level, you gain the following features.</p>
+
+      <div element="ID_WOTC_PHB24_ROGUE_ASSASSIN_FEATURE_ASSASSINS_TOOLS" />
+      <div element="ID_WOTC_PHB24_ROGUE_ASSASSIN_FEATURE_ASSASSINATE" />
+      <div element="ID_WOTC_PHB24_ROGUE_ASSASSIN_FEATURE_INFILTRATION_EXPERTISE" />
+      <div element="ID_WOTC_PHB24_ROGUE_ASSASSIN_FEATURE_ENVENOM_WEAPONS" />
+      <div element="ID_WOTC_PHB24_ROGUE_ASSASSIN_FEATURE_DEATH_STRIKE" />
+    </description>
+
+    <sheet display="false" />
+    <rules>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_ROGUE_ASSASSIN_FEATURE_ASSASSINS_TOOLS" level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_ROGUE_ASSASSIN_FEATURE_ASSASSINATE" level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_ROGUE_ASSASSIN_FEATURE_INFILTRATION_EXPERTISE" level="9" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_ROGUE_ASSASSIN_FEATURE_ENVENOM_WEAPONS" level="13" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_ROGUE_ASSASSIN_FEATURE_DEATH_STRIKE" level="17" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 3: Bonus Proficiencies ===== -->
+  <element name="Assassin's tools" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ROGUE_ASSASSIN_FEATURE_ASSASSINS_TOOLS">
+    <description>
+      <p>You gain proficiency with the Disguise Kit and the Poisonerâ€™s Kit.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Proficiency" id="ID_WOTC_PHB_ITEM_TOOL_DISGUISE_KIT" />
+      <grant type="Proficiency" id="ID_WOTC_PHB_ITEM_TOOL_POISONERS_KIT" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 3: Assassinate ===== -->
+  <element name="Assassinate" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ROGUE_ASSASSIN_FEATURE_ASSASSINATE">
+    <description>
+      <p>You're adept at ambushing a target, granting you the following benefits.</p>
+      <p ><strong>Initiative.</strong> You have Advantage on Initiative rolls.</p>
+      <p><strong>Surprising Strikes.</strong> During the first round of each combat, you have Advantage on attack rolls against any creature that hasn't taken a turn.</p>
+      <p class="indent">If your Sneak Attack hits any target during that round, the target takes extra damage of the weapon's type equal to your Rogue level.</p>
+    </description>
+    <sheet>
+      <description>You have Advantage on Initiative rolls. During first round of combat: you have Advantage on attacks vs creatures that have not yet acted. If you Sneak Attack the target during that turn, add {{level:rogue}} extra damage.</description>
+    </sheet>
+  </element>
+
+  <!-- ===== Level 9: Infiltration Expertise ===== -->
+  <element name="Infiltration Expertise" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ROGUE_ASSASSIN_FEATURE_INFILTRATION_EXPERTISE">
+    <description>
+      <p>You are expert at the following techniques that aid your infiltrations.</p>
+      <p><strong>Masterful Mimicry.</strong> You can unerringly mimic another person's speech, handwriting, or both if you have spent at least 1 hour studying them.</p>
+      <p><strong>Roving Aim.</strong> Your Speed isn't reduced to 0 by using Steady Aim.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+     <grant type="Archetype feature" id="ID_WOTC_PHB24_ROGUE_ASSASSIN_FEATURE_INFILTRATION_EXPERTISE_MASTERFUL_MIMICRY" />
+     <grant type="Archetype feature" id="ID_WOTC_PHB24_ROGUE_ASSASSIN_FEATURE_INFILTRATION_EXPERTISE_ROVING_AIM" />
+    </rules> 
+  </element>
+
+  <element name="Masterful Mimicry" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ROGUE_ASSASSIN_FEATURE_INFILTRATION_EXPERTISE_MASTERFUL_MIMICRY">
+  <description />
+  <sheet>
+    <description>You can unerringly mimic another person's speech, handwriting, or both if you have spent at least 1 hour studying them.</description>
+  </sheet>
+  </element>  
+  <element name="Roving Aim." type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ROGUE_ASSASSIN_FEATURE_INFILTRATION_EXPERTISE_ROVING_AIM">
+  <description />
+  <sheet>
+    <description>Your Speed isn't reduced to 0 by using Steady Aim.</description>
+  </sheet>
+  </element>
+
+  <!-- ===== Level 13: Envenom Weapons ===== -->
+  <element name="Envenom Weapons" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ROGUE_ASSASSIN_FEATURE_ENVENOM_WEAPONS">
+    <description>
+      <p>When you use the Poison option of your Cunning Strike, the target also takes 2d6 Poison damage whenever it fails the saving throw. This damage ignores Resistance to Poison damage.</p>
+    </description>
+    <sheet>
+      <description>When you use the Poison option of your Cunning Strike, the target also takes 2d6 Poison damage whenever it fails the saving throw. This damage ignores Resistance to Poison damage.</description>
+    </sheet>
+  </element>
+
+  <!-- ===== Level 17: Death Strike ===== -->
+  <element name="Death Strike" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ROGUE_ASSASSIN_FEATURE_DEATH_STRIKE">
+    <description>
+      <p>When you hit with your Sneak Attack on the first round of a combat, the target must succeed on a Constitution saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus), or the attack's damage is doubled against the target.</p>
+    </description>
+    <sheet>
+      <description>When you Sneak Attack on first round, the target must succeed on a CON Saving Throw DC{{death strike:dc}} or suffer doubled damage.</description>
+    </sheet>
+    <rules>
+      <stat name="death strike:dc" value="8" />
+      <stat name="death strike:dc" value="dexterity:bonus" />
+      <stat name="death strike:dc" value="proficiency" />
+    </rules>
+  </element>
+</elements>
+
+
+

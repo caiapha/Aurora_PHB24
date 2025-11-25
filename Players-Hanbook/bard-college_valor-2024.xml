@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="1.0.0">
+		<file name="bard-college_valor-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/bard-college_valor-2024.xml" />
+		</update>
+		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+	</info>
+
+	<!-- College of Valor Subclass -->
+	<element name="College of Valor" type="Archetype" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_COLLEGE_OF_VALOR">
+		<supports>Bard subclass</supports>
+		<description>
+			<p>Bards of the College of Valor are daring storytellers whose tales preserve the memory of the great heroes of the past. These Bards sing the deeds of the mighty in vaulted halls or to crowds gathered around great bonfires. They travel to witness great events firsthand and to ensure that the memory of these events doesn't pass away. With their songs, they inspire new generations to reach the same heights of accomplishment as the heroes of old.</p>	
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_VALOR_COMBAT_INSPIRATION" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_VALOR_MARTIAL_TRAINING" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_VALOR_EXTRA_ATTACK" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_VALOR_BATTLE_MAGIC" />	
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_VALOR_COMBAT_INSPIRATION" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_VALOR_MARTIAL_TRAINING" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_VALOR_EXTRA_ATTACK" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_VALOR_BATTLE_MAGIC" level="14" />
+		</rules>
+	</element>
+	<element name="Combat Inspiration" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_VALOR_COMBAT_INSPIRATION">
+		<description>
+			<p>Starting at 3rd level, you can use your wit to turn the tide of battle. A creature that has a Bardic Inspiration die from you can use it for one of the following effects.</p>
+			<p><strong>Defense:</strong> when the creature is hit by an attack roll, that creature can use its Reaction to roll the Bardic Inspiration die and add the number rolled to its AC against that attack, potentially causing the attack to miss.</p>    
+			<p><strong>Offense:</strong> immediately after the creature hits a target with an attack roll, the creature can roll the Bardic Inspiration die and add the number rolled to the attack's damage against the target.</p>
+		</description>
+		<sheet>
+			<description>A creature that has a Bardic Inspiration die from you can use it for one of the following effects:</description>
+		</sheet>
+		<rules>
+			<grant name="â€¢ Defense" type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_VALOR_COMBAT_INSPIRATION_DEFENSE" />
+			<grant name="â€¢ Offense" type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_VALOR_COMBAT_INSPIRATION_OFFENSE" />			
+		</rules>
+	</element>
+	<element name="Martial Training" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_VALOR_MARTIAL_TRAINING">
+		<description>
+			<p>Starting at 3rd level, you gain proficiency with Martial weapons and training with Medium armor and Shields.</p>
+			<p class="indent">In addition, you can use a Simple or Martial weapon as a Spellcasting Focus to cast spells from your Bard spell list.</p>
+		</description>
+		<sheet>
+			<description>You can use your weapon as spellcasting focus to cast Bard Spells</description>
+		</sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" /> 
+       <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+    </rules>
+	</element>
+	<element name="Extra Attack" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_VALOR_EXTRA_ATTACK">
+		<description>
+			<p>Starting at 6th level, you can attack twice instead of once whenever you take the Attack action on your turn.</p>
+		  <p class="indent">In addition, you can cast one of your cantrips that has a casting time of an action in place of one of those attacks.</p>
+    </description>
+		<sheet>
+			<description>You can attack twice whenever you take the Attack action. Moreover, you can replace one of those attacks with a Cantrip having a casting time of one action.</description>
+		</sheet>
+	</element>
+	<element name="Battle Magic" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_VALOR_BATTLE_MAGIC">
+		<description>
+			<p>Starting at 14th level, after you cast a spell that has a casting time of an action, you can make one attack with a weapon as a Bonus Action.</p>
+			<p class="indent">You can't use this feature if you have the Incapacitated condition.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>After you cast a spell that has a casting time of an action, you can make one attack with a weapon.</description>
+		</sheet>
+	</element>
+	
+	<!-- COMBAT INSPIRATION EFFECTS -->
+	<element name="â€¢ Defense" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_VALOR_COMBAT_INSPIRATION_DEFENSE">
+		<sheet action="Reaction">
+			<description>When hit by an attack roll, that creature can roll the Bardic Inspiration die and add the number rolled to its AC against that attack.</description>
+		</sheet>	
+	</element>
+	<element name="â€¢ Offense" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_VALOR_COMBAT_INSPIRATION_OFFENSE">			
+		<sheet>
+			<description>Immediately after the creature hits a target with an attack roll, the creature can roll the Bardic Inspiration die and add the number rolled to the attack's damage against the target.</description>
+		</sheet>
+	</element>
+</elements>
+
+
+

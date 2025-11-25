@@ -1,0 +1,86 @@
+﻿<elements>
+  <info>
+    <name>Monk â€” Warrior of the Open Hand (2024)</name>
+    <description>Warrior of the Open Hand subclass for the Monk from the Player's Handbook (2024) â€” Aurora Builder ready.</description>
+    <author>Aurora</author>
+    <update version="1.0.0">
+      <file name="monk-warrior_open_hand-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/monk-warrior_open_hand-2024.xml" />
+    </update>
+    <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+  </info>
+
+  <!-- SUBCLASS ROOT -->
+  <element name="Warrior of the Open Hand" type="Archetype" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_MONK_OPEN_HAND">
+    <supports>MonkSubclass</supports>
+    <description>
+      <p>Warriors of the Open Hand are masters of unarmed combat. They learn techniques to push and trip their opponents and manipulate their own energy to protect themselves from harm.</p>
+      <div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_OPEN_HAND_TECHNIQUE" />
+      <div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_OPEN_HAND_WHOLENESS_OF_BODY" />
+      <div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_OPEN_HAND_FLEET_STEP" />
+      <div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_OPEN_HAND_QUIVERING_PALM" />
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_OPEN_HAND_TECHNIQUE" level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_OPEN_HAND_WHOLENESS_OF_BODY" level="6" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_OPEN_HAND_FLEET_STEP" level="11" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_OPEN_HAND_QUIVERING_PALM" level="17" />
+    </rules>
+  </element>
+
+  <!-- LEVEL 3: OPEN HAND TECHNIQUE -->
+  <element name="Open Hand Technique" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_OPEN_HAND_TECHNIQUE">
+    <description>
+      <p><em>3rd-level Warrior of the Open Hand feature</em></p>
+      <p>Whenever you hit a creature with an attack granted by your Flurry of Blows, you can impose one of the following effects on that target:</p>
+      <p class="indent"><strong>Addle.</strong> The target canâ€™t make Opportunity Attacks until the start of its next turn.</p>
+      <p class="indent"><strong>Push.</strong> The target must succeed on a Strength saving throw (DC {{monk:focus:dc}}) or be pushed up to 15 feet away from you.</p>
+      <p class="indent"><strong>Topple.</strong> The target must succeed on a Dexterity saving throw (DC {{monk:focus:dc}}) or have the Prone condition.</p>
+    </description>
+    <sheet>
+      <description>Each Flurry of Blows hit impose one of the following effect: the target cannot make Opportunity Attacks; the target is pushed 15ft away if fails a STR Saving Throw DC{{monk:focus:dc}}; the target is knocked prone if fails a DEX Saving Throw DC{{monk:focus:dc}}</description>
+    </sheet>
+  </element>
+
+  <!-- LEVEL 6: WHOLENESS OF BODY -->
+  <element name="Wholeness of Body" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_OPEN_HAND_WHOLENESS_OF_BODY">
+    <description>
+      <p><em>6th-level Warrior of the Open Hand feature</em></p>
+      <p>You can heal yourself. As a Bonus Action, roll your Martial Arts die; you regain Hit Points equal to the number rolled plus your Wisdom modifier (minimum of 1 Hit Point regained).</p>
+      <p>You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
+    </description>
+    <sheet action="Bonus Action" usage="{{wholeness of body:uses}}/Long Rest">
+      <description>Regain 1d{{martial arts:dice}} + {{wisdom:modifier}} HP (min 1 HP).</description>
+    </sheet>
+    <rules>
+      <stat name="wholeness of body:uses" value="1" bonus="base" />
+      <stat name="wholeness of body:uses" value="wisdom:modifier" bonus="base" />
+    </rules>
+  </element>
+
+  <!-- LEVEL 11: FLEET STEP -->
+  <element name="Fleet Step" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_OPEN_HAND_FLEET_STEP">
+    <description>
+      <p><em>11th-level Warrior of the Open Hand feature</em></p>
+      <p>When you take a Bonus Action other than Step of the Wind, you can also use Step of the Wind immediately after that Bonus Action.</p>
+    </description>
+    <sheet>
+      <description>After you take a Bonus Action (other than Step of the Wind), you can immediately use Step of the Wind.</description>
+    </sheet>
+  </element>
+
+  <!-- LEVEL 17: QUIVERING PALM -->
+  <element name="Quivering Palm" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_OPEN_HAND_QUIVERING_PALM">
+    <description>
+      <p><em>17th-level Warrior of the Open Hand feature</em></p>
+      <p>You gain the ability to set up lethal vibrations in someone's body. When you hit a creature with an Unarmed Strike, you can expend 4 Focus Points to start these imperceptible vibrations, which last for a number of days equal to your Monk level. The vibrations are harmless unless you take an action to end them. Alternatively, when you take the Attack action on your turn, you can forgo one of the attacks to end the vibrations. To end them, you and the target must be on the same plane of existence. When you end them, the target must make a Constitution saving throw, taking 10d12 Force damage on a failed save or half as much damage on a successful one.</p>
+      <p>You can have only one creature under the effect of this feature at a time. You can end the vibrations harmlessly (no action required).</p>
+    </description>
+    <sheet>
+      <description>On Unarmed hit, expend 4 Focus Points. Within {{level:monk}} days, you can spend and action to force the target to make a CON Saving Throw. On a fail, the target takes 10d12 Force damages. Success halves. Alternatively, you can activate the effect foregoing an attack. The target must be on the same plane of existence. You can have only one creature under this effect at time. You can end the effect harmlessly (no action required).</description>
+    </sheet>
+  </element>
+</elements>
+
+
+

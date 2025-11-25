@@ -1,0 +1,394 @@
+﻿<elements>
+  <info>
+    <name>Monk</name>
+    <description>The Monk, updated to Player's Handbook (2024). Includes Monkâ€™s Focus (Focus Points), Uncanny Metabolism, Deflect Attacks/Energy, Stunning Strike (2024), Empowered Strikes, Acrobatic Movement, Heightened Focus, Self-Restoration, Disciplined Survivor, Perfect Focus, Superior Defense, Body and Mind. Subclass selector uses supports="MonkSubclass".</description>
+    <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+    <update version="1.0.0">
+        <file name="class-monk-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/class-monk-2024.xml" />
+    </update>
+  </info>
+
+  <!-- CLASS HEADER -->
+  <element name="Monk" type="Class" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_MONK">
+    <description>
+      <p>Monks use rigorous combat training and mental discipline to focus inner power into extraordinary, even supernatural, effects.</p>
+
+       <h5>Starting Equipment</h5>
+      <p>Choose A or B:</p>
+      <p class="indent"><strong>A)</strong> Spear; 5 Daggers; one set of Artisanâ€™s Tools or one Musical Instrument (matching your tool proficiency); Explorerâ€™s Pack; and 11 gp.</p>
+      <p class="indent"><strong>B)</strong> 50 gp.</p>
+
+      <h5 class="caption">Core Monk Traits</h5>
+      <table>
+        <tr><td><strong>Primary Ability</strong></td><td>Dexterity and Wisdom</td></tr>
+        <tr><td><strong>Hit Point Die</strong></td><td>d8 per Monk level</td></tr>
+        <tr><td><strong>Saving Throw Proficiencies</strong></td><td>Strength, Dexterity</td></tr>
+        <tr><td><strong>Skill Proficiencies</strong></td><td>Choose two: Acrobatics, Athletics, History, Insight, Religion, Stealth</td></tr>
+        <tr><td><strong>Weapon Proficiencies</strong></td><td>Simple weapons; Martial weapons that have the Light property</td></tr>
+        <tr><td><strong>Tool Proficiencies</strong></td><td>Choose one type of Artisanâ€™s Tools or one Musical Instrument</td></tr>
+        <tr><td><strong>Armor Training</strong></td><td>None</td></tr>
+      </table>
+
+      <h5 class="caption">Monk Features</h5>
+      <table class="class-features">
+        <thead>
+          <tr><td>Level</td><td>Proficiency Bonus</td><td>Class Features</td><td>Martial Arts</td><td>Focus Points</td><td>Unarmored Movement</td></tr>
+        </thead>
+        <tr><td>1</td><td>+2</td><td>Martial Arts, Unarmored Defense</td><td>1d6</td><td>â€”</td><td>â€”</td></tr>
+        <tr><td>2</td><td>+2</td><td>Monkâ€™s Focus, Unarmored Movement, Uncanny Metabolism</td><td>1d6</td><td>2</td><td>+10 ft.</td></tr>
+        <tr><td>3</td><td>+2</td><td>Deflect Attacks, Monk Subclass</td><td>1d6</td><td>3</td><td>+10 ft.</td></tr>
+        <tr><td>4</td><td>+2</td><td>Ability Score Improvement, Slow Fall</td><td>1d6</td><td>4</td><td>+10 ft.</td></tr>
+        <tr><td>5</td><td>+3</td><td>Extra Attack, Stunning Strike</td><td>1d8</td><td>5</td><td>+10 ft.</td></tr>
+        <tr><td>6</td><td>+3</td><td>Empowered Strikes, Subclass feature</td><td>1d8</td><td>6</td><td>+15 ft.</td></tr>
+        <tr><td>7</td><td>+3</td><td>Evasion</td><td>1d8</td><td>7</td><td>+15 ft.</td></tr>
+        <tr><td>8</td><td>+3</td><td>Ability Score Improvement</td><td>1d8</td><td>8</td><td>+15 ft.</td></tr>
+        <tr><td>9</td><td>+4</td><td>Acrobatic Movement</td><td>1d8</td><td>9</td><td>+15 ft.</td></tr>
+        <tr><td>10</td><td>+4</td><td>Heightened Focus, Self-Restoration</td><td>1d8</td><td>10</td><td>+20 ft.</td></tr>
+        <tr><td>11</td><td>+4</td><td>Subclass feature</td><td>1d10</td><td>11</td><td>+20 ft.</td></tr>
+        <tr><td>12</td><td>+4</td><td>Ability Score Improvement</td><td>1d10</td><td>12</td><td>+20 ft.</td></tr>
+        <tr><td>13</td><td>+5</td><td>Deflect Energy</td><td>1d10</td><td>13</td><td>+20 ft.</td></tr>
+        <tr><td>14</td><td>+5</td><td>Disciplined Survivor</td><td>1d10</td><td>14</td><td>+25 ft.</td></tr>
+        <tr><td>15</td><td>+5</td><td>Perfect Focus</td><td>1d10</td><td>15</td><td>+25 ft.</td></tr>
+        <tr><td>16</td><td>+5</td><td>Ability Score Improvement</td><td>1d10</td><td>16</td><td>+25 ft.</td></tr>
+        <tr><td>17</td><td>+6</td><td>Subclass feature</td><td>1d12</td><td>17</td><td>+25 ft.</td></tr>
+        <tr><td>18</td><td>+6</td><td>Superior Defense</td><td>1d12</td><td>18</td><td>+30 ft.</td></tr>
+        <tr><td>19</td><td>+6</td><td>Epic Boon</td><td>1d12</td><td>19</td><td>+30 ft.</td></tr>
+        <tr><td>20</td><td>+6</td><td>Body and Mind</td><td>1d12</td><td>20</td><td>+30 ft.</td></tr>
+      </table>
+    </description>
+
+    <setters>
+      <set name="short">A disciplined martial artist who focuses inner power into supernatural effects.</set>
+      <set name="hd">d8</set>
+    </setters>
+
+    <sheet display="false" />
+
+    <rules>
+      <!-- PROFICIENCY -->
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY"/>
+      <select name="Skill Proficiency (Monk)" type="Proficiency" supports="Skill, PHB24, Monk" number="2" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" supports="ID_INTERNAL_WEAPON_PROPERTY_LIGHT" optional="true" />
+      <select name="Tool Proficiency (Monk)" type="Proficiency" supports="Artisan tools||Musical Instrument" number="1" />
+
+      <!-- CLASS FEATURES -->
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_MARTIAL_ARTS" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_UNARMORED_DEFENSE" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_MONKS_FOCUS" level="2" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_UNARMORED_MOVEMENT" level="2" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_UNCANNY_METABOLISM" level="2" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_DEFLECT_ATTACKS" level="3" />
+      <select type="Archetype" name="Monk Subclass" supports="MonkSubclass" level="3" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_SLOW_FALL" level="4" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_MONK" level="4"/>
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_EXTRA_ATTACK" level="5" />
+      <!-- STUNNING STRIKE ICLUDED IN MONK'S FOCUS -->
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_EMPOWERED_STRIKES" level="6" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_EVASION" level="7" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_ACROBATIC_MOVEMENT" level="9" />
+      <!-- HEIGHTENED FOCUS INCLUDED IN MONK'S FOCUS -->
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_SELF_RESTORATION" level="10" />
+      <!--DEFLECT ENERGY INCLUDED IN DEFLECT ATTACKS -->
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_DISCIPLINED_SURVIVOR" level="14" />
+      <!-- PERFECT_FOCUS INCLUDED IN UNCANNY METABOLISM -->
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_SUPERIOR_DEFENCE" level="18" />
+      <select name="Epic Boon (Monk)" type="Feat" supports="Origin Feat||General Feat||Boon Feat" optional="true" level="19" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_BODY_AND_MIND" level="20" />
+    </rules>
+
+        <!-- MULTICLASS -->
+    <multiclass id="ID_WOTC_PHB24_MULTICLASS_MONK">
+      <prerequisite>Dexterity 13</prerequisite>
+      <requirements>[dex:13]</requirements>
+      <setters>
+        <set name="multiclass proficiencies">Simple weapons</set>
+      </setters>
+      <rules>
+        <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+        <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" supports="ID_INTERNAL_WEAPON_PROPERTY_LIGHT" optional="true" />
+      </rules>
+    </multiclass>
+  </element>
+
+
+    <!-- ABILITY SCORE IMPROVEMENTS -->
+    <element name="Ability Score Improvement" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_MONK">
+      <compendium display="false" />
+      <description>
+        <p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at levels 4, 8, 12, and 16.</p>
+      </description>
+      <sheet display="false" />
+      <rules>
+        <select name="Improvement Option (Monk 4)"  type="Class Feature" supports="Level Improvement" level="4" />
+        <select name="Improvement Option (Monk 8)"  type="Class Feature" supports="Level Improvement" level="8" />
+        <select name="Improvement Option (Monk 12)" type="Class Feature" supports="Level Improvement" level="12" />
+        <select name="Improvement Option (Monk 16)" type="Class Feature" supports="Level Improvement" level="16" />
+      </rules>
+    </element>
+
+  <!-- FEATURES -->
+
+  <element name="Martial Arts" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_MARTIAL_ARTS">
+    <description>
+      <p>While you arenâ€™t wearing armor or wielding a Shield, you gain special benefits with Unarmed Strikes and Monk weapons.</p>
+      <p class="indent"><strong>Martial Arts Damage.</strong> Your Unarmed Strike damage uses a Martial Arts die, shown in the Monk Features table.</p>
+      <p class="indent"><strong>Dexterous Strikes.</strong> You can use Dexterity instead of Strength for the attack and damage rolls of your Unarmed Strikes and Monk weapons.</p>
+      <p class="indent"><strong>Bonus Unarmed Strike.</strong> When you take the Attack action on your turn and attack with an Unarmed Strike or a Monk weapon, you can make one Unarmed Strike as a Bonus Action.</p>
+    </description>
+    <sheet>
+      <description>Your Unarmed Strike uses a Martial Arts die ({{martial arts:dice}}) and can use Dexterity for attack and damage. After the Attack action with an Unarmed Strike or a Monk weapon, make one Unarmed Strike as a Bonus Action.</description>
+    </sheet>
+    <rules>
+      <stat name="martial arts:dice" value="6" bonus="base" />
+      <stat name="martial arts:dice" value="8" bonus="base" level="5" />
+      <stat name="martial arts:dice" value="10" bonus="base" level="11" />
+      <stat name="martial arts:dice" value="12" bonus="base" level="17" />
+    </rules>
+  </element>
+
+  <element name="Unarmored Defense" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_UNARMORED_DEFENSE">
+    <description>
+      <p>While you arenâ€™t wearing armor or wielding a Shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier.</p>
+    </description>
+    <sheet>
+      <description>AC = 10 + DEX mod + WIS mod while not wearing armor or wielding a Shield.</description>
+    </sheet>
+    <rules>
+			<stat name="ac:unarmored defense monk:base" value="10" />
+			<stat name="ac:unarmored defense monk:dexterity" value="dexterity:modifier" />
+			<stat name="ac:unarmored defense monk:wisdom" value="wisdom:modifier" />
+
+			<stat name="ac:unarmored defense monk" value="ac:unarmored defense monk:base" />
+			<stat name="ac:unarmored defense monk" value="ac:unarmored defense monk:dexterity" />
+			<stat name="ac:unarmored defense monk" value="ac:unarmored defense monk:wisdom" />
+
+			<stat name="ac:calculation" value="ac:unarmored defense monk" bonus="calculation" equipped="[armor:none], [shield:none]" alt="Unarmored Defense (Monk)" />
+		</rules>
+
+  </element>
+
+  <element name="Monk's Focus" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_MONKS_FOCUS">
+    <description>
+      <p>Starting at 2nd level, you harness inner power through Focus Points that fuel certain Monk features.</p>
+      <p class="indent"><strong>Focus Points.</strong> You have a number of Focus Points equal to your Monk level. You regain all expended points when you finish a Short or Long Rest.</p>
+      <p class="indent"><strong>Focus Save DC.</strong> 8 + your proficiency bonus + your Wisdom modifier.</p>
+      <h6>FLURRY OF BLOWS</h6>
+      <p>You can expend 1 Focus Point to make two Unarmed Strikes as a Bonus Action.</p>
+      <h6>PATIENT DEFENSE</h6>
+      <p>You can take the Disengage action as a Bonus Action. Alternatively, you can expend 1 Focus Point to take both the Disengage and the Dodge actions as a Bonus Action.</p>
+      <h6>STEP OF THE WIND</h6>
+      <p>You can take the Dash action as a Bonus Action. Alternatively, you can expend 1 Focus Point to take both the Disengage and Dash actions as a Bonus Action; your jump distance is doubled for the turn.</p>
+    </description>
+    <sheet>
+      <description>You have {{monk:focus:points}} Focus Points; Focus DC {{monk:focus:dc}}. You gain the following features.</description>
+    </sheet>
+    <rules>
+      <grant type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_MONKS_FOCUS_FLURRY_BLOWS" />
+      <grant type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_MONKS_FOCUS_PATIENT_DEFENSE" />
+      <grant type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_MONKS_FOCUS_STEP_OF_THE_WIND" />
+      <grant type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_STUNNING_STRIKE" level="5" />
+      <stat name="monk:focus:points" value="level:monk" />
+      <stat name="monk:focus:dc" value="8" />
+      <stat name="monk:focus:dc" value="proficiency" />
+      <stat name="monk:focus:dc" value="wisdom:modifier" />
+    </rules>
+  </element>
+
+  <element name="Unarmored Movement" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_UNARMORED_MOVEMENT">
+    <description>
+      <p>While you arenâ€™t wearing armor or wielding a Shield, your Speed increases by the amount shown in the Monk Features table.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="unarmored movement:speed" value="10" bonus="base" level="2" />
+      <stat name="unarmored movement:speed" value="15" bonus="base" level="6" />
+      <stat name="unarmored movement:speed" value="20" bonus="base" level="10" />
+      <stat name="unarmored movement:speed" value="25" bonus="base" level="14" />
+      <stat name="unarmored movement:speed" value="30" bonus="base" level="18" />
+      <stat name="innate speed:misc" type="condition" value="unarmored movement:speed" equipped="[armor:none], [shield:none]" bonus="base" />
+    
+    </rules>
+  </element>
+
+  <element name="Uncanny Metabolism" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_UNCANNY_METABOLISM">
+    <description>
+      <p>When you roll Initiative, you can regain all expended Focus Points. When you do so, roll your Martial Arts die and regain Hit Points equal to your Monk level plus the number rolled. Once you use this feature, you canâ€™t use it again until you finish a Long Rest.</p>
+    </description>
+    <sheet action="On Initiative" usage="1/Long Rest">
+      <description level="2">Restore all Focus Points and regain 1d{{martial arts:dice}}+{{level:monk}} HP.</description>
+      <description level="15">Restore all Focus Points and regain 1d{{martial arts:dice}}+{{level:monk}} HP. If you don't use this feature, on initiative you regain expended Focus Points until you have 4 if you have 3 or fewer.</description>
+    </sheet>
+  </element>
+
+  <element name="Deflect Attacks" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_DEFLECT_ATTACKS">
+    <description>
+      <p>When an attack roll hits you and its damage includes Bludgeoning, Piercing, or Slashing damage, you can use a Reaction to reduce the attackâ€™s total damage by 1d10 + your Dexterity modifier + your Monk level.</p>
+      <p class="indent">If you reduce the damage to 0, you can expend 1 Focus Point to redirect some of the attackâ€™s force: choose a creature you can see within 5 feet of you (melee attack) or within 60 feet that isnâ€™t behind Total Cover (ranged attack). That creature must make a Dexterity saving throw against your Focus DC, taking damage equal to two rolls of your Martial Arts die + your Dexterity modifier on a failed save. The damage type matches the original attack.</p>
+    </description>
+    <sheet action="Reaction">
+      <description level="3">Reduce incoming Bludgeoning,Piercing and Slashing damage by 1d10+{{deflect attacks:damage:bonus}}. If reduced to 0, expend 1 Focus Point to force a DEX save (DC {{monk:focus:dc}}) on a target (5 ft melee / 60 ft ranged); on a fail it takes 2d{{martial arts:dice}} + {{dexterity:modifier}} of the attackâ€™s damage type.</description>
+      <description level="13">Reduce any type of incoming damage by 1d10+{{deflect attacks:damage:bonus}}. If reduced to 0, expend 1 Focus Point to force a DEX save (DC {{monk:focus:dc}}) on a target (5 ft melee / 60 ft ranged); on a fail it takes 2d{{martial arts:dice}} + {{dexterity:modifier}} of the attackâ€™s damage type.</description>
+    </sheet>
+    <rules>
+    <stat name="deflect attacks:damage:bonus" value="dexterity:modifier" />
+    <stat name="deflect attacks:damage:bonus" value="level:monk" />
+    </rules>
+  </element>
+
+  <element name="Slow Fall" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_SLOW_FALL">
+    <description>
+      <p>You can use your Reaction when you fall to reduce any falling damage you take by an amount equal to five times your Monk level.</p>
+    </description>
+    <sheet action="Reaction">
+      <description>Reduce falling damage by {{slow fall:damage:reduction}}.</description>
+    </sheet>
+    <rules>
+      <stat name="slow fall:damage:reduction" value="level:monk" />
+      <stat name="slow fall:damage:reduction" value="level:monk" />
+      <stat name="slow fall:damage:reduction" value="level:monk" />
+      <stat name="slow fall:damage:reduction" value="level:monk" />
+      <stat name="slow fall:damage:reduction" value="level:monk" />
+    </rules>
+  </element>
+
+  <element name="Extra Attack" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_EXTRA_ATTACK">
+    <description>
+      <p>When you take the Attack action on your turn, you can make one additional attack as part of that action.</p>
+    </description>
+    <sheet action="Attack Action">
+      <description>You can make 2 attacks.</description>
+    </sheet>
+    <rules>
+      <stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+    </rules>
+  </element>
+
+  <element name="Empowered Strikes" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_EMPOWERED_STRIKES">
+    <description>
+      <p>Whenever you deal damage with your Unarmed Strike, it can deal your choice of Force damage or its normal damage type.</p>
+    </description>
+    <sheet>
+      <description>Your Unarmed Strikes can deal Force damage instead of their normal type.</description>
+    </sheet>
+  </element>
+
+  <element name="Evasion" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_EVASION">
+    <description>
+      <p>When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage on a success and only half damage on a failure.</p>
+    </description>
+    <sheet>
+      <description>When you roll a DEX save to halve a damage: on a success = no damage; on a failure = half damage.</description>
+    </sheet>
+  </element>
+
+  <element name="Acrobatic Movement" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_ACROBATIC_MOVEMENT">
+    <description>
+      <p>While you arenâ€™t wearing armor or wielding a Shield, you can move along vertical surfaces and across liquids on your turn without falling during the movement.</p>
+    </description>
+    <sheet>
+      <description>Move along vertical surfaces and across liquids on your turn (no fall during the movement) while unarmored and without a Shield.</description>
+    </sheet>
+  </element>
+
+  <element name="Self-Restoration" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_SELF_RESTORATION">
+    <description>
+      <p>At the end of each of your turns, you can remove one of the following conditions from yourself: Charmed, Frightened, or Poisoned. In addition, forgoing food and drink doesnâ€™t give you levels of Exhaustion.</p>
+    </description>
+    <sheet>
+      <description>At the end of your turn: end Charmed, Frightened, or Poisoned on yourself. Forgoing food/drink doesnâ€™t cause Exhaustion.</description>
+    </sheet>
+  </element>
+
+  <element name="Disciplined Survivor" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_DISCIPLINED_SURVIVOR">
+    <description>
+      <p>You gain proficiency in all saving throws. Additionally, when you fail a saving throw, you can expend 1 Focus Point to reroll it; you must use the new roll.</p>
+    </description>
+    <sheet usage="Focus">
+      <description>On a failed Saving Throw, expend 1 Focus Point to reroll and use the new roll.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA"/>
+    </rules>
+  </element>
+
+  <element name="Perfect Focus" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_PERFECT_FOCUS">
+    <description>
+      <p>When you roll initiative and donâ€™t use Uncanny Metabolism, you regain expended Focus Points until you have 4 if you have 3 or fewer.</p>
+    </description>
+    <sheet>
+      <description>On initiative (if you donâ€™t use Uncanny Metabolism): restore Focus Points up to 4 if you had 3 or fewer.</description>
+    </sheet>
+  </element>
+
+  <element name="Superior Defense" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_SUPERIOR_DEFENCE">
+    <description>
+      <p>At the start of your turn, you can expend 3 Focus Points to bolster yourself for 1 minute or until you are Incapacitated. During that time, you have Resistance to all damage except Force.</p>
+    </description>
+    <sheet>
+      <description>At the start of your turn: expend 3 Focus Points to gain Resistance to all damage except Force for 1 minute (ends if you become Incapacitated).</description>
+    </sheet>
+  </element>
+
+  <element name="Body and Mind" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_BODY_AND_MIND">
+    <description>
+      <p>Your Dexterity and Wisdom scores each increase by 4, to a maximum of 25.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="dexterity:max" value="5" />
+      <stat name="wisdom:max" value="5" />
+      <stat name="dexterity" value="4" />
+      <stat name="wisdom" value="4" />
+    </rules>
+  </element>
+
+
+  <!-- MONK'S FOCUS FEATURES -->
+  <element name="â€¢ Flurry of Blows" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_MONKS_FOCUS_FLURRY_BLOWS">
+    <description>
+      <p>You can expend 1 Focus Point to make two Unarmed Strikes as a Bonus Action.</p>
+    </description>
+    <sheet action="Bonus Action">
+      <description level="2">Expend 1 Focus Point to make two Unarmed Strikes</description>
+      <description level="10">Expend 1 Focus Point to make three Unarmed Strikes</description>
+    </sheet>
+  </element>
+
+  <element name="â€¢ Patient Defense" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_MONKS_FOCUS_PATIENT_DEFENSE">
+    <description>
+      <p>You can take the Disengage action as a Bonus Action. Alternatively, you can expend 1 Focus Point to take both the Disengage and the Dodge actions as a Bonus Action.</p>
+    </description>
+    <sheet action="Bonus Action">
+      <description level="2">You take the Disengage Action. Expending 1 Focus Point, you take both Disengage and Dodge Action.</description>
+      <description level="10">You gain 2d{{martial arts:dice}} Temporary Hit Points. You take the Disengage Action. Expending 1 Focus Point, you take both Disengage and Dodge Action.</description>
+    </sheet>
+  </element>
+  
+  <element name="â€¢ Step of the Wind" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_MONKS_FOCUS_STEP_OF_THE_WIND">
+    <description>
+      <p>You can take the Dash action as a Bonus Action. Alternatively, you can expend 1 Focus Point to take both the Disengage and Dash actions as a Bonus Action, and your jump distance is doubled for the turn.</p>
+    </description>
+    <sheet action="Bonus Action">
+      <description level="2">You take the Dash Action. Expending 1 Focus Point, you take both Disengage and Dash Action, and your jump distance is doubled.</description>
+      <description level="10">You take the Dash Action. Expending 1 Focus Point, you take both Disengage and Dash Action, and your jump distance is doubled. You can bring with you a Large or smaller willing creature within 5ft of you, without provoking Opportunity Attacks.</description>
+    </sheet>
+  </element>
+
+  <element name="â€¢ Stunning Strike" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_STUNNING_STRIKE">
+    <description>
+      <p>Once per turn when you hit a creature with a Monk weapon or an Unarmed Strike, you can expend 1 Focus Point to force a Constitution saving throw (Focus DC). On a failed save, the target is Stunned until the start of your next turn. On a successful save, the targetâ€™s Speed is halved until the start of your next turn, and the next attack roll against it before then has Advantage.</p>
+    </description>
+    <sheet action="On a Hit" usage="1/Turn">
+      <description>You can expend 1 Focus Point to force a target to make a CON save (DC {{monk:focus:dc}}). On a fail: Stunned until your next turn starts. On a success: speed halved and your next attack vs it has Advantage.</description>
+    </sheet>
+  </element>
+</elements>
+
+

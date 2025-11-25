@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <update version="1.0.0">
+      <file name="class-warlock-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/class-warlock-2024.xml" />
+    </update>
+    <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+  </info>
+
+  <!-- ===================== WARLOCK (PHB 2024) ===================== -->
+  <element name="Warlock" type="Class" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_WARLOCK">
+    <description>
+      <h1>Warlock</h1>
+      <p>A wielder of pact magic bound to an otherworldly patron.</p>
+
+      <h3>Class Features</h3>
+      <p>As a Warlock, you gain the following class features.</p>
+
+      <h4>Hit Points</h4>
+      <p><strong>Hit Dice:</strong> 1d8 per Warlock level</p>
+      <p><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</p>
+      <p><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per Warlock level after 1st</p>
+
+      <h4>Proficiencies</h4>
+      <p><strong>Armor:</strong> Light</p>
+      <p><strong>Weapons:</strong> Simple weapons</p>
+      <p><strong>Tools:</strong> None</p>
+      <p><strong>Saving Throws:</strong> Wisdom, Charisma</p>
+      <p><strong>Skills:</strong> Choose two from Arcana, Deception, History, Intimidation, Investigation, Nature, Religion</p>
+
+      <h4>Equipment</h4>
+      <p>You start with the following equipment, in addition to the equipment granted by your background: a Light crossbow and 20 bolts or any Simple weapon; a Component pouch or an Arcane focus; a Scholarâ€™s pack or a Dungeoneerâ€™s pack; Leather armor and a Dagger.</p>
+
+      <h5 class="caption">THE WARLOCK</h5>
+      <table class="class-features">
+        <thead>
+          <tr>
+            <th>Lvl</th><th>Prof. Bonus</th><th class="left">Features</th>
+            <th>Invocations</th><th>Cantrips</th><th>Prepared Spells</th>
+            <th>Pact Slots</th><th>Slot Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td> 1</td><td>+2</td><td class="left">Pact Magic; Eldritch Invocations</td><td>1</td><td>2</td><td>2</td><td>1</td><td>1st</td></tr>
+          <tr><td> 2</td><td>+2</td><td class="left">Magical Cunning</td><td>3</td><td>2</td><td>3</td><td>2</td><td>1st</td></tr>
+          <tr><td> 3</td><td>+2</td><td class="left">Otherworldly Patron (Subclass)</td><td>3</td><td>2</td><td>4</td><td>2</td><td>2nd</td></tr>
+          <tr><td> 4</td><td>+2</td><td class="left">Ability Score Improvement</td><td>3</td><td>2</td><td>5</td><td>2</td><td>2nd</td></tr>
+          <tr><td> 5</td><td>+3</td><td class="left">â€”</td><td>5</td><td>3</td><td>6</td><td>2</td><td>3rd</td></tr>
+          <tr><td> 6</td><td>+3</td><td class="left">â€”</td><td>5</td><td>3</td><td>7</td><td>2</td><td>3rd</td></tr>
+          <tr><td> 7</td><td>+3</td><td class="left">â€”</td><td>6</td><td>3</td><td>8</td><td>2</td><td>4th</td></tr>
+          <tr><td> 8</td><td>+3</td><td class="left">Ability Score Improvement</td><td>6</td><td>3</td><td>9</td><td>2</td><td>4th</td></tr>
+          <tr><td> 9</td><td>+4</td><td class="left">Contact Patron</td><td>7</td><td>3</td><td>10</td><td>2</td><td>5th</td></tr>
+          <tr><td>10</td><td>+4</td><td class="left">â€”</td><td>7</td><td>4</td><td>11</td><td>2</td><td>5th</td></tr>
+          <tr><td>11</td><td>+4</td><td class="left">Mystic Arcanum (6th)</td><td>8</td><td>4</td><td>12</td><td>3</td><td>5th</td></tr>
+          <tr><td>12</td><td>+4</td><td class="left">Ability Score Improvement</td><td>8</td><td>4</td><td>12</td><td>3</td><td>5th</td></tr>
+          <tr><td>13</td><td>+5</td><td class="left">Mystic Arcanum (7th)</td><td>9</td><td>4</td><td>13</td><td>3</td><td>5th</td></tr>
+          <tr><td>14</td><td>+5</td><td class="left">â€”</td><td>9</td><td>4</td><td>13</td><td>3</td><td>5th</td></tr>
+          <tr><td>15</td><td>+5</td><td class="left">Mystic Arcanum (8th)</td><td>10</td><td>4</td><td>14</td><td>3</td><td>5th</td></tr>
+          <tr><td>16</td><td>+5</td><td class="left">Ability Score Improvement</td><td>10</td><td>4</td><td>14</td><td>3</td><td>5th</td></tr>
+          <tr><td>17</td><td>+6</td><td class="left">Mystic Arcanum (9th)</td><td>10</td><td>4</td><td>15</td><td>4</td><td>5th</td></tr>
+          <tr><td>18</td><td>+6</td><td class="left">â€”</td><td>10</td><td>4</td><td>15</td><td>4</td><td>5th</td></tr>
+          <tr><td>19</td><td>+6</td><td class="left">Epic Boon</td><td>10</td><td>4</td><td>15</td><td>4</td><td>5th</td></tr>
+          <tr><td>20</td><td>+6</td><td class="left">Eldritch Master</td><td>10</td><td>4</td><td>15</td><td>4</td><td>5th</td></tr>
+        </tbody>
+      </table>
+
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_PACT_MAGIC" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_ELDRITCH_INVOCATIONS" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_MAGICAL_CUNNING" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_SUBCLASS" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_ABILITYSCOREIMPROVEMENT" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_CONTACT_PATRON" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_MYSTIC_ARCANUM" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_EPIC_BOON" />
+      <div element="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_ELDRITCH_MASTER" />
+    </description>
+
+    <sheet display="false">
+      <description>A wielder of pact magic bound to an otherworldly patron.</description>
+    </sheet>
+
+    <setters>
+      <set name="short">A wielder of pact magic bound to an otherworldly patron.</set>
+      <set name="hd">d8</set>
+    </setters>
+
+    <!-- SINGLE RULES BLOCK -->
+    <rules>
+      <!-- Proficiencies -->
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA"/>
+      <select type="Proficiency" name="Skill Proficiency (Warlock)" supports="Skill, PHB24, Warlock" number="2" />
+
+      <!-- Features by level -->
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_PACT_MAGIC" level="1" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_ELDRITCH_INVOCATIONS" level="1" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_MAGICAL_CUNNING" level="2" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_SUBCLASS" level="3" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_ABILITYSCOREIMPROVEMENT" level="4" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_CONTACT_PATRON" level="9" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_MYSTIC_ARCANUM" level="11" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_EPIC_BOON" level="19" />
+      <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_ELDRITCH_MASTER" level="20" />
+      
+
+      <!-- Multiclass spell slot handling: Pact uses its own slots; still grant multiclass marker -->
+      <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+    </rules>
+
+    <!-- Pact Magic spellcasting (prepared, pact slots) -->
+    <spellcasting name="warlock" ability="Charisma" prepare="true" allowReplace="true">
+      <list>WarlockPHB24</list>
+    </spellcasting>
+    
+    <!-- Multiclassing -->
+    <multiclass id="ID_WOTC_PHB24_MULTICLASS_WARLOCK">
+			<prerequisite>Charisma 13</prerequisite>
+			<requirements>[cha:13]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Light armor, simple weapons</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS" />
+			</rules>
+		</multiclass>
+  </element>
+
+  <!-- ===================== FEATURES ===================== -->
+
+  <element name="Pact Magic" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_PACT_MAGIC">
+    <description>
+      <p>You can cast Warlock spells using Pact Magic. You prepare Warlock spells from the Warlock spell list. You regain all expended Pact Magic spell slots when you finish a Short or Long Rest.</p>
+      <h5>Prepared Spells of Level 1+</h5>
+      <p>You prepare Warlock spells for casting. The number of prepared spells increases with your Warlock level, as shown in the class table. When you finish a Long Rest, you can change your prepared list.</p>
+      <h5>Spellcasting Ability</h5>
+      <p>Charisma is your spellcasting ability for your Warlock spells.</p>
+      <center>
+        <p><strong>Spell Save DC</strong> = 8 + your proficiency bonus + your Charisma modifier</p>
+        <p><strong>Spell Attack Modifier</strong> = your proficiency bonus + your Charisma modifier</p>
+      </center>
+      <h5>Spellcasting Focus</h5>
+      <p>You can use an Arcane focus as a spellcasting focus for your Warlock spells.</p>
+    </description>
+    <sheet display="false" />
+    
+    <rules>
+      <!-- Pact Slots (total) -->
+      <stat name="warlock:spellcasting:slots:count" value="1" level="1"/>
+      <stat name="warlock:spellcasting:slots:count" value="1" level="2"/>
+      <stat name="warlock:spellcasting:slots:count" value="1" level="11"/>
+      <stat name="warlock:spellcasting:slots:count" value="1" level="17"/>
+
+      <!-- Pact slot level -->
+      <stat name="warlock:spellcasting:slot" value="1" level="1" />
+			<stat name="warlock:spellcasting:slot" value="1" level="3" />
+			<stat name="warlock:spellcasting:slot" value="1" level="5" />
+			<stat name="warlock:spellcasting:slot" value="1" level="7" />
+			<stat name="warlock:spellcasting:slot" value="1" level="9" />
+
+      <!-- Pact Slots (level per total) -->
+      <stat name="warlock:spellcasting:slots:1" value="warlock:spellcasting:slots:count" level="1" />
+			<stat name="warlock:spellcasting:slots:1" value="-warlock:spellcasting:slots:count" level="3" />
+			<stat name="warlock:spellcasting:slots:2" value="warlock:spellcasting:slots:count" level="3" />
+			<stat name="warlock:spellcasting:slots:2" value="-warlock:spellcasting:slots:count" level="5" />
+			<stat name="warlock:spellcasting:slots:3" value="warlock:spellcasting:slots:count" level="5" />
+			<stat name="warlock:spellcasting:slots:3" value="-warlock:spellcasting:slots:count" level="7" />
+			<stat name="warlock:spellcasting:slots:4" value="warlock:spellcasting:slots:count" level="7" />
+			<stat name="warlock:spellcasting:slots:4" value="-warlock:spellcasting:slots:count" level="9" />
+			<stat name="warlock:spellcasting:slots:5" value="warlock:spellcasting:slots:count" level="9" />
+
+      <!-- Prepared Spells (table increments to reach 15 at 20th) -->
+      <stat name="warlock:spellcasting:prepare" value="2" level="1"/>
+      <stat name="warlock:spellcasting:prepare" value="1" level="2"/>
+      <stat name="warlock:spellcasting:prepare" value="1" level="3"/>
+      <stat name="warlock:spellcasting:prepare" value="1" level="4"/>
+      <stat name="warlock:spellcasting:prepare" value="1" level="5"/>
+      <stat name="warlock:spellcasting:prepare" value="1" level="6"/>
+      <stat name="warlock:spellcasting:prepare" value="1" level="7"/>
+      <stat name="warlock:spellcasting:prepare" value="1" level="8"/>
+      <stat name="warlock:spellcasting:prepare" value="1" level="9"/>
+      <stat name="warlock:spellcasting:prepare" value="1" level="11"/>
+      <stat name="warlock:spellcasting:prepare" value="1" level="13"/>
+      <stat name="warlock:spellcasting:prepare" value="1" level="15"/>
+      <stat name="warlock:spellcasting:prepare" value="1" level="17"/>
+      <stat name="warlock:spellcasting:prepare" value="1" level="19"/>
+      
+      <!-- spell selection -->
+      <select type="Spell" name="Cantrip (Warlock)" supports="$(spellcasting:list),0" level="1" number="2" spellcasting="warlock" />
+			<select type="Spell" name="Cantrip (Warlock)" supports="$(spellcasting:list),0" level="4" spellcasting="warlock" />
+			<select type="Spell" name="Cantrip (Warlock)" supports="$(spellcasting:list),0" level="10" spellcasting="warlock" />
+
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="1" number="2" spellcasting="warlock"/>
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="2" number="1" spellcasting="warlock"/>
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" number="1" spellcasting="warlock"/>
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="4" number="1" spellcasting="warlock"/>
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="5" number="1" spellcasting="warlock"/>
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="6" number="1" spellcasting="warlock"/>
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" number="1" spellcasting="warlock"/>
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="8" number="1" spellcasting="warlock"/>
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="9" number="1" spellcasting="warlock"/>
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="11" number="1" spellcasting="warlock"/>
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" number="1" spellcasting="warlock"/>
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="15" number="1" spellcasting="warlock"/>
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="17" number="1" spellcasting="warlock"/>
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" number="1" spellcasting="warlock"/>  
+    </rules>
+  </element>
+
+  <element name="Eldritch Invocations" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_ELDRITCH_INVOCATIONS">
+    <description>
+      <p>You gain Eldritch Invocationsâ€”mystical effects fueled by your pact. You learn additional invocations as shown in the class table. You can choose the same invocation more than once only if it says so, and you must meet any prerequisites.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <!-- Eldritch Invocations: add incremental selects to match the table totals -->
+      <select type="Class Feature" name="Eldritch Invocation (Warlock 1)"  supports="EldritchInvocationPHB24" level="1"  number="1"/>
+      <select type="Class Feature" name="Eldritch Invocations (Warlock 2)" supports="EldritchInvocationPHB24" level="2"  number="2"/>
+      <select type="Class Feature" name="Eldritch Invocations (Warlock 5)" supports="EldritchInvocationPHB24" level="5"  number="2"/>
+      <select type="Class Feature" name="Eldritch Invocation (Warlock 7)"  supports="EldritchInvocationPHB24" level="7"  number="1"/>
+      <select type="Class Feature" name="Eldritch Invocation (Warlock 9)"  supports="EldritchInvocationPHB24" level="9"  number="1"/>
+      <select type="Class Feature" name="Eldritch Invocation (Warlock 12)" supports="EldritchInvocationPHB24" level="12" number="1"/>
+      <select type="Class Feature" name="Eldritch Invocation (Warlock 15)" supports="EldritchInvocationPHB24" level="15" number="1"/>
+      <select type="Class Feature" name="Eldritch Invocation (Warlock 18)" supports="EldritchInvocationPHB24" level="18" number="1"/>
+    </rules>
+  </element>
+
+  <element name="Magical Cunning" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_MAGICAL_CUNNING">
+    <description>
+      <p>You can perform an esoteric rite for 1 minute. At the end of it, you regain expended Pact Magic spell slots but no more than a number equal to half your maximum (round up). Once you use this feature, you can't do so again until you finish a Long Rest.</p>
+    </description>
+    <sheet usage="1/Long Rest">
+      <description>You perform a 1 minute ritual to ragain up to {{magical cunning:slot}} expended Pact Magic slots.</description>
+    </sheet>
+    <rules>
+      <stat name="magical cunning:slot" value="1" level="1" />
+      <stat name="magical cunning:slot" value="1" level="11" />
+      <stat name="magical cunning:slot" value="2" level="20" />
+    </rules>
+  </element>
+
+  <element name="Warlock Subclass" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_SUBCLASS">
+    <description>
+      <p>At 3rd level, choose a Warlock subclass (Otherworldly Patron). You gain its features at the Warlock levels noted in the subclass.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select type="Archetype" name="Warlock Subclass" supports="WarlockSubclass" level="3" />
+    </rules>
+  </element>
+
+  <element name="Ability Score Improvement" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_ABILITYSCOREIMPROVEMENT">
+    <description>
+      <p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify (at Warlock 4, 8, 12, 16).</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select name="Improvement Option (Warlock 4)"  type="Class Feature" supports="Level Improvement" level="4" />
+      <select name="Improvement Option (Warlock 8)"  type="Class Feature" supports="Level Improvement" level="8" />
+      <select name="Improvement Option (Warlock 12)" type="Class Feature" supports="Level Improvement" level="12" />
+      <select name="Improvement Option (Warlock 16)" type="Class Feature" supports="Level Improvement" level="16" />
+    </rules>
+  </element>
+
+  <element name="Contact Patron" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_CONTACT_PATRON">
+    <description>
+      <p>You can beseech your patron for insight. The featureâ€™s effects and usage are described in the class.</p>
+    </description>
+    <sheet usage="1/Long Rest">
+      <description>You can cast the Contact Other Plane spell to contact your patreon, without expending a spell slot and automatically succeeding.  </description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB24_SPELL_CONTACT_OTHER_PLANE" spellcasting="warlock" />
+    </rules>
+  </element>
+
+  <element name="Mystic Arcanum" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_MYSTIC_ARCANUM">
+    <description>
+      <p>Your patron grants you a magical secret called an arcanum. Choose one level 6 Warlock spell as this arcanum.</p>
+      <p class="indent">You can cast your arcanum spell once without expending a spell slot, and you must finish a Long Rest before you can cast it in this way again.</p>
+      <p class="indent">As shown in the Warlock Features table, you gain another Warlock spell of your choice that can be cast in this way when you reach Warlock levels 13 (level 7 spell), 15 (level 8 spell), and 17 (level 9 spell). You regain all uses of your Mystic Arcanum when you finish a Long Rest.</p>
+      <p class="indent">Whenever you gain a Warlock level, you can replace one of your arcanum spells with another Warlock spell of the same level.</p>
+    </description>
+    <sheet usage="1/Long Rest">
+      <description>You can cast each Arcanum spells without expending a spell slot.</description>
+    </sheet>
+    <spellcasting name="Mistic Arcaneum" ability="Charisma" prepare="true" allowReplace="true">
+      <list>WarlockPHB24</list>
+    </spellcasting>
+    <rules>
+      <stat name="Mistic Arcaneum:spellcasting:slot" value="5" level="11" />
+      <select name="Mistic Arcanum (11th level)" type="Spell" supports="$(spellcasting:list),(1||2||3||4||5)" spellcasting="Mistic Arcaneum" number="1" level="11" />
+      <select name="Mistic Arcanum (13th level)" type="Spell" supports="$(spellcasting:list),(1||2||3||4||5)" spellcasting="Mistic Arcaneum" number="1" level="13" />
+      <select name="Mistic Arcanum (15th level)" type="Spell" supports="$(spellcasting:list),(1||2||3||4||5)" spellcasting="Mistic Arcaneum" number="1" level="15" />
+      <select name="Mistic Arcanum (17th level)" type="Spell" supports="$(spellcasting:list),(1||2||3||4||5)" spellcasting="Mistic Arcaneum" number="1" level="17" />
+    </rules>
+  </element>
+
+  <element name="Epic Boon" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_EPIC_BOON">
+    <description>
+      <p>You gain an Epic Boon feat (see chapter 5) or another feat of your choice for which you qualify.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select name="Epic Boon (Warlock 19)" type="Feat" supports="Origin Feat||General Feat||Boon Feat" level="19" />
+    </rules>
+  </element>
+
+  <element name="Eldritch Master" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_ELDRITCH_MASTER">
+    <description>
+      <p>When you use your Magical Cunning feature, you regain all your expended Pact Magic spell slots.</p>
+    </description>
+    <sheet display="false" />
+  </element>
+</elements>
+
+
+

@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <update version="1.0.0">
+      <file name="paladin-ancients-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/paladin-ancients-2024.xml" />
+    </update>
+    <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+  </info>
+
+  <!-- ===================== OATH OF THE ANCIENTS (PHB 2024) ===================== -->
+  <element name="Oath of the Ancients" type="Archetype" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_PALADIN_ARCHETYPE_ANCIENTS">
+    <supports>PaladinSubclass</supports>
+    <description>
+      <h1>Oath of the Ancients</h1>
+      <p>Preserve life and light in the world.</p>
+
+      <h3>Subclass Features</h3>
+      <p>When you choose this oath at 3rd level, you gain the following features.</p>
+
+      <div element="ID_WOTC_PHB24_PALADIN_ANCIENTS_FEATURE_NATURES_WRATH" />
+      <div element="ID_WOTC_PHB24_PALADIN_ANCIENTS_FEATURE_OATH_SPELLS" />
+      <div element="ID_WOTC_PHB24_PALADIN_ANCIENTS_FEATURE_AURA_OF_WARDING" />
+      <div element="ID_WOTC_PHB24_PALADIN_ANCIENTS_FEATURE_UNDYING_SENTINEL" />
+      <div element="ID_WOTC_PHB24_PALADIN_ANCIENTS_FEATURE_ELDER_CHAMPION" />
+    </description>
+
+    <sheet display="false" />
+    <rules>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_PALADIN_ANCIENTS_FEATURE_NATURES_WRATH" level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_PALADIN_ANCIENTS_FEATURE_OATH_SPELLS"   level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_PALADIN_ANCIENTS_FEATURE_AURA_OF_WARDING" level="7" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_PALADIN_ANCIENTS_FEATURE_UNDYING_SENTINEL" level="15" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_PALADIN_ANCIENTS_FEATURE_ELDER_CHAMPION"   level="20" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 3: Natureâ€™s Wrath (Channel Divinity) ===== -->
+  <element name="Natureâ€™s Wrath" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_PALADIN_ANCIENTS_FEATURE_NATURES_WRATH">
+    <description>
+      <p><strong>Magic Action; Channel Divinity.</strong> You conjure spectral vines. Each creature of your choice that you can see within 15 feet of yourself must succeed on a Strength saving throw or gain the Restrained condition for 1 minute. A restrained creature repeats the save at the end of each of its turns, ending the effect on a success.</p>
+    </description>
+    <sheet action="Magic Action" usage="Channel Divinity">
+      <description>Each chosen creature within 15 ft makes shall pass a STR Saving Throw (DC {{paladin:spellcasting:dc}}) or suffer the Restrained condition for 1 minute; repeats save at end of each turn.</description>
+    </sheet>
+  </element>
+
+  <!-- ===== Level 3: Oath Spells (always prepared) ===== -->
+  <element name="Oath of the Ancients Spells" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_PALADIN_ANCIENTS_FEATURE_OATH_SPELLS">
+    <description>
+      <p>The magic of your oath ensures you always have certain spells ready; when you reach a Paladin level specified in the Oath of the Ancients Spells table, you thereafter always have the listed spells prepared.</p>
+      <table>
+        <thead><tr><th>Paladin Level</th><th>Spells</th></tr></thead>
+        <tbody>
+          <tr><td>3</td><td><em>Ensnaring Strike</em>, <em>Speak with Animals</em></td></tr>
+          <tr><td>5</td><td><em>Misty Step</em>, <em>Moonbeam</em></td></tr>
+          <tr><td>9</td><td><em>Plant Growth</em>, <em>Protection from Energy</em></td></tr>
+          <tr><td>13</td><td><em>Ice Storm</em>, <em>Stoneskin</em></td></tr>
+          <tr><td>17</td><td><em>Commune with Nature</em>, <em>Tree Stride</em></td></tr>
+        </tbody>
+      </table>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <!-- Level 3 -->
+      <grant type="Spell" id="ID_PHB24_SPELL_ENSNARING_STRIKE" prepared="true" spellcasting="Paladin" level="3"/>
+      <grant type="Spell" id="ID_PHB24_SPELL_SPEAK_WITH_ANIMALS" prepared="true" spellcasting="Paladin" level="3"/>
+
+      <!-- Level 5 -->
+      <grant type="Spell" id="ID_PHB24_SPELL_MISTY_STEP" prepared="true" spellcasting="Paladin" level="5"/>
+      <grant type="Spell" id="ID_PHB24_SPELL_MOONBEAM" prepared="true" spellcasting="Paladin" level="5"/>
+
+      <!-- Level 9 -->
+      <grant type="Spell" id="ID_PHB24_SPELL_PLANT_GROWTH" prepared="true" spellcasting="Paladin" level="9"/>
+      <grant type="Spell" id="ID_PHB24_SPELL_PROTECTION_FROM_ENERGY" prepared="true" spellcasting="Paladin" level="9"/>
+
+      <!-- Level 13 -->
+      <grant type="Spell" id="ID_PHB24_SPELL_ICE_STORM" prepared="true" spellcasting="Paladin" level="13"/>
+      <grant type="Spell" id="ID_PHB24_SPELL_STONESKIN" prepared="true" spellcasting="Paladin" level="13"/>
+
+      <!-- Level 17 -->
+      <grant type="Spell" id="ID_PHB24_SPELL_COMMUNE_WITH_NATURE" prepared="true" spellcasting="Paladin" level="17"/>
+      <grant type="Spell" id="ID_PHB24_SPELL_TREE_STRIDE" prepared="true" spellcasting="Paladin" level="17"/>
+    </rules>
+  </element>
+
+  <!-- ===== Level 7: Aura of Warding ===== -->
+  <element name="Aura of Warding" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_PALADIN_ANCIENTS_FEATURE_AURA_OF_WARDING">
+    <description>
+      <p>Ancient magic forms an eldritch ward; you and your allies have Resistance to Necrotic, Psychic, and Radiant damage while in your Aura of Protection.</p>
+    </description>
+    <sheet>
+      <description>Within your Aura of Protection: you and allies have Resistance to Necrotic, Psychic, and Radiant damage.</description>
+    </sheet>
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 15: Undying Sentinel ===== -->
+  <element name="Undying Sentinel" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_PALADIN_ANCIENTS_FEATURE_UNDYING_SENTINEL">
+    <description>
+      <p>When you are reduced to 0 Hit Points and not killed outright, you can drop to 1 Hit Point instead, and you regain Hit Points equal to three times your Paladin level. Once you use this feature, you canâ€™t use it again until you finish a Long Rest. In addition, you canâ€™t be aged magically, and you cease visibly aging.</p>
+    </description>
+    <sheet usage="1/Long Rest">
+      <description>When reduced to 0 HP but not killed outright, drop to 1 HP and regain {{undying sentinel}} HP. Moreover you are immune to magical aging and cease visible aging.</description>
+    </sheet>
+    <rules>
+      <stat name="undying sentinel" value="level:paladin" />
+      <stat name="undying sentinel" value="level:paladin" />
+      <stat name="undying sentinel" value="level:paladin" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 20: Elder Champion ===== -->
+  <element name="Elder Champion" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_PALADIN_ANCIENTS_FEATURE_ELDER_CHAMPION">
+    <description>
+      <p><strong>Bonus Action.</strong> You imbue your Aura of Protection with primal power for 1 minute or until you end the effect (no action required). Once you use this feature, you canâ€™t use it again until you finish a Long Rest; you can also restore a use by expending a 5th-level spell slot (no action required).</p>
+      <ul>
+        <li><strong>Diminish Defiance.</strong> Enemies in the aura have Disadvantage on saving throws against your spells and Channel Divinity options.</li>
+        <li><strong>Regeneration.</strong> At the start of each of your turns, you regain 10 Hit Points.</li>
+        <li><strong>Swift Spells.</strong> When you cast a spell with a casting time of an action, you can cast it using a Bonus Action instead.</li>
+      </ul>
+    </description>
+    <sheet action="Bonus Action" usage="1/Long Rest">
+      <description>For 1 minute your Aura gains the following benefits: enemies has Disadvantage on saves vs your spells and Channel Divinity. You regain 10 HP at start of each turn. Your spells with Action casting time can be cast as a Bonus Action. You can also restore one use by expending a 5th-level spell slot.</description>
+    </sheet>
+  </element>
+</elements>
+
+
+

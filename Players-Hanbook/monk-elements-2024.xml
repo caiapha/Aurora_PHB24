@@ -1,0 +1,89 @@
+﻿<elements>
+  <info>
+    <name>Monk â€” Warrior of the Elements</name>
+    <description>Monk subclass from Player's Handbook (2024): Elemental Attunement, Manipulate Elements (Elementalism), Elemental Burst, Stride of the Elements, Elemental Epitome.</description>
+    <author>Aurora</author>
+    <update version="1.0.0">
+      <file name="monk-elements-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/monk-elements-2024.xml" />
+    </update>
+    <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+  </info>
+
+  <!-- SUBCLASS ROOT -->
+  <element name="Warrior of the Elements" type="Archetype" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_MONK_ELEMENTS">
+    <supports>MonkSubclass</supports>
+    <description>
+      <p>Warriors of the Elements tap into the power of the Elemental Planes, momentarily taming that energy to empower their bodies and techniques.</p>
+      <div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_ATTUNEMENT" />
+      <div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_MANIPULATE_ELEMENTS" />
+      <div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_BURST" />
+      <!-- STRIDE_OF_THE_ELEMENTS INCLUDED IN ELEMENTAL ATTUNEMENT -->
+      <div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_EPITOME" />
+    </description>
+    <sheet display="false" />
+    <rules>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_ATTUNEMENT" level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_MANIPULATE_ELEMENTS" level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_BURST" level="6" />
+      <!-- STRIDE_OF_THE_ELEMENTS INCLUDED IN ELEMENTAL ATTUNEMENT -->
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_EPITOME" level="17" />
+    </rules>
+  </element>
+
+  <!-- 3RD: ELEMENTAL ATTUNEMENT -->
+  <element name="Elemental Attunement" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_ATTUNEMENT">
+    <description>
+      <p><em>3rd-level Warrior of the Elements feature</em></p>
+      <p>At the start of your turn, you can expend 1 Focus Point to imbue yourself with elemental energy for 10 minutes or until you have the Incapacitated condition. While active, you gain the following benefits:</p>
+      <p class="indent"><strong>Reach.</strong> Your Unarmed Strikeâ€™s reach increases by 10 feet, as elemental energy extends from you.</p>
+      <p class="indent"><strong>Elemental Strikes.</strong> When you hit with an Unarmed Strike, you can have it deal Acid, Cold, Fire, Lightning, or Thunder damage instead of its normal type. When you deal one of these types with it, you can also force the target to make a Strength saving throw (DC {{monk:focus:dc}}). On a failed save, you move the target up to 10 feet toward or away from you.</p>
+    </description>
+    <sheet usage="Focus">
+      <description>At the start of your turn, expend 1 Focus Point. For 10 minutes (ends if Incapacitated): Unarmed reach +10 ft; your Unarmed Strikes can deal Acid/Cold/Fire/Lightning/Thunder. On a hit, the target makes a STR save (DC {{monk:focus:dc}}) or you move it up to 10 ft toward/away.</description>
+      <description level="11">At the start of your turn, expend 1 Focus Point. For 10 minutes (ends if Incapacitated): Unarmed reach +10 ft; your Unarmed Strikes can deal Acid/Cold/Fire/Lightning/Thunder. On a hit, the target makes a STR save (DC {{monk:focus:dc}}) or you move it up to 10 ft toward/away. You have also a Fly Speed and a Swim Speed equal to your Speed.</description>
+    </sheet>
+  </element>
+
+  <!-- 3RD: MANIPULATE ELEMENTS -->
+  <element name="Manipulate Elements" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_MANIPULATE_ELEMENTS">
+    <description>
+      <p><em>3rd-level Warrior of the Elements feature</em></p>
+      <p>You know the <em>Elementalism</em> cantrip. Wisdom is your spellcasting ability for it.</p>
+    </description>
+    <sheet>
+      <description>You know the Elementalism cantrip; WIS is your spellcasting ability for it.</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB24_SPELL_ELEMENTALISM" prepared="true" />
+    </rules>
+  </element>
+
+  <!-- 6TH: ELEMENTAL BURST -->
+  <element name="Elemental Burst" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_BURST">
+    <description>
+      <p><em>6th-level Warrior of the Elements feature</em></p>
+      <p>As a Magic action, you can expend 2 Focus Points to cause elemental energy to burst in a 20-foot-radius Sphere centered on a point within 120 feet of you. Choose Acid, Cold, Fire, Lightning, or Thunder.</p>
+      <p class="indent">Each creature in the Sphere must make a Dexterity saving throw. On a failed save, the creature takes damage of the chosen type equal to three rolls of your Martial Arts die; on a successful save, it takes half as much damage.</p>
+    </description>
+    <sheet action="Magic Action">
+      <description>Expend 2 Focus Points: you create a 20-ft-radius Sphere within 120 ft; creatures in the sphere make a DEX save (DC {{monk:focus:dc}}). On a fail suffer 3d{{martial arts:dice}} Acid, Cold, Fire, Lightning, or Thunde damage; on a success halve.</description>
+    </sheet>
+  </element>
+
+  <!-- 17TH: ELEMENTAL EPITOME -->
+  <element name="Elemental Epitome" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_MONK_ELEMENTS_ELEMENTAL_EPITOME">
+    <description>
+      <p><em>17th-level Warrior of the Elements feature</em></p>
+      <p>While your Elemental Attunement is active, you also gain these benefits:</p>
+      <p class="indent"><strong>Damage Resistance.</strong> You have Resistance to one of the following damage types (your choice): Acid, Cold, Fire, Lightning, or Thunder. At the start of each of your turns, you can change this choice.</p>
+      <p class="indent"><strong>Destructive Stride.</strong> When you use your Step of the Wind, your Speed increases by 20 feet until the end of the turn. For that duration, each creature of your choice takes damage equal to one roll of your Martial Arts die when you enter a space within 5 feet of it (once per creature per turn). The damage type is Acid, Cold, Fire, Lightning, or Thunder (your choice).</p>
+      <p class="indent"><strong>Empowered Strikes.</strong> Once on each of your turns, when you hit a creature with an Unarmed Strike, you deal extra damage equal to one roll of your Martial Arts die of the same type dealt by that strike.</p>
+    </description>
+    <sheet>
+      <description>While Attunement is active: you gain Acid/Cold/Fire/Lightning/Thunder Resistance (choose one); you can change it at the start of each turn. When you use Step of the Wind, Speed +20 ft and any creatures of your choice you pass within 5 ft, takes 1d{{martial arts:dice}} damage (type chosen); each creature can take this damage once/turn. Moreover,once per turn on a hit with Unarmed Strike, add 1d{{martial arts:dice}} of the same damage type.</description>
+    </sheet>
+  </element>
+</elements>
+
+
+

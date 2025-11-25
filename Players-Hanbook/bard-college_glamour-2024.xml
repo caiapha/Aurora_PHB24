@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<title>The College of Glamour Bard subclass</title>
+    <update version="1.0.0">
+		<file name="bard-college_glamour-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/bard-college_glamour-2024.xml" />
+		</update>
+		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+	</info>
+
+	<!-- College of Glamour Subclass -->
+	<element name="College of Glamour" type="Archetype" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_COLLEGE_OF_GLAMOUR">
+		<supports>Bard subclass</supports>
+		<description>
+			<p>The College of Glamour traces its origins to the beguiling magic of the Feywild. Bards who study this magic weave threads of beauty and terror into their songs and stories, and the mightiest among them can cloak themselves in otherworldly majesty. Their performances stir up wistful longing for forgotten innocence, evoke unconscious memories of long-held fears, and tug at the emotions of even the most hard-hearted listeners.</p>	
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_BEGUILING_MAGIC" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_MANTLE_OF_INSPIRATION" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_MANTLE_OF_MAJESTY" />
+			<div element="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_UNBREAKABLE_MAJESTY" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_BEGUILING_MAGIC" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_MANTLE_OF_INSPIRATION" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_MANTLE_OF_MAJESTY" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_UNBREAKABLE_MAJESTY" level="14" /> 
+		</rules>
+	</element>
+	<element name="Beguiling Magic" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_BEGUILING_MAGIC">
+		<description>
+			<p>Starting at 3rd level, you always have the Charm Person and Mirror Image spells prepared.</p>
+			<p class="indent">In addition, immediately after you cast an Enchantment or Illusion spell using a spell slot, you can cause a creature you can see within 60 feet of yourself to make a Wisdom saving throw against your spell save DC. On a failed save, the target has the Charmed or Frightened condition (your choice) for 1 minute. The target repeats the save at the end of each of its turns, ending the effect on itself on a success.</p>    
+		  <p class="indent">Once you use this benefit, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending one use of your Bardic Inspiration (no action required).</p>
+    </description>
+		<sheet usage="1/Long Rest">
+			<description>You always have the Charm Person and Mirror Image spells prepared. In addition, immediately after you cast an Enchantment or Illusion spell, you can force a creature within 60ft form you to make a WIS Saving Throw DC{{beguiling:dc}}. On a fail, the creature suffers the Charmed or Frightened condition (your choice) for 1 minute. The target repeats the save at the end of each of its turns, ending the effect on itself on a success. You can restore a use expending a Bardic Inspiration (no action required).</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB24_SPELL_CHARM_PERSON" spellcasting="Bard" prepared="true" />
+			<grant type="Spell" id="ID_PHB24_SPELL_MIRROR_IMAGE" spellcasting="Bard" prepared="true" />
+			<stat name="beguiling:dc" value="8" />
+			<stat name="beguiling:dc" value="proficiency" />
+			<stat name="beguiling:dc" value="charisma:modifier" />
+		</rules>
+	</element> 
+	<element name="Mantle of Inspiration" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_MANTLE_OF_INSPIRATION">
+		<description>
+			<p>Starting at 3rd level, You can weave fey magic into a song or dance to fill others with vigor. As a Bonus Action, you can expend a use of Bardic Inspiration, rolling a Bardic Inspiration die. When you do so, choose a number of other creatures within 60 feet of yourself, up to a number equal to your Charisma modifier (minimum of one creature). Each of those creatures gains a number of Temporary Hit Points equal to two times the number rolled on the Bardic Inspiration die, and then each can use its Reaction to move up to its Speed without provoking Opportunity Attacks.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can spend a Bardic Inspiration and roll the related die. Up to {{mantle:target}} creatures of your choice within 60ft from you gain temporary Hit Points equal twice the number rolled and, expending their Reaction, can move up to their speed without provoking Opportunity Attacks.</description>
+		</sheet>
+		<rules>
+			<stat name="mantle:target" value="1" bonus="base" />
+			<stat name="mantle:target" value="charisma:modifier" bonus="base" />
+		</rules>		
+	</element>
+	<element name="Mantle of Majesty" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_MANTLE_OF_MAJESTY">
+		<description>
+			<p>Starting at 6th level, you always have the Command spell prepared.</p>
+			<p class="indent">As a Bonus Action, you cast Command without expending a spell slot, and you take on an unearthly appearance for 1 minute or until your Concentration ends. During this time, you can cast Command as a Bonus Action without expending a spell slot.</p>
+			<p class="indent">Any creature Charmed by you automatically fails its saving throw against the Command you cast with this feature.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 3+ spell slot (no action required).</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>You have Command always prepared. For one minute, or until your concentration ends, you can cast Command as a Bonus Action without expending a spell slot. In addition, any creature Charmed by you automatically fails the saving throw against the Command you cast with this feature. You can restore a use expending a level 3+ spell slot (no action required).</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB24_SPELL_COMMAND" spellcasting="Bard" prepared="true" />
+		</rules>
+	</element>
+	<element name="Unbreakable Majesty" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_COLLEGE_GLAMOUR_UNBREAKABLE_MAJESTY">
+		<description>
+			<p>Starting at 14th level, as a Bonus Action, you can assume a magically majestic presence for 1 minute or until you have the Incapacitated condition. For the duration, whenever any creature hits you with an attack roll for the first time on a turn, the attacker must succeed on a Charisma saving throw against your spell save DC, or the attack misses instead, as the creature recoils from your majesty.</p>
+			<p class="indent">Once you assume this majestic presence, you can't do so again until you finish a Short or Long Rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short Rest">
+			<description>For one minute, or until you are Incapacitated, whenever a creature hits you with an attack roll for the first time on a turn, it must succeed on a CHA Saving Throw DC{{majesty:dc}} or miss the attack.</description>
+		</sheet>
+		<rules>
+			<stat name="majesty:dc" value="8" />
+			<stat name="majesty:dc" value="proficiency" />
+			<stat name="majesty:dc" value="charisma:modifier" />
+		</rules>
+	</element>
+</elements>
+
+
+

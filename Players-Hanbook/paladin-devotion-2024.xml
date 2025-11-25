@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <update version="1.0.0">
+      <file name="paladin-devotion-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/paladin-devotion-2024.xml" />
+    </update>
+    <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
+  </info>
+
+  <!-- ===================== OATH OF DEVOTION (PHB 2024) ===================== -->
+  <element name="Oath of Devotion" type="Archetype" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_PALADIN_ARCHETYPE_DEVOTION">
+    <supports>PaladinSubclass</supports>
+    <description>
+      <h1>Oath of Devotion</h1>
+      <p>Uphold the ideals of justice and order.</p>
+
+      <h3>Subclass Features</h3>
+      <p>When you choose this oath at 3rd level, you gain the following features.</p>
+
+      <div element="ID_WOTC_PHB24_PALADIN_DEVOTION_FEATURE_SACRED_WEAPON" />
+      <div element="ID_WOTC_PHB24_PALADIN_DEVOTION_FEATURE_OATH_SPELLS" />
+      <div element="ID_WOTC_PHB24_PALADIN_DEVOTION_FEATURE_AURA_OF_DEVOTION" />
+      <div element="ID_WOTC_PHB24_PALADIN_DEVOTION_FEATURE_SMITE_OF_PROTECTION" />
+      <div element="ID_WOTC_PHB24_PALADIN_DEVOTION_FEATURE_HOLY_NIMBUS" />
+    </description>
+
+    <sheet display="false" />
+    <rules>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_PALADIN_DEVOTION_FEATURE_SACRED_WEAPON" level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_PALADIN_DEVOTION_FEATURE_OATH_SPELLS" level="3" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_PALADIN_DEVOTION_FEATURE_AURA_OF_DEVOTION" level="7" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_PALADIN_DEVOTION_FEATURE_SMITE_OF_PROTECTION" level="15" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB24_PALADIN_DEVOTION_FEATURE_HOLY_NIMBUS" level="20" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 3: Sacred Weapon (Channel Divinity) ===== -->
+  <element name="Sacred Weapon" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_PALADIN_DEVOTION_FEATURE_SACRED_WEAPON">
+    <description>
+      <p><strong>Magic Action; Channel Divinity.</strong> When you take the Attack action, you can expend one use of Channel Divinity to imbue one Melee weapon you are holding with positive energy for 10 minutes or until you use this feature again. For the duration, add your Charisma modifier to attack rolls you make with that weapon (minimum +1), and each time you hit with it you can have it deal its normal damage type or Radiant damage.</p>
+      <p class="indent">The weapon also emits Bright Light in a 20-foot radius and Dim Light 20 feet beyond that. You can end this effect early (no action required). The effect ends if you are not carrying the weapon.</p>
+    </description>
+    <sheet action="Attack Action" usage="Channel Divinity">
+      <description>Imbue one Melee weapon for 10 minutes: add {{sacred weapon:bonus}} to attack rolls; on hit choose normal type or Radiant Damages. Emits Bright Light 20 ft and Dim Light 20 ft beyond. End early (no action). Ends if not carrying the weapon.</description>
+    </sheet>
+    <rules>
+      <stat name="sacred weapon:bonus" value="1" bonus="base" />
+      <stat name="sacred weapon:bonus" value="charisma:modifier" bonus="base" />
+    </rules>
+  </element>
+
+  <!-- ===== Level 3: Oath Spells (always prepared) ===== -->
+  <element name="Oath of Devotion Spells" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_PALADIN_DEVOTION_FEATURE_OATH_SPELLS">
+    <description>
+      <p>The magic of your oath ensures you always have certain spells ready; when you reach a Paladin level specified in the Oath of Devotion Spells table, you thereafter always have the listed spells prepared.</p>
+      <table>
+        <thead><tr><th>Paladin Level</th><th>Spells</th></tr></thead>
+        <tbody>
+          <tr><td>3</td><td><em>Protection from Evil and Good</em>, <em>Shield of Faith</em></td></tr>
+          <tr><td>5</td><td><em>Aid</em>, <em>Zone of Truth</em></td></tr>
+          <tr><td>9</td><td><em>Beacon of Hope</em>, <em>Dispel Magic</em></td></tr>
+          <tr><td>13</td><td><em>Freedom of Movement</em>, <em>Guardian of Faith</em></td></tr>
+          <tr><td>17</td><td><em>Commune</em>, <em>Flame Strike</em></td></tr>
+        </tbody>
+      </table>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <!-- Level 3 -->
+      <grant type="Spell" id="ID_PHB24_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" prepared="true" spellcasting="Paladin" level="3"/>
+      <grant type="Spell" id="ID_PHB24_SPELL_SHIELD_OF_FAITH" prepared="true" spellcasting="Paladin" level="3"/>
+      <!-- Level 5 -->
+      <grant type="Spell" id="ID_PHB24_SPELL_AID" prepared="true" spellcasting="Paladin" level="5"/>
+      <grant type="Spell" id="ID_PHB24_SPELL_ZONE_OF_TRUTH" prepared="true" spellcasting="Paladin" level="5"/>
+      <!-- Level 9 -->
+      <grant type="Spell" id="ID_PHB24_SPELL_BEACON_OF_HOPE" prepared="true" spellcasting="Paladin" level="9"/>
+      <grant type="Spell" id="ID_PHB24_SPELL_DISPEL_MAGIC" prepared="true" spellcasting="Paladin" level="9"/>
+      <!-- Level 13 -->
+      <grant type="Spell" id="ID_PHB24_SPELL_FREEDOM_OF_MOVEMENT" prepared="true" spellcasting="Paladin" level="13"/>
+      <grant type="Spell" id="ID_PHB24_SPELL_GUARDIAN_OF_FAITH" prepared="true" spellcasting="Paladin" level="13"/>
+      <!-- Level 17 -->
+      <grant type="Spell" id="ID_PHB24_SPELL_COMMUNE" prepared="true" spellcasting="Paladin" level="17"/>
+      <grant type="Spell" id="ID_PHB24_SPELL_FLAME_STRIKE" prepared="true" spellcasting="Paladin" level="17"/>
+    </rules>
+  </element>
+
+  <!-- ===== Level 7: Aura of Devotion ===== -->
+  <element name="Aura of Devotion" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_PALADIN_DEVOTION_FEATURE_AURA_OF_DEVOTION">
+    <description>
+      <p>You and your allies have Immunity to the Charmed condition while in your Aura of Protection. If a Charmed ally enters the aura, that condition has no effect on that ally while there.</p>
+    </description>
+    <sheet>
+      <description>Within your Aura of Protection: you and allies have Immunity to the Charmed condition; entering allies ignore Charmed while in the aura.</description>
+    </sheet>
+  </element>
+
+  <!-- ===== Level 15: Smite of Protection ===== -->
+  <element name="Smite of Protection" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_PALADIN_DEVOTION_FEATURE_SMITE_OF_PROTECTION">
+    <description>
+      <p>Your magical smite radiates protective energy. Whenever you cast <em>Divine Smite</em>, you and your allies have Half Cover while in your Aura of Protection until the start of your next turn.</p>
+    </description>
+    <sheet>
+      <description>When you cast Divine Smite, you and allies in your Aura of Protection have Half Cover until the start of your next turn.</description>
+    </sheet>
+  </element>
+
+  <!-- ===== Level 20: Holy Nimbus ===== -->
+  <element name="Holy Nimbus" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_PALADIN_DEVOTION_FEATURE_HOLY_NIMBUS">
+    <description>
+      <p><strong>Bonus Action.</strong> Imbue your Aura of Protection with holy power for 10 minutes or until you end the benefits (no action required). Once you use this feature, you canâ€™t use it again until you finish a Long Rest; you can also restore a use by expending a 5th-level spell slot (no action required).</p>
+      <ul>
+        <li><strong>Holy Ward.</strong> You have Advantage on any saving throw you are forced to make by a Fiend or an Undead.</li>
+        <li><strong>Radiant Damage.</strong> Whenever an enemy starts its turn in the aura, it takes Radiant damage equal to your Charisma modifier plus your Proficiency Bonus.</li>
+        <li><strong>Sunlight.</strong> The aura is filled with Bright Light that is sunlight.</li>
+      </ul>
+    </description>
+    <sheet action="Bonus Action" usage="1/Long Rest">
+      <description>Empower your Aura for 10 minutes. You have Advantage on saving throws forced by Fiends or Undead. Enemies starting their turn in the aura take {{holy nimbus:damage}} Radiant. The aura emits Bright Light that is sunlight. You can restore a use by expending a 5th-level spell slot.</description>
+    </sheet>
+    <rules>
+      <stat name="holy nimbus:damage" value="charisma:modifier" />
+      <stat name="holy nimbus:damage" value="proficiency" />
+    </rules>
+  </element>
+</elements>
+
+
+
