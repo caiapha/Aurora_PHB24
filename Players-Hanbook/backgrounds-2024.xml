@@ -23,10 +23,12 @@
 		</description>	
 		<rules>
 			<select name="Ability Score Improvement (Acolyte)" type="Background Feature" supports="Background, Acolyte"/>
-			<grant name="Magic Initiate (Acolyte)" type="Feat" id="ID_PHB24_FEAT_MAGIC_INITIATE_CALL"/>
+			<!-- <grant name="Magic Initiate (Acolyte)" type="Feat" id="ID_PHB24_FEAT_MAGIC_INITIATE_CALL"/> -->
 			<grant name="Insight proficiency (Acolyte)" id="ID_PROFICIENCY_SKILL_INSIGHT"/>
 			<grant name="Religion proficiency (Acolyte)" id="ID_PROFICIENCY_SKILL_RELIGION"/>
 			<grant name="Calligrapher's Supplies (Acolyte)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES"/>
+			<grant type="Feat Feature" id="ID_PHB24_FEAT_SPELLCASTING_SELECTION"/>
+			<grant type="Feat" id="ID_PHB24_FEAT_MAGIC_INITIATE_CLERIC"/>
 		</rules>
 	</element>
 	<element name="Artisan" type="Background" source="Player's Handbook (2024)" id="ID_PHB24_BACKGROUND_ARTISAN">
@@ -165,10 +167,12 @@
 		</description>	
 		<rules>
 			<select name="Ability Score Improvement (Guide)" type="Background Feature" supports="Background, Guide"/>
-			<grant name="Magic Initiate (Guide)" type="Feat" id="ID_PHB24_FEAT_MAGIC_INITIATE_CALL"/>
+			<!-- <grant name="Magic Initiate (Guide)" type="Feat" id="ID_PHB24_FEAT_MAGIC_INITIATE_CALL"/> -->
 			<grant name="Stealth proficiency (Guide)" id="ID_PROFICIENCY_SKILL_STEALTH"/>
 			<grant name="Survival proficiency (Guide)" id="ID_PROFICIENCY_SKILL_SURVIVAL"/>
 			<grant name="Cartographer's Tools (Guide)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS"/>
+			<grant type="Feat Feature" id="ID_PHB24_FEAT_SPELLCASTING_SELECTION"/>
+			<grant type="Feat" id="ID_PHB24_FEAT_MAGIC_INITIATE_DRUID"/>
 		</rules>
 	</element>
 	<element name="Hermit" type="Background" source="Player's Handbook (2024)" id="ID_PHB24_BACKGROUND_HERMIT">
@@ -246,10 +250,12 @@
 		</description>	
 		<rules>
 			<select name="Ability Score Improvement (Sage)" type="Background Feature" supports="Background, Sage"/>
-			<grant name="Magic Initiate (Sage)" type="Feat" id="ID_PHB24_FEAT_MAGIC_INITIATE_CALL"/>
+			<!-- <grant name="Magic Initiate (Sage)" type="Feat" id="ID_PHB24_FEAT_MAGIC_INITIATE_CALL"/> -->
 			<grant name="Arcana proficiency (Sage)" id="ID_PROFICIENCY_SKILL_ARCANA"/>
 			<grant name="History proficiency (Sage)" id="ID_PROFICIENCY_SKILL_HISTORY"/>
 			<grant name="Calligrapher's Supplies (Sage)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES"/>
+			<grant type="Feat Feature" id="ID_PHB24_FEAT_SPELLCASTING_SELECTION"/>
+			<grant type="Feat" id="ID_PHB24_FEAT_MAGIC_INITIATE_WIZARD"/>
 		</rules>
 	</element>
 	<element name="Sailor" type="Background" source="Player's Handbook (2024)" id="ID_PHB24_BACKGROUND_SAILOR">

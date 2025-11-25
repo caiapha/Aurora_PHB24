@@ -722,8 +722,8 @@
 	</element>
 
 	<!-- MAGIC INITIATE -->
-  	<element name="Magic Initiate " type="Feat" source="Player's Handbook (2024)" id="ID_PHB24_FEAT_MAGIC_INITIATE_CALL">
-		<requirements>!ID_PHB24_FEAT_FEY_TOUCHED_CALL, !ID_PHB24_FEAT_RITUAL_CASTER_CALL, !ID_PHB24_FEAT_SHADOW_TOUCHED_CALL, !ID_PHB24_FEAT_TELEKINETIC_CALL, !ID_PHB24_FEAT_TELEPATHIC_CALL</requirements>
+  	<element name="Magic Initiate" type="Feat" source="Player's Handbook (2024)" id="ID_PHB24_FEAT_MAGIC_INITIATE_CALL">
+		<requirements>!ID_PHB24_FEAT_FEY_TOUCHED_CALL, !ID_PHB24_FEAT_RITUAL_CASTER_CALL, !ID_PHB24_FEAT_SHADOW_TOUCHED_CALL, !ID_PHB24_FEAT_TELEKINETIC_CALL, !ID_PHB24_FEAT_TELEPATHIC_CALL, !ID_PHB24_BACKGROUND_ACOLYTE, !ID_PHB24_BACKGROUND_GUIDE, !ID_PHB24_BACKGROUND_SAGE</requirements>
     	<supports>Origin Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
