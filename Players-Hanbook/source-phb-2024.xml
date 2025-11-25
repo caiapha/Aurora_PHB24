@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <elements>
   <info>
-    <update version="1.0.1">
+    <update version="1.0.2">
       <file name="source-phb-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/source-phb-2024.xml" />
     </update>
     <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
@@ -17,7 +17,7 @@
       <set name="abbreviation">PHB24</set>
       <set name="image"></set>
       <set name="url">https://wpn.wizards.com/en/products/2024-players-handbook</set>
-      <set name="image">PHB24.png</set>
+      <set name="image">https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/PHB24.png</set>
       <set name="author" abbreviation="WOTC" url="https://dnd.wizards.com">Wizards of the Coast</set>
       <set name="official">true</set>
       <!-- <set name="core">true</set> -->
@@ -27,6 +27,7 @@
 
   
 </elements>
+
 
 
 
