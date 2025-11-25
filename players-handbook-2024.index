@@ -5,7 +5,7 @@
 		<description>The Player’s Handbook is the essential reference for every Dungeons &amp; Dragons roleplayer. It contains rules for character creation and advancement, backgrounds and skills, exploration and combat, equipment, spells, and much more. Use this book to create exciting characters from among the most iconic D&amp;D races and classes.</description>
 		<author url="https://wpn.wizards.com/en/products/2024-players-handbook">Wizards of the Coast</author>
 		<update version="1.0.0">
-			<file name="players-handbook-2024.index" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/players-handbook-2024.index" />
+			<file name="players-handbook-2024.index" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/players-handbook-2024.index" />
 		</update>
 	</info>
 	<files>	
@@ -75,7 +75,7 @@
 		<file name="sorcerer-clockwork-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/sorcerer-clockwork-2024.xml" />
 		<file name="sorcerer-draconic-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/sorcerer-draconic-2024.xml" />
 		<file name="sorcerer-wild_magic-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/sorcerer-wild_magic-2024.xml" />
-		<file name="source.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/source.xml" />
+		<file name="source-phb-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/source-phb-2024.xml" />
 		<file name="species-aasimar-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/species-aasimar-2024.xml" />
 		<file name="species-dragonborn-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/species-dragonborn-2024.xml" />
 		<file name="species-dwarf-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/species-dwarf-2024.xml" />
@@ -98,4 +98,5 @@
 		<file name="wizard-evoker-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/wizard-evoker-2024.xml" />
 		<file name="wizard-illusionist-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/wizard-illusionist-2024.xml" />
 	</files>
+
 </index>
