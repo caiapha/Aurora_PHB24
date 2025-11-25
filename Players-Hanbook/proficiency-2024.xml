@@ -20,7 +20,7 @@
         <description />
         <sheet />
         <rules>
-            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMAL_HANDLING" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
         </rules>
     </element>
     <element name="Arcana" type="Proficiency" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_ARCANA">
@@ -455,6 +455,7 @@
     </element>
 
 </elements>
+
 
 
 
