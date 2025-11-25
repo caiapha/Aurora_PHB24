@@ -9,7 +9,7 @@
 		</update>
 	</info>
 	<files>	
-		<file name="Ability-Skill-Improvements.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/Ability-Skill-Improvements.xml" />
+		<file name="Ability-Skill-Improvements-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/Ability-Skill-Improvements-2024.xml" />
 		<file name="backgrounds-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/backgrounds-2024.xml" />
 		<file name="barbarian_wild_heart-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/barbarian_wild_heart-2024.xml" />
 		<file name="barbarian-berserker-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/barbarian-berserker-2024.xml" />
@@ -100,3 +100,4 @@
 	</files>
 
 </index>
+
