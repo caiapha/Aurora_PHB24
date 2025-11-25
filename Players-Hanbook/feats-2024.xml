@@ -535,7 +535,7 @@
 	
 	<!-- FEY TOUCHED -->
   <element name="Fey-Touched" type="Feat" source="Player's Handbook (2024)" id="ID_PHB24_FEAT_FEY_TOUCHED_CALL">
-    <requirements>[level:4], !ID_PHB24_FEAT_MAGIC_INITIATE_CALL, !ID_PHB24_FEAT_RITUAL_CASTER_CALL, !ID_PHB24_FEAT_SHADOW_TOUCHED_CALL, !ID_PHB24_FEAT_TELEKINETIC_CALL, !ID_PHB24_FEAT_TELEPATHIC_CALL</requirements>
+    <requirements>[level:4], !ID_PHB24_FEAT_MAGIC_INITIATE_CALL, !ID_PHB24_FEAT_RITUAL_CASTER_CALL, !ID_PHB24_FEAT_SHADOW_TOUCHED_CALL, !ID_PHB24_FEAT_TELEKINETIC_CALL, !ID_PHB24_FEAT_TELEPATHIC_CALL, !ID_PHB24_BACKGROUND_ACOLYTE, !ID_PHB24_BACKGROUND_GUIDE, !ID_PHB24_BACKGROUND_SAGE</requirements>
 		<supports>General Feat</supports>
     <description>
 			<p>You gain the following benefits:</p>
@@ -1014,7 +1014,7 @@
 
 	<!-- RITUAL CASTER-->
   	<element name="Ritual Caster" type="Feat" source="Player's Handbook (2024)" id="ID_PHB24_FEAT_RITUAL_CASTER_CALL">
-		<requirements>[level:4],([int:13]||[wis:13]||[cha:13]), !ID_PHB24_FEAT_FEY_TOUCHED_CALL, !ID_PHB24_FEAT_MAGIC_INITIATE_CALL, !ID_PHB24_FEAT_SHADOW_TOUCHED_CALL, !ID_PHB24_FEAT_TELEKINETIC_CALL, !ID_PHB24_FEAT_TELEPATHIC_CALL</requirements>
+		<requirements>[level:4],([int:13]||[wis:13]||[cha:13]), !ID_PHB24_FEAT_FEY_TOUCHED_CALL, !ID_PHB24_FEAT_MAGIC_INITIATE_CALL, !ID_PHB24_FEAT_SHADOW_TOUCHED_CALL, !ID_PHB24_FEAT_TELEKINETIC_CALL, !ID_PHB24_FEAT_TELEPATHIC_CALL, !ID_PHB24_BACKGROUND_ACOLYTE, !ID_PHB24_BACKGROUND_GUIDE, !ID_PHB24_BACKGROUND_SAGE</requirements>
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
@@ -1081,7 +1081,7 @@
 
 	<!-- SHADOW TOUCHED -->
   	<element name="Shadow-Touched" type="Feat" source="Player's Handbook (2024)" id="ID_PHB24_FEAT_SHADOW_TOUCHED_CALL">
-		<requirements>[level:4], !ID_PHB24_FEAT_FEY_TOUCHED_CALL, !ID_PHB24_FEAT_MAGIC_INITIATE_CALL, !ID_PHB24_FEAT_RITUAL_CASTER_CALL, !ID_PHB24_FEAT_TELEKINETIC_CALL, !ID_PHB24_FEAT_TELEPATHIC_CALL</requirements>
+		<requirements>[level:4], !ID_PHB24_FEAT_FEY_TOUCHED_CALL, !ID_PHB24_FEAT_MAGIC_INITIATE_CALL, !ID_PHB24_FEAT_RITUAL_CASTER_CALL, !ID_PHB24_FEAT_TELEKINETIC_CALL, !ID_PHB24_FEAT_TELEPATHIC_CALL, !ID_PHB24_BACKGROUND_ACOLYTE, !ID_PHB24_BACKGROUND_GUIDE, !ID_PHB24_BACKGROUND_SAGE</requirements>
 		<supports>General Feat</supports>
 		<description>
 			<p>You gain the following benefits:</p>
@@ -1292,7 +1292,7 @@
 
 	<!-- TELEKINETIC -->
   	<element name="Telekinetic" type="Feat" source="Player's Handbook (2024)" id="ID_PHB24_FEAT_TELEKINETIC_CALL">
-		<requirements>[level:4], !ID_PHB24_FEAT_FEY_TOUCHED_CALL, !ID_PHB24_FEAT_MAGIC_INITIATE_CALL, !ID_PHB24_FEAT_RITUAL_CASTER_CALL, !ID_PHB24_FEAT_SHADOW_TOUCHED_CALL, !ID_PHB24_FEAT_TELEPATHIC_CALL</requirements>
+		<requirements>[level:4], !ID_PHB24_FEAT_FEY_TOUCHED_CALL, !ID_PHB24_FEAT_MAGIC_INITIATE_CALL, !ID_PHB24_FEAT_RITUAL_CASTER_CALL, !ID_PHB24_FEAT_SHADOW_TOUCHED_CALL, !ID_PHB24_FEAT_TELEPATHIC_CALL, !ID_PHB24_BACKGROUND_ACOLYTE, !ID_PHB24_BACKGROUND_GUIDE, !ID_PHB24_BACKGROUND_SAGE</requirements>
 		<supports>General Feat</supports>
 		<description>
 			<p><strong>Ability Score Increase:</strong> increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</p>
@@ -1332,7 +1332,7 @@
 
 	<!-- TELEPATHIC-->
   	<element name="Telepathic" type="Feat" source="Player's Handbook (2024)" id="ID_PHB24_FEAT_TELEPATHIC_CALL">
-		<requirements>[level:4], !ID_PHB24_FEAT_FEY_TOUCHED_CALL, !ID_PHB24_FEAT_MAGIC_INITIATE_CALL, !ID_PHB24_FEAT_RITUAL_CASTER_CALL, !ID_PHB24_FEAT_SHADOW_TOUCHED_CALL, !ID_PHB24_FEAT_TELEKINETIC_CALL</requirements>
+		<requirements>[level:4], !ID_PHB24_FEAT_FEY_TOUCHED_CALL, !ID_PHB24_FEAT_MAGIC_INITIATE_CALL, !ID_PHB24_FEAT_RITUAL_CASTER_CALL, !ID_PHB24_FEAT_SHADOW_TOUCHED_CALL, !ID_PHB24_FEAT_TELEKINETIC_CALL, !ID_PHB24_BACKGROUND_ACOLYTE, !ID_PHB24_BACKGROUND_GUIDE, !ID_PHB24_BACKGROUND_SAGE</requirements>
 		<supports>General Feat</supports>
 		<description>
 			<p><strong>Ability Score Increase:</strong> increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</p>
