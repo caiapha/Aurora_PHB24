@@ -4,7 +4,7 @@
 		<name>Player’s Handbook Rev. 2024</name>
 		<description>The Player’s Handbook is the essential reference for every Dungeons &amp; Dragons roleplayer. It contains rules for character creation and advancement, backgrounds and skills, exploration and combat, equipment, spells, and much more. Use this book to create exciting characters from among the most iconic D&amp;D races and classes.</description>
 		<author url="https://wpn.wizards.com/en/products/2024-players-handbook">Wizards of the Coast</author>
-		<update version="1.0.2">
+		<update version="1.0.3">
 			<file name="players-handbook-2024.index" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/players-handbook-2024.index" />
 		</update>
 	</info>
@@ -62,7 +62,6 @@
 		<file name="paladin-devotion-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/paladin-devotion-2024.xml" />
 		<file name="paladin-glory-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/paladin-glory-2024.xml" />
 		<file name="paladin-vengeance.2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/paladin-vengeance.2024.xml" />
-		<file name="PHB24.png" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/080e7875dca082666dd3b7160688506fb6535be6/Players-Hanbook/PHB24.png" />
 		<file name="proficiency-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/proficiency-2024.xml" />
 		<file name="ranger-beast_master-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/ranger-beast_master-2024.xml" />
 		<file name="ranger-fey_wanderer-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/ranger-fey_wanderer-2024.xml" />
@@ -101,5 +100,6 @@
 	</files>
 
 </index>
+
 
 
