@@ -51,7 +51,7 @@
     <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PSYCHIC, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
   </element>
     
-  <element name="Psychic Blade" type="Weapon" source="Playerâ€™s Handbook" id="ID_WOTC_PHB_WEAPON_PSYCHIC_BLADE">
+  <element name="Psychic Blade" type="Weapon" source="Player's Handbook (2024)" id="ID_WOTC_PHB_WEAPON_PSYCHIC_BLADE">
     <requirements>ID_WOTC_PHB24_ROGUE_SOULKNIFE_FEATURE_PSYCHIC_BLADES</requirements>
     <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PSYCHIC, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
     <description>
@@ -180,6 +180,7 @@
   </element>
 
 </elements>
+
 
 
 
