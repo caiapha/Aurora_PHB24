@@ -9,7 +9,7 @@
 		</update>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
 	</info>
-    <element name="Darkvision" type="Vision" source="Playerâ€™s Handbook" id="ID_PHB24_VISION_DARKVISION">
+    <element name="Darkvision" type="Vision" source="Player's Handbook (2024)" id="ID_PHB24_VISION_DARKVISION">
 		<requirements>!ID_PHB24_VISION_SUPERIORDARKVISION</requirements>
 		<description>
 			<p>Many creatures in the worlds of D&amp;D, especially those that dwell underground, have darkvision. Within a specified range, a creature with darkvision can see in darkness as if the darkness were dim light, so areas of darkness are only lightly obscured as far as that creature is concerned. However, the creature canâ€™t discern color in darkness, only shades of gray.</p>
@@ -22,7 +22,7 @@
 		</rules>
 	</element>
 
-    <element name="Superior Darkvision" type="Vision" source="Playerâ€™s Handbook" id="ID_PHB24_VISION_SUPERIORDARKVISION">
+    <element name="Superior Darkvision" type="Vision" source="Player's Handbook (2024)" id="ID_PHB24_VISION_SUPERIORDARKVISION">
 		<description>
 			<p>Many creatures in the worlds of D&amp;D, especially those that dwell underground, have darkvision. Within a specified range, a creature with darkvision can see in darkness as if the darkness were dim light, so areas of darkness are only lightly obscured as far as that creature is concerned. However, the creature canâ€™t discern color in darkness, only shades of gray.</p>
 		</description>
@@ -34,7 +34,7 @@
 		</rules>
 	</element>
 
-    <element name="Blindsight" type="Vision" source="Playerâ€™s Handbook" id="ID_PHB24_VISION_BLINDSIGHT">
+    <element name="Blindsight" type="Vision" source="Player's Handbook (2024)" id="ID_PHB24_VISION_BLINDSIGHT">
 		<description>
 			<p>A creature with blindsight can perceive its surroundings without relying on sight, within a specific radius. Creatures without eyes, such as oozes, and creatures with echolocation or heightened senses, such as bats and true dragons, have this sense.</p>
 		</description>
@@ -46,7 +46,7 @@
 		</rules>
 	</element>
 
-    <element name="Truesight" type="Vision" source="Playerâ€™s Handbook" id="ID_PHB24_VISION_TRUESIGHT">
+    <element name="Truesight" type="Vision" source="Player's Handbook (2024)" id="ID_PHB24_VISION_TRUESIGHT">
 		<description>
 			<p>A creature with truesight can, out to a specific range, see in normal and magical darkness, see invisible creatures and objects, automatically detect visual illusions and succeed on saving throws against them, and perceives the original form of a shapechanger or a creature that is transformed by magic. Furthermore, the creature can see into the Ethereal Plane.</p>
 		</description>
@@ -58,7 +58,7 @@
 		</rules>
 	</element>
 
-    <element name="Tremorsense" type="Vision" source="Playerâ€™s Handbook" id="ID_PHB24_VISION_TREMORSENSE">
+    <element name="Tremorsense" type="Vision" source="Player's Handbook (2024)" id="ID_PHB24_VISION_TREMORSENSE">
 		<description>
 			<p>A monster with tremorsense can detect and pinpoint the origin of vibrations within a specific radius, provided that the monster and the source of the vibrations are in contact with the same ground or substance.</p>
 			<p class="indent">Tremorsense can't be used to detect flying or incorporeal creatures. Many burrowing creatures, such as ankhegs, have this special sense.</p>
@@ -72,4 +72,5 @@
 	</element>
 
 </elements>
+
 
