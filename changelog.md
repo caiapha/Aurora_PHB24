@@ -34,6 +34,7 @@ Notes:
 - Items are the mere copy of the items from the 2014 rev (thanks to Aurora Legacy), updated in the ID only, to make them integral part of the 2024 package. Fixes could be needed.
 - Weapons has been updated to include the Weapon Masteries in the weapon's description. Other specs could need a fix in case of updates with the 2024 versions.
 - Regarding the Feats related to spellcasting (e.g. Magic Initaite, Fey-Touched, etc...), the code allows to select the Spellcasting Ability only the when the
-  first Spellcasting Feat is selected. The followgin Feats will use the same Spellcasting Ability. The system will create a single Feat Spellcasting list in the sheet,
-  with all the spells from all the Feats. This because it is expected a Player will use the same Spellcasting Ability for al the Feats. This solution also allows
-  to "compress" all the Feat Spells in one single list, to save space in the Character Sheet.
+  first Spellcasting Feat is selected. The followgin Feats will use the same Spellcasting Ability. The Ability Score Improvement will be automatically selected
+  to compy with the Spellcasting Ability. This because it is expected a Player will use the same Spellcasting Ability for all the Feats. The system will create
+  a single Feat Spellcasting list in the sheet, including all the spells from all the Feats. This solution also allows to "compress" all the Feat Spells in one
+  single list, to save space in the Character Sheet.
