@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 
 ---
+## [1.1.0] – Backgrounds and Feats fixed – 2025-11-26
+
+- Background Skill application fixed: now the skills applied by the background disappear from other Skill's Choice lists
+- Magic Initiate Feat fixed: now each application (Wizard, Cleric, Druid) appears on a dedicated entry in the Sheet.  
 
 ## [1.0.0] – Version 1.0.0 uploaded – 2025-11-26
 
