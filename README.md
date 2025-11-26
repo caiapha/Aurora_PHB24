@@ -78,5 +78,5 @@ If you find errors (wrong rules, missing options, builder bugs), open an Issue o
   
 📬 Contact
 
-Author: Caiapha
-GitHub: @Caiapha
+- Author: Caiapha
+- GitHub: @Caiapha
