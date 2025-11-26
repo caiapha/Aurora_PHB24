@@ -60,4 +60,4 @@ avoid uploading full rule text, large excerpts, or protected images, and keep th
 
 ## 💾 How to Use These Files with Aurora
 
-1. Download the 
+1. Download the PHB index file at this link: https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/players-handbook-2024.index
