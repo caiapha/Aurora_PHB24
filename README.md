@@ -23,12 +23,9 @@ To bring the contents of the **Player's Handbook 2024** into Aurora Character Bu
 - [X] Classes
 - [X] Origins / Species / Backgrounds
 - [X] Feats
-- [P] Equipment
+- [ ] Equipment (partially developed)
 - [X] Spells
 - [ ] Glossary / special rules
-
-- [x] Completed
-- [P] Partially developed
   
 ---
 
