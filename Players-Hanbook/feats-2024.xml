@@ -3,7 +3,7 @@
 		<name>Feats from the Player's Handbook 2024 Revision</name>
 		<description>Feats from the Player's Handbook (2024)</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
-		<update version="1.0.0">
+		<update version="1.0.1">
 		<file name="feats-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/feats-2024.xml"/>
 		</update>
 	</info>
@@ -748,9 +748,7 @@
 			<p><strong>Spell Change:</strong> whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.</p>
 			<p><strong>Repetable:</strong> you can take this feat more than once, but you must choose a different spell list each time.</p>
 		</description>
-		<sheet>
-			<description>Once per Long Rest, you can cast the 1st level spell you learned without spending a spell slot. You can also cast this spell expending a spell slot you have.</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
 			<select name="Spell List (Magic Initiate)" type="Feat Feature" supports="MagicInitiatePHB24" />
 		</rules>	
@@ -792,7 +790,9 @@
 		<description>
 			<p>Your learn two cantrips and one 1st level spell from the Wizard Spell List</p>
 		</description>
-		<sheet display="false" />
+		<sheet>
+			<description>Once per Long Rest, you can cast the Wizard 1st level spell you learned without spending a spell slot. You can also cast this spell expending a spell slot you have.</description>
+		</sheet>
 		<rules>
 			<select name="Wizard spell List (Magic Initiate)" type="Spell" supports="0, WizardPHB24" number="2" spellcasting="Feat Spellcasting" />
 			<select name="Wizard Spell List (Magic Initiate)" type="Spell" supports="1, WizardPHB24" prepared="true" spellcasting="Feat Spellcasting" />
@@ -803,7 +803,9 @@
 		<description>
 			<p>Your learn two cantrips and one 1st level spell from the Cleric Spell List</p>
 		</description>
-		<sheet display="false" />
+		<sheet>
+			<description>Once per Long Rest, you can cast the Cleric 1st level spell you learned without spending a spell slot. You can also cast this spell expending a spell slot you have.</description>
+		</sheet>
 		<rules>
 			<select name="Cleric spell List (Magic Initiate)" type="Spell" supports="0, ClericPHB24" number="2" spellcasting="Feat Spellcasting" />
 			<select name="Cleric Spell List (Magic Initiate)" type="Spell" supports="1, ClericPHB24" prepared="true" spellcasting="Feat Spellcasting" />
@@ -814,7 +816,9 @@
 		<description>
 			<p>Your learn two cantrips and one 1st level spell from the Druid Spell List</p>
 		</description>
-		<sheet display="false" />
+		<sheet>
+			<description>Once per Long Rest, you can cast the Druid 1st level spell you learned without spending a spell slot. You can also cast this spell expending a spell slot you have.</description>
+		</sheet>
 		<rules>
 			<select name="Druid spell List (Magic Initiate)" type="Spell" supports="0, DruidPHB24" number="2" spellcasting="Feat Spellcasting" />
 			<select name="Druid Spell List (Magic Initiate)" type="Spell" supports="1, DruidPHB24" prepared="true" spellcasting="Feat Spellcasting" />
