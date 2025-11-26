@@ -21,7 +21,11 @@ All notable changes to this project will be documented in this file.
   - e.g. rules references, conditions, misc options...
 
 ### 🔄 In development / Work in progress
-- [X] Standard Items
+- [X] Alignements
+- [ ] Deities
+- [ ] Languages
+- [ ] Appearance
+- [ ] Standard Items
 - [ ] Magic items or special equipment
 - [ ] Validation / rules automation
 - [ ] Data cleanup and consistency
