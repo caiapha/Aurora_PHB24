@@ -16,7 +16,6 @@ To bring the contents of the **Player's Handbook 2024** into Aurora Character Bu
 
 - `Player's Handbook/` – Aurora definition files (classes, origins/species, backgrounds, feats, equipment, spells, etc.)
 - `changelog.md` – notes about changes and bug fixes
-- 
 ---
 
 ## ✅ Progress Status
@@ -60,4 +59,27 @@ avoid uploading full rule text, large excerpts, or protected images, and keep th
 
 ## 💾 How to Use These Files with Aurora
 
-1. Download the PHB index file at this link: https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/players-handbook-2024.index
+1. Put the following link in the "Additional Content - Remote Index File URL" textbox and click on Download Button: https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/players-handbook-2024.index
+2. Restar Aurora
+
+In case you want to use the 2024 version only: 
+1. Go in the "Source" tab
+2. Toggle OFF all the contents (unflag the elements in the first column)
+3. Save as Default
+4. Restart Aurora
+5. Go in the "Source" tab and Toggle ON only the Player's Handbook (2024) element.
+
+---
+🐛 Bugs, Issues, and Suggestions
+
+If you find errors (wrong rules, missing options, builder bugs), open an Issue on GitHub and describe:
+* what you selected
+* what you expected to happen
+* what actually happened
+* or open a Pull Request with a proposed fix.
+---
+  
+📬 Contact
+
+Author: Caiapha
+GitHub: @Caiapha
