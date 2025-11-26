@@ -48,4 +48,16 @@ To bring the contents of the **Player's Handbook 2024** into Aurora Character Bu
 
 ## ⚖️ Legal Notes
 
-- This is a **fan-made** project fo
+- This is a **fan-made** project for personal/community use.
+- All trademarks, names, logos, and original content are © their respective owners.
+- **Dungeons & Dragons**, **D&D**, **Player's Handbook**, and related terms are registered trademarks of *Wizards of the Coast LLC*.
+- This repository only contains definition files for Aurora and does **not** replace the official books. Please support the publishers by purchasing the official materials.
+
+Make sure to respect Wizards of the Coast’s copyright:  
+avoid uploading full rule text, large excerpts, or protected images, and keep the data to the minimum required for Aurora to function.
+
+---
+
+## 💾 How to Use These Files with Aurora
+
+1. Download the 
