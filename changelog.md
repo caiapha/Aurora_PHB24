@@ -28,6 +28,8 @@ All notable changes to this project will be documented in this file.
 
 ### 🐛 Known issues / To be fixed
 
+---
+
 Notes:
 - Items are the mere copy of the items from the 2014 rev (thanks to Aurora Legacy), updated in the ID only, to make them integral part of the 2024 package. Fixes could be needed.
 - Weapons has been updated to include the Weapon Masteries in the weapon's description. Other specs could need a fix in case of updates with the 2024 versions.
