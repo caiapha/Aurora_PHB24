@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 
 ---
+## [1.1.1] – Languages fixed – 2025-11-27
+
+- Included more languages and fixed the languages' selection.
+
 ## [1.1.0] – Backgrounds and Feats fixed – 2025-11-26
 
 - Background Skill application fixed: now the skills applied by the background disappear from other Skill's Choice lists
