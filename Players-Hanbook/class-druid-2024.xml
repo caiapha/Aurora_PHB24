@@ -5,7 +5,7 @@
 		<requirements>ID_WOTC_PHB24_CORE_ROLEBOOK</requirements>
 		<description>The Druid class from the Player's Handbook (2024) Rev. 2024.</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="class-druid-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/class-druid-2024.xml" />
 		</update>
 	</info>
@@ -141,7 +141,7 @@
 			<description>You know the secret language of Druids. You can use Druidic to leave hidden messages. You and others who know Druidic automatically spot such a message. Others spot the message's presence with a successful DC 15 Intelligence (Investigation) check but can't decipher it without magic.</description>
 		</sheet>
 		<rules>
-			<grant type="Language" id="ID_LANGUAGE_DRUIDIC" />
+			<grant type="Language" id="ID_WOTC_PHB24_LANGUAGE_DRUIDIC" />
 		</rules>
 	</element>
 	<element name="Primal Order" type="Class Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_DRUID_PRIMAL_ORDER">

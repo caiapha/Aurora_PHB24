@@ -4,7 +4,7 @@
     <name>Orc (2024)</name>
     <description>Orc species from the 2024 Player's Handbook for Aurora Builder (verbatim traits).</description>
     <author url="https://aurorabuilder.com">Aurora Builder</author>
-    <update version="1.0.0">
+    <update version="1.0.1">
       <file name="species-orc-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/species-orc-2024.xml" />
     </update>
     <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
@@ -31,7 +31,8 @@
 
       <grant type="Racial Trait" id="ID_ORC_2024_ADRENALINE_RUSH" />
       <grant type="Racial Trait" id="ID_ORC_2024_RELENTLESS_ENDURANCE" />
-      <grant type="Language" id="ID_LANGUAGE_COMMON" />
+      <grant type="Language" id="ID_WOTC_PHB24_LANGUAGE_COMMON" />
+      <select name="Additional Language" type="Language" supports="Standard" number="2" />
     </rules>
   </element>
 

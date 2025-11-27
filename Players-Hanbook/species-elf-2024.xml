@@ -4,7 +4,7 @@
     <name>Elf (2024)</name>
     <description>Elf species from the 2024 Player's Handbook for Aurora Builder.</description>
     <author url="https://aurorabuilder.com">Aurora Builder</author>
-    <update version="1.0.0">
+    <update version="1.0.1">
       <file name="species-elf-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/species-elf-2024.xml" />
     </update>
     <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
@@ -46,7 +46,8 @@
       <!-- Lineage -->
       <select type="Racial Trait" name="Elven Lineage" supports="Elf2024Lineage" number="1" />
       <select type="Racial Trait" name="Spellcasting Ability (Elf Lineage)" supports="Elf2024SpellcastingAbility" number="1" />
-      <grant type="Language" id="ID_LANGUAGE_COMMON" />
+      <grant type="Language" id="ID_WOTC_PHB24_LANGUAGE_COMMON" />
+      <select name="Additional Language" type="Language" supports="Standard" number="2" />
     </rules>
   </element>
 

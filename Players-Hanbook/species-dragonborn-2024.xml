@@ -4,7 +4,7 @@
     <name>Dragonborn (2024)</name>
     <description>Dragonborn species from the 2024 Player's Handbook, faithfully modeled for Aurora Builder.</description>
     <author url="https://aurorabuilder.com">Aurora Builder</author>
-    <update version="1.0.0">
+    <update version="1.0.1">
       <file name="species-dragonborn-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/species-dragonborn-2024.xml" />
     </update>
     <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
@@ -40,7 +40,8 @@
       <grant type="Racial Trait" id="ID_RACIAL_TRAIT_DRAGONBORN_2024_DRACONIC_FLIGHT" level="5" />
       <!-- Ancestry selection (sets resistance and shows shape/save) -->
       <select type="Racial Trait" name="Draconic Ancestry (2024)" supports="Draconic Ancestry 2024" />
-      <grant type="Language" id="ID_LANGUAGE_COMMON" />
+      <grant type="Language" id="ID_WOTC_PHB24_LANGUAGE_COMMON" />
+      <select name="Additional Language" type="Language" supports="Standard" number="2" />
    </rules>
   </element>
 
