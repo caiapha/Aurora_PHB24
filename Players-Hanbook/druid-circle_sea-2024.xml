@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.0.0">
+		<update version="1.0.1">
 		<file name="druid-circle_sea-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/druid-circle_sea-2024.xml" />
 		</update>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
@@ -52,7 +52,7 @@
             	<grant type="Spell" id="ID_PHB24_SPELL_WATER_BREATHING" level="5" spellcasting="Druid" prepared="true" />
         		<grant type="Spell" id="ID_PHB24_SPELL_CONTROL_WATER" level="7" spellcasting="Druid" prepared="true" />
             	<grant type="Spell" id="ID_PHB24_SPELL_ICE_STORM" level="7" spellcasting="Druid" prepared="true" />
-        		<grant type="Spell" id="ID_PHB24_SPELL_CONJURE_ELEMENTAL" spellcasting="Druid" prepared="true" />
+        		<grant type="Spell" id="ID_PHB24_SPELL_CONJURE_ELEMENTAL" level="9" spellcasting="Druid" prepared="true" />
             	<grant type="Spell" id="ID_PHB24_SPELL_HOLD_MONSTER" level="9" spellcasting="Druid" prepared="true" />
       		</rules>
 	</element>
@@ -104,6 +104,7 @@
         </sheet>
 	</element>
 </elements>
+
 
 
 
