@@ -4,7 +4,7 @@
 		<name>Internal functions</name>
 		<description>Internal funtions</description>
 		<author url="">Internal</author>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="internal-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/internal-2024.xml" />
 		</update>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
@@ -71,6 +71,88 @@
 		</rules>
 	</element>
 
+	<!-- ALIGNMENTS -->	
+	<element name="Lawful Good" type="Alignment" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ALIGNMENT_LG"> 
+		<description>
+			<p>Un personaggio legale buono rispetta leggi e codici morali e usa l’ordine per proteggere gli innocenti e promuovere il bene.</p>
+		</description> 
+		<setters>	 
+			<set name="abbreviation">LG</set> 
+		</setters>
+	</element>
+
+	<element name="Neutral Good" type="Alignment" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ALIGNMENT_NG">
+		<description>
+			<p>Un personaggio neutrale buono fa il bene secondo coscienza, senza essere rigidamente vincolato né alla legge né al caos.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">NG</set>
+		</setters>
+	</element>
+
+	<element name="Chaotic Good" type="Alignment" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ALIGNMENT_CG">
+		<description>
+			<p>Un personaggio caotico buono segue il cuore e la libertà, pronto a infrangere regole ingiuste pur di aiutare gli altri.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">CG</set>
+		</setters>
+	</element>
+
+	<element name="Lawful Neutral" type="Alignment" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ALIGNMENT_LN"> 
+		<description>
+			<p>Un personaggio legale neutrale mette al primo posto ordine, tradizione e dovere, sopra considerazioni di bene o male personali.</p>
+		</description> 
+		<setters>	 
+			<set name="abbreviation">LN</set> 
+		</setters>   
+	</element>
+
+	<element name="Neutral" type="Alignment" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ALIGNMENT_N"> 
+		<description>
+			<p>Un personaggio neutrale cerca equilibrio o disinteresse, non si schiera in modo deciso tra bene e male, legge e caos.</p>
+		</description> 
+		<setters>	 
+			<set name="abbreviation">N</set> 
+		</setters>   
+	</element>
+
+	<element name="Chaotic Neutral" type="Alignment" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ALIGNMENT_CN"> 
+		<description>
+			<p>Un personaggio caotico neutrale è imprevedibile, indipendente e guidato dal desiderio di libertà personale sopra ogni regola o autorità.</p>
+		</description> 
+		<setters>	 
+			<set name="abbreviation">CN</set> 
+		</setters>   
+	</element>
+
+	<element name="Lawful Evil" type="Alignment" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ALIGNMENT_LE"> 
+		<description>
+			<p>Un personaggio legale malvagio usa gerarchie, leggi e patti per ottenere potere e controllo, sfruttando gli altri senza rimorso.</p>
+		</description> 
+		<setters>	 
+			<set name="abbreviation">LE</set> 
+		</setters>   
+		</element>
+
+	<element name="Neutral Evil" type="Alignment" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ALIGNMENT_NE"> 
+		<description>
+			<p>Un personaggio neutrale malvagio pensa solo a sé stesso, pronto a tradire, mentire o danneggiare chiunque serva ai suoi fini.</p>
+		</description> 
+		<setters>	 
+			<set name="abbreviation">NE</set> 
+		</setters>   
+	</element>
+	
+	<element name="Chaotic Evil" type="Alignment" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ALIGNMENT_CE">
+		<description>
+			<p>Un personaggio caotico malvagio è distruttivo, imprevedibile e spinto dall’istinto di rovinare, dominare o annientare.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">CE</set>
+		</setters>
+	</element>
 </elements>
+
 
 
