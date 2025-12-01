@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <elements>
   <info>
-    <update version="1.0.0">
+    <update version="1.0.1">
       <file name="class-rogue-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/class-rogue-2024.xml" />
     </update>
     <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
@@ -98,7 +98,7 @@
       <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
       <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"/>
       <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" supports="ID_INTERNAL_WEAPON_PROPERTY_LIGHT||ID_INTERNAL_WEAPON_PROPERTY_FINESSE" optional="true" />
-      <grant type="Proficiency" id="ID_WOTC_PHB_ITEM_TOOL_THIEVES_TOOLS"/>
+      <grant type="Proficiency" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS"/>
       <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY"/>
       <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE"/>
       <select type="Proficiency" name="Skill Proficiencies (Rogue)" supports="Skill,PHB24, Rogue" number="4" />
@@ -427,6 +427,7 @@
     </sheet>
   </element>
 </elements>
+
 
 
 
