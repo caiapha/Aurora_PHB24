@@ -4,7 +4,7 @@
 		<name>Backgrounds</name>
 		<description>Backgrounds from the Player's Handbook (2024)</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
-		<update version="1.0.1">
+		<update version="1.0.2">
 		  <file name="backgrounds-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/backgrounds-2024.xml"/>
 		</update>
 	</info>
@@ -127,7 +127,7 @@
 	  <rules>
 		  <select name="Ability Score Improvement (Farmer)" type="Background Feature" supports="Background, Farmer"/>
 		  <grant name="Tough (Farmer)" type="Feat" id="ID_PHB24_FEAT_TOUGH"/>
-		  <grant name="Animal Handling Proficiency (Farmer)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_ANIMALHANDLING"/>
+		  <grant name="Animal Handling Proficiency (Farmer)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_ANIMAL_HANDLING"/>
 		  <grant name="Nature Proficiency (Nature)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_NATURE"/>
 		  <grant name="Carpenter's Tools Proficiency (Farmer)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS"/>
 	  </rules>
@@ -210,7 +210,7 @@
 		<rules>
 			<select name="Ability Score Improvement (Merchant)" type="Background Feature" supports="Background, Merchant"/>
 			<grant name="Lucky (Merchant)" type="Feat" id="ID_PHB24_FEAT_LUCKY"/>
-			<grant name="Animal Handling proficiency (Merchant)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_ANIMALHANDLING"/>
+			<grant name="Animal Handling proficiency (Merchant)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_ANIMAL_HANDLING"/>
 			<grant name="Persuasion proficiency (Merchant)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_PERSUASION"/>
 			<grant name="Navigator's Tools (Merchant)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS"/>
 		</rules>
@@ -628,4 +628,5 @@
 	</rules> 
 </element>	
 </elements>
+
 
