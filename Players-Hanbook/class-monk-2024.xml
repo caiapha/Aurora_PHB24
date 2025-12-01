@@ -3,7 +3,7 @@
     <name>Monk</name>
     <description>The Monk, updated to Player's Handbook (2024). Includes Monk's Focus (Focus Points), Uncanny Metabolism, Deflect Attacks/Energy, Stunning Strike (2024), Empowered Strikes, Acrobatic Movement, Heightened Focus, Self-Restoration, Disciplined Survivor, Perfect Focus, Superior Defense, Body and Mind. Subclass selector uses supports="MonkSubclass".</description>
     <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
-    <update version="1.0.0">
+    <update version="1.0.1">
         <file name="class-monk-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/class-monk-2024.xml" />
     </update>
   </info>
@@ -71,7 +71,7 @@
       <select name="Skill Proficiency (Monk)" type="Proficiency" supports="Skill, PHB24, Monk" number="2" />
       <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"/>
       <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" supports="ID_INTERNAL_WEAPON_PROPERTY_LIGHT" optional="true" />
-      <select name="Tool Proficiency (Monk)" type="Proficiency" supports="Artisan tools||Musical Instrument" number="1" />
+      <select name="Tool Proficiency (Monk)" type="Proficiency" supports="Artisan tools||Musical Instruments" number="1" />
 
       <!-- CLASS FEATURES -->
       <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_MARTIAL_ARTS" />
@@ -390,5 +390,6 @@
     </sheet>
   </element>
 </elements>
+
 
 
