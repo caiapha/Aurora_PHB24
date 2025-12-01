@@ -4,7 +4,7 @@
 		<name>Backgrounds</name>
 		<description>Backgrounds from the Player's Handbook (2024)</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
-		<update version="1.0.2">
+		<update version="1.0.3">
 		  <file name="backgrounds-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/backgrounds-2024.xml"/>
 		</update>
 	</info>
@@ -26,7 +26,7 @@
 			<!-- <grant name="Magic Initiate (Acolyte)" type="Feat" id="ID_PHB24_FEAT_MAGIC_INITIATE_CALL"/> -->
 			<grant name="Insight proficiency (Acolyte)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_INSIGHT"/>
 			<grant name="Religion proficiency (Acolyte)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_RELIGION"/>
-			<grant name="Calligrapher's Supplies (Acolyte)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES"/>
+			<grant name="Calligrapher's Supplies (Acolyte)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES"/>
 			<grant type="Feat Feature" id="ID_PHB24_FEAT_SPELLCASTING_SELECTION"/>
 			<grant type="Feat" id="ID_PHB24_FEAT_MAGIC_INITIATE_CLERIC"/>
 		</rules>
@@ -69,7 +69,7 @@
 		  <grant name="Skilled (Charlatan)" type="Feat" id="ID_PHB24_FEAT_SKILLED"/>
 		  <grant name="Deception proficiency (Charlatan)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_DECEPTION"/>
 		  <grant name="Sleight of Hand proficiency (Charlatan)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_SLEIGHTOFHAND"/>
-		  <grant name="Forgery Kit proficiency (Charlatan)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT"/>
+		  <grant name="Forgery Kit proficiency (Charlatan)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT"/>
 	  </rules>
  	</element>
 	<element name="Criminal" type="Background" source="Player's Handbook (2024)" id="ID_PHB24_BACKGROUND_CRIMINAL">
@@ -89,7 +89,7 @@
 		  <grant name="Alert (Criminal)" type="Feat" id="ID_PHB24_FEAT_ALERT"/>
 		  <grant name="Stealth proficiency (Criminal)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_STEALTH"/>
 		  <grant name="Sleight of Hand proficiency (Criminal)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_SLEIGHTOFHAND"/>
-		  <grant name="Thieves' Tools proficiency (Criminal)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS"/>
+		  <grant name="Thieves' Tools proficiency (Criminal)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS"/>
 	  </rules>
  	</element>
 	<element name="Entertainer" type="Background" source="Player's Handbook (2024)" id="ID_PHB24_BACKGROUND_ENTERTAINER">
@@ -129,7 +129,7 @@
 		  <grant name="Tough (Farmer)" type="Feat" id="ID_PHB24_FEAT_TOUGH"/>
 		  <grant name="Animal Handling Proficiency (Farmer)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_ANIMAL_HANDLING"/>
 		  <grant name="Nature Proficiency (Nature)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_NATURE"/>
-		  <grant name="Carpenter's Tools Proficiency (Farmer)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS"/>
+		  <grant name="Carpenter's Tools Proficiency (Farmer)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS"/>
 	  </rules>
  	</element>
 	<element name="Guard" type="Background" source="Player's Handbook (2024)" id="ID_PHB24_BACKGROUND_GUARD">
@@ -170,7 +170,7 @@
 			<!-- <grant name="Magic Initiate (Guide)" type="Feat" id="ID_PHB24_FEAT_MAGIC_INITIATE_CALL"/> -->
 			<grant name="Stealth proficiency (Guide)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_STEALTH"/>
 			<grant name="Survival proficiency (Guide)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_SURVIVAL"/>
-			<grant name="Cartographer's Tools (Guide)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS"/>
+			<grant name="Cartographer's Tools (Guide)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS"/>
 			<grant type="Feat Feature" id="ID_PHB24_FEAT_SPELLCASTING_SELECTION"/>
 			<grant type="Feat" id="ID_PHB24_FEAT_MAGIC_INITIATE_DRUID"/>
 		</rules>
@@ -192,7 +192,7 @@
 			<grant name="Healer (Hermit)" type="Feat" id="ID_PHB24_FEAT_HEALER"/>
 			<grant name="Medicine proficiency (Hermit)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_MEDICINE"/>
 			<grant name="Religion proficiency (Hermit)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_RELIGION"/>
-			<grant name="Herbalism Kit (Hermit)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT"/>
+			<grant name="Herbalism Kit (Hermit)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT"/>
 		</rules>
 	</element>
 	<element name="Merchant" type="Background" source="Player's Handbook (2024)" id="ID_PHB24_BACKGROUND_MERCHANT">
@@ -212,7 +212,7 @@
 			<grant name="Lucky (Merchant)" type="Feat" id="ID_PHB24_FEAT_LUCKY"/>
 			<grant name="Animal Handling proficiency (Merchant)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_ANIMAL_HANDLING"/>
 			<grant name="Persuasion proficiency (Merchant)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_PERSUASION"/>
-			<grant name="Navigator's Tools (Merchant)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS"/>
+			<grant name="Navigator's Tools (Merchant)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS"/>
 		</rules>
 	</element>
 	<element name="Noble" type="Background" source="Player's Handbook (2024)" id="ID_PHB24_BACKGROUND_NOBLE">
@@ -253,7 +253,7 @@
 			<!-- <grant name="Magic Initiate (Sage)" type="Feat" id="ID_PHB24_FEAT_MAGIC_INITIATE_CALL"/> -->
 			<grant name="Arcana proficiency (Sage)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_ARCANA"/>
 			<grant name="History proficiency (Sage)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_HISTORY"/>
-			<grant name="Calligrapher's Supplies (Sage)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES"/>
+			<grant name="Calligrapher's Supplies (Sage)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES"/>
 			<grant type="Feat Feature" id="ID_PHB24_FEAT_SPELLCASTING_SELECTION"/>
 			<grant type="Feat" id="ID_PHB24_FEAT_MAGIC_INITIATE_WIZARD"/>
 		</rules>
@@ -275,7 +275,7 @@
 			<grant name="Tavern Brawler (Sailor)" type="Feat" id="ID_PHB24_FEAT_TAVERN_BRAWLER"/>
 			<grant name="Acrobatics proficiency (Sailor)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_ACROBATICS"/>
 			<grant name="Perception proficiency (Sailor)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_PERCEPTION"/>
-			<grant name="Navigator's Kit (Sailor)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS"/>
+			<grant name="Navigator's Kit (Sailor)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS"/>
 		</rules>
 	</element>
 	<element name="Scribe" type="Background" source="Player's Handbook (2024)" id="ID_PHB24_BACKGROUND_SCRIBE">
@@ -295,7 +295,7 @@
 			<grant name="Skilled (Scribe)" type="Feat" id="ID_PHB24_FEAT_SKILLED"/>
 			<grant name="Investigation proficiency (Scribe)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_INVESTIGATION"/>
 			<grant name="Perception proficiency (Scribe)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_PERCEPTION"/>
-			<grant name="Calligrapher's Supplies (Scribe)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES"/>
+			<grant name="Calligrapher's Supplies (Scribe)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES"/>
 		</rules>
 	</element>
 	<element name="Soldier" type="Background" source="Player's Handbook (2024)" id="ID_PHB24_BACKGROUND_SOLDIER">
@@ -335,7 +335,7 @@
 			<grant name="Lucky (Wayfarer)" type="Feat" id="ID_PHB24_FEAT_LUCKY"/>
 			<grant name="Insight proficiency (Wayfarer)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_INSIGHT"/>
 			<grant name="Stealth proficiency (Wayfarer)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_STEALTH"/>
-			<grant name="Thieve's Tools proficiency (Wayfarer)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS"/>
+			<grant name="Thieve's Tools proficiency (Wayfarer)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS"/>
 		</rules>
 	</element>
     
@@ -354,7 +354,7 @@
 			<select name="Ability Score Improvement (Custom)" type="Background Feature" supports="Background, Custom"/>
 			<select name="Feat (Custom)" type="Feat" supports="Origin Feat" number="1"/>
 			<select name="Skill Proficienchy (Custom)" type="Proficiency" supports="Skill" number="2"/>
-			<select name="Tools proficiency (Custom)" type="Proficiency" supports="Tool" number="1"/>
+			<select name="Tools proficiency (Custom)" type="Proficiency" supports="Artisan tools" number="1"/>
 		</rules>
 	</element>	
 <!-- BACKGROUND FEATURES: ABILITY SCORE IMPROVEMENT CHOSE - ACOLYTE -->
@@ -628,5 +628,6 @@
 	</rules> 
 </element>	
 </elements>
+
 
 
