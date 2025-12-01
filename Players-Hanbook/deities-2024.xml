@@ -4,7 +4,7 @@
 		<name>Deities</name>
 		<description>Deities from the Player's Handbook (2024)</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="deities-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/deities-2024.xml" />
 		</update>
 	</info>
@@ -1938,7 +1938,7 @@
 	</element>
 
     <!-- THEROS -->
-    <element name="Athreos" type="Deity" source="Mythic Odysseys of Theros" id="ID_WOTC_PHB24_DEITY_ATHREOS">
+    <element name="Athreos" type="Deity" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_DEITY_ATHREOS">
         <description>
             <p>God of Passage</p>
         </description>
@@ -1949,7 +1949,7 @@
             <set name="symbol">Crescent moon</set>
         </setters>
     </element>
-    <element name="Ephara" type="Deity" source="Mythic Odysseys of Theros" id="ID_WOTC_PHB24_DEITY_EPHARA">
+    <element name="Ephara" type="Deity" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_DEITY_EPHARA">
         <description>
             <p>God of The polis</p>
         </description>
@@ -1960,7 +1960,7 @@
             <set name="symbol">Urn pouring water</set>
         </setters>
     </element>
-    <element name="Erebos" type="Deity" source="Mythic Odysseys of Theros" id="ID_WOTC_PHB24_DEITY_EREBOS">
+    <element name="Erebos" type="Deity" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_DEITY_EREBOS">
         <description>
             <p>God of The dead</p>
         </description>
@@ -1971,7 +1971,7 @@
             <set name="symbol">Serene face</set>
         </setters>
     </element>
-    <element name="Heliod" type="Deity" source="Mythic Odysseys of Theros" id="ID_WOTC_PHB24_DEITY_HELIOD">
+    <element name="Heliod" type="Deity" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_DEITY_HELIOD">
         <description>
             <p>God of The sun</p>
         </description>
@@ -1982,7 +1982,7 @@
             <set name="symbol">Laurel crown</set>
         </setters>
     </element>
-    <element name="Iroas" type="Deity" source="Mythic Odysseys of Theros" id="ID_WOTC_PHB24_DEITY_IROAS">
+    <element name="Iroas" type="Deity" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_DEITY_IROAS">
         <description>
             <p>God of Victory</p>
         </description>
@@ -1993,7 +1993,7 @@
             <set name="symbol">Four-winged helmet</set>
         </setters>
     </element>
-    <element name="Karametra" type="Deity" source="Mythic Odysseys of Theros" id="ID_WOTC_PHB24_DEITY_KARAMETRA">
+    <element name="Karametra" type="Deity" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_DEITY_KARAMETRA">
         <description>
             <p>God of Harvests</p>
         </description>
@@ -2004,7 +2004,7 @@
             <set name="symbol">Cornucopia</set>
         </setters>
     </element>
-    <element name="Keranos" type="Deity" source="Mythic Odysseys of Theros" id="ID_WOTC_PHB24_DEITY_KERANOS">
+    <element name="Keranos" type="Deity" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_DEITY_KERANOS">
         <description>
             <p>God of Storms</p>
         </description>
@@ -2015,7 +2015,7 @@
             <set name="symbol">Blue eye</set>
         </setters>
         </element>
-    <element name="Klothys" type="Deity" source="Mythic Odysseys of Theros" id="ID_WOTC_PHB24_DEITY_KLOTHYS">
+    <element name="Klothys" type="Deity" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_DEITY_KLOTHYS">
         <description>
             <p>God of Destiny</p>
         </description>
@@ -2026,7 +2026,7 @@
             <set name="symbol">Drop spindle</set>
         </setters>
     </element>
-    <element name="Kruphix" type="Deity" source="Mythic Odysseys of Theros" id="ID_WOTC_PHB24_DEITY_KRUPHIX">
+    <element name="Kruphix" type="Deity" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_DEITY_KRUPHIX">
         <description>
             <p>God of Horizons</p>
         </description>
@@ -2037,7 +2037,7 @@
             <set name="symbol">Eight-pointed star</set>
         </setters>
     </element>
-    <element name="Mogis" type="Deity" source="Mythic Odysseys of Theros" id="ID_WOTC_PHB24_DEITY_MOGIS">
+    <element name="Mogis" type="Deity" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_DEITY_MOGIS">
         <description>
             <p>God of Slaughter</p>
         </description>
@@ -2048,7 +2048,7 @@
             <set name="symbol">Four-horned bull's head</set>
         </setters>
     </element>
-    <element name="Nylea" type="Deity" source="Mythic Odysseys of Theros" id="ID_WOTC_PHB24_DEITY_NYLEA">
+    <element name="Nylea" type="Deity" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_DEITY_NYLEA">
         <description>
             <p>God of The hunt</p>
         </description>
@@ -2059,7 +2059,7 @@
             <set name="symbol">Four arrows</set>
         </setters>
     </element>
-    <element name="Pharika" type="Deity" source="Mythic Odysseys of Theros" id="ID_WOTC_PHB24_DEITY_PHARIKA">
+    <element name="Pharika" type="Deity" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_DEITY_PHARIKA">
         <description>
             <p>God of Affliction</p>
         </description>
@@ -2070,7 +2070,7 @@
             <set name="symbol">Snakes</set>
         </setters>
     </element>
-    <element name="Phenax" type="Deity" source="Mythic Odysseys of Theros" id="ID_WOTC_PHB24_DEITY_PHENAX">
+    <element name="Phenax" type="Deity" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_DEITY_PHENAX">
         <description>
             <p>God of Deception</p>
         </description>
@@ -2081,7 +2081,7 @@
             <set name="symbol">Winged golden mask</set>
         </setters>
     </element>
-    <element name="Purphoros" type="Deity" source="Mythic Odysseys of Theros" id="ID_WOTC_PHB24_DEITY_PURPHOROS">
+    <element name="Purphoros" type="Deity" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_DEITY_PURPHOROS">
         <description>
             <p>God of The forge</p>
         </description>
@@ -2092,7 +2092,7 @@
             <set name="symbol">Double crest</set>
         </setters>
     </element>
-    <element name="Thassa" type="Deity" source="Mythic Odysseys of Theros" id="ID_WOTC_PHB24_DEITY_THASSA">
+    <element name="Thassa" type="Deity" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_DEITY_THASSA">
         <description>
             <p>God of The sea</p>
         </description>
