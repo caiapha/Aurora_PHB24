@@ -4,7 +4,7 @@
     <name>Elf (2024)</name>
     <description>Elf species from the 2024 Player's Handbook for Aurora Builder.</description>
     <author url="https://aurorabuilder.com">Aurora Builder</author>
-    <update version="1.0.1">
+    <update version="1.0.2">
       <file name="species-elf-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/species-elf-2024.xml" />
     </update>
     <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
@@ -75,19 +75,19 @@
     <supports>KeenSensesSkills</supports>
         <description><p>you gain proficiency in <strong>Insight</strong>.</p></description>
     <sheet display="false" />
-    <rules><grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" /></rules>
+    <rules><grant type="Proficiency" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_INSIGHT" /></rules>
   </element>
   <element name="Keen Sense: Perception" type="Racial Trait" source="Player's Handbook (2024)" id="ID_RACIAL_TRAIT_ELF_2024_KEEN_SENSES_PERCEPTION">
     <supports>KeenSensesSkills</supports>
         <description><p>you gain proficiency in <strong>Perception</strong>.</p></description>
     <sheet display="false" />
-    <rules><grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" /></rules>
+    <rules><grant type="Proficiency" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_PERCEPTION" /></rules>
   </element>
   <element name="Keen Sense: Survival" type="Racial Trait" source="Player's Handbook (2024)" id="ID_RACIAL_TRAIT_ELF_2024_KEEN_SENSES_SURVIVAL">
     <supports>KeenSensesSkills</supports>
         <description><p>you gain proficiency in <strong>Survival</strong>.</p></description>
     <sheet display="false" />
-    <rules><grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" /></rules>
+    <rules><grant type="Proficiency" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_SURVIVAL" /></rules>
   </element>
 
   <!-- LINEAGES -->
@@ -177,6 +177,7 @@
   </element>
 
 </elements>
+
 
 
 
