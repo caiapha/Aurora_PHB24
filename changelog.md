@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 
 ---
+## [1.1.2] – Skill ID reference fixed – 2025-12-01
+
+- Some wrong skills' ID references fixed.
+
 ## [1.1.1] – Languages fixed – 2025-11-27
 
 - Included more languages and fixed the languages' selection.
