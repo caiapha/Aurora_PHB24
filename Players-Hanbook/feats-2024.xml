@@ -3,7 +3,7 @@
 		<name>Feats from the Player's Handbook 2024 Revision</name>
 		<description>Feats from the Player's Handbook (2024)</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
-		<update version="1.0.2">
+		<update version="1.0.3">
 		<file name="feats-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/feats-2024.xml"/>
 		</update>
 	</info>
@@ -302,7 +302,7 @@
 			<select name="Ability improvement (Chef)" type="Ability Score Improvement" supports="Standard, (Constitution||Wisdom)" />
 			<stat name="Replenishing:Meal" value="4" bonus="base" />
 			<stat name="Replenishing:Meal" value="proficiency" />
-			<grant name="Tool Proficiency (Chef)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" /> 
+			<grant name="Tool Proficiency (Chef)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" /> 
 		</rules>
 	</element>
 	<element name="Crafter" type="Feat" source="Player's Handbook (2024)" id="ID_PHB24_FEAT_CRAFTER">
@@ -561,8 +561,8 @@
 		</sheet>
 		<rules>
 			<grant type="Ability Score Improvement" id="ID_PHB24_ASI_INTELLIGENCE" requirements="ID_PHB24_FEAT_SPELLCASTING_INT" />
-      <grant type="Ability Score Improvement" id="ID_PHB24_ASI_WISDOM" requirements="ID_PHB24_FEAT_SPELLCASTING_WIS"/>
-      <grant type="Ability Score Improvement" id="ID_PHB24_ASI_CHARISMA" requirements="ID_PHB24_FEAT_SPELLCASTING_CHA" />
+		    <grant type="Ability Score Improvement" id="ID_PHB24_ASI_WISDOM" requirements="ID_PHB24_FEAT_SPELLCASTING_WIS"/>
+		    <grant type="Ability Score Improvement" id="ID_PHB24_ASI_CHARISMA" requirements="ID_PHB24_FEAT_SPELLCASTING_CHA" />
 			<grant name="Misty Step (Fey-Touched)" type="Spell" id="ID_PHB24_SPELL_MISTY_STEP" prepared="true" spellcasting="Feat Spellcasting" />
 			<select name="Fey-Touched spell" type="Spell" supports="1,(Divination||Enchantment), PHB24" prepared="true" spellcasting="Feat Spellcasting" />
 		</rules>										 	
@@ -1625,6 +1625,7 @@
 		</sheet>
 	</element>
 </elements>
+
 
 
 
