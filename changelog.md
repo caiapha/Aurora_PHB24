@@ -39,8 +39,8 @@ All notable changes to this project will be documented in this file.
 
 ### 🔄 In development / Work in progress
 - [X] Alignements
-- [ ] Deities
-- [ ] Languages
+- [X] Deities
+- [X] Languages
 - [ ] Appearance
 - [ ] Standard Items
 - [ ] Magic items or special equipment
