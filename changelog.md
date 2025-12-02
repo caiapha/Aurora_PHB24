@@ -3,6 +3,11 @@
 All notable changes to this project will be documented in this file.
 
 ---
+## [1.2.0] – Alignment selection and Deities added – 2025-12-01
+
+- Alignment selection and Deities added
+- Minor fixes on tool and proficiency ID references
+
 ## [1.1.2] – Skill ID reference fixed – 2025-12-01
 
 - Some wrong skills' ID references fixed.
