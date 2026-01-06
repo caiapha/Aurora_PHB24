@@ -4,7 +4,7 @@
 		<name>Backgrounds</name>
 		<description>Backgrounds from the Player's Handbook (2024)</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
-		<update version="1.0.3">
+		<update version="1.0.4">
 		  <file name="backgrounds-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/backgrounds-2024.xml"/>
 		</update>
 	</info>
@@ -68,7 +68,7 @@
 		  <select name="Ability Score Improvement (Charlatan)" type="Background Feature" supports="Background, Charlatan"/>
 		  <grant name="Skilled (Charlatan)" type="Feat" id="ID_PHB24_FEAT_SKILLED"/>
 		  <grant name="Deception proficiency (Charlatan)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_DECEPTION"/>
-		  <grant name="Sleight of Hand proficiency (Charlatan)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_SLEIGHTOFHAND"/>
+		  <grant name="Sleight of Hand proficiency (Charlatan)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_SLEIGHT_OF_HAND"/>
 		  <grant name="Forgery Kit proficiency (Charlatan)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT"/>
 	  </rules>
  	</element>
@@ -88,7 +88,7 @@
 		  <select name="Ability Score Improvement (Criminal)" type="Background Feature" supports="Background, Criminal"/>
 		  <grant name="Alert (Criminal)" type="Feat" id="ID_PHB24_FEAT_ALERT"/>
 		  <grant name="Stealth proficiency (Criminal)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_STEALTH"/>
-		  <grant name="Sleight of Hand proficiency (Criminal)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_SLEIGHTOFHAND"/>
+		  <grant name="Sleight of Hand proficiency (Criminal)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_SLEIGHT_OF_HAND"/>
 		  <grant name="Thieves' Tools proficiency (Criminal)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS"/>
 	  </rules>
  	</element>
@@ -628,6 +628,7 @@
 	</rules> 
 </element>	
 </elements>
+
 
 
 
