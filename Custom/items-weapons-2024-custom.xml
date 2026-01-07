@@ -8,25 +8,21 @@
 		<author url="">Caiapha</author>
 	</info>
 	
-	<!-- simple -->
-		<element name="Sarissa" type="Weapon" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_WEAPON_SARISSA">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SPEARS, ID_WOTC_PHB24_WEAPONMASTERY_TOPPLE</supports>
+<!-- simple -->
+	<element name="Sarissa" type="Weapon" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_WEAPON_SARISSA">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SPEARS, ID_WOTC_PHB24_WEAPONMASTERY_TOPPLE</supports>
 		<description>
-			<p>Simple Melee Weapon, Versatile, Thrown, 1d8 (1d10) Piercing, Topple Mastery</p>
+			<p>Martial Melee Weapon, Versatile, Thrown, 1d8 (1d10) Piercing, Topple Mastery</p>
 		</description>
 		<setters>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">5</set>
 			<set name="weight" lb="3">7 lb.</set>
 			<set name="slot">onehand</set>
-			<set name="range">20/60</set>
+			<set name="range">5ft, 20/60ft</set>
 			<set name="damage" type="piercing">1d8</set>
 			<set name="versatile">1d10</set>
-			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SARISSA</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS</set>
 		</setters>
-	</element>
-	<element name="Weapon Proficiency (Sarissa)" type="Proficiency" source="Player's Handbook (2024)" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SARISSA">
-    	<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SPEARS, ID_WOTC_PHB24_WEAPONMASTERY_TOPPLE</supports>
-	</element>
-	
+	</element>	
 </elements>
