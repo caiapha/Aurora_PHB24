@@ -3,7 +3,7 @@
 		<name>Feats from the Player's Handbook 2024 Revision</name>
 		<description>Feats from the Player's Handbook (2024)</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
-		<update version="1.0.4">
+		<update version="1.0.5">
 		<file name="feats-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/feats-2024.xml"/>
 		</update>
 	</info>
@@ -1627,6 +1627,7 @@
 		</sheet>
 	</element>
 </elements>
+
 
 
 
