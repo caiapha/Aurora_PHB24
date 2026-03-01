@@ -866,7 +866,7 @@
 		<sheet display="false" />
 		<rules>
 			<select name="Ability improvement (Moderately Armored)" type="Ability Score Improvement" supports="Standard, (Strength||Dexterity)" />
-			<grant name="Moderately Armored" type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant name="Moderately Armored" type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
 		</rules>
 	</element>
 	<element name="Mounted Combatant" type="Feat" source="Player's Handbook (2024)" id="ID_PHB24_FEAT_MOUNTED_COMBATANT">
@@ -1627,6 +1627,7 @@
 		</sheet>
 	</element>
 </elements>
+
 
 
 
