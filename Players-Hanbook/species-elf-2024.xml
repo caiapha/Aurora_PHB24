@@ -47,7 +47,7 @@
       <select type="Racial Trait" name="Elven Lineage" supports="Elf2024Lineage" number="1" />
       <select type="Racial Trait" name="Spellcasting Ability (Elf Lineage)" supports="Elf2024SpellcastingAbility" number="1" />
       <grant type="Language" id="ID_WOTC_PHB24_LANGUAGE_COMMON" />
-      <select name="Additional Language" type="Language" supports="Standard" number="2" />
+      <select name="Additional Language" type="Language" supports="Standard, Exotic" number="2" />
     </rules>
   </element>
 
@@ -177,6 +177,7 @@
   </element>
 
 </elements>
+
 
 
 
