@@ -40,7 +40,7 @@
       <grant type="Racial Trait" id="ID_HUMAN_2024_SKILLFUL" />
       <grant type="Racial Trait" id="ID_HUMAN_2024_VERSATILE" />
       <grant type="Language" id="ID_WOTC_PHB24_LANGUAGE_COMMON" />
-      <select name="Additional Language" type="Language" supports="Standard" number="2" />
+      <select name="Additional Language" type="Language" supports="Standard, Exotic" number="2" />
     </rules>
   </element>
 
@@ -83,6 +83,7 @@
     </rules>
   </element>
 </elements>
+
 
 
 
