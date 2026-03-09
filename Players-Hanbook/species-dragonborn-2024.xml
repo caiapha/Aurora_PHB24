@@ -41,7 +41,7 @@
       <!-- Ancestry selection (sets resistance and shows shape/save) -->
       <select type="Racial Trait" name="Draconic Ancestry (2024)" supports="Draconic Ancestry 2024" />
       <grant type="Language" id="ID_WOTC_PHB24_LANGUAGE_COMMON" />
-      <select name="Additional Language" type="Language" supports="Standard" number="2" />
+      <select name="Additional Language" type="Language" supports="Standard, Exotic" number="2" />
    </rules>
   </element>
 
@@ -164,6 +164,7 @@
     </sheet>
   </element>
 </elements>
+
 
 
 
