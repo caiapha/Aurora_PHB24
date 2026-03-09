@@ -4,7 +4,7 @@
     <name>Dwarf (2024)</name>
     <description>Dwarf species from the 2024 Player's Handbook for Aurora Builder (no Ability Score Increases from species).</description>
     <author url="https://aurorabuilder.com">Aurora Builder</author>
-    <update version="1.0.2">
+    <update version="1.0.3">
       <file name="species-dwarf-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/species-dwarf-2024.xml" />
     </update>
     <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
@@ -39,7 +39,7 @@
       <!-- Taglia fissa: Medium -->
       <grant type="Size" id="ID_SIZE_MEDIUM" />
       <grant type="Language" id="ID_WOTC_PHB24_LANGUAGE_COMMON" />
-      <select name="Additional Language" type="Language" supports="Standard, Exotic" number="2" />
+      <select name="Additional Language" type="Language" supports="Standard||Exotic" number="2" />
     </rules>
   </element>
 
@@ -77,6 +77,7 @@
     </sheet>
   </element>
 </elements>
+
 
 
 
