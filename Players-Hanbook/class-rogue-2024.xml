@@ -134,7 +134,7 @@
       </setters>
       <rules>
         <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
-        <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_LIGHT"/>
+        <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
         <grant type="Proficiency" id="ID_WOTC_PHB_ITEM_TOOL_THIEVES_TOOLS"/>
         <select type="Proficiency" name="Rogue Multiclass Skill" supports="Skill, PHB24, Rogue" number="1"/>
       </rules>
@@ -427,6 +427,7 @@
     </sheet>
   </element>
 </elements>
+
 
 
 
