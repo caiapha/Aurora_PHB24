@@ -3,7 +3,7 @@
 		<name>Feats from the Player's Handbook 2024 Revision</name>
 		<description>Feats from the Player's Handbook (2024)</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
-		<update version="1.0.1">
+		<update version="1.0.5">
 		<file name="feats-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/feats-2024.xml"/>
 		</update>
 	</info>
@@ -182,24 +182,24 @@
 		<sheet display="false" />
 		<rules>
 			<select name="Ability improvement (Epic Boon)" type="Ability Score Improvement" supports="Epic Boon" />
-			<grant name="Skill Proficiency (Acrobatics)" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
-			<grant name="Skill Proficiency (Animal Handling)" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
-			<grant name="Skill Proficiency (Arcana)" id="ID_PROFICIENCY_SKILL_ARCANA" />
-			<grant name="Skill Proficiency (Athletics)" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
-			<grant name="Skill Proficiency (Deception)" id="ID_PROFICIENCY_SKILL_DECEPTION" />
-			<grant name="Skill Proficiency (History)" id="ID_PROFICIENCY_SKILL_HISTORY" />
-			<grant name="Skill Proficiency (Insight)" id="ID_PROFICIENCY_SKILL_INSIGHT" />
-			<grant name="Skill Proficiency (Intimidation)" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
-			<grant name="Skill Proficiency (Investigation)" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
-			<grant name="Skill Proficiency (Medicine)" id="ID_PROFICIENCY_SKILL_MEDICINE" />
-			<grant name="Skill Proficiency (Nature)" id="ID_PROFICIENCY_SKILL_NATURE" />
-			<grant name="Skill Proficiency (Perception)" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
-			<grant name="Skill Proficiency (Performance)" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
-			<grant name="Skill Proficiency (Persuasion)" id="ID_PROFICIENCY_SKILL_PERSUASION" />
-			<grant name="Skill Proficiency (Religion)" id="ID_PROFICIENCY_SKILL_RELIGION" />
-			<grant name="Skill Proficiency (Sleight of Hand)" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
-			<grant name="Skill Proficiency (Stealth)" id="ID_PROFICIENCY_SKILL_STEALTH" />
-			<grant name="Skill Proficiency (Survival)" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<grant name="Skill Proficiency (Acrobatics)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_ACROBATICS" />
+			<grant name="Skill Proficiency (Animal Handling)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_ANIMAL_HANDLING" />
+			<grant name="Skill Proficiency (Arcana)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_ARCANA" />
+			<grant name="Skill Proficiency (Athletics)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_ATHLETICS" />
+			<grant name="Skill Proficiency (Deception)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_DECEPTION" />
+			<grant name="Skill Proficiency (History)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_HISTORY" />
+			<grant name="Skill Proficiency (Insight)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_INSIGHT" />
+			<grant name="Skill Proficiency (Intimidation)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_INTIMIDATION" />
+			<grant name="Skill Proficiency (Investigation)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_INVESTIGATION" />
+			<grant name="Skill Proficiency (Medicine)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_MEDICINE" />
+			<grant name="Skill Proficiency (Nature)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_NATURE" />
+			<grant name="Skill Proficiency (Perception)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_PERCEPTION" />
+			<grant name="Skill Proficiency (Performance)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_PERFORMANCE" />
+			<grant name="Skill Proficiency (Persuasion)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_PERSUASION" />
+			<grant name="Skill Proficiency (Religion)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_RELIGION" />
+			<grant name="Skill Proficiency (Sleight of Hand)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_SLEIGHTOFHAND" />
+			<grant name="Skill Proficiency (Stealth)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_STEALTH" />
+			<grant name="Skill Proficiency (Survival)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_SURVIVAL" />
 			<select type="Proficiency" name="Skill Expertise (Boon of Skill)" supports="Expertise" />			
 		</rules>
 	</element>
@@ -302,7 +302,7 @@
 			<select name="Ability improvement (Chef)" type="Ability Score Improvement" supports="Standard, (Constitution||Wisdom)" />
 			<stat name="Replenishing:Meal" value="4" bonus="base" />
 			<stat name="Replenishing:Meal" value="proficiency" />
-			<grant name="Tool Proficiency (Chef)" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" /> 
+			<grant name="Tool Proficiency (Chef)" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" /> 
 		</rules>
 	</element>
 	<element name="Crafter" type="Feat" source="Player's Handbook (2024)" id="ID_PHB24_FEAT_CRAFTER">
@@ -561,8 +561,8 @@
 		</sheet>
 		<rules>
 			<grant type="Ability Score Improvement" id="ID_PHB24_ASI_INTELLIGENCE" requirements="ID_PHB24_FEAT_SPELLCASTING_INT" />
-      <grant type="Ability Score Improvement" id="ID_PHB24_ASI_WISDOM" requirements="ID_PHB24_FEAT_SPELLCASTING_WIS"/>
-      <grant type="Ability Score Improvement" id="ID_PHB24_ASI_CHARISMA" requirements="ID_PHB24_FEAT_SPELLCASTING_CHA" />
+		    <grant type="Ability Score Improvement" id="ID_PHB24_ASI_WISDOM" requirements="ID_PHB24_FEAT_SPELLCASTING_WIS"/>
+		    <grant type="Ability Score Improvement" id="ID_PHB24_ASI_CHARISMA" requirements="ID_PHB24_FEAT_SPELLCASTING_CHA" />
 			<grant name="Misty Step (Fey-Touched)" type="Spell" id="ID_PHB24_SPELL_MISTY_STEP" prepared="true" spellcasting="Feat Spellcasting" />
 			<select name="Fey-Touched spell" type="Spell" supports="1,(Divination||Enchantment), PHB24" prepared="true" spellcasting="Feat Spellcasting" />
 		</rules>										 	
@@ -866,7 +866,7 @@
 		<sheet display="false" />
 		<rules>
 			<select name="Ability improvement (Moderately Armored)" type="Ability Score Improvement" supports="Standard, (Strength||Dexterity)" />
-			<grant name="Moderately Armored" type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant name="Moderately Armored" type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
 		</rules>
 	</element>
 	<element name="Mounted Combatant" type="Feat" source="Player's Handbook (2024)" id="ID_PHB24_FEAT_MOUNTED_COMBATANT">
@@ -923,8 +923,8 @@
 		<description />
 		<sheet display="false" />
 		<rules>
-			<grant type="Proficiency" id="ID_EXPERTISE_SKILL_INSIGHT" requirements="ID_PROFICIENCY_SKILL_INSIGHT" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" requirements="!ID_PROFICIENCY_SKILL_INSIGHT" />
+			<grant type="Proficiency" id="ID_EXPERTISE_SKILL_INSIGHT" requirements="ID_WOTC_PHB24_SKILL_PROFICIENCY_INSIGHT" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_INSIGHT" requirements="!ID_WOTC_PHB24_SKILL_PROFICIENCY_INSIGHT" />
 		</rules>	
 	</element>
 	<element name="Observant: Investigation" type="Feat Feature" source="Player's Handbook (2024)" id="ID_PHB24_FEAT_OBSERVANT_INVESTIGATION">
@@ -932,8 +932,8 @@
 		<description />
 		<sheet display="false" />
 		<rules>
-			<grant type="Proficiency" id="ID_EXPERTISE_SKILL_INVESTIGATION" requirements="ID_PROFICIENCY_SKILL_INVESTIGATION" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" requirements="!ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			<grant type="Proficiency" id="ID_EXPERTISE_SKILL_INVESTIGATION" requirements="ID_WOTC_PHB24_SKILL_PROFICIENCY_INVESTIGATION" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_INVESTIGATION" requirements="!ID_WOTC_PHB24_SKILL_PROFICIENCY_INVESTIGATION" />
 		</rules>	
 	</element>
 	<element name="Observant: Perception" type="Feat Feature" source="Player's Handbook (2024)" id="ID_PHB24_FEAT_OBSERVANT_PERCEPTION">
@@ -941,8 +941,8 @@
 		<description />
 		<sheet display="false" />
 		<rules>
-			<grant type="Proficiency" id="ID_EXPERTISE_SKILL_PERCEPTION" requirements="ID_PROFICIENCY_SKILL_PERCEPTION" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" requirements="!ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<grant type="Proficiency" id="ID_EXPERTISE_SKILL_PERCEPTION" requirements="ID_WOTC_PHB24_SKILL_PROFICIENCY_PERCEPTION" />
+			<grant type="Proficiency" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_PERCEPTION" requirements="!ID_WOTC_PHB24_SKILL_PROFICIENCY_PERCEPTION" />
 		</rules>	
 	</element>
 	<!-- END OBSERVANT SKILL SELECTION-->
@@ -1370,7 +1370,9 @@
 		<description>
 			<p>Your Hit Point maximum increases by an amount equal to twice your character level when you gain this feat. Whenever you gain a character level thereafter, your Hit Point maximum increases by an additional 2 Hit Points.</p>
 		</description>
-		<sheet display="false" />
+		<sheet>
+				<description>Your Hit Point maximum increases by an amount equal to twice your character level when you gain this feat. Whenever you gain a character level thereafter, your Hit Point maximum increases by an additional 2 Hit Points.</description>
+		</sheet>
 		<rules> 
 			<stat name="tough:hp" value="level" />
 			<stat name="tough:hp" value="level" />
@@ -1625,6 +1627,11 @@
 		</sheet>
 	</element>
 </elements>
+
+
+
+
+
 
 
 

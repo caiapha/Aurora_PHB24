@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 
 ---
+## [1.2.0] – Alignment selection and Deities added – 2025-12-01
+
+- Alignment selection and Deities added
+- Minor fixes on tool and proficiency ID references
+
+## [1.1.2] – Skill ID reference fixed – 2025-12-01
+
+- Some wrong skills' ID references fixed.
+
 ## [1.1.1] – Languages fixed – 2025-11-27
 
 - Included more languages and fixed the languages' selection.
@@ -30,8 +39,8 @@ All notable changes to this project will be documented in this file.
 
 ### 🔄 In development / Work in progress
 - [X] Alignements
-- [ ] Deities
-- [ ] Languages
+- [X] Deities
+- [X] Languages
 - [ ] Appearance
 - [ ] Standard Items
 - [ ] Magic items or special equipment
