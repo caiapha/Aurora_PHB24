@@ -4,12 +4,18 @@
 		<name>Player’s Handbook Rev. 2024</name>
 		<description>The Player’s Handbook is the essential reference for every Dungeons &amp; Dragons roleplayer. It contains rules for character creation and advancement, backgrounds and skills, exploration and combat, equipment, spells, and much more. Use this book to create exciting characters from among the most iconic D&amp;D races and classes.</description>
 		<author url="https://wpn.wizards.com/en/products/2024-players-handbook">Wizards of the Coast</author>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="players-handbook-2024.index" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/players-handbook-2024.index" />
 		</update>
 	</info>
 	<files>	
 		<file name="Ability-Skill-Improvements-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/Ability-Skill-Improvements-2024.xml" />
+		<file name="artificer-alchemist-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/artificer-alchemist-2024.xml" />
+		<file name="artificer-artillerist-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/artificer-artillerist-2024.xml" />
+		<file name="artificer-battlesmith-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/artificer-battlesmith-2024.xml" />
+		<file name="artificer-armorer-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/artificer-armorer-2024.xml" />
+		<file name="artificer-cartographer-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/artificer-cartographer-2024.xml" />
+		<file name="artificer-infusions-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/artificer-infusions-2024.xml" />
 		<file name="backgrounds-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/backgrounds-2024.xml" />
 		<file name="barbarian_wild_heart-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/barbarian_wild_heart-2024.xml" />
 		<file name="barbarian-berserker-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/barbarian-berserker-2024.xml" />
@@ -31,6 +37,7 @@
 		<file name="class-sorcerer-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/class-sorcerer-2024.xml" />
 		<file name="class-warlock-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/class-warlock-2024.xml" />
 		<file name="class-wizard-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/class-wizard-2024.xml" />
+		<file name="class-artificer-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/class-artificer-2024.xml" />
 		<file name="cleric-life-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/cleric-life-2024.xml" />
 		<file name="cleric-light-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/cleric-light-2024.xml" />
 		<file name="cleric-trickery-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/cleric-trickery-2024.xml" />

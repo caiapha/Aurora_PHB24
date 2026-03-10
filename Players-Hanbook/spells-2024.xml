@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Spells from the Player's Handbook Rev. 2024</name>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="spells-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/spells-2024.xml" />
 		</update>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
@@ -5263,6 +5263,27 @@
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent" />
 			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Mind Spike" type="Spell" source="Player's Handbook (2024)" id="ID_PHB24_SPELL_MIND_SPIKE">
+		<supports>SorcererPHB24, WarlockPHB24, WizardPHB24, Spell Saving Throw, PHB24</supports>
+		<description>
+			<p>You drive a spike of psionic energy into the mind of one creature you can see within range. The target makes a Wisdom saving throw, taking 3d8 Psychic damage on a failed save or half as much damage on a successful one. On a failed save, you also always know the target's location until the spell ends, but only while the two of you are on the same plane of existence. While you have this knowledge, the target can't become hidden from you, and if it has the Invisible condition, it gains no benefit from that condition against you.</p>
+			<p class="indent"><strong>Using a Higher-Level Spell Slot.</strong> The damage increases by 1d8 for each spell slot level above 2.</p>
+		</description>
+		<setters>
+			<set name="keywords">psychic</set>
+			<set name="level">2</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
