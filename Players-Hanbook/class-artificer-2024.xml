@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="class-artificer-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/class-artificer-2024.xml" />
 		</update>
 	</info>
@@ -241,20 +241,6 @@
 			<select type="Class Feature" name="Artificer Infusion" supports="Artificer Infusion, EFA Version" number="2" level="10" />
 			<select type="Class Feature" name="Artificer Infusion" supports="Artificer Infusion, EFA Version" number="2" level="14" />
 			<select type="Class Feature" name="Artificer Infusion" supports="Artificer Infusion, EFA Version" number="2" level="16" />
-
-			<!-- selects for replicate magic items -->
-			<select type="Class Feature" name="Artificer Infusion, Replicate Magic Item" supports="Replicate Magic Item Option" requirements="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM" />
-			<select type="Class Feature" name="Artificer Infusion, Replicate Magic Item 2nd" supports="Replicate Magic Item Option" requirements="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_2" />
-			<select type="Class Feature" name="Artificer Infusion, Replicate Magic Item 3rd" supports="Replicate Magic Item Option" requirements="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_3" />
-			<select type="Class Feature" name="Artificer Infusion, Replicate Magic Item 4th" supports="Replicate Magic Item Option" requirements="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_4" />
-			<select type="Class Feature" name="Artificer Infusion, Replicate Magic Item 5th" supports="Replicate Magic Item Option" requirements="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_5" />
-			<select type="Class Feature" name="Artificer Infusion, Replicate Magic Item 6th" supports="Replicate Magic Item Option" requirements="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_6" />
-			<select type="Class Feature" name="Artificer Infusion, Replicate Magic Item 7th" supports="Replicate Magic Item Option" requirements="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_7" />
-			<select type="Class Feature" name="Artificer Infusion, Replicate Magic Item 8th" supports="Replicate Magic Item Option" requirements="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_8" />
-			<select type="Class Feature" name="Artificer Infusion, Replicate Magic Item 9th" supports="Replicate Magic Item Option" requirements="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_9" />
-			<select type="Class Feature" name="Artificer Infusion, Replicate Magic Item 10th" supports="Replicate Magic Item Option" requirements="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_10" />
-			<select type="Class Feature" name="Artificer Infusion, Replicate Magic Item 11th" supports="Replicate Magic Item Option" requirements="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_11" />
-			<select type="Class Feature" name="Artificer Infusion, Replicate Magic Item 12th" supports="Replicate Magic Item Option" requirements="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_12" />
 
 			<stat name="item infusions:decay" value="1" bonus="base" />
 			<stat name="item infusions:decay" value="intelligence:modifier" bonus="base" />
@@ -574,7 +560,6 @@
 		</rules>
 	</element>
 </elements>
-
 
 
 

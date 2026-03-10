@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Artificer Infusions</name>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="artificer-infusions-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/artificer-infusions-2024.xml" />
 		</update>
 	</info>
@@ -164,6 +164,9 @@
 			<div element="ID_WOTC_EFA_INFORMATION_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_TABLES" />
 		</description>
 		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Replicate Magic Item Plan" supports="Replicate Magic Item Plan Option" />
+		</rules>
 	</element>
 	<element name="Replicate Magic Item" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_2">
 		<compendium display="false" />
@@ -175,6 +178,9 @@
 			<div element="ID_WOTC_EFA_INFORMATION_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_TABLES" />
 		</description>
 		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Replicate Magic Item Plan 2nd" supports="Replicate Magic Item Plan Option" />
+		</rules>
 	</element>
 	<element name="Replicate Magic Item" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_3">
 		<compendium display="false" />
@@ -186,6 +192,9 @@
 			<div element="ID_WOTC_EFA_INFORMATION_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_TABLES" />
 		</description>
 		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Replicate Magic Item Plan 3rd" supports="Replicate Magic Item Plan Option" />
+		</rules>
 	</element>
 	<element name="Replicate Magic Item" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_4">
 		<compendium display="false" />
@@ -197,6 +206,9 @@
 			<div element="ID_WOTC_EFA_INFORMATION_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_TABLES" />
 		</description>
 		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Replicate Magic Item Plan 4th" supports="Replicate Magic Item Plan Option" />
+		</rules>
 	</element>
 	<element name="Replicate Magic Item" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_5">
 		<compendium display="false" />
@@ -208,6 +220,9 @@
 			<div element="ID_WOTC_EFA_INFORMATION_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_TABLES" />
 		</description>
 		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Replicate Magic Item Plan 5th" supports="Replicate Magic Item Plan Option" />
+		</rules>
 	</element>
 	<element name="Replicate Magic Item" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_6">
 		<compendium display="false" />
@@ -219,6 +234,9 @@
 			<div element="ID_WOTC_EFA_INFORMATION_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_TABLES" />
 		</description>
 		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Replicate Magic Item Plan 6th" supports="Replicate Magic Item Plan Option" />
+		</rules>
 	</element>
 	<element name="Replicate Magic Item" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_7">
 		<compendium display="false" />
@@ -230,6 +248,9 @@
 			<div element="ID_WOTC_EFA_INFORMATION_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_TABLES" />
 		</description>
 		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Replicate Magic Item Plan 7th" supports="Replicate Magic Item Plan Option" />
+		</rules>
 	</element>
 	<element name="Replicate Magic Item" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_8">
 		<compendium display="false" />
@@ -241,6 +262,9 @@
 			<div element="ID_WOTC_EFA_INFORMATION_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_TABLES" />
 		</description>
 		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Replicate Magic Item Plan 8th" supports="Replicate Magic Item Plan Option" />
+		</rules>
 	</element>
 	<element name="Replicate Magic Item" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_9">
 		<compendium display="false" />
@@ -252,6 +276,9 @@
 			<div element="ID_WOTC_EFA_INFORMATION_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_TABLES" />
 		</description>
 		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Replicate Magic Item Plan 9th" supports="Replicate Magic Item Plan Option" />
+		</rules>
 	</element>
 	<element name="Replicate Magic Item" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_10">
 		<compendium display="false" />
@@ -263,6 +290,9 @@
 			<div element="ID_WOTC_EFA_INFORMATION_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_TABLES" />
 		</description>
 		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Replicate Magic Item Plan 10th" supports="Replicate Magic Item Plan Option" />
+		</rules>
 	</element>
 	<element name="Replicate Magic Item" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_11">
 		<compendium display="false" />
@@ -274,6 +304,9 @@
 			<div element="ID_WOTC_EFA_INFORMATION_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_TABLES" />
 		</description>
 		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Replicate Magic Item Plan 11th" supports="Replicate Magic Item Plan Option" />
+		</rules>
 	</element>
 	<element name="Replicate Magic Item" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_12">
 		<compendium display="false" />
@@ -285,6 +318,9 @@
 			<div element="ID_WOTC_EFA_INFORMATION_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_TABLES" />
 		</description>
 		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Replicate Magic Item Plan 12th" supports="Replicate Magic Item Plan Option" />
+		</rules>
 	</element>
 	<element name="Repulsion Shield" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_INFUSION_REPULSION_SHIELD">
 		<supports>Artificer Infusion, EFA Version</supports>
@@ -412,6 +448,517 @@
 		</description>
 	</element>
 
+	<!-- replicate magic item plans -->
+	<element name="Replicate Magic Item Plan: Alchemy Jug" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ALCHEMY_JUG">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:2],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ALCHEMY_JUG</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Alchemy Jug (Attunement: No).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Alchemy Jug.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Bag of Holding" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_BAG_OF_HOLDING">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:2],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_BAG_OF_HOLDING</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Bag of Holding (Attunement: No).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Bag of Holding.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Cap of Water Breathing" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_CAP_OF_WATER_BREATHING">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:2],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_CAP_OF_WATER_BREATHING</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Cap of Water Breathing (Attunement: No).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Cap of Water Breathing.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Goggles of Night" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_GOGGLES_OF_NIGHT">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:2],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_GOGGLES_OF_NIGHT</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Goggles of Night (Attunement: No).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Goggles of Night.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Rope of Climbing" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ROPE_OF_CLIMBING">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:2],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ROPE_OF_CLIMBING</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Rope of Climbing (Attunement: No).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Rope of Climbing.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Sending Stones" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_SENDING_STONES">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:2],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_SENDING_STONES</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Sending Stones (Attunement: No).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Sending Stones.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Wand of Magic Detection" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WAND_OF_MAGIC_DETECTION">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:2],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WAND_OF_MAGIC_DETECTION</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Wand of Magic Detection (Attunement: No).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Wand of Magic Detection.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Wand of Secrets" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WAND_OF_SECRETS">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:2],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WAND_OF_SECRETS</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Wand of Secrets (Attunement: No).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Wand of Secrets.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Boots of Elvenkind" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_BOOTS_OF_ELVENKIND">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:6],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_BOOTS_OF_ELVENKIND</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Boots of Elvenkind (Attunement: No).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Boots of Elvenkind.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Cloak of Elvenkind" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_CLOAK_OF_ELVENKIND">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:6],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_CLOAK_OF_ELVENKIND</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Cloak of Elvenkind (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Cloak of Elvenkind.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Cloak of the Manta Ray" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_CLOAK_OF_THE_MANTA_RAY">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:6],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_CLOAK_OF_THE_MANTA_RAY</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Cloak of the Manta Ray (Attunement: No).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Cloak of the Manta Ray.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Eyes of Charming" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_EYES_OF_CHARMING">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:6],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_EYES_OF_CHARMING</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Eyes of Charming (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Eyes of Charming.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Gloves of Thievery" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_GLOVES_OF_THIEVERY">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:6],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_GLOVES_OF_THIEVERY</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Gloves of Thievery (Attunement: No).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Gloves of Thievery.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Lantern of Revealing" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_LANTERN_OF_REVEALING">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:6],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_LANTERN_OF_REVEALING</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Lantern of Revealing (Attunement: No).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Lantern of Revealing.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Pipes of Haunting" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_PIPES_OF_HAUNTING">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:6],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_PIPES_OF_HAUNTING</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Pipes of Haunting (Attunement: No).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Pipes of Haunting.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Ring of Water Walking" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_WATER_WALKING">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:6],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_WATER_WALKING</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Ring of Water Walking (Attunement: No).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Ring of Water Walking.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Boots of Striding and Springing" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_BOOTS_OF_STRIDING_AND_SPRINGING">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:10],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_BOOTS_OF_STRIDING_AND_SPRINGING</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Boots of Striding and Springing (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Boots of Striding and Springing.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Boots of the Winterlands" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_BOOTS_OF_THE_WINTERLANDS">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:10],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_BOOTS_OF_THE_WINTERLANDS</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Boots of the Winterlands (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Boots of the Winterlands.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Bracers of Archery" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_BRACERS_OF_ARCHERY">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:10],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_BRACERS_OF_ARCHERY</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Bracers of Archery (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Bracers of Archery.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Brooch of Shielding" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_BROOCH_OF_SHIELDING">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:10],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_BROOCH_OF_SHIELDING</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Brooch of Shielding (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Brooch of Shielding.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Cloak of Protection" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_CLOAK_OF_PROTECTION">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:10],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_CLOAK_OF_PROTECTION</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Cloak of Protection (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Cloak of Protection.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Eyes of the Eagle" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_EYES_OF_THE_EAGLE">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:10],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_EYES_OF_THE_EAGLE</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Eyes of the Eagle (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Eyes of the Eagle.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Gauntlets of Ogre Power" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_GAUNTLETS_OF_OGRE_POWER">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:10],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_GAUNTLETS_OF_OGRE_POWER</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Gauntlets of Ogre Power (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Gauntlets of Ogre Power.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Gloves of Missile Snaring" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_GLOVES_OF_MISSILE_SNARING">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:10],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_GLOVES_OF_MISSILE_SNARING</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Gloves of Missile Snaring (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Gloves of Missile Snaring.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Gloves of Swimming and Climbing" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_GLOVES_OF_SWIMMING_AND_CLIMBING">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:10],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_GLOVES_OF_SWIMMING_AND_CLIMBING</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Gloves of Swimming and Climbing (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Gloves of Swimming and Climbing.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Hat of Disguise" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_HAT_OF_DISGUISE">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:10],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_HAT_OF_DISGUISE</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Hat of Disguise (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Hat of Disguise.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Headband of Intellect" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_HEADBAND_OF_INTELLECT">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:10],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_HEADBAND_OF_INTELLECT</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Headband of Intellect (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Headband of Intellect.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Helm of Telepathy" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_HELM_OF_TELEPATHY">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:10],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_HELM_OF_TELEPATHY</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Helm of Telepathy (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Helm of Telepathy.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Medallion of Thoughts" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_MEDALLION_OF_THOUGHTS">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:10],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_MEDALLION_OF_THOUGHTS</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Medallion of Thoughts (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Medallion of Thoughts.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Necklace of Adaptation" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_NECKLACE_OF_ADAPTATION">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:10],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_NECKLACE_OF_ADAPTATION</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Necklace of Adaptation (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Necklace of Adaptation.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Periapt of Wound Closure" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_PERIAPT_OF_WOUND_CLOSURE">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:10],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_PERIAPT_OF_WOUND_CLOSURE</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Periapt of Wound Closure (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Periapt of Wound Closure.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Pipes of the Sewers" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_PIPES_OF_THE_SEWERS">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:10],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_PIPES_OF_THE_SEWERS</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Pipes of the Sewers (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Pipes of the Sewers.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Quiver of Ehlonna" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_QUIVER_OF_EHLONNA">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:10],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_QUIVER_OF_EHLONNA</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Quiver of Ehlonna (Attunement: No).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Quiver of Ehlonna.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Ring of Jumping" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_JUMPING">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:10],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_JUMPING</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Ring of Jumping (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Ring of Jumping.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Ring of Mind Shielding" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_MIND_SHIELDING">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:10],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_MIND_SHIELDING</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Ring of Mind Shielding (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Ring of Mind Shielding.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Slippers of Spider Climbing" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_SLIPPERS_OF_SPIDER_CLIMBING">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:10],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_SLIPPERS_OF_SPIDER_CLIMBING</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Slippers of Spider Climbing (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Slippers of Spider Climbing.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Ventilating Lungs" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_VENTILATING_LUNGS">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:10],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_VENTILATING_LUNGS</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Ventilating Lungs (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Ventilating Lungs.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Winged Boots" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WINGED_BOOTS">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:10],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WINGED_BOOTS</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Winged Boots (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Winged Boots.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Amulet of Health" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_AMULET_OF_HEALTH">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:14],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_AMULET_OF_HEALTH</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Amulet of Health (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Amulet of Health.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Arcane Propulsion Arm" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ARCANE_PROPULSION_ARM">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:14],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ARCANE_PROPULSION_ARM</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Arcane Propulsion Arm (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Arcane Propulsion Arm.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Belt of Hill Giant Strength" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_BELT_OF_HILL_GIANT_STRENGTH">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:14],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_BELT_OF_HILL_GIANT_STRENGTH</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Belt of Hill Giant Strength (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Belt of Hill Giant Strength.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Boots of Levitation" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_BOOTS_OF_LEVITATION">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:14],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_BOOTS_OF_LEVITATION</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Boots of Levitation (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Boots of Levitation.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Boots of Speed" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_BOOTS_OF_SPEED">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:14],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_BOOTS_OF_SPEED</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Boots of Speed (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Boots of Speed.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Bracers of Defense" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_BRACERS_OF_DEFENSE">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:14],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_BRACERS_OF_DEFENSE</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Bracers of Defense (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Bracers of Defense.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Cloak of the Bat" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_CLOAK_OF_THE_BAT">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:14],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_CLOAK_OF_THE_BAT</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Cloak of the Bat (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Cloak of the Bat.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Dimensional Shackles" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_DIMENSIONAL_SHACKLES">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:14],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_DIMENSIONAL_SHACKLES</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Dimensional Shackles (Attunement: No).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Dimensional Shackles.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Gem of Seeing" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_GEM_OF_SEEING">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:14],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_GEM_OF_SEEING</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Gem of Seeing (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Gem of Seeing.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Horn of Blasting" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_HORN_OF_BLASTING">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:14],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_HORN_OF_BLASTING</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Horn of Blasting (Attunement: No).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Horn of Blasting.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Ring of Free Action" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_FREE_ACTION">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:14],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_FREE_ACTION</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Ring of Free Action (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Ring of Free Action.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Ring of Protection" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_PROTECTION">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:14],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_PROTECTION</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Ring of Protection (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Ring of Protection.</description>
+		</sheet>
+	</element>
+	<element name="Replicate Magic Item Plan: Ring of the Ram" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_THE_RAM">
+		<supports>Replicate Magic Item Plan Option</supports>
+		<requirements>[level:artificer:14],!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_THE_RAM</requirements>
+		<description>
+			<p><strong>Magic Item Plan.</strong> Ring of the Ram (Attunement: Yes).</p>
+		</description>
+		<sheet>
+			<description>Replicate Magic Item plan known: Ring of the Ram.</description>
+		</sheet>
+	</element>
 	<!-- infused items -->
 	<element name="Boots of the Winding Path" type="Magic Item" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_MAGIC_ITEM_INFUSION_BOOTS_OF_THE_WINDING_PATH">
 		<description>
@@ -662,6 +1209,16 @@
 		</sheet>
 	</element>
 </elements>
+
+
+
+
+
+
+
+
+
+
 
 
 
