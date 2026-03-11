@@ -49,28 +49,301 @@
 			<h5 class="caption">THE ARTIFICER</h5>
 			<table class="class-features">
 				<thead>
-					<tr><td class="col-5">Level</td><td>Proficiency</td><td class="col-30 left">Features</td><td class="col-10">Plans Known</td><td class="col-10">Magic Items</td><td class="col-10">Cantrips Known</td><td class="col-10">Prepared spells</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td></tr>
+					<tr>
+						<td class="col-5">Level</td>
+					<td>Proficiency</td>
+					<td class="col-30 left">Features</td>
+					<td class="col-10">Plans Known</td>
+					<td class="col-10">Magic Items</td>
+					<td class="col-10">Cantrips Known</td>
+					<td class="col-10">Prepared spells</td>
+					<td>1st</td>
+					<td>2nd</td>
+					<td>3rd</td>
+					<td>4th</td>
+					<td>5th</td>
+					</tr>
 				</thead>
-				<tr><td> 1st</td><td>+2</td><td class="left">Tinker's Magic, Spellcasting</td><td>-</td><td>-</td><td>2</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-				<tr><td> 2nd</td><td>+2</td><td class="left">Replicate Magic Item</td><td> 4</td><td>2</td><td>2</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td>	</tr>
-				<tr><td> 3rd</td><td>+2</td><td class="left">Artificer Subclass</td><td> 4</td><td>2</td><td>2</td><td>4</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-				<tr><td> 4th</td><td>+2</td><td class="left">Ability Score Improvement</td><td> 4</td><td>2</td><td>2</td><td>5</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-				<tr><td> 5th</td><td>+3</td><td class="left">Subclass feature</td><td> 4</td><td>2</td><td>2</td><td>6</td><td>2</td><td>-</td><td>-</td><td>-</td></tr>
-				<tr><td> 6th</td><td>+3</td><td class="left">Magic Item Tinker</td><td> 5</td><td>3</td><td>2</td><td>6</td><td>2</td><td>-</td><td>-</td><td>-</td></tr>
-				<tr><td> 7th</td><td>+3</td><td class="left">Flash of Genius</td><td> 5</td><td>3</td><td>2</td><td>7</td><td>3</td><td>-</td><td>-</td><td>-</td></tr>
-				<tr><td> 8th</td><td>+3</td><td class="left">Ability Score Improvement</td><td> 5</td><td>3</td><td>2</td><td>7</td><td>3</td><td>-</td><td>-</td><td>-</td></tr>
-				<tr><td> 9th</td><td>+4</td><td class="left">Subclass feature</td><td> 5</td><td>3</td><td>2</td><td>9</td><td>3</td><td>2</td><td>-</td><td>-</td></tr>
-				<tr><td>10th</td><td>+4</td><td class="left">Magic Item Adept</td><td> 6</td><td>4</td><td>3</td><td>9</td><td>3</td><td>2</td><td>-</td><td>-</td></tr>
-				<tr><td>11th</td><td>+4</td><td class="left">Spell-Storing Item</td><td> 6</td><td>4</td><td>3</td><td>10</td><td>3</td><td>3</td><td>-</td><td>-</td></tr>
-				<tr><td>12th</td><td>+4</td><td class="left">Ability Score Improvement</td><td> 6</td><td>4</td><td>3</td><td>10</td><td>3</td><td>3</td><td>-</td><td>-</td></tr>
-				<tr><td>13th</td><td>+5</td><td class="left">-</td><td> 6</td><td>4</td><td>3</td><td>11</td><td>3</td><td>3</td><td>1</td><td>-</td></tr>
-				<tr><td>14th</td><td>+5</td><td class="left">Advanced Artifice</td><td> 7</td><td>5</td><td>4</td><td>11</td><td>3</td><td>3</td><td>1</td><td>-</td></tr>
-				<tr><td>15th</td><td>+5</td><td class="left">Subclass feature</td><td> 7</td><td>5</td><td>4</td><td>12</td><td>3</td><td>3</td><td>2</td><td>-</td></tr>
-				<tr><td>16th</td><td>+5</td><td class="left">Ability Score Improvement</td><td> 7</td><td>5</td><td>4</td><td>12</td><td>3</td><td>3</td><td>2</td><td>-</td></tr>
-				<tr><td>17th</td><td>+6</td><td class="left">-</td><td> 7</td><td>5</td><td>4</td><td>14</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
-				<tr><td>18th</td><td>+6</td><td class="left">Magic Item Master</td><td> 8</td><td>6</td><td>4</td><td>14</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
-				<tr><td>19th</td><td>+6</td><td class="left">Epic Boon</td><td> 8</td><td>6</td><td>4</td><td>15</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
-				<tr><td>20th</td><td>+6</td><td class="left">Soul of Artifice</td><td> 8</td><td>6</td><td>4</td><td>15</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+				<tr>
+					<td> 1st</td>
+					<td>+2</td>
+					<td class="left">Tinker's Magic, Spellcasting</td>
+					<td>-</td>
+					<td>-</td>
+					<td>2</td>
+					<td>2</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td> 2nd</td>
+					<td>+2</td>
+					<td class="left">Replicate Magic Item</td>
+					<td> 4</td>
+					<td>2</td>
+					<td>2</td>
+					<td>3</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td> 3rd</td>
+					<td>+2</td>
+					<td class="left">Artificer Subclass</td>
+					<td> 4</td>
+					<td>2</td>
+					<td>2</td>
+					<td>4</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td> 4th</td>
+					<td>+2</td>
+					<td class="left">Ability Score Improvement</td>
+					<td> 4</td>
+					<td>2</td>
+					<td>2</td>
+					<td>5</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td> 5th</td>
+					<td>+3</td>
+					<td class="left">Subclass feature</td>
+					<td> 4</td>
+					<td>2</td>
+					<td>2</td>
+					<td>6</td>
+					<td>2</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td> 6th</td>
+					<td>+3</td>
+					<td class="left">Magic Item Tinker</td>
+					<td> 5</td>
+					<td>3</td>
+					<td>2</td>
+					<td>6</td>
+					<td>2</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td> 7th</td>
+					<td>+3</td>
+					<td class="left">Flash of Genius</td>
+					<td> 5</td>
+					<td>3</td>
+					<td>2</td>
+					<td>7</td>
+					<td>3</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td> 8th</td>
+					<td>+3</td>
+					<td class="left">Ability Score Improvement</td>
+					<td> 5</td>
+					<td>3</td>
+					<td>2</td>
+					<td>7</td>
+					<td>3</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td> 9th</td>
+					<td>+4</td>
+					<td class="left">Subclass feature</td>
+					<td> 5</td>
+					<td>3</td>
+					<td>2</td>
+					<td>9</td>
+					<td>3</td>
+					<td>2</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>10th</td>
+					<td>+4</td>
+					<td class="left">Magic Item Adept</td>
+					<td> 6</td>
+					<td>4</td>
+					<td>3</td>
+					<td>9</td>
+					<td>3</td>
+					<td>2</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>11th</td>
+					<td>+4</td>
+					<td class="left">Spell-Storing Item</td>
+					<td> 6</td>
+					<td>4</td>
+					<td>3</td>
+					<td>10</td>
+					<td>3</td>
+					<td>3</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>12th</td>
+					<td>+4</td>
+					<td class="left">Ability Score Improvement</td>
+					<td> 6</td>
+					<td>4</td>
+					<td>3</td>
+					<td>10</td>
+					<td>3</td>
+					<td>3</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>13th</td>
+					<td>+5</td>
+					<td class="left">-</td>
+					<td> 6</td>
+					<td>4</td>
+					<td>3</td>
+					<td>11</td>
+					<td>3</td>
+					<td>3</td>
+					<td>1</td>
+					<td>-</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>14th</td>
+					<td>+5</td>
+					<td class="left">Advanced Artifice</td>
+					<td> 7</td>
+					<td>5</td>
+					<td>4</td>
+					<td>11</td>
+					<td>3</td>
+					<td>3</td>
+					<td>1</td>
+					<td>-</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>15th</td>
+					<td>+5</td>
+					<td class="left">Subclass feature</td>
+					<td> 7</td>
+					<td>5</td>
+					<td>4</td>
+					<td>12</td>
+					<td>3</td>
+					<td>3</td>
+					<td>2</td>
+					<td>-</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>16th</td>
+					<td>+5</td>
+					<td class="left">Ability Score Improvement</td>
+					<td> 7</td>
+					<td>5</td>
+					<td>4</td>
+					<td>12</td>
+					<td>3</td>
+					<td>3</td>
+					<td>2</td>
+					<td>-</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>17th</td>
+					<td>+6</td>
+					<td class="left">-</td>
+					<td> 7</td>
+					<td>5</td>
+					<td>4</td>
+					<td>14</td>
+					<td>3</td>
+					<td>3</td>
+					<td>3</td>
+					<td>1</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>18th</td>
+					<td>+6</td>
+					<td class="left">Magic Item Master</td>
+					<td> 8</td>
+					<td>6</td>
+					<td>4</td>
+					<td>14</td>
+					<td>3</td>
+					<td>3</td>
+					<td>3</td>
+					<td>1</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>19th</td>
+					<td>+6</td>
+					<td class="left">Epic Boon</td>
+					<td> 8</td>
+					<td>6</td>
+					<td>4</td>
+					<td>15</td>
+					<td>3</td>
+					<td>3</td>
+					<td>3</td>
+					<td>2</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>20th</td>
+					<td>+6</td>
+					<td class="left">Soul of Artifice</td>
+					<td> 8</td>
+					<td>6</td>
+					<td>4</td>
+					<td>15</td>
+					<td>3</td>
+					<td>3</td>
+					<td>3</td>
+					<td>2</td>
+					<td>2</td>
+				</tr>
 			</table>
 			<!-- <div class="sidebar">
 				<h5>OPTIONAL RULE: FIREARM PROFICIENCY</h5>
@@ -141,17 +414,59 @@
 			<p>At 1st level, You know the Mending cantrip.</p>
 			<p>As a Magic action while holding Tinker's Tools, you can create one item in an unoccupied space within 5 feet of yourself, choosing the item from the following list:</p>
 			<table class="class-features">
-				<tr><td>Ball Bearings</td><td>Flask</td><td>Pouch</td></tr>
-				<tr><td>Basket</td><td>Grappling Hook</td><td>Rope</td></tr>
-				<tr><td>Bedroll</td><td>Hunting Trap</td><td>Sack</td></tr>
-				<tr><td>Bell</td><td>Jug</td><td>Shovel</td></tr>
-				<tr><td>Blanket</td><td>Lamp</td><td>Spikes, Iron</td></tr>
-				<tr><td>Block and Tackle</td><td>Manacles</td><td>String</td></tr>
-				<tr><td>Bottle, Glass</td><td>Net</td><td>Tinderbox</td></tr>
-				<tr><td>Bucket</td><td>Oil</td><td>Torch</td></tr>
-				<tr><td>Caltrops</td><td>Paper</td><td>Vial</td></tr>
-				<tr><td>Candle</td><td>Parchment</td></tr>
-				<tr><td>Crowbar</td><td>Pole</td></tr>
+				<tr>
+					<td>Ball Bearings</td>
+					<td>Flask</td>
+					<td>Pouch</td>
+				</tr>
+				<tr>
+					<td>Basket</td>
+					<td>Grappling Hook</td>
+					<td>Rope</td>
+				</tr>
+				<tr>
+					<td>Bedroll</td>
+					<td>Hunting Trap</td>
+					<td>Sack</td>
+				</tr>
+				<tr>
+					<td>Bell</td>
+					<td>Jug</td>
+					<td>Shovel</td>
+				</tr>
+				<tr>
+					<td>Blanket</td>
+					<td>Lamp</td>
+					<td>Spikes, Iron</td>
+				</tr>
+				<tr>
+					<td>Block and Tackle</td>
+					<td>Manacles</td>
+					<td>String</td>
+				</tr>
+				<tr>
+					<td>Bottle, Glass</td>
+					<td>Net</td>
+					<td>Tinderbox</td>
+				</tr>
+				<tr>
+					<td>Bucket</td>
+					<td>Oil</td>
+					<td>Torch</td>
+				</tr>
+				<tr>
+					<td>Caltrops</td>
+					<td>Paper</td>
+					<td>Vial</td>
+				</tr>
+				<tr>
+					<td>Candle</td>
+					<td>Parchment</td>
+				</tr>
+				<tr>
+					<td>Crowbar</td>
+					<td>Pole</td>
+				</tr>
 			</table>
 			<p>The item lasts until you finish a Long Rest, at which point it vanishes.</p>
 			<p>You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
@@ -418,7 +733,6 @@
 	</sheet>
 	</element>
 </elements>
-
 
 
 
