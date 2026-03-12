@@ -4,7 +4,7 @@
 		<name>Artificer</name>
 		<description>The Artificer class from the Eberron: Forge of the Artificer manual (2025)</description>
 		<author url="">Wizards of the Coast</author>
-		<update version="1.0.3">
+		<update version="1.0.4">
 			<file name="class-artificer-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/class-artificer-2024.xml" />
 		</update>
 	</info>
@@ -227,7 +227,18 @@
 			<select type="Spell" name="Cantrip, Artificer" supports="$(spellcasting:list), 0" number="1" spellcasting="Artificer" level="10" />
 			<select type="Spell" name="Cantrip, Artificer" supports="$(spellcasting:list), 0" number="1" spellcasting="Artificer" level="14" />
 		
-			<select type="Spell" name="Spellcasting (Artificer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="1" number="artificer:spellcasting:prepare" spellcasting="Artificer" />
+			<select type="Spell" name="Spellcasting (Artificer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="1" number="2" spellcasting="Artificer" />
+			<select type="Spell" name="Spellcasting (Artificer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="1" spellcasting="Artificer" />
+			<select type="Spell" name="Spellcasting (Artificer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" number="1" spellcasting="Artificer" />
+			<select type="Spell" name="Spellcasting (Artificer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" number="1" spellcasting="Artificer" />
+			<select type="Spell" name="Spellcasting (Artificer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" number="1" spellcasting="Artificer" />
+			<select type="Spell" name="Spellcasting (Artificer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" number="1" spellcasting="Artificer" />
+			<select type="Spell" name="Spellcasting (Artificer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="9" number="2" spellcasting="Artificer" />
+			<select type="Spell" name="Spellcasting (Artificer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" number="1" spellcasting="Artificer" />
+			<select type="Spell" name="Spellcasting (Artificer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" number="1" spellcasting="Artificer" />
+			<select type="Spell" name="Spellcasting (Artificer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" number="1" spellcasting="Artificer" />
+			<select type="Spell" name="Spellcasting (Artificer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" number="1" spellcasting="Artificer" />
+			<select type="Spell" name="Spellcasting (Artificer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" number="1" spellcasting="Artificer" />
 		</rules>
 	</element>
 	<element name="Replicate Magic Item" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM">
