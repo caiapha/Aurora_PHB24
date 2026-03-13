@@ -4,7 +4,7 @@
 		<name>Artificer</name>
 		<description>The Artificer class from the Eberron: Forge of the Artificer manual (2025)</description>
 		<author url="">Wizards of the Coast</author>
-		<update version="1.0.5">
+		<update version="1.1.0">
 			<file name="class-artificer-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/class-artificer-2024.xml" />
 		</update>
 	</info>
@@ -220,7 +220,7 @@
 			<stat name="artificer:spellcasting:prepare" value="1" level="11" />
 			<stat name="artificer:spellcasting:prepare" value="1" level="13" />
 			<stat name="artificer:spellcasting:prepare" value="1" level="15" />
-			<stat name="artificer:spellcasting:prepare" value="1" level="17" />
+			<stat name="artificer:spellcasting:prepare" value="2" level="17" />
 			<stat name="artificer:spellcasting:prepare" value="1" level="19" />			
 						
 			<select type="Spell" name="Cantrip, Artificer" supports="$(spellcasting:list), 0" number="2" spellcasting="Artificer" />
@@ -237,7 +237,7 @@
 			<select type="Spell" name="Spellcasting (Artificer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" number="1" spellcasting="Artificer" />
 			<select type="Spell" name="Spellcasting (Artificer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" number="1" spellcasting="Artificer" />
 			<select type="Spell" name="Spellcasting (Artificer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" number="1" spellcasting="Artificer" />
-			<select type="Spell" name="Spellcasting (Artificer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" number="1" spellcasting="Artificer" />
+			<select type="Spell" name="Spellcasting (Artificer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" number="2" spellcasting="Artificer" />
 			<select type="Spell" name="Spellcasting (Artificer)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" number="1" spellcasting="Artificer" />
 		</rules>
 	</element>
@@ -326,15 +326,16 @@
 			<p>Starting at 7th level, When you or a creature you can see within 30 feet of you fails an ability check or a saving throw, you can take a Reaction to add a bonus to the roll, potentially causing it to succeed. The bonus equals your Intelligence modifier (minimum of +1).</p>
 			<p class="indent">You can take this Reaction a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a Long Rest.</p>
 		</description>
-		<sheet action="Reaction" usage="{{flash of genius:usage}}/Long Rest">
-			<description>When you or another creature you can see within 30 feet of you makes an ability check or a saving throw, you can add {{intelligence:modifier}} to the roll.</description>
+		<sheet action="Reaction" usage="{{flash of genius}}/Long Rest">
+			<description>When you or another creature you can see within 30 feet of you makes an ability check or a saving throw, you can add {{flash of genius}} to the roll.</description>
 		</sheet>
 		<rules>
-			<stat name="flash of genius:usage" value="1" bonus="base" />
-			<stat name="flash of genius:usage" value="intelligence:modifier" bonus="base" />
+			<stat name="flash of genius" value="1" bonus="base" />
+			<stat name="flash of genius" value="intelligence:modifier" bonus="base" />
 		</rules>
 	</element>
 	<element name="Magic Item Adept" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_MAGIC_ITEM_ADEPT">
+		<requirements>!ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_MAGIC_ITEM_MASTER</requirements>
 		<description>
 			<p>When you reach 10th level, you can attune to up to four magic items at once.</p>
 		</description>
@@ -374,7 +375,6 @@
 			<description>After each Short Rest you regain one expended use of Flash of Genius.</description>
 		</sheet>
 		<rules>
-			<!-- Value updated in Magic Item Adept sheet entry-->
 			<stat name="attunement:max" value="5" bonus="base" />
 		</rules>
 	</element>
@@ -382,8 +382,8 @@
 		<description>
 			<p>Starting at 18th level, you can attune to up to six magic items at once.</p>
 		</description>
-		<sheet display="false">
-			<description>You can attune to up to six magic items at once.</description>
+		<sheet>
+			<description>You can attune to up to {{attunement:max}} items at once.</description>
 		</sheet>
 		<rules>
 			<stat name="attunement:max" value="6" bonus="base" />

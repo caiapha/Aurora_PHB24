@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Spells from the Player's Handbook Rev. 2024</name>
-		<update version="1.0.1">
+		<update version="1.1.0">
 			<file name="spells-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/spells-2024.xml" />
 		</update>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
@@ -346,7 +346,7 @@
 		</setters>
 	</element>
 	<element name="Arcane Vigor" type="Spell" source="Player's Handbook (2024)" id="ID_PHB24_SPELL_ARCANE_VIGOR">
-		<supports>WizardPHB24, SorcererPHB24, PHB24</supports>
+		<supports>ArtificerPHB24, WizardPHB24, SorcererPHB24, PHB24</supports>
 		<description>
 			<p>You tap into your life force to heal yourself. Roll one or two of your unexpended Hit Point Dice, and regain a number of Hit Points equal to the roll's total plus your spellcasting ability modifier. Those dice are then expended.</p>
 			<p class="indent"><strong>Using a Higher-Level Spell Slot.</strong> The number of unexpended Hit Dice you can roll increases by one for each spell slot level above 2.</p>
@@ -1131,7 +1131,7 @@
 		</setters>
 	</element>
 	<element name="Circle of Power" type="Spell" source="Player's Handbook (2024)" id="ID_PHB24_SPELL_CIRCLE_OF_POWER">
-		<supports>PaladinPHB24, PHB24</supports>
+		<supports>ArtificerPHB24, PaladinPHB24, PHB24</supports>
 		<description>
 			<p>Divine energy radiates from you, distorting and diffusing magical energy within 30 feet of you. Until the spell ends, the sphere moves with you, centered on you. For the duration, each friendly creature in the area (including you) has advantage on saving throws against spells and other magical effects. Additionally, when an affected creature succeeds on a saving throw made against a spell or magical effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throws.</p>
 		</description>
@@ -2550,7 +2550,7 @@
 	</element>
 
 	<element name="Dragon's Breath" type="Spell" source="Player's Handbook (2024)" id="ID_PHB24_SPELL_DRAGONS_BREATH">
-		<supports>SorcererPHB24, WizardPHB24, Spell Saving Throw</supports>
+		<supports>ArtificerPHB24, SorcererPHB24, WizardPHB24, Spell Saving Throw</supports>
 		<description>
 			<p>You touch one willing creature, and choose Acid, Cold, Fire, Lightning, or Poison. Until the spell ends, the target can take a Magic action to exhale a 15-foot Cone. Each creature in that area makes a Dexterity saving throw, taking 3d6 damage of the chosen type on a failed save or half as much damage on a successful one.</p>
 			<p class="indent"><strong>Using a Higher-Level Spell Slot.</strong> When you cast this spell using a 6th-level spell slot, the duration is concentration, up to 10 minutes. When you use a 7th-level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 8th level or higher, the duration is concentration, up to 8 hours.</p>
@@ -2711,7 +2711,7 @@
 		</setters>
 	</element>
 		<element name="Elementalism" type="Spell" source="Player's Handbook (2024)" id="ID_PHB24_SPELL_ELEMENTALISM">
-		<supports>DruidPHB24, SorcererPHB24, WizardPHB24 PHB24</supports>
+		<supports>ArtificerPHB24, DruidPHB24, SorcererPHB24, WizardPHB24 PHB24</supports>
 		<description>
 			<p>You exert control over the elements, creating one of the following effects within range.</p>
 			<p class="indent"><b>Beckon Air.</b> You create a breeze strong enough to ripple cloth, stir dust, rustle leaves, and close open doors and shutters, all in a 5-foot Cube. Doors and shutters being held open by someone or something aren't affected.</p>
@@ -4254,6 +4254,28 @@
 			<set name="materialComponent">a reliquary worth 1,000+ GP</set>
 			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Homunculus Servant" type="Spell" source="Player's Handbook (2024)" id="ID_PHB24_SPELL_HOMUNCULUS_SERVANT">
+		<supports>ArtificerPHB24, PHB24</supports>
+		<description>
+			<p>You summon a special homunculus in an unoccupied space within range. This creature uses the Homunculus Servant stat block. If you already have a homunculus from this spell, the homunculus is replaced by the new one. You determine the homunculus's appearance, such as a mechanical-looking bird, winged vial, or miniature animate cauldron.</p>
+			<p cilass="indent"><strong>Combat.</strong> The homunculus is an ally to you and your allies. In combat, it shares your Initiative count, but it takes its turn immediately after yours. It obeys your commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its movement to avoid danger.</p>
+			<p cilass="indent"><strong>Using a Higher-Level Spell Slot.</strong> Use the spell slot's level for the spell's level in the stat block.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 hour or Ritual</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">10 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a gem worth 100+ GP</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
 		</setters>
 	</element>
 	<element name="Hunger of Hadar" type="Spell" source="Player's Handbook (2024)" id="ID_PHB24_SPELL_HUNGER_OF_HADAR">
@@ -8028,7 +8050,7 @@
 		</setters>
 	</element>
 	<element name="True Strike" type="Spell" source="Player's Handbook (2024)" id="ID_PHB24_SPELL_TRUE_STRIKE">
-		<supports>BardPHB24, SorcererPHB24, WarlockPHB24, WizardPHB24, PHB24</supports>
+		<supports>ArtificerPHB24, BardPHB24, SorcererPHB24, WarlockPHB24, WizardPHB24, PHB24</supports>
 		<description>
 			<p>Guided by a flash of magical insight, you make one attack with the weapon used in the spell's casting. The attack uses your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity. If the attack deals damage, it can be Radiant damage or the weapon's normal damage type (your choice).</p>
 			<p class="indent"><strong>Cantrip Upgrade.</strong> Whether you deal Radiant damage or the weapon's normal damage type, the attack deals extra Radiant damage when you reach levels 5 (1d6), 11 (2d6), and 17 (3d6).</p>

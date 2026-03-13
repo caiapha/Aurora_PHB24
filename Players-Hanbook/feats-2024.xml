@@ -3,7 +3,7 @@
 		<name>Feats from the Player's Handbook 2024 Revision</name>
 		<description>Feats from the Player's Handbook (2024)</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
-		<update version="1.0.5">
+		<update version="1.0.6">
 		<file name="feats-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/feats-2024.xml"/>
 		</update>
 	</info>
@@ -639,7 +639,7 @@
 			<description>You reduce Bludgeoning, Piercing, and Slashing damage dealt to you by an attack by {{proficiency}}.</description>
 		</sheet>	
 		<rules>
-			<select name="Ability improvement (Heavily Armored)" type="Ability Score Improvement" supports="Standard, (Strength||Constitution)" />
+			<select name="Ability improvement (Heavy Armor Master)" type="Ability Score Improvement" supports="Standard, (Strength||Constitution)" />
 		</rules>
 	</element>
 	<element name="Inspiring Leader" type="Feat" source="Player's Handbook (2024)" id="ID_PHB24_FEAT_INSPIRING_LEADER">
@@ -717,7 +717,7 @@
 			<description>When you damage a creature that is Concentrating, it has Disadvantage on the saving throw it makes to maintain Concentration. Moreover, once per Short Rest in you fail a Wisdom or Charisma saving throw, you can succeed instead.</description>
 		</sheet>
 		<rules>
-			<select name="Ability improvement (Heavily Armored)" type="Ability Score Improvement" supports="Standard, (Strength||Dexterity)" />
+			<select name="Ability improvement (Mage Slayer)" type="Ability Score Improvement" supports="Standard, (Strength||Dexterity)" />
 		</rules>	
 	</element>
 
@@ -1274,7 +1274,7 @@
 			<description>Your Spell Attacks ignore Half and Three-Quarter Cover and have no Disadvantage when you are at 5ft form an enemy. The spell range of your spells with a range of at least 10 ft and requiring an attack roll, increases by 60 ft.</description>
 		</sheet>	
 		<rules> 
-			<select name="Ability improvement (Sniper)" type="Ability Score Improvement" supports="Standard, (Intelligence||Wisdom||Charisma)" />
+			<select name="Ability improvement (Spell Sniper)" type="Ability Score Improvement" supports="Standard, (Intelligence||Wisdom||Charisma)" />
 		</rules>
 	</element>
 	<element name="Tavern Brawler" type="Feat" source="Player's Handbook (2024)" id="ID_PHB24_FEAT_TAVERN_BRAWLER">
