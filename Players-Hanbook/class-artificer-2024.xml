@@ -262,11 +262,11 @@
 			<description><p>You can create {{magic_item:max}} Magic Items for the plans you know, which last until you create a new one. If you die, the objects vanishes after 1d4 days. Each item is based on one of the plans you know for this feature. If an object requires Attunement, you can automatically attune it when created. You can use any weapon or wand create this way as Spellcasting Focus.</p></description>
 		</sheet>
 		<rules>
-			<select type="Class Feature" name="Magic Item" supports="Magic Item, EFA Version" number="4" level="2" />
-			<select type="Class Feature" name="Magic Item" supports="Magic Item, EFA Version" number="1" level="6" />
-			<select type="Class Feature" name="Magic Item" supports="Magic Item, EFA Version" number="1" level="10" />
-			<select type="Class Feature" name="Magic Item" supports="Magic Item, EFA Version" number="1" level="14" />
-			<select type="Class Feature" name="Magic Item" supports="Magic Item, EFA Version" number="1" level="18" />
+			<select type="Class Feature" name="Magic Item Plans" supports="Magic Item Plan, EFA Version" number="4" level="2" />
+			<select type="Class Feature" name="Magic Item Plans" supports="Magic Item Plan, EFA Version" number="1" level="6" />
+			<select type="Class Feature" name="Magic Item Plans" supports="Magic Item Plan, EFA Version" number="1" level="10" />
+			<select type="Class Feature" name="Magic Item Plans" supports="Magic Item Plan, EFA Version" number="1" level="14" />
+			<select type="Class Feature" name="Magic Item Plans" supports="Magic Item Plan, EFA Version" number="1" level="18" />
 
 			<stat name="magic_item:max" value="2" level="2" />
 			<stat name="magic_item:max" value="1" level="6" />
@@ -428,6 +428,30 @@
 		<description>You can transform a Replicated Magic Item in another Magic Item based on a Plan You know.</description>
 	</sheet>
 	</element>
+
+
+	<!-- SKILLS APPEND-->
+    <append id="ID_WOTC_PHB24_SKILL_PROFICIENCY_ARCANA">
+        <supports>Skill, PHB24, Artificer</supports>
+    </append>
+    <append name="History" type="Proficiency" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_HISTORY">
+        <supports>Skill, PHB24, Artificer</supports>
+    </append>
+    <append name="Investigation" type="Proficiency" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_INVESTIGATION">
+        <supports>Skill, PHB24, Artificer</supports>
+    </append>
+    <append name="Medicine" type="Proficiency" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_MEDICINE">
+        <supports>Skill, PHB24, Bard, Cleric, Druid, Paladin, Wizard</supports>
+    </append>
+    <append name="Nature" type="Proficiency" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_NATURE">
+        <supports>Skill, PHB24, Bard, Cleric, Druid, Paladin, Wizard</supports>
+    </append>
+    <append name="Perception" type="Proficiency" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_PERCEPTION">
+        <supports>Skill, PHB24, Bard, Cleric, Druid, Paladin, Wizard</supports>
+    </append>
+    <append name="Sleight of Hand" type="Proficiency" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_SLEIGHT_OF_HAND">
+        <supports>Skill, PHB24, Bard, Cleric, Druid, Paladin, Wizard</supports>
+    </append>
 </elements>
 
 

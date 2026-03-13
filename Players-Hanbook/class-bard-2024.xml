@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Bard</name>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="class-bard.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/class-bard.xml" />
 		</update>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
@@ -89,7 +89,7 @@
 			<select type="Proficiency" name="Musical Instrument (Bard)" supports="Musical Instruments" number="3" requirements="!ID_WOTC_PHB24_MULTICLASS_BARD"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_WOTC_PHB24_MULTICLASS_BARD"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_WOTC_PHB24_MULTICLASS_BARD"/>
-			<select type="Proficiency" name="Skill Proficiency (Bard)" supports="Skill" number="3" requirements="!ID_WOTC_PHB24_MULTICLASS_BARD"/>
+			<select type="Proficiency" name="Skill Proficiency (Bard)" supports="Skill, PHB24, Bard" number="3" requirements="!ID_WOTC_PHB24_MULTICLASS_BARD"/>
 			
       		<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_BARD_BARDIC_INSPIRATION" level="1"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_BARD_SPELLCASTING_BARD" level="1"/>
