@@ -8,10 +8,10 @@
 	</info>
 
 	<element name="Alchemist" type="Archetype" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_ARTIFICER_ALCHEMIST">
-		<supports>Artificer Specialist, EFA Version</supports>
+		<supports>Artificer Subclass, EFA Version</supports>
 		<description>
 			<p>An Alchemist is an expert at combining reagents to produce mystical effects. Alchemists use their creations to give life and to leech it away. Alchemy is the oldest of artificer traditions, and its versatility has long been valued during times of war and peace.</p>
-			<div element="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_TOOL_PROFICIENCY" />
+			<div element="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_TOOLS_OF_THE_TRADE" />
 			<div element="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_ALCHEMIST_SPELLS" />
 			<div element="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_EXPERIMENTAL_ELIXIR" />
 			<div element="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_ALCHEMICAL_SAVANT" />
@@ -20,7 +20,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Archetype Feature" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_TOOL_PROFICIENCY" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_TOOLS_OF_THE_TRADE" level="3" />
 			<grant type="Archetype Feature" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_ALCHEMIST_SPELLS" level="3" />
 			<grant type="Archetype Feature" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_EXPERIMENTAL_ELIXIR" level="3" />
 			<grant type="Archetype Feature" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_ALCHEMICAL_SAVANT" level="5" />
@@ -28,16 +28,52 @@
 			<grant type="Archetype Feature" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_CHEMICAL_MASTERY" level="15" />
 		</rules>
 	</element>
-	<element name="Tool Proficiency" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_TOOL_PROFICIENCY">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_EFA_ARTIFICER_ALCHEMIST_TOOL_PROFICIENCY</requirements>
+	<element name="Tools of the Trade" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_TOOLS_OF_THE_TRADE">
 		<description>
-			<p>When you adopt this specialization at 3rd level, you gain proficiency with alchemistâ€™s supplies. If you already have this proficiency, you gain proficiency with one other type of artisanâ€™s tools of your choice.</p>
+			<p><strong>Tool proficiency</strong>You gain proficiency with Alchemist's Supplies and the Herbalism Kit. If you already have one of these proficiencies, you gain proficiency with one other type of Artisan's Tools of your choice (or with two other types if you have both).</p>
+			<p><strong>Potion Crafting.</strong> When you brew a potion using the crafting rules in the Dungeon Master's Guide, the amount of time required to craft it is halved.</p>
 		</description>
-		<sheet display="false" />
+		<sheet>
+			<description>The crafing time to brew potions is halved.</description>
+		</sheet>	
 		<rules>
-			<select type="Proficiency" name="Tool Proficiency, Alchemist" supports="Tool" default="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+			<grant type="Proficiency" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_TOOLS_OF_THE_TRADE_4" />
 		</rules>
 	</element>
+	<!-- Tool of the Trade choice -->
+	<element name="Tools of the Trade_1" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_TOOLS_OF_THE_TRADE_1">
+		<description />
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency, Alchemist" supports="Artisan tools" number="2"/>
+		</rules>
+	</element>
+		<element name="Tools of the Trade_2" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_TOOLS_OF_THE_TRADE_2">
+		<description />
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES"/>
+			<select type="Proficiency" name="Tool Proficiency, Alchemist" supports="Artisan tools" />
+		</rules>
+	</element>
+		<element name="Tools of the Trade_3" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_TOOLS_OF_THE_TRADE_3">
+		<description />
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT"/>
+			<select type="Proficiency" name="Tool Proficiency, Alchemist" supports="Artisan tools" number="1"/>
+		</rules>
+	</element>
+	<element name="Tools of the Trade_4" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_TOOLS_OF_THE_TRADE_4">
+		<description />
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT"/>
+		</rules>
+	</element>
+	<!-- End Tool of the Trade choice -->
+
 	<element name="Alchemist Spells" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_ALCHEMIST_SPELLS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_EFA_ARTIFICER_ALCHEMIST_SPELLS</requirements>
 		<description>
