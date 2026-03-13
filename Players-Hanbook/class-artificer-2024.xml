@@ -107,7 +107,7 @@
 
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_WOTC_EFA_MULTICLASS_ARTIFICER" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_WOTC_EFA_MULTICLASS_ARTIFICER" />
-			<select type="Proficiency" name="Skill Proficiency, Artificer" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" number="2" requirements="!ID_WOTC_EFA_MULTICLASS_ARTIFICER" />
+			<select type="Proficiency" name="Skill Proficiency, Artificer" supports="Skill, PHB24, Artificer" number="2" requirements="!ID_WOTC_EFA_MULTICLASS_ARTIFICER" />
 
 			<grant type="Class Feature" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_TINKERS_MAGIC" level="1" />
 			<grant type="Class Feature" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_SPELLCASTING" level="1" />
@@ -131,7 +131,7 @@
 			</setters>
 			<rules>
 				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
-				<select type="Proficiency" name="Skill Proficiency, Artificer" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" number="1" />
+				<select type="Proficiency" name="Skill Proficiency, Artificer" supports="Skill, PHB24, Artificer" number="1" />
 			</rules>
 		</multiclass>
 	</element>
@@ -193,7 +193,7 @@
 			You can also use any item bearing one of your infusions as a spellcasting focus.</p></description>
 		</sheet>
 		<spellcasting name="Artificer" ability="Intelligence" prepare="true">
-			<list known="true">ArtificerPHB24</list>
+			<list>ArtificerPHB24</list>
 		</spellcasting>
 		<rules>
 			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF_UP" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
@@ -262,11 +262,14 @@
 			<description><p>You can create {{magic_item:max}} Magic Items for the plans you know, which last until you create a new one. If you die, the objects vanishes after 1d4 days. Each item is based on one of the plans you know for this feature. If an object requires Attunement, you can automatically attune it when created. You can use any weapon or wand create this way as Spellcasting Focus.</p></description>
 		</sheet>
 		<rules>
-			<select type="Class Feature" name="Magic Item Plans" supports="Magic Item Plan, EFA Version" number="4" level="2" />
-			<select type="Class Feature" name="Magic Item Plans" supports="Magic Item Plan, EFA Version" number="1" level="6" />
-			<select type="Class Feature" name="Magic Item Plans" supports="Magic Item Plan, EFA Version" number="1" level="10" />
-			<select type="Class Feature" name="Magic Item Plans" supports="Magic Item Plan, EFA Version" number="1" level="14" />
-			<select type="Class Feature" name="Magic Item Plans" supports="Magic Item Plan, EFA Version" number="1" level="18" />
+			<grant type="Class Feature" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_1" level="2" />
+			<grant type="Class Feature" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_2" level="2" />
+			<grant type="Class Feature" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_3" level="2" />
+			<grant type="Class Feature" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_4" level="2" />
+			<grant type="Class Feature" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_5" level="6" />
+			<grant type="Class Feature" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_6" level="10" />
+			<grant type="Class Feature" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_7" level="14" />
+			<grant type="Class Feature" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_8" level="18" />
 
 			<stat name="magic_item:max" value="2" level="2" />
 			<stat name="magic_item:max" value="1" level="6" />
@@ -441,18 +444,73 @@
         <supports>Skill, PHB24, Artificer</supports>
     </append>
     <append name="Medicine" type="Proficiency" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_MEDICINE">
-        <supports>Skill, PHB24, Bard, Cleric, Druid, Paladin, Wizard</supports>
+        <supports>Skill, PHB24, Artificer</supports>
     </append>
     <append name="Nature" type="Proficiency" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_NATURE">
-        <supports>Skill, PHB24, Bard, Cleric, Druid, Paladin, Wizard</supports>
+        <supports>Skill, PHB24, Artificer</supports>
     </append>
     <append name="Perception" type="Proficiency" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_PERCEPTION">
-        <supports>Skill, PHB24, Bard, Cleric, Druid, Paladin, Wizard</supports>
+        <supports>Skill, PHB24, Artificer</supports>
     </append>
     <append name="Sleight of Hand" type="Proficiency" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_SKILL_PROFICIENCY_SLEIGHT_OF_HAND">
-        <supports>Skill, PHB24, Bard, Cleric, Druid, Paladin, Wizard</supports>
+        <supports>Skill, PHB24, Artificer</supports>
     </append>
+
+	<!-- REPLICATE MAGIC ITEM WORKAROUND-->
+	<element name="Replicate Magic Item 1" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_1">
+		<description display="false" />
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Magic Item Plans 1" supports="Magic Item Plan, EFA Version" />
+		</rules>
+	</element>
+	<element name="Replicate Magic Item 2" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_2">
+		<description display="false" />
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Magic Item Plans 2" supports="Magic Item Plan, EFA Version" />
+		</rules>
+	</element>
+	<element name="Replicate Magic Item 3" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_3">
+		<description display="false" />
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Magic Item Plans 3" supports="Magic Item Plan, EFA Version" />
+		</rules>
+	</element>
+	<element name="Replicate Magic Item 4" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_4">
+		<description display="false" />
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Magic Item Plans 4" supports="Magic Item Plan, EFA Version" />
+		</rules>
+	</element>
+	<element name="Replicate Magic Item 5" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_5">
+		<description display="false" />
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Magic Item Plans 5" supports="Magic Item Plan, EFA Version" />
+		</rules>
+	</element>
+	<element name="Replicate Magic Item 6" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_6">
+		<description display="false" />
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Magic Item Plans 6" supports="Magic Item Plan, EFA Version" />
+		</rules>
+	</element>
+		<element name="Replicate Magic Item 7" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_7">
+		<description display="false" />
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Magic Item Plans 7" supports="Magic Item Plan, EFA Version" />
+		</rules>
+	</element>
+	<element name="Replicate Magic Item 8" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_8">
+		<description display="false" />
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Magic Item Plans 8" supports="Magic Item Plan, EFA Version" />
+		</rules>
+	</element>
 </elements>
-
-
-
