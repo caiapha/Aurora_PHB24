@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <update version="1.0.0">
+      <file name="source-efa-2025.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/source-efa-2025.xml" />
+    </update>
+    <author url="https://marketplace.dndbeyond.com/category/5147000?pid=D5147000">Wizards of the Coast</author>
+  </info>
+
+  <!-- ===================== SOURCE: EBERRONG: FOGE OF THE ARTIFICER ===================== -->
+  <element name="Eberron: Forge of the Artificer" type="Source" source="Core" id="ID_WOTC_SOURCE_EBERRON_FORGE_OF_ARTIFICER">
+    <description>
+      <p><strong>Forge wonders with the Artificer — the ultimate creative class!</strong></p>
+      <p>This 112-page expansion unlocks your workshop of the arcane:</p>
+    </description>
+    <setters>
+      <set name="abbreviation">EFA</set>
+      <set name="image"></set>
+      <set name="url">https://marketplace.dndbeyond.com/category/5147000?pid=D5147000</set>
+      <set name="image">https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/EFA.png</set>
+      <set name="author" abbreviation="WOTC" url="https://dnd.wizards.com">Wizards of the Coast</set>
+      <set name="official">true</set>
+      <!-- <set name="core">true</set> -->
+      <set name="release">20251209</set>
+    </setters>
+  </element>
+</elements>
+
+
