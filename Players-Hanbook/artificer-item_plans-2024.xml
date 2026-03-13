@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Artificer's Magic Item Plans</name>
-		<update version="1.0.1">
+		<update version="1.0.2">
 			<file name="artificer-item_plans-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/artificer-item_plans-2024.xml" />
 		</update>
 	</info>
@@ -89,7 +89,7 @@
 	</element>
 
 	<!-- replicate magic item plans -->
-	<element name="Alchemy Jug" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ALCHEMY_JUG">
+	<element name="• Alchemy Jug" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ALCHEMY_JUG">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:2]</requirements>
 		<prerequisite>2nd Artificer level</prerequisite>
@@ -100,7 +100,7 @@
 			<description>You replicate an Alchemy Jug.</description>
 		</sheet>
 	</element>
-	<element name="Bag of Holding" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_BAG_OF_HOLDING">
+	<element name=" • Bag of Holding" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_BAG_OF_HOLDING">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:2]</requirements>
 		<description>
@@ -110,7 +110,7 @@
 			<description>You replicate a Bag of Holding.</description>
 		</sheet>
 	</element>
-	<element name="Cap of Water Breathing" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_CAP_OF_WATER_BREATHING">
+	<element name=" • Cap of Water Breathing" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_CAP_OF_WATER_BREATHING">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:2]</requirements>
 		<description>
@@ -120,7 +120,7 @@
 			<description>You replicate a Cap of Water Breathing.</description>
 		</sheet>
 	</element>
-	<element name="Common magic Item" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_COMMON_MAGIC">
+	<element name=" • Common magic Item" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_COMMON_MAGIC">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:2]</requirements>
 		<description>
@@ -130,7 +130,7 @@
 			<description>You replicate any Common magic item of your choice</description>
 		</sheet>
 	</element>
-	<element name="Goggles of Night" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_GOGGLES_OF_NIGHT">
+	<element name=" • Goggles of Night" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_GOGGLES_OF_NIGHT">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:2]</requirements>
 		<description>
@@ -140,7 +140,7 @@
 			<description>You replicate a pair of Goggles of Night.</description>
 		</sheet>
 	</element>
-	<element name="Manifold Tool" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_MANIFOLD_TOOL">
+	<element name=" • Manifold Tool" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_MANIFOLD_TOOL">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:2]</requirements>
 		<description>
@@ -150,7 +150,7 @@
 			<description>You replicate a Manifold Tool.</description>
 		</sheet>
 	</element>
-	<element name="Repeating Shot" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_REPEATING_SHOT">
+	<element name=" • Repeating Shot" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_REPEATING_SHOT">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:2]</requirements>
 		<description>
@@ -160,7 +160,7 @@
 			<description>You replicate a Repeating Shot Ranged Weapon.</description>
 		</sheet>
 	</element>
-	<element name="Returning Weapon" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RETURNING_WEAPON">
+	<element name=" • Returning Weapon" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RETURNING_WEAPON">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:2]</requirements>
 		<description>
@@ -170,7 +170,7 @@
 			<description>You replicate a Returning Weapon.</description>
 		</sheet>
 	</element>
-	<element name="Rope of Climbing" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ROPE_OF_CLIMBING">
+	<element name=" • Rope of Climbing" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ROPE_OF_CLIMBING">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:2]</requirements>
 		<description>
@@ -180,7 +180,7 @@
 			<description>You replicate a Rope of Climbing.</description>
 		</sheet>
 	</element>
-	<element name="Sending Stones" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_SENDING_STONES">
+	<element name=" • Sending Stones" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_SENDING_STONES">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:2]</requirements>
 		<description>
@@ -190,7 +190,7 @@
 			<description>You replicate a Sending Stones.</description>
 		</sheet>
 	</element>
-	<element name="Shield +1" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_SHIELD_1">
+	<element name=" • Shield +1" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_SHIELD_1">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:2]</requirements>
 		<description>
@@ -200,7 +200,7 @@
 			<description>You replicate a Msgic Shield (+1 to AC).</description>
 		</sheet>
 	</element>
-	<element name="Wand of Magic Detection" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WAND_OF_MAGIC_DETECTION">
+	<element name=" • Wand of Magic Detection" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WAND_OF_MAGIC_DETECTION">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:2]</requirements>
 		<description>
@@ -210,7 +210,7 @@
 			<description>You replicate a Wand of Magic Detection.</description>
 		</sheet>
 	</element>
-	<element name="Wand of Secrets" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WAND_OF_SECRETS">
+	<element name=" • Wand of Secrets" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WAND_OF_SECRETS">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:2]</requirements>
 		<description>
@@ -220,7 +220,7 @@
 			<description>You replicate a Wand of Secrets.</description>
 		</sheet>
 	</element>
-	<element name="Wand of the War Mage +1" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WAND_OF_THE_WAR_MAGE_1">
+	<element name=" • Wand of the War Mage +1" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WAND_OF_THE_WAR_MAGE_1">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:2]</requirements>
 		<description>
@@ -230,7 +230,7 @@
 			<description>You replicate a Wand of the War Mage (+1 to spell attack).</description>
 		</sheet>
 	</element>
-	<element name="Weapon +1" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WEAPON_1">
+	<element name=" • Weapon +1" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WEAPON_1">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:2]</requirements>
 		<description>
@@ -240,7 +240,7 @@
 			<description>You replicate a Magic Weapon (+1 to attack roll and damage).</description>
 		</sheet>
 	</element>
-	<element name="Wraps of Unarmed Power, +1" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WRAPS_OF_UNARMED_POWER_1">
+	<element name=" • Wraps of Unarmed Power, +1" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WRAPS_OF_UNARMED_POWER_1">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:2]</requirements>
 		<description>
@@ -250,7 +250,7 @@
 			<description>You replicate a Wraps of Unarmed Power (+1 to unarmed attack roll and damage).</description>
 		</sheet>
 	</element>
-	<element name="Armor +1" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ARMOR_1">
+	<element name=" • Armor +1" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ARMOR_1">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:6]</requirements>
 		<description>
@@ -260,7 +260,7 @@
 			<description>You replicate a Magic Armor (+1 to AC).</description>
 		</sheet>
 	</element>
-	<element name="Boots of Elvenkind" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_BOOTS_OF_ELVENKIND">
+	<element name=" • Boots of Elvenkind" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_BOOTS_OF_ELVENKIND">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:6]</requirements>
 		<description>
@@ -270,7 +270,7 @@
 			<description>You replicate a pair of Boots of Elvenkind.</description>
 		</sheet>
 	</element>
-	<element name="Boots of the Winding Path" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_BOOTS_OF_THE_WINDING_PATH">
+	<element name=" • Boots of the Winding Path" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_BOOTS_OF_THE_WINDING_PATH">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:6]</requirements>
 		<description>
@@ -280,7 +280,7 @@
 			<description>You replicate a pair of Boots of the Winding Path.</description>
 		</sheet>
 	</element>
-	<element name="Cloak of Elvenkind" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_CLOAK_OF_ELVENKIND">
+	<element name=" • Cloak of Elvenkind" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_CLOAK_OF_ELVENKIND">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:6]</requirements>
 		<description>
@@ -290,7 +290,7 @@
 			<description>You replicate a Cloak of Elvenkind.</description>
 		</sheet>
 	</element>
-	<element name="Cloak of the Manta Ray" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_CLOAK_OF_THE_MANTA_RAY">
+	<element name=" • Cloak of the Manta Ray" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_CLOAK_OF_THE_MANTA_RAY">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:6]</requirements>
 		<description>
@@ -300,7 +300,7 @@
 			<description>You replicate a Cloak of the Manta Ray.</description>
 		</sheet>
 	</element>
-	<element name="Dazzling Weapon" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_DAZZLING_WEAPON">
+	<element name=" • Dazzling Weapon" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_DAZZLING_WEAPON">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:6]</requirements>
 		<description>
@@ -310,7 +310,7 @@
 			<description>You replicate a Dazzling Weapon.</description>
 		</sheet>
 	</element>
-	<element name="Eyes of Charming" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_EYES_OF_CHARMING">
+	<element name=" • Eyes of Charming" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_EYES_OF_CHARMING">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:6]</requirements>
 		<description>
@@ -320,7 +320,7 @@
 			<description>You replicate an Eyes of Charming.</description>
 		</sheet>
 	</element>
-	<element name="Eyes of Minute Seeing" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_EYES_OF_MINUTE_SEEING">
+	<element name=" • Eyes of Minute Seeing" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_EYES_OF_MINUTE_SEEING">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:6]</requirements>
 		<description>
@@ -330,7 +330,7 @@
 			<description>You replicate an Eyes of Minute Seeing.</description>
 		</sheet>
 	</element>
-	<element name="Gloves of Thievery" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_GLOVES_OF_THIEVERY">
+	<element name=" • Gloves of Thievery" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_GLOVES_OF_THIEVERY">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:6]</requirements>
 		<description>
@@ -340,7 +340,7 @@
 			<description>You replicate a pair of Gloves of Thievery.</description>
 		</sheet>
 	</element>
-	<element name="Helm of Awareness" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_HELM_OF_AWARENESS">
+	<element name=" • Helm of Awareness" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_HELM_OF_AWARENESS">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:6]</requirements>
 		<description>
@@ -350,7 +350,7 @@
 			<description>You replicate an Helm of Awareness.</description>
 		</sheet>
 	</element>
-	<element name="Lantern of Revealing" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_LANTERN_OF_REVEALING">
+	<element name=" • Lantern of Revealing" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_LANTERN_OF_REVEALING">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:6]</requirements>
 		<description>
@@ -360,7 +360,7 @@
 			<description>You replicate a Lantern of Revealing.</description>
 		</sheet>
 	</element>
-	<element name="Mind Sharpener" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_MIND_SHARPENER">
+	<element name=" • Mind Sharpener" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_MIND_SHARPENER">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:6]</requirements>
 		<description>
@@ -370,7 +370,7 @@
 			<description>You replicate a Mind Sharpener.</description>
 		</sheet>
 	</element>
-	<element name="Necklace of Adaptation" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_NECKLACE_OF_ADAPTATION">
+	<element name=" • Necklace of Adaptation" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_NECKLACE_OF_ADAPTATION">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:6]</requirements>
 		<description>
@@ -380,7 +380,7 @@
 			<description>You replicate a Necklace of Adaptation.</description>
 		</sheet>
 	</element>
-	<element name="Pipes of Haunting" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_PIPES_OF_HAUNTING">
+	<element name=" • Pipes of Haunting" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_PIPES_OF_HAUNTING">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:6]</requirements>
 		<description>
@@ -390,7 +390,7 @@
 			<description>You replicate a Pipes of Haunting.</description>
 		</sheet>
 	</element>
-	<element name="Repulsion Shield" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_REPULSION_SHIELD">
+	<element name=" • Repulsion Shield" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_REPULSION_SHIELD">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:6]</requirements>
 		<description>
@@ -400,7 +400,7 @@
 			<description>You replicate a Repulsion Shield.</description>
 		</sheet>
 	</element>
-	<element name="Ring of Swimming" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_SWIMMING">
+	<element name=" • Ring of Swimming" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_SWIMMING">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:6]</requirements>
 		<description>
@@ -410,7 +410,7 @@
 			<description>You replicate a Ring of Swimming.</description>
 		</sheet>
 	</element>
-	<element name="Ring of Water Walking" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_WATER_WALKING">
+	<element name=" • Ring of Water Walking" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_WATER_WALKING">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:6]</requirements>
 		<description>
@@ -420,7 +420,7 @@
 			<description>You replicate a Ring of Water Walking.</description>
 		</sheet>
 	</element>
-	<element name="Sentinel Shield" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_SENTINEL_SHIELD">
+	<element name=" • Sentinel Shield" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_SENTINEL_SHIELD">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:6]</requirements>
 		<description>
@@ -430,7 +430,7 @@
 			<description>You replicate a Sentinel Shield.</description>
 		</sheet>
 	</element>
-	<element name="Spell-Refueling Ring" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_SPELL_REFUELING_RING">
+	<element name=" • Spell-Refueling Ring" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_SPELL_REFUELING_RING">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:6]</requirements>
 		<description>
@@ -440,7 +440,7 @@
 			<description>You replicate a Spell-Refueling Ring.</description>
 		</sheet>
 	</element>
-	<element name="Wand of Magic Missiles" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WAND_OF_MAGIC_MISSILES">
+	<element name=" • Wand of Magic Missiles" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WAND_OF_MAGIC_MISSILES">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:6]</requirements>
 		<description>
@@ -450,7 +450,7 @@
 			<description>You replicate a Wand of Magic Missiles.</description>
 		</sheet>
 	</element>
-	<element name="Wand of Web" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WAND_OF_WEB">
+	<element name=" • Wand of Web" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WAND_OF_WEB">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:6]</requirements>
 		<description>
@@ -460,7 +460,7 @@
 			<description>You replicate a Wand of Web.</description>
 		</sheet>
 	</element>
-	<element name="Weapon of Warning" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WEAPON_OF_WARNING">
+	<element name=" • Weapon of Warning" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WEAPON_OF_WARNING">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:6]</requirements>
 		<description>
@@ -470,7 +470,7 @@
 			<description>You replicate a Weapon of Warning.</description>
 		</sheet>
 	</element>
-	<element name="Armor of Resistance" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ARMOR_OF_RESISTANCE">
+	<element name=" • Armor of Resistance" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ARMOR_OF_RESISTANCE">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:10]</requirements>
 		<description>
@@ -480,7 +480,7 @@
 			<description>You replicate an Armor of Resistance.</description>
 		</sheet>
 	</element>
-	<element name="Dagger of Venom" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_DAGGER_OF_VENOM">
+	<element name=" • Dagger of Venom" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_DAGGER_OF_VENOM">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:10]</requirements>
 		<description>
@@ -490,7 +490,7 @@
 			<description>You replicate a Dagger of Venom.</description>
 		</sheet>
 	</element>
-	<element name="Elven Chain" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ELVEN_CHAIN">
+	<element name=" • Elven Chain" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ELVEN_CHAIN">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:10]</requirements>
 		<description>
@@ -500,7 +500,7 @@
 			<description>You replicate an Elven Chain.</description>
 		</sheet>
 	</element>
-	<element name="Ring of Feather Falling" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_FEATHER_FALLING">
+	<element name=" • Ring of Feather Falling" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_FEATHER_FALLING">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:10]</requirements>
 		<description>
@@ -510,7 +510,7 @@
 			<description>You replicate a Ring of Feather Falling.</description>
 		</sheet>
 	</element>
-	<element name="Ring of Jumping" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_JUMPING">
+	<element name=" • Ring of Jumping" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_JUMPING">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:10]</requirements>
 		<description>
@@ -520,7 +520,7 @@
 			<description>You replicate a Ring of Jumping.</description>
 		</sheet>
 	</element>
-	<element name="Ring of Mind Shielding" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_MIND_SHIELDING">
+	<element name=" • Ring of Mind Shielding" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_MIND_SHIELDING">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:10]</requirements>
 		<description>
@@ -530,7 +530,7 @@
 			<description>You replicate a Ring of Mind Shielding.</description>
 		</sheet>
 	</element>
-	<element name="Shield, +2" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_SHIELD_2">
+	<element name=" • Shield, +2" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_SHIELD_2">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:10]</requirements>
 		<description>
@@ -540,7 +540,7 @@
 			<description>You replicate a Shield, +2.</description>
 		</sheet>
 	</element>
-	<element name="Uncommon Wondrous Item" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_UNCOMMON_WONDROUS_ITEM">
+	<element name=" • Uncommon Wondrous Item" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_UNCOMMON_WONDROUS_ITEM">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:10]</requirements>
 		<description>
@@ -550,7 +550,7 @@
 			<description>You replicate a Uncommon Wondrous Item.</description>
 		</sheet>
 	</element>
-	<element name="Wand of the War Mage, +2" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WAND_OF_THE_WAR_MAGE_2">
+	<element name=" • Wand of the War Mage, +2" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WAND_OF_THE_WAR_MAGE_2">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:10]</requirements>
 		<description>
@@ -560,7 +560,7 @@
 			<description>You replicate a Wand of the War Mage, +2.</description>
 		</sheet>
 	</element>
-	<element name="Weapon, +2" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WEAPON_2">
+	<element name=" • Weapon, +2" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WEAPON_2">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:10]</requirements>
 		<description>
@@ -570,7 +570,7 @@
 			<description>You replicate a Magic Weapon (+2 to attack roll and damage).</description>
 		</sheet>
 	</element>
-	<element name="Wraps of Unarmed Power, +2" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WRAPS_OF_UNARMED_POWER_2">
+	<element name=" • Wraps of Unarmed Power, +2" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WRAPS_OF_UNARMED_POWER_2">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:10]</requirements>
 		<description>
@@ -580,7 +580,7 @@
 			<description>You replicate a Wraps of Unarmed Power (+2 to unarmed attack roll and damage).</description>
 		</sheet>
 	</element>
-	<element name="Armor, +2" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ARMOR_2">
+	<element name=" • Armor, +2" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ARMOR_2">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:14]</requirements>
 		<description>
@@ -590,7 +590,7 @@
 			<description>You replicate a Magic Armor (+2 to AC).</description>
 		</sheet>
 	</element>
-	<element name="Arrow-Catching Shield" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ARROW_CATCHING_SHIELD">
+	<element name=" • Arrow-Catching Shield" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ARROW_CATCHING_SHIELD">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:14]</requirements>
 		<description>
@@ -600,7 +600,7 @@
 			<description>You replicate an Arrow-Catching Shield.</description>
 		</sheet>
 	</element>
-	<element name="Flame Tongue" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_FLAME_TONGUE">
+	<element name=" • Flame Tongue" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_FLAME_TONGUE">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:14]</requirements>
 		<description>
@@ -610,7 +610,7 @@
 			<description>You replicate a Flame Tongue.</description>
 		</sheet>
 	</element>
-	<element name="Rare Wondrous Item" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RARE_WONDROUS_ITEM">
+	<element name=" • Rare Wondrous Item" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RARE_WONDROUS_ITEM">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:14]</requirements>
 		<description>
@@ -620,7 +620,7 @@
 			<description>You replicate any Rare Wondrous Item.</description>
 		</sheet>
 	</element>
-	<element name="Ring of Free Action" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_FREE_ACTION">
+	<element name=" • Ring of Free Action" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_FREE_ACTION">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:14]</requirements>
 		<description>
@@ -630,7 +630,7 @@
 			<description>You replicate a Ring of Free Action.</description>
 		</sheet>
 	</element>
-	<element name="Ring of Protection" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_PROTECTION">
+	<element name=" • Ring of Protection" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_PROTECTION">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:14]</requirements>
 		<description>
@@ -640,7 +640,7 @@
 			<description>You replicate a Ring of Protection.</description>
 		</sheet>
 	</element>
-	<element name="Ring of the Ram" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_THE_RAM">
+	<element name=" • Ring of the Ram" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_THE_RAM">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:14]</requirements>
 		<description>
