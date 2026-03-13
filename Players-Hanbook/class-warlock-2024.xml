@@ -87,11 +87,11 @@
     <!-- SINGLE RULES BLOCK -->
     <rules>
       <!-- Proficiencies -->
-      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA"/>
-      <select type="Proficiency" name="Skill Proficiency (Warlock)" supports="Skill, PHB24, Warlock" number="2" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WOTC_PHB24_MULTICLASS_WARLOCK" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_PHB24_MULTICLASS_WARLOCK" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_WOTC_PHB24_MULTICLASS_WARLOCK" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_WOTC_PHB24_MULTICLASS_WARLOCK" />
+      <select type="Proficiency" name="Skill Proficiency (Warlock)" supports="Skill, PHB24, Warlock" number="2" requirements="!ID_WOTC_PHB24_MULTICLASS_WARLOCK" />
 
       <!-- Features by level -->
       <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_WARLOCK_PACT_MAGIC" level="1" />
@@ -119,12 +119,11 @@
 			<prerequisite>Charisma 13</prerequisite>
 			<requirements>[cha:13]</requirements>
 			<setters>
-				<set name="multiclass proficiencies">Light armor, simple weapons</set>
+				<set name="multiclass proficiencies">Light armor</set>
 			</setters>
 			<rules>
 				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
 				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
-				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS" />
 			</rules>
 		</multiclass>
   </element>

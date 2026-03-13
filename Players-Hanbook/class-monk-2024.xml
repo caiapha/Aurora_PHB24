@@ -3,7 +3,7 @@
     <name>Monk</name>
     <description>The Monk, updated to Player's Handbook (2024). Includes Monk's Focus (Focus Points), Uncanny Metabolism, Deflect Attacks/Energy, Stunning Strike (2024), Empowered Strikes, Acrobatic Movement, Heightened Focus, Self-Restoration, Disciplined Survivor, Perfect Focus, Superior Defense, Body and Mind. Subclass selector uses supports="MonkSubclass".</description>
     <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
-    <update version="1.0.1">
+    <update version="1.1.0">
         <file name="class-monk-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/class-monk-2024.xml" />
     </update>
   </info>
@@ -66,12 +66,12 @@
 
     <rules>
       <!-- PROFICIENCY -->
-      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY"/>
-      <select name="Skill Proficiency (Monk)" type="Proficiency" supports="Skill, PHB24, Monk" number="2" />
-      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" supports="ID_INTERNAL_WEAPON_PROPERTY_LIGHT" optional="true" />
-      <select name="Tool Proficiency (Monk)" type="Proficiency" supports="Artisan tools||Musical Instruments" number="1" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_WOTC_PHB24_MULTICLASS_MONK" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_WOTC_PHB24_MULTICLASS_MONK" />
+      <select name="Skill Proficiency (Monk)" type="Proficiency" supports="Skill, PHB24, Monk" number="2" requirements="!ID_WOTC_PHB24_MULTICLASS_MONK" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_PHB24_MULTICLASS_MONK" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" supports="ID_INTERNAL_WEAPON_PROPERTY_LIGHT" optional="true" requirements="!ID_WOTC_PHB24_MULTICLASS_MONK" />
+      <select name="Tool Proficiency (Monk)" type="Proficiency" supports="Artisan tools||Musical Instruments" number="1"  requirements="!ID_WOTC_PHB24_MULTICLASS_MONK" />
 
       <!-- CLASS FEATURES -->
       <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_MONK_MARTIAL_ARTS" />
@@ -102,12 +102,9 @@
     <multiclass id="ID_WOTC_PHB24_MULTICLASS_MONK">
       <prerequisite>Dexterity 13</prerequisite>
       <requirements>[dex:13]</requirements>
-      <setters>
-        <set name="multiclass proficiencies">Simple weapons</set>
-      </setters>
+      <setters />
       <rules>
         <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
-        <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" supports="ID_INTERNAL_WEAPON_PROPERTY_LIGHT" optional="true" />
       </rules>
     </multiclass>
   </element>

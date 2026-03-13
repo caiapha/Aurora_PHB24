@@ -4,7 +4,7 @@
 		<name>Barbarian</name>
 		<description>The Barbarian class from the Player's Handbook Rev 2024</description>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
-		<update version="1.0.0">
+		<update version="1.1.0">
 			<file name="class-barbarian-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/class-barbarian-2024.xml" />
 		</update>
 	</info>
@@ -135,12 +135,11 @@
 			<prerequisite>Strength 13</prerequisite>
 			<requirements>[str:13]</requirements>
 			<setters>
-				<set name="multiclass proficiencies">Shields, simple weapons, martial weapons</set>
+				<set name="multiclass proficiencies">Shields, martial weapons</set>
 			</setters>
 			<rules>
 				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
 				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
-				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
 				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
 			</rules>
 		</multiclass>

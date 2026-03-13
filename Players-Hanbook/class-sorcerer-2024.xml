@@ -88,10 +88,10 @@
     <!-- SINGLE RULES BLOCK -->
     <rules>
       <!-- Proficiencies -->
-      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA"/>
-      <select type="Proficiency" name="Skill Proficiency (Sorcerer)" supports="Skill, PHB24, Sorcerer" number="2" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_PHB24_MULTICLASS_SORCERER" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_WOTC_PHB24_MULTICLASS_SORCERER" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_WOTC_PHB24_MULTICLASS_SORCERER" />
+      <select type="Proficiency" name="Skill Proficiency (Sorcerer)" supports="Skill, PHB24, Sorcerer" number="2" requirements="!ID_WOTC_PHB24_MULTICLASS_SORCERER" />
 
       <!-- Level grants -->
       <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_SORCERER_SPELLCASTING" level="1" />

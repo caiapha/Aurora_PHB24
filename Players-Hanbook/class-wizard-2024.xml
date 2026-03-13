@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <elements>
   <info>
-    <update version="1.0.0">
+    <update version="1.1.0">
       <file name="class-wizard-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/class-wizard-2024.xml" />
     </update>
     <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
@@ -113,12 +113,9 @@
     <multiclass id="ID_WOTC_PHB24_MULTICLASS_WIZARD">
       <prerequisite>Intelligence 13</prerequisite>
       <requirements>[int:13]</requirements>
-      <setters>
-        <set name="multiclass proficiencies">Simple weapons</set>
-      </setters>
+      <setters />
       <rules>
         <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
-        <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
       </rules>
     </multiclass>
   </element>

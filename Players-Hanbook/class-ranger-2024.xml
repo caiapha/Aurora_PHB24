@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <elements>
   <info>
-    <update version="1.0.1">
+    <update version="1.1.0">
       <file name="class-ranger-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/class-ranger-2024.xml" />
     </update>
     <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
@@ -94,14 +94,14 @@
 
     <rules>
       <!-- Proficiencies -->
-      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY"/>
-      <select type="Proficiency" name="Skill Proficiencies (Ranger)" supports="Skill, PHB24, Ranger" number="3" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WOTC_PHB24_MULTICLASS_RANGER" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_WOTC_PHB24_MULTICLASS_RANGER" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD" requirements="!ID_WOTC_PHB24_MULTICLASS_RANGER" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_PHB24_MULTICLASS_RANGER" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_WOTC_PHB24_MULTICLASS_RANGER" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_WOTC_PHB24_MULTICLASS_RANGER" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_WOTC_PHB24_MULTICLASS_RANGER" />
+      <select type="Proficiency" name="Skill Proficiencies (Ranger)" supports="Skill, PHB24, Ranger" number="3" requirements="!ID_WOTC_PHB24_MULTICLASS_RANGER" />
 
       <!-- Grants per level -->
       <grant type="Class Feature" id="ID_WOTC_PHB24_CLASS_FEATURE_RANGER_SPELLCASTING" level="1"/>
