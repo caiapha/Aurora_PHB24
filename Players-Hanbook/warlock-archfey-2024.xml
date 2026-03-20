@@ -113,6 +113,7 @@
     </sheet>
     <rules>
       <grant type="Condition" id="ID_INTERNAL_CONDITION_IMMUNITY_CHARMED"/>
+    </rules>  
   </element>
 
     <!-- ===== Level 14: Bewitching Magic ===== -->
