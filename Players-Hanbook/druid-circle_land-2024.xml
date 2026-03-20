@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.0.0">
+		<update version="1.0.1">
 		<file name="druid-circle_land-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/druid-circle_land-2024.xml" />
 		</update>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
@@ -119,6 +119,9 @@
 		<sheet>
 			<description>You are immune to Poisoned condition and you gain Resistance to damage type associated to the choosen Land: Arid-Fire, Polar-Cold, Temperate-Lightning, Tropical-Poison.</description>
 		</sheet>
+		<rules>
+			<grant type="Condition" ID="ID_INTERNAL_CONDITION_IMMUNITY_POISONED"/>
+		</rules>
 	</element>
 	<element name="Nature's Sanctuary" type="Archetype Feature" source="Player's Handbook (2024)" id="ID_WOTC_PHB24_ARCHETYPE_FEATURE_CIRCLE_LAND_NATURES_SANCTUARY">
 		<description>

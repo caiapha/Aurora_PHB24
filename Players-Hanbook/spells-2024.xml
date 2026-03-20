@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Spells from the Player's Handbook Rev. 2024</name>
-		<update version="1.1.0">
+		<update version="1.2.0">
 			<file name="spells-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/spells-2024.xml" />
 		</update>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
@@ -8153,6 +8153,27 @@
 			<set name="hasSomaticComponent">false</set>
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Vitriolic Sphere" type="Spell" source="Player's Handbook (2024)" id="ID_PHB24_SPELL_VITRIOLIC_SPHERE">
+		<supports>SorcererPHB24, WizardPHB24, PHB24</supports>
+		<description>
+			<p>You point at a location within range, and a glowing, 1-foot-diameter ball of acid streaks there and explodes in a 20-foot-radius Sphere. Each creature in that area makes a Dexterity saving throw. On a failed save, a creature takes 10d4 Acid damage and another 5d4 Acid damage at the end of its next turn. On a successful save, a creature takes half the initial damage only.</p>
+			<p class="indent"><strong>Using a Higher-Level Spell Slot.</strong> The initial damage increases by 2d4 for each spell slot level above 4.</p>
+		</description>
+		<setters>
+			<set name="keywords">Acid</set>
+			<set name="level">4</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">150 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a rop of bile</set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>

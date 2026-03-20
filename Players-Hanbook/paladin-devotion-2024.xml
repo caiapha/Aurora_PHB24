@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <elements>
   <info>
-    <update version="1.0.0">
+    <update version="1.0.1">
       <file name="paladin-devotion-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/paladin-devotion-2024.xml" />
     </update>
     <author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
@@ -92,6 +92,8 @@
     <sheet>
       <description>Within your Aura of Protection: you and allies have Immunity to the Charmed condition; entering allies ignore Charmed while in the aura.</description>
     </sheet>
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_IMMUNITY_CHARMED"/>
   </element>
 
   <!-- ===== Level 15: Smite of Protection ===== -->
