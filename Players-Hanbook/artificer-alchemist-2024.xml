@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Alchemist Artificer Archetype</name>
-		<update version="1.0.0">
+		<update version="1.1.0">
 			<file name="artificer-alchemist-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/artificer-alchemist-2024.xml" />
 		</update>
 	</info>
@@ -43,7 +43,7 @@
 			<grant type="Proficiency" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_TOOLS_OF_THE_TRADE_4" requirements="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES, ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT"/>
 		</rules>
 	</element>
-		<!-- Tool of the Trade choice -->
+	<!-- Tool of the Trade choice -->
 	<element name="Tools of the Trade_1" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_TOOLS_OF_THE_TRADE_1">
 		<requirements>!ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_TOOLS_OF_THE_TRADE_CONDITION_2, !ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_TOOLS_OF_THE_TRADE_CONDITION_3, !ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_TOOLS_OF_THE_TRADE_CONDITION_4</requirements>
 		<description />
@@ -111,22 +111,21 @@
 		</rules>
 	</element>
 
-	<!-- End Tool of the Trade choice -->
+	<!-- End Tool of the Trade -->
 
 	<element name="Alchemist Spells" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_ALCHEMIST_SPELLS">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_EFA_ARTIFICER_ALCHEMIST_SPELLS</requirements>
 		<description>
-			<p>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Alchemist Spells table. These spells count as artificer spells for you, but they donâ€™t count against the number of artificer spells you prepare.</p>
+			<p>Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Alchemist Spells table. These spells count as artificer spells for you, but they don't count against the number of artificer spells you prepare.</p>
 			<h5 class="caption">ALCHEMIST SPELLS</h5>
 			<table>
 				<thead>
 					<tr><td>Artificer Level</td><td>Spells</td></tr>
 				</thead>
-				<tr><td>3rd</td><td><em>healing word, ray of sickness</em></td></tr>
-				<tr><td>5th</td><td><em>flaming sphere, Melfâ€™s acid arrow</em></td></tr>
-				<tr><td>9th</td><td><em>gaseous form, mass healing word</em></td></tr>
-				<tr><td>13th</td><td><em>blight, death ward</em></td></tr>
-				<tr><td>17th</td><td><em>cloudkill, raise dead</em></td></tr>
+				<tr><td>3rd</td><td><em>Healing word, Ray of sickness</em></td></tr>
+				<tr><td>5th</td><td><em>Flaming sphere, Melf's acid arrow</em></td></tr>
+				<tr><td>9th</td><td><em>Gaseous form, Mass healing word</em></td></tr>
+				<tr><td>13th</td><td><em>Death ward, Vitriolic Sphere</em></td></tr>
+				<tr><td>17th</td><td><em>Cloudkill, Raise dead</em></td></tr>
 			</table>
 		</description>
 		<sheet display="false" />
@@ -137,68 +136,66 @@
 			<grant type="Spell" id="ID_PHB24_SPELL_MELFS_ACID_ARROW" spellcasting="Artificer" level="5" prepared="true" />
 			<grant type="Spell" id="ID_PHB24_SPELL_GASEOUS_FORM" spellcasting="Artificer" level="9" prepared="true" />
 			<grant type="Spell" id="ID_PHB24_SPELL_MASS_HEALING_WORD" spellcasting="Artificer" level="9" prepared="true" />
-			<grant type="Spell" id="ID_PHB24_SPELL_BLIGHT" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB24_SPELL_VITRIOLIC_SPHERE" spellcasting="Artificer" level="13" prepared="true" />
 			<grant type="Spell" id="ID_PHB24_SPELL_DEATH_WARD" spellcasting="Artificer" level="13" prepared="true" />
 			<grant type="Spell" id="ID_PHB24_SPELL_CLOUDKILL" spellcasting="Artificer" level="17" prepared="true" />
 			<grant type="Spell" id="ID_PHB24_SPELL_RAISE_DEAD" spellcasting="Artificer" level="17" prepared="true" />
 		</rules>
 	</element>
 	<element name="Experimental Elixir" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_EXPERIMENTAL_ELIXIR">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_EFA_ARTIFICER_ALCHEMIST_EXPERIMENTAL_ELIXIR</requirements>
 		<description>
-			<p>Beginning at 3rd level, whenever you finish a long rest, you can magically produce an <i>experimental elixir</i> in an empty flask you touch. Roll on the Experimental Elixir table for the elixirâ€™s effect, which is triggered when someone drinks the elixir. As an action, a creature can drink the elixir or administer it to an incapacitated creature.</p>
-			<p class="indent">Creating an <i>experimental elixir</i> requires you to have alchemist supplies on your person, and any elixir you create with this feature lasts until it is drunk or until the end of your next long rest.</p>
-			<p class="indent">When you reach certain levels in this class, you can make more elixirs at the end of a long rest: two at 6th level and three at 15th level. Roll for each elixirâ€™s effect separately. Each elixir requires its own flask.</p>
-			<p class="indent">You can create additional <i>experimental elixirs</i> by expending a spell slot of 1st level or higher for each one. When you do so, you use your action to create the elixir in an empty flask you touch, and you choose the elixirâ€™s effect from the Experimental Elixir table.</p>
+			<p>Beginning at 3rd level, whenever you finish a Long Rest while holding Alchemist's Supplies, you can use that tool to magically produce two elixirs. For each elixir, roll on the Experimental Elixir table for the elixir's effect, which is triggered when someone drinks the elixir. The elixir appears in a vial, and the vial vanishes when the elixir is drunk or poured out. If any elixir remains when you finish a Long Rest, the elixir and its vial vanish.</p>
+			<p class="indent"><strong>Drinking an Elixir.</strong> As a Bonus Action, a creature can drink the elixir or administer it to another creature within 5 feet of itself.</p>
+			<p class="indent"><strong>Creating Additional Elixirs.</strong> As a Magic action while holding Alchemist's Supplies, you can expend one spell slot to create another elixir. When you do so, you choose its effect from the Experimental Elixir table rather than rolling.</p>
+			<p class="indent">When you reach certain Artificer levels, you can make an additional elixir at the end of each Long Rest: a total of three at level 5, four at level 9, and five at level 15.</p>
 			<p><strong>Experimental Elixir</strong></p>
 			<table>
 				<thead>
 					<tr><td>d6</td><td>Effect</td></tr>
 				</thead>
-				<tr><td>1</td><td><strong>Healing.</strong> The drinker regains a number of hit points equal to 2d4 + your Intelligence modifier.</td></tr>
-				<tr><td>2</td><td><strong>Swiftness.</strong> The drinkerâ€™s walking speed increases by 10 feet for 1 hour.</td></tr>
-				<tr><td>3</td><td><strong>Resilience.</strong> The drinker gains a +1 bonus to AC for 10 minutes.</td></tr>
-				<tr><td>4</td><td><strong>Boldness.</strong> The drinker can roll a d4 and add the number rolled to every attack roll and saving throw they make for the next minute.</td></tr>
-				<tr><td>5</td><td><strong>Flight.</strong> The drinker gains a flying speed of 10 feet for 10 minutes.</td></tr>
-				<tr><td>6</td><td><strong>Transformation.</strong> The drinkerâ€™s body is transformed as if by the alter self spell. The drinker determines the transformation caused by the spell, the effects of which last for 10 minutes.</td></tr>
+				<tr><td>1</td><td><strong>Healing.</strong> The drinker regains a number of hit points equal to 2d8 + your Intelligence modifier. The number of dice ingreases to 3 at 9th-lvl and 4 to 15th-lvl</td></tr>
+				<tr><td>2</td><td><strong>Swiftness.</strong> The drinker's walking speed increases by 10 feet for 1 hour, and increase to 15ft at 9th-lvl and 20ft at  15th-lvl</td></tr>
+				<tr><td>3</td><td><strong>Resilience.</strong> The drinker gains a +1 bonus to AC for 10 minutes. The duration increase to 1 hour at 9th-lvl and 8 hours at 15th-lvl</td></tr>
+				<tr><td>4</td><td><strong>Boldness.</strong> The drinker can roll 1d4 and add the number rolled to every attack roll and saving throw they make for the next minute. Thr duration increase to 10 minutes at 9th-lvl and to 1 hour at 15th-lvl</td></tr>
+				<tr><td>5</td><td><strong>Flight.</strong> The drinker gains a flying speed of 10 feet for 10 minutes. The flying speed increase to 20ft at 9th-lvl and 30ft at 15th-lvl</td></tr>
+				<tr><td>6</td><td>You determine the elixir's effect by choosing one of the other rows in this table.</td></tr>
 			</table>
 		</description>
 		<sheet>
-			<description>Whenever you finish a long rest, you can magically produce up to {{experimental elixir:count}} elixirs, each in an empty flask you touch;
+			<description>Whenever you finish a long rest, you can magically produce up to {{experimental elixir:count}} elixirs; Roll 1d6 to determine which is produced. On a 6, you choose.
 			Any elixir you create with this feature lasts until it is drunk or until the end of your next long rest. 
-			You can create additional experimental elixirs by expending a spell slot of 1st level or higher for each one.</description>
+			You can create experimental elixirs of your choice by expending a 1st-lvl spell slot or higher</description>
 		</sheet>
 		<rules>
-			<stat name="experimental elixir:count" value="1"  />
-			<stat name="experimental elixir:count" value="1" level="6" />
+			<stat name="experimental elixir:count" value="2"  />
+			<stat name="experimental elixir:count" value="1" level="5" />
+			<stat name="experimental elixir:count" value="1" level="9" />
 			<stat name="experimental elixir:count" value="1" level="15" />
+			<grant type="Archetype Feature" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_EXPERIMENTAL_ELIXIR_HEALING"/>
+			<grant type="Archetype Feature" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_EXPERIMENTAL_ELIXIR_SWIFTNESS"/>
+			<grant type="Archetype Feature" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_EXPERIMENTAL_ELIXIR_RESILIENCE"/>
+			<grant type="Archetype Feature" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_EXPERIMENTAL_ELIXIR_BOLDNESS"/>
+			<grant type="Archetype Feature" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_EXPERIMENTAL_ELIXIR_FLIGHT"/>
 		</rules>
 	</element>
 	<element name="Alchemical Savant" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_ALCHEMICAL_SAVANT">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_EFA_ARTIFICER_ALCHEMIST_ALCHEMICAL_SAVANT</requirements>
 		<description>
-			<p>At 5th level, you develop masterful command of magical chemicals, enhancing the healing and damage you create through them. Whenever you cast a spell using your alchemistâ€™s supplies as the spellcasting focus, you gain a bonus to one roll of the spell. That roll must restore hit points or be a damage roll that deals acid, fire, necrotic, or poison damage, and the bonus equals your Intelligence modifier (minimum of +1).</p>
+			<p>Whenever you cast a spell using your Alchemist's Supplies as the Spellcasting Focus, you gain a bonus to one roll of the spell. That roll must restore Hit Points or be a damage roll that deals Acid, Fire, or Poison damage. The bonus equals your Intelligence modifier (minimum bonus of +1).</p>
 		</description>
 		<sheet>
-			<description>Whenever you cast a spell using your alchemistâ€™s supplies, you gain a +{{alchemical savant:bonus}} bonus to one roll of the spell. That roll must restore hit points or be a damage roll that deals acid, fire, necrotic, or poison damage.</description>
+			<description>When you cast a spell using the Alchemist's Supplies as Spellcasting Focus, you gain +{{alchemical_savant:bonus}} to one roll of the spell. The roll must restor HP or be a damage roll dealing Acid, Poison o Fire damage.</description>
 		</sheet>
 		<rules>
-			<stat name="alchemical savant:bonus" value="1" bonus="base" />
-			<stat name="alchemical savant:bonus" value="intelligence:modifier" bonus="base" />
+			<stat name="alchemical_savant:bonus" value="1" bonus="base"/>
+			<stat name="alchemical_savant:bonus" value="intelligence:modifier" bonus="base"/>
 		</rules>
 	</element>
 	<element name="Restorative Reagents" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_RESTORATIVE_REAGENTS">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_EFA_ARTIFICER_ALCHEMIST_RESTORATIVE_REAGENTS</requirements>
 		<description>
-			<p>Starting at 9th level, you can incorporate restorative reagents into some of your works:</p>
-			<ul>
-				<li>Whenever a creature drinks an <i>experimental elixir</i> you created, the creature gains temporary hit points equal to 2d6 + your Intelligence modifier (minimum of 1 temporary hit point).</li>
-				<li>You can cast <i>lesser restoration</i> without expending a spell slot and without preparing the spell, provided you use alchemistâ€™s supplies as the spellcasting focus. You can do so a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest.</li>
-			</ul>
+			<p>Starting at 9th level, You can cast Lesser Restoration without expending a spell slot and without preparing the spell, provided you use Alchemist's Supplies as the Spellcasting Focus. You can do so a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
 		</description>
-		<sheet>
-			<description>Whenever a creature drinks an experimental elixir you created, the creature gains 2d6+{{intelligence:modifier}} temporary hp. &#13;
-			You can cast lesser restoration {{restorative reagents:usage}} times per long rest without expending a spell slot and without preparing the spell, provided you use alchemistâ€™s supplies as the spellcasting focus.</description>
+		<sheet usage="{{restorative reagents:usage}}/ Long Rest">
+			<description>You can cast Lesser Restoration without expending a spell slot and without preparing the spell, provided that you use the Alchemist's Supplies as Spellcastin Focus</description>
 		</sheet>
 		<rules>
 			<stat name="restorative reagents:usage" value="1" bonus="base" />
@@ -206,21 +203,64 @@
 		</rules>
 	</element>
 	<element name="Chemical Mastery" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_CHEMICAL_MASTERY">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_EFA_ARTIFICER_ALCHEMIST_CHEMICAL_MASTERY</requirements>
 		<description>
-			<p>By 15th level, you have been exposed to so many chemicals that they pose little risk to you, and you can use them to quickly end certain ailments:</p>
-			<ul>
-				<li>You gain resistance to acid damage and poison damage, and you are immune to the poisoned condition.</li>
-				<li>You can cast <i>greater restoration</i> and <i>heal</i> without expending a spell slot, without preparing the spell, and without material components, provided you use alchemistâ€™s supplies as the spellcasting focus. Once you cast either spell with this feature, you canâ€™t cast that spell with it again until you finish a long rest.</li>
-			</ul>
-		</description>
+			<p>You gain the following benefits:</p>
+			<p class="indent"><strong>Alchemical Eruption.</strong> When you cast an Artificer spell that deals Acid, Fire, or Poison damage to a target, you can also deal 2d8 Force damage to that target. You can use this benefit only once on each of your turns.</p>
+			<p class="indent"><strong>Chemical Resistance.</strong> You gain Resistance to Acid damage and Poison damage. You also gain Immunity to the Poisoned condition.</p>
+			<p class="indent"><strong>Conjured Cauldron.</strong> You can cast Tasha's Bubbling Cauldron without expending a spell slot, without preparing the spell, and without Material components, provided you use Alchemist's Supplies as the Spellcasting Focus. Once you use this feature, you can't use it again until you finish a Long Rest.</p>		</description>
 		<sheet>
-			<description>You are immune to the poisoned condition. &#13;
-			You can cast greater restoration and heal once per long rest without expending a spell slot, without preparing the spell, and without material components, provided you use alchemistâ€™s supplies as the spellcasting focus.</description>
+			<description>Once per turn, your Artificer's spells dealing Poison, Acid or Fire damage to a target deal also 2d8 Force damages. Once per Long Rest, You can cast Tasha's Bubbling Cauldron without expending a spell slot, without preparing the spell, and without Material components, provided you use Alchemist's Supplies as the Spellcasting Focus.</description>
 		</sheet>
 		<rules>
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_IMMUNITY_POISONED" />
+		</rules>
+	</element>
+
+	<!-- EXPERIMENTAL ELIXIRS-->
+	<element name="1 - Healing Elixir" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_EXPERIMENTAL_ELIXIR_HEALING">
+		<sheet>
+			<description>The drinker regains {{experimental elixir:healing_dice}}d8+{{intelligence:modifier}}</description>
+		</sheet>
+		<rules>
+			<stat name="experimental elixir:healing_dice" value="2" />
+			<stat name="experimental elixir:healing_dice" value="1" level="9"/>
+			<stat name="experimental elixir:healing_dice" value="1" level="15"/>
+		</rules>
+	</element>
+	<element name="2 - Swiftness Elixir" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_EXPERIMENTAL_ELIXIR_SWIFTNESS">
+		<sheet>
+			<description>The drinker's speed increase by {{experimental elixir:speed_increase}}ft for 1 hour.</description>
+		</sheet>
+		<rules>
+			<stat name="experimental elixir:speed_increase" value="10" />
+			<stat name="experimental elixir:speed_increase" value="5" level="9"/>
+			<stat name="experimental elixir:speed_increase" value="5" level="15"/>
+		</rules>
+	</element>
+	<element name="3 - Resilience Elixir" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_EXPERIMENTAL_ELIXIR_RESILIENCE">
+		<sheet>
+			<description level="3">The drinker gains +1AC for 10 minutes.</description>
+			<description level="9">The drinker gains +1AC for 1 hour.</description>
+			<description level="15">The drinker gains +1AC for 8 hours.</description>
+		</sheet>
+	</element>
+	<element name="4 - Boldness Elixir" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_EXPERIMENTAL_ELIXIR_BOLDNESS">
+		<sheet>
+			<description level="3">The drinker rolls 1d4. For 1 minute, he adds the result to every attack roll and saving throw.</description>
+			<description level="9">The drinker rolls 1d4. For 10 minutes, he adds the result to every attack roll and saving throw.</description>
+			<description level="15">The drinker rolls 1d4. For 1 hour, he adds the result to every attack roll and saving throw.</description>
+		</sheet>
+	</element>
+		<element name="5 - Elixir of Flight" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ALCHEMIST_EXPERIMENTAL_ELIXIR_FLIGHT">
+		<sheet>
+			<description>The drinker gains a flying speed of {{experimental elixir:flying_speed}}ft for 10 minutes.</description>
+		</sheet>
+		<rules>
+			<stat name="experimental elixir:flying_speed" value="10" />
+			<stat name="experimental elixir:flying_speed" value="10" level="9"/>
+			<stat name="experimental elixir:flying_speed" value="10" level="15"/>
 		</rules>
 	</element>
 </elements>

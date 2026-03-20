@@ -4,7 +4,7 @@
 		<name>Internal functions</name>
 		<description>Internal funtions</description>
 		<author url="">Internal</author>
-		<update version="1.0.1">
+		<update version="1.1.0">
 			<file name="internal-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/internal-2024.xml" />
 		</update>
 		<author url="https://marketplace.dndbeyond.com/core-rules/3709000">Wizards of the Coast</author>
@@ -69,6 +69,53 @@
 		<rules>
 			<stat name="tremorsense:range" value="0" bonus="base" />
 		</rules>
+	</element>
+
+	<!-- CONDITIONS IMMUNITIES -->
+	<element name="Immunity (Blinded)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMMUNITY_BLINDED">
+		<supports>Immunity</supports>
+	</element>
+	<element name="Immunity (Charmed)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMMUNITY_CHARMED">
+		<supports>Immunity</supports>
+	</element>
+	<element name="Immunity (Deafened)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMMUNITY_DEAFENED">
+		<supports>Immunity</supports>
+	</element>
+	<element name="Immunity (Exhaustion)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMMUNITY_EXHAUSTION">
+		<supports>Immunity</supports>
+	</element>
+	<element name="Immunity (Frightened)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMMUNITY_FRIGHTENED">
+		<supports>Immunity</supports>
+	</element>
+	<element name="Immunity (Grappled)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMMUNITY_GRAPPLED">
+		<supports>Immunity</supports>
+	</element>
+	<element name="Immunity (Incapacitated)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMMUNITY_INCAPACITATED">
+		<supports>Immunity</supports>
+	</element>
+	<element name="Immunity (Invisible)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMMUNITY_INVISIBLE">
+		<supports>Immunity</supports>
+	</element>
+	<element name="Immunity (Paralyzed)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMMUNITY_PARALYZED">
+		<supports>Immunity</supports>
+	</element>
+	<element name="Immunity (Petrified)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMMUNITY_PETRIFIED">
+		<supports>Immunity</supports>
+	</element>
+	<element name="Immunity (Poisoned)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMMUNITY_POISONED">
+		<supports>Immunity</supports>
+	</element>
+	<element name="Immunity (Prone)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMMUNITY_PRONE">
+		<supports>Immunity</supports>
+	</element>
+	<element name="Immunity (Restrained)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMMUNITY_RESTRAINED">
+		<supports>Immunity</supports>
+	</element>
+	<element name="Immunity (Stunned)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMMUNITY_STUNNED">
+		<supports>Immunity</supports>
+	</element>
+	<element name="Immunity (Unconscious)" type="Condition" source="Internal" id="ID_INTERNAL_CONDITION_IMMUNITY_UNCONSCIOUS">
+		<supports>Immunity</supports>
 	</element>
 
 	<!-- ALIGNMENTS -->	
