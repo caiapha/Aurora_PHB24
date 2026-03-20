@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Artificer's Magic Item Plans</name>
-		<update version="1.0.2">
+		<update version="1.0.4">
 			<file name="artificer-item_plans-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/artificer-item_plans-2024.xml" />
 		</update>
 	</info>
@@ -251,7 +251,7 @@
 		</sheet>
 	</element>
 	<element name=" • Armor +1" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ARMOR_1">
-		<supports>Magic Item Plan, EFA Version</supports>
+		<supports>Magic Item Plan, EFA Version, Armor</supports>
 		<requirements>[level:artificer:6]</requirements>
 		<description>
 			<p><strong>Magic Item Plan.</strong> Armor +1.</p>
@@ -341,7 +341,7 @@
 		</sheet>
 	</element>
 	<element name=" • Helm of Awareness" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_HELM_OF_AWARENESS">
-		<supports>Magic Item Plan, EFA Version</supports>
+		<supports>Magic Item Plan, EFA Version, Armor</supports>
 		<requirements>[level:artificer:6]</requirements>
 		<description>
 			<p><strong>Magic Item Plan.</strong> Helm of Awareness.</p>
@@ -391,7 +391,7 @@
 		</sheet>
 	</element>
 	<element name=" • Repulsion Shield" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_REPULSION_SHIELD">
-		<supports>Magic Item Plan, EFA Version</supports>
+		<supports>Magic Item Plan, EFA Version, Armor</supports>
 		<requirements>[level:artificer:6]</requirements>
 		<description>
 			<p><strong>Magic Item Plan.</strong> Repulsion Shield.</p>
@@ -421,7 +421,7 @@
 		</sheet>
 	</element>
 	<element name=" • Sentinel Shield" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_SENTINEL_SHIELD">
-		<supports>Magic Item Plan, EFA Version</supports>
+		<supports>Magic Item Plan, EFA Version, Armor</supports>
 		<requirements>[level:artificer:6]</requirements>
 		<description>
 			<p><strong>Magic Item Plan.</strong> Sentinel Shield.</p>
@@ -471,7 +471,7 @@
 		</sheet>
 	</element>
 	<element name=" • Armor of Resistance" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ARMOR_OF_RESISTANCE">
-		<supports>Magic Item Plan, EFA Version</supports>
+		<supports>Magic Item Plan, EFA Version, Armor</supports>
 		<requirements>[level:artificer:10]</requirements>
 		<description>
 			<p><strong>Magic Item Plan.</strong> Armor of Resistance.</p>
@@ -531,7 +531,7 @@
 		</sheet>
 	</element>
 	<element name=" • Shield, +2" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_SHIELD_2">
-		<supports>Magic Item Plan, EFA Version</supports>
+		<supports>Magic Item Plan, EFA Version, Armor</supports>
 		<requirements>[level:artificer:10]</requirements>
 		<description>
 			<p><strong>Magic Item Plan.</strong> Shield, +2.</p>
@@ -581,7 +581,7 @@
 		</sheet>
 	</element>
 	<element name=" • Armor, +2" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ARMOR_2">
-		<supports>Magic Item Plan, EFA Version</supports>
+		<supports>Magic Item Plan, EFA Version, Armor</supports>
 		<requirements>[level:artificer:14]</requirements>
 		<description>
 			<p><strong>Magic Item Plan.</strong> Armor, +2.</p>

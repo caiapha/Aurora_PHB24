@@ -8,7 +8,7 @@
   </info>
 
   <element name="Armorer" type="Archetype" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_ARTIFICER_ARMORER">
-    <supports>Artificer Specialist, EFA Version</supports>
+    <supports>Artificer Subclass, EFA Version</supports>
     <description>
       <p>An Armorer modifies armor to function almost like a second skin. The armor is enhanced to hone the Armorer's magic, unleash potent attacks, and generate a formidable defense.</p>
       <div element="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_TOOLS_OF_THE_TRADE" />
@@ -41,9 +41,31 @@
     <sheet display="false" />
     <rules>
       <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
-      <select type="Proficiency" name="Tool Proficiency (Armorer)" supports="Artisan tools" default="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+      <grant type="Proficiency" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_TOOLS_OF_THE_TRADE_CHOICE_1" requirements="!ID_WOTC_PHB24_ITEM_TOOL_SMITHS_TOOLS" />
+      <grant type="Proficiency" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_TOOLS_OF_THE_TRADE_CHOICE_2" requirements="ID_WOTC_PHB24_ITEM_TOOL_SMITHS_TOOLS, !ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_TOOLS_OF_THE_TRADE_CONDITION_1" />
     </rules>
   </element>
+    <!-- TOOL OF THE TRADER CHOICES -->
+  <element name="Toold of Trade: Condition 1" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_TOOLS_OF_THE_TRADE_CONDITION_1">
+    <sheet display="false"/>
+  </element>  
+
+  <element name="Tool of the Trade: Choice 1" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_TOOLS_OF_THE_TRADE_CHOICE_1">
+    <description />
+    <sheet display="false" />
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS"/>
+      <grant type="Archetype Feature" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_TOOLS_OF_THE_TRADE_CONDITION_1"/>
+    </rules>  
+  </element>
+  <element name="Tool of the Trade: Choice 2" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_TOOLS_OF_THE_TRADE_CHOICE_2">
+    <description />
+    <sheet display="false" />
+    <rules>
+      <select type="Proficiency" name="Tool Proficiency (Armorer)" supports="Artisan tools" default="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+    </rules>  
+  </element>
+  <!-- END OF TOOLS OF TRADE CHOICES-->
 
   <element name="Armorer Spells" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_SPELLS">
     <description>
@@ -65,6 +87,7 @@
   </element>
 
   <element name="Arcane Armor" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_ARCANE_ARMOR">
+    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_EFA_ARTIFICER_ARMORER_ARCANE_ARMOR</requirements>
     <description>
       <p>As a Magic action while you have Smith's Tools in hand, you can turn a suit of armor you are wearing into Arcane Armor. The armor continues to be Arcane Armor until you don another suit of armor or you die.</p>
       <p>You gain the following benefits while wearing your Arcane Armor.</p>
@@ -73,7 +96,7 @@
       <p><strong>Spellcasting Focus.</strong> You can use the Arcane Armor as a Spellcasting Focus for your Artificer spells.</p>
     </description>
     <sheet>
-      <description>As a Magic action, turn worn armor into Arcane Armor. It ignores Strength requirement, can be donned/doffed as a Utilize action, can't be removed against your will, and is a spellcasting focus.</description>
+      <description usage="Magic Action">Turn worn armor into Arcane Armor. It ignores Strength requirement, can be donned/doffed as a Utilize action, can't be removed against your will, and is a spellcasting focus.</description>
     </sheet>
   </element>
 
@@ -82,47 +105,140 @@
       <p>You can customize your Arcane Armor. Choose Dreadnaught, Guardian, or Infiltrator. You can change the model whenever you finish a Short or Long Rest if you have Smith's Tools in hand.</p>
       <p>Each model includes a special weapon. When you attack with that weapon, you can add your Intelligence modifier, instead of your Strength or Dexterity modifier, to the attack and damage rolls.</p>
     </description>
-    <sheet display="false" />
+    <sheet>
+      <description>At the end of a Short or Long Rest, you can customize your Arcane Armor's model. Each Model includes a weapon, which uses {{Armorer:attack_bonus}} as bonus for attack and damage rolls. </description>
+    </sheet>
     <rules>
-      <select type="Archetype Feature" name="Armor Model (Armorer)" supports="Armor Model (Armorer)" />
+      <grant type="Archetype Feature" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_MODEL_DREADNAUGHT"/>
+      <grant type="Archetype Feature" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_MODEL_GUARDIAN"/>
+      <grant type="Archetype Feature" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_MODEL_INFILTRATOR" />
+      <stat name="Armorer:attack_bonus" value="intelligence:modifier" />
     </rules>
   </element>
 
   <element name="Dreadnaught" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_MODEL_DREADNAUGHT">
-    <supports>Armor Model (Armorer)</supports>
     <description>
-      <p><strong>Force Demolisher.</strong> Counts as a Simple Melee weapon with Reach, deals 1d10 Force damage. On hit vs creature at least one size smaller than you, you can push or pull it up to 10 feet.</p>
-      <p><strong>Giant Stature.</strong> As a Bonus Action, enlarge your armor for 1 minute. Reach +5 feet; if smaller than Large, become Large. Uses equal to INT modifier (min 1), regained on Long Rest.</p>
+      <p>You design your Arcane Armor for overwhelming physical presence. It gains the following features.</p>
     </description>
     <sheet>
-      <description>Dreadnaught grants Force Demolisher (1d10 Force, Reach, push/pull 10 ft) and Giant Stature (Bonus Action, 1 minute, reach +5 ft, become Large if smaller; uses = INT mod).</description>
+      <description>You design your Arcane Armor for overwhelming physical presence.</description>
     </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_MODEL_DREADNAUGHT_FORCE_DEMOLISHER" />
+      <grant type="Archetype Feature" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_MODEL_DREADNAUGHT_GIANT_STATURE" />
+    </rules>
+  </element>
+
+  <element name="• Force Demolisher" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_MODEL_DREADNAUGHT_FORCE_DEMOLISHER">
+    <description>
+      <p>Your Arcane Armor includes a Force Demolisher. It counts as a Simple Melee weapon with Reach, deals 1d10 Force damage, and when you hit a creature at least one size smaller than you, you can push or pull it up to 10 feet.</p>
+    </description>
+    <sheet>
+      <description level="3">Force Demolisher: Simple Melee weapon with Reach, 1d10 Force damage; on hit, push or pull a creature at least one size smaller than you up to 10 feet.</description>
+      <description level="15">Force Demolisher: Simple Melee weapon with Reach, 2d6 Force damage; on hit, push or pull a creature at least one size smaller than you up to 10 feet.</description>
+    </sheet>
+    <rules>
+
+    </rules>
+  </element>
+
+  <element name="• Giant Stature" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_MODEL_DREADNAUGHT_GIANT_STATURE">
+    <description>
+      <p>As a Bonus Action, you can enlarge your armor for 1 minute. While enlarged, your Reach increases by 5 feet, and if you are smaller than Large, you become Large. You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
+    </description>
+    <sheet action="Bonus Action" usage="{{armorer:dreadnaught:giant stature:uses}}/Long Rest">
+      <description level="3">For 1 minute, enlarge your armor: Reach +5 feet, you become Large.</description>
+      <description level="15">For 1 minute, enlarge your armor: Reach +15 feet, you become Large od Huge. You gain ADV on STR check and Saves.</description>
+    </sheet>
+    <rules>
+      <stat name="armorer:dreadnaught:giant stature:uses" value="1" bonus="base" />
+      <stat name="armorer:dreadnaught:giant stature:uses" value="intelligence:modifier" bonus="base" />
+    </rules>
   </element>
 
   <element name="Guardian" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_MODEL_GUARDIAN">
-    <supports>Armor Model (Armorer)</supports>
     <description>
-      <p><strong>Thunder Pulse.</strong> Counts as a Simple Melee weapon and deals 1d8 Thunder damage. A creature hit has Disadvantage on attacks against targets other than you until your next turn.</p>
-      <p><strong>Defensive Field.</strong> While Bloodied, you can take a Bonus Action to gain Temporary Hit Points equal to your Artificer level. You lose these Temporary Hit Points if you doff the armor.</p>
+      <p>You configure your Arcane Armor to protect allies and control the battlefield. It gains the following features.</p>
     </description>
     <sheet>
-      <description>Guardian grants Thunder Pulse (1d8 Thunder, taunt effect) and Defensive Field (while Bloodied, Bonus Action for temporary HP = Artificer level).</description>
+      <description>You configure your Arcane Armor to protect allies and control the battlefield.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_MODEL_GUARDIAN_THUNDER_PULSE" />
+      <grant type="Archetype Feature" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_MODEL_GUARDIAN_DEFENSIVE_FIELD" />
+    </rules>
+  </element>
+
+  <element name="• Thunder Pulse" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_MODEL_GUARDIAN_THUNDER_PULSE">
+    <description>
+      <p>Your Arcane Armor includes a Thunder Pulse. It counts as a Simple Melee weapon and deals 1d8 Thunder damage. A creature hit by it has Disadvantage on attack rolls against targets other than you until your next turn.</p>
+    </description>
+    <sheet>
+      <description level="3">Thunder Pulse: Simple Melee weapon, 1d8 Thunder damage; a creature hit has Disadvantage on attacks against targets other than you until your next turn.</description>
+      <description level="15">Thunder Pulse: Simple Melee weapon, 1d10 Thunder damage; a creature hit has Disadvantage on attacks against targets other than you until your next turn. Moreover, if a Huge or smaller creature ends its turn wihtin 30ft of you, you can take a Reaction to force it to make a STR check DC{{spellcasting:dc}}. On a fail you pull the creature up to 25ft towards you. If you pull the target whitin 5f of you, you can make a melle attack as part of the Reaciton. You can take this reaction {{guardian reaction}} times per Long Rest.</description>
+    </sheet>
+    <rules>
+      <stat name="guardian reaction" value="1" bonus="base"/>
+      <stat name="guardian reaction" value="intelligence:modifier" bonus="base"/>
+    </rules>
+  </element>
+
+  <element name="• Defensive Field" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_MODEL_GUARDIAN_DEFENSIVE_FIELD">
+    <description>
+      <p>While Bloodied, you can take a Bonus Action to gain Temporary Hit Points equal to your Artificer level. You lose these Temporary Hit Points if you doff the armor.</p>
+    </description>
+    <sheet action="Bonus Action">
+      <description>While Bloodied, gain Temporary Hit Points equal to your Artificer level. You lose these Temporary Hit Points if you doff the armor.</description>
     </sheet>
   </element>
 
   <element name="Infiltrator" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_MODEL_INFILTRATOR">
-    <supports>Armor Model (Armorer)</supports>
     <description>
-      <p><strong>Lightning Launcher.</strong> Counts as a Simple Ranged weapon (90/300), deals 1d6 Lightning damage, and once per turn can deal an extra 1d6 Lightning damage on hit.</p>
-      <p><strong>Powered Steps.</strong> Your Speed increases by 5 feet.</p>
-      <p><strong>Dampening Field.</strong> You have Advantage on Dexterity (Stealth) checks; normal cancellation applies if armor would impose Disadvantage.</p>
+      <p>You adapt your Arcane Armor for speed and subtlety. It gains the following features.</p>
     </description>
     <sheet>
-      <description>Infiltrator grants Lightning Launcher (1d6 + extra 1d6 once/turn), Powered Steps (+5 Speed), and Dampening Field (Advantage on Stealth checks).</description>
+      <description>You adapt your Arcane Armor for speed and subtlety.</description>
     </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_MODEL_INFILTRATOR_LIGHTNING_LAUNCHER" />
+      <grant type="Archetype Feature" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_MODEL_INFILTRATOR_POWERED_STEPS" />
+      <grant type="Archetype Feature" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_MODEL_INFILTRATOR_DAMPENING_FIELD" />
+    </rules>
+  </element>
+
+  <element name="• Lightning Launcher" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_MODEL_INFILTRATOR_LIGHTNING_LAUNCHER">
+    <description>
+      <p>Your Arcane Armor includes a Lightning Launcher. It counts as a Simple Ranged weapon with a range of 90/300, deals 1d6 Lightning damage, and once per turn can deal an extra 1d6 Lightning damage on a hit.</p>
+    </description>
+    <sheet>
+      <description level="3">Lightning Launcher: Simple Ranged weapon (90/300), 1d6 Lightning damage, and once per turn it deals an extra 1d6 Lightning damage on a hit.</description>
+      <description level="15">Lightning Launcher: Simple Ranged weapon (90/300), 2d6 Lightning damage, and once per turn it deals an extra 1d6 Lightning damage on a hit. The damaged target glimmers in 5ft Dim light and has Disadvantage to attack you until the start of your next turn. Moreover, as a Bonus Action you gain {{infiltrator speed}}ft Flying speed until the end of the turn. You can take this Bonus action {{infiltrator flight}} times per Long Rest.</description>
+    </sheet>
+    <rules>
+      <stat name="infiltrator speed" value="speed"/>
+      <stat name="infiltrator speed" value="speed"/>
+      <stat name="infiltrator flight" value="1" bonus="base"/>
+      <stat name="infiltrator flight" value="intelligence:modifier" bonus="base"/>
+    </rules>
+  </element>
+
+  <element name="• Powered Steps" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_MODEL_INFILTRATOR_POWERED_STEPS">
+    <description>
+      <p>Your Speed increases by 5 feet.</p>
+    </description>
+    <sheet display="false" />
     <rules>
       <stat name="speed:misc" value="5" />
     </rules>
+  </element>
+
+  <element name="• Dampening Field" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_MODEL_INFILTRATOR_DAMPENING_FIELD">
+    <description>
+      <p>You have Advantage on Dexterity (Stealth) checks. If the armor would normally impose Disadvantage on those checks, the Advantage and Disadvantage cancel as normal.</p>
+    </description>
+    <sheet usage="Armor Model">
+      <description>You have Advantage on Dexterity (Stealth) checks; if the armor would normally impose Disadvantage, they cancel as normal.</description>
+    </sheet>
   </element>
 
   <element name="Extra Attack" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_EXTRA_ATTACK">
@@ -131,7 +247,7 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+      <stat name="extra attack:count" value="2" bonus="extra attack" />
     </rules>
   </element>
 
@@ -141,18 +257,19 @@
       <p><strong>Armor Replication.</strong> You learn an additional plan for your Replicate Magic Item feature, and it must be in the Armor category. If you replace that plan, you must replace it with another Armor plan. In addition, you can create an additional item with that feature, and the item must also be in the Armor category.</p>
       <p><strong>Improved Arsenal.</strong> You gain a +1 bonus to attack and damage rolls made with the special weapon of your Arcane Armor model.</p>
     </description>
-    <sheet>
-      <description>Learn one extra Armor plan and gain one extra active Armor replication. Arcane Armor special weapon gains +1 to attack and damage rolls.</description>
-    </sheet>
+    <sheet display="false" />
+    <rules>
+      <select type="Class Feature" name="Magic Item Plans: Armorer" supports="Magic Item Plan, EFA Version, Armor" />
+      <stat name="Armorer:attack_bonus" value="1" />
+      <stat name="magic_item:max" value="1" level="9" />
+    </rules>
   </element>
 
   <element name="Perfected Armor" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_PERFECTED_ARMOR">
     <description>
-      <p>Your Arcane Armor gains additional benefits based on its model:</p>
-      <p><strong>Dreadnaught.</strong> Force Demolisher damage becomes 2d6 Force. Giant Stature also grants reach +10 feet total, size can become Large or Huge, and Advantage on Strength checks and Strength saving throws for the duration.</p>
-      <p><strong>Guardian.</strong> Thunder Pulse damage becomes 1d10 Thunder. In addition, when a Huge or smaller creature you can see ends its turn within 30 feet, you can take a Reaction to force a Strength save against your spell save DC. On a failed save, pull it up to 25 feet toward you; if it ends within 5 feet of you, you can make one melee weapon attack against it as part of the same Reaction. Uses equal to INT modifier (min 1), regained on Long Rest.</p>
-      <p><strong>Infiltrator.</strong> Lightning Launcher damage die becomes 2d6. Targets damaged by the launcher glimmer until your next turn start, shed Dim Light in 5 feet, and have Disadvantage on attack rolls against you. Additionally, as a Bonus Action, you can gain a Fly Speed equal to twice your Speed until end of turn; uses equal to INT modifier (min 1), regained on Long Rest.</p>
+      <p>Your Arcane Armor gains additional benefits based on its model.</p>
     </description>
     <sheet display="false" />
+    <!-- TEXT INCLUDED IN ARMOR MODEL's DESCRIPTION-->
   </element>
 </elements>
