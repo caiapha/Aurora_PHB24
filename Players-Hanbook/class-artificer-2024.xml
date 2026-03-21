@@ -4,7 +4,7 @@
 		<name>Artificer</name>
 		<description>The Artificer class from the Eberron: Forge of the Artificer manual (2025)</description>
 		<author url="">Wizards of the Coast</author>
-		<update version="1.1.1">
+		<update version="1.1.2">
 			<file name="class-artificer-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/class-artificer-2024.xml" />
 		</update>
 	</info>
@@ -262,15 +262,15 @@
 			<description><p>You can create {{magic_item:max}} Magic Items for the plans you know, which last until you create a new one. If you die, the objects vanishes after 1d4 days. Each item is based on one of the plans you know for this feature. If an object requires Attunement, you can automatically attune it when created. You can use any weapon or wand create this way as Spellcasting Focus.</p></description>
 		</sheet>
 		<rules>
-			<grant type="Class Feature" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_1" level="2" />
-			<grant type="Class Feature" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_2" level="2" />
-			<grant type="Class Feature" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_3" level="2" />
-			<grant type="Class Feature" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_4" level="2" />
-			<grant type="Class Feature" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_5" level="6" />
-			<grant type="Class Feature" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_6" level="10" />
-			<grant type="Class Feature" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_7" level="14" />
-			<grant type="Class Feature" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_8" level="18" />
-			<grant type="Class Feature" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_IMPROVED_ARMORER_PLAN" requirements="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_IMPROVED_ARMORER"/>	
+			<select name="Magic Item Plan 1" type="Class Feature" supports="Magic Item Plan, EFA Version" level="2" />
+			<select name="Magic Item Plan 2" type="Class Feature" supports="Magic Item Plan, EFA Version" level="2" />
+			<select name="Magic Item Plan 3" type="Class Feature" supports="Magic Item Plan, EFA Version" level="2" />
+			<select name="Magic Item Plan 4" type="Class Feature" supports="Magic Item Plan, EFA Version" level="2" />
+			<select name="Magic Item Plan 5" type="Class Feature" supports="Magic Item Plan, EFA Version" level="6" />
+			<select name="Magic Item Plan 6" type="Class Feature" supports="Magic Item Plan, EFA Version" level="10" />
+			<select name="Magic Item Plan 7" type="Class Feature" supports="Magic Item Plan, EFA Version" level="14" />
+			<select name="Magic Item Plan 8" type="Class Feature" supports="Magic Item Plan, EFA Version" level="18" />	
+			<select name="Magic Item Plan: Armorer" type="Class Feature" supports="Magic Item Plan, EFA Version, Armor" requirements="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_IMPROVED_ARMORER"/>	
 			
 			<stat name="magic_item:max" value="2" level="2" />
 			<stat name="magic_item:max" value="1" level="6" />
@@ -415,22 +415,22 @@
 
 
 	<element name="• Charge Magic" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_MAGIC_ITEM_TINKER_CHARGE_MAGIC">
-	<description>As a Bonus Action, you can touch a magic item within 5 feet of yourself that you created with Replicate Magic Item and that uses charges. You expend a level 1+ spell slot and recharge the item. The number of charges the item regains is equal to the level of spell slot expended.</description>
-	<sheet action="Bonus Action">
-		<description>You expend a 1+ spell slot. A Replicated Magic Item regains charges equal to the expended spell slot.</description>
-	</sheet>
+		<description>As a Bonus Action, you can touch a magic item within 5 feet of yourself that you created with Replicate Magic Item and that uses charges. You expend a level 1+ spell slot and recharge the item. The number of charges the item regains is equal to the level of spell slot expended.</description>
+		<sheet action="Bonus Action">
+			<description>You expend a 1+ spell slot. A Replicated Magic Item regains charges equal to the expended spell slot.</description>
+		</sheet>
 	</element>
 	<element name="• Drain Magic" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_MAGIC_ITEM_TINKER_DRAIN_MAGIC">
-	<description>As a Bonus Action, you can touch a magic item within 5 feet of yourself that you created with Replicate Magic Item and cause the item to vanish, converting its magical energy into a spell slot. The slot is level 1 if the item is Common or level 2 if the item is Uncommon or Rare. Once you use this feature, you can't do so again until you finish a Long Rest. Any spell slot you create with this feature vanishes when you finish a Long Rest.</description>
-	<sheet action="Bonus Action" usage="1/Long Rest">
-		<description>You vanish a Replicated Magic Item. You regain an expended 1st-lvl spell slot if the item is Common or 2nd-level if the item is Uncommon or Rare</description>
-	</sheet>
+		<description>As a Bonus Action, you can touch a magic item within 5 feet of yourself that you created with Replicate Magic Item and cause the item to vanish, converting its magical energy into a spell slot. The slot is level 1 if the item is Common or level 2 if the item is Uncommon or Rare. Once you use this feature, you can't do so again until you finish a Long Rest. Any spell slot you create with this feature vanishes when you finish a Long Rest.</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>You vanish a Replicated Magic Item. You regain an expended 1st-lvl spell slot if the item is Common or 2nd-level if the item is Uncommon or Rare</description>
+		</sheet>
 	</element>
 	<element name="• Transmute Magic" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_MAGIC_ITEM_TINKER_TRANSMUTE_MAGIC"> 
-	<description>As a Magic action, you can touch one magic item within 5 feet of yourself that you created with Replicate Magic Item and transform it into a different magic item. The resulting item must be based on a magic item plan you know. Once you use this feature, you can't do so again until you finish a Long Rest.</description>
-	<sheet action="Magic Action" usage="1/Long Rest">
-		<description>You can transform a Replicated Magic Item in another Magic Item based on a Plan You know.</description>
-	</sheet>
+		<description>As a Magic action, you can touch one magic item within 5 feet of yourself that you created with Replicate Magic Item and transform it into a different magic item. The resulting item must be based on a magic item plan you know. Once you use this feature, you can't do so again until you finish a Long Rest.</description>
+		<sheet action="Magic Action" usage="1/Long Rest">
+			<description>You can transform a Replicated Magic Item in another Magic Item based on a Plan You know.</description>
+		</sheet>
 	</element>
 
 

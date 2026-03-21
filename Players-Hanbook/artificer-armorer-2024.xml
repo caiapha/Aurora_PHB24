@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Armorer Artificer Archetype</name>
-    <update version="1.1.0">
+    <update version="1.1.1">
       <file name="artificer-armorer-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/artificer-armorer-2024.xml" />
     </update>
   </info>
@@ -259,16 +259,9 @@
     </description>
     <sheet display="false" />
     <rules>
+      <!-- Magic Plan included in Artificer Main Class to group with other plans -->
       <stat name="Armorer:attack_bonus" value="1" />
       <stat name="magic_item:max" value="1" level="9" />
-    </rules>
-  </element>
-  <!-- Application included in class-artificer to group with other plans -->
-  <element name="Improved Armorer" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_IMPROVED_ARMORER_PLAN">
-    <description />
-    <sheet display="false"/>
-    <rules>
-      <select type="Class Feature" name="Magic Item Plans: Armorer" supports="Magic Item Plan, EFA Version, Armor"/>
     </rules>
   </element>
 
