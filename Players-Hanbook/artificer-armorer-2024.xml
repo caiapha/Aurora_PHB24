@@ -2,7 +2,7 @@
 <elements>
   <info>
     <name>Armorer Artificer Archetype</name>
-    <update version="1.0.0">
+    <update version="1.1.0">
       <file name="artificer-armorer-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/artificer-armorer-2024.xml" />
     </update>
   </info>
@@ -121,7 +121,7 @@
       <p>You design your Arcane Armor for overwhelming physical presence. It gains the following features.</p>
     </description>
     <sheet>
-      <description>You design your Arcane Armor for overwhelming physical presence.</description>
+      <description>:</description>
     </sheet>
     <rules>
       <grant type="Archetype Feature" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_MODEL_DREADNAUGHT_FORCE_DEMOLISHER" />
@@ -161,7 +161,7 @@
       <p>You configure your Arcane Armor to protect allies and control the battlefield. It gains the following features.</p>
     </description>
     <sheet>
-      <description>You configure your Arcane Armor to protect allies and control the battlefield.</description>
+      <description>:</description>
     </sheet>
     <rules>
       <grant type="Archetype Feature" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_MODEL_GUARDIAN_THUNDER_PULSE" />
@@ -197,7 +197,7 @@
       <p>You adapt your Arcane Armor for speed and subtlety. It gains the following features.</p>
     </description>
     <sheet>
-      <description>You adapt your Arcane Armor for speed and subtlety.</description>
+      <description>:</description>
     </sheet>
     <rules>
       <grant type="Archetype Feature" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_MODEL_INFILTRATOR_LIGHTNING_LAUNCHER" />
@@ -259,9 +259,16 @@
     </description>
     <sheet display="false" />
     <rules>
-      <select type="Class Feature" name="Magic Item Plans: Armorer" supports="Magic Item Plan, EFA Version, Armor" />
       <stat name="Armorer:attack_bonus" value="1" />
       <stat name="magic_item:max" value="1" level="9" />
+    </rules>
+  </element>
+  <!-- Application included in class-artificer to group with other plans -->
+  <element name="Improved Armorer" type="Archetype Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_ARCHETYPE_FEATURE_ARMORER_IMPROVED_ARMORER_PLAN">
+    <description />
+    <sheet display="false"/>
+    <rules>
+      <select type="Class Feature" name="Magic Item Plans: Armorer" supports="Magic Item Plan, EFA Version, Armor"/>
     </rules>
   </element>
 
