@@ -1,103 +1,130 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <elements>
 	<info>
 		<name>Artificer's Magic Item Plans</name>
-		<update version="1.0.5">
+		<update version="1.1.0">
 			<file name="artificer-item_plans-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/artificer-item_plans-2024.xml" />
 		</update>
 	</info>
-
 	<element name="Replicate Magic Item Tables" type="Information" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_INFORMATION_ARTIFICER_INFUSION_REPLICATE_MAGIC_ITEM_TABLES">
 		<compendium display="false" />
 		<description>
-			<p><strong>REPLICABLE ITEMS (2nd-level Artificer)</strong></p>
+			<p>
+				<strong>REPLICABLE ITEMS (2nd-level Artificer)</strong>
+			</p>
 			<table>
 				<thead>
-					<tr><td>Magic Item</td><td class="col-20">Attunement</td></tr>
+					<tr><td>Magic Item</td><td>Attunement</td></tr>
 				</thead>
-				<tr><td>Alchemy jug</td><td>No</td></tr>
-				<tr><td>Bag of holding</td><td>No</td></tr>
-				<tr><td>Cap of water breathing</td><td>No</td></tr>
-				<tr><td>Goggles of night</td><td>No</td></tr>
-				<tr><td>Rope of climbing</td><td>No</td></tr>
-				<tr><td>Sending stones</td><td>No</td></tr>
-				<tr><td>Wand of magic detection</td><td>No</td></tr>
-				<tr><td>Wand of secrets</td><td>No</td></tr>
+				<tr><td>Alchemy Jug</td><td>No</td></tr>
+				<tr><td>Bag of Holding</td><td>No</td></tr>
+				<tr><td>Cap of Water Breathing</td><td>No</td></tr>
+				<tr><td>Any Common Wonderous Item that isn't cursed</td><td>Varies</td></tr>
+				<tr><td>Goggles of Night</td><td>No</td></tr>
+				<tr><td>Rope of Climbing</td><td>No</td></tr>
+				<tr><td>Manifold Tool</td><td>Yes</td></tr>
+				<tr><td>Repeating Shot</td><td>Yes</td></tr>
+				<tr><td>Returning Weapon</td><td>No</td></tr>
+				<tr><td>Rope of Climbing</td><td>No</td></tr>
+				<tr><td>Sending Stones</td><td>No</td></tr>
+				<tr><td>Shield +1</td><td>No</td></tr>
+				<tr><td>Wand of Magic Detection</td><td>No</td></tr>
+				<tr><td>Wand of Secrets</td><td>No</td></tr>
+				<tr><td>Wand of War Mage +1</td><td>Yes</td></tr>
+				<tr><td>Weapon +1</td><td>No</td></tr>
+				<tr><td>Wraps of Unarmed Power, +1</td><td>No</td></tr>
 			</table>
-			<p><strong>REPLICABLE ITEMS (6th-level Artificer)</strong></p>
+			<p>
+				<strong>REPLICABLE ITEMS (6th-level Artificer)</strong>
+			</p>
 			<table>
 				<thead>
-					<tr><td>Magic Item</td><td class="col-20">Attunement</td></tr>
+					<tr><td>Magic Item</td><td>Attunement</td></tr>
 				</thead>
-				<tr><td>Boots of elvenkind</td><td>No</td></tr>
-				<tr><td>Cloak of elvenkind</td><td>Yes</td></tr>
-				<tr><td>Cloak of the manta ray</td><td>No</td></tr>
-				<tr><td>Eyes of charming</td><td>Yes</td></tr>
-				<tr><td>Gloves of thievery</td><td>No</td></tr>
-				<tr><td>Lantern of revealing</td><td>No</td></tr>
-				<tr><td>Pipes of haunting</td><td>No</td></tr>
-				<tr><td>Ring of water walking</td><td>No</td></tr>
+				<tr><td>Armor +1</td><td>No</td></tr>
+				<tr><td>Boots of Elvenkind</td><td>No</td></tr>
+				<tr><td>Boots of the Winding Path</td><td>Yes</td></tr>
+				<tr><td>Cloak of Elvenkind</td><td>Yes</td></tr>
+				<tr><td>Cloak of the Manta Ray</td><td>Yes</td></tr>
+				<tr><td>Dazzling Weapon</td><td>Yes</td></tr>
+				<tr><td>Eyes of Charming</td><td>Yes</td></tr>
+				<tr><td>Eyes of Minute Seeing</td><td>No</td></tr>
+				<tr><td>Gloves of Thievery</td><td>No</td></tr>
+				<tr><td>Helm of Awareness</td><td>No</td></tr>
+				<tr><td>Lantern of Revealing</td><td>No</td></tr>
+				<tr><td>Mind Sharpener</td><td>Yes</td></tr>
+				<tr><td>Necklace of Adaptation</td><td>Yes</td></tr>
+				<tr><td>Pipes of Haunting</td><td>No</td></tr>
+				<tr><td>Repulsion Shield</td><td>No</td></tr>
+				<tr><td>Ring of Swimming</td><td>No</td></tr>
+				<tr><td>Ring of Water Walking</td><td>No</td></tr>
+				<tr><td>Sentinel Shield</td><td>No</td></tr>
+				<tr><td>Spell-Refueing Ring</td><td>Yes</td></tr>
+				<tr><td>Wand of Magic Missiles</td><td>No</td></tr>
+				<tr><td>Wand of Web</td><td>Yes</td></tr>
+				<tr><td>Weapon of Warning</td><td>Yes</td></tr>
 			</table>
-			<p><strong>REPLICABLE ITEMS (10th-level Artificer)</strong></p>
+			<p>
+				<strong>REPLICABLE ITEMS (10th-level Artificer)</strong>
+			</p>
 			<table>
 				<thead>
-					<tr><td>Magic Item</td><td class="col-20">Attunement</td></tr>
+					<tr><td>Magic Item</td><td>Attunement</td></tr>
 				</thead>
-				<tr><td>Boots of striding and springing</td><td>Yes</td></tr>
-				<tr><td>Boots of the winterlands</td><td>Yes</td></tr>
-				<tr><td>Bracers of archery</td><td>Yes</td></tr>
-				<tr><td>Brooch of shielding</td><td>Yes</td></tr>
-				<tr><td>Cloak of protection</td><td>Yes</td></tr>
-				<tr><td>Eyes of the eagle</td><td>Yes</td></tr>
-				<tr><td>Gauntlets of ogre power</td><td>Yes</td></tr>
-				<tr><td>Gloves of missile snaring</td><td>Yes</td></tr>
-				<tr><td>Gloves of swimming and climbing</td><td>Yes</td></tr>
-				<tr><td>Hat of disguise</td><td>Yes</td></tr>
-				<tr><td>Headband of intellect</td><td>Yes</td></tr>
-				<tr><td>Helm of telepathy</td><td>Yes</td></tr>
-				<tr><td>Medallion of thoughts</td><td>Yes</td></tr>
-				<tr><td>Necklace of adaptation</td><td>Yes</td></tr>
-				<tr><td>Peria pt of wound closure</td><td>Yes</td></tr>
-				<tr><td>Pipes of the sewers</td><td>Yes</td></tr>
-				<tr><td>Quiver of Ehlonna</td><td>No</td></tr>
-				<tr><td>Ring of jumping</td><td>Yes</td></tr>
-				<tr><td>Ring of mind shielding</td><td>Yes</td></tr>
-				<tr><td>Slippers of spider climbing</td><td>Yes</td></tr>
-				<tr><td>Ventilating lung</td><td>Yes</td></tr>
-				<tr><td>Winged boots</td><td>Yes</td></tr>
+				<tr><td>Armor of Resistance</td><td>Yes</td></tr>
+				<tr><td>Dagger of Venom</td><td>No</td></tr>
+				<tr><td>Elven Chain</td><td>No</td></tr>
+				<tr><td>Ring of Feather Falling</td><td>Yes</td></tr>
+				<tr><td>Ring of Jumping</td><td>Yes</td></tr>
+				<tr><td>Ring of Mind Shielding</td><td>Yes</td></tr>
+				<tr><td>Shield +2</td><td>No</td></tr>
+				<tr><td>Any Uncommon Wonderous Item that isn't cursed</td><td>Varies</td></tr>
+				<tr><td>Wand of War Mage +2</td><td>Yes</td></tr>
+				<tr><td>Weapon +2</td><td>No</td></tr>
+				<tr><td>Wraps of Unarmed Power +2</td><td>No</td></tr>
 			</table>
-			<p><strong>REPLICABLE ITEMS (14th-level Artificer)</strong></p>
+			<p>
+				<strong>REPLICABLE ITEMS (14th-level Artificer)</strong>
+			</p>
 			<table>
 				<thead>
-					<tr><td>Magic Item</td><td class="col-20">Attunement</td></tr>
+					<tr><td>Magic Item</td><td>Attunement</td></tr>
 				</thead>
-				<tr><td>Amulet of health</td><td>Yes</td></tr>
-				<tr><td>Arcane propulsion arm</td><td>Yes</td></tr>
-				<tr><td>Belt of hill giant strength</td><td>Yes</td></tr>
-				<tr><td>Boots of levitation</td><td>Yes</td></tr>
-				<tr><td>Boots of speed</td><td>Yes</td></tr>
-				<tr><td>Bracers of defense</td><td>Yes</td></tr>
-				<tr><td>Cloak of the bat</td><td>Yes</td></tr>
-				<tr><td>Dimensional shackles</td><td>No</td></tr>
-				<tr><td>Gem of seeing</td><td>Yes</td></tr>
-				<tr><td>Horn of blasting</td><td>No</td></tr>
-				<tr><td>Ring of free action</td><td>Yes</td></tr>
-				<tr><td>Ring of protection</td><td>Yes</td></tr>
-				<tr><td>Ring of the ram</td><td>Yes</td></tr>
+				<tr><td>Armor +2</td><td>No</td></tr>
+				<tr><td>Arrow-Catching Shield</td><td>Yes</td></tr>
+				<tr><td>Flame Tongue</td><td>Yes</td></tr>
+				<tr><td>Any Rare Wonderous Item that isn't cursed</td><td>Varies</td></tr>
+				<tr><td>Ring of Free Action</td><td>Yes</td></tr>
+				<tr><td>Ring of Protection</td><td>Yes</td></tr>
+				<tr><td>Ring of the Ram</td><td>Yes</td></tr>
 			</table>
 		</description>
 	</element>
-
 	<!-- replicate magic item plans -->
 	<element name="Alchemy Jug" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ALCHEMY_JUG">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:2]</requirements>
 		<prerequisite>2nd Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Alchemy Jug.</p>
+			<p>This ceramic jug sloshes even when empty. As a Magic action, you choose a liquid from its table; you can then uncork it and pour out the chosen liquid, up to the listed amount.</p>
+			<table>
+				<thead>
+					<tr><td>Liquid</td><td>Max. Amount</td></tr>
+				</thead>
+				<tr><td>Acid</td><td>8 ounces</td></tr>
+				<tr><td>Basic Poison</td><td>4 ounces</td></tr>
+				<tr><td>Beer</td><td>4 gallons</td></tr>
+				<tr><td>Honey</td><td>1 gallon</td></tr>
+				<tr><td>Mayonnaise</td><td>2 gallons</td></tr>
+				<tr><td>Oil</td><td>1 quart</td></tr>
+				<tr><td>Vinegar</td><td>2 gallons</td></tr>
+				<tr><td>Water, fresh</td><td>8 gallons</td></tr>
+				<tr><td>Water, salt</td><td>12 gallons</td></tr>
+				<tr><td>Wine</td><td>1 gallon</td></tr>
+			</table>
 		</description>
 		<sheet>
-			<description>You replicate an Alchemy Jug.</description>
+			<description>Attunement Required: No</description>
 		</sheet>
 	</element>
 	<element name="Bag of Holding" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_BAG_OF_HOLDING">
@@ -105,10 +132,10 @@
 		<requirements>[level:artificer:2]</requirements>
 		<prerequisite>2nd Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Bag of Holding.</p>
+			<p>This bag has an extradimensional interior that can hold up to 500 pounds, to a maximum volume of 64 cubic feet, while always weighing 15 pounds. Retrieving an item from the bag requires a Magic action.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Bag of Holding.</description>
+			<description>Attunement Required: No</description>
 		</sheet>
 	</element>
 	<element name="Cap of Water Breathing" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_CAP_OF_WATER_BREATHING">
@@ -116,21 +143,21 @@
 		<requirements>[level:artificer:2]</requirements>
 		<prerequisite>2nd Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Cap of Water Breathing.</p>
+			<p>While wearing this cap underwater, you can use a Magic action to speak its command word and create a bubble of air around your head, allowing you to breathe normally underwater.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Cap of Water Breathing.</description>
+			<description>Attunement Required: No</description>
 		</sheet>
 	</element>
-	<element name="Common magic Item" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_COMMON_MAGIC">
+	<element name="Common Magic Item" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_COMMON_MAGIC">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:2]</requirements>
 		<prerequisite>2nd Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Common magic.</p>
+			<p>Choose a noncursed Common wondrous item of your choice. Each different item learned through this plan counts as a different plan.</p>
 		</description>
 		<sheet>
-			<description>Choose a Common magic item to replicate</description>
+			<description>Attunement Required: Varies</description>
 		</sheet>
 	</element>
 	<element name="Goggles of Night" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_GOGGLES_OF_NIGHT">
@@ -138,10 +165,10 @@
 		<requirements>[level:artificer:2]</requirements>
 		<prerequisite>2nd Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Goggles of Night.</p>
+			<p>While wearing these dark lenses, you have Darkvision out to 60 feet. If you already have Darkvision, its range increases by 60 feet.</p>
 		</description>
 		<sheet>
-			<description>You replicate a pair of Goggles of Night.</description>
+			<description>Attunement Required: No</description>
 		</sheet>
 	</element>
 	<element name="Manifold Tool" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_MANIFOLD_TOOL">
@@ -149,10 +176,10 @@
 		<requirements>[level:artificer:2]</requirements>
 		<prerequisite>2nd Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Manifold Tool.</p>
+			<p>As a Magic action, you can transform this tool into any type of Artisan&apos;s Tools of your choice. Whatever form it takes, you have proficiency with it when you use it.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Manifold Tool.</description>
+			<description>Attunement Required: Yes</description>
 		</sheet>
 	</element>
 	<element name="Repeating Shot" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_REPEATING_SHOT">
@@ -160,10 +187,10 @@
 		<requirements>[level:artificer:2]</requirements>
 		<prerequisite>2nd Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Repeating Shot.</p>
+			<p>This magic ranged weapon grants a +1 bonus to attack and damage rolls, ignores the Loading property if it has it, and creates its own magic ammunition when none is loaded.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Repeating Shot Ranged Weapon.</description>
+			<description>Attunement Required: Yes</description>
 		</sheet>
 	</element>
 	<element name="Returning Weapon" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RETURNING_WEAPON">
@@ -171,10 +198,10 @@
 		<requirements>[level:artificer:2]</requirements>
 		<prerequisite>2nd Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Returning Weapon.</p>
+			<p>This magic thrown weapon grants a +1 bonus to attack and damage rolls and returns to the wielder&apos;s hand immediately after it is used to make a ranged attack.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Returning Weapon.</description>
+			<description>Attunement Required: No</description>
 		</sheet>
 	</element>
 	<element name="Rope of Climbing" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ROPE_OF_CLIMBING">
@@ -182,10 +209,10 @@
 		<requirements>[level:artificer:2]</requirements>
 		<prerequisite>2nd Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Rope of Climbing.</p>
+			<p>This 60-foot rope can animate on command, move toward a destination, fasten itself securely, and tie knots as directed. It can hold up to 3,000 pounds.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Rope of Climbing.</description>
+			<description>Attunement Required: No</description>
 		</sheet>
 	</element>
 	<element name="Sending Stones" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_SENDING_STONES">
@@ -193,10 +220,10 @@
 		<requirements>[level:artificer:2]</requirements>
 		<prerequisite>2nd Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Sending Stones.</p>
+			<p>These paired stones let the bearer of one use a Magic action to cast Sending to the bearer of the other. Once used, they can&apos;t be used again until the next dawn.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Sending Stones.</description>
+			<description>Attunement Required: No</description>
 		</sheet>
 	</element>
 	<element name="Shield +1" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_SHIELD_1">
@@ -204,10 +231,10 @@
 		<requirements>[level:artificer:2]</requirements>
 		<prerequisite>2nd Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Shield +1.</p>
+			<p>While holding this shield, you have a +1 bonus to Armor Class in addition to the shield&apos;s normal bonus to AC.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Msgic Shield (+1 to AC).</description>
+			<description>Attunement Required: No</description>
 		</sheet>
 	</element>
 	<element name="Wand of Magic Detection" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WAND_OF_MAGIC_DETECTION">
@@ -215,10 +242,10 @@
 		<requirements>[level:artificer:2]</requirements>
 		<prerequisite>2nd Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Wand of Magic Detection.</p>
+			<p>This wand has 3 charges. While holding it, you can expend 1 charge as a Magic action to cast Detect Magic from it. The wand regains 1d3 expended charges daily at dawn.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Wand of Magic Detection.</description>
+			<description>Attunement Required: No</description>
 		</sheet>
 	</element>
 	<element name="Wand of Secrets" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WAND_OF_SECRETS">
@@ -226,10 +253,10 @@
 		<requirements>[level:artificer:2]</requirements>
 		<prerequisite>2nd Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Wand of Secrets.</p>
+			<p>This wand has 3 charges. While holding it, you can expend 1 charge as a Magic action to learn whether a secret door or trap is within 30 feet, and the wand points to the nearest one. It regains 1d3 charges daily at dawn.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Wand of Secrets.</description>
+			<description>Attunement Required: No</description>
 		</sheet>
 	</element>
 	<element name="Wand of the War Mage +1" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WAND_OF_THE_WAR_MAGE_1">
@@ -237,7 +264,7 @@
 		<requirements>[level:artificer:2]</requirements>
 		<prerequisite>2nd Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Wand of the War Mage +1.</p>
+			<p>While holding this wand, you gain a +1 bonus to spell attack rolls and ignore Half Cover when making a spell attack.</p>
 		</description>
 		<sheet>
 			<description>You replicate a Wand of the War Mage (+1 to spell attack).</description>
@@ -248,10 +275,10 @@
 		<requirements>[level:artificer:2]</requirements>
 		<prerequisite>2nd Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Weapon +1.</p>
+			<p>You have a +1 bonus to attack and damage rolls made with this magic weapon.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Magic Weapon (+1 to attack roll and damage).</description>
+			<description>Attunement Required: No</description>
 		</sheet>
 	</element>
 	<element name="Wraps of Unarmed Power, +1" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WRAPS_OF_UNARMED_POWER_1">
@@ -259,10 +286,10 @@
 		<requirements>[level:artificer:2]</requirements>
 		<prerequisite>2nd Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Wraps of Unarmed Power, +1.</p>
+			<p>While wearing these wraps, you have a +1 bonus to attack rolls and damage rolls made with your Unarmed Strikes, and those strikes deal your choice of Force damage or their normal damage type.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Wraps of Unarmed Power (+1 to unarmed attack roll and damage).</description>
+			<description>Attunement Required: No</description>
 		</sheet>
 	</element>
 	<element name="Armor +1" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ARMOR_1">
@@ -270,10 +297,10 @@
 		<requirements>[level:artificer:6]</requirements>
 		<prerequisite>6th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Armor +1.</p>
+			<p>You have a +1 bonus to Armor Class while wearing this armor.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Magic Armor (+1 to AC).</description>
+			<description>Attunement Required: No</description>
 		</sheet>
 	</element>
 	<element name="Boots of Elvenkind" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_BOOTS_OF_ELVENKIND">
@@ -281,10 +308,10 @@
 		<requirements>[level:artificer:6]</requirements>
 		<prerequisite>6th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Boots of Elvenkind.</p>
+			<p>While you wear these boots, your steps make no sound, and you have advantage on Dexterity (Stealth) checks that rely on moving silently.</p>
 		</description>
 		<sheet>
-			<description>You replicate a pair of Boots of Elvenkind.</description>
+			<description>Attunement Required: No</description>
 		</sheet>
 	</element>
 	<element name="Boots of the Winding Path" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_BOOTS_OF_THE_WINDING_PATH">
@@ -292,10 +319,10 @@
 		<requirements>[level:artificer:6]</requirements>
 		<prerequisite>6th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Boots of the Winding Path.</p>
+			<p>While wearing these boots, you can take a Bonus Action to teleport up to 15 feet to an unoccupied space you can see if you occupied that space at some point during the current turn.</p>
 		</description>
 		<sheet>
-			<description>You replicate a pair of Boots of the Winding Path.</description>
+			<description>Attunement Required: Yes</description>
 		</sheet>
 	</element>
 	<element name="Cloak of Elvenkind" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_CLOAK_OF_ELVENKIND">
@@ -303,10 +330,10 @@
 		<requirements>[level:artificer:6]</requirements>
 		<prerequisite>6th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Cloak of Elvenkind.</p>
+			<p>While you wear this cloak with its hood up, Wisdom (Perception) checks made to see you have disadvantage, and you have advantage on Dexterity (Stealth) checks made to hide. Pulling the hood up or down requires a Magic action.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Cloak of Elvenkind.</description>
+			<description>Attunement Required: Yes</description>
 		</sheet>
 	</element>
 	<element name="Cloak of the Manta Ray" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_CLOAK_OF_THE_MANTA_RAY">
@@ -314,10 +341,10 @@
 		<requirements>[level:artificer:6]</requirements>
 		<prerequisite>6th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Cloak of the Manta Ray.</p>
+			<p>While wearing this cloak with its hood up, you can breathe underwater and have a Swim Speed of 60 feet. Pulling the hood up or down requires a Magic action.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Cloak of the Manta Ray.</description>
+			<description>Attunement Required: Yes</description>
 		</sheet>
 	</element>
 	<element name="Dazzling Weapon" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_DAZZLING_WEAPON">
@@ -325,10 +352,10 @@
 		<requirements>[level:artificer:6]</requirements>
 		<prerequisite>6th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Dazzling Weapon.</p>
+			<p>This magic weapon grants a +1 bonus to attack and damage rolls. As a Bonus Action, you can cause it to shed bright light in a 30-foot radius and dim light for 30 feet more. It has 4 charges; when you are hit by an attack, you can expend 1 charge as a Reaction to force the attacker to make a DC 15 Constitution save or have the Blinded condition until the end of its next turn. It regains 1d4 charges daily at dawn.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Dazzling Weapon.</description>
+			<description>Attunement Required: Yes</description>
 		</sheet>
 	</element>
 	<element name="Eyes of Charming" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_EYES_OF_CHARMING">
@@ -336,10 +363,10 @@
 		<requirements>[level:artificer:6]</requirements>
 		<prerequisite>6th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Eyes of Charming.</p>
+			<p>These lenses have 3 charges. While wearing them, you can expend 1 charge as a Magic action to cast Charm Person (save DC 13) on a Humanoid within 30 feet that you can see. The lenses regain all expended charges daily at dawn.</p>
 		</description>
 		<sheet>
-			<description>You replicate an Eyes of Charming.</description>
+			<description>Attunement Required: Yes</description>
 		</sheet>
 	</element>
 	<element name="Eyes of Minute Seeing" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_EYES_OF_MINUTE_SEEING">
@@ -347,10 +374,10 @@
 		<requirements>[level:artificer:6]</requirements>
 		<prerequisite>6th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Eyes of Minute Seeing.</p>
+			<p>While wearing these lenses, you can see exceptionally well out to a range of 1 foot and have advantage on Intelligence (Investigation) checks that rely on sight while searching an area or studying an object within that range.</p>
 		</description>
 		<sheet>
-			<description>You replicate an Eyes of Minute Seeing.</description>
+			<description>Attunement Required: No</description>
 		</sheet>
 	</element>
 	<element name="Gloves of Thievery" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_GLOVES_OF_THIEVERY">
@@ -358,10 +385,10 @@
 		<requirements>[level:artificer:6]</requirements>
 		<prerequisite>6th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Gloves of Thievery.</p>
+			<p>These gloves are invisible while worn. While wearing them, you gain a +5 bonus to Dexterity (Sleight of Hand) checks and Dexterity checks made to pick locks.</p>
 		</description>
 		<sheet>
-			<description>You replicate a pair of Gloves of Thievery.</description>
+			<description>Attunement Required: No</description>
 		</sheet>
 	</element>
 	<element name="Helm of Awareness" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_HELM_OF_AWARENESS">
@@ -369,10 +396,10 @@
 		<requirements>[level:artificer:6]</requirements>
 		<prerequisite>6th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Helm of Awareness.</p>
+			<p>While wearing this helmet, you have advantage on Initiative rolls and can&apos;t be Surprised while you aren&apos;t Incapacitated.</p>
 		</description>
 		<sheet>
-			<description>You replicate an Helm of Awareness.</description>
+			<description>Attunement Required: No</description>
 		</sheet>
 	</element>
 	<element name="Lantern of Revealing" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_LANTERN_OF_REVEALING">
@@ -380,10 +407,10 @@
 		<requirements>[level:artificer:6]</requirements>
 		<prerequisite>6th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Lantern of Revealing.</p>
+			<p>While lit, this hooded lantern sheds bright light in a 30-foot radius and dim light for 30 feet more. Invisible creatures and objects are visible in its bright light. You can use a Magic action to lower the hood, reducing the light to dim light in a 5-foot radius.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Lantern of Revealing.</description>
+			<description>Attunement Required: No</description>
 		</sheet>
 	</element>
 	<element name="Mind Sharpener" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_MIND_SHARPENER">
@@ -391,10 +418,10 @@
 		<requirements>[level:artificer:6]</requirements>
 		<prerequisite>6th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Mind Sharpener.</p>
+			<p>This item has 4 charges. When the wearer fails a Constitution saving throw to maintain Concentration on a spell, the wearer can use a Reaction to expend 1 charge and succeed instead. The item regains 1d4 expended charges daily at dawn.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Mind Sharpener.</description>
+			<description>Attunement Required: Yes</description>
 		</sheet>
 	</element>
 	<element name="Necklace of Adaptation" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_NECKLACE_OF_ADAPTATION">
@@ -402,10 +429,10 @@
 		<requirements>[level:artificer:6]</requirements>
 		<prerequisite>6th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Necklace of Adaptation.</p>
+			<p>While wearing this necklace, you can breathe normally in any environment and have advantage on saving throws against harmful gases and vapors.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Necklace of Adaptation.</description>
+			<description>Attunement Required: Yes</description>
 		</sheet>
 	</element>
 	<element name="Pipes of Haunting" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_PIPES_OF_HAUNTING">
@@ -413,10 +440,10 @@
 		<requirements>[level:artificer:6]</requirements>
 		<prerequisite>6th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Pipes of Haunting.</p>
+			<p>These pipes have 3 charges and require proficiency with Wind Instruments. As a Magic action, you can expend 1 charge to play an eerie tune; creatures of your choice that hear it within 30 feet must succeed on a DC 15 Wisdom saving throw or be Frightened of you for 1 minute. The pipes regain 1d3 charges daily at dawn.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Pipes of Haunting.</description>
+			<description>Attunement Required: No</description>
 		</sheet>
 	</element>
 	<element name="Repulsion Shield" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_REPULSION_SHIELD">
@@ -424,10 +451,10 @@
 		<requirements>[level:artificer:6]</requirements>
 		<prerequisite>6th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Repulsion Shield.</p>
+			<p>While wielding this shield, you gain a +1 bonus to Armor Class. The shield has 4 charges, and when you are hit by a melee attack, you can expend 1 charge as a Reaction to push the attacker up to 15 feet away. It regains 1d4 charges daily at dawn.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Repulsion Shield.</description>
+			<description>Attunement Required: No</description>
 		</sheet>
 	</element>
 	<element name="Ring of Swimming" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_SWIMMING">
@@ -435,10 +462,10 @@
 		<requirements>[level:artificer:6]</requirements>
 		<prerequisite>6th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Ring of Swimming.</p>
+			<p>While wearing this ring, you have a Swim Speed of 40 feet.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Ring of Swimming.</description>
+			<description>Attunement Required: No</description>
 		</sheet>
 	</element>
 	<element name="Ring of Water Walking" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_WATER_WALKING">
@@ -446,10 +473,10 @@
 		<requirements>[level:artificer:6]</requirements>
 		<prerequisite>6th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Ring of Water Walking.</p>
+			<p>While wearing this ring, you can stand on and move across any liquid surface as if it were solid ground.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Ring of Water Walking.</description>
+			<description>Attunement Required: No</description>
 		</sheet>
 	</element>
 	<element name="Sentinel Shield" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_SENTINEL_SHIELD">
@@ -457,10 +484,10 @@
 		<requirements>[level:artificer:6]</requirements>
 		<prerequisite>6th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Sentinel Shield.</p>
+			<p>While holding this shield, you have advantage on Initiative rolls and Wisdom (Perception) checks.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Sentinel Shield.</description>
+			<description>Attunement Required: No</description>
 		</sheet>
 	</element>
 	<element name="Spell-Refueling Ring" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_SPELL_REFUELING_RING">
@@ -468,7 +495,7 @@
 		<requirements>[level:artificer:6]</requirements>
 		<prerequisite>6th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Spell-Refueling Ring.</p>
+			<p>While wearing this ring, you can use a Magic action to recover one expended spell slot of level 3 or lower. Once used, the ring can&apos;t be used again until the next dawn.</p>
 		</description>
 		<sheet>
 			<description>You replicate a Spell-Refueling Ring.</description>
@@ -479,10 +506,10 @@
 		<requirements>[level:artificer:6]</requirements>
 		<prerequisite>6th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Wand of Magic Missiles.</p>
+			<p>This wand has 7 charges. While holding it, you can expend 1 or more charges as a Magic action to cast Magic Missile from it, increasing the spell&apos;s level by 1 for each additional charge spent. It regains 1d6 + 1 charges daily at dawn.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Wand of Magic Missiles.</description>
+			<description>Attunement Required: No</description>
 		</sheet>
 	</element>
 	<element name="Wand of Web" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WAND_OF_WEB">
@@ -490,10 +517,10 @@
 		<requirements>[level:artificer:6]</requirements>
 		<prerequisite>6th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Wand of Web.</p>
+			<p>This wand has 7 charges. While holding it, you can expend 1 charge as a Magic action to cast Web (save DC 15) from it. It regains 1d6 + 1 charges daily at dawn.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Wand of Web.</description>
+			<description>Attunement Required: Yes</description>
 		</sheet>
 	</element>
 	<element name="Weapon of Warning" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WEAPON_OF_WARNING">
@@ -501,10 +528,10 @@
 		<requirements>[level:artificer:6]</requirements>
 		<prerequisite>6th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Weapon of Warning.</p>
+			<p>While this magic weapon is on your person, you have advantage on Initiative rolls, and you and your companions within 30 feet can&apos;t be Surprised unless Incapacitated by something other than nonmagical sleep.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Weapon of Warning.</description>
+			<description>Attunement Required: Yes</description>
 		</sheet>
 	</element>
 	<element name="Armor of Resistance" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ARMOR_OF_RESISTANCE">
@@ -512,10 +539,10 @@
 		<requirements>[level:artificer:10]</requirements>
 		<prerequisite>10th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Armor of Resistance.</p>
+			<p>While wearing this armor, you have resistance to one damage type. The type is chosen when the item is created from among Acid, Cold, Fire, Force, Lightning, Necrotic, Poison, Psychic, Radiant, or Thunder.</p>
 		</description>
 		<sheet>
-			<description>You replicate an Armor of Resistance.</description>
+			<description>Attunement Required: Yes</description>
 		</sheet>
 	</element>
 	<element name="Dagger of Venom" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_DAGGER_OF_VENOM">
@@ -523,10 +550,10 @@
 		<requirements>[level:artificer:10]</requirements>
 		<prerequisite>10th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Dagger of Venom.</p>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic dagger. As a Magic action, you can coat the blade in poison for 1 minute or until it hits; the target then makes a DC 15 Constitution saving throw or takes 2d10 Poison damage and has the Poisoned condition for 1 minute. The dagger can&apos;t be used this way again until the next dawn.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Dagger of Venom.</description>
+			<description>Attunement Required: No</description>
 		</sheet>
 	</element>
 	<element name="Elven Chain" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ELVEN_CHAIN">
@@ -534,10 +561,10 @@
 		<requirements>[level:artificer:10]</requirements>
 		<prerequisite>10th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Elven Chain.</p>
+			<p>You gain a +1 bonus to Armor Class while wearing this armor. You are considered proficient with this armor even if you lack proficiency with Medium Armor.</p>
 		</description>
 		<sheet>
-			<description>You replicate an Elven Chain.</description>
+			<description>Attunement Required: No</description>
 		</sheet>
 	</element>
 	<element name="Ring of Feather Falling" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_FEATHER_FALLING">
@@ -545,10 +572,10 @@
 		<requirements>[level:artificer:10]</requirements>
 		<prerequisite>10th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Ring of Feather Falling.</p>
+			<p>When you fall while wearing this ring, you descend 60 feet per round and take no damage from falling.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Ring of Feather Falling.</description>
+			<description>Attunement Required: Yes</description>
 		</sheet>
 	</element>
 	<element name="Ring of Jumping" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_JUMPING">
@@ -556,10 +583,10 @@
 		<requirements>[level:artificer:10]</requirements>
 		<prerequisite>10th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Ring of Jumping.</p>
+			<p>While wearing this ring, you can cast Jump from it as a Bonus Action at will, targeting only yourself.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Ring of Jumping.</description>
+			<description>Attunement Required: Yes</description>
 		</sheet>
 	</element>
 	<element name="Ring of Mind Shielding" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_MIND_SHIELDING">
@@ -567,21 +594,21 @@
 		<requirements>[level:artificer:10]</requirements>
 		<prerequisite>10th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Ring of Mind Shielding.</p>
+			<p>While wearing this ring, you are immune to magic that reads your thoughts, determines whether you are lying, knows your alignment, or knows your creature type. You can also use a Magic action to make the ring invisible until you make it visible again, remove it, or die.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Ring of Mind Shielding.</description>
+			<description>Attunement Required: Yes</description>
 		</sheet>
 	</element>
-	<element name="Shield, +2" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_SHIELD_2">
+	<element name="Shield +2" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_SHIELD_2">
 		<supports>Magic Item Plan, EFA Version, Armor</supports>
 		<requirements>[level:artificer:10]</requirements>
 		<prerequisite>10th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Shield, +2.</p>
+			<p>While holding this shield, you have a +2 bonus to Armor Class in addition to the shield&apos;s normal bonus to AC.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Shield, +2.</description>
+			<description>Attunement Required: No</description>
 		</sheet>
 	</element>
 	<element name="Uncommon Wondrous Item" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_UNCOMMON_WONDROUS_ITEM">
@@ -589,54 +616,54 @@
 		<requirements>[level:artificer:10]</requirements>
 		<prerequisite>10th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Uncommon Wondrous Item.</p>
+			<p>Choose a noncursed Uncommon wondrous item of your choice. Each different item learned through this plan counts as a different plan.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Uncommon Wondrous Item.</description>
+			<description>Attunement Required: Varies</description>
 		</sheet>
 	</element>
-	<element name="Wand of the War Mage, +2" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WAND_OF_THE_WAR_MAGE_2">
+	<element name="Wand of the War Mage +2" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WAND_OF_THE_WAR_MAGE_2">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:10]</requirements>
 		<prerequisite>10th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Wand of the War Mage (+2 to spell attack).</p>
+			<p>While holding this wand, you gain a +2 bonus to spell attack rolls and ignore Half Cover when making a spell attack.</p>
 		</description>
 		<sheet>
 			<description>You replicate a Wand of the War Mage, +2.</description>
 		</sheet>
 	</element>
-	<element name="Weapon, +2" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WEAPON_2">
+	<element name="Weapon +2" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WEAPON_2">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:10]</requirements>
 		<prerequisite>10th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Weapon, +2.</p>
+			<p>You have a +2 bonus to attack and damage rolls made with this magic weapon.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Magic Weapon (+2 to attack roll and damage).</description>
+			<description>Attunement Required: No</description>
 		</sheet>
 	</element>
-	<element name="Wraps of Unarmed Power, +2" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WRAPS_OF_UNARMED_POWER_2">
+	<element name="Wraps of Unarmed Power +2" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WRAPS_OF_UNARMED_POWER_2">
 		<supports>Magic Item Plan, EFA Version</supports>
 		<requirements>[level:artificer:10]</requirements>
 		<prerequisite>10th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Wraps of Unarmed Power, +2.</p>
+			<p>While wearing these wraps, you have a +2 bonus to attack rolls and damage rolls made with your Unarmed Strikes, and those strikes deal your choice of Force damage or their normal damage type.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Wraps of Unarmed Power (+2 to unarmed attack roll and damage).</description>
+			<description>Attunement Required: No</description>
 		</sheet>
 	</element>
-	<element name="Armor, +2" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ARMOR_2">
+	<element name="Armor +2" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ARMOR_2">
 		<supports>Magic Item Plan, EFA Version, Armor</supports>
 		<requirements>[level:artificer:14]</requirements>
 		<prerequisite>14th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Armor, +2.</p>
+			<p>You have a +2 bonus to Armor Class while wearing this armor.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Magic Armor (+2 to AC).</description>
+			<description>Attunement Required: No</description>
 		</sheet>
 	</element>
 	<element name="Arrow-Catching Shield" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ARROW_CATCHING_SHIELD">
@@ -644,10 +671,10 @@
 		<requirements>[level:artificer:14]</requirements>
 		<prerequisite>14th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Arrow-Catching Shield.</p>
+			<p>While you wield this shield, you gain a +2 bonus to Armor Class against ranged attacks in addition to the shield&apos;s normal bonus to AC. When a creature within 5 feet of you is targeted by a ranged attack, you can use a Reaction to become the target instead.</p>
 		</description>
 		<sheet>
-			<description>You replicate an Arrow-Catching Shield.</description>
+			<description>Attunement Required: Yes</description>
 		</sheet>
 	</element>
 	<element name="Flame Tongue" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_FLAME_TONGUE">
@@ -655,10 +682,10 @@
 		<requirements>[level:artificer:14]</requirements>
 		<prerequisite>14th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Flame Tongue.</p>
+			<p>As a Bonus Action, you can speak this weapon&apos;s command word to wreathe it in flames, which shed bright light in a 40-foot radius and dim light for 40 feet more. While ablaze, the weapon deals an extra 2d6 Fire damage on a hit.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Flame Tongue.</description>
+			<description>Attunement Required: Yes</description>
 		</sheet>
 	</element>
 	<element name="Rare Wondrous Item" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RARE_WONDROUS_ITEM">
@@ -666,10 +693,10 @@
 		<requirements>[level:artificer:14]</requirements>
 		<prerequisite>14th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Rare Wondrous Item.</p>
+			<p>Choose a noncursed Rare wondrous item of your choice. Each different item learned through this plan counts as a different plan.</p>
 		</description>
 		<sheet>
-			<description>You replicate any Rare Wondrous Item.</description>
+			<description>Attunement Required: Varies</description>
 		</sheet>
 	</element>
 	<element name="Ring of Free Action" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_FREE_ACTION">
@@ -677,10 +704,10 @@
 		<requirements>[level:artificer:14]</requirements>
 		<prerequisite>14th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Ring of Free Action.</p>
+			<p>While wearing this ring, Difficult Terrain doesn&apos;t cost you extra movement, and magic can neither reduce your Speed nor cause you to have the Paralyzed or Restrained condition.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Ring of Free Action.</description>
+			<description>Attunement Required: Yes</description>
 		</sheet>
 	</element>
 	<element name="Ring of Protection" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_PROTECTION">
@@ -688,10 +715,10 @@
 		<requirements>[level:artificer:14]</requirements>
 		<prerequisite>14th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Ring of Protection.</p>
+			<p>While wearing this ring, you gain a +1 bonus to Armor Class and saving throws.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Ring of Protection.</description>
+			<description>Attunement Required: Yes</description>
 		</sheet>
 	</element>
 	<element name="Ring of the Ram" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_THE_RAM">
@@ -699,24 +726,10 @@
 		<requirements>[level:artificer:14]</requirements>
 		<prerequisite>14th Artificer level</prerequisite>
 		<description>
-			<p><strong>Magic Item Plan.</strong> Ring of the Ram.</p>
+			<p>This ring has 3 charges and regains 1d3 charges daily at dawn. As a Magic action, you can expend 1 to 3 charges to make a ranged spell attack against a creature within 60 feet; on a hit, the target takes 2d10 Force damage per charge and can be pushed up to 5 feet per charge.</p>
 		</description>
 		<sheet>
-			<description>You replicate a Ring of the Ram.</description>
+			<description>Attunement Required: Yes</description>
 		</sheet>
 	</element>
 </elements>
-
-
-
-
-
-
-
-
-
-
-
-
-
-

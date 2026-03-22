@@ -4,7 +4,7 @@
 		<name>Artificer</name>
 		<description>The Artificer class from the Eberron: Forge of the Artificer manual (2025)</description>
 		<author url="">Wizards of the Coast</author>
-		<update version="1.1.2">
+		<update version="1.1.3">
 			<file name="class-artificer-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/class-artificer-2024.xml" />
 		</update>
 	</info>
@@ -100,8 +100,8 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_EFA_MULTICLASS_ARTIFICER" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" requirements="!ID_WOTC_EFA_MULTICLASS_ARTIFICER" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+			<grant type="Proficiency" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" requirements="!ID_WOTC_EFA_MULTICLASS_ARTIFICER" />
+			<grant type="Proficiency" id="ID_PHB24_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
 			<select type="Proficiency" name="Artisan Tool, Artificer" supports="Artisan tools" requirements="!ID_WOTC_EFA_MULTICLASS_ARTIFICER" />
 			<!-- <grant type="Proficiency" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS" /> -->
 
