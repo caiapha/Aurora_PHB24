@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Artificer's Magic Item Plans</name>
-		<update version="1.1.0">
+		<update version="1.1.1">
 			<file name="artificer-item_plans-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/artificer-item_plans-2024.xml" />
 		</update>
 	</info>
@@ -124,7 +124,7 @@
 			</table>
 		</description>
 		<sheet>
-			<description>Attunement Required: No</description>
+			<description>Attunement: No</description>
 		</sheet>
 	</element>
 	<element name="Bag of Holding" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_BAG_OF_HOLDING">
@@ -135,7 +135,7 @@
 			<p>This bag has an extradimensional interior that can hold up to 500 pounds, to a maximum volume of 64 cubic feet, while always weighing 15 pounds. Retrieving an item from the bag requires a Magic action.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: No</description>
+			<description>Attunement: No</description>
 		</sheet>
 	</element>
 	<element name="Cap of Water Breathing" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_CAP_OF_WATER_BREATHING">
@@ -146,7 +146,7 @@
 			<p>While wearing this cap underwater, you can use a Magic action to speak its command word and create a bubble of air around your head, allowing you to breathe normally underwater.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: No</description>
+			<description>Attunement: No</description>
 		</sheet>
 	</element>
 	<element name="Common Magic Item" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_COMMON_MAGIC">
@@ -157,7 +157,7 @@
 			<p>Choose a noncursed Common wondrous item of your choice. Each different item learned through this plan counts as a different plan.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: Varies</description>
+			<description>Attunement: Varies</description>
 		</sheet>
 	</element>
 	<element name="Goggles of Night" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_GOGGLES_OF_NIGHT">
@@ -168,7 +168,7 @@
 			<p>While wearing these dark lenses, you have Darkvision out to 60 feet. If you already have Darkvision, its range increases by 60 feet.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: No</description>
+			<description>Attunement: No</description>
 		</sheet>
 	</element>
 	<element name="Manifold Tool" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_MANIFOLD_TOOL">
@@ -179,7 +179,7 @@
 			<p>As a Magic action, you can transform this tool into any type of Artisan&apos;s Tools of your choice. Whatever form it takes, you have proficiency with it when you use it.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: Yes</description>
+			<description>Attunement: Yes</description>
 		</sheet>
 	</element>
 	<element name="Repeating Shot" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_REPEATING_SHOT">
@@ -190,7 +190,7 @@
 			<p>This magic ranged weapon grants a +1 bonus to attack and damage rolls, ignores the Loading property if it has it, and creates its own magic ammunition when none is loaded.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: Yes</description>
+			<description>Attunement: Yes</description>
 		</sheet>
 	</element>
 	<element name="Returning Weapon" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RETURNING_WEAPON">
@@ -201,7 +201,7 @@
 			<p>This magic thrown weapon grants a +1 bonus to attack and damage rolls and returns to the wielder&apos;s hand immediately after it is used to make a ranged attack.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: No</description>
+			<description>Attunement: No</description>
 		</sheet>
 	</element>
 	<element name="Rope of Climbing" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ROPE_OF_CLIMBING">
@@ -212,7 +212,7 @@
 			<p>This 60-foot rope can animate on command, move toward a destination, fasten itself securely, and tie knots as directed. It can hold up to 3,000 pounds.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: No</description>
+			<description>Attunement: No</description>
 		</sheet>
 	</element>
 	<element name="Sending Stones" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_SENDING_STONES">
@@ -223,7 +223,7 @@
 			<p>These paired stones let the bearer of one use a Magic action to cast Sending to the bearer of the other. Once used, they can&apos;t be used again until the next dawn.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: No</description>
+			<description>Attunement: No</description>
 		</sheet>
 	</element>
 	<element name="Shield +1" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_SHIELD_1">
@@ -234,7 +234,7 @@
 			<p>While holding this shield, you have a +1 bonus to Armor Class in addition to the shield&apos;s normal bonus to AC.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: No</description>
+			<description>Attunement: No</description>
 		</sheet>
 	</element>
 	<element name="Wand of Magic Detection" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WAND_OF_MAGIC_DETECTION">
@@ -245,7 +245,7 @@
 			<p>This wand has 3 charges. While holding it, you can expend 1 charge as a Magic action to cast Detect Magic from it. The wand regains 1d3 expended charges daily at dawn.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: No</description>
+			<description>Attunement: No</description>
 		</sheet>
 	</element>
 	<element name="Wand of Secrets" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WAND_OF_SECRETS">
@@ -256,7 +256,7 @@
 			<p>This wand has 3 charges. While holding it, you can expend 1 charge as a Magic action to learn whether a secret door or trap is within 30 feet, and the wand points to the nearest one. It regains 1d3 charges daily at dawn.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: No</description>
+			<description>Attunement: No</description>
 		</sheet>
 	</element>
 	<element name="Wand of the War Mage +1" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WAND_OF_THE_WAR_MAGE_1">
@@ -278,7 +278,7 @@
 			<p>You have a +1 bonus to attack and damage rolls made with this magic weapon.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: No</description>
+			<description>Attunement: No</description>
 		</sheet>
 	</element>
 	<element name="Wraps of Unarmed Power, +1" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WRAPS_OF_UNARMED_POWER_1">
@@ -289,7 +289,7 @@
 			<p>While wearing these wraps, you have a +1 bonus to attack rolls and damage rolls made with your Unarmed Strikes, and those strikes deal your choice of Force damage or their normal damage type.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: No</description>
+			<description>Attunement: No</description>
 		</sheet>
 	</element>
 	<element name="Armor +1" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ARMOR_1">
@@ -300,7 +300,7 @@
 			<p>You have a +1 bonus to Armor Class while wearing this armor.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: No</description>
+			<description>Attunement: No</description>
 		</sheet>
 	</element>
 	<element name="Boots of Elvenkind" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_BOOTS_OF_ELVENKIND">
@@ -311,7 +311,7 @@
 			<p>While you wear these boots, your steps make no sound, and you have advantage on Dexterity (Stealth) checks that rely on moving silently.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: No</description>
+			<description>Attunement: No</description>
 		</sheet>
 	</element>
 	<element name="Boots of the Winding Path" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_BOOTS_OF_THE_WINDING_PATH">
@@ -322,7 +322,7 @@
 			<p>While wearing these boots, you can take a Bonus Action to teleport up to 15 feet to an unoccupied space you can see if you occupied that space at some point during the current turn.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: Yes</description>
+			<description>Attunement: Yes</description>
 		</sheet>
 	</element>
 	<element name="Cloak of Elvenkind" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_CLOAK_OF_ELVENKIND">
@@ -333,7 +333,7 @@
 			<p>While you wear this cloak with its hood up, Wisdom (Perception) checks made to see you have disadvantage, and you have advantage on Dexterity (Stealth) checks made to hide. Pulling the hood up or down requires a Magic action.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: Yes</description>
+			<description>Attunement: Yes</description>
 		</sheet>
 	</element>
 	<element name="Cloak of the Manta Ray" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_CLOAK_OF_THE_MANTA_RAY">
@@ -344,7 +344,7 @@
 			<p>While wearing this cloak with its hood up, you can breathe underwater and have a Swim Speed of 60 feet. Pulling the hood up or down requires a Magic action.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: Yes</description>
+			<description>Attunement: Yes</description>
 		</sheet>
 	</element>
 	<element name="Dazzling Weapon" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_DAZZLING_WEAPON">
@@ -355,7 +355,7 @@
 			<p>This magic weapon grants a +1 bonus to attack and damage rolls. As a Bonus Action, you can cause it to shed bright light in a 30-foot radius and dim light for 30 feet more. It has 4 charges; when you are hit by an attack, you can expend 1 charge as a Reaction to force the attacker to make a DC 15 Constitution save or have the Blinded condition until the end of its next turn. It regains 1d4 charges daily at dawn.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: Yes</description>
+			<description>Attunement: Yes</description>
 		</sheet>
 	</element>
 	<element name="Eyes of Charming" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_EYES_OF_CHARMING">
@@ -366,7 +366,7 @@
 			<p>These lenses have 3 charges. While wearing them, you can expend 1 charge as a Magic action to cast Charm Person (save DC 13) on a Humanoid within 30 feet that you can see. The lenses regain all expended charges daily at dawn.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: Yes</description>
+			<description>Attunement: Yes</description>
 		</sheet>
 	</element>
 	<element name="Eyes of Minute Seeing" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_EYES_OF_MINUTE_SEEING">
@@ -377,7 +377,7 @@
 			<p>While wearing these lenses, you can see exceptionally well out to a range of 1 foot and have advantage on Intelligence (Investigation) checks that rely on sight while searching an area or studying an object within that range.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: No</description>
+			<description>Attunement: No</description>
 		</sheet>
 	</element>
 	<element name="Gloves of Thievery" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_GLOVES_OF_THIEVERY">
@@ -388,7 +388,7 @@
 			<p>These gloves are invisible while worn. While wearing them, you gain a +5 bonus to Dexterity (Sleight of Hand) checks and Dexterity checks made to pick locks.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: No</description>
+			<description>Attunement: No</description>
 		</sheet>
 	</element>
 	<element name="Helm of Awareness" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_HELM_OF_AWARENESS">
@@ -399,7 +399,7 @@
 			<p>While wearing this helmet, you have advantage on Initiative rolls and can&apos;t be Surprised while you aren&apos;t Incapacitated.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: No</description>
+			<description>Attunement: No</description>
 		</sheet>
 	</element>
 	<element name="Lantern of Revealing" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_LANTERN_OF_REVEALING">
@@ -410,7 +410,7 @@
 			<p>While lit, this hooded lantern sheds bright light in a 30-foot radius and dim light for 30 feet more. Invisible creatures and objects are visible in its bright light. You can use a Magic action to lower the hood, reducing the light to dim light in a 5-foot radius.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: No</description>
+			<description>Attunement: No</description>
 		</sheet>
 	</element>
 	<element name="Mind Sharpener" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_MIND_SHARPENER">
@@ -421,7 +421,7 @@
 			<p>This item has 4 charges. When the wearer fails a Constitution saving throw to maintain Concentration on a spell, the wearer can use a Reaction to expend 1 charge and succeed instead. The item regains 1d4 expended charges daily at dawn.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: Yes</description>
+			<description>Attunement: Yes</description>
 		</sheet>
 	</element>
 	<element name="Necklace of Adaptation" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_NECKLACE_OF_ADAPTATION">
@@ -432,7 +432,7 @@
 			<p>While wearing this necklace, you can breathe normally in any environment and have advantage on saving throws against harmful gases and vapors.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: Yes</description>
+			<description>Attunement: Yes</description>
 		</sheet>
 	</element>
 	<element name="Pipes of Haunting" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_PIPES_OF_HAUNTING">
@@ -443,7 +443,7 @@
 			<p>These pipes have 3 charges and require proficiency with Wind Instruments. As a Magic action, you can expend 1 charge to play an eerie tune; creatures of your choice that hear it within 30 feet must succeed on a DC 15 Wisdom saving throw or be Frightened of you for 1 minute. The pipes regain 1d3 charges daily at dawn.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: No</description>
+			<description>Attunement: No</description>
 		</sheet>
 	</element>
 	<element name="Repulsion Shield" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_REPULSION_SHIELD">
@@ -454,7 +454,7 @@
 			<p>While wielding this shield, you gain a +1 bonus to Armor Class. The shield has 4 charges, and when you are hit by a melee attack, you can expend 1 charge as a Reaction to push the attacker up to 15 feet away. It regains 1d4 charges daily at dawn.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: No</description>
+			<description>Attunement: No</description>
 		</sheet>
 	</element>
 	<element name="Ring of Swimming" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_SWIMMING">
@@ -465,7 +465,7 @@
 			<p>While wearing this ring, you have a Swim Speed of 40 feet.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: No</description>
+			<description>Attunement: No</description>
 		</sheet>
 	</element>
 	<element name="Ring of Water Walking" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_WATER_WALKING">
@@ -476,7 +476,7 @@
 			<p>While wearing this ring, you can stand on and move across any liquid surface as if it were solid ground.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: No</description>
+			<description>Attunement: No</description>
 		</sheet>
 	</element>
 	<element name="Sentinel Shield" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_SENTINEL_SHIELD">
@@ -487,7 +487,7 @@
 			<p>While holding this shield, you have advantage on Initiative rolls and Wisdom (Perception) checks.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: No</description>
+			<description>Attunement: No</description>
 		</sheet>
 	</element>
 	<element name="Spell-Refueling Ring" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_SPELL_REFUELING_RING">
@@ -509,7 +509,7 @@
 			<p>This wand has 7 charges. While holding it, you can expend 1 or more charges as a Magic action to cast Magic Missile from it, increasing the spell&apos;s level by 1 for each additional charge spent. It regains 1d6 + 1 charges daily at dawn.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: No</description>
+			<description>Attunement: No</description>
 		</sheet>
 	</element>
 	<element name="Wand of Web" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WAND_OF_WEB">
@@ -520,7 +520,7 @@
 			<p>This wand has 7 charges. While holding it, you can expend 1 charge as a Magic action to cast Web (save DC 15) from it. It regains 1d6 + 1 charges daily at dawn.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: Yes</description>
+			<description>Attunement: Yes</description>
 		</sheet>
 	</element>
 	<element name="Weapon of Warning" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WEAPON_OF_WARNING">
@@ -531,7 +531,7 @@
 			<p>While this magic weapon is on your person, you have advantage on Initiative rolls, and you and your companions within 30 feet can&apos;t be Surprised unless Incapacitated by something other than nonmagical sleep.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: Yes</description>
+			<description>Attunement: Yes</description>
 		</sheet>
 	</element>
 	<element name="Armor of Resistance" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ARMOR_OF_RESISTANCE">
@@ -542,7 +542,7 @@
 			<p>While wearing this armor, you have resistance to one damage type. The type is chosen when the item is created from among Acid, Cold, Fire, Force, Lightning, Necrotic, Poison, Psychic, Radiant, or Thunder.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: Yes</description>
+			<description>Attunement: Yes</description>
 		</sheet>
 	</element>
 	<element name="Dagger of Venom" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_DAGGER_OF_VENOM">
@@ -553,7 +553,7 @@
 			<p>You gain a +1 bonus to attack and damage rolls made with this magic dagger. As a Magic action, you can coat the blade in poison for 1 minute or until it hits; the target then makes a DC 15 Constitution saving throw or takes 2d10 Poison damage and has the Poisoned condition for 1 minute. The dagger can&apos;t be used this way again until the next dawn.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: No</description>
+			<description>Attunement: No</description>
 		</sheet>
 	</element>
 	<element name="Elven Chain" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ELVEN_CHAIN">
@@ -564,7 +564,7 @@
 			<p>You gain a +1 bonus to Armor Class while wearing this armor. You are considered proficient with this armor even if you lack proficiency with Medium Armor.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: No</description>
+			<description>Attunement: No</description>
 		</sheet>
 	</element>
 	<element name="Ring of Feather Falling" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_FEATHER_FALLING">
@@ -575,7 +575,7 @@
 			<p>When you fall while wearing this ring, you descend 60 feet per round and take no damage from falling.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: Yes</description>
+			<description>Attunement: Yes</description>
 		</sheet>
 	</element>
 	<element name="Ring of Jumping" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_JUMPING">
@@ -586,7 +586,7 @@
 			<p>While wearing this ring, you can cast Jump from it as a Bonus Action at will, targeting only yourself.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: Yes</description>
+			<description>Attunement: Yes</description>
 		</sheet>
 	</element>
 	<element name="Ring of Mind Shielding" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_MIND_SHIELDING">
@@ -597,7 +597,7 @@
 			<p>While wearing this ring, you are immune to magic that reads your thoughts, determines whether you are lying, knows your alignment, or knows your creature type. You can also use a Magic action to make the ring invisible until you make it visible again, remove it, or die.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: Yes</description>
+			<description>Attunement: Yes</description>
 		</sheet>
 	</element>
 	<element name="Shield +2" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_SHIELD_2">
@@ -608,7 +608,7 @@
 			<p>While holding this shield, you have a +2 bonus to Armor Class in addition to the shield&apos;s normal bonus to AC.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: No</description>
+			<description>Attunement: No</description>
 		</sheet>
 	</element>
 	<element name="Uncommon Wondrous Item" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_UNCOMMON_WONDROUS_ITEM">
@@ -619,7 +619,7 @@
 			<p>Choose a noncursed Uncommon wondrous item of your choice. Each different item learned through this plan counts as a different plan.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: Varies</description>
+			<description>Attunement: Varies</description>
 		</sheet>
 	</element>
 	<element name="Wand of the War Mage +2" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WAND_OF_THE_WAR_MAGE_2">
@@ -641,7 +641,7 @@
 			<p>You have a +2 bonus to attack and damage rolls made with this magic weapon.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: No</description>
+			<description>Attunement: No</description>
 		</sheet>
 	</element>
 	<element name="Wraps of Unarmed Power +2" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_WRAPS_OF_UNARMED_POWER_2">
@@ -652,7 +652,7 @@
 			<p>While wearing these wraps, you have a +2 bonus to attack rolls and damage rolls made with your Unarmed Strikes, and those strikes deal your choice of Force damage or their normal damage type.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: No</description>
+			<description>Attunement: No</description>
 		</sheet>
 	</element>
 	<element name="Armor +2" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ARMOR_2">
@@ -663,7 +663,7 @@
 			<p>You have a +2 bonus to Armor Class while wearing this armor.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: No</description>
+			<description>Attunement: No</description>
 		</sheet>
 	</element>
 	<element name="Arrow-Catching Shield" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_ARROW_CATCHING_SHIELD">
@@ -674,7 +674,7 @@
 			<p>While you wield this shield, you gain a +2 bonus to Armor Class against ranged attacks in addition to the shield&apos;s normal bonus to AC. When a creature within 5 feet of you is targeted by a ranged attack, you can use a Reaction to become the target instead.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: Yes</description>
+			<description>Attunement: Yes</description>
 		</sheet>
 	</element>
 	<element name="Flame Tongue" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_FLAME_TONGUE">
@@ -685,7 +685,7 @@
 			<p>As a Bonus Action, you can speak this weapon&apos;s command word to wreathe it in flames, which shed bright light in a 40-foot radius and dim light for 40 feet more. While ablaze, the weapon deals an extra 2d6 Fire damage on a hit.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: Yes</description>
+			<description>Attunement: Yes</description>
 		</sheet>
 	</element>
 	<element name="Rare Wondrous Item" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RARE_WONDROUS_ITEM">
@@ -696,7 +696,7 @@
 			<p>Choose a noncursed Rare wondrous item of your choice. Each different item learned through this plan counts as a different plan.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: Varies</description>
+			<description>Attunement: Varies</description>
 		</sheet>
 	</element>
 	<element name="Ring of Free Action" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_FREE_ACTION">
@@ -707,7 +707,7 @@
 			<p>While wearing this ring, Difficult Terrain doesn&apos;t cost you extra movement, and magic can neither reduce your Speed nor cause you to have the Paralyzed or Restrained condition.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: Yes</description>
+			<description>Attunement: Yes</description>
 		</sheet>
 	</element>
 	<element name="Ring of Protection" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_PROTECTION">
@@ -718,7 +718,7 @@
 			<p>While wearing this ring, you gain a +1 bonus to Armor Class and saving throws.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: Yes</description>
+			<description>Attunement: Yes</description>
 		</sheet>
 	</element>
 	<element name="Ring of the Ram" type="Class Feature" source="Eberron: Forge of the Artificer" id="ID_WOTC_EFA_CLASS_FEATURE_ARTIFICER_REPLICATE_MAGIC_ITEM_PLAN_RING_OF_THE_RAM">
@@ -729,7 +729,7 @@
 			<p>This ring has 3 charges and regains 1d3 charges daily at dawn. As a Magic action, you can expend 1 to 3 charges to make a ranged spell attack against a creature within 60 feet; on a hit, the target takes 2d10 Force damage per charge and can be pushed up to 5 feet per charge.</p>
 		</description>
 		<sheet>
-			<description>Attunement Required: Yes</description>
+			<description>Attunement: Yes</description>
 		</sheet>
 	</element>
 </elements>
