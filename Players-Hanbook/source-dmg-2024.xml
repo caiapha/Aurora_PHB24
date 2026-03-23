@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+    <update version="1.0.0">
+      <file name="source-dmg-2024.xml" url="https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/source-dmg-2024.xml" />
+    </update>
+    <author url="https://marketplace.dndbeyond.com/core-rules/3709001">Wizards of the Coast</author>
+  </info>
+
+  <!-- ===================== SOURCE: DUNGEON MASTER'S GUIDE (2024) ===================== -->
+  <element name="Dungeon Master's Guide (2024)" type="Source" source="Core" id="ID_WOTC_SOURCE_DUNGEON_MASTERS_GUIDE_2024">
+    <description>
+      <p><strong>The revised core guide for Dungeon Masters running the world's greatest roleplaying game.</strong></p>
+      <p>The <i>Dungeon Master's Guide (2024)</i> updates and expands fifth edition guidance for worldbuilding, encounter design, treasure, bastions, and running adventures. Inside you'll find tools for creating campaigns, optional systems, and the 2024 magic item collection used across this package.</p>
+    </description>
+    <setters>
+      <set name="abbreviation">DMG24</set>
+      <set name="url">https://www.dndbeyond.com/sources/dnd/dmg-2024</set>
+      <set name="image">https://raw.githubusercontent.com/caiapha/Aurora_PHB24/refs/heads/main/Players-Hanbook/DMG24.png</set>
+      <set name="author" abbreviation="WOTC" url="https://dnd.wizards.com">Wizards of the Coast</set>
+      <set name="official">true</set>
+      <!-- <set name="core">true</set> -->
+      <set name="release">20241112</set>
+    </setters>
+  </element>
+</elements>
